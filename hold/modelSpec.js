@@ -1,14 +1,14 @@
 const expect = require("expect");
-import Augmented from "../src/augmented";
+import Presentation from "../src/presentation.js";
 
-describe("Given an Abstract Model", () => {
+xdescribe("Given an Abstract Model", () => {
   it("is defined", () => {
-    expect(Augmented.AbstractModel).toBeDefined();
+    expect(Presentation.Model).toBeDefined();
   });
 
   let model;
   beforeEach(() => {
-    model = new Augmented.AbstractModel();
+    model = new Presentation.Model();
   });
   afterEach(() => {
     model = null;
@@ -51,7 +51,7 @@ describe("Given an Abstract Model", () => {
 
   describe("Given validation", () => {
 	  beforeEach(() => {
-	    model = new Augmented.AbstractModel();
+	    model = new Presentation.Model();
 	  });
 	  afterEach(() => {
 	    model = null;
@@ -64,13 +64,6 @@ describe("Given an Abstract Model", () => {
 		it("with an empty Schema does support Validation", () => {
 			model.schema = {};
 			expect(model.supportsValidation()).toBeTruthy();
-		});
-
-		xit("can generate a schema from a model", () => {
-			model.set({ "Name": "Bob", "ID": 123, "Email": "bob@augmentedjs.org", "Role": "Architect", "Active": true });
-			const schema = Augmented.ValidationFramework.generateSchema(model);
-			expect(schema).toBeDefined();
-			expect(Augmented.isObject(schema)).toBeTruthy();
 		});
 	});
 });

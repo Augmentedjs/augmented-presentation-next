@@ -2,15 +2,14 @@
   "name": "augmentedjs-next-presentation",
   "version": "2.0.0-alpha.0",
   "description": "The Augmented.js Next - Presentation Module.",
-  "main": "index.js",
+  "main": "dist/augmented-next-presentation.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --content-base ./ --env.dev",
     "build": "webpack --env.prod",
     "lint": "eslint ./src/augmented-presentation.js",
-    "start": "node index.js",
     "setup": "npm install && npm run validate",
     "validate": "npm-run-all lint test build",
-    "test": "mocha  --require babel-core/register",
+    "test": "mocha --require babel-core/register",
     "docs": "jsdoc ./src -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json"
   },
   "repository": {
@@ -30,6 +29,7 @@
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-stage-2": "^6.13.0",
     "babel-register": "^6.11.6",
+    "chai": "^4.1.2",
     "eslint": "^3.2.2",
     "eslint-config-kentcdodds": "^9.0.2",
     "expect": "^21.2.1",
@@ -44,7 +44,7 @@
     "webpack-validator": "^2.2.7"
   },
   "dependencies": {
-    "augmentedjs-next": "*"
+    "augmentedjs-next": "^2.0.0-alpha.8"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/augmented-presentation-next/issues"

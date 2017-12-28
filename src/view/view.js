@@ -1,21 +1,29 @@
+import * as  Augmented from "augmentedjs-next";
+
 /**
-* Augmented View - the base view for handlng display in the MV* Concept
-* @constructor
-* @name Augmented.View
-* @memberof Augmented
-* @borrows Backbone.View
-* @see http://backbonejs.org/#View
-* @extends Augmented.Object
-*/
-var augmentedView = Backbone.View.extend({
+ * Augmented View - the base view for handlng display in the MV* Concept
+ * @constructor
+ * @name Presentation.View
+ * @memberof Augmented
+ * @extends Augmented.Object
+ */
+class AbstractView extends Augmented.Object {
+  constructor(name, options) {
+    super(options);
+    this._permissions = {
+      include: [],
+      exclude: []
+    };
+    this._name = name;
+  };
   /**
   * Custom initialize - Override for custom code
   * @method init
   * @param {object} options Optional options to pass to the view
   * @memberof Augmented.View
   */
-  init: function(options) {
-  },
+  init(options) {
+  };
   /**
   * Initializes the view - <em>Note: Do not override, use init instead!</em>
   * @method initialize
@@ -23,78 +31,75 @@ var augmentedView = Backbone.View.extend({
   * @memberof Augmented.View
   * @returns {Augmented.View} Returns 'this,' as in, this view context
   */
-  initialize: function(options) {
+  initialize(options) {
     this.options = options;
     this.init(options);
-    this.render = Augmented.Utility.wrap(this.render, function(render) {
+    this.render = Augmented.Utility.wrap(this.render, (render) => {
       this.beforeRender();
       render.apply(this);
       this.afterRender();
       return this;
     });
-  },
+  };
   /**
   * Before Render callback for the view
   * @method beforeRender
   * @returns this Context of the view
   * @memberof Augmented.View
   */
-  beforeRender: function() {
+  beforeRender() {
     return this;
-  },
+  };
   /**
   * Render callback for the view
   * @method render
   * @returns this Context of the view
   * @memberof Augmented.View
   */
-  render: function() {
+  render() {
     return this;
-  },
+  };
   /**
   * After Render callback for the view
   * @method afterRender
   * @returns this Context of the view
   * @memberof Augmented.View
   */
-  afterRender: function() {
+  afterRender() {
     return this;
-  },
+  };
   /**
   * The name property of the view
   * @property {string} name The Name of the view
   * @memberof Augmented.View
   * @private
   */
-  name: "",
+
   /**
   * Sets the name of the view
   * @method setName
   * @param {string} name The name of the view
   * @memberof Augmented.View
   */
-  setName: function(name) {
-    this.name = name;
-  },
+  set name(name) {
+    this._name = name;
+  };
   /**
   * Gets the name of the view
   * @method getName
   * @returns {string} Returns the name of the view
   * @memberof Augmented.View
   */
-  getName: function() {
-    return this.name;
-  },
+  get name() {
+    return this._name;
+  };
   /**
   * Permissions in the view
   * @property permissions
   * @memberof Augmented.View
   * @private
   */
-  permissions: {
-    include: [],
-    exclude: []
-  },
+
   /**
   * Adds a permission to the view
   * @method addPermission
@@ -102,15 +107,15 @@ var augmentedView = Backbone.View.extend({
   * @param {boolean} negative Flag to set a nagative permission (optional)
   * @memberof Augmented.View
   */
-  addPermission: function(permission, negative) {
+  addPermission(permission, negative) {
     if (!negative) {
       negative = false;
     }
     if (permission !== null && !Array.isArray(permission)) {
-      var p = (negative) ? this.permissions.exclude : this.permissions.include;
+      const p = (negative) ? this._permissions.exclude : this._permissions.include;
       p.push(permission);
     }
-  },
+  };
   /**
   * Removes a permission to the view
   * @method removePermission
@@ -118,15 +123,15 @@ var augmentedView = Backbone.View.extend({
   * @param {boolean} negative Flag to set a nagative permission (optional)
   * @memberof Augmented.View
   */
-  removePermission: function(permission, negative) {
+  removePermission(permission, negative) {
     if (!negative) {
       negative = false;
     }
     if (permission !== null && !Array.isArray(permission)) {
-      var p = (negative) ? this.permissions.exclude : this.permissions.include;
+      const p = (negative) ? this._permissions.exclude : this._permissions.include;
       p.splice((p.indexOf(permission)), 1);
     }
-  },
+  };
   /**
   * Sets the permissions to the view
   * @method setPermissions
@@ -134,18 +139,21 @@ var augmentedView = Backbone.View.extend({
   * @param {boolean} negative Flag to set a nagative permission (optional)
   * @memberof Augmented.View
   */
-  setPermissions: function(permissions, negative) {
-    if (!negative) {
+  set permissions(permissions) {
+    /*if (!negative) {
       negative = false;
     }
     if (permissions !== null && Array.isArray(permissions)) {
       if (negative) {
-        this.permissions.exclude = permissions;
+        this._permissions.exclude = permissions;
       } else {
-        this.permissions.include = permissions;
+        this._permissions.include = permissions;
       }
-    }
-  },
+    }*/
+    this._permissions = permissions;
+  };
+
+
   /**
   * Gets the permissions to the view<br/>
   * Return format:<br/>
@@ -158,20 +166,20 @@ var augmentedView = Backbone.View.extend({
   * @returns {object} The permissions in the view
   * @memberof Augmented.View
   */
-  getPermissions: function() {
-    return this.permissions;
-  },
+  get permissions() {
+    return this._permissions;
+  };
   /**
   * Clears the permissions in the view
   * @method clearPermissions
   * @memberof Augmented.View
   */
-  clearPermissions: function() {
-    this.permissions = {
+  clearPermissions() {
+    this._permissions = {
       include: [],
       exclude: []
     };
-  },
+  };
   /**
   * Matches a permission in the view
   * @method matchesPermission
@@ -180,20 +188,22 @@ var augmentedView = Backbone.View.extend({
   * @returns {boolean} Returns true if the match exists
   * @memberof Augmented.View
   */
-  matchesPermission: function(match, negative) {
+  matchesPermission(match, negative) {
     if (!negative) {
       negative = false;
     }
-    var p = (negative) ? this.permissions.exclude : this.permissions.include;
+    const p = (negative) ? this._permissions.exclude : this._permissions.include;
     return (p.indexOf(match) !== -1);
-  },
+  };
   /**
   * Callback to return if this view can display
   * @method canDisplay
   * @returns {boolean} Returns true if this view can display
   * @memberof Augmented.View
   */
-  canDisplay: function() {
+  canDisplay() {
     return true;
-  }
-});
+  };
+};
+
+export default AbstractView;

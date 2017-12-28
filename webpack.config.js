@@ -7,13 +7,16 @@ module.exports = env => {
   const {ifProd, ifNotProd} = getIfUtils(env)
 
   return validate({
-    entry: './src/augmented-presentation.js',
+    entry: './src/presentation.js',
     context: __dirname,
     output: {
       path: resolve(__dirname, './dist'),
-      filename: 'augmented-presentation2.js',
+      filename: 'augmented-next-presentation.js',
       publicPath: '/dist/',
       pathinfo: ifNotProd(),
+      library: "augmented-next-presentation",
+      libraryTarget: "umd",
+      umdNamedDefine: true
     },
     devtool: ifProd('source-map', 'eval'),
     devServer: {
