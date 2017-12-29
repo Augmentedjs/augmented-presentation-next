@@ -17,6 +17,6 @@ const Presentation = {};
  */
 Presentation.VERSION = "2.0.0-alpha.0";
 
-Presentation.AbstractView = AbstractView;
+Presentation.View = AbstractView;
 
 export default Presentation;
