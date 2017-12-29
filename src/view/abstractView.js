@@ -23,20 +23,31 @@ class AbstractView extends Augmented.Object {
       include: [],
       exclude: []
     };
-    this._name = name;
+
     this.cid = Augmented.Utility.uniqueId("view");
     Augmented.Utility.extend(this, _pick(options, VIEW_OPTIONS));
     this._ensureElement();
-    this.render = Augmented.Utility.wrap(this.render, (render) => {
+    /*this.render = Augmented.Utility.wrap(this.render, (render) => {
       this.beforeRender();
       render.apply(this);
       this.afterRender();
       return this;
-    });
+    });*/
     this.initialize(options);
-    this.tagName = "div";
-    this._el = "";
-    this.template = "";
+    if (name) {
+      this._name = name;
+    } else {
+      this._name = "Untitled";
+    }
+    if (!this.tagName) {
+      this.tagName = "div";
+    }
+    if (!this._el) {
+      this._el = "";
+    }
+    if (!this.template) {
+      this.template = "";
+    }
   };
 
   /**
@@ -120,11 +131,13 @@ class AbstractView extends Augmented.Object {
   // attached to it. Exposed for subclasses using an alternative DOM
   // manipulation API.
   _removeElement() {
-    if (this._el) {
-      const el = document.querySelector(this._el);
+    let el = this._el;
+    if (this._el && Augmented.isString(this._el)) {
+      el = document.querySelector(this._el);
+    }
+    if (el) {
       el.innerHTML = "";
     }
-    //this._el.remove();
   };
 
   // Change the view's element (`this.el` property) and re-delegate the

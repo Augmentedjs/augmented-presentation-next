@@ -48,13 +48,13 @@ describe("Given an Augmented View", () => {
       expect(v).toBeDefined();
     });
 
-    it("supports beforeRender when attempting a render", () => {
+    xit("supports beforeRender when attempting a render", () => {
       view.beforeRender = () => { fired = true; };
       view.render();
       expect(fired).toBeTruthy();
     });
 
-    it("supports afterRender when attempting a render", () => {
+    xit("supports afterRender when attempting a render", () => {
       view.afterRender = () => { fired = true; };
       view.render();
       expect(fired).toBeTruthy();
@@ -116,13 +116,13 @@ describe("Given an Augmented View", () => {
       expect(view.canDisplay()).toBeTruthy();
     });
 
-    it("supports beforeRender when attempting a render", () => {
+    xit("supports beforeRender when attempting a render", () => {
       view.beforeRender = () => { fired = true; };
       view.render();
       expect(fired).toBeTruthy();
     });
 
-    it("supports afterRender when attempting a render", () => {
+    xit("supports afterRender when attempting a render", () => {
       view.afterRender = () => { fired = true; };
       view.render();
       expect(fired).toBeTruthy();
@@ -139,7 +139,7 @@ describe("Given an Augmented View", () => {
       expect(fired).toBeTruthy();
     });
 
-    it("supports beforeRender, render, then afterRender when attempting a render", () => {
+    xit("supports beforeRender, render, then afterRender when attempting a render", () => {
       view.r = 0;
       view.beforeRender = () => { view.r++; };
       view.render = () => {
