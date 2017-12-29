@@ -43,6 +43,11 @@ describe("Given an Augmented View", () => {
       expect(view.canDisplay()).toBeTruthy();
     });
 
+    it("can render", () => {
+      const v = view.render();
+      expect(v).toBeDefined();
+    });
+
     it("supports beforeRender when attempting a render", () => {
       view.beforeRender = () => { fired = true; };
       view.render();
@@ -65,8 +70,8 @@ describe("Given an Augmented View", () => {
       expect(fired).toBeTruthy();
     });
   });
-  /*
-  xdescribe("extending my own instance of Presentation View", () => {
+/*
+  describe("extending my own instance of Presentation View", () => {
     let baseView = Presentation.View.extend({
       monkey: "monkey"
     });

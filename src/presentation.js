@@ -1,4 +1,5 @@
-import AbstractView from "./view/view.js";
+import AbstractView from "./view/abstractView.js";
+import View from "./view/view.js";
 
 /**
  * Augmented.js Next Presentation - The Presentation Component
@@ -17,6 +18,7 @@ const Presentation = {};
  */
 Presentation.VERSION = "2.0.0-alpha.0";
 
-Presentation.View = AbstractView;
+Presentation.AbstractView = AbstractView;
+Presentation.View = View;
 
 export default Presentation;
