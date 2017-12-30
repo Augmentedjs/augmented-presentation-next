@@ -23,6 +23,9 @@ class AbstractView extends Augmented.Object {
       include: [],
       exclude: []
     };
+    if (!this.tagName) {
+      this.tagName = "div";
+    }
 
     this.cid = Augmented.Utility.uniqueId("view");
     Augmented.Utility.extend(this, _pick(options, VIEW_OPTIONS));
@@ -38,9 +41,6 @@ class AbstractView extends Augmented.Object {
       this._name = name;
     } else {
       this._name = "Untitled";
-    }
-    if (!this.tagName) {
-      this.tagName = "div";
     }
     if (!this._el) {
       this._el = "";
@@ -144,7 +144,7 @@ class AbstractView extends Augmented.Object {
   // view's events on the new element.
   setElement(element) {
     this.undelegateEvents();
-    this.el = element;
+    this._el = element;
     this.delegateEvents();
     return this;
   };
@@ -215,9 +215,13 @@ class AbstractView extends Augmented.Object {
   // views attached to the same DOM element.
   undelegateEvents() {
     if (this._el) {
-      const new_el = this._el.cloneNode(true); //true means a deep copy
+      let el = this._el;
+      if (Augmented.isString(this._el)) {
+        el = document.querySelector(this._el);
+      }
+      const new_el = el.cloneNode(true); //true means a deep copy
       if (new_el && new_el.parentNode) {
-        this._el.parentNode.replaceChild(new_el, this._el);
+        el.parentNode.replaceChild(new_el, el);
       }
       //this._el.removeEventListener(`.delegateEvents${this.cid}`);
     }
@@ -227,15 +231,21 @@ class AbstractView extends Augmented.Object {
   // A finer-grained `undelegateEvents` for removing a single delegated event.
   // `selector` and `listener` are both optional.
   undelegate(eventName, selector, listener) {
-    const matchesNL = this._el.querySelectorAll(selector);
-    const matches = Array.from(matchesNL);
-    let i = 0;
-    const l = matches.length;
+    if (this._el) {
+      let el = this._el;
+      if (Augmented.isString(this._el)) {
+        el = document.querySelector(this._el);
+      }
 
-    for (i = 0; i < l; i++) {
-      matches[i].removeEventListener(`${eventName}.delegateEvents${this.cid}`, listener);
+      const matchesNL = el.querySelectorAll(selector);
+      const matches = Array.from(matchesNL);
+      let i = 0;
+      const l = matches.length;
+
+      for (i = 0; i < l; i++) {
+        matches[i].removeEventListener(`${eventName}.delegateEvents${this.cid}`, listener);
+      }
     }
-
     //this._el.removeEventListener(`${eventName}.delegateEvents${this.cid}`, selector, listener);
     return this;
   };
@@ -252,17 +262,21 @@ class AbstractView extends Augmented.Object {
   // an element from the `id`, `className` and `tagName` properties.
   _ensureElement() {
     if (!this.el) {
+      console.log("no el");
       const attrs = Augmented.Utility.extend({}, Augmented.result(this, "attributes"));
       if (this.id) {
-        attrs.id = Augmented.result(this, "id");
+        attrs.id = this.id;
       }
       if (this.className) {
-        attrs["class"] = Augmented.result(this, "className");
+        attrs["class"] = this.className;
       }
-      this.setElement(this._createElement(Augmented.result(this, "tagName")));
+      const el = this._createElement(this.tagName);
+      const body = document.querySelector("body");
+      body.appendChild(el);
+      this.setElement(el);
       this._setAttributes(attrs);
     } else {
-      this.setElement(Augmented.result(this, "el"));
+      this.setElement(this._el);
     }
   };
 
@@ -271,7 +285,14 @@ class AbstractView extends Augmented.Object {
   _setAttributes(attributes) {
     let key;
     for(key in attributes) {
-      this._el.setAttribute(key, attributes[key]);
+      if (this._el) {
+        let el = this._el;
+        if (Augmented.isString(this._el)) {
+          el = document.querySelector(this._el);
+        }
+
+        el.setAttribute(key, attributes[key]);
+      }
     }
   };
 

@@ -1,4 +1,5 @@
 import AbstractView from "./abstractView.js";
+import * as  Augmented from "augmentedjs-next";
 
 /**
  * Aubstract View - the base view for handlng display in the MV* Concept
@@ -20,10 +21,11 @@ class View extends AbstractView {
    */
   render() {
     if (this._el && this.template) {
-      const el = document.querySelector(this._el);
-      if (el) {
-        el.innerHTML = this.template;
+      let el = this._el;
+      if (Augmented.isString(this._el)) {
+        el = document.querySelector(this._el);
       }
+      el.innerHTML = this.template;
     }
     return this;
   };
