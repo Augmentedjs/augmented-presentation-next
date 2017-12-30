@@ -7,7 +7,7 @@ import View from "./view/view.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.1
+ * @version 2.0.0-alpha.2
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -16,7 +16,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.1";
+Presentation.VERSION = "2.0.0-alpha.2";
 
 Presentation.AbstractView = AbstractView;
 Presentation.View = View;
