@@ -1,6 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0-alpha.4",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
@@ -48,7 +48,7 @@
     "webpack-validator": "^2.2.7"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.0.0-alpha.9"
+    "augmentedjs-next": "^2.0.0-alpha.10"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/augmented-presentation-next/issues"
