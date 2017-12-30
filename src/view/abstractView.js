@@ -196,7 +196,7 @@ class AbstractView extends Augmented.Object {
   // Add a single event listener to the view's element (or a child element
   // using `selector`). This only works for delegate-able events: not `focus`,
   // `blur`, and not `change`, `submit`, and `reset` in Internet Explorer.
-  delegate(eventName, selector, listener) {
+  /*delegate(eventName, selector, listener) {
     const matchesNL = this._el.querySelectorAll(selector);
     const matches = Array.from(matchesNL);
     let i = 0;
@@ -207,6 +207,20 @@ class AbstractView extends Augmented.Object {
     }
 
     //this._el.addEventListener(`${eventName}.delegateEvents${this.cid}`, selector, listener);
+    return this;
+  };*/
+
+  delegate(eventName, selector, listener) {
+    const matchesNL = document.querySelectorAll(selector);
+    if (matchesNL) {
+      const matches = Array.from(matchesNL);
+      let i = 0;
+      const l = matches.length;
+      for (i = 0; i < l; i++) {
+        //console.log("match", matches[i]);
+        matches[i].addEventListener(eventName, listener);
+      }
+    }
     return this;
   };
 
@@ -238,13 +252,19 @@ class AbstractView extends Augmented.Object {
       }
 
       const matchesNL = el.querySelectorAll(selector);
-      const matches = Array.from(matchesNL);
-      let i = 0;
-      const l = matches.length;
+      if (matchesNL) {
+        const matches = Array.from(matchesNL);
+        let i = 0;
+        const l = matches.length;
 
-      for (i = 0; i < l; i++) {
-        matches[i].removeEventListener(`${eventName}.delegateEvents${this.cid}`, listener);
+        for (i = 0; i < l; i++) {
+          //console.log("match", matches[i]);
+          matches[i].removeEventListener(eventName, listener);
+        }
       }
+      //for (i = 0; i < l; i++) {
+      //  matches[i].removeEventListener(`${eventName}.delegateEvents${this.cid}`, listener);
+      //}
     }
     //this._el.removeEventListener(`${eventName}.delegateEvents${this.cid}`, selector, listener);
     return this;
@@ -262,7 +282,7 @@ class AbstractView extends Augmented.Object {
   // an element from the `id`, `className` and `tagName` properties.
   _ensureElement() {
     if (!this.el) {
-      console.log("no el");
+      //console.log("no el");
       const attrs = Augmented.Utility.extend({}, Augmented.result(this, "attributes"));
       if (this.id) {
         attrs.id = this.id;
