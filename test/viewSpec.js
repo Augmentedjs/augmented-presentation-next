@@ -160,7 +160,6 @@ describe("Given an Augmented View", () => {
         view.r++;
       };
       view.render();
-      console.debug("r", view.r);
       expect(view.r).toEqual(1);
       //expect(view.f).toBeTruthy();
     });
