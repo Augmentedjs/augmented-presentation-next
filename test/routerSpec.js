@@ -19,7 +19,7 @@ describe('Given Augmented Router', () => {
 	let router = null;
 
 	beforeEach(() => {
-		router = new MyRouter();
+		router = MyRouter;
 	});
 
 	afterEach(() => {
