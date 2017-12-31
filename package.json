@@ -48,7 +48,9 @@
     "webpack-validator": "^2.2.7"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.0.0-alpha.10"
+    "augmentedjs-next": "^2.0.0-alpha.10",
+    "lodash.isregexp": "^4.0.1",
+    "lodash.map": "^4.6.0"
   },
   "bugs": {
     "url": "https://github.com/Augmentedjs/augmented-presentation-next/issues"

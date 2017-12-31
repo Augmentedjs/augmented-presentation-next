@@ -7,8 +7,9 @@ describe('Given Augmented Router', () => {
 	});
 
 	let MyRouter = new Presentation.Router({
-		routes: {
+		"routes": {
 				"test": "test"
+				}
 		}
 	);
 	const test = () => {
@@ -41,8 +42,9 @@ describe('Given Augmented Router', () => {
 			expect(router.navigate("test")).toBeTruthy();
 		});
 
+		/*
 		describe('Given a test view', () => {
-			var TestView = Presentation.View.extend({
+			var TestView = new Presentation.View.extend({
 				render: () => {
 					return true;
 				}
@@ -69,5 +71,6 @@ describe('Given Augmented Router', () => {
 				expect(router._view).toBeNull();
 			});
 		});
+		*/
 	});
 });

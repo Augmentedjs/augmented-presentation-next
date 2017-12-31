@@ -1,14 +1,15 @@
 import Augmented from "augmentedjs-next";
 import History from "./history.js";
 
+const _map = require("lodash.map");
+const _isRegExp = require("lodash.isregexp");
+
 // Cached regular expressions for matching named param parts and splatted
 // parts of route strings.
 const optionalParam = /\((.*?)\)/g;
 const namedParam    = /(\(\?)?:\w+/g;
 const splatParam    = /\*\w+/g;
 const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
-
-
 const history = new History();
 
 /**
@@ -66,7 +67,7 @@ class Router {
   //     });
   //
   route(route, name, callback) {
-    if (!_.isRegExp(route)) {
+    if (!_isRegExp(route)) {
       route = this._routeToRegExp(route);
     }
     if (Augmented.isFunction(name)) {
@@ -111,7 +112,8 @@ class Router {
       return;
     }
     this.routes = Augmented.result(this, 'routes');
-    let route, routes = Augmented.keys(this.routes);
+    let route,
+        routes = Object.keys(this.routes);
     while ((route = routes.pop()) != null) {
       this.route(route, this.routes[route]);
     }
@@ -134,7 +136,7 @@ class Router {
   // treated as `null` to normalize cross-browser behavior.
   _extractParameters(route, fragment) {
     let params = route.exec(fragment).slice(1);
-    return _.map(params, (param, i) => {
+    return _map(params, (param, i) => {
       // Don't decode the search params.
       if (i === params.length - 1) {
         return param || null;
