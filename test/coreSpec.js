@@ -1,10 +1,10 @@
 //XMLHttpRequest = require("xhr2");
-const Presentation = require("../dist/augmented-next-presentation.js");
-const expect = require("expect");
-const jsdom = require("mocha-jsdom");
+//const Presentation = require("../dist/augmented-next-presentation.js");
+//const expect = require("expect");
+//const jsdom = require("mocha-jsdom");
 
 describe('Given Augmented Presentation', () => {
-	jsdom();
+	//jsdom();
 	it('is defined', () => {
 		expect(Presentation).toBeDefined();
 	});
