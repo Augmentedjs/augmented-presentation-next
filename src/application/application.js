@@ -20,7 +20,7 @@ class Application extends Augmented.Application {
    * @method initialize
    * @memberof Application
    */
-  initialize() => {
+  initialize() {
     if (this._stylesheets && this._stylesheets.length > 0) {
       this.attachStylesheets();
     }
@@ -32,7 +32,7 @@ class Application extends Augmented.Application {
    * @memberof Application
    * @param {Augmented.Presentation.Mediator} mediator The mediator to register
    */
-  registerMediator(mediator) => {
+  registerMediator(mediator) {
     if (mediator) {
       this._mediators.push(mediator);
     }
@@ -43,7 +43,7 @@ class Application extends Augmented.Application {
    * @memberof Application
    * @param {Augmented.Presentation.Mediator} mediator The mediator to deregister
    */
-  deregisterMediator(mediator) => {
+  deregisterMediator(mediator) {
     if (mediator) {
       var i = this._mediators.indexOf(mediator);
       if (i != -1) {
@@ -58,7 +58,7 @@ class Application extends Augmented.Application {
    * @memberof Application
    * @returns {array} Returns all Mediators
    */
-  get mediators() => {
+  get mediators() {
     return this._mediators;
   };
 
@@ -68,7 +68,7 @@ class Application extends Augmented.Application {
    * @memberof Application
    * @param {string} stylesheet URI of the stylesheet
    */
-  registerStylesheet(s) => {
+  registerStylesheet(s) {
     if (s) {
       this._stylesheets.push(s);
     }
@@ -79,7 +79,7 @@ class Application extends Augmented.Application {
    * @memberof Application
    * @param {string} stylesheet URI of the stylesheet
    */
-  deregisterStylesheet(s) => {
+  deregisterStylesheet(s) {
     if (s) {
       this._stylesheets.splice((this._stylesheets.indexOf(s)), 1);
     }
@@ -89,11 +89,12 @@ class Application extends Augmented.Application {
    * @method attachStylesheets
    * @memberof Application
    */
-  attachStylesheets() => {
+  attachStylesheets() {
     const headElement = document.getElementsByTagName("head")[0],
     // create a shadow DOM
     shaddowDom = document.createDocumentFragment(),
-    i = 0, l = this._stylesheets.length, link = null;
+    l = this._stylesheets.length;
+    let i = 0, link = null;
     for (i = 0; i < l; i++) {
       link = document.createElement("link");
       link.type = "text/css";
@@ -109,7 +110,7 @@ class Application extends Augmented.Application {
    * @method replaceStylesheets
    * @memberof Application
    */
-  replaceStylesheets() => {
+  replaceStylesheets() {
     const links = document.getElementsByTagName("link"),
           l = links.length - 1;
     let i = 0;
@@ -119,7 +120,7 @@ class Application extends Augmented.Application {
     this.attachStylesheets();
   };
 
-  get stylesheets() => {
+  get stylesheets() {
     return this._stylesheets;
   };
   /**
@@ -129,7 +130,7 @@ class Application extends Augmented.Application {
    * @param {string} uri The URI of the breadcrumb
    * @param {string} name The name of the breadcrumb
    */
-  setCurrentBreadcrumb(uri, name) => {
+  setCurrentBreadcrumb(uri, name) {
     if (this._breadcrumb.size() > 1) {
       this._breadcrumb.pop();
     }
@@ -141,7 +142,7 @@ class Application extends Augmented.Application {
    * @memberof Application
    * @returns {object} Returns the current breadcrumb
    */
-  getCurrentBreadcrumb() => {
+  getCurrentBreadcrumb() {
     return this._breadcrumb.peek();
   };
 
@@ -151,7 +152,7 @@ class Application extends Augmented.Application {
    * @memberof Application
    * @returns {array} Returns alls the breadcrumbs
    */
-  get breadcrumbs() => {
+  get breadcrumbs() {
     return this._breadcrumb.toArray();
   };
 };

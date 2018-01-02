@@ -7,13 +7,13 @@ import sync from "./request/sync.js";
 import request from "./request/request.js";
 import Application from "./application/application.js";
 import Widget from "./widget/widget.js";
-import Dom from "./dom/dom/js";
+import Dom from "./dom/dom.js";
 import ViewController from "./controller/viewController.js";
 import LocalStorageFactory from "./storage/localStorageFactory.js";
 import LocalStorage from "./storage/localStorage.js";
 import NamespacedLocalStorage from "./storage/namespacedLocalStorage.js";
-import Collection = from "./collection/collection.js";
-import LocalStorageCollection = from "./collection/localStorageCollection.js";
+import Collection from "./collection/collection.js";
+import LocalStorageCollection from "./collection/localStorageCollection.js";
 
 /**
  * Augmented.js Next Presentation - The Presentation Component
