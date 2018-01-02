@@ -3,6 +3,8 @@
 //const expect = require("expect");
 //const jsdom = require("mocha-jsdom");
 
+const expect = chai.expect;
+
 describe('Given Augmented Presentation', () => {
 	//jsdom();
 	it('is defined', () => {

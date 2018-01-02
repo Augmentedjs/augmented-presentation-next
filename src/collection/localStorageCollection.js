@@ -9,9 +9,9 @@ const DEFAULT_KEY = `${DEFAULT_NAMESPACE}.key`;
  * @memberof Presentation
  * @extends Augmented.Collection
  */
-class LocalStorageCollection extends Augmented.Collection {
-  constructor() {
-    super();
+class LocalStorageCollection extends Augmented.AbstractCollection {
+  constructor(models, options) {
+    super(models, options);
     this._key = DEFAULT_KEY;
     this._persist = false;
     this._storage = null;

@@ -8,9 +8,9 @@ import sync from "../request/sync.js";
  * @memberof Presentation
  * @extends Augmented.Collection
  */
-class Collection extends Augmented.Collection {
-  constructor() {
-    super();
+class Collection extends Augmented.AbstractCollection {
+  constructor(models, options) {
+    super(models, options);
     this._key = DEFAULT_KEY;
     this._persist = false;
     this._storage = null;
