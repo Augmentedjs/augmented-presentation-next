@@ -1,4 +1,5 @@
-import AbstractModel from "../model/abstractModel.js";
+import Augmented from "augmentedjs-next";
+import sync from "../request/sync.js";
 
 /**
  * Model <br/>
@@ -11,29 +12,30 @@ import AbstractModel from "../model/abstractModel.js";
  * @memberof Augmented.Presentation
  * @extends AbstractModel
  */
-export default class Model extends AbstractModel {
-  constructor() {
-    super();
+class Model extends Augmented.AbstractModel {
+  constructor(attributes, options, ...args) {
+    super(attributes, options, args);
+    this.mock = false;
+    this.crossOrigin = false;
   };
 
   /**
-  * mock property
-  * @property {boolean} mock Sets mock mode in the model
-  * @memberof Model
-  */
-  mock = false;
+   * mock property
+   * @property {boolean} mock Sets mock mode in the model
+   * @memberof Model
+   */
 
   /**
-  * Cross Origin property
-  * @property {boolean} crossOrigin Cross Origin property
-  * @memberof Model
-  */
-  crossOrigin = false;
+   * Cross Origin property
+   * @property {boolean} crossOrigin Cross Origin property
+   * @memberof Model
+   */
+
   /**
-  * Model.sync - Sync model data to bound REST call
-  * @method sync
-  * @memberof Model
-  */
+   * sync - Sync model data to bound REST call
+   * @method sync
+   * @memberof Model
+   */
   sync(method, model, options) {
     if (!options) {
       options = {};
@@ -54,3 +56,5 @@ export default class Model extends AbstractModel {
     return sync(method, model, options);
   };
 };
+
+export default Model;

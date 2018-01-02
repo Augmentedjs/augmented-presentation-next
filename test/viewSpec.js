@@ -1,4 +1,5 @@
-import Presentation from "../src/presentation.js";
+//XMLHttpRequest = require("xhr2");
+const Presentation = require("../dist/augmented-next-presentation.js");
 import expect from "expect";
 const jsdom = require("mocha-jsdom");
 

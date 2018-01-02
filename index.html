@@ -1,11 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link type="text/css" rel="stylesheet" href="styles/main.css"/>
-		<script src="./dist/augmented2.js" defer></script>
+		<title>Augmented Next About Page</title>
+		<script src="./dist/augmented-next-presentation.js"></script>
+		<script>
+			const myView = new Presentation.View("About");
+			myView.el = "#about";
+			myView.template = `<h1>Welcome To Augmented Next!</h1><h2>Elegant Developement made simple.</h2><p>Version ${Presentation.VERSION}</p>`;
+			myView.render();
+		</script>
 	</head>
 	<body>
+		<p id="about"></p>
 	</body>
 </html>

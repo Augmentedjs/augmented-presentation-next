@@ -1,43 +1,52 @@
-// For Node and Browser.  Requires xhr2 for Node (install in Node or by app)
-//let XMLHttpRequest = (XMLHttpRequest) ? XMLHttpRequest : require("xhr2");
+import Augmented from "augmentedjs-next";
+import HEADERS from "./headers.js";
+import DATA_TYPE from "./dataType.js";
 
-/*
- * Setup the rest of jQuery-like eventing and handlers for native xhr
-*/
-/*let aXHR = XMLHttpRequest;
-Augmented.Utility.extend(aXHR, {
-  done: function() {},
-  fail: function() {},
-  always: function() {},
-  then: function() {}
-});
+const ASYNC = true; // Sync no longer supported by most clients
 
-let mockXHR = function(){
-  this.responseType = "text";
+const mockXHR = () => {
+  this.responseType = DATA_TYPE.TEXT;
   this.responseText = "";
   this.async = true;
   this.status = 200;
   this.header = {};
   this.timeout = 70;
-  this.open = function(method, uri, async, user, password) {
+  this.open = (method, uri, ASYNC, user, password) => {
     this.url = uri;
     this.async = async;
     this.user = user;
     this.method = method;
   };
-  this.send = function() { this.onload(); };
-  this.setRequestHeader = function(header, value) {
+  this.send = () => {
+    this.onload();
+  };
+  this.setRequestHeader = (header, value) => {
     this.header.header = value;
   };
-  this.done = function() {};
-  this.fail = function() {};
-  this.always = function() {};
-  this.then = function() {};
+  this.done = () => {};
+  this.fail = () => {};
+  this.always = () => {};
+  this.then = () => {};
   this.options = {};
 };
-*/
 
-const ASYNC = true;
+/*
+ * Setup the rest of jQuery-like eventing and handlers for native xhr
+ */
+let aXHR = null;
+
+if (XMLHttpRequest) {
+  aXHR = XMLHttpRequest;
+
+  Augmented.Utility.extend(aXHR, {
+    done: () => {},
+    fail: () => {},
+    always: () => {},
+    then: () => {}
+  });
+} else {
+  aXHR = mockXHR;
+}
 
 /**
  * AJAX capability using simple jQuery-like API<br/>
@@ -58,12 +67,12 @@ const ASYNC = true;
  * <li>timeout</li>
  * <li>mock - special flag for mocking response</li>
  * </ul>
- * @method Augmented.Request.request
+ * @method request
  * @static
- * @param {Augmented.Request.Configuration} configuration object of configuration properties and callbacks.
+ * @param {Presentation.Request.Configuration} configuration object of configuration properties and callbacks.
  * @returns success or failure callback
- * @memberof Augmented.Request
- * @example Augmented.Request.request({
+ * @memberof Presentation
+ * @example Presentation.Request.request({
  *         url: uri,
  *         contentType: "text/plain",
  *         dataType: "text",
@@ -101,21 +110,21 @@ const request = (configuration) => {
       //async = true;
     }
 
-    if (async && configuration.dataType) {
-      xhr.responseType = (configuration.dataType) ? configuration.dataType : "text";
+    if (ASYNC && configuration.dataType) {
+      xhr.responseType = (configuration.dataType) ? configuration.dataType : DATA_TYPE.TEXT;
     }
 
     xhr.open(method, encodeURI(configuration.url), ASYNC,
-    (configuration.user !== undefined) ? configuration.user : "",
-    (configuration.password !== undefined) ? configuration.password : "");
-    xhr.setRequestHeader("Content-Type", (configuration.contentType) ? configuration.contentType : "text/plain");
+      (configuration.user !== undefined) ? configuration.user : "",
+      (configuration.password !== undefined) ? configuration.password : "");
+    xhr.setRequestHeader(HEADERS.TYPE, (configuration.contentType) ? configuration.contentType : HEADERS.TEXT);
 
-    if (configuration.dataType === "json") {
-      xhr.setRequestHeader("Accept", "application/json");
+    if (configuration.dataType === DATA_TYPE.JSON) {
+      xhr.setRequestHeader(HEADERS.ACCEPT, HEADERS.APPLICATION);
     }
 
     if (!cache) {
-      xhr.setRequestHeader("Cache-Control", "no-cache");
+      xhr.setRequestHeader(HEADERS.CACHE, HEADERS.NO_CACHE);
     }
 
     // CORS
@@ -128,17 +137,16 @@ const request = (configuration) => {
         allowMethods = configuration.allowMethods;
       }
 
-      xhr.setRequestHeader("Access-Control-Allow-Origin", allowOrigins);
-      xhr.setRequestHeader("Access-Control-Allow-Methods", allowMethods);
+      xhr.setRequestHeader(HEADERS.ALLOW_ORIGINS, allowOrigins);
+      xhr.setRequestHeader(HEADERS.ALLOW_METHODS, allowMethods);
     }
 
     // Authorization
     if (xhr.withCredentials && configuration.user && configuration.password) {
-      xhr.setRequestHeader("Authorization", "Basic " + window.btoa(configuration.user + ":" + configuration.password));
+      xhr.setRequestHeader(HEADERS.AUTH, "Basic " + window.btoa(configuration.user + ":" + configuration.password));
     }
 
     // custom headers
-
     if (configuration.headers) {
       let i = 0, keys = Object.keys(configuration.headers), l = keys.length;
 
@@ -147,18 +155,18 @@ const request = (configuration) => {
       }
     }
 
-    xhr.onload = function() {
+    xhr.onload = () => {
       try {
         if (xhr.status > 199 && xhr.status < 399) {
           if (configuration.success) {
-            if (xhr.responseType === "" || xhr.responseType === "text") {
+            if (xhr.responseType === "" || xhr.responseType === DATA_TYPE.TEXT) {
               if (xhr.responseText) {
                 configuration.success(xhr.responseText, xhr.status, xhr);
               } else {
                 //logger.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
                 configuration.success("", xhr.status, xhr);
               }
-            } else if (xhr.responseType === "json") {
+            } else if (xhr.responseType === DATA_TYPE.JSON) {
               if (xhr.response) {
                 //logger.debug("AUGMENTED: Ajax (JSON responseType) native JSON.");
                 configuration.success(xhr.response, xhr.status, xhr);

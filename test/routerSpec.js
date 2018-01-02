@@ -1,7 +1,10 @@
+//XMLHttpRequest = require("xhr2");
+const Presentation = require("../dist/augmented-next-presentation.js");
 const expect = require("expect");
-import Presentation from "../src/presentation.js";
+const jsdom = require("mocha-jsdom");
 
 describe('Given Augmented Router', () => {
+	jsdom();
 	it('is defined', () => {
 		expect(Presentation.Router).toBeDefined();
 	});

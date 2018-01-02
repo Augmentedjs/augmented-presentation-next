@@ -1,7 +1,7 @@
+import Augmented from "augmentedjs-next";
 import METHOD_MAP from "./methodMap.js";
-import extend from "./extend.js";
-import isFunction from "./isFunction.js";
-import request from "./request/request.js";
+import request from "./request.js";
+import DATA_TYPE from "./dataType.js";
 
 /**
  * Augmented.sync - Base sync method that can pass special augmented features
@@ -16,12 +16,15 @@ const sync = (method, model, options) => {
   }
 
   // Default JSON-request options.
-  const params = {type: type, dataType: "json"};
+  const params = {
+    type: type,
+    dataType: DATA_TYPE.JSON
+  };
 
   // Ensure that we have a URL.
   if (!options.url) {
     if (model.url) {
-      if (isFunction(model.url)) {
+      if (Augmented.isFunction(model.url)) {
         params.url = model.url();
       } else {
         params.url = model.url;
@@ -38,7 +41,7 @@ const sync = (method, model, options) => {
   }
 
   // Don't process data on a non-GET request.
-  if (params.type !== "GET") {
+  if (params.type !== METHOD_MAP.read) {
     params.processData = false;
   }
 
@@ -53,7 +56,7 @@ const sync = (method, model, options) => {
   };
 
   // Make the request, allowing the user to override any Ajax options.
-  const xhr = options.xhr = request(extend(params, options));
+  const xhr = options.xhr = request(Augmented.extend(params, options));
   model.trigger("request", model, xhr, options);
   return xhr;
 };

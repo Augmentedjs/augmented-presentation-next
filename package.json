@@ -1,6 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
@@ -45,10 +45,11 @@
     "webpack-config-utils": "^2.0.0",
     "webpack-dev-middleware": "^1.12.2",
     "webpack-dev-server": "^2.1.0",
-    "webpack-validator": "^2.2.7"
+    "webpack-validator": "^2.2.7",
+    "xhr2": "^0.1.4"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.0.0-alpha.10",
+    "augmentedjs-next": "^2.0.0-alpha.11",
     "lodash.isregexp": "^4.0.1",
     "lodash.map": "^4.6.0"
   },
