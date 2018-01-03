@@ -9,8 +9,8 @@ import sync from "../request/sync.js";
  * <li>Security</li>
  * </ul>
  * @constructor Model
- * @memberof Augmented.Presentation
- * @extends AbstractModel
+ * @memberof Presentation
+ * @extends Augmented.AbstractModel
  */
 class Model extends Augmented.AbstractModel {
   constructor(attributes, options, ...args) {

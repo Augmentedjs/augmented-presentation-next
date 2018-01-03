@@ -1,20 +1,26 @@
-//XMLHttpRequest = require("xhr2");
-const Presentation = require("../dist/augmented-next-presentation.js");
-const expect = require("expect");
-const jsdom = require("mocha-jsdom");
+//const Presentation = require("../dist/augmented-next-presentation.js");
+//const expect = require("expect");
+class TestView extends Presentation.View {
+	constructor(name) {
+		super(name);
+	};
+	render() {
+		return true;
+	};
+};
+
+const MyRouter = new Presentation.Router({
+	"routes": {
+			"test": "test"
+			}
+	}
+);
 
 describe('Given Augmented Router', () => {
-	jsdom();
 	it('is defined', () => {
-		expect(Presentation.Router).toBeDefined();
+		expect(Presentation.Router).to.not.be.undefined;
 	});
 
-	let MyRouter = new Presentation.Router({
-		"routes": {
-				"test": "test"
-				}
-		}
-	);
 	const test = () => {
 		return true;
 	};
@@ -34,28 +40,23 @@ describe('Given Augmented Router', () => {
 	*/
 	describe('Given an instance of router', () => {
 		it('is defined', () => {
-			expect(router).toBeDefined();
+			expect(router).to.not.be.undefined;
 		});
 
 		it('is a router', () => {
-			expect(router instanceof Presentation.Router).toBeTruthy();
+			expect(router instanceof Presentation.Router).to.be.true;
 		});
 
 		it('can "navigate" to a route', () => {
-			expect(router.navigate("test")).toBeTruthy();
+			expect(router.navigate("test")).to.deep.equal({ "routes": { "test": "test" } });
 		});
 
-		/*
 		describe('Given a test view', () => {
-			var TestView = new Presentation.View.extend({
-				render: () => {
-					return true;
-				}
-			}), view;
+			let	view = null;
+
 			beforeEach(() => {
 				view = new TestView();
 			});
-
 			afterEach(() => {
 				view.remove();
 				view = null;
@@ -63,17 +64,16 @@ describe('Given Augmented Router', () => {
 
 			it('can load a view', () => {
 				router.loadView(view);
-				expect(router._view).toBeDefined();
+				expect(router._view).to.not.be.undefined;
 				router._view = null;
 			});
 
 			it('can cleanup a view', () => {
 				router._view = view;
-				expect(router._view).toBeDefined();
+				expect(router._view).to.not.be.undefined;
 				router.cleanup();
-				expect(router._view).toBeNull();
+				expect(router._view).to.be.null;
 			});
 		});
-		*/
 	});
 });

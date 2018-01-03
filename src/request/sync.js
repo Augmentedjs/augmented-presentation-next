@@ -56,7 +56,7 @@ const sync = (method, model, options) => {
   };
 
   // Make the request, allowing the user to override any Ajax options.
-  const xhr = options.xhr = request(Augmented.extend(params, options));
+  const xhr = options.xhr = request(Augmented.Utility.extend(params, options));
   model.trigger("request", model, xhr, options);
   return xhr;
 };

@@ -1,4 +1,5 @@
 import Augmented from "augmentedjs-next";
+import LocalStorageFactory from "../storage/localStorageFactory.js";
 const DEFAULT_NAMESPACE = "augmented.localstorage.collection";
 const DEFAULT_KEY = `${DEFAULT_NAMESPACE}.key`;
 
@@ -16,6 +17,14 @@ class LocalStorageCollection extends Augmented.AbstractCollection {
     this._persist = false;
     this._storage = null;
     this.url = null;
+
+    if (options && options.persist) {
+      this._persist = options.persist;
+    }
+    if (options && options.key) {
+      this._key = options.key;
+    }
+    this._storage = LocalStorageFactory.getStorage(this._persist, DEFAULT_NAMESPACE);
   };
 
   /**
@@ -42,16 +51,7 @@ class LocalStorageCollection extends Augmented.AbstractCollection {
    * @param {object} options Any options to pass
    * @memberof Augmented.LocalStorageCollection
    */
-  initialize(options) {
-    if (options && options.persist) {
-      this._persist = options.persist;
-    }
-    if (options && options.key) {
-      this._key = options.key;
-    }
-    this._storage = Augmented.LocalStorageFactory.getStorage(this._persist, DEFAULT_NAMESPACE);
-    this.init(options);
-  };
+  initialize(options) {};
   /**
    * @method init Custom init method for the model (called at inititlize)
    * @param {object} options Any options to pass

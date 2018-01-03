@@ -11,7 +11,6 @@ import sync from "../request/sync.js";
 class Collection extends Augmented.AbstractCollection {
   constructor(models, options) {
     super(models, options);
-    this._key = DEFAULT_KEY;
     this._persist = false;
     this._storage = null;
     this.url = null;

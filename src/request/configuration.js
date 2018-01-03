@@ -4,7 +4,7 @@
 * @name Augmented.Request.Configuration
 * @memberof Augmented.Request
 */
-const Configuration: {
+const Configuration = {
   /**
   * url property
   * @property {string} url the url
@@ -124,7 +124,7 @@ const Configuration: {
   * @property {boolean} mock a toggle to mock the ajax call
   * @memberof Augmented.Request.Configuration
   */
-  mock: false;
+  mock: false
 };
 
 export default Configuration;

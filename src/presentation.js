@@ -5,6 +5,7 @@ import Router from "./router.js";
 import Model from "./model/model.js";
 import sync from "./request/sync.js";
 import request from "./request/request.js";
+import Configuration from "./request/configuration.js";
 import Application from "./application/application.js";
 import Widget from "./widget/widget.js";
 import Dom from "./dom/dom.js";
@@ -21,7 +22,7 @@ import LocalStorageCollection from "./collection/localStorageCollection.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.6
+ * @version 2.0.0-alpha.5
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -30,7 +31,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.6";
+Presentation.VERSION = "2.0.0-alpha.5";
 
 Presentation.AbstractView = AbstractView;
 Presentation.View = View;
@@ -43,11 +44,14 @@ Presentation.ViewController = ViewController;
 Presentation.LocalStorageFactory = LocalStorageFactory;
 Presentation.NamespacedLocalStorage = NamespacedLocalStorage;
 Presentation.LocalStorage = LocalStorage;
+Presentation.Model = Model;
 Presentation.Collection = Collection;
 Presentation.LocalStorageCollection = LocalStorageCollection;
 
 Presentation.sync = sync;
 Presentation.request = request;
+Presentation.Request = {};
+Presentation.Request.Configuration = Configuration;
 
 /**
  * Augmented jQuery-like selectors usinge native selectors</br/>
@@ -63,4 +67,7 @@ Presentation.request = request;
  */
 Presentation.$ = Dom.query;
 
-export default Presentation;
+//export default Presentation;
+
+// for webpack default on the browser
+module.exports = Presentation;

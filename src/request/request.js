@@ -1,10 +1,9 @@
-import Augmented from "augmentedjs-next";
 import HEADERS from "./headers.js";
 import DATA_TYPE from "./dataType.js";
 
 const ASYNC = true; // Sync no longer supported by most clients
 
-const mockXHR = () => {
+function mockXHR() {
   this.responseType = DATA_TYPE.TEXT;
   this.responseText = "";
   this.async = true;
@@ -13,7 +12,7 @@ const mockXHR = () => {
   this.timeout = 70;
   this.open = (method, uri, ASYNC, user, password) => {
     this.url = uri;
-    this.async = async;
+    this.async = ASYNC;
     this.user = user;
     this.method = method;
   };
@@ -33,20 +32,18 @@ const mockXHR = () => {
 /*
  * Setup the rest of jQuery-like eventing and handlers for native xhr
  */
-let aXHR = null;
+/*let aXHR = null;
 
 if (XMLHttpRequest) {
+  //console.info("AUGMENTED: Ajax is alive");
   aXHR = XMLHttpRequest;
-
-  Augmented.Utility.extend(aXHR, {
-    done: () => {},
-    fail: () => {},
-    always: () => {},
-    then: () => {}
-  });
+  aXHR.done = () => {};
+  aXHR.fail = () => {};
+  aXHR.always = () => {};
+  aXHR.then = () => {};
 } else {
   aXHR = mockXHR;
-}
+}*/
 
 /**
  * AJAX capability using simple jQuery-like API<br/>
@@ -72,7 +69,7 @@ if (XMLHttpRequest) {
  * @param {Presentation.Request.Configuration} configuration object of configuration properties and callbacks.
  * @returns success or failure callback
  * @memberof Presentation
- * @example Presentation.Request.request({
+ * @example Presentation.request({
  *         url: uri,
  *         contentType: "text/plain",
  *         dataType: "text",
@@ -81,9 +78,11 @@ if (XMLHttpRequest) {
  *     });
  */
 const request = (configuration) => {
-  //logger.debug("AUGMENTED: Ajax object: " + JSON.stringify(configuration));
+  //console.debug("AUGMENTED: Ajax object: " + JSON.stringify(configuration));
   let xhr = null;
+
   if (configuration && configuration.url) {
+    //console.warn("AUGMENTED: Ajax Here");
     let type = configuration.type;
 
     if (!configuration.method && configuration.type) {
@@ -92,9 +91,9 @@ const request = (configuration) => {
 
     let method = (configuration.method) ? configuration.method : "GET";
     let cache = (configuration.cache) ? (configuration.cache) : true;
-
-    xhr = (configuration.mock) ? new mockXHR() : new aXHR();
-
+//console.warn("AUGMENTED: Ajax Here 2", (configuration.mock));
+    xhr = (configuration.mock) ? new mockXHR() : new XMLHttpRequest();
+    //console.warn("AUGMENTED: Ajax xhr", xhr);
     if (configuration.timeout) {
       xhr.timeout = configuration.timeout;
     }
@@ -163,18 +162,18 @@ const request = (configuration) => {
               if (xhr.responseText) {
                 configuration.success(xhr.responseText, xhr.status, xhr);
               } else {
-                //logger.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
+                //console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
                 configuration.success("", xhr.status, xhr);
               }
             } else if (xhr.responseType === DATA_TYPE.JSON) {
               if (xhr.response) {
-                //logger.debug("AUGMENTED: Ajax (JSON responseType) native JSON.");
+                //console.debug("AUGMENTED: Ajax (JSON responseType) native JSON.");
                 configuration.success(xhr.response, xhr.status, xhr);
               } else if (xhr.responseText) {
-                //logger.debug("AUGMENTED: Ajax (JSON responseType) parsed JSON from string.");
+                //console.debug("AUGMENTED: Ajax (JSON responseType) parsed JSON from string.");
                 configuration.success(JSON.parse(xhr.responseText), xhr.status, xhr);
               } else {
-                //logger.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
+                //console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
                 configuration.success("", xhr.status, xhr);
               }
             } else {
@@ -183,7 +182,7 @@ const request = (configuration) => {
               } else if (xhr.response) {
                 configuration.success(xhr.response, xhr.status, xhr);
               } else {
-                //logger.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
+                //console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
                 configuration.success("", xhr.status, xhr);
               }
             }
@@ -196,7 +195,7 @@ const request = (configuration) => {
           }
         }
       } catch(e) {
-        //logger.error("AUGMENTED: Ajax (" + e + ")");
+        //console.error("AUGMENTED: Ajax (" + e + ")");
         if (configuration && configuration.error) {
           configuration.error(xhr, xhr.status, xhr.statusText);
         }
@@ -214,12 +213,7 @@ const request = (configuration) => {
     xhr.send(((configuration.data) ? configuration.data : ""));
   }
 
-  //logger.debug("AUGMENTED: Ajax status (" + xhr.status + ")");
-
-  this.done = () => {};
-  this.fail = () => {};
-  this.always = () => {};
-  this.then = () => {};
+  //console.debug("AUGMENTED: Ajax status (" + xhr.status + ")");
 
   return this;
 };

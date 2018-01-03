@@ -1,6 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.0.0-alpha.6",
+  "version": "2.0.0-alpha.5",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
@@ -49,7 +49,7 @@
     "xhr2": "^0.1.4"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.0.0-alpha.11",
+    "augmentedjs-next": "^2.0.0-alpha.12",
     "lodash.isregexp": "^4.0.1",
     "lodash.map": "^4.6.0"
   },

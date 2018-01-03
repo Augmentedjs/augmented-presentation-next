@@ -1,11 +1,7 @@
-//XMLHttpRequest = require("xhr2");
-const Presentation = require("../dist/augmented-next-presentation.js");
-import expect from "expect";
-const jsdom = require("mocha-jsdom");
+//const Presentation = require("../dist/augmented-next-presentation.js");
+//import expect from "expect";
 
 describe("Given an Augmented View", () => {
-  jsdom();
-
   describe("creating a standard instance of Augmented View", () => {
     let view = null;
     let fired  = false;
@@ -22,43 +18,43 @@ describe("Given an Augmented View", () => {
     });
 
     it("has an augmented View", () => {
-      expect(Presentation.View).toBeDefined();
+      expect(Presentation.View).to.not.be.undefined;
     });
     it("can set a name property", () => {
       view.name = "test";
-      expect(view.name).toEqual("test");
+      expect(view.name).to.equal("test");
     });
     it("can set permissions", () => {
       view.addPermission("admin");
-      expect(view.permissions.include).not.toEqual([]);
+      expect(view.permissions.include).to.not.equal([]);
     });
     it("can match a permission", () => {
       view.permissions = { "include": ["admin", "bubba"], "exclude": [] };
-      expect(view.matchesPermission("bubba")).toBeTruthy();
+      expect(view.matchesPermission("bubba")).to.be.true;
     });
     it("does not match a negative permission", () => {
       view.permissions = { "include": ["admin", "bubba"], "exclude": [] };
-      expect(view.matchesPermission("bubba", true)).toBeFalsy();
+      expect(view.matchesPermission("bubba", true)).to.be.false;
     });
     it("contains a overridable canDisplay", () => {
-      expect(view.canDisplay()).toBeTruthy();
+      expect(view.canDisplay()).to.be.true;
     });
 
     it("can render", () => {
       const v = view.render();
-      expect(v).toBeDefined();
+      expect(v).to.not.be.undefined;
     });
 
     xit("supports beforeRender when attempting a render", () => {
       view.beforeRender = () => { fired = true; };
       view.render();
-      expect(fired).toBeTruthy();
+      expect(fired).to.be.true;
     });
 
     xit("supports afterRender when attempting a render", () => {
       view.afterRender = () => { fired = true; };
       view.render();
-      expect(fired).toBeTruthy();
+      expect(fired).to.be.true;
     });
 
     it("supports correct \"this\" when overriding a render", () => {
@@ -68,7 +64,7 @@ describe("Given an Augmented View", () => {
         fired = ((that !== window) && (that.monkey === "monkey"));
       };
       view.render();
-      expect(fired).toBeTruthy();
+      expect(fired).to.be.true;
     });
   });
 
@@ -95,38 +91,38 @@ describe("Given an Augmented View", () => {
     });
 
     it("has an BaseView that extends Presentation.View", () => {
-      expect(BaseView).toBeDefined();
+      expect(BaseView).to.not.be.undefined;
     });
     it("can set a name property", () => {
       view.name = "test";
-      expect(view.name).toEqual("test");
+      expect(view.name).to.equal("test");
     });
     it("can set permissions", () => {
       view.addPermission("admin");
-      expect(view.permissions.include).not.toEqual([]);
+      expect(view.permissions.include).to.not.equal([]);
     });
     it("can match a permission", () => {
       view.permissions = { "include": ["admin", "bubba"], "exclude": [] };
-      expect(view.matchesPermission("bubba")).toBeTruthy();
+      expect(view.matchesPermission("bubba")).to.be.true;
     });
     it("does not match a negative permission", () => {
       view.permissions = { "include": ["admin", "bubba"], "exclude": [] };
-      expect(view.matchesPermission("bubba", true)).toBeFalsy();
+      expect(view.matchesPermission("bubba", true)).to.be.false;
     });
     it("contains a overridable canDisplay", () => {
-      expect(view.canDisplay()).toBeTruthy();
+      expect(view.canDisplay()).to.be.true;
     });
 
     xit("supports beforeRender when attempting a render", () => {
       view.beforeRender = () => { fired = true; };
       view.render();
-      expect(fired).toBeTruthy();
+      expect(fired).to.be.true;
     });
 
     xit("supports afterRender when attempting a render", () => {
       view.afterRender = () => { fired = true; };
       view.render();
-      expect(fired).toBeTruthy();
+      expect(fired).to.be.true;
     });
 
     // defect fixs
@@ -137,7 +133,7 @@ describe("Given an Augmented View", () => {
         fired = ((that !== window) && (that.monkey === "monkey"));
       };
       view.render();
-      expect(fired).toBeTruthy();
+      expect(fired).to.be.true;
     });
 
     xit("supports beforeRender, render, then afterRender when attempting a render", () => {
@@ -149,8 +145,8 @@ describe("Given an Augmented View", () => {
       };
       view.afterRender = () => { view.r++; };
       view.render();
-      expect(view.r).toEqual(1);
-      expect(fired).toBeTruthy();
+      expect(view.r).to.equal(1);
+      expect(fired).to.be.true;
     });
 
     it("calls render only once", () => {
@@ -161,8 +157,8 @@ describe("Given an Augmented View", () => {
         view.r++;
       };
       view.render();
-      expect(view.r).toEqual(1);
-      //expect(view.f).toBeTruthy();
+      expect(view.r).to.equal(1);
+      //expect(view.f).to.be.true;
     });
   });
 });

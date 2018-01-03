@@ -1,9 +1,6 @@
-const expect = require("expect");
-import Presentation from "../src/presentation.js";
-
-xdescribe("Given an Abstract Model", () => {
+describe("Given an Abstract Model", () => {
   it("is defined", () => {
-    expect(Presentation.Model).toBeDefined();
+    expect(Presentation.Model).to.not.be.undefined;
   });
 
   let model;
@@ -15,38 +12,37 @@ xdescribe("Given an Abstract Model", () => {
   });
 
   it("can check if empty", () => {
-    expect(model.isEmpty()).toBeTruthy();
+    expect(model.isEmpty()).to.be.true;
   });
 
-  xit("without Cross Origin Support will not make Cross Origin requests", () => {
+  it("without Cross Origin Support will not make Cross Origin requests", () => {
     model.crossOrigin = false;
-    expect(model.crossOrigin).toBeFalsy();
+    expect(model.crossOrigin).to.be.false;
   });
 
-  xit("with Cross Origin Support will make Cross Origin requests", () => {
+  it("with Cross Origin Support will make Cross Origin requests", () => {
     model.crossOrigin = true;
-    expect(model.crossOrigin).toBeTruthy();
+    expect(model.crossOrigin).to.be.true;
   });
 
   xit("with mock can return something", () => {
-    let s = false;
     model.mock = true;
     model.url = "/info";
-    model.fetch({"success": () => { s = true; }});
-    expect(s).toBeTruthy();
+    model.fetch({"success": () => { model.set("x", "x") }});
+    expect(model.get("x")).to.equal("x");
   });
 
   it("can reset with data", () => {
     model.set({ "y": "y" });
     model.reset({ "x": "x" });
 
-    expect(model.get("x")).toEqual("x");
-    expect(model.get("y")).not.toBeDefined();
+    expect(model.get("x")).to.equal("x");
+    expect(model.get("y")).to.be.undefined;
   });
 
   it("can set with data", () => {
     model.set({ "x": "x" });
-    expect(model.get("x")).toEqual("x");
+    expect(model.get("x")).to.equal("x");
   });
 
   describe("Given validation", () => {
@@ -58,12 +54,12 @@ xdescribe("Given an Abstract Model", () => {
 	  });
 
 		it("with no Schema does not support Validation", () => {
-			expect(model.supportsValidation()).toBeFalsy();
+			expect(model.supportsValidation()).to.be.false;
 		});
 
 		it("with an empty Schema does support Validation", () => {
 			model.schema = {};
-			expect(model.supportsValidation()).toBeTruthy();
+			expect(model.supportsValidation()).to.be.true;
 		});
 	});
 });
