@@ -9,6 +9,8 @@
 
 #mocha h1 {
   font-size: 18pt;
+  font-weight: 400;
+  color: #4CAF50;
 }
 
 #mocha h2 {
@@ -48,14 +50,30 @@
   font-size: 14pt;
 }
 
+#mocha .test.fail {
+  color: #F44336;
+}
+
+#mocha .test pre.error {
+  color: #D50000;
+}
+
+#mocha .test.pending {
+  color: #00BCD4;
+}
+
 #mocha-stats {
   position: absolute;
   top: 4px;
   right: 40px;
   font-size: 12pt;
   margin: 0;
-  color: #888;
+  color: #E0E0E0;
   z-index: 1;
+}
+
+#mocha-stats em {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 #mocha-report > li {

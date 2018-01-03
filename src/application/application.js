@@ -45,7 +45,7 @@ class Application extends Augmented.Application {
    */
   deregisterMediator(mediator) {
     if (mediator) {
-      var i = this._mediators.indexOf(mediator);
+      const i = this._mediators.indexOf(mediator);
       if (i != -1) {
         this._mediators.splice(i, 1);
       }

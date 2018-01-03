@@ -13,13 +13,13 @@ describe('Given Augmented Presentation Application', () => {
 		it('has a random name', () => {
 			expect(app.name).not.to.equal("untitled");
 		});
-/*
-		it('has a Mediator Registry', () => {
-			expect(app.Mediators instanceof Array).to.be.true;
-		});
 
-		xit('can register a Mediator View', () => {
-			var view = new Presentation.Mediator();
+		it('has a Mediator Registry', () => {
+			expect(app.mediators instanceof Array).to.be.true;
+		});
+/*
+		it('can register a Mediator View', () => {
+			let view = new Presentation.Mediator();
 			app.registerMediator(view);
 			expect(app.getMediators().length > 0).to.be.true;
 			view.remove();
@@ -27,7 +27,7 @@ describe('Given Augmented Presentation Application', () => {
 		});
 
 		it('can register an extended Mediator View', () => {
-			var view = Augmented.Presentation.Mediator.extend({ });
+			let view = Augmented.Presentation.Mediator.extend({ });
 			app.registerMediator(view);
 			expect(app.getMediators().length > 0).to.be.true;
 			view = null;
@@ -35,9 +35,9 @@ describe('Given Augmented Presentation Application', () => {
 
 		it('can return a few registered Mediator Views', () => {
 			console.log("mediators: " + JSON.stringify(app.getMediators()));
-			var view1 = new Augmented.Presentation.Mediator();
-			var view2 = new Augmented.Presentation.Mediator();
-			var view3 = new Augmented.Presentation.Mediator();
+			let view1 = new Augmented.Presentation.Mediator();
+			let view2 = new Augmented.Presentation.Mediator();
+			let view3 = new Augmented.Presentation.Mediator();
 
 			app.registerMediator(view1);
 			app.registerMediator(view2);
@@ -86,8 +86,8 @@ describe('Given Augmented Presentation Application', () => {
 		});
 
 		it('can start', () => {
-			app.start();
-			expect(app.started).to.be.true;
+			const p = app.start();
+			expect(p).to.not.be.undefined;
 		});
 	});
 });
