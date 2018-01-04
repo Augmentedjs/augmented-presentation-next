@@ -38,11 +38,13 @@
   <script src="test/collectionSpec.js"></script>
   <script src="test/applicationSpec.js"></script>
   <script src="test/localStorageSpec.js"></script>
+  <script src="test/widgetSpec.js"></script>
+  <script src="test/DOMSpec.js"></script>
 	<!-- run -->
   <script>
     mocha.checkLeaks();
-    //mocha.globals(['jQuery']);
     mocha.run();
   </script>
+  <div id="sandbox"></div>
 </body>
 </html>

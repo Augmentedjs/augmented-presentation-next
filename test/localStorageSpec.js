@@ -29,7 +29,7 @@ describe('Given Presentation Local Storage', () => {
 				nameSpacedLocalStorage.setItem("monkey", { color: "brown", age: 1, name: "Lance Link" });
 				console.debug("nameSpacedLocalStorage debug: " + nameSpacedLocalStorage.getItem("monkey") );
 
-				expect(nameSpacedLocalStorage.getItem("monkey")).to.equal({ color: "brown", age: 1, name: "Lance Link" });
+				expect(nameSpacedLocalStorage.getItem("monkey")).to.deep.equal({ color: "brown", age: 1, name: "Lance Link" });
 				expect(nameSpacedLocalStorage.length()).to.equal(1);
 			});
 
@@ -50,7 +50,7 @@ describe('Given Presentation Local Storage', () => {
 			it('Can add an Item as Array', () => {
 				let array = [ "bonobo", "chimpanzee", "howler" ];
 				nameSpacedLocalStorage.setItem("monkeys", array);
-				expect(nameSpacedLocalStorage.getItem("monkeys")).to.equal(array);
+				expect(nameSpacedLocalStorage.getItem("monkeys")).to.deep.equal(array);
 			});
 
 			it('Can get an Item Array', () => {
@@ -111,23 +111,22 @@ describe('Given Presentation Local Storage', () => {
 				expect(item.length).to.equal(3);
 				globalLocalStorage.removeItem("donkeys");
 			});
-
+			/*
 			it('Can add an Item as Map', () => {
-				let map = new Presentation.Utility.PresentationMap();
+				let map = new Augmented.Utility.Map();
 				map.set("name", "Bob");
 				map.set("age", 36);
 				map.set("height", "6.0\"");
 
 				globalLocalStorage.setItem("myMap", map);
-				let otherMap = new Presentation.Utility.PresentationMap();
+				let otherMap = new Augmented.Utility.Map();
 				otherMap.marshall(globalLocalStorage.getItem("myMap"));
-				expect(globalLocalStorage.getItem("myMap")).to.equal(map.toJSON());
-				expect(otherMap.toJSON()).to.equal(map.toJSON());
+				expect(globalLocalStorage.getItem("myMap")).to.deep.equal(map.toJSON());
+				expect(otherMap.toJSON()).to.deep.equal(map.toJSON());
 				globalLocalStorage.removeItem("myMap");
-
 			});
+			*/
 		});
-
 	});
 	describe('Given persistent Local Storage', () => {
 		let nameSpacedLocalStorage = Presentation.LocalStorageFactory.getStorage(true,'testingPersistentNamespacedLocalStorage');
