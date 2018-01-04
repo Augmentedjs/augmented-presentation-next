@@ -14,9 +14,8 @@ describe('Given Augmented Presentation Mediator', () => {
 			let m, c;
 
 			beforeEach(() => {
-				m = new Presentation.Mediator();
-				c = new Presentation.Colleague();
-				c.setName("monkey");
+				m = new Presentation.Mediator({ "name": "mediator" });
+				c = new Presentation.Colleague({ "name": "monkey" });
 			});
 
 			afterEach(() => {
@@ -37,7 +36,7 @@ describe('Given Augmented Presentation Mediator', () => {
 			it('the mediator can observe a colleague', () => {
 				m.observeColleague(c, () => { return "EEAK!";});
 
-				let channels = m.getDefaultChannel();
+				let channels = m.defaultChannel;
 
 				expect(channels).to.not.be.undefined;
 				expect(channels instanceof Array).to.be.true;
@@ -59,14 +58,14 @@ describe('Given Augmented Presentation Mediator', () => {
 			it('the mediator can add subscriptions to the channel "monkey"', () => {
 				m.observeColleague(c, () => { return "EEAK!";}, "monkey");
 
-				m.setSubscriptions({
+				m.subscriptions = {
 					fn: () => {},
 					context: this,
 					once: false,
 					identifier: "i"
-				});
+				};
 
-				expect(m.getSubscriptions()).to.not.be.undefined;
+				expect(m.subscriptions).to.not.be.undefined;
 				m.dismissColleague(c, () => { return "EEAK!";}, "monkey");
 			});
 
@@ -75,12 +74,12 @@ describe('Given Augmented Presentation Mediator', () => {
 				m.dismissColleague(c, () => { return "EEAK!";}, "monkey");
 				let channels = m.getChannel("monkey");
 
-				expect(channels).to.equal([]);
+				expect(channels).to.deep.equal([]);
 			});
 
 			it('the mediator can observe a colleague once and not leak', () => {
 				m.observeColleague(c, () => { return "EEAK!";}, "monkey");
-				let m2 = new Augmented.Presentation.Mediator();
+				let m2 = new Presentation.Mediator();
 				m2.observeColleague(c, () => { return "EEAK!";}, "monkey");
 				let channels = m2.getChannel("monkey"), c2 = m.getChannel("monkey");
 
@@ -99,8 +98,16 @@ describe('Given Augmented Presentation Mediator', () => {
 				expect(ee).to.equal(null);
 			});
 
-			it('the mediator can observe a colleague with the same message name as cvhannel and not fail', () => {
-				c.on("monkey", function(d) { this.eeak = d; });
+			it('the mediator can observe a colleague and trigger an event', () => {
+				c.on("bubba", (d) => { console.log("hello", d); c.eeak = d; });
+				m.observeColleagueAndTrigger(c, "bubba", "monkey");
+				m.publish("bubba", "monkey", "EEAK!");
+				m.dismissColleagueTrigger(c, "bubba", "monkey");
+				expect(c.eeak).to.equal("EEAK!");
+			});
+
+			it('the mediator can observe a colleague with the same message name as channel and not fail', () => {
+				c.on("monkey", (d) => { console.log(c); c.eeak = d; });
 				m.observeColleagueAndTrigger(c, "monkey", "monkey");
 				m.publish("monkey", "monkey", "EEAK!");
 				m.dismissColleagueTrigger(c, "monkey", "monkey");

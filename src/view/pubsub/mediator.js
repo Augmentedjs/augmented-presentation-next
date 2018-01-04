@@ -1,3 +1,4 @@
+import * as Augmented from "augmentedjs-next";
 import Colleague from "./colleague.js";
 
 /**
@@ -27,7 +28,7 @@ class Mediator extends Colleague {
   /**
   * Default Channel Property
   * @property {string} defaultChannel The default channel for the view
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   * @private
   */
 
@@ -35,7 +36,7 @@ class Mediator extends Colleague {
   /**
   * Default identifier Property
   * @property {string} defaultIdentifier The default identifier for the view
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   * @private
   */
 
@@ -43,7 +44,7 @@ class Mediator extends Colleague {
   /**
   * Channels Property
   * @property {object} _channels The channels for the view (object array)
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   * @private
   */
 
@@ -51,14 +52,14 @@ class Mediator extends Colleague {
   /**
   * Colleague Map Property
   * @property {object} _colleagueMap The colleagues observed by index in the channel
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   * @private
   */
 
 
   /**
   * @property {Object} _subscriptions List of subscriptions
-  * @memberof Augmented.Presentation.Colleague
+  * @memberof Presentation.Colleague
   * @private
   */
 
@@ -66,17 +67,17 @@ class Mediator extends Colleague {
   /**
   * Extend delegateEvents() to set subscriptions
   * @method delegateEvents
-  * @memberof Augmented.Presentation.Colleague
+  * @memberof Presentation.Colleague
   */
   delegateEvents(events) {
     super.delegateEvents(events);
-    this.setSubscriptions();
+    this.subscriptions = {};
   };
 
   /**
   * Extend undelegateEvents() to unset subscriptions
   * @method undelegateEvents
-  * @memberof Augmented.Presentation.Colleague
+  * @memberof Presentation.Colleague
   */
   undelegateEvents(events) {
     super.undelegateEvents(events);
@@ -86,7 +87,7 @@ class Mediator extends Colleague {
   /**
   * Gets all subscriptions
   * @method getSubscriptions
-  * @memberof Augmented.Presentation.Colleague
+  * @memberof Presentation.Colleague
   * @returns {object} Returns all subscriptions
   */
   get subscriptions() {
@@ -97,7 +98,7 @@ class Mediator extends Colleague {
   * Subscribe to each subscription
   * @method setSubscriptions
   * @param {Object} [subscriptions] An optional hash of subscription to add
-  * @memberof Augmented.Presentation.Colleague
+  * @memberof Presentation.Colleague
   */
   set subscriptions(subscriptions) {
     if (subscriptions) {
@@ -129,7 +130,7 @@ class Mediator extends Colleague {
   * Unsubscribe to each subscription
   * @method unsetSubscriptions
   * @param {Object} [subscriptions] An optional hash of subscription to remove
-  * @memberof Augmented.Presentation.Colleague
+  * @memberof Presentation.Colleague
   */
   unsetSubscriptions(subscriptions) {
     subscriptions = subscriptions || this._subscriptions;
@@ -155,14 +156,14 @@ class Mediator extends Colleague {
   /**
   * Observe a Colleague View - observe a Colleague and add to a channel
   * @method observeColleague
-  * @param {Augmented.Presentation.Colleague} colleague The Colleague to observe
+  * @param {Presentation.Colleague} colleague The Colleague to observe
   * @param {function} callback The callback to call for this colleague
   * @param {string} channel The Channel to add the pubished events to
   * @param {string} identifier The identifier for this function
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   */
   observeColleague(colleague, callback, channel, identifier) {
-    if (colleague instanceof Augmented.Presentation.Colleague) {
+    if (colleague instanceof Presentation.Colleague) {
       if (!channel) {
         channel = this._defaultChannel;
       }
@@ -174,16 +175,19 @@ class Mediator extends Colleague {
   /**
   * Observe a Colleague View - observe a Colleague and add to a channel and auto trigger events
   * @method observeColleague
-  * @param {Augmented.Presentation.Colleague} colleague The Colleague to observe
+  * @param {Presentation.Colleague} colleague The Colleague to observe
   * @param {string} channel The Channel to add the pubished events to
   * @param {string} identifier The identifier for this function
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   */
   observeColleagueAndTrigger(colleague, channel, identifier) {
     this.observeColleague(
       colleague,
-      function() {
-        colleague.trigger(arguments[0], arguments[1]);
+      (...args) => {
+        console.log("triggered!", args[0]);
+        console.log("this", this);
+        console.log("colleague", colleague);
+        colleague.trigger(channel, args[0]); //arguments[0], arguments[1]);
       },
       channel,
       (identifier) ? identifier : this._defaultIdentifier
@@ -191,7 +195,7 @@ class Mediator extends Colleague {
   };
 
   _dismissMe(colleague) {
-    if (colleague instanceof Augmented.Presentation.Colleague) {
+    if (colleague instanceof Presentation.Colleague) {
       let channel = this._colleagueMap[colleague], myChannelObject = this._channels[channel];
       this.unsubscribe(channel, myChannelObject.fn, colleague, myChannelObject.identifier);
     }
@@ -200,14 +204,14 @@ class Mediator extends Colleague {
   /**
   * Dismiss a Colleague View - Remove a Colleague from the channel
   * @method dismissColleague
-  * @param {Augmented.Presentation.Colleague} colleague The Colleague to observe
+  * @param {Presentation.Colleague} colleague The Colleague to observe
   * @param {function} callback The callback to call on channel event
   * @param {string} channel The Channel events are pubished to
   * @param {string} identifier The identifier for this function
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   */
   dismissColleague(colleague, callback, channel, identifier) {
-    if (colleague instanceof Augmented.Presentation.Colleague) {
+    if (colleague instanceof Presentation.Colleague) {
       if (!channel) {
         channel = this._defaultChannel;
       }
@@ -219,17 +223,17 @@ class Mediator extends Colleague {
   /**
   * Dismiss a Colleague View - Remove a Colleague from the channel that has an auto trigger
   * @method dismissColleagueTrigger
-  * @param {Augmented.Presentation.Colleague} colleague The Colleague to observe
+  * @param {Presentation.Colleague} colleague The Colleague to observe
   * @param {string} channel The Channel events are pubished to
   * @param {string} identifier The identifier for this function
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   */
   dismissColleagueTrigger(colleague, channel, identifier) {
     let id = (identifier) ? identifier : this._defaultIdentifier;
     this.dismissColleague(
       colleague,
-      function() {
-        colleague.trigger(arguments[0], arguments[1]);
+      (...args) => {
+        colleague.trigger(args[0], args[1]);//arguments[0], arguments[1]);
       },
       channel,
       id
@@ -244,14 +248,17 @@ class Mediator extends Colleague {
   * @param {object} context The context (or 'this')
   * @param {boolean} once Toggle to set subscribe only once
   * @param {string} identifier The identifier for this function
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   */
   subscribe(channel, callback, context, once, identifier) {
+
+    console.log("subscribe: callback", callback);
+
     if (!this._channels[channel]) {
       this._channels[channel] = [];
     }
 
-    let obj  = {
+    let obj = {
       fn: callback,
       // TODO: the context set to 'this' may be the source of the edge case mediator instance for a channel
       context: context || this,
@@ -270,22 +277,26 @@ class Mediator extends Colleague {
   * @method publish
   * @param {string} channel The Channel events are pubished to
   * @param {object} N Extra parameter to pass to handler
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   */
-  publish(channel) {
+  publish(channel, ...args) {
     if (!channel || !this._channels[channel]) {
       //_logger.warn("AUGMENTED: Mediator: channel '" + channel + "' doest exist.");
       return;
     }
 
-    let args = [].slice.call(arguments, 1), subscription;
+    let myArgs = [].slice.call(args, 1), subscription;
+    console.log("args", myArgs);
     let i = 0, l = this._channels[channel].length;
 
     for (i = 0; i < l; i++) {
       subscription = this._channels[channel][i];
       if (subscription) {
+        console.log("subscription", subscription);
         if (subscription.fn) {
-          subscription.fn.apply(subscription.context, args);
+          console.log("calling", subscription.fn);
+          //subscription.fn(args);
+          subscription.fn.apply(subscription.context, myArgs);
         }
         if (subscription.once) {
           this.unsubscribe(channel, subscription.fn, subscription.context, subscription.identifier);
@@ -304,7 +315,7 @@ class Mediator extends Colleague {
   * @param {function} callback The function callback regestered
   * @param {object} context The context (or 'this')
   * @param {string} identifier The identifier for this function
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   */
   unsubscribe(channel, callback, context, identifier) {
     if (!this._channels[channel]) {
@@ -338,7 +349,7 @@ class Mediator extends Colleague {
   * @param {string} subscription The subscription to subscribe to
   * @param {object} context The context (or 'this')
   * @param {string} identifier The identifier for this function
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   */
   subscribeOnce(channel, subscription, context, identifier) {
     this.subscribe(channel, subscription, context, true, identifier);
@@ -348,7 +359,7 @@ class Mediator extends Colleague {
   * Get All the Colleagues for a channel
   * @method getColleagues
   * @param {string} channel The Channel events are pubished to
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   * @returns {array} The colleagues for a channel
   */
   getColleagues(channel) {
@@ -359,7 +370,7 @@ class Mediator extends Colleague {
   /**
   * Get Channels
   * @method getChannels
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   * @returns {object} Returns all the channels
   */
   get channels() {
@@ -370,7 +381,7 @@ class Mediator extends Colleague {
   * Get a specific channel
   * @method getChannel
   * @param {string} channel The Channel events are pubished to
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   * @returns {array} Returns the requested channel or null if nothing exists
   */
   getChannel(channel) {
@@ -384,7 +395,7 @@ class Mediator extends Colleague {
   * Get the default channel
   * Convenience method for getChannel(null)
   * @method getDefaultChannel
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   * @returns {array} Returns the default channel or null if nothing exists
   */
   get defaultChannel() {
@@ -394,7 +405,7 @@ class Mediator extends Colleague {
   /**
   * Get the default identifier
   * @method getDefaultIdentifier
-  * @memberof Augmented.Presentation.Mediator
+  * @memberof Presentation.Mediator
   * @returns {string} Returns the default identifier
   */
   get defaultIdentifier() {

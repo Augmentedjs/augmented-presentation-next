@@ -10,6 +10,7 @@
     "setup": "npm install && npm run validate",
     "validate": "npm-run-all lint test build",
     "test": "mocha --require babel-core/register",
+    "test-web": "node index.js",
     "docs": "jsdoc ./src -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json"
   },
   "repository": {
@@ -32,7 +33,6 @@
     "chai": "^4.1.2",
     "eslint": "^3.2.2",
     "eslint-config-kentcdodds": "^9.0.2",
-    "expect": "^21.2.1",
     "foodoc": "0.0.8",
     "jsdoc": "^3.5.5",
     "jsdom": "^7.0.2",
@@ -46,10 +46,10 @@
     "webpack-dev-middleware": "^1.12.2",
     "webpack-dev-server": "^2.1.0",
     "webpack-validator": "^2.2.7",
-    "xhr2": "^0.1.4"
+    "express": "^4.16.2"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.0.0-alpha.13",
+    "augmentedjs-next": "^2.0.0-alpha.14",
     "lodash.isregexp": "^4.0.1",
     "lodash.map": "^4.6.0"
   },

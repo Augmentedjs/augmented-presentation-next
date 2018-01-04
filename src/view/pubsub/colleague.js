@@ -14,7 +14,7 @@ import View from "../view.js";
 class Colleague extends View {
   constructor(options) {
     super(options);
-    if (options.mediator) {
+    if (options && options.mediator) {
       this._mediator = mediator;
     } else {
       this._mediator = null;

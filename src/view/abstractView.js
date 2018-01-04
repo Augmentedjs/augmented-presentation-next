@@ -1,4 +1,4 @@
-import * as  Augmented from "augmentedjs-next";
+import * as Augmented from "augmentedjs-next";
 
 const _pick = require("lodash.pick");
 const _bind = require("lodash.bind");
