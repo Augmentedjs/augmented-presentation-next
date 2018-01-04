@@ -17,37 +17,50 @@ const VIEW_OPTIONS = ["model", "collection", "el", "id", "attributes", "classNam
  * @extends Augmented.Object
  */
 class AbstractView extends Augmented.Object {
-  constructor(name, options) {
+  constructor(options) {
     super(options);
-    this._permissions = {
-      include: [],
-      exclude: []
-    };
-    if (!this.tagName) {
+    if (options && options.name) {
+      this._name = options.name;
+    } else {
+      this._name = "Untitled";
+    }
+    if (options && options.permissions) {
+      this._permissions = options.permissions;
+    } else {
+      this._permissions = {
+        include: [],
+        exclude: []
+      };
+    }
+    if (options && options.tagName) {
+      this.tagName = options.tagName;
+    } else {
       this.tagName = "div";
+    }
+    if (options && options.el) {
+      this._el = options.el;
+    } else {
+      this._el = "";
     }
 
     this.cid = Augmented.Utility.uniqueId("view");
     Augmented.Utility.extend(this, _pick(options, VIEW_OPTIONS));
+
     this._ensureElement();
+
     /*this.render = Augmented.Utility.wrap(this.render, (render) => {
       this.beforeRender();
       render.apply(this);
       this.afterRender();
       return this;
     });*/
-    this.initialize(options);
-    if (name) {
-      this._name = name;
+    if (options && options.template) {
+      this.template = options.template;
     } else {
-      this._name = "Untitled";
-    }
-    if (!this._el) {
-      this._el = "";
-    }
-    if (!this.template) {
       this.template = "";
     }
+
+    this.initialize(options);
   };
 
   /**

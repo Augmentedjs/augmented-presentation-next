@@ -1,8 +1,8 @@
 //const Presentation = require("../dist/augmented-next-presentation.js");
 //const expect = require("expect");
 class TestView extends Presentation.View {
-	constructor(name) {
-		super(name);
+	constructor(options) {
+		super(options);
 	};
 	render() {
 		return true;

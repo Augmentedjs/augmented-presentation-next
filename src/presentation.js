@@ -16,6 +16,10 @@ import NamespacedLocalStorage from "./storage/namespacedLocalStorage.js";
 import Collection from "./collection/collection.js";
 import LocalStorageCollection from "./collection/localStorageCollection.js";
 
+import Colleague from "./view/pubsub/colleague.js";
+import Mediator from "./view/pubsub/mediator.js";
+
+
 /**
  * Augmented.js Next Presentation - The Presentation Component
  *
@@ -47,6 +51,8 @@ Presentation.LocalStorage = LocalStorage;
 Presentation.Model = Model;
 Presentation.Collection = Collection;
 Presentation.LocalStorageCollection = LocalStorageCollection;
+Presentation.Colleague = Colleague;
+Presentation.Mediator = Mediator;
 
 Presentation.sync = sync;
 Presentation.request = request;

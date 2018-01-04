@@ -9,8 +9,8 @@ import * as  Augmented from "augmentedjs-next";
  * @extends Augmented.Object
  */
 class View extends AbstractView {
-  constructor(name, options) {
-    super(name, options);
+  constructor(options) {
+    super(options);
   };
 
   /**

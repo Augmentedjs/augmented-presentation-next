@@ -71,7 +71,7 @@ describe("Given an Augmented View", () => {
   describe("extending my own instance of Presentation View", () => {
     class BaseView extends Presentation.View {
       constructor() {
-        super("monkey", null);
+        super({ "name": "monkey" });
         this.monkey = "monkey";
       };
     };
