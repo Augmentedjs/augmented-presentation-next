@@ -6,8 +6,8 @@
   "templates": {
     "systemSummary": "Augmented.js 2 Presentation - Elegant Developement made simple.",
     "systemColor": "#2196F3",
-    "systemLogo": "images/logo.png",
-    "logoFile": "images/logo.png",
+    "systemLogo": "public/images/logo.png",
+    "logoFile": "public/images/logo.png",
     "cleverLinks": false,
     "monospaceLinks": false,
     "dateFormat": "ddd MMM Do YYYY",
@@ -22,7 +22,7 @@
     "inverseNav": true,
     "protocol": "html://",
     "methodHeadingReturns": false,
-    "favicon": "images/favicon-32x32.png",
+    "favicon": "public/images/favicon-32x32.png",
     "showTableOfContents": true
   },
   "markdown": {
