@@ -1,6 +1,6 @@
 # Augmented.js Next Presentation
 ## The Augmented.js Framework Presentation Module
-### Version 2.0.0-alpha.0
+### Version 2.0.0-alpha
 ### Faridah Malik
 **aug·ment·ed**
 /ˌôɡˈmentəd /
@@ -22,13 +22,16 @@ The key focus of the project is to tie a number of missing features, patterns, a
 
 The **Presentation** extension adds extensive abilities to the presentation layer.
 
-This extension adds:
+### Current Features:
 * Mediator patterned PubSub Views
 * MVVM Decorator Views with declaratives
 * Enhanced Application Object
   - PubSub mediation and bootstrapping for Application objects
   - CSS Stylesheet registration and injection
   - breadcrumb management
+
+
+### Work in progress features
 * Automatic Tables generated from a JSON schema and data
   - sortable
   - editable
