@@ -99,7 +99,7 @@ describe('Given Augmented Presentation Mediator', () => {
 			});
 
 			it('the mediator can observe a colleague and trigger an event', () => {
-				c.on("bubba", (d) => { console.log("hello", d); c.eeak = d; });
+				c.on("bubba", (d) => { c.eeak = d; });
 				m.observeColleagueAndTrigger(c, "bubba", "monkey");
 				m.publish("bubba", "monkey", "EEAK!");
 				m.dismissColleagueTrigger(c, "bubba", "monkey");
@@ -107,7 +107,7 @@ describe('Given Augmented Presentation Mediator', () => {
 			});
 
 			it('the mediator can observe a colleague with the same message name as channel and not fail', () => {
-				c.on("monkey", (d) => { console.log(c); c.eeak = d; });
+				c.on("monkey", (d) => { c.eeak = d; });
 				m.observeColleagueAndTrigger(c, "monkey", "monkey");
 				m.publish("monkey", "monkey", "EEAK!");
 				m.dismissColleagueTrigger(c, "monkey", "monkey");

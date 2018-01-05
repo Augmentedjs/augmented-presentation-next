@@ -184,9 +184,9 @@ class Mediator extends Colleague {
     this.observeColleague(
       colleague,
       (...args) => {
-        console.log("triggered!", args[0]);
-        console.log("this", this);
-        console.log("colleague", colleague);
+        ////console.log("triggered!", args[0]);
+        ////console.log("this", this);
+        ////console.log("colleague", colleague);
         colleague.trigger(channel, args[0]); //arguments[0], arguments[1]);
       },
       channel,
@@ -252,7 +252,7 @@ class Mediator extends Colleague {
   */
   subscribe(channel, callback, context, once, identifier) {
 
-    console.log("subscribe: callback", callback);
+    ////console.log("subscribe: callback", callback);
 
     if (!this._channels[channel]) {
       this._channels[channel] = [];
@@ -286,15 +286,15 @@ class Mediator extends Colleague {
     }
 
     let myArgs = [].slice.call(args, 1), subscription;
-    console.log("args", myArgs);
+    //console.log("args", myArgs);
     let i = 0, l = this._channels[channel].length;
 
     for (i = 0; i < l; i++) {
       subscription = this._channels[channel][i];
       if (subscription) {
-        console.log("subscription", subscription);
+        //console.log("subscription", subscription);
         if (subscription.fn) {
-          console.log("calling", subscription.fn);
+          //console.log("calling", subscription.fn);
           //subscription.fn(args);
           subscription.fn.apply(subscription.context, myArgs);
         }

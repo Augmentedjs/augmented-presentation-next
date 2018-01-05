@@ -10,7 +10,7 @@
     "setup": "npm install && npm run validate",
     "validate": "npm-run-all lint test build",
     "test": "mocha --require babel-core/register",
-    "test-web": "node index.js",
+    "start": "node index.js",
     "docs": "jsdoc ./src -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json"
   },
   "repository": {
@@ -49,7 +49,7 @@
     "express": "^4.16.2"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.0.0-alpha.14",
+    "augmentedjs-next": "^2.0.0-alpha.15",
     "lodash.isregexp": "^4.0.1",
     "lodash.map": "^4.6.0"
   },
