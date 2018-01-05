@@ -161,4 +161,53 @@ describe("Given an Augmented View", () => {
       //expect(view.f).to.be.true;
     });
   });
+
+  describe("Extending my own using option declarations", () => {
+    class YetAnotherView extends Presentation.View {
+      constructor(options) {
+        console.log("options", options);
+        super(options);
+        console.log("im here", this.name);
+        if (!this.template) {
+          console.log("oops no template");
+          this.template = `oops`;
+        }
+        if (!this.events) {
+          console.log("oops no events");
+          this.events = {
+            "click #bump2": "bump"
+          };
+        }
+      };
+      bump(e) {
+        console.log("I was clicked!");
+      };
+    };
+    it("can init without error with no options", () => {
+      const yetAnotherView = new YetAnotherView();
+      expect(yetAnotherView).to.not.be.undefined;
+    });
+    it("can init without error with options with invalid el", () => {
+      const yetAnotherView = new YetAnotherView({
+        "el": "view2",
+        "name": "YetAnotherView",
+        "template": "<h1>This is a simple view.</h1><h2>My view name is YetAnotherView.</h2><p>This vew is declared by passing options.</p><button id=\"bump2\">Click Me</button>",
+        "events": {
+          "click #bump2": "bump"
+        }
+      });
+      expect(yetAnotherView).to.not.be.undefined;
+    });
+    it("can init without error with options with valid el", () => {
+      const yetAnotherView = new YetAnotherView({
+        "el": "#sandbox",
+        "name": "YetAnotherView",
+        "template": "<h1>This is a simple view.</h1><h2>My view name is YetAnotherView.</h2><p>This vew is declared by passing options.</p><button id=\"bump2\">Click Me</button>",
+        "events": {
+          "click #bump2": "bump"
+        }
+      });
+      expect(yetAnotherView).to.not.be.undefined;
+    });
+  });
 });

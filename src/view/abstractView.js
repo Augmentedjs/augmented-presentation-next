@@ -1,19 +1,19 @@
 import * as Augmented from "augmentedjs-next";
 
-const _pick = require("lodash.pick");
+//const _pick = require("lodash.pick");
 const _bind = require("lodash.bind");
 
 // Cached regex to split keys for `delegate`.
 const DELEGATE_EVENT_SPLITTER = /^(\S+)\s*(.*)$/;
 
 // List of view options to be set as properties.
-const VIEW_OPTIONS = ["model", "collection", "el", "id", "attributes", "className", "tagName", "events"];
+//const VIEW_OPTIONS = ["model", "collection", "el", "id", "attributes", "className", "tagName", "events"];
 
 /**
  * Aubstract View - the base view for handlng display in the MV* Concept
  * @constructor
  * @name Presentation.AbstractView
- * @memberof Augmented
+ * @memberof Presentation
  * @extends Augmented.Object
  */
 class AbstractView extends Augmented.Object {
@@ -43,8 +43,38 @@ class AbstractView extends Augmented.Object {
       this._el = "";
     }
 
+    if (options && options.model) {
+      this.model = options.model;
+    } else {
+      this.model = null;
+    }
+
+    if (options && options.collection) {
+      this.collection = options.collection;
+    } else {
+      this.collection = null;
+    }
+
+    if (options && options.id) {
+      this.id = options.id;
+    } else {
+      this.id = 0;
+    }
+
+    if (options && options.className) {
+      this.className = options.className;
+    } else {
+      this.className = "";
+    }
+
+    if (options && options.attributes) {
+      this.attributes = options.attributes;
+    } else {
+      this.attributes = {};
+    }
+
     this.cid = Augmented.Utility.uniqueId("view");
-    Augmented.Utility.extend(this, _pick(options, VIEW_OPTIONS));
+    //Augmented.Utility.extend(this, _pick(options, VIEW_OPTIONS));
 
     this._ensureElement();
 
@@ -66,14 +96,14 @@ class AbstractView extends Augmented.Object {
   /**
    * The name property of the view
    * @property {string} name The Name of the view
-   * @memberof Augmented.View
+   * @memberof AbstractView
    * @private
    */
 
   /**
    * Permissions in the view
    * @property permissions
-   * @memberof Augmented.View
+   * @memberof AbstractView
    * @private
    */
 
@@ -89,7 +119,7 @@ class AbstractView extends Augmented.Object {
    * Custom initialize - Override for custom code
    * @method init
    * @param {object} options Optional options to pass to the view
-   * @memberof Augmented.View
+   * @memberof AbstractView
    */
   init(options) {
   };
@@ -97,8 +127,8 @@ class AbstractView extends Augmented.Object {
    * Initializes the view - <em>Note: Do not override, use init instead!</em>
    * @method initialize
    * @param {object} options Optional options to pass to the view
-   * @memberof Augmented.View
-   * @returns {Augmented.View} Returns 'this,' as in, this view context
+   * @memberof AbstractView
+   * @returns {View} Returns 'this,' as in, this view context
    */
   initialize(options) {
     this.options = options;
@@ -108,7 +138,7 @@ class AbstractView extends Augmented.Object {
    * Before Render callback for the view
    * @method beforeRender
    * @returns this Context of the view
-   * @memberof Augmented.View
+   * @memberof AbstractView
    */
   beforeRender() {
     return this;
@@ -117,7 +147,7 @@ class AbstractView extends Augmented.Object {
    * Render callback for the view
    * @method render
    * @returns this Context of the view
-   * @memberof Augmented.View
+   * @memberof AbstractView
    */
   render() {
     return this;
@@ -126,7 +156,7 @@ class AbstractView extends Augmented.Object {
    * After Render callback for the view
    * @method afterRender
    * @returns this Context of the view
-   * @memberof Augmented.View
+   * @memberof AbstractView
    */
   afterRender() {
     return this;
@@ -156,6 +186,7 @@ class AbstractView extends Augmented.Object {
   // Change the view's element (`this.el` property) and re-delegate the
   // view's events on the new element.
   setElement(element) {
+    //console.log("setting element", element);
     this.undelegateEvents();
     this._el = element;
     this.delegateEvents();
@@ -230,7 +261,7 @@ class AbstractView extends Augmented.Object {
       let i = 0;
       const l = matches.length;
       for (i = 0; i < l; i++) {
-        //console.log("match", matches[i]);
+        ////console.log("match", matches[i]);
         matches[i].addEventListener(eventName, listener);
       }
     }
@@ -241,14 +272,23 @@ class AbstractView extends Augmented.Object {
   // You usually don't need to use this, but may wish to if you have multiple
   // views attached to the same DOM element.
   undelegateEvents() {
+    ////console.log("undelegateEvents");
     if (this._el) {
+      ////console.log("undelegateEvents el", this._el);
       let el = this._el;
       if (Augmented.isString(this._el)) {
         el = document.querySelector(this._el);
       }
-      const new_el = el.cloneNode(true); //true means a deep copy
-      if (new_el && new_el.parentNode) {
-        el.parentNode.replaceChild(new_el, el);
+      if (el) {
+        ////console.log("undelegateEvents selected el", el);
+        const new_el = el.cloneNode(true); //true means a deep copy
+
+        //console.log("undelegateEvents cloned el", new_el);
+        if (new_el && new_el.parentNode) {
+          //console.log("undelegateEvents parent el", new_el.parentNode);
+          el.parentNode.replaceChild(new_el, el);
+          //console.log("undelegateEvents replaced el");
+        }
       }
       //this._el.removeEventListener(`.delegateEvents${this.cid}`);
     }
@@ -263,18 +303,20 @@ class AbstractView extends Augmented.Object {
       if (Augmented.isString(this._el)) {
         el = document.querySelector(this._el);
       }
+      if (el) {
+        const matchesNL = el.querySelectorAll(selector);
+        if (matchesNL) {
+          const matches = Array.from(matchesNL);
+          let i = 0;
+          const l = matches.length;
 
-      const matchesNL = el.querySelectorAll(selector);
-      if (matchesNL) {
-        const matches = Array.from(matchesNL);
-        let i = 0;
-        const l = matches.length;
-
-        for (i = 0; i < l; i++) {
-          //console.log("match", matches[i]);
-          matches[i].removeEventListener(eventName, listener);
+          for (i = 0; i < l; i++) {
+            ////console.log("match", matches[i]);
+            matches[i].removeEventListener(eventName, listener);
+          }
         }
       }
+
       //for (i = 0; i < l; i++) {
       //  matches[i].removeEventListener(`${eventName}.delegateEvents${this.cid}`, listener);
       //}
@@ -305,8 +347,12 @@ class AbstractView extends Augmented.Object {
       }
       const el = this._createElement(this.tagName);
       const body = document.querySelector("body");
-      body.appendChild(el);
-      this.setElement(el);
+      if (body) {
+        body.appendChild(el);
+      }
+      if (el) {
+        this.setElement(el);
+      }
       this._setAttributes(attrs);
     } else {
       this.setElement(this._el);
@@ -323,8 +369,9 @@ class AbstractView extends Augmented.Object {
         if (Augmented.isString(this._el)) {
           el = document.querySelector(this._el);
         }
-
-        el.setAttribute(key, attributes[key]);
+        if (el) {
+          el.setAttribute(key, attributes[key]);
+        }
       }
     }
   };
@@ -333,7 +380,7 @@ class AbstractView extends Augmented.Object {
   * Sets the name of the view
   * @method setName
   * @param {string} name The name of the view
-  * @memberof Augmented.View
+  * @memberof AbstractView
   */
   set name(name) {
     this._name = name;
@@ -342,7 +389,7 @@ class AbstractView extends Augmented.Object {
   * Gets the name of the view
   * @method getName
   * @returns {string} Returns the name of the view
-  * @memberof Augmented.View
+  * @memberof AbstractView
   */
   get name() {
     return this._name;
@@ -353,7 +400,7 @@ class AbstractView extends Augmented.Object {
   * @method addPermission
   * @param {string} permission The permission to add
   * @param {boolean} negative Flag to set a nagative permission (optional)
-  * @memberof Augmented.View
+  * @memberof AbstractView
   */
   addPermission(permission, negative) {
     if (!negative) {
@@ -369,7 +416,7 @@ class AbstractView extends Augmented.Object {
   * @method removePermission
   * @param {string} permission The permission to remove
   * @param {boolean} negative Flag to set a nagative permission (optional)
-  * @memberof Augmented.View
+  * @memberof AbstractView
   */
   removePermission(permission, negative) {
     if (!negative) {
@@ -385,7 +432,7 @@ class AbstractView extends Augmented.Object {
   * @method setPermissions
   * @param {array} permissions The permissions to set
   * @param {boolean} negative Flag to set a nagative permission (optional)
-  * @memberof Augmented.View
+  * @memberof AbstractView
   */
   set permissions(permissions) {
     /*if (!negative) {
@@ -412,7 +459,7 @@ class AbstractView extends Augmented.Object {
   *
   * @method getPermissions
   * @returns {object} The permissions in the view
-  * @memberof Augmented.View
+  * @memberof AbstractView
   */
   get permissions() {
     return this._permissions;
@@ -420,7 +467,7 @@ class AbstractView extends Augmented.Object {
   /**
   * Clears the permissions in the view
   * @method clearPermissions
-  * @memberof Augmented.View
+  * @memberof AbstractView
   */
   clearPermissions() {
     this._permissions = {
@@ -434,7 +481,7 @@ class AbstractView extends Augmented.Object {
   * @param {string} match The permissions to match
   * @param {boolean} negative Flag to set a nagative permission (optional)
   * @returns {boolean} Returns true if the match exists
-  * @memberof Augmented.View
+  * @memberof AbstractView
   */
   matchesPermission(match, negative) {
     if (!negative) {
@@ -447,7 +494,7 @@ class AbstractView extends Augmented.Object {
   * Callback to return if this view can display
   * @method canDisplay
   * @returns {boolean} Returns true if this view can display
-  * @memberof Augmented.View
+  * @memberof AbstractView
   */
   canDisplay() {
     return true;
