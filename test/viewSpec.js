@@ -209,5 +209,13 @@ describe("Given an Augmented View", () => {
       });
       expect(yetAnotherView).to.not.be.undefined;
     });
+
+    it("can render without error with options with invalid el", () => {
+      const yetAnotherView = new YetAnotherView({
+        "el": "stupid"
+      });
+      const result = yetAnotherView.render();
+      expect(result).to.not.be.undefined;
+    });
   });
 });

@@ -25,7 +25,9 @@ class View extends AbstractView {
       if (Augmented.isString(this._el)) {
         el = document.querySelector(this._el);
       }
-      el.innerHTML = this.template;
+      if (el) {
+        el.innerHTML = this.template;
+      }
     }
     return this;
   };

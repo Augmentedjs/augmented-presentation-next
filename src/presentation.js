@@ -26,7 +26,7 @@ import Mediator from "./view/pubsub/mediator.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.10
+ * @version 2.0.0-alpha.11
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -35,7 +35,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.10";
+Presentation.VERSION = "2.0.0-alpha.11";
 
 Presentation.AbstractView = AbstractView;
 Presentation.View = View;
