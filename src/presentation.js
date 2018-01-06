@@ -19,6 +19,7 @@ import LocalStorageCollection from "./collection/localStorageCollection.js";
 import Colleague from "./view/pubsub/colleague.js";
 import Mediator from "./view/pubsub/mediator.js";
 
+import DecoratorView from "./view/decorator/decorator.js";
 
 /**
  * Augmented.js Next Presentation - The Presentation Component
@@ -53,6 +54,7 @@ Presentation.Collection = Collection;
 Presentation.LocalStorageCollection = LocalStorageCollection;
 Presentation.Colleague = Colleague;
 Presentation.Mediator = Mediator;
+Presentation.DecoratorView = DecoratorView;
 
 Presentation.sync = sync;
 Presentation.request = request;
