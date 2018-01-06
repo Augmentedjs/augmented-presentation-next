@@ -6,10 +6,10 @@ import View from "../view.js";
  * as an 'subscriptions' hash on a view. Subscriptions
  * can then be easily setup and cleaned.
  *
- * @constructor Augmented.Presentation.Colleague
- * @name Augmented.Presentation.Colleague
- * @memberof Augmented.Presentation
- * @extends Augmented.View
+ * @class Augmented.Presentation.Colleague
+ * @name Colleague
+ * @memberof Presentation
+ * @extends Presentation.View
  */
 class Colleague extends View {
   constructor(options) {

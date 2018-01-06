@@ -11,11 +11,17 @@ const ROOT_STRIPPER = /^\/+|\/+$/g;
 // Cached regex for stripping urls of hash.
 const PATH_STRIPPER = /#.*$/;
 
-// Handles cross-browser history management, based on either
-// [pushState](http://diveintohtml5.info/history.html) and real URLs, or
-// [onhashchange](https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange)
-// and URL fragments. If the browser supports neither (old IE, natch),
-// falls back to polling.
+/**
+ * Handles cross-browser history management, based on either
+ * [pushState](http://diveintohtml5.info/history.html) and real URLs, or
+ * [onhashchange](https://developer.mozilla.org/en-US/docs/DOM/window.onhashchange)
+ * and URL fragments. If the browser supports neither (old IE, natch),
+ * falls back to polling.
+ * <br/>Inspired By Backbone.js - Thank you! <span>😍</span>
+ * @class History
+ * @extends Augmented.Object
+ * @memberof Presentation
+ */
 class History extends Augmented.Object {
   constructor(options) {
     super(options);

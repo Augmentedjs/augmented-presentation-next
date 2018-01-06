@@ -38,7 +38,7 @@ describe('Given Augmented Presentation Decorator View', () => {
 			});
 
 			it('the DecoratorView has a bound element', () => {
-				console.log("DecoratorView el", el);
+				//console.log("DecoratorView el", el);
 				expect(d.el).to.not.be.undefined;
 				expect(d.el).to.equal("#sandbox");
 			});

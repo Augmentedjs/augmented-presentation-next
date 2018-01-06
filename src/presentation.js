@@ -21,13 +21,16 @@ import Mediator from "./view/pubsub/mediator.js";
 
 import DecoratorView from "./view/decorator/decorator.js";
 
+// Components
+import * as Component from "./view/component/component.js";
+
 /**
  * Augmented.js Next Presentation - The Presentation Component
  *
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.11
+ * @version 2.0.0-alpha.12
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -36,25 +39,34 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.11";
+Presentation.VERSION = "2.0.0-alpha.12";
 
-Presentation.AbstractView = AbstractView;
-Presentation.View = View;
 Presentation.History = History;
 Presentation.Router = Router;
-Presentation.Application = Application;
+
 Presentation.Widget = Widget;
 Presentation.Dom = Dom;
-Presentation.ViewController = ViewController;
+
+Presentation.Application = Application;
+
 Presentation.LocalStorageFactory = LocalStorageFactory;
 Presentation.NamespacedLocalStorage = NamespacedLocalStorage;
 Presentation.LocalStorage = LocalStorage;
+
 Presentation.Model = Model;
+
 Presentation.Collection = Collection;
 Presentation.LocalStorageCollection = LocalStorageCollection;
+
+Presentation.ViewController = ViewController;
+Presentation.AbstractView = AbstractView;
+Presentation.View = View;
+
 Presentation.Colleague = Colleague;
 Presentation.Mediator = Mediator;
 Presentation.DecoratorView = DecoratorView;
+
+Presentation.Component = Component;
 
 Presentation.sync = sync;
 Presentation.request = request;

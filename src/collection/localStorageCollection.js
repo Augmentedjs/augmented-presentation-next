@@ -6,7 +6,7 @@ const DEFAULT_KEY = `${DEFAULT_NAMESPACE}.key`;
 /**
  * Augmented.LocalStorageCollection
  * A local storage-based Collection
- * @constructor Augmented.LocalStorageCollection
+ * @class Augmented.LocalStorageCollection
  * @memberof Presentation
  * @extends Augmented.Collection
  */

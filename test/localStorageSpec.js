@@ -18,7 +18,7 @@ describe('Given Presentation Local Storage', () => {
 			it('Can add an Item', () => {
 				nameSpacedLocalStorage.clear();
 				nameSpacedLocalStorage.setItem("monkey", "bonobo");
-				console.debug("nameSpacedLocalStorage debug: " + nameSpacedLocalStorage.getItem("monkey") );
+				//console.debug("nameSpacedLocalStorage debug: " + nameSpacedLocalStorage.getItem("monkey") );
 
 				expect(nameSpacedLocalStorage.getItem("monkey")).to.equal("bonobo");
 				expect(nameSpacedLocalStorage.length()).to.equal(1);
@@ -27,7 +27,7 @@ describe('Given Presentation Local Storage', () => {
 			it('Can add a complex Item', () => {
 				nameSpacedLocalStorage.clear();
 				nameSpacedLocalStorage.setItem("monkey", { color: "brown", age: 1, name: "Lance Link" });
-				console.debug("nameSpacedLocalStorage debug: " + nameSpacedLocalStorage.getItem("monkey") );
+				//console.debug("nameSpacedLocalStorage debug: " + nameSpacedLocalStorage.getItem("monkey") );
 
 				expect(nameSpacedLocalStorage.getItem("monkey")).to.deep.equal({ color: "brown", age: 1, name: "Lance Link" });
 				expect(nameSpacedLocalStorage.length()).to.equal(1);
@@ -57,7 +57,7 @@ describe('Given Presentation Local Storage', () => {
 				let array = [ "bonobo", "chimpanzee", "howler" ];
 				nameSpacedLocalStorage.setItem("monkeys", array);
 				let item = nameSpacedLocalStorage.getItem("monkeys");
-				console.debug("Array: " + item );
+				//console.debug("Array: " + item );
 				expect(item.length).to.equal(3);
 			});
 		});
@@ -106,7 +106,7 @@ describe('Given Presentation Local Storage', () => {
 
 				let item = globalLocalStorage.getItem("donkeys");
 
-				console.log("Array: " + item );
+				//console.log("Array: " + item );
 
 				expect(item.length).to.equal(3);
 				globalLocalStorage.removeItem("donkeys");
@@ -186,7 +186,7 @@ describe('Given Presentation Local Storage', () => {
 
 				let item = nameSpacedLocalStorage.getItem("monkeys");
 
-				console.log("Array: " + item );
+				//console.log("Array: " + item );
 
 				expect(item.length).to.equal(3);
 				nameSpacedLocalStorage.removeItem("monkeys");
@@ -232,7 +232,7 @@ describe('Given Presentation Local Storage', () => {
 
 				let item = globalLocalStorage.getItem("donkeys");
 
-				console.log("Array: " + item );
+				//console.log("Array: " + item );
 
 				expect(item.length).to.equal(3);
 				globalLocalStorage.removeItem("donkeys");

@@ -10,7 +10,7 @@ import Colleague from "./colleague.js";
  * [Mediator]<-----[Colleague]
  *     ^-----------[Colleague]
  * </pre>
- * @constructor Mediator
+ * @class Mediator
  * @name Mediator
  * @memberof Presentation
  * @extends Presentation.Colleague

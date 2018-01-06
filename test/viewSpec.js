@@ -165,15 +165,15 @@ describe("Given an Augmented View", () => {
   describe("Extending my own using option declarations", () => {
     class YetAnotherView extends Presentation.View {
       constructor(options) {
-        console.log("options", options);
+        //console.log("options", options);
         super(options);
-        console.log("im here", this.name);
+        //console.log("im here", this.name);
         if (!this.template) {
-          console.log("oops no template");
+          //console.log("oops no template");
           this.template = `oops`;
         }
         if (!this.events) {
-          console.log("oops no events");
+          //console.log("oops no events");
           this.events = {
             "click #bump2": "bump"
           };

@@ -2,7 +2,7 @@ import Augmented from "augmentedjs-next";
 
 /**
  * Widgets and small presentation modules
- * @namespace Widget
+ * @class Widget
  * @memberof Presentation
  */
 class Widget {

@@ -1,6 +1,6 @@
 /**
  * Local Storage API - returned from LocalStorageFactory
- * @constructor AbstractLocalStorage
+ * @class AbstractLocalStorage
  * @name AbstractLocalStorage
  * @memberof Augmented
  * @param {boolean} persist Persistant storage or not

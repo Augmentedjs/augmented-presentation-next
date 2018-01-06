@@ -1,6 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.0.0-alpha.11",
+  "version": "2.0.0-alpha.12",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "validate": "npm-run-all lint test build",
     "test": "mocha --require babel-core/register",
     "start": "node index.js",
-    "docs": "jsdoc ./src -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json"
+    "docs": "jsdoc ./src -r -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json"
   },
   "repository": {
     "type": "git",

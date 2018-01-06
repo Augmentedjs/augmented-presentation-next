@@ -3,7 +3,7 @@ import LocalStorage from "./localStorage.js";
 /**
  * Augmented.LocalStorageFactory
  * Retrieve a local storage Object
- * @namespace LocalStorageFactory
+ * @class LocalStorageFactory
  * @name LocalStorageFactory
  * @memberof Presentation
  */

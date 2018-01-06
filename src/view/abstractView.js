@@ -11,8 +11,8 @@ const DELEGATE_EVENT_SPLITTER = /^(\S+)\s*(.*)$/;
 
 /**
  * Aubstract View - the base view for handlng display in the MV* Concept
- * @constructor
- * @name Presentation.AbstractView
+ * @class
+ * @name AbstractView
  * @memberof Presentation
  * @extends Augmented.Object
  */

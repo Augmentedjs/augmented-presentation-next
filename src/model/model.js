@@ -8,7 +8,7 @@ import sync from "../request/sync.js";
  * <li>Validation and Schemas</li>
  * <li>Security</li>
  * </ul>
- * @constructor Model
+ * @class Model
  * @memberof Presentation
  * @extends Augmented.AbstractModel
  */

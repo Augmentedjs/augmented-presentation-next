@@ -3,7 +3,7 @@ import Augmented from "augmentedjs-next";
 /**
  * Presentation Application - extension of Augmented.Application</br/>
  * Add registration of mediators to the application, breadcrumbs, and stylesheet registration
- * @constructor Application
+ * @class Application
  * @memberof Presentation
  * @extends Augmented.Application
  */

@@ -33,7 +33,7 @@ const DECORATOR_ATTRIBUTE_ENUM = {
  * <li>data-append-template</li>
  * <li>data-prepend-template</li>
  * </ul>
- * @constructor DecoratorView
+ * @class DecoratorView
  * @memberof Presentation
  * @extends Presentation.Colleague
  */
@@ -159,7 +159,6 @@ class DecoratorView extends Colleague {
    * @memberof DecoratorView
    */
   injectTemplate(template, mount) {
-    //let m = mount;
     if (!mount) {
       mount = this.el;
     }
@@ -212,7 +211,13 @@ class DecoratorView extends Colleague {
    */
   boundElement(id) {
     if (this.el && id) {
-      return this.el.querySelector("[" + this.bindingAttribute() + "=" + id + "]");
+      let el = this.el;
+      if (Augmented.isString(this.el)) {
+        el = document.querySelector(this.el);
+      }
+      if (el) {
+        return el.querySelector("[" + this.bindingAttribute() + "=" + id + "]");
+      }
     }
     return null;
   };
