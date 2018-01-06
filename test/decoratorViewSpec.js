@@ -7,19 +7,19 @@ describe('Given Augmented Presentation Decorator View', () => {
 		});
 
 		describe('Given a DecoratorView instance', () => {
-			let el = document.getElementById("monkey"),
+			let el = document.getElementById("sandbox"),
 			body = document.getElementsByTagName("body")[0],
 			d;
 
 			if (!el) {
 				el = document.createElement("div");
-				el.id = "monkey";
+				el.id = "sandbox";
 				body.appendChild(el);
 			}
 
 			beforeEach(() => {
 				d = new Presentation.DecoratorView({
-					"el": "#monkey",
+					"el": "#sandbox",
 					"name": "monkey"
 				});
 			});
@@ -38,8 +38,9 @@ describe('Given Augmented Presentation Decorator View', () => {
 			});
 
 			it('the DecoratorView has a bound element', () => {
+				console.log("DecoratorView el", el);
 				expect(d.el).to.not.be.undefined;
-				expect(d.el.tagName).to.equal(el.tagName);
+				expect(d.el).to.equal("#sandbox");
 			});
 
 			it('can return the binding attribute name', () => {

@@ -1,6 +1,7 @@
 #mocha {
   font: 16pt/1.5 "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: rgba(0, 0, 0, 0.85);
+  margin: 0;
 }
 
 #mocha .suite .suite h1 {
@@ -83,9 +84,7 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   display: inline-block;
   min-height: 300px;
-  margin: 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin: 0;
   overflow-y: scroll;
   padding: 16px;
   padding-bottom: 16px;

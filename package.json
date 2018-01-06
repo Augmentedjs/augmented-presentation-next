@@ -33,6 +33,7 @@
     "chai": "^4.1.2",
     "eslint": "^3.2.2",
     "eslint-config-kentcdodds": "^9.0.2",
+    "express": "^4.16.2",
     "foodoc": "0.0.8",
     "jsdoc": "^3.5.5",
     "jsdom": "^7.0.2",
@@ -44,9 +45,8 @@
     "webpack": "^2.1.0",
     "webpack-config-utils": "^2.0.0",
     "webpack-dev-middleware": "^1.12.2",
-    "webpack-dev-server": "^2.1.0",
-    "webpack-validator": "^2.2.7",
-    "express": "^4.16.2"
+    "webpack-dev-server": "^2.10.0",
+    "webpack-validator": "^2.2.7"
   },
   "dependencies": {
     "augmentedjs-next": "^2.0.0-alpha.18",
