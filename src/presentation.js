@@ -30,7 +30,7 @@ import * as Component from "./view/component/component.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.12
+ * @version 2.0.0-alpha.13
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -39,7 +39,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.12";
+Presentation.VERSION = "2.0.0-alpha.13";
 
 Presentation.History = History;
 Presentation.Router = Router;

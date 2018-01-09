@@ -20,7 +20,8 @@ class LocalStorage {
         this._myStore = sessionStorage;
       }
     } else {
-      logger.warn("AUGMENTED: No localStorage.");
+      console.warn("AUGMENTED: No localStorage.");
+      //logger.warn("AUGMENTED: No localStorage.");
     }
   };
 
