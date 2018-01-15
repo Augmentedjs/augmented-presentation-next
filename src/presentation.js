@@ -23,6 +23,9 @@ import DecoratorView from "./view/decorator/decorator.js";
 
 // Components
 import * as Component from "./view/component/component.js";
+import AbstractToolbar from "./view/component/toolbar/abstractToolbar.js";
+import Toolbar from "./view/component/toolbar/toolbar.js";
+import HamburgerMenu from "./view/component/menu/hamburgerMenu.js";
 
 /**
  * Augmented.js Next Presentation - The Presentation Component
@@ -30,7 +33,7 @@ import * as Component from "./view/component/component.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.13
+ * @version 2.0.0-alpha.14
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -39,7 +42,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.13";
+Presentation.VERSION = "2.0.0-alpha.14";
 
 Presentation.History = History;
 Presentation.Router = Router;
@@ -67,6 +70,9 @@ Presentation.Mediator = Mediator;
 Presentation.DecoratorView = DecoratorView;
 
 Presentation.Component = Component;
+Presentation.Component.AbstractToolbar = AbstractToolbar;
+Presentation.Component.Toolbar = Toolbar;
+Presentation.Component.HamburgerMenu = HamburgerMenu;
 
 Presentation.sync = sync;
 Presentation.request = request;
