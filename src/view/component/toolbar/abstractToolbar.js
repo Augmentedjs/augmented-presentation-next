@@ -1,5 +1,6 @@
 import Augmented from "augmentedjs-next";
-import View from "../../view.js";
+import DecoratorView from "../../decorator/decorator.js";
+import Model from "../../../model/model.js";
 
 /**
   * An abstract tooldbar Component, designed to be extended
@@ -8,7 +9,7 @@ import View from "../../view.js";
   * @extends Presentation.View
   * @abstract
   */
-class AbstractToolbar extends View {
+class AbstractToolbar extends DecoratorView {
   constructor(options) {
     super(options);
     this.isInitalized = false,
@@ -18,7 +19,7 @@ class AbstractToolbar extends View {
     if (this.model) {
       this.model.clear();
     } else {
-      this.model = new Augmented.Model();
+      this.model = new Model();
     }
     if (options) {
       if (options.data && (Augmented.isObject(options.data))) {

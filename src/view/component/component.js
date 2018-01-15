@@ -1,5 +1,6 @@
 import View from "../view.js";
 import Mediator from "../pubsub/mediator.js";
+import DecoratorView from "../decorator/decorator.js";
 
 /**
  * Component - Large UI Components
@@ -13,7 +14,7 @@ import Mediator from "../pubsub/mediator.js";
  * @memberof Presentation.Component
  * @extends Presentation.View
  */
-export class Header extends View {
+export class Header extends DecoratorView {
   constructor(options) {
     super(options);
     if (options && options.title) {

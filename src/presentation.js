@@ -26,6 +26,9 @@ import * as Component from "./view/component/component.js";
 import AbstractToolbar from "./view/component/toolbar/abstractToolbar.js";
 import Toolbar from "./view/component/toolbar/toolbar.js";
 import HamburgerMenu from "./view/component/menu/hamburgerMenu.js";
+import DialogView from "./view/component/dialog/dialog.js";
+import ConfirmationDialogView from "./view/component/dialog/confirmation.js";
+import AlertDialogView from "./view/component/dialog/alert.js";
 
 /**
  * Augmented.js Next Presentation - The Presentation Component
@@ -73,6 +76,9 @@ Presentation.Component = Component;
 Presentation.Component.AbstractToolbar = AbstractToolbar;
 Presentation.Component.Toolbar = Toolbar;
 Presentation.Component.HamburgerMenu = HamburgerMenu;
+Presentation.Component.DialogView = DialogView;
+Presentation.Component.ConfirmationDialogView = ConfirmationDialogView;
+Presentation.Component.AlertDialogView = AlertDialogView;
 
 Presentation.sync = sync;
 Presentation.request = request;

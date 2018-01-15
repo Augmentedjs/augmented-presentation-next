@@ -3,22 +3,22 @@ import Dom from "../../../dom/dom.js";
 import buildMenuItems from "../functions/buildMenuItems.js";
 
 /**
-  * A Toolbar View
-  * @constructor Augmented.Presentation.Component.Toolbar
-  * @memberof Augmented.Presentation.Component
-  * @extends Augmented.Presentation.AbstractToolbar
-  */
+ * A Toolbar View
+ * @constructor Augmented.Presentation.Component.Toolbar
+ * @memberof Augmented.Presentation.Component
+ * @extends Augmented.Presentation.AbstractToolbar
+ */
 class Toolbar extends AbstractToolbar {
   constructor(options) {
     super(options);
   };
   /**
-    * Render the Toolbar
-    * @method render Renders the Toolbar
-    * @memberof Augmented.Presentation.Component.Toolbar
-    * @returns {object} Returns the view context ('this')
-    */
-  render: function() {
+   * Render the Toolbar
+   * @method render Renders the Toolbar
+   * @memberof Augmented.Presentation.Component.Toolbar
+   * @returns {object} Returns the view context ('this')
+   */
+  render() {
     if (!this.isInitalized) {
       //_logger.warn("AUGMENTED: Toolbar Can't render yet, not initialized!");
       return this;

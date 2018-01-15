@@ -1,136 +1,137 @@
+import DecoratorView from "../../decorator/decorator.js";
+import Dom from "../../../dom/dom.js";
+
 /**
 * A automatic dialog view - creates a dialog with simple configurations to customize
-* @constructor Augmented.Presentation.DialogView
-* @memberof Augmented.Presentation
-* @extends Augmented.Presentation.DecoratorView
+* @class DialogView
+* @memberof Presentation.Component
+* @extends Presentation.DecoratorView
 */
-Augmented.Presentation.DialogView = Augmented.Presentation.DecoratorView.extend({
-  /**
-  * name property - the name of the dialog (required)
-  * @property name
-  * @memberof Augmented.Presentation.DialogView
-  */
-  name: "dialog",
+class DialogView extends DecoratorView {
+  constructor(options) {
+    super(options);
+    if (!this.name) {
+      this.name = "dialog";
+    }
+
+    if (options && options.title) {
+      this.title = options.title;
+    } else {
+      this.title = "";
+    }
+    if (options && options.body) {
+      this._body = options.body;
+    } else {
+      this._body = "";
+    }
+    if (options && options.style) {
+      this.style = options.style;
+    } else {
+      this.style = "form";
+    }
+    if (options && options.buttons) {
+      this.buttons = options.buttons;
+    } else {
+      this.buttons = {};
+    }
+  };
+
   /**
   * title property - the title of the dialog
   * @property title
-  * @memberof Augmented.Presentation.DialogView
+  * @memberof DialogView
   */
-  title: "",
+
   /**
   * body property - the body of the dialog, handled by setBody method
   * @property body
-  * @memberof Augmented.Presentation.DialogView
+  * @memberof DialogView
   */
-  body: "",
+
   /**
   * style property - the style (form, alert, bigForm, or whatever class you want)
   * @property style
-  * @memberof Augmented.Presentation.DialogView
+  * @memberof DialogView
   */
-  style: "form",
+
   /**
   * buttons object property - the buttons to match to functions
   * @property buttons
-  * @memberof Augmented.Presentation.DialogView
+  * @memberof DialogView
   */
-  buttons: {
-    //name : callback
-  },
+
   /**
   * template - sets content of the dialog, handled internally
-  * @method template
-  * @memberof Augmented.Presentation.DialogView
+  * @method _template
+  * @memberof DialogView
+  * @private
   */
-  template: function() {
-    return "<div class=\"blur\"><dialog class=\"" + this.style + "\"><h1>" + this.title + "</h1>" + this.body + this._getButtonGroup() + "</dialog></div>";
-  },
+  _template() {
+    return `<div class="blur"><dialog class="${this.style}"><h1>${this.title}</h1>${this._body}${this._getButtonGroup()}</dialog></div>`;
+  };
   /**
   * setBody - sets the body content of the dialog
   * @method setBody
   * @param {String} body A string value of th body (supports HTML)
-  * @memberof Augmented.Presentation.DialogView
+  * @memberof DialogView
   */
-  setBody: function(body) {
-    this.body = body;
-  },
-  _getButtonGroup: function() {
-    var html = "<div class=\"buttonGroup\">", i = 0, keys = Object.keys(this.buttons), l = (keys) ? keys.length: 0;
+  set body(body) {
+    this._body = body;
+  };
 
+  get body() {
+    return this._body;
+  };
+
+  _getButtonGroup() {
+    let html = `<div class="buttonGroup">`, i = 0, keys = Object.keys(this.buttons), l = (keys) ? keys.length: 0;
     for (i = 0; i < l; i++) {
-      html = html + "<button data-" + this.name + "=\"" + this.buttons[keys[i]] + "\"data-click=\"" + this.buttons[keys[i]] + "\">" + keys[i] + "</button>";
+      html = html + `<button data-${this.name}="${this.buttons[keys[i]]}" data-click="${this.buttons[keys[i]]}">${keys[i]}</button>`;
     }
-
     return html + "</div>";
-  },
+  };
+
   /**
   * render - render the dialog
   * @method render
-  * @memberof Augmented.Presentation.DialogView
+  * @memberof DialogView
   */
-  render: function() {
-    Augmented.Presentation.Dom.setValue(this.el, this.template());
+  render() {
+    Dom.setValue(this.el, this._template());
     this.delegateEvents();
     this.trigger("open");
     return this;
-  },
+  };
   // built-in callbacks
 
   /**
   * cancel - standard built-in cancel callback.  Calls close method by default
   * @method cancel
   * @param {Event} event Event passed in
-  * @memberof Augmented.Presentation.DialogView
+  * @memberof DialogView
   */
-  cancel: function(event) {
+  cancel(event) {
     this.close(event);
-  },
+  };
   /**
   * open - standard built-in open callback.  Calls render method by default
   * @method open
   * @param {Event} event Event passed in
-  * @memberof Augmented.Presentation.DialogView
+  * @memberof DialogView
   */
-  open: function(event) {
+  open(event) {
     this.render();
-  },
+  };
   /**
   * close - standard built-in close callback.  Closes the dialog, triggers the 'close' event
   * @method close
   * @param {Event} event Event passed in
-  * @memberof Augmented.Presentation.DialogView
+  * @memberof DialogView
   */
-  close: function(event) {
+  close(event) {
     this.trigger("close");
-    Augmented.Presentation.Dom.empty(this.el, true);
-  }
-});
+    Dom.empty(this.el, true);
+  };
+};
 
-/**
-* A automatic comfirmation dialog view - creates a dialog with yes no buttons
-* @constructor Augmented.Presentation.ConfirmationDialogView
-* @memberof Augmented.Presentation
-* @extends Augmented.Presentation.DialogView
-*/
-Augmented.Presentation.ConfirmationDialogView = Augmented.Presentation.DialogView.extend({
-  buttons: {
-    //name : callback
-    "yes": "yes",
-    "no": "no"
-  },
-  style: "alert"
-});
-
-/**
-* A automatic alert dialog view - creates a dialog with cancel button and a message
-* @constructor Augmented.Presentation.AlertDialogView
-* @memberof Augmented.Presentation
-* @extends Augmented.Presentation.DialogView
-*/
-Augmented.Presentation.AlertDialogView = Augmented.Presentation.DialogView.extend({
-  buttons: {
-    //name : callback
-    "cancel": "cancel"
-  },
-  style: "alert"
-});
+export default DialogView;

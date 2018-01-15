@@ -569,185 +569,46 @@ window.lunrData = {
           "manag",
           "presentation.component.head"
         ],
-        "Augmented.Presentation.DialogView.html": [
-          "augmented.presentation.dialogview",
+        "Presentation.Component.AlertDialogView.html": [
+          "alert",
+          "alertdialogview",
           "automat",
+          "button",
+          "cancel",
           "class",
-          "configur",
+          "component.alertdialogview",
           "creat",
-          "custom",
           "dialog",
-          "dialogview",
-          "presentation.dialogview",
-          "simpl",
+          "messag",
+          "presentation.component.alertdialogview",
           "view"
         ],
-        "Augmented.Presentation.DialogView.html#.name": [
-          "augmented.presentation.dialogview.nam",
-          "dialog",
-          "dialogview.nam",
-          "lt;static&gt",
-          "member",
-          "name",
-          "presentation.dialogview.nam",
-          "properti",
-          "requir"
-        ],
-        "Augmented.Presentation.DialogView.html#.title": [
-          "augmented.presentation.dialogview.titl",
-          "dialog",
-          "dialogview.titl",
-          "lt;static&gt",
-          "member",
-          "presentation.dialogview.titl",
-          "properti",
-          "titl"
-        ],
-        "Augmented.Presentation.DialogView.html#.body": [
-          "augmented.presentation.dialogview.bodi",
-          "bodi",
-          "dialog",
-          "dialogview.bodi",
-          "handl",
-          "lt;static&gt",
-          "member",
-          "method",
-          "presentation.dialogview.bodi",
-          "properti",
-          "setbodi"
-        ],
-        "Augmented.Presentation.DialogView.html#.style": [
-          "alert",
-          "augmented.presentation.dialogview.styl",
-          "bigform",
-          "class",
-          "dialogview.styl",
-          "form",
-          "lt;static&gt",
-          "member",
-          "presentation.dialogview.styl",
-          "properti",
-          "style",
-          "want",
-          "whatev"
-        ],
-        "Augmented.Presentation.DialogView.html#.buttons": [
-          "augmented.presentation.dialogview.button",
-          "button",
-          "dialogview.button",
-          "function",
-          "lt;static&gt",
-          "match",
-          "member",
-          "object",
-          "presentation.dialogview.button",
-          "properti"
-        ],
-        "Augmented.Presentation.DialogView.html#.template": [
-          "augmented.presentation.dialogview.templ",
-          "content",
-          "dialog",
-          "dialogview.templ",
-          "function",
-          "handl",
-          "intern",
-          "lt;static&gt",
-          "presentation.dialogview.templ",
-          "set",
-          "templat"
-        ],
-        "Augmented.Presentation.DialogView.html#.setBody": [
-          "augmented.presentation.dialogview.setbodi",
-          "bodi",
-          "content",
-          "dialog",
-          "dialogview.setbodi",
-          "function",
-          "lt;static&gt",
-          "presentation.dialogview.setbodi",
-          "set",
-          "setbodi"
-        ],
-        "Augmented.Presentation.DialogView.html#.render": [
-          "augmented.presentation.dialogview.rend",
-          "dialog",
-          "dialogview.rend",
-          "function",
-          "lt;static&gt",
-          "presentation.dialogview.rend",
-          "render"
-        ],
-        "Augmented.Presentation.DialogView.html#.cancel": [
-          "augmented.presentation.dialogview.cancel",
-          "built",
-          "call",
-          "callback",
-          "cancel",
-          "close",
-          "default",
-          "dialogview.cancel",
-          "event",
-          "function",
-          "lt;static&gt",
-          "method",
-          "presentation.dialogview.cancel",
-          "standard"
-        ],
-        "Augmented.Presentation.DialogView.html#.open": [
-          "augmented.presentation.dialogview.open",
-          "built",
-          "call",
-          "callback",
-          "default",
-          "dialogview.open",
-          "event",
-          "function",
-          "lt;static&gt",
-          "method",
-          "open",
-          "presentation.dialogview.open",
-          "render",
-          "standard"
-        ],
-        "Augmented.Presentation.DialogView.html#.close": [
-          "augmented.presentation.dialogview.clos",
-          "built",
-          "callback",
-          "close",
-          "dialog",
-          "dialogview.clos",
-          "event",
-          "function",
-          "lt;static&gt",
-          "presentation.dialogview.clos",
-          "standard",
-          "trigger"
-        ],
-        "Augmented.Presentation.ConfirmationDialogView.html": [
+        "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": [
           "augmented.presentation.confirmationdialogview",
           "automat",
           "button",
           "class",
           "comfirm",
+          "component.augmented.presentation.confirmationdialogview",
           "confirmationdialogview",
           "creat",
           "dialog",
+          "presentation.component.augmented.presentation.confirmationdialogview",
           "presentation.confirmationdialogview",
           "view",
           "ye"
         ],
-        "Augmented.Presentation.AlertDialogView.html": [
-          "alert",
-          "alertdialogview",
-          "augmented.presentation.alertdialogview",
+        "Presentation.Component.DialogView.html": [
           "automat",
-          "button",
-          "cancel",
           "class",
+          "component.dialogview",
+          "configur",
           "creat",
+          "custom",
           "dialog",
-          "messag",
-          "presentation.alertdialogview",
+          "dialogview",
+          "presentation.component.dialogview",
+          "simpl",
           "view"
         ],
         "Augmented.Presentation.AutomaticForm.html": [
@@ -966,95 +827,6 @@ window.lunrData = {
           "presentation.component.hamburgermenu",
           "view"
         ],
-        "Augmented.Presentation.Component.HamburgerMenu.html#.title": [
-          "augmented.presentation.component.hamburgermenu.titl",
-          "component.hamburgermenu.titl",
-          "hamburgermenu.titl",
-          "lt;static&gt",
-          "member",
-          "presentation.component.hamburgermenu.titl",
-          "properti",
-          "titl"
-        ],
-        "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": [
-          "add",
-          "additem",
-          "augmented.presentation.component.hamburgermenu.additem",
-          "click",
-          "component.hamburgermenu.additem",
-          "function",
-          "hamburgermenu.additem",
-          "icon",
-          "id",
-          "item",
-          "lt;static&gt",
-          "menu",
-          "presentation.component.hamburgermenu.additem",
-          "spacer",
-          "titl"
-        ],
-        "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": [
-          "add",
-          "addspac",
-          "augmented.presentation.component.hamburgermenu.addspac",
-          "component.hamburgermenu.addspac",
-          "function",
-          "hamburgermenu.addspac",
-          "item",
-          "lt;static&gt",
-          "menu",
-          "presentation.component.hamburgermenu.addspac",
-          "spacer"
-        ],
-        "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": [
-          "augmented.presentation.component.hamburgermenu.initi",
-          "component.hamburgermenu.initi",
-          "function",
-          "hamburg",
-          "hamburgermenu.initi",
-          "initi",
-          "lt;static&gt",
-          "menu",
-          "option",
-          "presentation.component.hamburgermenu.initi",
-          "view"
-        ],
-        "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": [
-          "augmented.presentation.component.hamburgermenu.rend",
-          "component.hamburgermenu.rend",
-          "function",
-          "hamburg",
-          "hamburgermenu.rend",
-          "lt;static&gt",
-          "menu",
-          "presentation.component.hamburgermenu.rend",
-          "render"
-        ],
-        "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": [
-          "augmented.presentation.component.hamburgermenu.hamburg",
-          "component.hamburgermenu.hamburg",
-          "deprec",
-          "function",
-          "hamburg",
-          "hamburgermenu.hamburg",
-          "lt;static&gt",
-          "menu",
-          "presentation.component.hamburgermenu.hamburg",
-          "toggl",
-          "view"
-        ],
-        "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": [
-          "augmented.presentation.component.hamburgermenu.toggl",
-          "component.hamburgermenu.toggl",
-          "function",
-          "hamburg",
-          "hamburgermenu.toggl",
-          "lt;static&gt",
-          "menu",
-          "presentation.component.hamburgermenu.toggl",
-          "toggl",
-          "view"
-        ],
         "Augmented.Presentation.DirectDOMAutomaticTable.html": [
           "augmented.presentation.directdomautomatict",
           "augmented.presentation.directdomautomatictableus",
@@ -1116,18 +888,6 @@ window.lunrData = {
           "row",
           "tabl",
           "work"
-        ],
-        "Augmented.Presentation.AutomaticTable.html#.links": [
-          "augmented.presentation.automatictable.link",
-          "automatictable.link",
-          "link",
-          "lt;static&gt",
-          "member",
-          "presentation.automatictable.link",
-          "properti",
-          "row",
-          "setup",
-          "structur"
         ],
         "Augmented.Presentation.AutomaticTable.html#.selectable": [
           "augmented.presentation.automatictable.select",
@@ -1301,6 +1061,18 @@ window.lunrData = {
           "member",
           "presentation.automatictable.row",
           "row"
+        ],
+        "Augmented.Presentation.AutomaticTable.html#.links": [
+          "augmented.presentation.automatictable.link",
+          "automatictable.link",
+          "link",
+          "lt;static&gt",
+          "member",
+          "presentation.automatictable.link",
+          "properti",
+          "row",
+          "setup",
+          "structur"
         ],
         "Augmented.Presentation.AutomaticTable.html#.setThemesetsthethemeofthistable": [
           "augmented.presentation.automatictable.setthem",
@@ -1697,6 +1469,14 @@ window.lunrData = {
           "removerow",
           "row"
         ],
+        "Augmented.Presentation.AutoTable.html": [
+          "augmented.presentation.automatict",
+          "augmented.presentation.autot",
+          "augmented.presentation.autotableshorthand",
+          "autot",
+          "class",
+          "presentation.autot"
+        ],
         "Augmented.Presentation.BigDataTable.html": [
           "augmented.presentation.bigdatat",
           "augmented.presentation.bigdatatableinst",
@@ -1779,10 +1559,9 @@ window.lunrData = {
           "tabl",
           "view"
         ],
-        "Augmented.Presentation.Component.AbstractToolbar.html": [
+        "Presentation.Component.AbstractToolbar.html": [
           "abstract",
           "abstracttoolbar",
-          "augmented.presentation.component.abstracttoolbar",
           "class",
           "compon",
           "component.abstracttoolbar",
@@ -1791,78 +1570,6 @@ window.lunrData = {
           "lt;abstract&gt",
           "presentation.component.abstracttoolbar",
           "tooldbar"
-        ],
-        "Augmented.Presentation.Component.AbstractToolbar.html#.model": [
-          "abstracttoolbar.model",
-          "augmented.presentation.component.abstracttoolbar.model",
-          "component.abstracttoolbar.model",
-          "lt;static&gt",
-          "member",
-          "model",
-          "presentation.component.abstracttoolbar.model",
-          "properti"
-        ],
-        "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": [
-          "abstracttoolbar.isinit",
-          "augmented.presentation.component.abstracttoolbar.isinit",
-          "component.abstracttoolbar.isinit",
-          "initi",
-          "isinit",
-          "lt;static&gt",
-          "member",
-          "presentation.component.abstracttoolbar.isinit",
-          "properti"
-        ],
-        "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": [
-          "abstracttoolbar.menuitem",
-          "augmented.presentation.component.abstracttoolbar.menuitem",
-          "component.abstracttoolbar.menuitem",
-          "lt;static&gt",
-          "member",
-          "menuitem",
-          "presentation.component.abstracttoolbar.menuitem",
-          "properti"
-        ],
-        "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": [
-          "abstracttoolbar.initi",
-          "augmented.presentation.component.abstracttoolbar.initi",
-          "component.abstracttoolbar.initi",
-          "function",
-          "initi",
-          "lt;static&gt",
-          "option",
-          "presentation.component.abstracttoolbar.initi",
-          "view"
-        ],
-        "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": [
-          "abstracttoolbar.additem",
-          "add",
-          "additem",
-          "augmented.presentation.component.abstracttoolbar.additem",
-          "click",
-          "component.abstracttoolbar.additem",
-          "function",
-          "icon",
-          "id",
-          "item",
-          "lt;static&gt",
-          "menu",
-          "presentation.component.abstracttoolbar.additem",
-          "spacer",
-          "titl"
-        ],
-        "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": [
-          "abstracttoolbar.addspac",
-          "add",
-          "addspac",
-          "augmented.presentation.component.abstracttoolbar.addspac",
-          "component.abstracttoolbar.addspac",
-          "function",
-          "item",
-          "lt;static&gt",
-          "menu",
-          "presentation.component.abstracttoolbar.addspac",
-          "spacer"
         ],
         "Augmented.Presentation.Component.Toolbar.html": [
           "augmented.presentation.component.toolbar",
@@ -2240,14 +1947,6 @@ window.lunrData = {
           "widget",
           "widget.input"
         ],
-        "Augmented.Presentation.AutoTable.html": [
-          "augmented.presentation.automatict",
-          "augmented.presentation.autot",
-          "augmented.presentation.autotableshorthand",
-          "autot",
-          "class",
-          "presentation.autot"
-        ],
         "module-Presentation.html": [
           "augmented.j",
           "compon",
@@ -2282,7 +1981,7 @@ window.lunrData = {
           "ui"
         ]
       },
-      "length": 194
+      "length": 170
     },
     "tokenStore": {
       "root": {
@@ -3210,331 +2909,6 @@ window.lunrData = {
                                                                                                         "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                                                                                                         "tf": 1075
                                                                                                       }
-                                                                                                    },
-                                                                                                    ".": {
-                                                                                                      "docs": {},
-                                                                                                      "t": {
-                                                                                                        "docs": {},
-                                                                                                        "i": {
-                                                                                                          "docs": {},
-                                                                                                          "t": {
-                                                                                                            "docs": {},
-                                                                                                            "l": {
-                                                                                                              "docs": {
-                                                                                                                "Augmented.Presentation.Component.HamburgerMenu.html#.title": {
-                                                                                                                  "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.title",
-                                                                                                                  "tf": 1060
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        },
-                                                                                                        "o": {
-                                                                                                          "docs": {},
-                                                                                                          "g": {
-                                                                                                            "docs": {},
-                                                                                                            "g": {
-                                                                                                              "docs": {},
-                                                                                                              "l": {
-                                                                                                                "docs": {
-                                                                                                                  "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                                                                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-                                                                                                                    "tf": 1060
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      },
-                                                                                                      "a": {
-                                                                                                        "docs": {},
-                                                                                                        "d": {
-                                                                                                          "docs": {},
-                                                                                                          "d": {
-                                                                                                            "docs": {},
-                                                                                                            "i": {
-                                                                                                              "docs": {},
-                                                                                                              "t": {
-                                                                                                                "docs": {},
-                                                                                                                "e": {
-                                                                                                                  "docs": {},
-                                                                                                                  "m": {
-                                                                                                                    "docs": {
-                                                                                                                      "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                                                                                                                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                                                                                                                        "tf": 265
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            },
-                                                                                                            "s": {
-                                                                                                              "docs": {},
-                                                                                                              "p": {
-                                                                                                                "docs": {},
-                                                                                                                "a": {
-                                                                                                                  "docs": {},
-                                                                                                                  "c": {
-                                                                                                                    "docs": {
-                                                                                                                      "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                                                                                                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                                                                                                                        "tf": 212
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      },
-                                                                                                      "i": {
-                                                                                                        "docs": {},
-                                                                                                        "n": {
-                                                                                                          "docs": {},
-                                                                                                          "i": {
-                                                                                                            "docs": {},
-                                                                                                            "t": {
-                                                                                                              "docs": {},
-                                                                                                              "i": {
-                                                                                                                "docs": {
-                                                                                                                  "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                                                                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                                                                                                                    "tf": 1060
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      },
-                                                                                                      "r": {
-                                                                                                        "docs": {},
-                                                                                                        "e": {
-                                                                                                          "docs": {},
-                                                                                                          "n": {
-                                                                                                            "docs": {},
-                                                                                                            "d": {
-                                                                                                              "docs": {
-                                                                                                                "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-                                                                                                                  "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-                                                                                                                  "tf": 353.3333333333333
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      },
-                                                                                                      "h": {
-                                                                                                        "docs": {},
-                                                                                                        "a": {
-                                                                                                          "docs": {},
-                                                                                                          "m": {
-                                                                                                            "docs": {},
-                                                                                                            "b": {
-                                                                                                              "docs": {},
-                                                                                                              "u": {
-                                                                                                                "docs": {},
-                                                                                                                "r": {
-                                                                                                                  "docs": {},
-                                                                                                                  "g": {
-                                                                                                                    "docs": {
-                                                                                                                      "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                                                                                                                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                                                                                                                        "tf": 1060
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          },
-                                                                          "a": {
-                                                                            "docs": {},
-                                                                            "b": {
-                                                                              "docs": {},
-                                                                              "s": {
-                                                                                "docs": {},
-                                                                                "t": {
-                                                                                  "docs": {},
-                                                                                  "r": {
-                                                                                    "docs": {},
-                                                                                    "a": {
-                                                                                      "docs": {},
-                                                                                      "c": {
-                                                                                        "docs": {},
-                                                                                        "t": {
-                                                                                          "docs": {},
-                                                                                          "t": {
-                                                                                            "docs": {},
-                                                                                            "o": {
-                                                                                              "docs": {},
-                                                                                              "o": {
-                                                                                                "docs": {},
-                                                                                                "l": {
-                                                                                                  "docs": {},
-                                                                                                  "b": {
-                                                                                                    "docs": {},
-                                                                                                    "a": {
-                                                                                                      "docs": {},
-                                                                                                      "r": {
-                                                                                                        "docs": {
-                                                                                                          "Augmented.Presentation.Component.AbstractToolbar.html": {
-                                                                                                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
-                                                                                                            "tf": 1075
-                                                                                                          }
-                                                                                                        },
-                                                                                                        ".": {
-                                                                                                          "docs": {},
-                                                                                                          "m": {
-                                                                                                            "docs": {},
-                                                                                                            "o": {
-                                                                                                              "docs": {},
-                                                                                                              "d": {
-                                                                                                                "docs": {},
-                                                                                                                "e": {
-                                                                                                                  "docs": {},
-                                                                                                                  "l": {
-                                                                                                                    "docs": {
-                                                                                                                      "Augmented.Presentation.Component.AbstractToolbar.html#.model": {
-                                                                                                                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.model",
-                                                                                                                        "tf": 1060
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            },
-                                                                                                            "e": {
-                                                                                                              "docs": {},
-                                                                                                              "n": {
-                                                                                                                "docs": {},
-                                                                                                                "u": {
-                                                                                                                  "docs": {},
-                                                                                                                  "i": {
-                                                                                                                    "docs": {},
-                                                                                                                    "t": {
-                                                                                                                      "docs": {},
-                                                                                                                      "e": {
-                                                                                                                        "docs": {},
-                                                                                                                        "m": {
-                                                                                                                          "docs": {
-                                                                                                                            "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": {
-                                                                                                                              "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems",
-                                                                                                                              "tf": 1060
-                                                                                                                            }
-                                                                                                                          }
-                                                                                                                        }
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          },
-                                                                                                          "i": {
-                                                                                                            "docs": {},
-                                                                                                            "s": {
-                                                                                                              "docs": {},
-                                                                                                              "i": {
-                                                                                                                "docs": {},
-                                                                                                                "n": {
-                                                                                                                  "docs": {},
-                                                                                                                  "i": {
-                                                                                                                    "docs": {},
-                                                                                                                    "t": {
-                                                                                                                      "docs": {
-                                                                                                                        "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-                                                                                                                          "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-                                                                                                                          "tf": 1060
-                                                                                                                        }
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            },
-                                                                                                            "n": {
-                                                                                                              "docs": {},
-                                                                                                              "i": {
-                                                                                                                "docs": {},
-                                                                                                                "t": {
-                                                                                                                  "docs": {},
-                                                                                                                  "i": {
-                                                                                                                    "docs": {
-                                                                                                                      "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-                                                                                                                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
-                                                                                                                        "tf": 1060
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          },
-                                                                                                          "a": {
-                                                                                                            "docs": {},
-                                                                                                            "d": {
-                                                                                                              "docs": {},
-                                                                                                              "d": {
-                                                                                                                "docs": {},
-                                                                                                                "i": {
-                                                                                                                  "docs": {},
-                                                                                                                  "t": {
-                                                                                                                    "docs": {},
-                                                                                                                    "e": {
-                                                                                                                      "docs": {},
-                                                                                                                      "m": {
-                                                                                                                        "docs": {
-                                                                                                                          "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                                                                                                                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                                                                                                                            "tf": 265
-                                                                                                                          }
-                                                                                                                        }
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                },
-                                                                                                                "s": {
-                                                                                                                  "docs": {},
-                                                                                                                  "p": {
-                                                                                                                    "docs": {},
-                                                                                                                    "a": {
-                                                                                                                      "docs": {},
-                                                                                                                      "c": {
-                                                                                                                        "docs": {
-                                                                                                                          "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                                                                                                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                                                                                                                            "tf": 212
-                                                                                                                          }
-                                                                                                                        }
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      }
                                                                                                     }
                                                                                                   }
                                                                                                 }
@@ -3643,322 +3017,9 @@ window.lunrData = {
                                                                                                 "docs": {},
                                                                                                 "w": {
                                                                                                   "docs": {
-                                                                                                    "Augmented.Presentation.ConfirmationDialogView.html": {
-                                                                                                      "ref": "Augmented.Presentation.ConfirmationDialogView.html",
-                                                                                                      "tf": 1100
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      "d": {
-                                                        "docs": {},
-                                                        "i": {
-                                                          "docs": {},
-                                                          "a": {
-                                                            "docs": {},
-                                                            "l": {
-                                                              "docs": {},
-                                                              "o": {
-                                                                "docs": {},
-                                                                "g": {
-                                                                  "docs": {},
-                                                                  "v": {
-                                                                    "docs": {},
-                                                                    "i": {
-                                                                      "docs": {},
-                                                                      "e": {
-                                                                        "docs": {},
-                                                                        "w": {
-                                                                          "docs": {
-                                                                            "Augmented.Presentation.DialogView.html": {
-                                                                              "ref": "Augmented.Presentation.DialogView.html",
-                                                                              "tf": 1100
-                                                                            }
-                                                                          },
-                                                                          ".": {
-                                                                            "docs": {},
-                                                                            "n": {
-                                                                              "docs": {},
-                                                                              "a": {
-                                                                                "docs": {},
-                                                                                "m": {
-                                                                                  "docs": {
-                                                                                    "Augmented.Presentation.DialogView.html#.name": {
-                                                                                      "ref": "Augmented.Presentation.DialogView.html#.name",
-                                                                                      "tf": 1075
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            },
-                                                                            "t": {
-                                                                              "docs": {},
-                                                                              "i": {
-                                                                                "docs": {},
-                                                                                "t": {
-                                                                                  "docs": {},
-                                                                                  "l": {
-                                                                                    "docs": {
-                                                                                      "Augmented.Presentation.DialogView.html#.title": {
-                                                                                        "ref": "Augmented.Presentation.DialogView.html#.title",
-                                                                                        "tf": 1075
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              },
-                                                                              "e": {
-                                                                                "docs": {},
-                                                                                "m": {
-                                                                                  "docs": {},
-                                                                                  "p": {
-                                                                                    "docs": {},
-                                                                                    "l": {
-                                                                                      "docs": {
-                                                                                        "Augmented.Presentation.DialogView.html#.template": {
-                                                                                          "ref": "Augmented.Presentation.DialogView.html#.template",
-                                                                                          "tf": 1075
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            },
-                                                                            "b": {
-                                                                              "docs": {},
-                                                                              "o": {
-                                                                                "docs": {},
-                                                                                "d": {
-                                                                                  "docs": {},
-                                                                                  "i": {
-                                                                                    "docs": {
-                                                                                      "Augmented.Presentation.DialogView.html#.body": {
-                                                                                        "ref": "Augmented.Presentation.DialogView.html#.body",
-                                                                                        "tf": 1075
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              },
-                                                                              "u": {
-                                                                                "docs": {},
-                                                                                "t": {
-                                                                                  "docs": {},
-                                                                                  "t": {
-                                                                                    "docs": {},
-                                                                                    "o": {
-                                                                                      "docs": {},
-                                                                                      "n": {
-                                                                                        "docs": {
-                                                                                          "Augmented.Presentation.DialogView.html#.buttons": {
-                                                                                            "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                                                                                            "tf": 1075
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            },
-                                                                            "s": {
-                                                                              "docs": {},
-                                                                              "t": {
-                                                                                "docs": {},
-                                                                                "y": {
-                                                                                  "docs": {},
-                                                                                  "l": {
-                                                                                    "docs": {
-                                                                                      "Augmented.Presentation.DialogView.html#.style": {
-                                                                                        "ref": "Augmented.Presentation.DialogView.html#.style",
-                                                                                        "tf": 1075
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              },
-                                                                              "e": {
-                                                                                "docs": {},
-                                                                                "t": {
-                                                                                  "docs": {},
-                                                                                  "b": {
-                                                                                    "docs": {},
-                                                                                    "o": {
-                                                                                      "docs": {},
-                                                                                      "d": {
-                                                                                        "docs": {},
-                                                                                        "i": {
-                                                                                          "docs": {
-                                                                                            "Augmented.Presentation.DialogView.html#.setBody": {
-                                                                                              "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                                                                                              "tf": 1075
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            },
-                                                                            "r": {
-                                                                              "docs": {},
-                                                                              "e": {
-                                                                                "docs": {},
-                                                                                "n": {
-                                                                                  "docs": {},
-                                                                                  "d": {
-                                                                                    "docs": {
-                                                                                      "Augmented.Presentation.DialogView.html#.render": {
-                                                                                        "ref": "Augmented.Presentation.DialogView.html#.render",
-                                                                                        "tf": 1075
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            },
-                                                                            "c": {
-                                                                              "docs": {},
-                                                                              "a": {
-                                                                                "docs": {},
-                                                                                "n": {
-                                                                                  "docs": {},
-                                                                                  "c": {
-                                                                                    "docs": {},
-                                                                                    "e": {
-                                                                                      "docs": {},
-                                                                                      "l": {
-                                                                                        "docs": {
-                                                                                          "Augmented.Presentation.DialogView.html#.cancel": {
-                                                                                            "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                                                                                            "tf": 1075
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              },
-                                                                              "l": {
-                                                                                "docs": {},
-                                                                                "o": {
-                                                                                  "docs": {},
-                                                                                  "s": {
-                                                                                    "docs": {
-                                                                                      "Augmented.Presentation.DialogView.html#.close": {
-                                                                                        "ref": "Augmented.Presentation.DialogView.html#.close",
-                                                                                        "tf": 1075
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            },
-                                                                            "o": {
-                                                                              "docs": {},
-                                                                              "p": {
-                                                                                "docs": {},
-                                                                                "e": {
-                                                                                  "docs": {},
-                                                                                  "n": {
-                                                                                    "docs": {
-                                                                                      "Augmented.Presentation.DialogView.html#.open": {
-                                                                                        "ref": "Augmented.Presentation.DialogView.html#.open",
-                                                                                        "tf": 1075
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          },
-                                                          "r": {
-                                                            "docs": {},
-                                                            "e": {
-                                                              "docs": {},
-                                                              "c": {
-                                                                "docs": {},
-                                                                "t": {
-                                                                  "docs": {},
-                                                                  "d": {
-                                                                    "docs": {},
-                                                                    "o": {
-                                                                      "docs": {},
-                                                                      "m": {
-                                                                        "docs": {},
-                                                                        "a": {
-                                                                          "docs": {},
-                                                                          "u": {
-                                                                            "docs": {},
-                                                                            "t": {
-                                                                              "docs": {},
-                                                                              "o": {
-                                                                                "docs": {},
-                                                                                "m": {
-                                                                                  "docs": {},
-                                                                                  "a": {
-                                                                                    "docs": {},
-                                                                                    "t": {
-                                                                                      "docs": {},
-                                                                                      "i": {
-                                                                                        "docs": {},
-                                                                                        "c": {
-                                                                                          "docs": {},
-                                                                                          "t": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.DirectDOMAutomaticTable.html": {
-                                                                                                "ref": "Augmented.Presentation.DirectDOMAutomaticTable.html",
-                                                                                                "tf": 1100
-                                                                                              }
-                                                                                            },
-                                                                                            "a": {
-                                                                                              "docs": {},
-                                                                                              "b": {
-                                                                                                "docs": {},
-                                                                                                "l": {
-                                                                                                  "docs": {},
-                                                                                                  "e": {
-                                                                                                    "docs": {},
-                                                                                                    "u": {
-                                                                                                      "docs": {},
-                                                                                                      "s": {
-                                                                                                        "docs": {
-                                                                                                          "Augmented.Presentation.DirectDOMAutomaticTable.html": {
-                                                                                                            "ref": "Augmented.Presentation.DirectDOMAutomaticTable.html",
-                                                                                                            "tf": 3.571428571428571
-                                                                                                          }
-                                                                                                        }
-                                                                                                      }
+                                                                                                    "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                                                                                                      "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                                                                                                      "tf": 60
                                                                                                     }
                                                                                                   }
                                                                                                 }
@@ -3985,53 +3046,6 @@ window.lunrData = {
                                                       },
                                                       "a": {
                                                         "docs": {},
-                                                        "l": {
-                                                          "docs": {},
-                                                          "e": {
-                                                            "docs": {},
-                                                            "r": {
-                                                              "docs": {},
-                                                              "t": {
-                                                                "docs": {},
-                                                                "d": {
-                                                                  "docs": {},
-                                                                  "i": {
-                                                                    "docs": {},
-                                                                    "a": {
-                                                                      "docs": {},
-                                                                      "l": {
-                                                                        "docs": {},
-                                                                        "o": {
-                                                                          "docs": {},
-                                                                          "g": {
-                                                                            "docs": {},
-                                                                            "v": {
-                                                                              "docs": {},
-                                                                              "i": {
-                                                                                "docs": {},
-                                                                                "e": {
-                                                                                  "docs": {},
-                                                                                  "w": {
-                                                                                    "docs": {
-                                                                                      "Augmented.Presentation.AlertDialogView.html": {
-                                                                                        "ref": "Augmented.Presentation.AlertDialogView.html",
-                                                                                        "tf": 1100
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
                                                         "u": {
                                                           "docs": {},
                                                           "t": {
@@ -5783,6 +4797,91 @@ window.lunrData = {
                                                           }
                                                         }
                                                       },
+                                                      "d": {
+                                                        "docs": {},
+                                                        "i": {
+                                                          "docs": {},
+                                                          "r": {
+                                                            "docs": {},
+                                                            "e": {
+                                                              "docs": {},
+                                                              "c": {
+                                                                "docs": {},
+                                                                "t": {
+                                                                  "docs": {},
+                                                                  "d": {
+                                                                    "docs": {},
+                                                                    "o": {
+                                                                      "docs": {},
+                                                                      "m": {
+                                                                        "docs": {},
+                                                                        "a": {
+                                                                          "docs": {},
+                                                                          "u": {
+                                                                            "docs": {},
+                                                                            "t": {
+                                                                              "docs": {},
+                                                                              "o": {
+                                                                                "docs": {},
+                                                                                "m": {
+                                                                                  "docs": {},
+                                                                                  "a": {
+                                                                                    "docs": {},
+                                                                                    "t": {
+                                                                                      "docs": {},
+                                                                                      "i": {
+                                                                                        "docs": {},
+                                                                                        "c": {
+                                                                                          "docs": {},
+                                                                                          "t": {
+                                                                                            "docs": {
+                                                                                              "Augmented.Presentation.DirectDOMAutomaticTable.html": {
+                                                                                                "ref": "Augmented.Presentation.DirectDOMAutomaticTable.html",
+                                                                                                "tf": 1100
+                                                                                              }
+                                                                                            },
+                                                                                            "a": {
+                                                                                              "docs": {},
+                                                                                              "b": {
+                                                                                                "docs": {},
+                                                                                                "l": {
+                                                                                                  "docs": {},
+                                                                                                  "e": {
+                                                                                                    "docs": {},
+                                                                                                    "u": {
+                                                                                                      "docs": {},
+                                                                                                      "s": {
+                                                                                                        "docs": {
+                                                                                                          "Augmented.Presentation.DirectDOMAutomaticTable.html": {
+                                                                                                            "ref": "Augmented.Presentation.DirectDOMAutomaticTable.html",
+                                                                                                            "tf": 3.571428571428571
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
                                                       "b": {
                                                         "docs": {},
                                                         "i": {
@@ -6254,17 +5353,17 @@ window.lunrData = {
                     "docs": {},
                     "t": {
                       "docs": {
-                        "Augmented.Presentation.DialogView.html": {
-                          "ref": "Augmented.Presentation.DialogView.html",
-                          "tf": 6.25
-                        },
-                        "Augmented.Presentation.ConfirmationDialogView.html": {
-                          "ref": "Augmented.Presentation.ConfirmationDialogView.html",
-                          "tf": 6.25
-                        },
-                        "Augmented.Presentation.AlertDialogView.html": {
-                          "ref": "Augmented.Presentation.AlertDialogView.html",
+                        "Presentation.Component.AlertDialogView.html": {
+                          "ref": "Presentation.Component.AlertDialogView.html",
                           "tf": 5.555555555555555
+                        },
+                        "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                          "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                          "tf": 6.25
+                        },
+                        "Presentation.Component.DialogView.html": {
+                          "ref": "Presentation.Component.DialogView.html",
+                          "tf": 6.25
                         },
                         "Augmented.Presentation.AutomaticForm.html": {
                           "ref": "Augmented.Presentation.AutomaticForm.html",
@@ -8044,22 +7143,6 @@ window.lunrData = {
                   "ref": "Presentation.ViewController.html#.addPermission",
                   "tf": 16.666666666666664
                 },
-                "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                  "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                  "tf": 460
-                },
-                "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                  "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                  "tf": 376.6666666666667
-                },
-                "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                  "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                  "tf": 460
-                },
-                "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                  "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                  "tf": 376.6666666666667
-                },
                 "Presentation.DecoratorView.html": {
                   "ref": "Presentation.DecoratorView.html",
                   "tf": 0.8333333333333334
@@ -8089,48 +7172,6 @@ window.lunrData = {
                               }
                             }
                           }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "i": {
-                "docs": {},
-                "t": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "m": {
-                      "docs": {
-                        "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                          "tf": 150
-                        },
-                        "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                          "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                          "tf": 150
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "s": {
-                "docs": {},
-                "p": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "c": {
-                      "docs": {
-                        "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                          "tf": 128.66666666666666
-                        },
-                        "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                          "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                          "tf": 128.66666666666666
                         }
                       }
                     }
@@ -8223,12 +7264,8 @@ window.lunrData = {
                 "docs": {},
                 "t": {
                   "docs": {
-                    "Augmented.Presentation.DialogView.html#.style": {
-                      "ref": "Augmented.Presentation.DialogView.html#.style",
-                      "tf": 5.555555555555555
-                    },
-                    "Augmented.Presentation.AlertDialogView.html": {
-                      "ref": "Augmented.Presentation.AlertDialogView.html",
+                    "Presentation.Component.AlertDialogView.html": {
+                      "ref": "Presentation.Component.AlertDialogView.html",
                       "tf": 5.555555555555555
                     }
                   },
@@ -8252,9 +7289,9 @@ window.lunrData = {
                                     "docs": {},
                                     "w": {
                                       "docs": {
-                                        "Augmented.Presentation.AlertDialogView.html": {
-                                          "ref": "Augmented.Presentation.AlertDialogView.html",
-                                          "tf": 700
+                                        "Presentation.Component.AlertDialogView.html": {
+                                          "ref": "Presentation.Component.AlertDialogView.html",
+                                          "tf": 600
                                         }
                                       }
                                     }
@@ -8369,8 +7406,8 @@ window.lunrData = {
                       "docs": {},
                       "t": {
                         "docs": {
-                          "Augmented.Presentation.Component.AbstractToolbar.html": {
-                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
+                          "Presentation.Component.AbstractToolbar.html": {
+                            "ref": "Presentation.Component.AbstractToolbar.html",
                             "tf": 10
                           }
                         },
@@ -8443,141 +7480,9 @@ window.lunrData = {
                                     "docs": {},
                                     "r": {
                                       "docs": {
-                                        "Augmented.Presentation.Component.AbstractToolbar.html": {
-                                          "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
-                                          "tf": 625
-                                        }
-                                      },
-                                      ".": {
-                                        "docs": {},
-                                        "m": {
-                                          "docs": {},
-                                          "o": {
-                                            "docs": {},
-                                            "d": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "l": {
-                                                  "docs": {
-                                                    "Augmented.Presentation.Component.AbstractToolbar.html#.model": {
-                                                      "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.model",
-                                                      "tf": 60
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "e": {
-                                            "docs": {},
-                                            "n": {
-                                              "docs": {},
-                                              "u": {
-                                                "docs": {},
-                                                "i": {
-                                                  "docs": {},
-                                                  "t": {
-                                                    "docs": {},
-                                                    "e": {
-                                                      "docs": {},
-                                                      "m": {
-                                                        "docs": {
-                                                          "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": {
-                                                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems",
-                                                            "tf": 60
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "i": {
-                                          "docs": {},
-                                          "s": {
-                                            "docs": {},
-                                            "i": {
-                                              "docs": {},
-                                              "n": {
-                                                "docs": {},
-                                                "i": {
-                                                  "docs": {},
-                                                  "t": {
-                                                    "docs": {
-                                                      "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-                                                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-                                                        "tf": 60
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "n": {
-                                            "docs": {},
-                                            "i": {
-                                              "docs": {},
-                                              "t": {
-                                                "docs": {},
-                                                "i": {
-                                                  "docs": {
-                                                    "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-                                                      "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
-                                                      "tf": 60
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "a": {
-                                          "docs": {},
-                                          "d": {
-                                            "docs": {},
-                                            "d": {
-                                              "docs": {},
-                                              "i": {
-                                                "docs": {},
-                                                "t": {
-                                                  "docs": {},
-                                                  "e": {
-                                                    "docs": {},
-                                                    "m": {
-                                                      "docs": {
-                                                        "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                                                          "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                                                          "tf": 15
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              },
-                                              "s": {
-                                                "docs": {},
-                                                "p": {
-                                                  "docs": {},
-                                                  "a": {
-                                                    "docs": {},
-                                                    "c": {
-                                                      "docs": {
-                                                        "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                                          "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                                                          "tf": 12
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
+                                        "Presentation.Component.AbstractToolbar.html": {
+                                          "ref": "Presentation.Component.AbstractToolbar.html",
+                                          "tf": 600
                                         }
                                       }
                                     }
@@ -8665,73 +7570,6 @@ window.lunrData = {
                 }
               }
             },
-            "f": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "l": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Augmented.Presentation.DialogView.html#.cancel": {
-                          "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                          "tf": 5.555555555555555
-                        },
-                        "Augmented.Presentation.DialogView.html#.open": {
-                          "ref": "Augmented.Presentation.DialogView.html#.open",
-                          "tf": 5.555555555555555
-                        },
-                        "Augmented.Presentation.AutomaticTable.html#.theme": {
-                          "ref": "Augmented.Presentation.AutomaticTable.html#.theme",
-                          "tf": 8.333333333333332
-                        },
-                        "Augmented.Presentation.AutomaticTable.html#.rowlink": {
-                          "ref": "Augmented.Presentation.AutomaticTable.html#.rowlink",
-                          "tf": 6.25
-                        },
-                        "Presentation.Mediator.html#.getDefaultChannel": {
-                          "ref": "Presentation.Mediator.html#.getDefaultChannel",
-                          "tf": 12.5
-                        },
-                        "Presentation.Mediator.html#.getDefaultIdentifier": {
-                          "ref": "Presentation.Mediator.html#.getDefaultIdentifier",
-                          "tf": 25
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "i": {
-                "docs": {},
-                "n": {
-                  "docs": {
-                    "Presentation.Colleague.html": {
-                      "ref": "Presentation.Colleague.html",
-                      "tf": 3.3333333333333335
-                    },
-                    "Presentation.Mediator.html": {
-                      "ref": "Presentation.Mediator.html",
-                      "tf": 2.1739130434782608
-                    }
-                  },
-                  "t": {
-                    "docs": {
-                      "Augmented.Presentation.DirectDOMAutomaticTable.html": {
-                        "ref": "Augmented.Presentation.DirectDOMAutomaticTable.html",
-                        "tf": 3.571428571428571
-                      },
-                      "Augmented.Presentation.AutomaticTable.html": {
-                        "ref": "Augmented.Presentation.AutomaticTable.html",
-                        "tf": 6.25
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "s": {
               "docs": {},
               "c": {
@@ -8794,8 +7632,8 @@ window.lunrData = {
                   "docs": {},
                   "n": {
                     "docs": {
-                      "Augmented.Presentation.Component.AbstractToolbar.html": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
+                      "Presentation.Component.AbstractToolbar.html": {
+                        "ref": "Presentation.Component.AbstractToolbar.html",
                         "tf": 10
                       },
                       "Presentation.DecoratorView.html": {
@@ -8807,17 +7645,59 @@ window.lunrData = {
                 }
               }
             },
-            "p": {
+            "f": {
               "docs": {},
-              "r": {
+              "i": {
                 "docs": {},
-                "e": {
-                  "docs": {},
-                  "c": {
+                "n": {
+                  "docs": {
+                    "Presentation.Colleague.html": {
+                      "ref": "Presentation.Colleague.html",
+                      "tf": 3.3333333333333335
+                    },
+                    "Presentation.Mediator.html": {
+                      "ref": "Presentation.Mediator.html",
+                      "tf": 2.1739130434782608
+                    }
+                  },
+                  "t": {
                     "docs": {
-                      "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                        "tf": 10
+                      "Augmented.Presentation.DirectDOMAutomaticTable.html": {
+                        "ref": "Augmented.Presentation.DirectDOMAutomaticTable.html",
+                        "tf": 3.571428571428571
+                      },
+                      "Augmented.Presentation.AutomaticTable.html": {
+                        "ref": "Augmented.Presentation.AutomaticTable.html",
+                        "tf": 6.25
+                      }
+                    }
+                  }
+                }
+              },
+              "a": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "l": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Augmented.Presentation.AutomaticTable.html#.theme": {
+                          "ref": "Augmented.Presentation.AutomaticTable.html#.theme",
+                          "tf": 8.333333333333332
+                        },
+                        "Augmented.Presentation.AutomaticTable.html#.rowlink": {
+                          "ref": "Augmented.Presentation.AutomaticTable.html#.rowlink",
+                          "tf": 6.25
+                        },
+                        "Presentation.Mediator.html#.getDefaultChannel": {
+                          "ref": "Presentation.Mediator.html#.getDefaultChannel",
+                          "tf": 12.5
+                        },
+                        "Presentation.Mediator.html#.getDefaultIdentifier": {
+                          "ref": "Presentation.Mediator.html#.getDefaultIdentifier",
+                          "tf": 25
+                        }
                       }
                     }
                   }
@@ -9091,45 +7971,17 @@ window.lunrData = {
                   "docs": {},
                   "g": {
                     "docs": {
-                      "Augmented.Presentation.DialogView.html": {
-                        "ref": "Augmented.Presentation.DialogView.html",
-                        "tf": 12.5
-                      },
-                      "Augmented.Presentation.DialogView.html#.name": {
-                        "ref": "Augmented.Presentation.DialogView.html#.name",
-                        "tf": 10
-                      },
-                      "Augmented.Presentation.DialogView.html#.title": {
-                        "ref": "Augmented.Presentation.DialogView.html#.title",
-                        "tf": 12.5
-                      },
-                      "Augmented.Presentation.DialogView.html#.body": {
-                        "ref": "Augmented.Presentation.DialogView.html#.body",
-                        "tf": 7.142857142857142
-                      },
-                      "Augmented.Presentation.DialogView.html#.template": {
-                        "ref": "Augmented.Presentation.DialogView.html#.template",
-                        "tf": 8.333333333333332
-                      },
-                      "Augmented.Presentation.DialogView.html#.setBody": {
-                        "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                        "tf": 10
-                      },
-                      "Augmented.Presentation.DialogView.html#.render": {
-                        "ref": "Augmented.Presentation.DialogView.html#.render",
-                        "tf": 16.666666666666664
-                      },
-                      "Augmented.Presentation.DialogView.html#.close": {
-                        "ref": "Augmented.Presentation.DialogView.html#.close",
-                        "tf": 5
-                      },
-                      "Augmented.Presentation.ConfirmationDialogView.html": {
-                        "ref": "Augmented.Presentation.ConfirmationDialogView.html",
-                        "tf": 12.5
-                      },
-                      "Augmented.Presentation.AlertDialogView.html": {
-                        "ref": "Augmented.Presentation.AlertDialogView.html",
+                      "Presentation.Component.AlertDialogView.html": {
+                        "ref": "Presentation.Component.AlertDialogView.html",
                         "tf": 11.11111111111111
+                      },
+                      "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                        "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                        "tf": 12.5
+                      },
+                      "Presentation.Component.DialogView.html": {
+                        "ref": "Presentation.Component.DialogView.html",
+                        "tf": 12.5
                       }
                     },
                     "v": {
@@ -9140,208 +7992,9 @@ window.lunrData = {
                           "docs": {},
                           "w": {
                             "docs": {
-                              "Augmented.Presentation.DialogView.html": {
-                                "ref": "Augmented.Presentation.DialogView.html",
-                                "tf": 700
-                              }
-                            },
-                            ".": {
-                              "docs": {},
-                              "n": {
-                                "docs": {},
-                                "a": {
-                                  "docs": {},
-                                  "m": {
-                                    "docs": {
-                                      "Augmented.Presentation.DialogView.html#.name": {
-                                        "ref": "Augmented.Presentation.DialogView.html#.name",
-                                        "tf": 75
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "t": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "t": {
-                                    "docs": {},
-                                    "l": {
-                                      "docs": {
-                                        "Augmented.Presentation.DialogView.html#.title": {
-                                          "ref": "Augmented.Presentation.DialogView.html#.title",
-                                          "tf": 75
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "e": {
-                                  "docs": {},
-                                  "m": {
-                                    "docs": {},
-                                    "p": {
-                                      "docs": {},
-                                      "l": {
-                                        "docs": {
-                                          "Augmented.Presentation.DialogView.html#.template": {
-                                            "ref": "Augmented.Presentation.DialogView.html#.template",
-                                            "tf": 75
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "b": {
-                                "docs": {},
-                                "o": {
-                                  "docs": {},
-                                  "d": {
-                                    "docs": {},
-                                    "i": {
-                                      "docs": {
-                                        "Augmented.Presentation.DialogView.html#.body": {
-                                          "ref": "Augmented.Presentation.DialogView.html#.body",
-                                          "tf": 75
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "u": {
-                                  "docs": {},
-                                  "t": {
-                                    "docs": {},
-                                    "t": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "n": {
-                                          "docs": {
-                                            "Augmented.Presentation.DialogView.html#.buttons": {
-                                              "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                                              "tf": 75
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "s": {
-                                "docs": {},
-                                "t": {
-                                  "docs": {},
-                                  "y": {
-                                    "docs": {},
-                                    "l": {
-                                      "docs": {
-                                        "Augmented.Presentation.DialogView.html#.style": {
-                                          "ref": "Augmented.Presentation.DialogView.html#.style",
-                                          "tf": 75
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "e": {
-                                  "docs": {},
-                                  "t": {
-                                    "docs": {},
-                                    "b": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "d": {
-                                          "docs": {},
-                                          "i": {
-                                            "docs": {
-                                              "Augmented.Presentation.DialogView.html#.setBody": {
-                                                "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                                                "tf": 75
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "r": {
-                                "docs": {},
-                                "e": {
-                                  "docs": {},
-                                  "n": {
-                                    "docs": {},
-                                    "d": {
-                                      "docs": {
-                                        "Augmented.Presentation.DialogView.html#.render": {
-                                          "ref": "Augmented.Presentation.DialogView.html#.render",
-                                          "tf": 75
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "c": {
-                                "docs": {},
-                                "a": {
-                                  "docs": {},
-                                  "n": {
-                                    "docs": {},
-                                    "c": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "l": {
-                                          "docs": {
-                                            "Augmented.Presentation.DialogView.html#.cancel": {
-                                              "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                                              "tf": 75
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "l": {
-                                  "docs": {},
-                                  "o": {
-                                    "docs": {},
-                                    "s": {
-                                      "docs": {
-                                        "Augmented.Presentation.DialogView.html#.close": {
-                                          "ref": "Augmented.Presentation.DialogView.html#.close",
-                                          "tf": 75
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "o": {
-                                "docs": {},
-                                "p": {
-                                  "docs": {},
-                                  "e": {
-                                    "docs": {},
-                                    "n": {
-                                      "docs": {
-                                        "Augmented.Presentation.DialogView.html#.open": {
-                                          "ref": "Augmented.Presentation.DialogView.html#.open",
-                                          "tf": 75
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
+                              "Presentation.Component.DialogView.html": {
+                                "ref": "Presentation.Component.DialogView.html",
+                                "tf": 600
                               }
                             }
                           }
@@ -9558,8 +8211,8 @@ window.lunrData = {
                   },
                   "d": {
                     "docs": {
-                      "Augmented.Presentation.Component.AbstractToolbar.html": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
+                      "Presentation.Component.AbstractToolbar.html": {
+                        "ref": "Presentation.Component.AbstractToolbar.html",
                         "tf": 10
                       },
                       "Presentation.Colleague.html#.delegateEvents": {
@@ -9760,18 +8413,6 @@ window.lunrData = {
                     "Presentation.Router.html": {
                       "ref": "Presentation.Router.html",
                       "tf": 2.941176470588235
-                    },
-                    "Augmented.Presentation.DialogView.html#.cancel": {
-                      "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                      "tf": 33.33333333333333
-                    },
-                    "Augmented.Presentation.DialogView.html#.open": {
-                      "ref": "Augmented.Presentation.DialogView.html#.open",
-                      "tf": 33.33333333333333
-                    },
-                    "Augmented.Presentation.DialogView.html#.close": {
-                      "ref": "Augmented.Presentation.DialogView.html#.close",
-                      "tf": 38.33333333333333
                     },
                     "Augmented.Presentation.AutomaticTable.html#.sortBy": {
                       "ref": "Augmented.Presentation.AutomaticTable.html#.sortBy",
@@ -10072,10 +8713,6 @@ window.lunrData = {
                       "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
                       "tf": 614.5833333333334
                     },
-                    "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                      "tf": 605.8333333333334
-                    },
                     "Augmented.Presentation.AutomaticTable.html#.isInitalized": {
                       "ref": "Augmented.Presentation.AutomaticTable.html#.isInitalized",
                       "tf": 25
@@ -10087,14 +8724,6 @@ window.lunrData = {
                     "Augmented.Presentation.Spreadsheet.html#.initialize": {
                       "ref": "Augmented.Presentation.Spreadsheet.html#.initialize",
                       "tf": 625
-                    },
-                    "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-                      "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-                      "tf": 25
-                    },
-                    "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-                      "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
-                      "tf": 618.3333333333334
                     }
                   }
                 }
@@ -10125,14 +8754,6 @@ window.lunrData = {
                 },
                 "r": {
                   "docs": {},
-                  "n": {
-                    "docs": {
-                      "Augmented.Presentation.DialogView.html#.template": {
-                        "ref": "Augmented.Presentation.DialogView.html#.template",
-                        "tf": 8.333333333333332
-                      }
-                    }
-                  },
                   "f": {
                     "docs": {},
                     "a": {
@@ -10241,10 +8862,6 @@ window.lunrData = {
                       "Augmented.Presentation.AutomaticTable.html#.isInitalized": {
                         "ref": "Augmented.Presentation.AutomaticTable.html#.isInitalized",
                         "tf": 625
-                      },
-                      "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-                        "tf": 610
                       }
                     }
                   }
@@ -10276,34 +8893,19 @@ window.lunrData = {
               }
             }
           },
-          "c": {
+          "'": {
             "docs": {},
-            "o": {
-              "docs": {},
-              "n": {
-                "docs": {
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                    "tf": 10
-                  },
-                  "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                    "tf": 10
-                  }
+            "d": {
+              "docs": {
+                "Presentation.DecoratorView.html": {
+                  "ref": "Presentation.DecoratorView.html",
+                  "tf": 0.8333333333333334
                 }
               }
             }
           },
           "d": {
             "docs": {
-              "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                "tf": 10
-              },
-              "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                "tf": 10
-              },
               "Presentation.Widget.html#.List": {
                 "ref": "Presentation.Widget.html#.List",
                 "tf": 16.666666666666664
@@ -10379,41 +8981,7 @@ window.lunrData = {
           },
           "t": {
             "docs": {},
-            "e": {
-              "docs": {},
-              "m": {
-                "docs": {
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                    "tf": 460
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                    "tf": 376.6666666666667
-                  },
-                  "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                    "tf": 460
-                  },
-                  "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                    "tf": 376.6666666666667
-                  }
-                }
-              }
-            },
             "'": {
-              "docs": {
-                "Presentation.DecoratorView.html": {
-                  "ref": "Presentation.DecoratorView.html",
-                  "tf": 0.8333333333333334
-                }
-              }
-            }
-          },
-          "'": {
-            "docs": {},
-            "d": {
               "docs": {
                 "Presentation.DecoratorView.html": {
                   "ref": "Presentation.DecoratorView.html",
@@ -10489,10 +9057,6 @@ window.lunrData = {
                     "Presentation.ViewController.html#.matchesPermission": {
                       "ref": "Presentation.ViewController.html#.matchesPermission",
                       "tf": 41.666666666666664
-                    },
-                    "Augmented.Presentation.DialogView.html#.buttons": {
-                      "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                      "tf": 8.333333333333332
                     }
                   },
                   "e": {
@@ -10627,10 +9191,6 @@ window.lunrData = {
                     "Augmented.Presentation.AutomaticTable.html#.removeRows": {
                       "ref": "Augmented.Presentation.AutomaticTable.html#.removeRows",
                       "tf": 25
-                    },
-                    "Augmented.Presentation.Component.AbstractToolbar.html#.model": {
-                      "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.model",
-                      "tf": 635
                     }
                   }
                 }
@@ -11071,18 +9631,6 @@ window.lunrData = {
                         "ref": "Augmented.Request.Configuration.html#.method",
                         "tf": 650
                       },
-                      "Augmented.Presentation.DialogView.html#.body": {
-                        "ref": "Augmented.Presentation.DialogView.html#.body",
-                        "tf": 7.142857142857142
-                      },
-                      "Augmented.Presentation.DialogView.html#.cancel": {
-                        "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                        "tf": 5.555555555555555
-                      },
-                      "Augmented.Presentation.DialogView.html#.open": {
-                        "ref": "Augmented.Presentation.DialogView.html#.open",
-                        "tf": 5.555555555555555
-                      },
                       "Augmented.Presentation.DirectDOMAutomaticTable.html": {
                         "ref": "Augmented.Presentation.DirectDOMAutomaticTable.html",
                         "tf": 3.571428571428571
@@ -11176,26 +9724,6 @@ window.lunrData = {
                         "ref": "Augmented.Request.Configuration.html#.mock",
                         "tf": 110
                       },
-                      "Augmented.Presentation.DialogView.html#.name": {
-                        "ref": "Augmented.Presentation.DialogView.html#.name",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.DialogView.html#.title": {
-                        "ref": "Augmented.Presentation.DialogView.html#.title",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.DialogView.html#.body": {
-                        "ref": "Augmented.Presentation.DialogView.html#.body",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.DialogView.html#.style": {
-                        "ref": "Augmented.Presentation.DialogView.html#.style",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.DialogView.html#.buttons": {
-                        "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                        "tf": 110
-                      },
                       "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
                         "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
                         "tf": 110
@@ -11224,20 +9752,12 @@ window.lunrData = {
                         "ref": "Augmented.Presentation.AutomaticForm.html#.description",
                         "tf": 110
                       },
-                      "Augmented.Presentation.Component.HamburgerMenu.html#.title": {
-                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.title",
-                        "tf": 110
-                      },
                       "Augmented.Presentation.AutomaticTable.html#.theme": {
                         "ref": "Augmented.Presentation.AutomaticTable.html#.theme",
                         "tf": 110
                       },
                       "Augmented.Presentation.AutomaticTable.html#.linkable": {
                         "ref": "Augmented.Presentation.AutomaticTable.html#.linkable",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.AutomaticTable.html#.links": {
-                        "ref": "Augmented.Presentation.AutomaticTable.html#.links",
                         "tf": 110
                       },
                       "Augmented.Presentation.AutomaticTable.html#.selectable": {
@@ -11304,16 +9824,8 @@ window.lunrData = {
                         "ref": "Augmented.Presentation.AutomaticTable.html#.rows",
                         "tf": 110
                       },
-                      "Augmented.Presentation.Component.AbstractToolbar.html#.model": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.model",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems",
+                      "Augmented.Presentation.AutomaticTable.html#.links": {
+                        "ref": "Augmented.Presentation.AutomaticTable.html#.links",
                         "tf": 110
                       },
                       "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
@@ -11333,8 +9845,8 @@ window.lunrData = {
                   "docs": {},
                   "g": {
                     "docs": {
-                      "Augmented.Presentation.AlertDialogView.html": {
-                        "ref": "Augmented.Presentation.AlertDialogView.html",
+                      "Presentation.Component.AlertDialogView.html": {
+                        "ref": "Presentation.Component.AlertDialogView.html",
                         "tf": 5.555555555555555
                       },
                       "Augmented.Presentation.AutomaticForm.html#.showMessage": {
@@ -11357,55 +9869,6 @@ window.lunrData = {
                   "Augmented.Presentation.Component.HamburgerMenu.html": {
                     "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                     "tf": 16.666666666666664
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                    "tf": 460
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                    "tf": 376.6666666666667
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                    "tf": 12.5
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-                    "tf": 16.666666666666664
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                    "tf": 10
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-                    "tf": 12.5
-                  },
-                  "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                    "tf": 460
-                  },
-                  "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                    "tf": 376.6666666666667
-                  }
-                },
-                "i": {
-                  "docs": {},
-                  "t": {
-                    "docs": {},
-                    "e": {
-                      "docs": {},
-                      "m": {
-                        "docs": {
-                          "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": {
-                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems",
-                            "tf": 635
-                          }
-                        }
-                      }
-                    }
                   }
                 }
               }
@@ -13308,53 +11771,6 @@ window.lunrData = {
                                           }
                                         }
                                       }
-                                    },
-                                    "l": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "r": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {},
-                                            "d": {
-                                              "docs": {},
-                                              "i": {
-                                                "docs": {},
-                                                "a": {
-                                                  "docs": {},
-                                                  "l": {
-                                                    "docs": {},
-                                                    "o": {
-                                                      "docs": {},
-                                                      "g": {
-                                                        "docs": {},
-                                                        "v": {
-                                                          "docs": {},
-                                                          "i": {
-                                                            "docs": {},
-                                                            "e": {
-                                                              "docs": {},
-                                                              "w": {
-                                                                "docs": {
-                                                                  "Augmented.Presentation.AlertDialogView.html": {
-                                                                    "ref": "Augmented.Presentation.AlertDialogView.html",
-                                                                    "tf": 100
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
                                     }
                                   },
                                   "v": {
@@ -13804,234 +12220,6 @@ window.lunrData = {
                                     },
                                     "i": {
                                       "docs": {},
-                                      "a": {
-                                        "docs": {},
-                                        "l": {
-                                          "docs": {},
-                                          "o": {
-                                            "docs": {},
-                                            "g": {
-                                              "docs": {},
-                                              "v": {
-                                                "docs": {},
-                                                "i": {
-                                                  "docs": {},
-                                                  "e": {
-                                                    "docs": {},
-                                                    "w": {
-                                                      "docs": {
-                                                        "Augmented.Presentation.DialogView.html": {
-                                                          "ref": "Augmented.Presentation.DialogView.html",
-                                                          "tf": 100
-                                                        }
-                                                      },
-                                                      ".": {
-                                                        "docs": {},
-                                                        "n": {
-                                                          "docs": {},
-                                                          "a": {
-                                                            "docs": {},
-                                                            "m": {
-                                                              "docs": {
-                                                                "Augmented.Presentation.DialogView.html#.name": {
-                                                                  "ref": "Augmented.Presentation.DialogView.html#.name",
-                                                                  "tf": 75
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "t": {
-                                                          "docs": {},
-                                                          "i": {
-                                                            "docs": {},
-                                                            "t": {
-                                                              "docs": {},
-                                                              "l": {
-                                                                "docs": {
-                                                                  "Augmented.Presentation.DialogView.html#.title": {
-                                                                    "ref": "Augmented.Presentation.DialogView.html#.title",
-                                                                    "tf": 75
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          },
-                                                          "e": {
-                                                            "docs": {},
-                                                            "m": {
-                                                              "docs": {},
-                                                              "p": {
-                                                                "docs": {},
-                                                                "l": {
-                                                                  "docs": {
-                                                                    "Augmented.Presentation.DialogView.html#.template": {
-                                                                      "ref": "Augmented.Presentation.DialogView.html#.template",
-                                                                      "tf": 75
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "b": {
-                                                          "docs": {},
-                                                          "o": {
-                                                            "docs": {},
-                                                            "d": {
-                                                              "docs": {},
-                                                              "i": {
-                                                                "docs": {
-                                                                  "Augmented.Presentation.DialogView.html#.body": {
-                                                                    "ref": "Augmented.Presentation.DialogView.html#.body",
-                                                                    "tf": 75
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          },
-                                                          "u": {
-                                                            "docs": {},
-                                                            "t": {
-                                                              "docs": {},
-                                                              "t": {
-                                                                "docs": {},
-                                                                "o": {
-                                                                  "docs": {},
-                                                                  "n": {
-                                                                    "docs": {
-                                                                      "Augmented.Presentation.DialogView.html#.buttons": {
-                                                                        "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                                                                        "tf": 75
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "s": {
-                                                          "docs": {},
-                                                          "t": {
-                                                            "docs": {},
-                                                            "y": {
-                                                              "docs": {},
-                                                              "l": {
-                                                                "docs": {
-                                                                  "Augmented.Presentation.DialogView.html#.style": {
-                                                                    "ref": "Augmented.Presentation.DialogView.html#.style",
-                                                                    "tf": 75
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          },
-                                                          "e": {
-                                                            "docs": {},
-                                                            "t": {
-                                                              "docs": {},
-                                                              "b": {
-                                                                "docs": {},
-                                                                "o": {
-                                                                  "docs": {},
-                                                                  "d": {
-                                                                    "docs": {},
-                                                                    "i": {
-                                                                      "docs": {
-                                                                        "Augmented.Presentation.DialogView.html#.setBody": {
-                                                                          "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                                                                          "tf": 75
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "r": {
-                                                          "docs": {},
-                                                          "e": {
-                                                            "docs": {},
-                                                            "n": {
-                                                              "docs": {},
-                                                              "d": {
-                                                                "docs": {
-                                                                  "Augmented.Presentation.DialogView.html#.render": {
-                                                                    "ref": "Augmented.Presentation.DialogView.html#.render",
-                                                                    "tf": 75
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "c": {
-                                                          "docs": {},
-                                                          "a": {
-                                                            "docs": {},
-                                                            "n": {
-                                                              "docs": {},
-                                                              "c": {
-                                                                "docs": {},
-                                                                "e": {
-                                                                  "docs": {},
-                                                                  "l": {
-                                                                    "docs": {
-                                                                      "Augmented.Presentation.DialogView.html#.cancel": {
-                                                                        "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                                                                        "tf": 75
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          },
-                                                          "l": {
-                                                            "docs": {},
-                                                            "o": {
-                                                              "docs": {},
-                                                              "s": {
-                                                                "docs": {
-                                                                  "Augmented.Presentation.DialogView.html#.close": {
-                                                                    "ref": "Augmented.Presentation.DialogView.html#.close",
-                                                                    "tf": 75
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "o": {
-                                                          "docs": {},
-                                                          "p": {
-                                                            "docs": {},
-                                                            "e": {
-                                                              "docs": {},
-                                                              "n": {
-                                                                "docs": {
-                                                                  "Augmented.Presentation.DialogView.html#.open": {
-                                                                    "ref": "Augmented.Presentation.DialogView.html#.open",
-                                                                    "tf": 75
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
                                       "r": {
                                         "docs": {},
                                         "e": {
@@ -14843,6 +13031,71 @@ window.lunrData = {
                                                                                                               }
                                                                                                             }
                                                                                                           }
+                                                                                                        },
+                                                                                                        "n": {
+                                                                                                          "docs": {},
+                                                                                                          "f": {
+                                                                                                            "docs": {},
+                                                                                                            "i": {
+                                                                                                              "docs": {},
+                                                                                                              "r": {
+                                                                                                                "docs": {},
+                                                                                                                "m": {
+                                                                                                                  "docs": {},
+                                                                                                                  "a": {
+                                                                                                                    "docs": {},
+                                                                                                                    "t": {
+                                                                                                                      "docs": {},
+                                                                                                                      "i": {
+                                                                                                                        "docs": {},
+                                                                                                                        "o": {
+                                                                                                                          "docs": {},
+                                                                                                                          "n": {
+                                                                                                                            "docs": {},
+                                                                                                                            "d": {
+                                                                                                                              "docs": {},
+                                                                                                                              "i": {
+                                                                                                                                "docs": {},
+                                                                                                                                "a": {
+                                                                                                                                  "docs": {},
+                                                                                                                                  "l": {
+                                                                                                                                    "docs": {},
+                                                                                                                                    "o": {
+                                                                                                                                      "docs": {},
+                                                                                                                                      "g": {
+                                                                                                                                        "docs": {},
+                                                                                                                                        "v": {
+                                                                                                                                          "docs": {},
+                                                                                                                                          "i": {
+                                                                                                                                            "docs": {},
+                                                                                                                                            "e": {
+                                                                                                                                              "docs": {},
+                                                                                                                                              "w": {
+                                                                                                                                                "docs": {
+                                                                                                                                                  "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                                                                                                                                                    "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                                                                                                                                                    "tf": 1060
+                                                                                                                                                  }
+                                                                                                                                                }
+                                                                                                                                              }
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
                                                                                                         }
                                                                                                       }
                                                                                                     }
@@ -14852,6 +13105,53 @@ window.lunrData = {
                                                                                             }
                                                                                           }
                                                                                         }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "l": {
+                                                          "docs": {},
+                                                          "e": {
+                                                            "docs": {},
+                                                            "r": {
+                                                              "docs": {},
+                                                              "t": {
+                                                                "docs": {},
+                                                                "d": {
+                                                                  "docs": {},
+                                                                  "i": {
+                                                                    "docs": {},
+                                                                    "a": {
+                                                                      "docs": {},
+                                                                      "l": {
+                                                                        "docs": {},
+                                                                        "o": {
+                                                                          "docs": {},
+                                                                          "g": {
+                                                                            "docs": {},
+                                                                            "v": {
+                                                                              "docs": {},
+                                                                              "i": {
+                                                                                "docs": {},
+                                                                                "e": {
+                                                                                  "docs": {},
+                                                                                  "w": {
+                                                                                    "docs": {
+                                                                                      "Presentation.Component.AlertDialogView.html": {
+                                                                                        "ref": "Presentation.Component.AlertDialogView.html",
+                                                                                        "tf": 1100
                                                                                       }
                                                                                     }
                                                                                   }
@@ -14896,141 +13196,9 @@ window.lunrData = {
                                                                                   "docs": {},
                                                                                   "r": {
                                                                                     "docs": {
-                                                                                      "Augmented.Presentation.Component.AbstractToolbar.html": {
-                                                                                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
-                                                                                        "tf": 75
-                                                                                      }
-                                                                                    },
-                                                                                    ".": {
-                                                                                      "docs": {},
-                                                                                      "m": {
-                                                                                        "docs": {},
-                                                                                        "o": {
-                                                                                          "docs": {},
-                                                                                          "d": {
-                                                                                            "docs": {},
-                                                                                            "e": {
-                                                                                              "docs": {},
-                                                                                              "l": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Presentation.Component.AbstractToolbar.html#.model": {
-                                                                                                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.model",
-                                                                                                    "tf": 60
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        },
-                                                                                        "e": {
-                                                                                          "docs": {},
-                                                                                          "n": {
-                                                                                            "docs": {},
-                                                                                            "u": {
-                                                                                              "docs": {},
-                                                                                              "i": {
-                                                                                                "docs": {},
-                                                                                                "t": {
-                                                                                                  "docs": {},
-                                                                                                  "e": {
-                                                                                                    "docs": {},
-                                                                                                    "m": {
-                                                                                                      "docs": {
-                                                                                                        "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": {
-                                                                                                          "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems",
-                                                                                                          "tf": 60
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      },
-                                                                                      "i": {
-                                                                                        "docs": {},
-                                                                                        "s": {
-                                                                                          "docs": {},
-                                                                                          "i": {
-                                                                                            "docs": {},
-                                                                                            "n": {
-                                                                                              "docs": {},
-                                                                                              "i": {
-                                                                                                "docs": {},
-                                                                                                "t": {
-                                                                                                  "docs": {
-                                                                                                    "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-                                                                                                      "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-                                                                                                      "tf": 60
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        },
-                                                                                        "n": {
-                                                                                          "docs": {},
-                                                                                          "i": {
-                                                                                            "docs": {},
-                                                                                            "t": {
-                                                                                              "docs": {},
-                                                                                              "i": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-                                                                                                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
-                                                                                                    "tf": 60
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      },
-                                                                                      "a": {
-                                                                                        "docs": {},
-                                                                                        "d": {
-                                                                                          "docs": {},
-                                                                                          "d": {
-                                                                                            "docs": {},
-                                                                                            "i": {
-                                                                                              "docs": {},
-                                                                                              "t": {
-                                                                                                "docs": {},
-                                                                                                "e": {
-                                                                                                  "docs": {},
-                                                                                                  "m": {
-                                                                                                    "docs": {
-                                                                                                      "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                                                                                                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                                                                                                        "tf": 15
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            },
-                                                                                            "s": {
-                                                                                              "docs": {},
-                                                                                              "p": {
-                                                                                                "docs": {},
-                                                                                                "a": {
-                                                                                                  "docs": {},
-                                                                                                  "c": {
-                                                                                                    "docs": {
-                                                                                                      "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                                                                                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                                                                                                        "tf": 12
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
+                                                                                      "Presentation.Component.AbstractToolbar.html": {
+                                                                                        "ref": "Presentation.Component.AbstractToolbar.html",
+                                                                                        "tf": 1100
                                                                                       }
                                                                                     }
                                                                                   }
@@ -15096,149 +13264,6 @@ window.lunrData = {
                                                                                     "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                                                                                     "tf": 75
                                                                                   }
-                                                                                },
-                                                                                ".": {
-                                                                                  "docs": {},
-                                                                                  "t": {
-                                                                                    "docs": {},
-                                                                                    "i": {
-                                                                                      "docs": {},
-                                                                                      "t": {
-                                                                                        "docs": {},
-                                                                                        "l": {
-                                                                                          "docs": {
-                                                                                            "Augmented.Presentation.Component.HamburgerMenu.html#.title": {
-                                                                                              "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.title",
-                                                                                              "tf": 60
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    },
-                                                                                    "o": {
-                                                                                      "docs": {},
-                                                                                      "g": {
-                                                                                        "docs": {},
-                                                                                        "g": {
-                                                                                          "docs": {},
-                                                                                          "l": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                                                                                                "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-                                                                                                "tf": 60
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "a": {
-                                                                                    "docs": {},
-                                                                                    "d": {
-                                                                                      "docs": {},
-                                                                                      "d": {
-                                                                                        "docs": {},
-                                                                                        "i": {
-                                                                                          "docs": {},
-                                                                                          "t": {
-                                                                                            "docs": {},
-                                                                                            "e": {
-                                                                                              "docs": {},
-                                                                                              "m": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                                                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                                                                                                    "tf": 15
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        },
-                                                                                        "s": {
-                                                                                          "docs": {},
-                                                                                          "p": {
-                                                                                            "docs": {},
-                                                                                            "a": {
-                                                                                              "docs": {},
-                                                                                              "c": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                                                                                                    "tf": 12
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "i": {
-                                                                                    "docs": {},
-                                                                                    "n": {
-                                                                                      "docs": {},
-                                                                                      "i": {
-                                                                                        "docs": {},
-                                                                                        "t": {
-                                                                                          "docs": {},
-                                                                                          "i": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                                                                                                "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                                                                                                "tf": 60
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "r": {
-                                                                                    "docs": {},
-                                                                                    "e": {
-                                                                                      "docs": {},
-                                                                                      "n": {
-                                                                                        "docs": {},
-                                                                                        "d": {
-                                                                                          "docs": {
-                                                                                            "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-                                                                                              "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-                                                                                              "tf": 20
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "h": {
-                                                                                    "docs": {},
-                                                                                    "a": {
-                                                                                      "docs": {},
-                                                                                      "m": {
-                                                                                        "docs": {},
-                                                                                        "b": {
-                                                                                          "docs": {},
-                                                                                          "u": {
-                                                                                            "docs": {},
-                                                                                            "r": {
-                                                                                              "docs": {},
-                                                                                              "g": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                                                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                                                                                                    "tf": 60
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
                                                                                 }
                                                                               }
                                                                             }
@@ -15294,6 +13319,41 @@ window.lunrData = {
                                                                                   }
                                                                                 }
                                                                               }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "d": {
+                                                        "docs": {},
+                                                        "i": {
+                                                          "docs": {},
+                                                          "a": {
+                                                            "docs": {},
+                                                            "l": {
+                                                              "docs": {},
+                                                              "o": {
+                                                                "docs": {},
+                                                                "g": {
+                                                                  "docs": {},
+                                                                  "v": {
+                                                                    "docs": {},
+                                                                    "i": {
+                                                                      "docs": {},
+                                                                      "e": {
+                                                                        "docs": {},
+                                                                        "w": {
+                                                                          "docs": {
+                                                                            "Presentation.Component.DialogView.html": {
+                                                                              "ref": "Presentation.Component.DialogView.html",
+                                                                              "tf": 1100
                                                                             }
                                                                           }
                                                                         }
@@ -15400,9 +13460,9 @@ window.lunrData = {
                                                                             "docs": {},
                                                                             "w": {
                                                                               "docs": {
-                                                                                "Augmented.Presentation.ConfirmationDialogView.html": {
-                                                                                  "ref": "Augmented.Presentation.ConfirmationDialogView.html",
-                                                                                  "tf": 100
+                                                                                "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                                                                                  "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                                                                                  "tf": 60
                                                                                 }
                                                                               }
                                                                             }
@@ -16164,26 +14224,6 @@ window.lunrData = {
                             "ref": "Augmented.Request.Configuration.html#.headers",
                             "tf": 25
                           },
-                          "Augmented.Presentation.DialogView.html#.name": {
-                            "ref": "Augmented.Presentation.DialogView.html#.name",
-                            "tf": 10
-                          },
-                          "Augmented.Presentation.DialogView.html#.title": {
-                            "ref": "Augmented.Presentation.DialogView.html#.title",
-                            "tf": 12.5
-                          },
-                          "Augmented.Presentation.DialogView.html#.body": {
-                            "ref": "Augmented.Presentation.DialogView.html#.body",
-                            "tf": 7.142857142857142
-                          },
-                          "Augmented.Presentation.DialogView.html#.style": {
-                            "ref": "Augmented.Presentation.DialogView.html#.style",
-                            "tf": 5.555555555555555
-                          },
-                          "Augmented.Presentation.DialogView.html#.buttons": {
-                            "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                            "tf": 8.333333333333332
-                          },
                           "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
                             "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
                             "tf": 8.333333333333332
@@ -16212,10 +14252,6 @@ window.lunrData = {
                             "ref": "Augmented.Presentation.AutomaticForm.html#.description",
                             "tf": 25
                           },
-                          "Augmented.Presentation.Component.HamburgerMenu.html#.title": {
-                            "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.title",
-                            "tf": 25
-                          },
                           "Augmented.Presentation.AutomaticTable.html#.theme": {
                             "ref": "Augmented.Presentation.AutomaticTable.html#.theme",
                             "tf": 8.333333333333332
@@ -16223,10 +14259,6 @@ window.lunrData = {
                           "Augmented.Presentation.AutomaticTable.html#.linkable": {
                             "ref": "Augmented.Presentation.AutomaticTable.html#.linkable",
                             "tf": 5.555555555555555
-                          },
-                          "Augmented.Presentation.AutomaticTable.html#.links": {
-                            "ref": "Augmented.Presentation.AutomaticTable.html#.links",
-                            "tf": 7.142857142857142
                           },
                           "Augmented.Presentation.AutomaticTable.html#.selectable": {
                             "ref": "Augmented.Presentation.AutomaticTable.html#.selectable",
@@ -16284,17 +14316,9 @@ window.lunrData = {
                             "ref": "Augmented.Presentation.AutomaticTable.html#.isInitalized",
                             "tf": 25
                           },
-                          "Augmented.Presentation.Component.AbstractToolbar.html#.model": {
-                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.model",
-                            "tf": 25
-                          },
-                          "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-                            "tf": 25
-                          },
-                          "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": {
-                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems",
-                            "tf": 25
+                          "Augmented.Presentation.AutomaticTable.html#.links": {
+                            "ref": "Augmented.Presentation.AutomaticTable.html#.links",
+                            "tf": 7.142857142857142
                           },
                           "Augmented.Request.Configuration.xhrFields.html": {
                             "ref": "Augmented.Request.Configuration.xhrFields.html",
@@ -16679,21 +14703,9 @@ window.lunrData = {
                         "ref": "Presentation.ViewController.html#.render",
                         "tf": 665
                       },
-                      "Augmented.Presentation.DialogView.html#.render": {
-                        "ref": "Augmented.Presentation.DialogView.html#.render",
-                        "tf": 658.3333333333334
-                      },
-                      "Augmented.Presentation.DialogView.html#.open": {
-                        "ref": "Augmented.Presentation.DialogView.html#.open",
-                        "tf": 5.555555555555555
-                      },
                       "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": {
                         "ref": "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform",
                         "tf": 866.6666666666666
-                      },
-                      "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-                        "tf": 853.3333333333333
                       },
                       "Augmented.Presentation.AutomaticTable.html#.renderPaginationControl": {
                         "ref": "Augmented.Presentation.AutomaticTable.html#.renderPaginationControl",
@@ -17585,10 +15597,6 @@ window.lunrData = {
                   "docs": {},
                   "r": {
                     "docs": {
-                      "Augmented.Presentation.DialogView.html#.name": {
-                        "ref": "Augmented.Presentation.DialogView.html#.name",
-                        "tf": 10
-                      },
                       "Presentation.Widget.html#.Input": {
                         "ref": "Presentation.Widget.html#.Input",
                         "tf": 12.5
@@ -17744,10 +15752,6 @@ window.lunrData = {
                   "ref": "Augmented.Presentation.AutomaticTable.html#.linkable",
                   "tf": 5.555555555555555
                 },
-                "Augmented.Presentation.AutomaticTable.html#.links": {
-                  "ref": "Augmented.Presentation.AutomaticTable.html#.links",
-                  "tf": 7.142857142857142
-                },
                 "Augmented.Presentation.AutomaticTable.html#.selectable": {
                   "ref": "Augmented.Presentation.AutomaticTable.html#.selectable",
                   "tf": 8.333333333333332
@@ -17755,6 +15759,10 @@ window.lunrData = {
                 "Augmented.Presentation.AutomaticTable.html#.rows": {
                   "ref": "Augmented.Presentation.AutomaticTable.html#.rows",
                   "tf": 625
+                },
+                "Augmented.Presentation.AutomaticTable.html#.links": {
+                  "ref": "Augmented.Presentation.AutomaticTable.html#.links",
+                  "tf": 7.142857142857142
                 },
                 "Augmented.Presentation.AutomaticTable.html#.rowlink": {
                   "ref": "Augmented.Presentation.AutomaticTable.html#.rowlink",
@@ -17815,8 +15823,8 @@ window.lunrData = {
                       "ref": "index.html",
                       "tf": 10
                     },
-                    "Augmented.Presentation.DialogView.html": {
-                      "ref": "Augmented.Presentation.DialogView.html",
+                    "Presentation.Component.DialogView.html": {
+                      "ref": "Presentation.Component.DialogView.html",
                       "tf": 6.25
                     }
                   }
@@ -17852,12 +15860,7 @@ window.lunrData = {
               "l": {
                 "docs": {},
                 "e": {
-                  "docs": {
-                    "Augmented.Presentation.DialogView.html#.style": {
-                      "ref": "Augmented.Presentation.DialogView.html#.style",
-                      "tf": 636.1111111111111
-                    }
-                  },
+                  "docs": {},
                   "s": {
                     "docs": {},
                     "h": {
@@ -17976,18 +15979,6 @@ window.lunrData = {
                       "docs": {},
                       "d": {
                         "docs": {
-                          "Augmented.Presentation.DialogView.html#.cancel": {
-                            "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                            "tf": 5.555555555555555
-                          },
-                          "Augmented.Presentation.DialogView.html#.open": {
-                            "ref": "Augmented.Presentation.DialogView.html#.open",
-                            "tf": 5.555555555555555
-                          },
-                          "Augmented.Presentation.DialogView.html#.close": {
-                            "ref": "Augmented.Presentation.DialogView.html#.close",
-                            "tf": 5
-                          },
                           "Presentation.Widget.html#.List": {
                             "ref": "Presentation.Widget.html#.List",
                             "tf": 10
@@ -18038,14 +16029,6 @@ window.lunrData = {
                 "Presentation.Router.html": {
                   "ref": "Presentation.Router.html",
                   "tf": 5.88235294117647
-                },
-                "Augmented.Presentation.DialogView.html#.template": {
-                  "ref": "Augmented.Presentation.DialogView.html#.template",
-                  "tf": 8.333333333333332
-                },
-                "Augmented.Presentation.DialogView.html#.setBody": {
-                  "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                  "tf": 10
                 },
                 "Augmented.Presentation.AutomaticForm.html#.setURI": {
                   "ref": "Augmented.Presentation.AutomaticForm.html#.setURI",
@@ -18110,10 +16093,6 @@ window.lunrData = {
                       "ref": "Augmented.Request.Configuration.html",
                       "tf": 5.555555555555555
                     },
-                    "Augmented.Presentation.AutomaticTable.html#.links": {
-                      "ref": "Augmented.Presentation.AutomaticTable.html#.links",
-                      "tf": 7.142857142857142
-                    },
                     "Augmented.Presentation.AutomaticTable.html#.sortStyle": {
                       "ref": "Augmented.Presentation.AutomaticTable.html#.sortStyle",
                       "tf": 10
@@ -18121,6 +16100,10 @@ window.lunrData = {
                     "Augmented.Presentation.AutomaticTable.html#.paginationAPI": {
                       "ref": "Augmented.Presentation.AutomaticTable.html#.paginationAPI",
                       "tf": 8.333333333333332
+                    },
+                    "Augmented.Presentation.AutomaticTable.html#.links": {
+                      "ref": "Augmented.Presentation.AutomaticTable.html#.links",
+                      "tf": 7.142857142857142
                     },
                     "Presentation.Colleague.html": {
                       "ref": "Presentation.Colleague.html",
@@ -18139,27 +16122,6 @@ window.lunrData = {
                       "Augmented.Presentation.AutomaticTable.html#.setURI": {
                         "ref": "Augmented.Presentation.AutomaticTable.html#.setURI",
                         "tf": 608.3333333333334
-                      }
-                    }
-                  }
-                }
-              },
-              "b": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "d": {
-                    "docs": {},
-                    "i": {
-                      "docs": {
-                        "Augmented.Presentation.DialogView.html#.body": {
-                          "ref": "Augmented.Presentation.DialogView.html#.body",
-                          "tf": 7.142857142857142
-                        },
-                        "Augmented.Presentation.DialogView.html#.setBody": {
-                          "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                          "tf": 618.3333333333334
-                        }
                       }
                     }
                   }
@@ -18665,138 +16627,6 @@ window.lunrData = {
               }
             }
           },
-          "p": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                        "tf": 10
-                      },
-                      "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                        "tf": 376.6666666666667
-                      },
-                      "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                        "tf": 10
-                      },
-                      "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                        "tf": 376.6666666666667
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "f": {
-                    "docs": {
-                      "Augmented.Presentation.AutomaticTable.html#.goToPage": {
-                        "ref": "Augmented.Presentation.AutomaticTable.html#.goToPage",
-                        "tf": 16.666666666666664
-                      },
-                      "Presentation.Mediator.html#.getChannel": {
-                        "ref": "Presentation.Mediator.html#.getChannel",
-                        "tf": 25
-                      }
-                    },
-                    "i": {
-                      "docs": {
-                        "Augmented.Presentation.AutomaticTable.html#.editCell": {
-                          "ref": "Augmented.Presentation.AutomaticTable.html#.editCell",
-                          "tf": 10
-                        },
-                        "Augmented.Presentation.AutomaticTable.html#.clearCell": {
-                          "ref": "Augmented.Presentation.AutomaticTable.html#.clearCell",
-                          "tf": 10
-                        },
-                        "Augmented.Presentation.Spreadsheet.html": {
-                          "ref": "Augmented.Presentation.Spreadsheet.html",
-                          "tf": 3.8461538461538463
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "r": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "d": {
-                    "docs": {},
-                    "s": {
-                      "docs": {},
-                      "h": {
-                        "docs": {},
-                        "e": {
-                          "docs": {},
-                          "e": {
-                            "docs": {},
-                            "t": {
-                              "docs": {
-                                "Augmented.Presentation.Spreadsheet.html": {
-                                  "ref": "Augmented.Presentation.Spreadsheet.html",
-                                  "tf": 700
-                                }
-                              },
-                              ".": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "f": {
-                                    "docs": {
-                                      "Augmented.Presentation.Spreadsheet.html": {
-                                        "ref": "Augmented.Presentation.Spreadsheet.html",
-                                        "tf": 3.8461538461538463
-                                      }
-                                    }
-                                  },
-                                  "n": {
-                                    "docs": {},
-                                    "i": {
-                                      "docs": {},
-                                      "t": {
-                                        "docs": {},
-                                        "i": {
-                                          "docs": {
-                                            "Augmented.Presentation.Spreadsheet.html#.initialize": {
-                                              "ref": "Augmented.Presentation.Spreadsheet.html#.initialize",
-                                              "tf": 75
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "o": {
             "docs": {},
             "r": {
@@ -18912,6 +16742,109 @@ window.lunrData = {
               }
             }
           },
+          "p": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "f": {
+                    "docs": {
+                      "Augmented.Presentation.AutomaticTable.html#.goToPage": {
+                        "ref": "Augmented.Presentation.AutomaticTable.html#.goToPage",
+                        "tf": 16.666666666666664
+                      },
+                      "Presentation.Mediator.html#.getChannel": {
+                        "ref": "Presentation.Mediator.html#.getChannel",
+                        "tf": 25
+                      }
+                    },
+                    "i": {
+                      "docs": {
+                        "Augmented.Presentation.AutomaticTable.html#.editCell": {
+                          "ref": "Augmented.Presentation.AutomaticTable.html#.editCell",
+                          "tf": 10
+                        },
+                        "Augmented.Presentation.AutomaticTable.html#.clearCell": {
+                          "ref": "Augmented.Presentation.AutomaticTable.html#.clearCell",
+                          "tf": 10
+                        },
+                        "Augmented.Presentation.Spreadsheet.html": {
+                          "ref": "Augmented.Presentation.Spreadsheet.html",
+                          "tf": 3.8461538461538463
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "d": {
+                    "docs": {},
+                    "s": {
+                      "docs": {},
+                      "h": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "Augmented.Presentation.Spreadsheet.html": {
+                                  "ref": "Augmented.Presentation.Spreadsheet.html",
+                                  "tf": 700
+                                }
+                              },
+                              ".": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "f": {
+                                    "docs": {
+                                      "Augmented.Presentation.Spreadsheet.html": {
+                                        "ref": "Augmented.Presentation.Spreadsheet.html",
+                                        "tf": 3.8461538461538463
+                                      }
+                                    }
+                                  },
+                                  "n": {
+                                    "docs": {},
+                                    "i": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {},
+                                        "i": {
+                                          "docs": {
+                                            "Augmented.Presentation.Spreadsheet.html#.initialize": {
+                                              "ref": "Augmented.Presentation.Spreadsheet.html#.initialize",
+                                              "tf": 75
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "m": {
             "docs": {},
             "a": {
@@ -19000,20 +16933,16 @@ window.lunrData = {
                       "ref": "Presentation.Component.Header.html",
                       "tf": 110
                     },
-                    "Augmented.Presentation.DialogView.html": {
-                      "ref": "Augmented.Presentation.DialogView.html",
+                    "Presentation.Component.AlertDialogView.html": {
+                      "ref": "Presentation.Component.AlertDialogView.html",
                       "tf": 110
                     },
-                    "Augmented.Presentation.DialogView.html#.style": {
-                      "ref": "Augmented.Presentation.DialogView.html#.style",
-                      "tf": 5.555555555555555
-                    },
-                    "Augmented.Presentation.ConfirmationDialogView.html": {
-                      "ref": "Augmented.Presentation.ConfirmationDialogView.html",
+                    "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                      "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
                       "tf": 110
                     },
-                    "Augmented.Presentation.AlertDialogView.html": {
-                      "ref": "Augmented.Presentation.AlertDialogView.html",
+                    "Presentation.Component.DialogView.html": {
+                      "ref": "Presentation.Component.DialogView.html",
                       "tf": 110
                     },
                     "Augmented.Presentation.AutomaticForm.html": {
@@ -19030,6 +16959,10 @@ window.lunrData = {
                     },
                     "Augmented.Presentation.AutomaticTable.html": {
                       "ref": "Augmented.Presentation.AutomaticTable.html",
+                      "tf": 110
+                    },
+                    "Augmented.Presentation.AutoTable.html": {
+                      "ref": "Augmented.Presentation.AutoTable.html",
                       "tf": 110
                     },
                     "Augmented.Presentation.BigDataTable.html": {
@@ -19056,8 +16989,8 @@ window.lunrData = {
                       "ref": "Augmented.Presentation.Spreadsheet.html",
                       "tf": 113.84615384615384
                     },
-                    "Augmented.Presentation.Component.AbstractToolbar.html": {
-                      "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
+                    "Presentation.Component.AbstractToolbar.html": {
+                      "ref": "Presentation.Component.AbstractToolbar.html",
                       "tf": 110
                     },
                     "Augmented.Presentation.Component.Toolbar.html": {
@@ -19082,10 +17015,6 @@ window.lunrData = {
                     },
                     "Presentation.Widget.html": {
                       "ref": "Presentation.Widget.html",
-                      "tf": 110
-                    },
-                    "Augmented.Presentation.AutoTable.html": {
-                      "ref": "Augmented.Presentation.AutoTable.html",
                       "tf": 110
                     }
                   }
@@ -19202,39 +17131,12 @@ window.lunrData = {
                 }
               }
             },
-            "o": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "e": {
-                  "docs": {
-                    "Augmented.Presentation.DialogView.html#.cancel": {
-                      "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                      "tf": 5.555555555555555
-                    },
-                    "Augmented.Presentation.DialogView.html#.close": {
-                      "ref": "Augmented.Presentation.DialogView.html#.close",
-                      "tf": 628.3333333333334
-                    }
-                  }
-                }
-              }
-            },
             "i": {
               "docs": {},
               "c": {
                 "docs": {},
                 "k": {
-                  "docs": {
-                    "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                      "tf": 10
-                    },
-                    "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                      "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                      "tf": 10
-                    }
-                  },
+                  "docs": {},
                   "d": {
                     "docs": {},
                     "a": {
@@ -19708,16 +17610,7 @@ window.lunrData = {
                   "n": {
                     "docs": {},
                     "t": {
-                      "docs": {
-                        "Augmented.Presentation.DialogView.html#.template": {
-                          "ref": "Augmented.Presentation.DialogView.html#.template",
-                          "tf": 8.333333333333332
-                        },
-                        "Augmented.Presentation.DialogView.html#.setBody": {
-                          "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                          "tf": 10
-                        }
-                      },
+                      "docs": {},
                       "t": {
                         "docs": {},
                         "y": {
@@ -19769,8 +17662,8 @@ window.lunrData = {
                             "ref": "Augmented.Request.Configuration.html",
                             "tf": 705.5555555555555
                           },
-                          "Augmented.Presentation.DialogView.html": {
-                            "ref": "Augmented.Presentation.DialogView.html",
+                          "Presentation.Component.DialogView.html": {
+                            "ref": "Presentation.Component.DialogView.html",
                             "tf": 6.25
                           }
                         },
@@ -20316,9 +18209,9 @@ window.lunrData = {
                                                   "docs": {},
                                                   "w": {
                                                     "docs": {
-                                                      "Augmented.Presentation.ConfirmationDialogView.html": {
-                                                        "ref": "Augmented.Presentation.ConfirmationDialogView.html",
-                                                        "tf": 700
+                                                      "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                                                        "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                                                        "tf": 660
                                                       }
                                                     }
                                                   }
@@ -20417,8 +18310,8 @@ window.lunrData = {
                         "ref": "Presentation.Component.Header.html",
                         "tf": 25
                       },
-                      "Augmented.Presentation.Component.AbstractToolbar.html": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
+                      "Presentation.Component.AbstractToolbar.html": {
+                        "ref": "Presentation.Component.AbstractToolbar.html",
                         "tf": 10
                       },
                       "module-Presentation.html": {
@@ -20528,6 +18421,71 @@ window.lunrData = {
                                                                                     }
                                                                                   }
                                                                                 }
+                                                                              },
+                                                                              "n": {
+                                                                                "docs": {},
+                                                                                "f": {
+                                                                                  "docs": {},
+                                                                                  "i": {
+                                                                                    "docs": {},
+                                                                                    "r": {
+                                                                                      "docs": {},
+                                                                                      "m": {
+                                                                                        "docs": {},
+                                                                                        "a": {
+                                                                                          "docs": {},
+                                                                                          "t": {
+                                                                                            "docs": {},
+                                                                                            "i": {
+                                                                                              "docs": {},
+                                                                                              "o": {
+                                                                                                "docs": {},
+                                                                                                "n": {
+                                                                                                  "docs": {},
+                                                                                                  "d": {
+                                                                                                    "docs": {},
+                                                                                                    "i": {
+                                                                                                      "docs": {},
+                                                                                                      "a": {
+                                                                                                        "docs": {},
+                                                                                                        "l": {
+                                                                                                          "docs": {},
+                                                                                                          "o": {
+                                                                                                            "docs": {},
+                                                                                                            "g": {
+                                                                                                              "docs": {},
+                                                                                                              "v": {
+                                                                                                                "docs": {},
+                                                                                                                "i": {
+                                                                                                                  "docs": {},
+                                                                                                                  "e": {
+                                                                                                                    "docs": {},
+                                                                                                                    "w": {
+                                                                                                                      "docs": {
+                                                                                                                        "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                                                                                                                          "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                                                                                                                          "tf": 60
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
                                                                               }
                                                                             }
                                                                           }
@@ -20537,6 +18495,53 @@ window.lunrData = {
                                                                   }
                                                                 }
                                                               }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "l": {
+                                "docs": {},
+                                "e": {
+                                  "docs": {},
+                                  "r": {
+                                    "docs": {},
+                                    "t": {
+                                      "docs": {},
+                                      "d": {
+                                        "docs": {},
+                                        "i": {
+                                          "docs": {},
+                                          "a": {
+                                            "docs": {},
+                                            "l": {
+                                              "docs": {},
+                                              "o": {
+                                                "docs": {},
+                                                "g": {
+                                                  "docs": {},
+                                                  "v": {
+                                                    "docs": {},
+                                                    "i": {
+                                                      "docs": {},
+                                                      "e": {
+                                                        "docs": {},
+                                                        "w": {
+                                                          "docs": {
+                                                            "Presentation.Component.AlertDialogView.html": {
+                                                              "ref": "Presentation.Component.AlertDialogView.html",
+                                                              "tf": 200
                                                             }
                                                           }
                                                         }
@@ -20581,141 +18586,9 @@ window.lunrData = {
                                                         "docs": {},
                                                         "r": {
                                                           "docs": {
-                                                            "Augmented.Presentation.Component.AbstractToolbar.html": {
-                                                              "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
-                                                              "tf": 75
-                                                            }
-                                                          },
-                                                          ".": {
-                                                            "docs": {},
-                                                            "m": {
-                                                              "docs": {},
-                                                              "o": {
-                                                                "docs": {},
-                                                                "d": {
-                                                                  "docs": {},
-                                                                  "e": {
-                                                                    "docs": {},
-                                                                    "l": {
-                                                                      "docs": {
-                                                                        "Augmented.Presentation.Component.AbstractToolbar.html#.model": {
-                                                                          "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.model",
-                                                                          "tf": 60
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "e": {
-                                                                "docs": {},
-                                                                "n": {
-                                                                  "docs": {},
-                                                                  "u": {
-                                                                    "docs": {},
-                                                                    "i": {
-                                                                      "docs": {},
-                                                                      "t": {
-                                                                        "docs": {},
-                                                                        "e": {
-                                                                          "docs": {},
-                                                                          "m": {
-                                                                            "docs": {
-                                                                              "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": {
-                                                                                "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems",
-                                                                                "tf": 60
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            },
-                                                            "i": {
-                                                              "docs": {},
-                                                              "s": {
-                                                                "docs": {},
-                                                                "i": {
-                                                                  "docs": {},
-                                                                  "n": {
-                                                                    "docs": {},
-                                                                    "i": {
-                                                                      "docs": {},
-                                                                      "t": {
-                                                                        "docs": {
-                                                                          "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-                                                                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-                                                                            "tf": 60
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "n": {
-                                                                "docs": {},
-                                                                "i": {
-                                                                  "docs": {},
-                                                                  "t": {
-                                                                    "docs": {},
-                                                                    "i": {
-                                                                      "docs": {
-                                                                        "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-                                                                          "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
-                                                                          "tf": 60
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            },
-                                                            "a": {
-                                                              "docs": {},
-                                                              "d": {
-                                                                "docs": {},
-                                                                "d": {
-                                                                  "docs": {},
-                                                                  "i": {
-                                                                    "docs": {},
-                                                                    "t": {
-                                                                      "docs": {},
-                                                                      "e": {
-                                                                        "docs": {},
-                                                                        "m": {
-                                                                          "docs": {
-                                                                            "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                                                                              "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                                                                              "tf": 15
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  },
-                                                                  "s": {
-                                                                    "docs": {},
-                                                                    "p": {
-                                                                      "docs": {},
-                                                                      "a": {
-                                                                        "docs": {},
-                                                                        "c": {
-                                                                          "docs": {
-                                                                            "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                                                              "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                                                                              "tf": 12
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
+                                                            "Presentation.Component.AbstractToolbar.html": {
+                                                              "ref": "Presentation.Component.AbstractToolbar.html",
+                                                              "tf": 150
                                                             }
                                                           }
                                                         }
@@ -20781,149 +18654,6 @@ window.lunrData = {
                                                           "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                                                           "tf": 75
                                                         }
-                                                      },
-                                                      ".": {
-                                                        "docs": {},
-                                                        "t": {
-                                                          "docs": {},
-                                                          "i": {
-                                                            "docs": {},
-                                                            "t": {
-                                                              "docs": {},
-                                                              "l": {
-                                                                "docs": {
-                                                                  "Augmented.Presentation.Component.HamburgerMenu.html#.title": {
-                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.title",
-                                                                    "tf": 60
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          },
-                                                          "o": {
-                                                            "docs": {},
-                                                            "g": {
-                                                              "docs": {},
-                                                              "g": {
-                                                                "docs": {},
-                                                                "l": {
-                                                                  "docs": {
-                                                                    "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                                                                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-                                                                      "tf": 60
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "a": {
-                                                          "docs": {},
-                                                          "d": {
-                                                            "docs": {},
-                                                            "d": {
-                                                              "docs": {},
-                                                              "i": {
-                                                                "docs": {},
-                                                                "t": {
-                                                                  "docs": {},
-                                                                  "e": {
-                                                                    "docs": {},
-                                                                    "m": {
-                                                                      "docs": {
-                                                                        "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                                                                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                                                                          "tf": 15
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "s": {
-                                                                "docs": {},
-                                                                "p": {
-                                                                  "docs": {},
-                                                                  "a": {
-                                                                    "docs": {},
-                                                                    "c": {
-                                                                      "docs": {
-                                                                        "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                                                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                                                                          "tf": 12
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "i": {
-                                                          "docs": {},
-                                                          "n": {
-                                                            "docs": {},
-                                                            "i": {
-                                                              "docs": {},
-                                                              "t": {
-                                                                "docs": {},
-                                                                "i": {
-                                                                  "docs": {
-                                                                    "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                                                                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                                                                      "tf": 60
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "r": {
-                                                          "docs": {},
-                                                          "e": {
-                                                            "docs": {},
-                                                            "n": {
-                                                              "docs": {},
-                                                              "d": {
-                                                                "docs": {
-                                                                  "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-                                                                    "tf": 20
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "h": {
-                                                          "docs": {},
-                                                          "a": {
-                                                            "docs": {},
-                                                            "m": {
-                                                              "docs": {},
-                                                              "b": {
-                                                                "docs": {},
-                                                                "u": {
-                                                                  "docs": {},
-                                                                  "r": {
-                                                                    "docs": {},
-                                                                    "g": {
-                                                                      "docs": {
-                                                                        "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                                                                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                                                                          "tf": 60
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
                                                       }
                                                     }
                                                   }
@@ -20979,6 +18709,41 @@ window.lunrData = {
                                                         }
                                                       }
                                                     }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "d": {
+                              "docs": {},
+                              "i": {
+                                "docs": {},
+                                "a": {
+                                  "docs": {},
+                                  "l": {
+                                    "docs": {},
+                                    "o": {
+                                      "docs": {},
+                                      "g": {
+                                        "docs": {},
+                                        "v": {
+                                          "docs": {},
+                                          "i": {
+                                            "docs": {},
+                                            "e": {
+                                              "docs": {},
+                                              "w": {
+                                                "docs": {
+                                                  "Presentation.Component.DialogView.html": {
+                                                    "ref": "Presentation.Component.DialogView.html",
+                                                    "tf": 200
                                                   }
                                                 }
                                               }
@@ -21086,8 +18851,8 @@ window.lunrData = {
                     "docs": {},
                     "m": {
                       "docs": {
-                        "Augmented.Presentation.ConfirmationDialogView.html": {
-                          "ref": "Augmented.Presentation.ConfirmationDialogView.html",
+                        "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                          "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
                           "tf": 6.25
                         }
                       }
@@ -21207,14 +18972,6 @@ window.lunrData = {
                     "ref": "Presentation.Router.html#.cleanup",
                     "tf": 8.333333333333332
                   },
-                  "Augmented.Presentation.DialogView.html#.cancel": {
-                    "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                    "tf": 5.555555555555555
-                  },
-                  "Augmented.Presentation.DialogView.html#.open": {
-                    "ref": "Augmented.Presentation.DialogView.html#.open",
-                    "tf": 5.555555555555555
-                  },
                   "Augmented.Presentation.AutomaticTable.html#.rowlink": {
                     "ref": "Augmented.Presentation.AutomaticTable.html#.rowlink",
                     "tf": 6.25
@@ -21251,18 +19008,6 @@ window.lunrData = {
                           "Augmented.Request.Configuration.html#.beforeSend": {
                             "ref": "Augmented.Request.Configuration.html#.beforeSend",
                             "tf": 25
-                          },
-                          "Augmented.Presentation.DialogView.html#.cancel": {
-                            "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                            "tf": 5.555555555555555
-                          },
-                          "Augmented.Presentation.DialogView.html#.open": {
-                            "ref": "Augmented.Presentation.DialogView.html#.open",
-                            "tf": 5.555555555555555
-                          },
-                          "Augmented.Presentation.DialogView.html#.close": {
-                            "ref": "Augmented.Presentation.DialogView.html#.close",
-                            "tf": 5
                           },
                           "Augmented.Presentation.AutomaticTable.html#.rowlink": {
                             "ref": "Augmented.Presentation.AutomaticTable.html#.rowlink",
@@ -21329,12 +19074,8 @@ window.lunrData = {
                   "docs": {},
                   "l": {
                     "docs": {
-                      "Augmented.Presentation.DialogView.html#.cancel": {
-                        "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                        "tf": 619.4444444444445
-                      },
-                      "Augmented.Presentation.AlertDialogView.html": {
-                        "ref": "Augmented.Presentation.AlertDialogView.html",
+                      "Presentation.Component.AlertDialogView.html": {
+                        "ref": "Presentation.Component.AlertDialogView.html",
                         "tf": 5.555555555555555
                       },
                       "Presentation.Mediator.html#.unsubscribe": {
@@ -21446,17 +19187,17 @@ window.lunrData = {
                       "ref": "Presentation.Router.html",
                       "tf": 2.941176470588235
                     },
-                    "Augmented.Presentation.DialogView.html": {
-                      "ref": "Augmented.Presentation.DialogView.html",
-                      "tf": 6.25
-                    },
-                    "Augmented.Presentation.ConfirmationDialogView.html": {
-                      "ref": "Augmented.Presentation.ConfirmationDialogView.html",
-                      "tf": 6.25
-                    },
-                    "Augmented.Presentation.AlertDialogView.html": {
-                      "ref": "Augmented.Presentation.AlertDialogView.html",
+                    "Presentation.Component.AlertDialogView.html": {
+                      "ref": "Presentation.Component.AlertDialogView.html",
                       "tf": 5.555555555555555
+                    },
+                    "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                      "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                      "tf": 6.25
+                    },
+                    "Presentation.Component.DialogView.html": {
+                      "ref": "Presentation.Component.DialogView.html",
+                      "tf": 6.25
                     },
                     "Augmented.Presentation.AutomaticForm.html": {
                       "ref": "Augmented.Presentation.AutomaticForm.html",
@@ -21520,8 +19261,8 @@ window.lunrData = {
                   "docs": {},
                   "m": {
                     "docs": {
-                      "Augmented.Presentation.DialogView.html": {
-                        "ref": "Augmented.Presentation.DialogView.html",
+                      "Presentation.Component.DialogView.html": {
+                        "ref": "Presentation.Component.DialogView.html",
                         "tf": 6.25
                       },
                       "Presentation.DecoratorView.html": {
@@ -22175,50 +19916,6 @@ window.lunrData = {
                                     "ref": "Presentation.Router.html#.cleanup",
                                     "tf": 50
                                   },
-                                  "Augmented.Presentation.DialogView.html#.name": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.name",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.title": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.title",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.body": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.body",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.style": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.style",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.buttons": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.template": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.template",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.setBody": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.render": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.render",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.cancel": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.open": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.open",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.DialogView.html#.close": {
-                                    "ref": "Augmented.Presentation.DialogView.html#.close",
-                                    "tf": 33.33333333333333
-                                  },
                                   "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
                                     "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
                                     "tf": 50
@@ -22295,44 +19992,12 @@ window.lunrData = {
                                     "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
                                     "tf": 50
                                   },
-                                  "Augmented.Presentation.Component.HamburgerMenu.html#.title": {
-                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.title",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                                    "tf": 10
-                                  },
-                                  "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                                    "tf": 16.666666666666664
-                                  },
-                                  "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-                                    "tf": 25
-                                  },
-                                  "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-                                    "tf": 50
-                                  },
                                   "Augmented.Presentation.AutomaticTable.html#.theme": {
                                     "ref": "Augmented.Presentation.AutomaticTable.html#.theme",
                                     "tf": 50
                                   },
                                   "Augmented.Presentation.AutomaticTable.html#.linkable": {
                                     "ref": "Augmented.Presentation.AutomaticTable.html#.linkable",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticTable.html#.links": {
-                                    "ref": "Augmented.Presentation.AutomaticTable.html#.links",
                                     "tf": 50
                                   },
                                   "Augmented.Presentation.AutomaticTable.html#.selectable": {
@@ -22397,6 +20062,10 @@ window.lunrData = {
                                   },
                                   "Augmented.Presentation.AutomaticTable.html#.rows": {
                                     "ref": "Augmented.Presentation.AutomaticTable.html#.rows",
+                                    "tf": 50
+                                  },
+                                  "Augmented.Presentation.AutomaticTable.html#.links": {
+                                    "ref": "Augmented.Presentation.AutomaticTable.html#.links",
                                     "tf": 50
                                   },
                                   "Augmented.Presentation.AutomaticTable.html#.setThemesetsthethemeofthistable": {
@@ -22539,30 +20208,6 @@ window.lunrData = {
                                     "ref": "Augmented.Presentation.Spreadsheet.html#.initialize",
                                     "tf": 33.33333333333333
                                   },
-                                  "Augmented.Presentation.Component.AbstractToolbar.html#.model": {
-                                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.model",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-                                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": {
-                                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-                                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                                    "tf": 10
-                                  },
-                                  "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                                    "tf": 16.666666666666664
-                                  },
                                   "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
                                     "ref": "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar",
                                     "tf": 25
@@ -22687,8 +20332,8 @@ window.lunrData = {
                                   "docs": {},
                                   "t": {
                                     "docs": {
-                                      "Augmented.Presentation.Component.AbstractToolbar.html": {
-                                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
+                                      "Presentation.Component.AbstractToolbar.html": {
+                                        "ref": "Presentation.Component.AbstractToolbar.html",
                                         "tf": 50
                                       }
                                     }
@@ -22786,10 +20431,6 @@ window.lunrData = {
               "docs": {},
               "e": {
                 "docs": {
-                  "Augmented.Presentation.DialogView.html#.name": {
-                    "ref": "Augmented.Presentation.DialogView.html#.name",
-                    "tf": 645
-                  },
                   "Augmented.Presentation.AutomaticForm.html#.name": {
                     "ref": "Augmented.Presentation.AutomaticForm.html#.name",
                     "tf": 650
@@ -23240,19 +20881,42 @@ window.lunrData = {
               }
             }
           },
-          "o": {
+          "u": {
             "docs": {},
-            "d": {
+            "t": {
               "docs": {},
-              "i": {
-                "docs": {
-                  "Augmented.Presentation.DialogView.html#.body": {
-                    "ref": "Augmented.Presentation.DialogView.html#.body",
-                    "tf": 639.2857142857143
-                  },
-                  "Augmented.Presentation.DialogView.html#.setBody": {
-                    "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                    "tf": 43.33333333333333
+              "t": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "Presentation.Component.AlertDialogView.html": {
+                        "ref": "Presentation.Component.AlertDialogView.html",
+                        "tf": 5.555555555555555
+                      },
+                      "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                        "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                        "tf": 6.25
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "f": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "Augmented.Presentation.Spreadsheet.html": {
+                        "ref": "Augmented.Presentation.Spreadsheet.html",
+                        "tf": 3.8461538461538463
+                      }
+                    }
                   }
                 }
               }
@@ -23260,46 +20924,6 @@ window.lunrData = {
           },
           "i": {
             "docs": {},
-            "g": {
-              "docs": {},
-              "f": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "m": {
-                      "docs": {
-                        "Augmented.Presentation.DialogView.html#.style": {
-                          "ref": "Augmented.Presentation.DialogView.html#.style",
-                          "tf": 5.555555555555555
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "d": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "t": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "t": {
-                        "docs": {
-                          "Augmented.Presentation.BigDataTable.html": {
-                            "ref": "Augmented.Presentation.BigDataTable.html",
-                            "tf": 700
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "n": {
               "docs": {},
               "d": {
@@ -23359,68 +20983,24 @@ window.lunrData = {
                   }
                 }
               }
-            }
-          },
-          "u": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "Augmented.Presentation.DialogView.html#.buttons": {
-                        "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                        "tf": 641.6666666666666
-                      },
-                      "Augmented.Presentation.ConfirmationDialogView.html": {
-                        "ref": "Augmented.Presentation.ConfirmationDialogView.html",
-                        "tf": 6.25
-                      },
-                      "Augmented.Presentation.AlertDialogView.html": {
-                        "ref": "Augmented.Presentation.AlertDialogView.html",
-                        "tf": 5.555555555555555
-                      }
-                    }
-                  }
-                }
-              }
             },
-            "i": {
+            "g": {
               "docs": {},
-              "l": {
+              "d": {
                 "docs": {},
-                "t": {
-                  "docs": {
-                    "Augmented.Presentation.DialogView.html#.cancel": {
-                      "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                      "tf": 5.555555555555555
-                    },
-                    "Augmented.Presentation.DialogView.html#.open": {
-                      "ref": "Augmented.Presentation.DialogView.html#.open",
-                      "tf": 5.555555555555555
-                    },
-                    "Augmented.Presentation.DialogView.html#.close": {
-                      "ref": "Augmented.Presentation.DialogView.html#.close",
-                      "tf": 5
-                    }
-                  }
-                }
-              }
-            },
-            "f": {
-              "docs": {},
-              "f": {
-                "docs": {},
-                "e": {
+                "a": {
                   "docs": {},
-                  "r": {
-                    "docs": {
-                      "Augmented.Presentation.Spreadsheet.html": {
-                        "ref": "Augmented.Presentation.Spreadsheet.html",
-                        "tf": 3.8461538461538463
+                  "t": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "Augmented.Presentation.BigDataTable.html": {
+                            "ref": "Augmented.Presentation.BigDataTable.html",
+                            "tf": 700
+                          }
+                        }
                       }
                     }
                   }
@@ -23815,14 +21395,6 @@ window.lunrData = {
                     "Presentation.History.html": {
                       "ref": "Presentation.History.html",
                       "tf": 2.380952380952381
-                    },
-                    "Augmented.Presentation.DialogView.html#.body": {
-                      "ref": "Augmented.Presentation.DialogView.html#.body",
-                      "tf": 7.142857142857142
-                    },
-                    "Augmented.Presentation.DialogView.html#.template": {
-                      "ref": "Augmented.Presentation.DialogView.html#.template",
-                      "tf": 8.333333333333332
                     }
                   },
                   "n": {
@@ -23871,22 +21443,6 @@ window.lunrData = {
                         "Augmented.Presentation.Component.HamburgerMenu.html": {
                           "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                           "tf": 16.666666666666664
-                        },
-                        "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                          "tf": 12.5
-                        },
-                        "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-                          "tf": 641.6666666666666
-                        },
-                        "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                          "tf": 620
-                        },
-                        "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-                          "tf": 12.5
                         }
                       },
                       "e": {
@@ -23904,149 +21460,6 @@ window.lunrData = {
                                     "Augmented.Presentation.Component.HamburgerMenu.html": {
                                       "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                                       "tf": 675
-                                    }
-                                  },
-                                  ".": {
-                                    "docs": {},
-                                    "t": {
-                                      "docs": {},
-                                      "i": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "l": {
-                                            "docs": {
-                                              "Augmented.Presentation.Component.HamburgerMenu.html#.title": {
-                                                "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.title",
-                                                "tf": 60
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "o": {
-                                        "docs": {},
-                                        "g": {
-                                          "docs": {},
-                                          "g": {
-                                            "docs": {},
-                                            "l": {
-                                              "docs": {
-                                                "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                                                  "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-                                                  "tf": 60
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "a": {
-                                      "docs": {},
-                                      "d": {
-                                        "docs": {},
-                                        "d": {
-                                          "docs": {},
-                                          "i": {
-                                            "docs": {},
-                                            "t": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "m": {
-                                                  "docs": {
-                                                    "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                                                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                                                      "tf": 15
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "s": {
-                                            "docs": {},
-                                            "p": {
-                                              "docs": {},
-                                              "a": {
-                                                "docs": {},
-                                                "c": {
-                                                  "docs": {
-                                                    "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                                                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                                                      "tf": 12
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "i": {
-                                      "docs": {},
-                                      "n": {
-                                        "docs": {},
-                                        "i": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {},
-                                            "i": {
-                                              "docs": {
-                                                "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                                                  "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                                                  "tf": 60
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "r": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "n": {
-                                          "docs": {},
-                                          "d": {
-                                            "docs": {
-                                              "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-                                                "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-                                                "tf": 20
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "h": {
-                                      "docs": {},
-                                      "a": {
-                                        "docs": {},
-                                        "m": {
-                                          "docs": {},
-                                          "b": {
-                                            "docs": {},
-                                            "u": {
-                                              "docs": {},
-                                              "r": {
-                                                "docs": {},
-                                                "g": {
-                                                  "docs": {
-                                                    "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                                                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                                                      "tf": 60
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
                                     }
                                   }
                                 }
@@ -24468,17 +21881,17 @@ window.lunrData = {
                     "ref": "Presentation.AbstractView.html",
                     "tf": 12.5
                   },
-                  "Augmented.Presentation.DialogView.html": {
-                    "ref": "Augmented.Presentation.DialogView.html",
-                    "tf": 6.25
-                  },
-                  "Augmented.Presentation.ConfirmationDialogView.html": {
-                    "ref": "Augmented.Presentation.ConfirmationDialogView.html",
-                    "tf": 6.25
-                  },
-                  "Augmented.Presentation.AlertDialogView.html": {
-                    "ref": "Augmented.Presentation.AlertDialogView.html",
+                  "Presentation.Component.AlertDialogView.html": {
+                    "ref": "Presentation.Component.AlertDialogView.html",
                     "tf": 5.555555555555555
+                  },
+                  "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                    "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                    "tf": 6.25
+                  },
+                  "Presentation.Component.DialogView.html": {
+                    "ref": "Presentation.Component.DialogView.html",
+                    "tf": 6.25
                   },
                   "Augmented.Presentation.AutomaticForm.html": {
                     "ref": "Augmented.Presentation.AutomaticForm.html",
@@ -24488,18 +21901,6 @@ window.lunrData = {
                     "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                     "tf": 16.666666666666664
                   },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                    "tf": 12.5
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                    "tf": 10
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-                    "tf": 12.5
-                  },
                   "Augmented.Presentation.AutomaticTable.html#.initialize": {
                     "ref": "Augmented.Presentation.AutomaticTable.html#.initialize",
                     "tf": 16.666666666666664
@@ -24507,10 +21908,6 @@ window.lunrData = {
                   "Augmented.Presentation.Spreadsheet.html#.initialize": {
                     "ref": "Augmented.Presentation.Spreadsheet.html#.initialize",
                     "tf": 16.666666666666664
-                  },
-                  "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
-                    "tf": 25
                   },
                   "Augmented.Presentation.Component.Toolbar.html": {
                     "ref": "Augmented.Presentation.Component.Toolbar.html",
@@ -25180,34 +22577,6 @@ window.lunrData = {
                             "ref": "Presentation.Router.html#.cleanup",
                             "tf": 110
                           },
-                          "Augmented.Presentation.DialogView.html#.buttons": {
-                            "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                            "tf": 8.333333333333332
-                          },
-                          "Augmented.Presentation.DialogView.html#.template": {
-                            "ref": "Augmented.Presentation.DialogView.html#.template",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.DialogView.html#.setBody": {
-                            "ref": "Augmented.Presentation.DialogView.html#.setBody",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.DialogView.html#.render": {
-                            "ref": "Augmented.Presentation.DialogView.html#.render",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.DialogView.html#.cancel": {
-                            "ref": "Augmented.Presentation.DialogView.html#.cancel",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.DialogView.html#.open": {
-                            "ref": "Augmented.Presentation.DialogView.html#.open",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.DialogView.html#.close": {
-                            "ref": "Augmented.Presentation.DialogView.html#.close",
-                            "tf": 110
-                          },
                           "Augmented.Presentation.AutomaticForm.html#.display": {
                             "ref": "Augmented.Presentation.AutomaticForm.html#.display",
                             "tf": 110
@@ -25254,30 +22623,6 @@ window.lunrData = {
                           },
                           "Augmented.Presentation.AutomaticForm.html#.remove": {
                             "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                            "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-                            "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                            "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-                            "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                            "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                            "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
                             "tf": 110
                           },
                           "Augmented.Presentation.AutomaticTable.html#.setThemesetsthethemeofthistable": {
@@ -25420,18 +22765,6 @@ window.lunrData = {
                             "ref": "Augmented.Presentation.Spreadsheet.html#.initialize",
                             "tf": 110
                           },
-                          "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-                            "tf": 110
-                          },
                           "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
                             "ref": "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar",
                             "tf": 110
@@ -25551,10 +22884,6 @@ window.lunrData = {
               "docs": {},
               "m": {
                 "docs": {
-                  "Augmented.Presentation.DialogView.html#.style": {
-                    "ref": "Augmented.Presentation.DialogView.html#.style",
-                    "tf": 5.555555555555555
-                  },
                   "Augmented.Presentation.AutomaticForm.html": {
                     "ref": "Augmented.Presentation.AutomaticForm.html",
                     "tf": 8.333333333333332
@@ -25875,25 +23204,9 @@ window.lunrData = {
               "docs": {},
               "l": {
                 "docs": {
-                  "Augmented.Presentation.DialogView.html#.title": {
-                    "ref": "Augmented.Presentation.DialogView.html#.title",
-                    "tf": 650
-                  },
                   "Augmented.Presentation.AutomaticForm.html#.title": {
                     "ref": "Augmented.Presentation.AutomaticForm.html#.title",
                     "tf": 650
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.title": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.title",
-                    "tf": 635
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-                    "tf": 10
-                  },
-                  "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-                    "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-                    "tf": 10
                   }
                 }
               }
@@ -25926,10 +23239,6 @@ window.lunrData = {
                     "docs": {},
                     "r": {
                       "docs": {
-                        "Augmented.Presentation.DialogView.html#.close": {
-                          "ref": "Augmented.Presentation.DialogView.html#.close",
-                          "tf": 5
-                        },
                         "Presentation.Mediator.html#.observeColleague": {
                           "ref": "Presentation.Mediator.html#.observeColleague",
                           "tf": 5
@@ -25941,167 +23250,6 @@ window.lunrData = {
                         "Presentation.Mediator.html#.publish": {
                           "ref": "Presentation.Mediator.html#.publish",
                           "tf": 16.666666666666664
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "e": {
-            "docs": {},
-            "m": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "l": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Augmented.Presentation.DialogView.html#.template": {
-                          "ref": "Augmented.Presentation.DialogView.html#.template",
-                          "tf": 633.3333333333334
-                        },
-                        "Augmented.Presentation.AutomaticTable.html#.compileTemplate": {
-                          "ref": "Augmented.Presentation.AutomaticTable.html#.compileTemplate",
-                          "tf": 16.666666666666664
-                        },
-                        "Presentation.DecoratorView.html": {
-                          "ref": "Presentation.DecoratorView.html",
-                          "tf": 2.5
-                        }
-                      },
-                      "e": {
-                        "docs": {},
-                        "d": {
-                          "docs": {},
-                          "a": {
-                            "docs": {},
-                            "t": {
-                              "docs": {},
-                              "a": {
-                                "docs": {
-                                  "Presentation.DecoratorView.html": {
-                                    "ref": "Presentation.DecoratorView.html",
-                                    "tf": 0.8333333333333334
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "o": {
-            "docs": {},
-            "g": {
-              "docs": {},
-              "g": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-                      "tf": 10
-                    },
-                    "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-                      "tf": 622.5
-                    }
-                  }
-                }
-              }
-            },
-            "t": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "Augmented.Presentation.AutomaticTable.html#.totalPages": {
-                      "ref": "Augmented.Presentation.AutomaticTable.html#.totalPages",
-                      "tf": 16.666666666666664
-                    }
-                  },
-                  "p": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "g": {
-                        "docs": {
-                          "Augmented.Presentation.AutomaticTable.html#.totalPages": {
-                            "ref": "Augmented.Presentation.AutomaticTable.html#.totalPages",
-                            "tf": 625
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "o": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "d": {
-                  "docs": {},
-                  "b": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "r": {
-                        "docs": {
-                          "Augmented.Presentation.Component.AbstractToolbar.html": {
-                            "ref": "Augmented.Presentation.Component.AbstractToolbar.html",
-                            "tf": 10
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "b": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "r": {
-                      "docs": {
-                        "Augmented.Presentation.Component.Toolbar.html": {
-                          "ref": "Augmented.Presentation.Component.Toolbar.html",
-                          "tf": 700
-                        },
-                        "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
-                          "ref": "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar",
-                          "tf": 650
-                        }
-                      },
-                      ".": {
-                        "docs": {},
-                        "r": {
-                          "docs": {},
-                          "e": {
-                            "docs": {},
-                            "n": {
-                              "docs": {},
-                              "d": {
-                                "docs": {
-                                  "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
-                                    "ref": "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar",
-                                    "tf": 20
-                                  }
-                                }
-                              }
-                            }
-                          }
                         }
                       }
                     }
@@ -26222,6 +23370,98 @@ window.lunrData = {
               }
             }
           },
+          "o": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Augmented.Presentation.AutomaticTable.html#.totalPages": {
+                      "ref": "Augmented.Presentation.AutomaticTable.html#.totalPages",
+                      "tf": 16.666666666666664
+                    }
+                  },
+                  "p": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "g": {
+                        "docs": {
+                          "Augmented.Presentation.AutomaticTable.html#.totalPages": {
+                            "ref": "Augmented.Presentation.AutomaticTable.html#.totalPages",
+                            "tf": 625
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "d": {
+                  "docs": {},
+                  "b": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "r": {
+                        "docs": {
+                          "Presentation.Component.AbstractToolbar.html": {
+                            "ref": "Presentation.Component.AbstractToolbar.html",
+                            "tf": 10
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "b": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "Augmented.Presentation.Component.Toolbar.html": {
+                          "ref": "Augmented.Presentation.Component.Toolbar.html",
+                          "tf": 700
+                        },
+                        "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
+                          "ref": "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar",
+                          "tf": 650
+                        }
+                      },
+                      ".": {
+                        "docs": {},
+                        "r": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "n": {
+                              "docs": {},
+                              "d": {
+                                "docs": {
+                                  "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
+                                    "ref": "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar",
+                                    "tf": 20
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "y": {
             "docs": {},
             "p": {
@@ -26235,6 +23475,53 @@ window.lunrData = {
                   "Presentation.Widget.html#.Input": {
                     "ref": "Presentation.Widget.html#.Input",
                     "tf": 7.142857142857142
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "l": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Augmented.Presentation.AutomaticTable.html#.compileTemplate": {
+                          "ref": "Augmented.Presentation.AutomaticTable.html#.compileTemplate",
+                          "tf": 16.666666666666664
+                        },
+                        "Presentation.DecoratorView.html": {
+                          "ref": "Presentation.DecoratorView.html",
+                          "tf": 2.5
+                        }
+                      },
+                      "e": {
+                        "docs": {},
+                        "d": {
+                          "docs": {},
+                          "a": {
+                            "docs": {},
+                            "t": {
+                              "docs": {},
+                              "a": {
+                                "docs": {
+                                  "Presentation.DecoratorView.html": {
+                                    "ref": "Presentation.DecoratorView.html",
+                                    "tf": 0.8333333333333334
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -26360,10 +23647,6 @@ window.lunrData = {
                         "ref": "Presentation.LocalStorageFactory.html",
                         "tf": 12.5
                       },
-                      "Augmented.Presentation.DialogView.html#.buttons": {
-                        "ref": "Augmented.Presentation.DialogView.html#.buttons",
-                        "tf": 8.333333333333332
-                      },
                       "Presentation.Mediator.html": {
                         "ref": "Presentation.Mediator.html",
                         "tf": 2.1739130434782608
@@ -26445,17 +23728,6 @@ window.lunrData = {
           },
           "p": {
             "docs": {},
-            "e": {
-              "docs": {},
-              "n": {
-                "docs": {
-                  "Augmented.Presentation.DialogView.html#.open": {
-                    "ref": "Augmented.Presentation.DialogView.html#.open",
-                    "tf": 619.4444444444445
-                  }
-                }
-              }
-            },
             "t": {
               "docs": {},
               "i": {
@@ -26468,20 +23740,12 @@ window.lunrData = {
                         "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
                         "tf": 33.33333333333333
                       },
-                      "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-                        "tf": 33.33333333333333
-                      },
                       "Augmented.Presentation.AutomaticTable.html#.initialize": {
                         "ref": "Augmented.Presentation.AutomaticTable.html#.initialize",
                         "tf": 33.33333333333333
                       },
                       "Augmented.Presentation.Spreadsheet.html#.initialize": {
                         "ref": "Augmented.Presentation.Spreadsheet.html#.initialize",
-                        "tf": 33.33333333333333
-                      },
-                      "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-                        "ref": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
                         "tf": 33.33333333333333
                       }
                     }
@@ -26725,40 +23989,6 @@ window.lunrData = {
               }
             }
           },
-          "a": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "t": {
-                "docs": {
-                  "Augmented.Presentation.DialogView.html#.style": {
-                    "ref": "Augmented.Presentation.DialogView.html#.style",
-                    "tf": 5.555555555555555
-                  }
-                }
-              }
-            }
-          },
-          "h": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "v": {
-                    "docs": {
-                      "Augmented.Presentation.DialogView.html#.style": {
-                        "ref": "Augmented.Presentation.DialogView.html#.style",
-                        "tf": 5.555555555555555
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "o": {
             "docs": {},
             "r": {
@@ -26778,8 +24008,8 @@ window.lunrData = {
           "docs": {},
           "e": {
             "docs": {
-              "Augmented.Presentation.ConfirmationDialogView.html": {
-                "ref": "Augmented.Presentation.ConfirmationDialogView.html",
+              "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
                 "tf": 6.25
               }
             }
@@ -26911,7 +24141,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 1875
+      "length": 1622
     },
     "corpusTokens": [
       "10",
@@ -26920,19 +24150,11 @@ window.lunrData = {
       "abstract",
       "abstractlocalstorag",
       "abstracttoolbar",
-      "abstracttoolbar.additem",
-      "abstracttoolbar.addspac",
-      "abstracttoolbar.initi",
-      "abstracttoolbar.isinit",
-      "abstracttoolbar.menuitem",
-      "abstracttoolbar.model",
       "abstractview",
       "achiev",
       "action",
       "add",
-      "additem",
       "addpermiss",
-      "addspac",
       "advanc",
       "alert",
       "alertdialogview",
@@ -26952,7 +24174,6 @@ window.lunrData = {
       "augmented.localstoragecollect",
       "augmented.localstoragecollectiona",
       "augmented.localstoragefactoryretriev",
-      "augmented.presentation.alertdialogview",
       "augmented.presentation.automaticform",
       "augmented.presentation.automaticform.crossorigin",
       "augmented.presentation.automaticform.descript",
@@ -27031,37 +24252,11 @@ window.lunrData = {
       "augmented.presentation.autotableshorthand",
       "augmented.presentation.bigdatat",
       "augmented.presentation.bigdatatableinst",
-      "augmented.presentation.component.abstracttoolbar",
-      "augmented.presentation.component.abstracttoolbar.additem",
-      "augmented.presentation.component.abstracttoolbar.addspac",
-      "augmented.presentation.component.abstracttoolbar.initi",
-      "augmented.presentation.component.abstracttoolbar.isinit",
-      "augmented.presentation.component.abstracttoolbar.menuitem",
-      "augmented.presentation.component.abstracttoolbar.model",
       "augmented.presentation.component.hamburgermenu",
-      "augmented.presentation.component.hamburgermenu.additem",
-      "augmented.presentation.component.hamburgermenu.addspac",
-      "augmented.presentation.component.hamburgermenu.hamburg",
-      "augmented.presentation.component.hamburgermenu.initi",
-      "augmented.presentation.component.hamburgermenu.rend",
-      "augmented.presentation.component.hamburgermenu.titl",
-      "augmented.presentation.component.hamburgermenu.toggl",
       "augmented.presentation.component.head",
       "augmented.presentation.component.toolbar",
       "augmented.presentation.component.toolbar.rend",
       "augmented.presentation.confirmationdialogview",
-      "augmented.presentation.dialogview",
-      "augmented.presentation.dialogview.bodi",
-      "augmented.presentation.dialogview.button",
-      "augmented.presentation.dialogview.cancel",
-      "augmented.presentation.dialogview.clos",
-      "augmented.presentation.dialogview.nam",
-      "augmented.presentation.dialogview.open",
-      "augmented.presentation.dialogview.rend",
-      "augmented.presentation.dialogview.setbodi",
-      "augmented.presentation.dialogview.styl",
-      "augmented.presentation.dialogview.templ",
-      "augmented.presentation.dialogview.titl",
       "augmented.presentation.directdomautomatict",
       "augmented.presentation.directdomautomatictableus",
       "augmented.presentation.editablebigdatat",
@@ -27179,14 +24374,11 @@ window.lunrData = {
       "beforesend",
       "between",
       "bigdatat",
-      "bigform",
       "bind",
       "bindings.thi",
-      "bodi",
       "breadcrumb",
       "browser",
       "buffer",
-      "built",
       "button",
       "cach",
       "call",
@@ -27205,9 +24397,7 @@ window.lunrData = {
       "clearcel",
       "clearform",
       "clearpermiss",
-      "click",
       "clickdata",
-      "close",
       "col",
       "col1",
       "col2",
@@ -27227,21 +24417,11 @@ window.lunrData = {
       "complet",
       "compon",
       "component.abstracttoolbar",
-      "component.abstracttoolbar.additem",
-      "component.abstracttoolbar.addspac",
-      "component.abstracttoolbar.initi",
-      "component.abstracttoolbar.isinit",
-      "component.abstracttoolbar.menuitem",
-      "component.abstracttoolbar.model",
+      "component.alertdialogview",
       "component.augmented.presentation.component.head",
+      "component.augmented.presentation.confirmationdialogview",
+      "component.dialogview",
       "component.hamburgermenu",
-      "component.hamburgermenu.additem",
-      "component.hamburgermenu.addspac",
-      "component.hamburgermenu.hamburg",
-      "component.hamburgermenu.initi",
-      "component.hamburgermenu.rend",
-      "component.hamburgermenu.titl",
-      "component.hamburgermenu.toggl",
       "component.head",
       "component.notificationcent",
       "component.toolbar",
@@ -27269,7 +24449,6 @@ window.lunrData = {
       "configuration.xhrfields.withcredenti",
       "configut",
       "confirmationdialogview",
-      "content",
       "contenttyp",
       "context",
       "contract.although",
@@ -27299,24 +24478,12 @@ window.lunrData = {
       "defin",
       "defint",
       "delegateev",
-      "deprec",
       "descript",
       "descriptionlist",
       "design",
       "develop",
       "dialog",
       "dialogview",
-      "dialogview.bodi",
-      "dialogview.button",
-      "dialogview.cancel",
-      "dialogview.clos",
-      "dialogview.nam",
-      "dialogview.open",
-      "dialogview.rend",
-      "dialogview.setbodi",
-      "dialogview.styl",
-      "dialogview.templ",
-      "dialogview.titl",
       "direct",
       "directdomautomatict",
       "directly.to",
@@ -27377,13 +24544,6 @@ window.lunrData = {
       "group",
       "hamburg",
       "hamburgermenu",
-      "hamburgermenu.additem",
-      "hamburgermenu.addspac",
-      "hamburgermenu.hamburg",
-      "hamburgermenu.initi",
-      "hamburgermenu.rend",
-      "hamburgermenu.titl",
-      "hamburgermenu.toggl",
       "handl",
       "handlng",
       "hash",
@@ -27394,7 +24554,6 @@ window.lunrData = {
       "html",
       "htmlcreat",
       "i'd",
-      "icon",
       "id",
       "idea",
       "identifi",
@@ -27407,11 +24566,9 @@ window.lunrData = {
       "instead",
       "intend",
       "interfac",
-      "intern",
       "isinit",
       "isvalid",
       "it'",
-      "item",
       "javascript",
       "json",
       "key",
@@ -27459,7 +24616,6 @@ window.lunrData = {
       "mediator.unsubscrib",
       "member",
       "menu",
-      "menuitem",
       "messag",
       "method",
       "mock",
@@ -27488,7 +24644,6 @@ window.lunrData = {
       "old",
       "on",
       "onc",
-      "open",
       "option",
       "order",
       "origin",
@@ -27508,7 +24663,6 @@ window.lunrData = {
       "prepend",
       "present",
       "presentation.abstractview",
-      "presentation.alertdialogview",
       "presentation.appl",
       "presentation.augmented.localstoragecollect",
       "presentation.automaticform",
@@ -27594,39 +24748,17 @@ window.lunrData = {
       "presentation.colleague.unsetsubscript",
       "presentation.compon",
       "presentation.component.abstracttoolbar",
-      "presentation.component.abstracttoolbar.additem",
-      "presentation.component.abstracttoolbar.addspac",
-      "presentation.component.abstracttoolbar.initi",
-      "presentation.component.abstracttoolbar.isinit",
-      "presentation.component.abstracttoolbar.menuitem",
-      "presentation.component.abstracttoolbar.model",
+      "presentation.component.alertdialogview",
       "presentation.component.augmented.presentation.component.head",
+      "presentation.component.augmented.presentation.confirmationdialogview",
+      "presentation.component.dialogview",
       "presentation.component.hamburgermenu",
-      "presentation.component.hamburgermenu.additem",
-      "presentation.component.hamburgermenu.addspac",
-      "presentation.component.hamburgermenu.hamburg",
-      "presentation.component.hamburgermenu.initi",
-      "presentation.component.hamburgermenu.rend",
-      "presentation.component.hamburgermenu.titl",
-      "presentation.component.hamburgermenu.toggl",
       "presentation.component.head",
       "presentation.component.notificationcent",
       "presentation.component.toolbar",
       "presentation.component.toolbar.rend",
       "presentation.confirmationdialogview",
       "presentation.decoratorview",
-      "presentation.dialogview",
-      "presentation.dialogview.bodi",
-      "presentation.dialogview.button",
-      "presentation.dialogview.cancel",
-      "presentation.dialogview.clos",
-      "presentation.dialogview.nam",
-      "presentation.dialogview.open",
-      "presentation.dialogview.rend",
-      "presentation.dialogview.setbodi",
-      "presentation.dialogview.styl",
-      "presentation.dialogview.templ",
-      "presentation.dialogview.titl",
       "presentation.directdomautomatict",
       "presentation.dom",
       "presentation.editablebigdatat",
@@ -27734,7 +24866,6 @@ window.lunrData = {
       "selectorsimport",
       "sent",
       "set",
-      "setbodi",
       "setpermiss",
       "setschema",
       "setsubscript",
@@ -27753,7 +24884,6 @@ window.lunrData = {
       "sortstyl",
       "sourc",
       "sourcethi",
-      "spacer",
       "specif",
       "specifi",
       "spreadsheet",
@@ -27764,7 +24894,6 @@ window.lunrData = {
       "static",
       "storag",
       "structur",
-      "style",
       "styledata",
       "stylesheet",
       "subscrib",
@@ -27783,7 +24912,6 @@ window.lunrData = {
       "thier",
       "timeout",
       "titl",
-      "toggl",
       "toolbar",
       "toolbar.rend",
       "tooldbar",
@@ -27826,8 +24954,6 @@ window.lunrData = {
       "viewpass",
       "views.loos",
       "vs",
-      "want",
-      "whatev",
       "widget",
       "widget.datalist",
       "widget.descriptionlist",
@@ -28365,147 +25491,37 @@ window.lunrData = {
       "description": "A Component Manager",
       "body": ""
     },
-    "Augmented.Presentation.DialogView.html": {
-      "id": "Augmented.Presentation.DialogView.html",
+    "Presentation.Component.AlertDialogView.html": {
+      "id": "Presentation.Component.AlertDialogView.html",
       "kind": "class",
-      "title": "DialogView",
-      "longname": "Augmented.Presentation.DialogView",
-      "name": "DialogView",
-      "tags": "Augmented.Presentation.DialogView Presentation.DialogView DialogView",
+      "title": ".Component.AlertDialogView",
+      "longname": "Presentation.Component.AlertDialogView",
+      "name": "AlertDialogView",
+      "tags": "Presentation.Component.AlertDialogView Component.AlertDialogView AlertDialogView",
       "summary": "",
-      "description": "A automatic dialog view - creates a dialog with simple configurations to customize",
+      "description": "A automatic alert dialog view - creates a dialog with cancel button and a message",
       "body": ""
     },
-    "Augmented.Presentation.DialogView.html#.name": {
-      "id": "Augmented.Presentation.DialogView.html#.name",
-      "kind": "member",
-      "title": "&lt;static&gt; name",
-      "longname": "Augmented.Presentation.DialogView.name",
-      "name": "name",
-      "tags": "Augmented.Presentation.DialogView.name Presentation.DialogView.name DialogView.name name",
-      "summary": "",
-      "description": "name property - the name of the dialog (required)"
-    },
-    "Augmented.Presentation.DialogView.html#.title": {
-      "id": "Augmented.Presentation.DialogView.html#.title",
-      "kind": "member",
-      "title": "&lt;static&gt; title",
-      "longname": "Augmented.Presentation.DialogView.title",
-      "name": "title",
-      "tags": "Augmented.Presentation.DialogView.title Presentation.DialogView.title DialogView.title title",
-      "summary": "",
-      "description": "title property - the title of the dialog"
-    },
-    "Augmented.Presentation.DialogView.html#.body": {
-      "id": "Augmented.Presentation.DialogView.html#.body",
-      "kind": "member",
-      "title": "&lt;static&gt; body",
-      "longname": "Augmented.Presentation.DialogView.body",
-      "name": "body",
-      "tags": "Augmented.Presentation.DialogView.body Presentation.DialogView.body DialogView.body body",
-      "summary": "",
-      "description": "body property - the body of the dialog, handled by setBody method"
-    },
-    "Augmented.Presentation.DialogView.html#.style": {
-      "id": "Augmented.Presentation.DialogView.html#.style",
-      "kind": "member",
-      "title": "&lt;static&gt; style",
-      "longname": "Augmented.Presentation.DialogView.style",
-      "name": "style",
-      "tags": "Augmented.Presentation.DialogView.style Presentation.DialogView.style DialogView.style style",
-      "summary": "",
-      "description": "style property - the style (form, alert, bigForm, or whatever class you want)"
-    },
-    "Augmented.Presentation.DialogView.html#.buttons": {
-      "id": "Augmented.Presentation.DialogView.html#.buttons",
-      "kind": "member",
-      "title": "&lt;static&gt; buttons",
-      "longname": "Augmented.Presentation.DialogView.buttons",
-      "name": "buttons",
-      "tags": "Augmented.Presentation.DialogView.buttons Presentation.DialogView.buttons DialogView.buttons buttons",
-      "summary": "",
-      "description": "buttons object property - the buttons to match to functions"
-    },
-    "Augmented.Presentation.DialogView.html#.template": {
-      "id": "Augmented.Presentation.DialogView.html#.template",
-      "kind": "function",
-      "title": "&lt;static&gt; template()",
-      "longname": "Augmented.Presentation.DialogView.template",
-      "name": "template",
-      "tags": "Augmented.Presentation.DialogView.template Presentation.DialogView.template DialogView.template template",
-      "summary": "",
-      "description": "template - sets content of the dialog, handled internally"
-    },
-    "Augmented.Presentation.DialogView.html#.setBody": {
-      "id": "Augmented.Presentation.DialogView.html#.setBody",
-      "kind": "function",
-      "title": "&lt;static&gt; setBody( body )",
-      "longname": "Augmented.Presentation.DialogView.setBody",
-      "name": "setBody",
-      "tags": "Augmented.Presentation.DialogView.setBody Presentation.DialogView.setBody DialogView.setBody setBody",
-      "summary": "",
-      "description": "setBody - sets the body content of the dialog"
-    },
-    "Augmented.Presentation.DialogView.html#.render": {
-      "id": "Augmented.Presentation.DialogView.html#.render",
-      "kind": "function",
-      "title": "&lt;static&gt; render()",
-      "longname": "Augmented.Presentation.DialogView.render",
-      "name": "render",
-      "tags": "Augmented.Presentation.DialogView.render Presentation.DialogView.render DialogView.render render",
-      "summary": "",
-      "description": "render - render the dialog"
-    },
-    "Augmented.Presentation.DialogView.html#.cancel": {
-      "id": "Augmented.Presentation.DialogView.html#.cancel",
-      "kind": "function",
-      "title": "&lt;static&gt; cancel( event )",
-      "longname": "Augmented.Presentation.DialogView.cancel",
-      "name": "cancel",
-      "tags": "Augmented.Presentation.DialogView.cancel Presentation.DialogView.cancel DialogView.cancel cancel",
-      "summary": "",
-      "description": "cancel - standard built-in cancel callback. Calls close method by default"
-    },
-    "Augmented.Presentation.DialogView.html#.open": {
-      "id": "Augmented.Presentation.DialogView.html#.open",
-      "kind": "function",
-      "title": "&lt;static&gt; open( event )",
-      "longname": "Augmented.Presentation.DialogView.open",
-      "name": "open",
-      "tags": "Augmented.Presentation.DialogView.open Presentation.DialogView.open DialogView.open open",
-      "summary": "",
-      "description": "open - standard built-in open callback. Calls render method by default"
-    },
-    "Augmented.Presentation.DialogView.html#.close": {
-      "id": "Augmented.Presentation.DialogView.html#.close",
-      "kind": "function",
-      "title": "&lt;static&gt; close( event )",
-      "longname": "Augmented.Presentation.DialogView.close",
-      "name": "close",
-      "tags": "Augmented.Presentation.DialogView.close Presentation.DialogView.close DialogView.close close",
-      "summary": "",
-      "description": "close - standard built-in close callback. Closes the dialog, triggers the 'close' event"
-    },
-    "Augmented.Presentation.ConfirmationDialogView.html": {
-      "id": "Augmented.Presentation.ConfirmationDialogView.html",
+    "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+      "id": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
       "kind": "class",
       "title": "ConfirmationDialogView",
-      "longname": "Augmented.Presentation.ConfirmationDialogView",
+      "longname": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView",
       "name": "ConfirmationDialogView",
-      "tags": "Augmented.Presentation.ConfirmationDialogView Presentation.ConfirmationDialogView ConfirmationDialogView",
+      "tags": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView Component.Augmented.Presentation.ConfirmationDialogView Augmented.Presentation.ConfirmationDialogView Presentation.ConfirmationDialogView ConfirmationDialogView",
       "summary": "",
       "description": "A automatic comfirmation dialog view - creates a dialog with yes no buttons",
       "body": ""
     },
-    "Augmented.Presentation.AlertDialogView.html": {
-      "id": "Augmented.Presentation.AlertDialogView.html",
+    "Presentation.Component.DialogView.html": {
+      "id": "Presentation.Component.DialogView.html",
       "kind": "class",
-      "title": "AlertDialogView",
-      "longname": "Augmented.Presentation.AlertDialogView",
-      "name": "AlertDialogView",
-      "tags": "Augmented.Presentation.AlertDialogView Presentation.AlertDialogView AlertDialogView",
+      "title": ".Component.DialogView",
+      "longname": "Presentation.Component.DialogView",
+      "name": "DialogView",
+      "tags": "Presentation.Component.DialogView Component.DialogView DialogView",
       "summary": "",
-      "description": "A automatic alert dialog view - creates a dialog with cancel button and a message",
+      "description": "A automatic dialog view - creates a dialog with simple configurations to customize",
       "body": ""
     },
     "Augmented.Presentation.AutomaticForm.html": {
@@ -28720,76 +25736,6 @@ window.lunrData = {
       "description": "A Hamburger Menu View",
       "body": ""
     },
-    "Augmented.Presentation.Component.HamburgerMenu.html#.title": {
-      "id": "Augmented.Presentation.Component.HamburgerMenu.html#.title",
-      "kind": "member",
-      "title": "&lt;static&gt; title",
-      "longname": "Augmented.Presentation.Component.HamburgerMenu.title",
-      "name": "title",
-      "tags": "Augmented.Presentation.Component.HamburgerMenu.title Presentation.Component.HamburgerMenu.title Component.HamburgerMenu.title HamburgerMenu.title title",
-      "summary": "",
-      "description": "The title property"
-    },
-    "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu": {
-      "id": "Augmented.Presentation.Component.HamburgerMenu.html#.addItem-Addsanitemtothemenu",
-      "kind": "function",
-      "title": "&lt;static&gt; addItem - Adds an item to the menu( id, click, icon, title, spacer )",
-      "longname": "Augmented.Presentation.Component.HamburgerMenu.addItem - Adds an item to the menu",
-      "name": "addItem - Adds an item to the menu",
-      "tags": "Augmented.Presentation.Component.HamburgerMenu.addItem - Adds an item to the menu Presentation.Component.HamburgerMenu.addItem - Adds an item to the menu Component.HamburgerMenu.addItem - Adds an item to the menu HamburgerMenu.addItem - Adds an item to the menu addItem - Adds an item to the menu",
-      "summary": "",
-      "description": ""
-    },
-    "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu": {
-      "id": "Augmented.Presentation.Component.HamburgerMenu.html#.addSpacer-Addsaspaceritemtothemenu",
-      "kind": "function",
-      "title": "&lt;static&gt; addSpacer - Adds a spacer item to the menu()",
-      "longname": "Augmented.Presentation.Component.HamburgerMenu.addSpacer - Adds a spacer item to the menu",
-      "name": "addSpacer - Adds a spacer item to the menu",
-      "tags": "Augmented.Presentation.Component.HamburgerMenu.addSpacer - Adds a spacer item to the menu Presentation.Component.HamburgerMenu.addSpacer - Adds a spacer item to the menu Component.HamburgerMenu.addSpacer - Adds a spacer item to the menu HamburgerMenu.addSpacer - Adds a spacer item to the menu addSpacer - Adds a spacer item to the menu",
-      "summary": "",
-      "description": ""
-    },
-    "Augmented.Presentation.Component.HamburgerMenu.html#.initialize": {
-      "id": "Augmented.Presentation.Component.HamburgerMenu.html#.initialize",
-      "kind": "function",
-      "title": "&lt;static&gt; initialize( options )",
-      "longname": "Augmented.Presentation.Component.HamburgerMenu.initialize",
-      "name": "initialize",
-      "tags": "Augmented.Presentation.Component.HamburgerMenu.initialize Presentation.Component.HamburgerMenu.initialize Component.HamburgerMenu.initialize HamburgerMenu.initialize initialize",
-      "summary": "",
-      "description": "Initialize the Hamburger menu view"
-    },
-    "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger": {
-      "id": "Augmented.Presentation.Component.HamburgerMenu.html#.renderRenderstheHamburger",
-      "kind": "function",
-      "title": "&lt;static&gt; render Renders the Hamburger()",
-      "longname": "Augmented.Presentation.Component.HamburgerMenu.render Renders the Hamburger",
-      "name": "render Renders the Hamburger",
-      "tags": "Augmented.Presentation.Component.HamburgerMenu.render Renders the Hamburger Presentation.Component.HamburgerMenu.render Renders the Hamburger Component.HamburgerMenu.render Renders the Hamburger HamburgerMenu.render Renders the Hamburger render Renders the Hamburger",
-      "summary": "",
-      "description": "Render the Hamburger Menu"
-    },
-    "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger": {
-      "id": "Augmented.Presentation.Component.HamburgerMenu.html#.hamburger",
-      "kind": "function",
-      "title": "&lt;static&gt; hamburger()",
-      "longname": "Augmented.Presentation.Component.HamburgerMenu.hamburger",
-      "name": "hamburger",
-      "tags": "Augmented.Presentation.Component.HamburgerMenu.hamburger Presentation.Component.HamburgerMenu.hamburger Component.HamburgerMenu.hamburger HamburgerMenu.hamburger hamburger",
-      "summary": "",
-      "description": "Toggle the Hamburger menu view - deprecated"
-    },
-    "Augmented.Presentation.Component.HamburgerMenu.html#.toggle": {
-      "id": "Augmented.Presentation.Component.HamburgerMenu.html#.toggle",
-      "kind": "function",
-      "title": "&lt;static&gt; toggle()",
-      "longname": "Augmented.Presentation.Component.HamburgerMenu.toggle",
-      "name": "toggle",
-      "tags": "Augmented.Presentation.Component.HamburgerMenu.toggle Presentation.Component.HamburgerMenu.toggle Component.HamburgerMenu.toggle HamburgerMenu.toggle toggle",
-      "summary": "",
-      "description": "Toggle the Hamburger menu view"
-    },
     "Augmented.Presentation.DirectDOMAutomaticTable.html": {
       "id": "Augmented.Presentation.DirectDOMAutomaticTable.html",
       "kind": "class",
@@ -28831,16 +25777,6 @@ window.lunrData = {
       "tags": "Augmented.Presentation.AutomaticTable.linkable Presentation.AutomaticTable.linkable AutomaticTable.linkable linkable",
       "summary": "",
       "description": "The linkable property - enable links in a row (only works in non-editable tables)"
-    },
-    "Augmented.Presentation.AutomaticTable.html#.links": {
-      "id": "Augmented.Presentation.AutomaticTable.html#.links",
-      "kind": "member",
-      "title": "&lt;static&gt; links",
-      "longname": "Augmented.Presentation.AutomaticTable.links",
-      "name": "links",
-      "tags": "Augmented.Presentation.AutomaticTable.links Presentation.AutomaticTable.links AutomaticTable.links links",
-      "summary": "",
-      "description": "The links property - setup linking structure for links in a row"
     },
     "Augmented.Presentation.AutomaticTable.html#.selectable": {
       "id": "Augmented.Presentation.AutomaticTable.html#.selectable",
@@ -29001,6 +25937,16 @@ window.lunrData = {
       "tags": "Augmented.Presentation.AutomaticTable.rows Presentation.AutomaticTable.rows AutomaticTable.rows rows",
       "summary": "",
       "description": ""
+    },
+    "Augmented.Presentation.AutomaticTable.html#.links": {
+      "id": "Augmented.Presentation.AutomaticTable.html#.links",
+      "kind": "member",
+      "title": "&lt;static&gt; links",
+      "longname": "Augmented.Presentation.AutomaticTable.links",
+      "name": "links",
+      "tags": "Augmented.Presentation.AutomaticTable.links Presentation.AutomaticTable.links AutomaticTable.links links",
+      "summary": "",
+      "description": "The links property - setup linking structure for links in a row"
     },
     "Augmented.Presentation.AutomaticTable.html#.setThemesetsthethemeofthistable": {
       "id": "Augmented.Presentation.AutomaticTable.html#.setThemesetsthethemeofthistable",
@@ -29342,6 +26288,17 @@ window.lunrData = {
       "summary": "",
       "description": "Removes the models"
     },
+    "Augmented.Presentation.AutoTable.html": {
+      "id": "Augmented.Presentation.AutoTable.html",
+      "kind": "class",
+      "title": "AutoTable",
+      "longname": "Augmented.Presentation.AutoTable",
+      "name": "AutoTable",
+      "tags": "Augmented.Presentation.AutoTable Presentation.AutoTable AutoTable",
+      "summary": "",
+      "description": "Augmented.Presentation.AutoTableShorthand for Augmented.Presentation.AutomaticTable",
+      "body": ""
+    },
     "Augmented.Presentation.BigDataTable.html": {
       "id": "Augmented.Presentation.BigDataTable.html",
       "kind": "class",
@@ -29418,76 +26375,16 @@ window.lunrData = {
       "summary": "",
       "description": "Initialize the table view"
     },
-    "Augmented.Presentation.Component.AbstractToolbar.html": {
-      "id": "Augmented.Presentation.Component.AbstractToolbar.html",
+    "Presentation.Component.AbstractToolbar.html": {
+      "id": "Presentation.Component.AbstractToolbar.html",
       "kind": "class",
-      "title": "&lt;abstract&gt; AbstractToolbar",
-      "longname": "Augmented.Presentation.Component.AbstractToolbar",
+      "title": "&lt;abstract&gt; .Component.AbstractToolbar",
+      "longname": "Presentation.Component.AbstractToolbar",
       "name": "AbstractToolbar",
-      "tags": "Augmented.Presentation.Component.AbstractToolbar Presentation.Component.AbstractToolbar Component.AbstractToolbar AbstractToolbar",
+      "tags": "Presentation.Component.AbstractToolbar Component.AbstractToolbar AbstractToolbar",
       "summary": "",
       "description": "An abstract tooldbar Component, designed to be extended",
       "body": ""
-    },
-    "Augmented.Presentation.Component.AbstractToolbar.html#.model": {
-      "id": "Augmented.Presentation.Component.AbstractToolbar.html#.model",
-      "kind": "member",
-      "title": "&lt;static&gt; model",
-      "longname": "Augmented.Presentation.Component.AbstractToolbar.model",
-      "name": "model",
-      "tags": "Augmented.Presentation.Component.AbstractToolbar.model Presentation.Component.AbstractToolbar.model Component.AbstractToolbar.model AbstractToolbar.model model",
-      "summary": "",
-      "description": "The model property"
-    },
-    "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized": {
-      "id": "Augmented.Presentation.Component.AbstractToolbar.html#.isInitalized",
-      "kind": "member",
-      "title": "&lt;static&gt; isInitalized",
-      "longname": "Augmented.Presentation.Component.AbstractToolbar.isInitalized",
-      "name": "isInitalized",
-      "tags": "Augmented.Presentation.Component.AbstractToolbar.isInitalized Presentation.Component.AbstractToolbar.isInitalized Component.AbstractToolbar.isInitalized AbstractToolbar.isInitalized isInitalized",
-      "summary": "",
-      "description": "The initialized property"
-    },
-    "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems": {
-      "id": "Augmented.Presentation.Component.AbstractToolbar.html#.menuItems",
-      "kind": "member",
-      "title": "&lt;static&gt; menuItems",
-      "longname": "Augmented.Presentation.Component.AbstractToolbar.menuItems",
-      "name": "menuItems",
-      "tags": "Augmented.Presentation.Component.AbstractToolbar.menuItems Presentation.Component.AbstractToolbar.menuItems Component.AbstractToolbar.menuItems AbstractToolbar.menuItems menuItems",
-      "summary": "",
-      "description": "The menuitems property"
-    },
-    "Augmented.Presentation.Component.AbstractToolbar.html#.initialize": {
-      "id": "Augmented.Presentation.Component.AbstractToolbar.html#.initialize",
-      "kind": "function",
-      "title": "&lt;static&gt; initialize( options )",
-      "longname": "Augmented.Presentation.Component.AbstractToolbar.initialize",
-      "name": "initialize",
-      "tags": "Augmented.Presentation.Component.AbstractToolbar.initialize Presentation.Component.AbstractToolbar.initialize Component.AbstractToolbar.initialize AbstractToolbar.initialize initialize",
-      "summary": "",
-      "description": "Initialize the view"
-    },
-    "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu": {
-      "id": "Augmented.Presentation.Component.AbstractToolbar.html#.addItem-Addsanitemtothemenu",
-      "kind": "function",
-      "title": "&lt;static&gt; addItem - Adds an item to the menu( id, click, icon, title, spacer )",
-      "longname": "Augmented.Presentation.Component.AbstractToolbar.addItem - Adds an item to the menu",
-      "name": "addItem - Adds an item to the menu",
-      "tags": "Augmented.Presentation.Component.AbstractToolbar.addItem - Adds an item to the menu Presentation.Component.AbstractToolbar.addItem - Adds an item to the menu Component.AbstractToolbar.addItem - Adds an item to the menu AbstractToolbar.addItem - Adds an item to the menu addItem - Adds an item to the menu",
-      "summary": "",
-      "description": ""
-    },
-    "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu": {
-      "id": "Augmented.Presentation.Component.AbstractToolbar.html#.addSpacer-Addsaspaceritemtothemenu",
-      "kind": "function",
-      "title": "&lt;static&gt; addSpacer - Adds a spacer item to the menu()",
-      "longname": "Augmented.Presentation.Component.AbstractToolbar.addSpacer - Adds a spacer item to the menu",
-      "name": "addSpacer - Adds a spacer item to the menu",
-      "tags": "Augmented.Presentation.Component.AbstractToolbar.addSpacer - Adds a spacer item to the menu Presentation.Component.AbstractToolbar.addSpacer - Adds a spacer item to the menu Component.AbstractToolbar.addSpacer - Adds a spacer item to the menu AbstractToolbar.addSpacer - Adds a spacer item to the menu addSpacer - Adds a spacer item to the menu",
-      "summary": "",
-      "description": ""
     },
     "Augmented.Presentation.Component.Toolbar.html": {
       "id": "Augmented.Presentation.Component.Toolbar.html",
@@ -29774,17 +26671,6 @@ window.lunrData = {
       "tags": "Presentation.Widget.Input Widget.Input Input",
       "summary": "",
       "description": "Input widget - renders an input or simular based on type"
-    },
-    "Augmented.Presentation.AutoTable.html": {
-      "id": "Augmented.Presentation.AutoTable.html",
-      "kind": "class",
-      "title": "AutoTable",
-      "longname": "Augmented.Presentation.AutoTable",
-      "name": "AutoTable",
-      "tags": "Augmented.Presentation.AutoTable Presentation.AutoTable AutoTable",
-      "summary": "",
-      "description": "Augmented.Presentation.AutoTableShorthand for Augmented.Presentation.AutomaticTable",
-      "body": ""
     },
     "module-Presentation.html": {
       "id": "module-Presentation.html",

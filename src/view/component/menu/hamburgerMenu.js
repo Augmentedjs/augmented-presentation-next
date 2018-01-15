@@ -1,29 +1,29 @@
 import buildMenuItems from "../functions/buildMenuItems.js";
 import Dom from "../../../dom/dom.js";
-import AbstractToolbar from "./abstractToolbar.js";
+import AbstractToolbar from "../toolbar/abstractToolbar.js";
 
 const buildMenu = (name, title, menuItems) => {
   return `<section class="material-design-hamburger" data-${name}="hamburgerClickRegion"><div class="material-design-hamburger__icon" data-${name}="hamburgerIcon" data-click="toggle"><i class="material-icons md-light">menu</i></div></section><section class="menu menu--off" data-${name}="hamburgerMenu"><div>${title}</div>${buildMenuItems(this.name, this.menuItems)}</section>`;
 };
 
 /**
-  * A Hamburger Menu View
-  * @constructor Augmented.Presentation.Component.HamburgerMenu
-  * @memberof Augmented.Presentation.Component
-  * @extends Augmented.Presentation.AbstractToolbar
-  */
+ * A Hamburger Menu View
+ * @constructor Augmented.Presentation.Component.HamburgerMenu
+ * @memberof Augmented.Presentation.Component
+ * @extends Augmented.Presentation.AbstractToolbar
+ */
 class HamburgerMenu extends AbstractToolbar {
   constructor(options) {
     super(options);
   };
 
   /**
-    * Render the Hamburger Menu
-    * @method render Renders the Hamburger
-    * @memberof HamburgerMenu
-    * @returns {object} Returns the view context ('this')
-    */
-  render: function() {
+   * Render the Hamburger Menu
+   * @method render Renders the Hamburger
+   * @memberof HamburgerMenu
+   * @returns {object} Returns the view context ('this')
+   */
+  render() {
     if (!this.isInitalized) {
       //_logger.warn("AUGMENTED: Hamburger Can't render yet, not initialized!");
       return this;
@@ -47,10 +47,10 @@ class HamburgerMenu extends AbstractToolbar {
   };
 
   /**
-    * Toggle the Hamburger menu view
-    * @method toggle
-    * @memberof HamburgerMenu
-    */
+   * Toggle the Hamburger menu view
+   * @method toggle
+   * @memberof HamburgerMenu
+   */
   toggle() {
     if (!this.modal) {
       const menu = this.boundElement("hamburgerMenu");
@@ -59,4 +59,6 @@ class HamburgerMenu extends AbstractToolbar {
       menu.classList.toggle("menu--on");
     }
   };
-});
+};
+
+export default HamburgerMenu;
