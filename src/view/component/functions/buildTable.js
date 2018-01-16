@@ -1,21 +1,21 @@
 // Tables and Grids
 
-const tableDataAttributes = {
-  name:           "data-name",
-  type:           "data-type",
-  description:    "data-description",
-  index:          "data-index",
-  label:          "data-label",
-  sortClass:      "sorted"
+export const TABLE_DATA_ATTRIBUTES = {
+  "NAME":           "data-name",
+  "TYPE":           "data-type",
+  "DESCRIPTION":    "data-description",
+  "INDEX":          "data-index",
+  "LABEL":          "data-label",
+  "SORT_CLASS":      "sorted"
 };
 
-const csvTableCompile = function(name, desc, columns, data, del) {
-  var csv = "";
+export const csvTableCompile = (name, desc, columns, data, del) => {
+  let csv = "";
   if (!del) {
     del = ",";
   }
   if (columns) {
-    var key, obj;
+    let key, obj;
     for (key in columns) {
       if (columns.hasOwnProperty(key)) {
         obj = columns[key];
@@ -26,7 +26,8 @@ const csvTableCompile = function(name, desc, columns, data, del) {
     csv = csv + "\n";
   }
 
-  var i, d, dkey, dobj, html = "", l = data.length, t;
+  let i, d, dkey, dobj, t;
+  const l = data.length;
   for (i = 0; i < l; i++) {
     d = data[i];
     for (dkey in d) {
@@ -42,18 +43,18 @@ const csvTableCompile = function(name, desc, columns, data, del) {
   return csv;
 };
 
-const tsvTableCompile = function(name, desc, columns, data) {
+export const tsvTableCompile = (name, desc, columns, data) => {
   return csvTableCompile(name, desc, columns, data, "\t");
 };
 
-const defaultTableCompile = function(name, desc, columns, data, lineNumbers, sortKey, editable, display) {
-  var html = "<table " + tableDataAttributes.name + "=\"" + name + "\" " + tableDataAttributes.description + "=\"" + desc + "\">";
+export const defaultTableCompile = (name, desc, columns, data, lineNumbers, sortKey, editable, display) => {
+  let html = `<table ${TABLE_DATA_ATTRIBUTES.NAME}="${name}" ${TABLE_DATA_ATTRIBUTES.DESCRIPTION}="${desc}">`;
   if (name) {
     html = html + "<caption";
     if (desc) {
-      html = html + " title=\"" + desc + "\"";
+      html = html + ` title="${desc}"`;
     }
-    html = html + ">" + name + "</caption>";
+    html = html + `>${name}</caption>`;
   }
   html = html + "<thead>";
   html = html + defaultTableHeader(columns, lineNumbers, sortKey, display);
@@ -69,20 +70,20 @@ const defaultTableCompile = function(name, desc, columns, data, lineNumbers, sor
   return html;
 };
 
-const defaultTableHeader = function(columns, lineNumbers, sortKey, display) {
-  var html = "";
+export const defaultTableHeader = (columns, lineNumbers, sortKey, display) => {
+  let html = "";
   if (columns) {
     html = html + "<tr>";
     if (lineNumbers) {
-      html = html + "<th " + tableDataAttributes.name + "=\"lineNumber\">#</th>";
+      html = html + `<th ${TABLE_DATA_ATTRIBUTES.NAME}="lineNumber">#</th>`;
     }
-    var key, obj;
+    let key, obj;
     for (key in columns) {
       if (columns.hasOwnProperty(key)) {
         obj = columns[key];
-        html = html + "<th " + tableDataAttributes.name + "=\"" + key + "\" " + tableDataAttributes.description + "=\"" + obj.description + "\" " + tableDataAttributes.type + "=\"" + obj.type + "\"";
+        html = html + `<th ${TABLE_DATA_ATTRIBUTES.NAME}="${key}" ${TABLE_DATA_ATTRIBUTES.DESCRIPTION}="${obj.description}" ${TABLE_DATA_ATTRIBUTES.TYPE}="${obj.type}"`;
         if (sortKey === key) {
-          html = html + " class=\"" + tableDataAttributes.sortClass + "\"";
+          html = html + " class=\"" + TABLE_DATA_ATTRIBUTES.SORT_CLASS + "\"";
         }
         html = html + ">" + key + "</th>";
       }
@@ -92,8 +93,8 @@ const defaultTableHeader = function(columns, lineNumbers, sortKey, display) {
   return html;
 };
 
-const defaultTableBody = function(data, columns, lineNumbers, sortKey, display) {
-  var i, d, dkey, dobj, html = "", l = data.length, t;
+export const defaultTableBody = (data, columns, lineNumbers, sortKey, display) => {
+  let i, d, dkey, dobj, html = "", l = data.length, t;
   for (i = 0; i < l; i++) {
     d = data[i];
     html = html + "<tr>";
@@ -104,9 +105,9 @@ const defaultTableBody = function(data, columns, lineNumbers, sortKey, display) 
       if (d.hasOwnProperty(dkey)) {
         dobj = d[dkey];
         t = (typeof dobj);
-        html = html + "<td " + tableDataAttributes.type + "=\"" + t + "\" class=\"" + t;
+        html = html + "<td " + TABLE_DATA_ATTRIBUTES.TYPE + "=\"" + t + "\" class=\"" + t;
         if (sortKey === dkey) {
-          html = html + " " + tableDataAttributes.sortClass;
+          html = html + " " + TABLE_DATA_ATTRIBUTES.SORT_CLASS;
         }
         html = html + "\">" + dobj + "</td>";
       }
@@ -116,7 +117,7 @@ const defaultTableBody = function(data, columns, lineNumbers, sortKey, display) 
   return html;
 };
 
-const formatValidationMessages = function(messages) {
+export const formatValidationMessages = (messages) => {
   let html = "";
   if (messages && messages.length > 0) {
     html = html + "<ul class=\"errors\">";
@@ -135,15 +136,15 @@ const formatValidationMessages = function(messages) {
 
 
 
-const directDOMTableCompile = function(el, name, desc, columns, data, lineNumbers, sortKey, editable, display, selectable, linkable, linksConfig, linkCallback) {
+export const directDOMTableCompile = (el, name, desc, columns, data, lineNumbers, sortKey, editable, display, selectable, linkable, linksConfig, linkCallback) => {
   const table = document.createElement("table"), thead = document.createElement("thead"), tbody = document.createElement("tbody");
   let n, t;
 
   // Binding
   table.setAttribute("data-" + name, name);
 
-  table.setAttribute(tableDataAttributes.name, name);
-  table.setAttribute(tableDataAttributes.description, desc);
+  table.setAttribute(TABLE_DATA_ATTRIBUTES.NAME, name);
+  table.setAttribute(TABLE_DATA_ATTRIBUTES.DESCRIPTION, desc);
   if (desc) {
     n = document.createElement("caption");
     if (name) {
@@ -166,13 +167,13 @@ const directDOMTableCompile = function(el, name, desc, columns, data, lineNumber
   el.appendChild(table);
 };
 
-const directDOMTableHeader = function(el, columns, lineNumbers, sortKey, display, selectable) {
+export const directDOMTableHeader = (el, columns, lineNumbers, sortKey, display, selectable) => {
   if (columns && el) {
     const tr = document.createElement("tr");
     let n, t, key, obj;
     if (selectable) {
       n = document.createElement("th");
-      n.setAttribute(tableDataAttributes.name, "select");
+      n.setAttribute(TABLE_DATA_ATTRIBUTES.NAME, "select");
       t = document.createTextNode("\u274f");
       n.appendChild(t);
       tr.appendChild(n);
@@ -180,7 +181,7 @@ const directDOMTableHeader = function(el, columns, lineNumbers, sortKey, display
 
     if (lineNumbers) {
       n = document.createElement("th");
-      n.setAttribute(tableDataAttributes.name, "lineNumber");
+      n.setAttribute(TABLE_DATA_ATTRIBUTES.NAME, "lineNumber");
       t = document.createTextNode("#");
       n.appendChild(t);
       tr.appendChild(n);
@@ -196,11 +197,11 @@ const directDOMTableHeader = function(el, columns, lineNumbers, sortKey, display
         obj = columns[key];
 
         n = document.createElement("th");
-        n.setAttribute(tableDataAttributes.name, key);
-        n.setAttribute(tableDataAttributes.description, obj.description);
-        n.setAttribute(tableDataAttributes.type, obj.type);
+        n.setAttribute(TABLE_DATA_ATTRIBUTES.NAME, key);
+        n.setAttribute(TABLE_DATA_ATTRIBUTES.DESCRIPTION, obj.description);
+        n.setAttribute(TABLE_DATA_ATTRIBUTES.TYPE, obj.type);
         if (sortKey === key) {
-          n.classList.add(tableDataAttributes.sortClass);
+          n.classList.add(TABLE_DATA_ATTRIBUTES.SORT_CLASS);
         }
 
         t = document.createTextNode(key);
@@ -212,7 +213,7 @@ const directDOMTableHeader = function(el, columns, lineNumbers, sortKey, display
   }
 };
 
-const directDOMTableBody = function(el, data, columns, lineNumbers, sortKey, display, selectable, name, linkable, linksConfig, linkCallback) {
+export const directDOMTableBody = (el, data, columns, lineNumbers, sortKey, display, selectable, name, linkable, linksConfig, linkCallback) => {
   const l = data.length;
   let i, d, dkey, dobj, t, td, tn, tr, cobj;
 
@@ -222,7 +223,7 @@ const directDOMTableBody = function(el, data, columns, lineNumbers, sortKey, dis
 
     if (selectable) {
       td = document.createElement("td");
-      td.setAttribute(tableDataAttributes.name, "select");
+      td.setAttribute(TABLE_DATA_ATTRIBUTES.NAME, "select");
       tn = document.createElement("input");
       tn.type = "checkbox";
       tn.name = String(i);
@@ -266,10 +267,10 @@ const directDOMTableBody = function(el, data, columns, lineNumbers, sortKey, dis
 
         td.classList.add(t);
         if (sortKey === dkey) {
-          td.classList.add(tableDataAttributes.sortClass);
+          td.classList.add(TABLE_DATA_ATTRIBUTES.SORT_CLASS);
         }
-        td.setAttribute(tableDataAttributes.type, t);
-        td.setAttribute(tableDataAttributes.label, dkey);
+        td.setAttribute(TABLE_DATA_ATTRIBUTES.TYPE, t);
+        td.setAttribute(TABLE_DATA_ATTRIBUTES.LABEL, dkey);
         tr.appendChild(td);
       }
     }
@@ -277,7 +278,7 @@ const directDOMTableBody = function(el, data, columns, lineNumbers, sortKey, dis
   }
 };
 
-const directDOMEditableTableBody = function(el, data, columns, lineNumbers, sortKey, display, selectable, name) {
+export const directDOMEditableTableBody = (el, data, columns, lineNumbers, sortKey, display, selectable, name) => {
   const l = data.length, ln = lineNumbers;
   let i, d, dkey, dobj, t, td, tn, tr, input, cobj;
   for (i = 0; i < l; i++) {
@@ -286,7 +287,7 @@ const directDOMEditableTableBody = function(el, data, columns, lineNumbers, sort
 
     if (selectable) {
       td = document.createElement("td");
-      td.setAttribute(tableDataAttributes.name, "select");
+      td.setAttribute(TABLE_DATA_ATTRIBUTES.NAME, "select");
       tn = document.createElement("input");
       tn.type = "checkbox";
       tn.name = String(i);
@@ -319,10 +320,10 @@ const directDOMEditableTableBody = function(el, data, columns, lineNumbers, sort
         td = document.createElement("td");
         td.classList.add(t);
         if (sortKey === dkey) {
-          td.classList.add(tableDataAttributes.sortClass);
+          td.classList.add(TABLE_DATA_ATTRIBUTES.SORT_CLASS);
         }
-        td.setAttribute(tableDataAttributes.type, t);
-        td.setAttribute(tableDataAttributes.label, dkey);
+        td.setAttribute(TABLE_DATA_ATTRIBUTES.TYPE, t);
+        td.setAttribute(TABLE_DATA_ATTRIBUTES.LABEL, dkey);
         // input field
 
         if (t === "object") {
@@ -353,7 +354,7 @@ const directDOMEditableTableBody = function(el, data, columns, lineNumbers, sort
           input.value = dobj;
         } else if (t === "string" && cobj.enum) {
           input = document.createElement("select");
-          var iiii = 0, llll = cobj.enum.length, option2, tOption2;
+          let iiii = 0, llll = cobj.enum.length, option2, tOption2;
           for (iiii = 0; iiii < llll; iiii++) {
             option2 = document.createElement("option");
             option2.setAttribute("value", cobj.enum[iiii]);
@@ -402,8 +403,8 @@ const directDOMEditableTableBody = function(el, data, columns, lineNumbers, sort
           input.setAttribute("maxlength", cobj.maxlength);
         }
 
-        input.setAttribute(tableDataAttributes.name, dkey);
-        input.setAttribute(tableDataAttributes.index, i);
+        input.setAttribute(TABLE_DATA_ATTRIBUTES.NAME, dkey);
+        input.setAttribute(TABLE_DATA_ATTRIBUTES.INDEX, i);
 
         // Binding
         input.setAttribute("data-" + name, name);
@@ -420,7 +421,7 @@ const directDOMEditableTableBody = function(el, data, columns, lineNumbers, sort
 /*
 * << First | < Previous | # | Next > | Last >>
 */
-const directDOMPaginationControl = function(el, currentPage, totalPages) {
+export const directDOMPaginationControl = (el, currentPage, totalPages) => {
   let d, n, t;
   d = document.createElement("div");
   d.classList.add("paginationControl");
@@ -439,7 +440,7 @@ const directDOMPaginationControl = function(el, currentPage, totalPages) {
 
   n = document.createElement("span");
   n.classList.add("current");
-  t = document.createTextNode(currentPage + " of " + totalPages);
+  t = document.createTextNode(`${currentPage} of ${totalPages}`);
   n.appendChild(t);
   d.appendChild(n);
 

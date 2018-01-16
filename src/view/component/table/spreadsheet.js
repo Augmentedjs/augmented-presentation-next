@@ -1,59 +1,68 @@
+import * as  Augmented from "augmentedjs-next";
+import AutomaticTable from "./autoTable.js";
+import Collection from "../../../collection/collection.js";
+import LocalStorageCollection from "../../../collection/localStorageCollection.js";
+
 /**
-* Augmented.Presentation.Spreadsheet
-* Instance class preconfigured for editing for use as a Spreadsheet.<br/>
-* If a propery for length is not specified, it will buffer 10 lines for editing.
-* @constructor Augmented.Presentation.Spreadsheet
-* @extends Augmented.Presentation.AutomaticTable
-* @memberof Augmented.Presentation
-*/
-Augmented.Presentation.Spreadsheet = Augmented.Presentation.AutomaticTable.extend({
-  renderPaginationControl: false,
-  lineNumbers: true,
-  sortable: true,
-  editable: true,
-  /**
-  * @propery {number} columns Defines a set of columns in the spreadsheet
-  * @memberof Augmented.Presentation.AutomaticTable
-  */
-  columns: 5,
-  /**
-  * @propery {number} rows Defines a set of rows in the spreadsheet
-  * @memberof Augmented.Presentation.AutomaticTable
-  */
-  rows: 10,
-  /**
-  * Initialize the table view
-  * @method initialize
-  * @memberof Augmented.Presentation.Spreadsheet
-  * @param {object} options The view options
-  * @returns {boolean} Returns true on success of initalization
-  */
-  initialize: function(options) {
-    this.init();
+ * Augmented.Presentation.Spreadsheet
+ * Instance class preconfigured for editing for use as a Spreadsheet.<br/>
+ * If a propery for length is not specified, it will buffer 10 lines for editing.
+ * @class Spreadsheet
+ * @extends Presentation.Component.AutomaticTable
+ * @memberof Presentation.Component
+ */
+class Spreadsheet extends AutomaticTable {
+  constructor(options) {
+    super(options);
+    // TODO: overrides?
+    this.lineNumbers = true;
+    this.sortable = true;
+    this.editable = true;
+
+    if (options && options.pagination) {
+      this.renderPaginationControl = options.pagination;
+    } else {
+      this.renderPaginationControl = false;
+    }
+
+    if (options && options.rows) {
+      this.rows = options.rows;
+    } else {
+      this.rows = 10;
+    }
+
+    if (options && options.columns) {
+      this.columns = options.columns;
+    } else {
+      this.rows = 5;
+    }
 
     if (this.collection) {
       this.collection.reset();
     } else if (!this.collection && this.localStorage) {
-      this.collection = new Augmented.LocalStorageCollection();
+      this.collection = new LocalStorageCollection();
     } else if (!this.collection) {
-      this.collection = new Augmented.Collection();
+      this.collection = new Collection();
     }
-    if (options) {
 
+    // TODO: this might belong in parent
+
+    if (options) {
       if (options.schema) {
         // check if this is a schema vs a URI to get a schema
         if (Augmented.isObject(options.schema)) {
           this.schema = options.schema;
         } else {
           // is a URI?
-          var parsedSchema = null;
+          let parsedSchema = null;
           try {
             parsedSchema = JSON.parse(options.schema);
             if (parsedSchema && Augmented.isObject(parsedSchema)) {
               this.schema = parsedSchema;
             }
           } catch(e) {
-            _logger.warn("AUGMENTED: AutoTable parsing string schema failed.  URI perhaps?");
+            // AutoTable parsing string schema failed.  URI perhaps?
+            //_logger.warn("AUGMENTED: AutoTable parsing string schema failed.  URI perhaps?");
           }
           if (!this.schema) {
             this.retrieveSchema(options.schema);
@@ -119,7 +128,7 @@ Augmented.Presentation.Spreadsheet = Augmented.Presentation.AutomaticTable.exten
         }
       };
 
-      var i = 0;
+      let i = 0;
 
       for (i = 0; i < this.columns; i++) {
         this.schema.properties[String.fromCharCode(65 + i)] = {
@@ -137,12 +146,21 @@ Augmented.Presentation.Spreadsheet = Augmented.Presentation.AutomaticTable.exten
     this.collection.set(this.data);
 
     this.isInitalized = true;
+  };
 
-    return this.isInitalized;
-  },
-  _generate: function() {
+  /**
+   * @propery {number} columns Defines a set of columns in the spreadsheet
+   * @memberof Spreadsheet
+   */
+
+  /**
+   * @propery {number} rows Defines a set of rows in the spreadsheet
+   * @memberof Spreadsheet
+   */
+
+  _generate() {
     if (this.schema && this.schema.properties) {
-      var i = 0, ii = 0, keys = Object.keys(this.schema.properties), l = keys.length, obj = {};
+      let i = 0, ii = 0, keys = Object.keys(this.schema.properties), l = keys.length, obj = {};
       this.data = [];
       for (ii = 0; ii < this.rows; ii++) {
         obj = {};
@@ -153,4 +171,6 @@ Augmented.Presentation.Spreadsheet = Augmented.Presentation.AutomaticTable.exten
       }
     }
   }
-});
+};
+
+export default Spreadsheet;
