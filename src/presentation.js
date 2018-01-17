@@ -30,13 +30,15 @@ import DialogView from "./view/component/dialog/dialog.js";
 import ConfirmationDialogView from "./view/component/dialog/confirmation.js";
 import AlertDialogView from "./view/component/dialog/alert.js";
 
+import AutomaticTable from "./view/component/table/autoTable.js";
+
 /**
  * Augmented.js Next Presentation - The Presentation Component
  *
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.14
+ * @version 2.0.0-alpha.15
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -45,7 +47,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.14";
+Presentation.VERSION = "2.0.0-alpha.15";
 
 Presentation.History = History;
 Presentation.Router = Router;
@@ -79,6 +81,7 @@ Presentation.Component.HamburgerMenu = HamburgerMenu;
 Presentation.Component.DialogView = DialogView;
 Presentation.Component.ConfirmationDialogView = ConfirmationDialogView;
 Presentation.Component.AlertDialogView = AlertDialogView;
+Presentation.Component.AutomaticTable = AutomaticTable;
 
 Presentation.sync = sync;
 Presentation.request = request;

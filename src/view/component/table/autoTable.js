@@ -1,462 +1,205 @@
 //import { TABLE_DATA_ATTRIBUTES, csvTableCompile, tsvTableCompile, defaultTableCompile, defaultTableHeader, defaultTableBody, formatValidationMessages, directDOMTableCompile, directDOMTableHeader, directDOMTableBody, directDOMEditableTableBody, directDOMPaginationControl } from "../functions/buildTable.js";
+import * as Augmented from "augmentedjs-next";
+import DecoratorView from "../../decorator/decorator.js";
 import { TABLE_DATA_ATTRIBUTES, csvTableCompile, tsvTableCompile, defaultTableCompile, formatValidationMessages, directDOMTableCompile, directDOMTableHeader, directDOMTableBody, directDOMEditableTableBody, directDOMPaginationControl } from "../functions/buildTable.js";
+import request from "../../../request/request.js";
+import Dom from "../../../dom/dom.js";
+import Model from "../../../model/model.js";
+import Collection from "../../../collection/collection.js";
+import LocalStorageCollection from "../../../collection/localStorageCollection.js";
+
+const DEFAULT_KEY = "augmented.localstorage.autotable.key";
 
 /**
-* Augmented.Presentation.DirectDOMAutomaticTable<br/>
-* Uses direct DOM methods vs cached HTML<br/>
-* Creates a table automatically via a schema for defintion and a uri/json for data
-* @constructor Augmented.Presentation.DirectDOMAutomaticTable
-* @extends Augmented.Presentation.AutomaticTable
-* @memberof Augmented.Presentation
-* @example
-* let myAt = Augmented.Presentation.AutomaticTable.extend({ ... });
-* let at = new myAt({
-*     schema : schema,
-*     el: "#autoTable",
-*     crossOrigin: false,
-*     sortable: true,
-*     lineNumbers: true,
-*     editable: true,
-*     uri: "/example/data/table.json"
-* });
-*/
-
-/**
- * Augmented.Presentation.AutomaticTable<br/>
+ * AutomaticTable<br/>
  * Creates a table automatically via a schema for defintion and a uri/json for data
- * @constructor Augmented.Presentation.AutomaticTable
- * @extends Augmented.Presentation.DecoratorView
- * @memberof Augmented.Presentation
- */
-
-/**
- * Augmented.Presentation.AutoTable
- * Shorthand for Augmented.Presentation.AutomaticTable
- * @constructor Augmented.Presentation.AutoTable
- * @extends Augmented.Presentation.AutomaticTable
- * @memberof Augmented.Presentation
+ * @constructor AutomaticTable
+ * @extends Presentation.DecoratorView
+ * @memberof Presentation.Component
+ * @example
+ * let at = new Presentation.AutomaticTable({
+ *     schema: schema,
+ *     el: "#autoTable",
+ *     crossOrigin: false,
+ *     sortable: true,
+ *     lineNumbers: true,
+ *     editable: true,
+ *     uri: "/example/data/table.json"
+ * });
  */
 class AutomaticTable extends DecoratorView {
   constructor(options) {
     super(options);
-    theme: "material";
-    linkable: false;
-    links: {
-      wholeRow: true,
-      column: "",
-      link: "rowLink"
-    };
-    selectable: false,
-     sortable: false,
-     sortStyle: "client",
-      sortKey: null,
-    display: null,
-      renderPaginationControl: false,
-      paginationAPI: null,
-      name: "",
-      description: "",
-      localStorage: false,
-      localStorageKey: "augmented.localstorage.autotable.key",
-      editable: false,
-      crossOrigin: false,
-      lineNumbers: false,
-      _columns: {},
-      uri: null,
-      data: [],
-      collection: null,
-      isInitalized : false,
-      pageControlBound: false,
-  };
 
-/**
- * The theme property - The theme of this table (default is 'material')
- * @property {string} theme The theme of this table
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-/**
- * The setTheme method
- * @method setTheme sets the theme of this table
- * @param {string} theme name of the theme
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  setTheme: function(theme) {
-    const el = ((typeof this.el === 'string') ? document.querySelector(this.el) : this.el),
-    e = el.querySelector("table");
-    if (e) {
-      e.setAttribute("class", theme);
+    if (options && options.theme) {
+      this.theme = options.theme;
+    } else {
+      this.theme = "material";
     }
-    this.theme = theme;
-  },
 
-  /**
- * The linkable property - enable links in a row (only works in non-editable tables)
- * @property {boolean} linkable enable/disable linking a row
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * The links property - setup linking structure for links in a row
- * @property {boolean} linkable enable/disable linking a row
- * @example links: {
- * wholeRow: false, // link whole row vs column
- * column: "name", // name of column
- *	link: "rowLink" // callback
- * }
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * The default rowlink function callback called by row to format a link
- * @method rowlink
- * @param {array} row The row data
- * @returns {string} Returns the link uri
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  rowLink: function(row) {
-    return "";
-  },
-  /**
- * The selectable property - enable selecting a row in table
- * @property {boolean} selectable enable/disable selecting a row
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * The sortable property - enable sorting in table
- * @property {boolean} sortable enable sorting in the table
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * The sortStyle property - setup the sort API
- * @property {string} sortStyle setup the sort API
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * The sortKey property
- * @property {string} sortKey sorted key
- * @private
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * Sort the tabe by a key (sent via a UI Event)
- * @method sortBy
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {string} key The key to sort by
- */
-  sortBy: function(key) {
-    if (key && ( (this.editable) || (!this.editable && this.sortKey !== key))) {
-      this.sortKey = key;
-      this.collection.sortByKey(key);
-      this.refresh();
+    if (options && options.linkable) {
+      this.linkable = options.linkable;
+    } else {
+      this.linkable = false;
     }
-  },
 
-  /**
-   * Fields to display - null will display all
-   * @method display
-   * @memberof Augmented.Presentation.AutomaticTable
-   */
-
-
-  // pagination
-  /**
- * The renderPaginationControl property - render the pagination control
- * @property {boolean} renderPaginationControl render the pagination control
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * The paginationAPI property - setup the paginatin API to use
- * @property {Augmented.PaginationFactory.type} paginationAPI the pagination API to use
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * The name property
- * @property {string} name The name of the table
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * The description property
- * @property {string} description The description of the table
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * Return the current page number
- * @method currentPage
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {number} The current page number
- */
-  currentPage: function() {
-    return this.collection.currentPage;
-  },
-  /**
- * Return the total pages
- * @method totalPages
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {number} The total pages
- */
-  totalPages: function() {
-    return this.collection.totalPages;
-  },
-  /**
- * Advance to the next page
- * @method nextPage
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  nextPage: function() {
-    this.collection.nextPage();
-    this.refresh();
-  },
-  /**
- * Return to the previous page
- * @method previousPage
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  previousPage: function() {
-    this.collection.previousPage();
-    this.refresh();
-  },
-  /**
- * Go to a specific page
- * @method goToPage
- * @param {number} page The page to go to
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  goToPage: function(page) {
-    this.collection.goToPage(page);
-    this.refresh();
-  },
-  /**
- * Return to the first page
- * @method firstPage
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  firstPage: function() {
-    this.collection.firstPage();
-    this.refresh();
-  },
-  /**
- * Advance to the last page
- * @method lastPage
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  lastPage: function() {
-    this.collection.lastPage();
-    this.refresh();
-  },
-
-  // local storage
-
-  /**
- * The localStorage property - enables localStorage
- * @property {boolean} localStorage The localStorage property
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-  /**
- * The localStorageKey property - set the key for use in storage
- * @property {string} localStorageKey The localStorage key property
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-
-  // editable
-
-  /**
- * The editable property - enables editing of cells
- * @property {boolean} editable The editable property
- * @memberof Augmented.Presentation.AutomaticTable
- */
-
-
-  /**
- * Edit a cell at the row and column specified
- * @method editCell
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {number} row The row
- * @param {number} col The column
- * @param {any} value The value to set
- */
-  editCell: function(row, col, value) {
-    if (row && col) {
-      let model = this.collection.at(row), name = this.columns[col];
-      if (model && name) {
-        model.set(name, value);
-      }
+    if (options && options.links) {
+      this.links = options.links;
+    } else {
+      this.links = {
+        wholeRow: true,
+        column: "",
+        link: "rowLink"
+      };
     }
-  },
-  /**
- * Copy a cell at the row and column  to another
- * @method copyCell
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {number} row1 The 'from' row
- * @param {number} col1 The 'from' column
- * @param {number} row2 The 'to' row
- * @param {number} col2 The 'to' column
- */
-  copyCell: function(row1, col1, row2, col2) {
-    if (row1 && col1 && row2 && col2) {
-      let model1 = this.collection.at(row1), name1 = this.columns[col1],
-      model2 = this.collection.at(row);
-      if (model1 && name1 && model2) {
-        model2.set(name1, value1);
-      }
+
+    if (options && options.selectable) {
+      this.selectable = options.selectable;
+    } else {
+      this.selectable = false;
     }
-  },
-  /**
- * Clear a cell at the row and column specified
- * @method clearCell
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {number} row The row
- * @param {number} col The column
- */
-  clearCell: function(row, col) {
-    this.editCell(row, col, null);
-  },
 
-  // standard functionality
+    if (options && options.sortable) {
+      this.sortable = options.sortable;
+    } else {
+      this.sortable = false;
+    }
 
-  /**
- * The crossOrigin property - enables cross origin fetch
- * @property {boolean} crossOrigin The crossOrigin property
- * @memberof Augmented.Presentation.AutomaticTable
- */
+    if (options && options.sortStyle) {
+      this.sortStyle = options.sortStyle;
+    } else {
+      this.sortStyle = "client";
+    }
 
-  /**
- * The lineNumber property - turns on line numbers
- * @property {boolean} lineNumbers The lineNumbers property
- * @memberof Augmented.Presentation.AutomaticTable
- */
+    if (options && options.sortKey) {
+      this.sortKey = options.sortKey;
+    } else {
+      this.sortKey = null;
+    }
 
-  /**
- * The columns property
- * @property {object} columns The columns property
- * @private
- * @memberof Augmented.Presentation.AutomaticTable
- */
+    if (options && options.display) {
+      this.display = options.display;
+    } else {
+      this.display = null;
+    }
 
-  /**
- * The URI property
- * @property {string} uri The URI property
- * @memberof Augmented.Presentation.AutomaticTable
- */
+    if (options && options.pagination) {
+      this.renderPaginationControl = options.pagination;
+    } else {
+      this.renderPaginationControl = false;
+    }
 
-  /**
- * The data property
- * @property {array} data The data property
- * @memberof Augmented.Presentation.AutomaticTable
- * @private
- */
+    if (options && options.paginationAPI) {
+      this.paginationAPI = options.paginationAPI;
+    } else {
+      this.paginationAPI = null;
+    }
 
-  /**
- * The collection property
- * @property {Augmented.PaginatedCollection} collection The collection property
- * @memberof Augmented.Presentation.AutomaticTable
- * @private
- */
+    if (options && options.description) {
+      this.description = options.description;
+    } else {
+      this.description = "";
+    }
 
-  /**
- * The initialized property
- * @property {boolean} isInitalized The initialized property
- * @memberof Augmented.Presentation.AutomaticTable
- */
+    if (options && options.localStorage) {
+      this.localStorage = options.localStorage;
+    } else {
+      this.localStorage = false;
+    }
 
-  /**
- * Initialize the table view
- * @method initialize
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {object} options The view options
- * @returns {boolean} Returns true on success of initalization
- */
-  initialize: function(options) {
-    this.init(options);
+    if (options && options.localStorageKey) {
+      this.localStorageKey = options.localStorageKey;
+    } else {
+      this.localStorageKey = DEFAULT_KEY;
+    }
+
+    if (options && options.editable) {
+      this.editable = options.editable;
+    } else {
+      this.editable = false;
+    }
+
+    if (options && options.crossOrigin) {
+      this.crossOrigin = options.crossOrigin;
+    } else {
+      this.crossOrigin = false;
+    }
+
+    if (options && options.lineNumbers) {
+      this.lineNumbers = options.lineNumbers;
+    } else {
+      this.lineNumbers = false;
+    }
+
+    if (options && options.uri) {
+      this.uri = options.uri;
+    } else {
+      this.uri = false;
+    }
+
+    if (options && options.data) {
+      this.data = options.data;
+    } else {
+      this.data = [];
+    }
+
+    this._columns = {};
+    this.isInitalized = false;
+    this.pageControlBound = false;
 
     if (!this.model) {
-      this.model = new Augmented.Model();
+      this.model = new Model();
     }
 
     if (this.collection) {
       this.collection.reset();
     }
-    if (options) {
-      if (options.paginationAPI) {
-        this.paginationAPI = options.paginationAPI;
-      }
-      if (!this.collection && this.paginationAPI) {
-        this.collection = Augmented.PaginationFactory.getPaginatedCollection(this.paginationAPI);
-        this.paginationAPI = this.collection.paginationAPI;
-        this.localStorage = false;
-      } else if (!this.collection && this.localStorage) {
-        this.collection = new Augmented.LocalStorageCollection();
-      } else if (!this.collection) {
-        this.collection = new Augmented.Collection();
-      }
-      if (options.schema) {
-        // check if this is a schema vs a URI to get a schema
-        if (Augmented.isObject(options.schema)) {
-          this.schema = options.schema;
-        } else {
-          // is a URI?
-          let parsedSchema = null;
-          try {
-            parsedSchema = JSON.parse(options.schema);
-            if (parsedSchema && Augmented.isObject(parsedSchema)) {
-              this.schema = parsedSchema;
-            }
-          } catch(e) {
-            _logger.warn("AUGMENTED: AutoTable parsing string schema failed.  URI perhaps?");
+
+    if (!this.collection && this.paginationAPI) {
+      this.collection = Augmented.PaginationFactory.getPaginatedCollection(this.paginationAPI);
+      this.paginationAPI = this.collection.paginationAPI;
+      this.localStorage = false;
+    } else if (!this.collection && this.localStorage) {
+      this.collection = new LocalStorageCollection();
+    } else if (!this.collection) {
+      this.collection = new Collection();
+    }
+
+    if (options && options.schema) {
+      // check if this is a schema vs a URI to get a schema
+      if (Augmented.isObject(options.schema)) {
+        this.schema = options.schema;
+      } else {
+        // is a URI?
+        let parsedSchema = null;
+        try {
+          parsedSchema = JSON.parse(options.schema);
+          if (parsedSchema && Augmented.isObject(parsedSchema)) {
+            this.schema = parsedSchema;
           }
-          if (!this.schema) {
-            this.retrieveSchema(options.schema);
-            this.isInitalized = false;
-          }
+        } catch(e) {
+          //_logger.warn("AUGMENTED: AutoTable parsing string schema failed.  URI perhaps?");
+        }
+        if (!this.schema) {
+          this.retrieveSchema(options.schema);
+          this.isInitalized = false;
         }
       }
+    } else {
+      this.schema = null;
+    }
 
-      if (options.el) {
-        this.el = options.el;
-      }
+    if (this.uri && this.collection) {
+      this.collection.url = options.uri;
+    }
 
-      if (options.uri) {
-        this.uri = options.uri;
-        this.collection.url = options.uri;
-      }
+    if (this.data && (Array.isArray(this.data))) {
+      this.populate(this.data);
+    }
 
-      if (options.data && (Array.isArray(options.data))) {
-        this.populate(options.data);
-      }
-
-      if (options.renderPaginationControl) {
-        this.renderPaginationControl = options.renderPaginationControl;
-      }
-
-      if (options.selectable) {
-        this.selectable = options.selectable;
-      }
-
-      if (options.sortable) {
-        this.sortable = options.sortable;
-      }
-
-      if (options.lineNumbers) {
-        this.lineNumbers = options.lineNumbers;
-      }
-
-      if (options.editable) {
-        this.editable = options.editable;
-      }
-
-      if (options.localStorageKey && !options.uri) {
-        this.localStorageKey = options.localStorageKey;
-        this.uri = null;
-      }
+    if (options && options.localStorageKey && !options.uri) {
+      this.localStorageKey = options.localStorageKey;
+      this.uri = null;
     }
 
     if (this.collection && this.uri) {
@@ -465,6 +208,7 @@ class AutomaticTable extends DecoratorView {
     if (this.collection) {
       this.collection.crossOrigin = this.crossOrigin;
     }
+
     if (this.schema) {
       if ((!this.name || this.name === "") && this.schema.title) {
         this.name = this.schema.title;
@@ -479,24 +223,323 @@ class AutomaticTable extends DecoratorView {
         this.collection.schema = this.schema;
         this.isInitalized = true;
       }
-
     } else {
       this.isInitalized = false;
-      return false;
     }
-
-    return this.isInitalized;
-  },
+  };
 
   /**
- * Render the table
- * @method render Renders the table
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {object} Returns the view context ('this')
- */
-  render: function() {
+   * The theme property - The theme of this table (default is 'material')
+   * @property {string} theme The theme of this table
+   * @memberof AutomaticTable
+   */
+
+ /**
+  * The linkable property - enable links in a row (only works in non-editable tables)
+  * @property {boolean} linkable enable/disable linking a row
+  * @memberof AutomaticTable
+  */
+
+  /**
+   * The selectable property - enable selecting a row in table
+   * @property {boolean} selectable enable/disable selecting a row
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The sortable property - enable sorting in table
+   * @property {boolean} sortable enable sorting in the table
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The sortStyle property - setup the sort API
+   * @property {string} sortStyle setup the sort API
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The sortKey property
+   * @property {string} sortKey sorted key
+   * @private
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The links property - setup linking structure for links in a row
+   * @property {boolean} linkable enable/disable linking a row
+   * @example links: {
+   * wholeRow: false, // link whole row vs column
+   * column: "name", // name of column
+   *	link: "rowLink" // callback
+   * }
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The localStorage property - enables localStorage
+   * @property {boolean} localStorage The localStorage property
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The localStorageKey property - set the key for use in storage
+   * @property {string} localStorageKey The localStorage key property
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The editable property - enables editing of cells
+   * @property {boolean} editable The editable property
+   * @memberof AutomaticTable
+   */
+
+ /**
+  * Fields to display - null will display all
+  * @method display
+  * @memberof AutomaticTable
+  */
+
+  // pagination
+ /**
+  * The renderPaginationControl property - render the pagination control
+  * @property {boolean} renderPaginationControl render the pagination control
+  * @memberof AutomaticTable
+  */
+
+ /**
+  * The paginationAPI property - setup the paginatin API to use
+  * @property {Augmented.PaginationFactory.type} paginationAPI the pagination API to use
+  * @memberof AutomaticTable
+  */
+
+ /**
+  * The name property
+  * @property {string} name The name of the table
+  * @memberof AutomaticTable
+  */
+
+ /**
+  * The description property
+  * @property {string} description The description of the table
+  * @memberof AutomaticTable
+  */
+
+  /**
+   * The crossOrigin property - enables cross origin fetch
+   * @property {boolean} crossOrigin The crossOrigin property
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The lineNumber property - turns on line numbers
+   * @property {boolean} lineNumbers The lineNumbers property
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The columns property
+   * @property {object} columns The columns property
+   * @private
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The URI property
+   * @property {string} uri The URI property
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The data property
+   * @property {array} data The data property
+   * @memberof AutomaticTable
+   * @private
+   */
+
+  /**
+   * The collection property
+   * @property {Augmented.PaginatedCollection} collection The collection property
+   * @memberof AutomaticTable
+   * @private
+   */
+
+  /**
+   * The initialized property
+   * @property {boolean} isInitalized The initialized property
+   * @memberof AutomaticTable
+   */
+
+  /**
+   * The setTheme method
+   * @method setTheme sets the theme of this table
+   * @param {string} theme name of the theme
+   * @memberof AutomaticTable
+   */
+   setTheme(theme) {
+     const el = Dom.selector(this.el);//((typeof this.el === 'string') ? document.querySelector(this.el) : this.el),
+     if (el) {
+       e = el.querySelector("table");
+       if (e) {
+         e.setAttribute("class", theme);
+       }
+     }
+     this.theme = theme;
+   };
+
+  /**
+   * The default rowlink function callback called by row to format a link
+   * @method rowlink
+   * @param {array} row The row data
+   * @returns {string} Returns the link uri
+   * @memberof AutomaticTable
+   */
+   rowLink(row) {
+     return "";
+   };
+
+  /**
+   * Sort the tabe by a key (sent via a UI Event)
+   * @method sortBy
+   * @memberof AutomaticTable
+   * @param {string} key The key to sort by
+   */
+   sortBy(key) {
+     if (key && ( (this.editable) || (!this.editable && this.sortKey !== key))) {
+       this.sortKey = key;
+       this.collection.sortByKey(key);
+       this.refresh();
+     }
+   };
+
+ /**
+  * Return the current page number
+  * @method currentPage
+  * @memberof AutomaticTable
+  * @returns {number} The current page number
+  */
+  currentPage() {
+    return this.collection.currentPage;
+  };
+
+ /**
+  * Return the total pages
+  * @method totalPages
+  * @memberof AutomaticTable
+  * @returns {number} The total pages
+  */
+  totalPages() {
+    return this.collection.totalPages;
+  };
+
+ /**
+  * Advance to the next page
+  * @method nextPage
+  * @memberof AutomaticTable
+  */
+  nextPage() {
+    this.collection.nextPage();
+    this.refresh();
+  };
+
+ /**
+  * Return to the previous page
+  * @method previousPage
+  * @memberof AutomaticTable
+  */
+  previousPage() {
+    this.collection.previousPage();
+    this.refresh();
+  };
+
+ /**
+  * Go to a specific page
+  * @method goToPage
+  * @param {number} page The page to go to
+  * @memberof AutomaticTable
+  */
+  goToPage(page) {
+    this.collection.goToPage(page);
+    this.refresh();
+  };
+
+ /**
+  * Return to the first page
+  * @method firstPage
+  * @memberof AutomaticTable
+  */
+  firstPage() {
+    this.collection.firstPage();
+    this.refresh();
+  };
+
+ /**
+  * Advance to the last page
+  * @method lastPage
+  * @memberof AutomaticTable
+  */
+  lastPage() {
+    this.collection.lastPage();
+    this.refresh();
+  };
+
+ /**
+  * Edit a cell at the row and column specified
+  * @method editCell
+  * @memberof AutomaticTable
+  * @param {number} row The row
+  * @param {number} col The column
+  * @param {any} value The value to set
+  */
+  editCell(row, col, value) {
+    if (row && col) {
+      let model = this.collection.at(row), name = this.columns[col];
+      if (model && name) {
+        model.set(name, value);
+      }
+    }
+  };
+
+ /**
+  * Copy a cell at the row and column  to another
+  * @method copyCell
+  * @memberof AutomaticTable
+  * @param {number} row1 The 'from' row
+  * @param {number} col1 The 'from' column
+  * @param {number} row2 The 'to' row
+  * @param {number} col2 The 'to' column
+  */
+  copyCell(row1, col1, row2, col2) {
+    if (row1 && col1 && row2 && col2) {
+      let model1 = this.collection.at(row1), name1 = this.columns[col1],
+      model2 = this.collection.at(row);
+      if (model1 && name1 && model2) {
+        model2.set(name1, value1);
+      }
+    }
+  };
+ /**
+  * Clear a cell at the row and column specified
+  * @method clearCell
+  * @memberof AutomaticTable
+  * @param {number} row The row
+  * @param {number} col The column
+  */
+  clearCell(row, col) {
+    this.editCell(row, col, null);
+  };
+
+ /**
+  * Render the table
+  * @method render Renders the table
+  * @memberof AutomaticTable
+  * @returns {object} Returns the view context ('this')
+  */
+  render() {
+    console.log("render");
+
     if (!this.isInitalized) {
-      _logger.warn("AUGMENTED: AutoTable Can't render yet, not initialized!");
+      //_logger.warn("AUGMENTED: AutoTable Can't render yet, not initialized!");
       return this;
     }
     let e;
@@ -508,10 +551,10 @@ class AutomaticTable extends DecoratorView {
         let tbody = e.querySelector("tbody"), thead = e.querySelector("thead");
         if (e) {
           if (this.sortable) {
-            this.unbindSortableColumnEvents();
+            this._unbindSortableColumnEvents();
           }
           if (this.editable) {
-            this.unbindCellChangeEvents();
+            this._unbindCellChangeEvents();
           }
           if (this._columns && (Object.keys(this._columns).length > 0)){
             while (thead.hasChildNodes()) {
@@ -540,10 +583,8 @@ class AutomaticTable extends DecoratorView {
             }
           }
         }
-      } else if (this.$el) {
-        _logger.warn("AUGMENTED: AutoTable doesn't support jquery, sorry, not rendering.");
       } else {
-        _logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
+        //_logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
       }
     } else {
       this.template = "notused";
@@ -571,47 +612,44 @@ class AutomaticTable extends DecoratorView {
           n.classList.add("message");
           e.appendChild(n);
         }
-      } else if (this.$el) {
-        _logger.warn("AUGMENTED: AutoTable doesn't support jquery, sorry, not rendering.");
       } else {
-        _logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
+        //_logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
       }
 
       if (this.renderPaginationControl) {
-        this.bindPaginationControlEvents();
+        this._bindPaginationControlEvents();
       }
     }
     this.delegateEvents();
 
     if (this.sortable) {
-      this.bindSortableColumnEvents();
+      this._bindSortableColumnEvents();
     }
 
     if (this.editable) {
-      this.bindCellChangeEvents();
+      this._bindCellChangeEvents();
     }
 
     this.showProgressBar(false);
-
     this.setTheme(this.theme);
 
     return this;
-  },
+  };
 
-  /**
- * Fetch the schema from the source URI
- * @method retrieveSchema
- * @param uri {string} the URI to fetch from
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  retrieveSchema: function(uri){
+ /**
+  * Fetch the schema from the source URI
+  * @method retrieveSchema
+  * @param uri {string} the URI to fetch from
+  * @memberof AutomaticTable
+  */
+  retrieveSchema(uri){
     const that = this;
     let schema = null;
-    Augmented.ajax({
+    request({
       url: uri,
       contentType: 'application/json',
       dataType: 'json',
-      success: function(data, status) {
+      success(data, status) {
         if (typeof data === "string") {
           schema = JSON.parse(data);
         } else {
@@ -620,17 +658,18 @@ class AutomaticTable extends DecoratorView {
         const options = { "schema": schema };
         that.initialize(options);
       },
-      failure: function(data, status) {
-        _logger.warn("AUGMENTED: AutoTable Failed to fetch schema!");
+      failure(data, status) {
+        //_logger.warn("AUGMENTED: AutoTable Failed to fetch schema!");
       }
     });
-  },
-  /**
- * Fetch the data from the source URI
- * @method fetch
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  fetch: function() {
+  };
+
+ /**
+  * Fetch the data from the source URI
+  * @method fetch
+  * @memberof AutomaticTable
+  */
+  fetch() {
     // TODO: should be a promise
     this.showProgressBar(true);
 
@@ -650,24 +689,24 @@ class AutomaticTable extends DecoratorView {
 
     this.collection.fetch({
       reset: true,
-      success: function(){
+      success(){
         successHandler();
       },
-      error: function(){
+      error(){
         failHandler();
       }
     });
-  },
+  };
 
-  /**
- * Save the data to the source
- * This only functions if the table is editable
- * @method save
- * @param {boolean} override Save even if not editable
- * @returns Returns true if succesfull
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  save: function(override) {
+ /**
+  * Save the data to the source
+  * This only functions if the table is editable
+  * @method save
+  * @param {boolean} override Save even if not editable
+  * @returns Returns true if succesfull
+  * @memberof AutomaticTable
+  */
+  save(override) {
     if (this.editable || override) {
       this.showProgressBar(true);
 
@@ -681,75 +720,76 @@ class AutomaticTable extends DecoratorView {
       const failHandler = function() {
         view.showProgressBar(false);
         view.showMessage("AutomaticTable save failed!");
-        _logger.warn("AUGMENTED: AutomaticTable save failed!");
+        //_logger.warn("AUGMENTED: AutomaticTable save failed!");
         return false;
       };
 
       this.collection.save({
         reset: true,
-        success: function(){
+        success(){
           successHandler();
         },
-        error: function(){
+        error(){
           failHandler();
         }
       });
     }
     return false;
-  },
+  };
 
-  /**
- * Populate the data in the table
- * @method populate
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {array} source The source data array
- */
-  populate: function(source) {
+ /**
+  * Populate the data in the table
+  * @method populate
+  * @memberof AutomaticTable
+  * @param {array} source The source data array
+  */
+  populate(source) {
     if (source && Array.isArray(source)) {
       this.sortKey = null;
       this.data = source;
       this.collection.reset(this.data);
     }
-  },
-  /**
- * Clear all the data in the table
- * @method clear
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  clear: function() {
+  };
+
+ /**
+  * Clear all the data in the table
+  * @method clear
+  * @memberof AutomaticTable
+  */
+  clear() {
     this.sortKey = null;
     this.data = [];
     this.collection.reset(null);
-  },
-  /**
- * Refresh the table (Same as render)
- * @method refresh Refresh the table
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {object} Returns the view context ('this')
- * @see Augmented.Presentation.AutomaticTable.render
- */
-  refresh: function() {
+  };
+
+ /**
+  * Refresh the table (Same as render)
+  * @method refresh Refresh the table
+  * @memberof AutomaticTable
+  * @returns {object} Returns the view context ('this')
+  * @see AutomaticTable.render
+  */
+  refresh() {
     return this.render();
-  },
+  };
 
-
-  /**
- * Save Cell Event
- * @private
- */
-  saveCell: function(event) {
+ /**
+  * Save Cell Event
+  * @private
+  */
+  saveCell(event) {
     const key = event.target, model = this.collection.at(parseInt(key.getAttribute(TABLE_DATA_ATTRIBUTES.INDEX)));
     let value = key.value;
     if ((key.getAttribute("type")) === "number") {
       value = parseInt(key.value);
     }
     model.set(key.getAttribute(TABLE_DATA_ATTRIBUTES.NAME), value);
-  },
+  };
 
-  /**
- * @private
- */
-  bindCellChangeEvents: function() {
+ /**
+  * @private
+  */
+  _bindCellChangeEvents() {
     let myEl = (typeof this.el === 'string') ? this.el : this.el.localName;
     let cells = [].slice.call(document.querySelectorAll(myEl + " table tr td input"));
     let i=0, l=cells.length;
@@ -763,12 +803,12 @@ class AutomaticTable extends DecoratorView {
     for(i=0; i < l; i++) {
       cells[i].addEventListener("change", this.saveCell.bind(this), false);
     }
-  },
+  };
 
-  /**
- * @private
- */
-  unbindCellChangeEvents: function() {
+ /**
+  * @private
+  */
+  _unbindCellChangeEvents() {
     let myEl = (typeof this.el === 'string') ? this.el : this.el.localName;
     let cells = [].slice.call(document.querySelectorAll(myEl + " table tr td input"));
     let i=0, l=cells.length;
@@ -782,16 +822,16 @@ class AutomaticTable extends DecoratorView {
     for(i=0; i < l; i++) {
       cells[i].removeEventListener("change", this.saveCell, false);
     }
-  },
+  };
 
-  /**
- * Export the table data in requested format
- * @method exportTo Exports the table
- * @param {string} type The type requested (csv or html-default)
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {string} The table data in requested format
- */
-  exportTo: function(type) {
+ /**
+  * Export the table data in requested format
+  * @method exportTo Exports the table
+  * @param {string} type The type requested (csv or html-default)
+  * @memberof AutomaticTable
+  * @returns {string} The table data in requested format
+  */
+  exportTo(type) {
     let e = "";
     if (type === "csv") {
       e = csvTableCompile(this.name, this.description, this._columns, this.collection.toJSON());
@@ -802,12 +842,12 @@ class AutomaticTable extends DecoratorView {
       e = defaultTableCompile(this.name, this.description, this._columns, this.collection.toJSON(), false, null);
     }
     return e;
-  },
+  };
 
-  /**
- * @private
- */
-  unbindPaginationControlEvents: function() {
+ /**
+  * @private
+  */
+  _unbindPaginationControlEvents() {
     if (this.pageControlBound) {
       let myEl = (typeof this.el === 'string') ? this.el : this.el.localName;
       let first = document.querySelector(myEl + " div.paginationControl span.first");
@@ -828,17 +868,12 @@ class AutomaticTable extends DecoratorView {
       }
       this.pageControlBound = false;
     }
-  },
+  };
 
-  /**
- * @private
- */
-
-
-  /**
- * @private
- */
-  bindPaginationControlEvents: function() {
+ /**
+  * @private
+  */
+  _bindPaginationControlEvents() {
     if (!this.pageControlBound) {
       let myEl = (typeof this.el === 'string') ? this.el : this.el.localName;
       let first = document.querySelector(myEl + " div.paginationControl span.first");
@@ -859,29 +894,31 @@ class AutomaticTable extends DecoratorView {
       }
       this.pageControlBound = true;
     }
-  },
+  };
 
-  /**
- * @private
- */
-  deriveEventTarget: function(event) {
+ /**
+  * @private
+  */
+  _deriveEventTarget(event) {
     let key = null;
     if (event) {
       key = event.target.getAttribute(TABLE_DATA_ATTRIBUTES.NAME);
     }
     return key;
-  },
-  /**
- * @private
- */
-  sortByHeaderEvent: function(event) {
-    let key = this.deriveEventTarget(event);
+  };
+
+ /**
+  * @private
+  */
+  _sortByHeaderEvent(event) {
+    let key = this._deriveEventTarget(event);
     this.sortBy(key);
-  },
-  /**
- * @private
- */
-  unbindSortableColumnEvents: function()  {
+  };
+
+ /**
+  * @private
+  */
+  _unbindSortableColumnEvents()  {
     if (this.el && this.sortable) {
       let list;
       if (typeof this.el === 'string') {
@@ -891,14 +928,15 @@ class AutomaticTable extends DecoratorView {
       }
       let i = 0, l = list.length;
       for (i = 0; i < l; i++) {
-        list[i].removeEventListener("click", this.sortByHeaderEvent, false);
+        list[i].removeEventListener("click", this._sortByHeaderEvent, false);
       }
     }
-  },
-  /**
- * @private
- */
-  bindSortableColumnEvents: function()  {
+  };
+
+ /**
+  * @private
+  */
+  _bindSortableColumnEvents()  {
     if (this.el && this.sortable) {
       let list;
       if (typeof this.el === 'string') {
@@ -911,37 +949,39 @@ class AutomaticTable extends DecoratorView {
         if (list[i].getAttribute(TABLE_DATA_ATTRIBUTES.NAME) === "lineNumber") {
           // Do I need to do something?
         } else {
-          list[i].addEventListener("click", this.sortByHeaderEvent.bind(this), false);
+          list[i].addEventListener("click", this._sortByHeaderEvent.bind(this), false);
         }
       }
     }
-  },
+  };
 
-  /**
- * An overridable template compile
- * @method compileTemplate
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {string} Returns the template
- */
-  compileTemplate: function() {
+ /**
+  * An overridable template compile
+  * @method compileTemplate
+  * @memberof AutomaticTable
+  * @returns {string} Returns the template
+  */
+  compileTemplate() {
     return "";
-  },
-  /**
- * Sets the URI
- * @method setURI
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {string} uri The URI
- */
-  setURI: function(uri) {
+  };
+
+ /**
+  * Sets the URI
+  * @method setURI
+  * @memberof AutomaticTable
+  * @param {string} uri The URI
+  */
+  setURI(uri) {
     this.uri = uri;
-  },
-  /**
- * Sets the schema
- * @method setSchema
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {object} schema The JSON schema of the dataset
- */
-  setSchema: function(schema) {
+  };
+
+ /**
+  * Sets the schema
+  * @method setSchema
+  * @memberof AutomaticTable
+  * @param {object} schema The JSON schema of the dataset
+  */
+  setSchema(schema) {
     this.schema = schema;
     this._columns = schema.properties;
     this.collection.reset();
@@ -950,31 +990,34 @@ class AutomaticTable extends DecoratorView {
     if (this.uri) {
       this.collection.url = this.uri;
     }
-  },
+  };
 
-  /**
- * Enable/Disable the progress bar
- * @method showProgressBar
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {boolean} show Show or Hide the progress bar
- */
-  showProgressBar: function(show) {
+ /**
+  * Enable/Disable the progress bar
+  * @method showProgressBar
+  * @memberof AutomaticTable
+  * @param {boolean} show Show or Hide the progress bar
+  */
+  showProgressBar(show) {
     if (this.el) {
       let e = (typeof this.el === 'string') ? document.querySelector(this.el) : this.el;
-      let p = e.querySelector("progress");
-      if (p) {
-        p.style.display = (show) ? "block" : "none";
-        p.style.visibility = (show) ? "visible" : "hidden";
+      if (e) {
+        let p = e.querySelector("progress");
+        if (p) {
+          p.style.display = (show) ? "block" : "none";
+          p.style.visibility = (show) ? "visible" : "hidden";
+        }
       }
     }
-  },
-  /**
- * Show a message related to the table
- * @method showMessage
- * @memberof Augmented.Presentation.AutomaticTable
- * @param {string} message Some message to display
- */
-  showMessage: function(message) {
+  };
+
+ /**
+  * Show a message related to the table
+  * @method showMessage
+  * @memberof AutomaticTable
+  * @param {string} message Some message to display
+  */
+  showMessage(message) {
     if (this.el) {
       let e = (typeof this.el === 'string') ? document.querySelector(this.el) : this.el;
       let p = e.querySelector("p[class=message]");
@@ -982,14 +1025,15 @@ class AutomaticTable extends DecoratorView {
         p.innerHTML = message;
       }
     }
-  },
-  /**
- * Validate the table
- * @method validate
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {boolean} Returns true on success of validation
- */
-  validate: function() {
+  };
+ /**
+
+  * Validate the table
+  * @method validate
+  * @memberof AutomaticTable
+  * @returns {boolean} Returns true on success of validation
+  */
+  validate() {
     let messages = (this.collection) ? this.collection.validate() : null;
     if (!this.collection.isValid() && messages && messages.messages) {
       this.showMessage(formatValidationMessages(messages.messages));
@@ -997,38 +1041,40 @@ class AutomaticTable extends DecoratorView {
       this.showMessage("");
     }
     return messages;
-  },
-  /**
- * Is the table valid
- * @method isValid
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {boolean} Returns true if valid
- */
-  isValid: function() {
+  };
+
+ /**
+  * Is the table valid
+  * @method isValid
+  * @memberof AutomaticTable
+  * @returns {boolean} Returns true if valid
+  */
+  isValid() {
     return (this.collection) ? this.collection.isValid() : true;
-  },
-  /**
- * Remove the table and all binds
- * @method remove
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  remove: function() {
+  };
+
+ /**
+  * Remove the table and all binds
+  * @method remove
+  * @memberof AutomaticTable
+  */
+  remove() {
     /* off to unbind the events */
     this.undelegateEvents();
     this.off();
     this.stopListening();
 
-    Augmented.Presentation.Dom.empty(this.el);
+    Dom.empty(this.el);
 
     return this;
-  },
-  /**
- * Gets the selected models
- * @method getSelected
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {Array} Returns array of selected rows (models)
- */
-  getSelected: function() {
+  };
+ /**
+  * Gets the selected models
+  * @method getSelected
+  * @memberof AutomaticTable
+  * @returns {Array} Returns array of selected rows (models)
+  */
+  getSelected() {
     const keys = Object.keys(this.model.attributes), l = keys.length, selected = [];
     let i = 0;
     for (i = 0; i < l; i++) {
@@ -1038,14 +1084,15 @@ class AutomaticTable extends DecoratorView {
       }
     }
     return selected;
-  },
-  /**
- * Gets the selected row indexes
- * @method getSelectedIndex
- * @memberof Augmented.Presentation.AutomaticTable
- * @returns {Array} Returns array of selected rows (indexes)
- */
-  getSelectedIndex: function() {
+  };
+
+ /**
+  * Gets the selected row indexes
+  * @method getSelectedIndex
+  * @memberof AutomaticTable
+  * @returns {Array} Returns array of selected rows (indexes)
+  */
+  getSelectedIndex() {
     const keys = Object.keys(this.model.attributes), l = keys.length, selected = [];
     let i = 0;
     for (i = 0; i < l; i++) {
@@ -1054,14 +1101,15 @@ class AutomaticTable extends DecoratorView {
       }
     }
     return selected;
-  },
-  /**
- * Removes the models
- * @method removeRows
- * @param {Array} rows Models of the rows to remove
- * @memberof Augmented.Presentation.AutomaticTable
- */
-  removeRows: function(rows) {
+  };
+
+ /**
+  * Removes the models
+  * @method removeRows
+  * @param {Array} rows Models of the rows to remove
+  * @memberof AutomaticTable
+  */
+  removeRows(rows) {
     const l = rows.length;
     let i = 0;
     for (i = 0; i < l; i++) {
@@ -1071,5 +1119,7 @@ class AutomaticTable extends DecoratorView {
       }
       model.destroy();
     }
-  }
+  };
 };
+
+export default AutomaticTable;
