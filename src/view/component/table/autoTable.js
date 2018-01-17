@@ -379,7 +379,7 @@ class AutomaticTable extends DecoratorView {
    setTheme(theme) {
      const el = Dom.selector(this.el);//((typeof this.el === 'string') ? document.querySelector(this.el) : this.el),
      if (el) {
-       e = el.querySelector("table");
+       let e = el.querySelector("table");
        if (e) {
          e.setAttribute("class", theme);
        }
@@ -536,7 +536,7 @@ class AutomaticTable extends DecoratorView {
   * @returns {object} Returns the view context ('this')
   */
   render() {
-    console.log("render");
+    //console.log("render");
 
     if (!this.isInitalized) {
       //_logger.warn("AUGMENTED: AutoTable Can't render yet, not initialized!");
@@ -545,11 +545,14 @@ class AutomaticTable extends DecoratorView {
     let e;
     if (this.template) {
       // refresh the table body only
+	//console.log("set progress.");
       this.showProgressBar(true);
       if (this.el) {
         e = (typeof this.el === 'string') ? document.querySelector(this.el) : this.el;
-        let tbody = e.querySelector("tbody"), thead = e.querySelector("thead");
-        if (e) {
+        //console.log("my el", e);
+	if (e) {
+
+		let tbody = e.querySelector("tbody"), thead = e.querySelector("thead");
           if (this.sortable) {
             this._unbindSortableColumnEvents();
           }
@@ -562,12 +565,14 @@ class AutomaticTable extends DecoratorView {
             }
             directDOMTableHeader(thead, this._columns, this.lineNumbers, this.sortKey, this.display, this.selectable);
           } else {
+		  if (thead) {
             while (thead.hasChildNodes()) {
               thead.removeChild(thead.lastChild);
             }
+		  }
           }
 
-          if (this.collection && (this.collection.length > 0)){
+          if (this.collection && (this.collection.length > 0) && tbody){
             while (tbody.hasChildNodes()) {
               tbody.removeChild(tbody.lastChild);
             }
