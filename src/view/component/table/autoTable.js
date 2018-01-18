@@ -1,7 +1,8 @@
 //import { TABLE_DATA_ATTRIBUTES, csvTableCompile, tsvTableCompile, defaultTableCompile, defaultTableHeader, defaultTableBody, formatValidationMessages, directDOMTableCompile, directDOMTableHeader, directDOMTableBody, directDOMEditableTableBody, directDOMPaginationControl } from "../functions/buildTable.js";
 import * as Augmented from "augmentedjs-next";
 import DecoratorView from "../../decorator/decorator.js";
-import { TABLE_DATA_ATTRIBUTES, csvTableCompile, tsvTableCompile, defaultTableCompile, formatValidationMessages, directDOMTableCompile, directDOMTableHeader, directDOMTableBody, directDOMEditableTableBody, directDOMPaginationControl } from "../functions/buildTable.js";
+import { TABLE_DATA_ATTRIBUTES, csvTableCompile, tsvTableCompile, defaultTableCompile, directDOMTableCompile, directDOMTableHeader, directDOMTableBody, directDOMEditableTableBody, directDOMPaginationControl } from "../functions/buildTable.js";
+import formatValidationMessages from "../functions/messages.js";
 import request from "../../../request/request.js";
 import Dom from "../../../dom/dom.js";
 import Model from "../../../model/model.js";
@@ -654,7 +655,7 @@ class AutomaticTable extends DecoratorView {
       url: uri,
       contentType: 'application/json',
       dataType: 'json',
-      success(data, status) {
+      success: (data, status) => {
         if (typeof data === "string") {
           schema = JSON.parse(data);
         } else {
@@ -663,7 +664,7 @@ class AutomaticTable extends DecoratorView {
         const options = { "schema": schema };
         that.initialize(options);
       },
-      failure(data, status) {
+      error: (data, status) => {
         //_logger.warn("AUGMENTED: AutoTable Failed to fetch schema!");
       }
     });

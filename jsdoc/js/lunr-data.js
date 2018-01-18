@@ -611,211 +611,17 @@ window.lunrData = {
           "simpl",
           "view"
         ],
-        "Augmented.Presentation.AutomaticForm.html": [
-          "augmented.presentation.automaticform",
+        "Presentation.Component.AutomaticForm.html": [
           "automat",
           "automaticform",
           "class",
+          "component.automaticform",
           "creat",
           "form",
           "json",
-          "presentation.automaticform",
+          "presentation.component.automaticform",
           "schema",
           "view"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.crossOrigin": [
-          "augmented.presentation.automaticform.crossorigin",
-          "automaticform.crossorigin",
-          "cross",
-          "crossorigin",
-          "enabl",
-          "fetch",
-          "lt;static&gt",
-          "member",
-          "origin",
-          "presentation.automaticform.crossorigin",
-          "properti"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.uri": [
-          "augmented.presentation.automaticform.uri",
-          "automaticform.uri",
-          "lt;static&gt",
-          "member",
-          "presentation.automaticform.uri",
-          "properti",
-          "uri"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.model": [
-          "augmented.presentation.automaticform.model",
-          "automaticform.model",
-          "lt;static&gt",
-          "member",
-          "model",
-          "presentation.automaticform.model",
-          "properti"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.isInitalized": [
-          "augmented.presentation.automaticform.isinit",
-          "automaticform.isinit",
-          "initi",
-          "isinit",
-          "lt;static&gt",
-          "member",
-          "presentation.automaticform.isinit",
-          "properti"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.title": [
-          "augmented.presentation.automaticform.titl",
-          "automaticform.titl",
-          "lt;static&gt",
-          "member",
-          "presentation.automaticform.titl",
-          "properti",
-          "titl"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.name": [
-          "augmented.presentation.automaticform.nam",
-          "automaticform.nam",
-          "lt;static&gt",
-          "member",
-          "name",
-          "presentation.automaticform.nam",
-          "properti"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.description": [
-          "augmented.presentation.automaticform.descript",
-          "automaticform.descript",
-          "descript",
-          "lt;static&gt",
-          "member",
-          "presentation.automaticform.descript",
-          "properti"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.display": [
-          "augmented.presentation.automaticform.display",
-          "automaticform.display",
-          "display",
-          "field",
-          "function",
-          "lt;static&gt",
-          "null",
-          "presentation.automaticform.display"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.initialize": [
-          "augmented.presentation.automaticform.initi",
-          "automaticform.initi",
-          "clearform",
-          "form",
-          "fresh",
-          "function",
-          "initi",
-          "lt;static&gt",
-          "option",
-          "presentation.automaticform.initi",
-          "start",
-          "true",
-          "viewpass"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.setURI": [
-          "augmented.presentation.automaticform.seturi",
-          "automaticform.seturi",
-          "function",
-          "lt;static&gt",
-          "presentation.automaticform.seturi",
-          "set",
-          "seturi",
-          "uri"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.setSchema": [
-          "augmented.presentation.automaticform.setschema",
-          "automaticform.setschema",
-          "function",
-          "lt;static&gt",
-          "presentation.automaticform.setschema",
-          "schema",
-          "set",
-          "setschema"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.showProgressBar": [
-          "augmented.presentation.automaticform.showprogressbar",
-          "automaticform.showprogressbar",
-          "bar",
-          "enable/dis",
-          "function",
-          "lt;static&gt",
-          "presentation.automaticform.showprogressbar",
-          "progress",
-          "show",
-          "showprogressbar"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.showMessage": [
-          "augmented.presentation.automaticform.showmessag",
-          "automaticform.showmessag",
-          "form",
-          "function",
-          "lt;static&gt",
-          "messag",
-          "presentation.automaticform.showmessag",
-          "relat",
-          "show",
-          "showmessag"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.validate": [
-          "augmented.presentation.automaticform.valid",
-          "automaticform.valid",
-          "form",
-          "function",
-          "lt;static&gt",
-          "presentation.automaticform.valid",
-          "valid"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.isValid": [
-          "augmented.presentation.automaticform.isvalid",
-          "automaticform.isvalid",
-          "form",
-          "function",
-          "isvalid",
-          "lt;static&gt",
-          "presentation.automaticform.isvalid",
-          "valid"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": [
-          "augmented.presentation.automaticform.rend",
-          "automaticform.rend",
-          "form",
-          "function",
-          "lt;static&gt",
-          "presentation.automaticform.rend",
-          "render"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.reset": [
-          "augmented.presentation.automaticform.reset",
-          "automaticform.reset",
-          "form",
-          "function",
-          "lt;static&gt",
-          "presentation.automaticform.reset",
-          "reset"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.populate": [
-          "augmented.presentation.automaticform.popul",
-          "automaticform.popul",
-          "data",
-          "form",
-          "function",
-          "lt;static&gt",
-          "popul",
-          "presentation.automaticform.popul"
-        ],
-        "Augmented.Presentation.AutomaticForm.html#.remove": [
-          "augmented.presentation.automaticform.remov",
-          "automaticform.remov",
-          "bind",
-          "form",
-          "function",
-          "lt;static&gt",
-          "presentation.automaticform.remov",
-          "remov"
         ],
         "Augmented.Presentation.Component.HamburgerMenu.html": [
           "augmented.presentation.component.hamburgermenu",
@@ -1334,7 +1140,7 @@ window.lunrData = {
           "ui"
         ]
       },
-      "length": 114
+      "length": 95
     },
     "tokenStore": {
       "root": {
@@ -2397,469 +2203,6 @@ window.lunrData = {
                                                           }
                                                         }
                                                       },
-                                                      "a": {
-                                                        "docs": {},
-                                                        "u": {
-                                                          "docs": {},
-                                                          "t": {
-                                                            "docs": {},
-                                                            "o": {
-                                                              "docs": {},
-                                                              "m": {
-                                                                "docs": {},
-                                                                "a": {
-                                                                  "docs": {},
-                                                                  "t": {
-                                                                    "docs": {},
-                                                                    "i": {
-                                                                      "docs": {},
-                                                                      "c": {
-                                                                        "docs": {},
-                                                                        "f": {
-                                                                          "docs": {},
-                                                                          "o": {
-                                                                            "docs": {},
-                                                                            "r": {
-                                                                              "docs": {},
-                                                                              "m": {
-                                                                                "docs": {
-                                                                                  "Augmented.Presentation.AutomaticForm.html": {
-                                                                                    "ref": "Augmented.Presentation.AutomaticForm.html",
-                                                                                    "tf": 1100
-                                                                                  }
-                                                                                },
-                                                                                ".": {
-                                                                                  "docs": {},
-                                                                                  "c": {
-                                                                                    "docs": {},
-                                                                                    "r": {
-                                                                                      "docs": {},
-                                                                                      "o": {
-                                                                                        "docs": {},
-                                                                                        "s": {
-                                                                                          "docs": {},
-                                                                                          "s": {
-                                                                                            "docs": {},
-                                                                                            "o": {
-                                                                                              "docs": {},
-                                                                                              "r": {
-                                                                                                "docs": {},
-                                                                                                "i": {
-                                                                                                  "docs": {},
-                                                                                                  "g": {
-                                                                                                    "docs": {},
-                                                                                                    "i": {
-                                                                                                      "docs": {},
-                                                                                                      "n": {
-                                                                                                        "docs": {
-                                                                                                          "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                                                                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                                                                                                            "tf": 1075
-                                                                                                          }
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "u": {
-                                                                                    "docs": {},
-                                                                                    "r": {
-                                                                                      "docs": {},
-                                                                                      "i": {
-                                                                                        "docs": {
-                                                                                          "Augmented.Presentation.AutomaticForm.html#.uri": {
-                                                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.uri",
-                                                                                            "tf": 1075
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "m": {
-                                                                                    "docs": {},
-                                                                                    "o": {
-                                                                                      "docs": {},
-                                                                                      "d": {
-                                                                                        "docs": {},
-                                                                                        "e": {
-                                                                                          "docs": {},
-                                                                                          "l": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.AutomaticForm.html#.model": {
-                                                                                                "ref": "Augmented.Presentation.AutomaticForm.html#.model",
-                                                                                                "tf": 1075
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "i": {
-                                                                                    "docs": {},
-                                                                                    "s": {
-                                                                                      "docs": {},
-                                                                                      "i": {
-                                                                                        "docs": {},
-                                                                                        "n": {
-                                                                                          "docs": {},
-                                                                                          "i": {
-                                                                                            "docs": {},
-                                                                                            "t": {
-                                                                                              "docs": {
-                                                                                                "Augmented.Presentation.AutomaticForm.html#.isInitalized": {
-                                                                                                  "ref": "Augmented.Presentation.AutomaticForm.html#.isInitalized",
-                                                                                                  "tf": 1075
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      },
-                                                                                      "v": {
-                                                                                        "docs": {},
-                                                                                        "a": {
-                                                                                          "docs": {},
-                                                                                          "l": {
-                                                                                            "docs": {},
-                                                                                            "i": {
-                                                                                              "docs": {},
-                                                                                              "d": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Presentation.AutomaticForm.html#.isValid": {
-                                                                                                    "ref": "Augmented.Presentation.AutomaticForm.html#.isValid",
-                                                                                                    "tf": 1075
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    },
-                                                                                    "n": {
-                                                                                      "docs": {},
-                                                                                      "i": {
-                                                                                        "docs": {},
-                                                                                        "t": {
-                                                                                          "docs": {},
-                                                                                          "i": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                                                                                                "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                                                                                                "tf": 1075
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "t": {
-                                                                                    "docs": {},
-                                                                                    "i": {
-                                                                                      "docs": {},
-                                                                                      "t": {
-                                                                                        "docs": {},
-                                                                                        "l": {
-                                                                                          "docs": {
-                                                                                            "Augmented.Presentation.AutomaticForm.html#.title": {
-                                                                                              "ref": "Augmented.Presentation.AutomaticForm.html#.title",
-                                                                                              "tf": 1075
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "n": {
-                                                                                    "docs": {},
-                                                                                    "a": {
-                                                                                      "docs": {},
-                                                                                      "m": {
-                                                                                        "docs": {
-                                                                                          "Augmented.Presentation.AutomaticForm.html#.name": {
-                                                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.name",
-                                                                                            "tf": 1075
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "d": {
-                                                                                    "docs": {},
-                                                                                    "e": {
-                                                                                      "docs": {},
-                                                                                      "s": {
-                                                                                        "docs": {},
-                                                                                        "c": {
-                                                                                          "docs": {},
-                                                                                          "r": {
-                                                                                            "docs": {},
-                                                                                            "i": {
-                                                                                              "docs": {},
-                                                                                              "p": {
-                                                                                                "docs": {},
-                                                                                                "t": {
-                                                                                                  "docs": {
-                                                                                                    "Augmented.Presentation.AutomaticForm.html#.description": {
-                                                                                                      "ref": "Augmented.Presentation.AutomaticForm.html#.description",
-                                                                                                      "tf": 1075
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    },
-                                                                                    "i": {
-                                                                                      "docs": {},
-                                                                                      "s": {
-                                                                                        "docs": {},
-                                                                                        "p": {
-                                                                                          "docs": {},
-                                                                                          "l": {
-                                                                                            "docs": {},
-                                                                                            "a": {
-                                                                                              "docs": {},
-                                                                                              "y": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Presentation.AutomaticForm.html#.display": {
-                                                                                                    "ref": "Augmented.Presentation.AutomaticForm.html#.display",
-                                                                                                    "tf": 1075
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "s": {
-                                                                                    "docs": {},
-                                                                                    "e": {
-                                                                                      "docs": {},
-                                                                                      "t": {
-                                                                                        "docs": {},
-                                                                                        "u": {
-                                                                                          "docs": {},
-                                                                                          "r": {
-                                                                                            "docs": {},
-                                                                                            "i": {
-                                                                                              "docs": {
-                                                                                                "Augmented.Presentation.AutomaticForm.html#.setURI": {
-                                                                                                  "ref": "Augmented.Presentation.AutomaticForm.html#.setURI",
-                                                                                                  "tf": 1075
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        },
-                                                                                        "s": {
-                                                                                          "docs": {},
-                                                                                          "c": {
-                                                                                            "docs": {},
-                                                                                            "h": {
-                                                                                              "docs": {},
-                                                                                              "e": {
-                                                                                                "docs": {},
-                                                                                                "m": {
-                                                                                                  "docs": {},
-                                                                                                  "a": {
-                                                                                                    "docs": {
-                                                                                                      "Augmented.Presentation.AutomaticForm.html#.setSchema": {
-                                                                                                        "ref": "Augmented.Presentation.AutomaticForm.html#.setSchema",
-                                                                                                        "tf": 1075
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    },
-                                                                                    "h": {
-                                                                                      "docs": {},
-                                                                                      "o": {
-                                                                                        "docs": {},
-                                                                                        "w": {
-                                                                                          "docs": {},
-                                                                                          "p": {
-                                                                                            "docs": {},
-                                                                                            "r": {
-                                                                                              "docs": {},
-                                                                                              "o": {
-                                                                                                "docs": {},
-                                                                                                "g": {
-                                                                                                  "docs": {},
-                                                                                                  "r": {
-                                                                                                    "docs": {},
-                                                                                                    "e": {
-                                                                                                      "docs": {},
-                                                                                                      "s": {
-                                                                                                        "docs": {},
-                                                                                                        "s": {
-                                                                                                          "docs": {},
-                                                                                                          "b": {
-                                                                                                            "docs": {},
-                                                                                                            "a": {
-                                                                                                              "docs": {},
-                                                                                                              "r": {
-                                                                                                                "docs": {
-                                                                                                                  "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                                                                                                                    "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                                                                                                                    "tf": 1075
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          },
-                                                                                          "m": {
-                                                                                            "docs": {},
-                                                                                            "e": {
-                                                                                              "docs": {},
-                                                                                              "s": {
-                                                                                                "docs": {},
-                                                                                                "s": {
-                                                                                                  "docs": {},
-                                                                                                  "a": {
-                                                                                                    "docs": {},
-                                                                                                    "g": {
-                                                                                                      "docs": {
-                                                                                                        "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                                                                                                          "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                                                                                                          "tf": 1075
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "v": {
-                                                                                    "docs": {},
-                                                                                    "a": {
-                                                                                      "docs": {},
-                                                                                      "l": {
-                                                                                        "docs": {},
-                                                                                        "i": {
-                                                                                          "docs": {},
-                                                                                          "d": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.AutomaticForm.html#.validate": {
-                                                                                                "ref": "Augmented.Presentation.AutomaticForm.html#.validate",
-                                                                                                "tf": 1075
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "r": {
-                                                                                    "docs": {},
-                                                                                    "e": {
-                                                                                      "docs": {},
-                                                                                      "n": {
-                                                                                        "docs": {},
-                                                                                        "d": {
-                                                                                          "docs": {
-                                                                                            "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": {
-                                                                                              "ref": "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform",
-                                                                                              "tf": 358.3333333333333
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      },
-                                                                                      "s": {
-                                                                                        "docs": {},
-                                                                                        "e": {
-                                                                                          "docs": {},
-                                                                                          "t": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.AutomaticForm.html#.reset": {
-                                                                                                "ref": "Augmented.Presentation.AutomaticForm.html#.reset",
-                                                                                                "tf": 1075
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      },
-                                                                                      "m": {
-                                                                                        "docs": {},
-                                                                                        "o": {
-                                                                                          "docs": {},
-                                                                                          "v": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.AutomaticForm.html#.remove": {
-                                                                                                "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
-                                                                                                "tf": 1075
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "p": {
-                                                                                    "docs": {},
-                                                                                    "o": {
-                                                                                      "docs": {},
-                                                                                      "p": {
-                                                                                        "docs": {},
-                                                                                        "u": {
-                                                                                          "docs": {},
-                                                                                          "l": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.AutomaticForm.html#.populate": {
-                                                                                                "ref": "Augmented.Presentation.AutomaticForm.html#.populate",
-                                                                                                "tf": 1075
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
                                                       "b": {
                                                         "docs": {},
                                                         "i": {
@@ -3315,8 +2658,8 @@ window.lunrData = {
                           "ref": "Presentation.Component.DialogView.html",
                           "tf": 6.25
                         },
-                        "Augmented.Presentation.AutomaticForm.html": {
-                          "ref": "Augmented.Presentation.AutomaticForm.html",
+                        "Presentation.Component.AutomaticForm.html": {
+                          "ref": "Presentation.Component.AutomaticForm.html",
                           "tf": 8.333333333333332
                         },
                         "Presentation.Component.AutomaticTable.html": {
@@ -3336,428 +2679,9 @@ window.lunrData = {
                                 "docs": {},
                                 "m": {
                                   "docs": {
-                                    "Augmented.Presentation.AutomaticForm.html": {
-                                      "ref": "Augmented.Presentation.AutomaticForm.html",
-                                      "tf": 700
-                                    }
-                                  },
-                                  ".": {
-                                    "docs": {},
-                                    "c": {
-                                      "docs": {},
-                                      "r": {
-                                        "docs": {},
-                                        "o": {
-                                          "docs": {},
-                                          "s": {
-                                            "docs": {},
-                                            "s": {
-                                              "docs": {},
-                                              "o": {
-                                                "docs": {},
-                                                "r": {
-                                                  "docs": {},
-                                                  "i": {
-                                                    "docs": {},
-                                                    "g": {
-                                                      "docs": {},
-                                                      "i": {
-                                                        "docs": {},
-                                                        "n": {
-                                                          "docs": {
-                                                            "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                                                              "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                                                              "tf": 75
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "u": {
-                                      "docs": {},
-                                      "r": {
-                                        "docs": {},
-                                        "i": {
-                                          "docs": {
-                                            "Augmented.Presentation.AutomaticForm.html#.uri": {
-                                              "ref": "Augmented.Presentation.AutomaticForm.html#.uri",
-                                              "tf": 75
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "m": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "d": {
-                                          "docs": {},
-                                          "e": {
-                                            "docs": {},
-                                            "l": {
-                                              "docs": {
-                                                "Augmented.Presentation.AutomaticForm.html#.model": {
-                                                  "ref": "Augmented.Presentation.AutomaticForm.html#.model",
-                                                  "tf": 75
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "i": {
-                                      "docs": {},
-                                      "s": {
-                                        "docs": {},
-                                        "i": {
-                                          "docs": {},
-                                          "n": {
-                                            "docs": {},
-                                            "i": {
-                                              "docs": {},
-                                              "t": {
-                                                "docs": {
-                                                  "Augmented.Presentation.AutomaticForm.html#.isInitalized": {
-                                                    "ref": "Augmented.Presentation.AutomaticForm.html#.isInitalized",
-                                                    "tf": 75
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "v": {
-                                          "docs": {},
-                                          "a": {
-                                            "docs": {},
-                                            "l": {
-                                              "docs": {},
-                                              "i": {
-                                                "docs": {},
-                                                "d": {
-                                                  "docs": {
-                                                    "Augmented.Presentation.AutomaticForm.html#.isValid": {
-                                                      "ref": "Augmented.Presentation.AutomaticForm.html#.isValid",
-                                                      "tf": 75
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "n": {
-                                        "docs": {},
-                                        "i": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {},
-                                            "i": {
-                                              "docs": {
-                                                "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                                                  "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                                                  "tf": 75
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "t": {
-                                      "docs": {},
-                                      "i": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "l": {
-                                            "docs": {
-                                              "Augmented.Presentation.AutomaticForm.html#.title": {
-                                                "ref": "Augmented.Presentation.AutomaticForm.html#.title",
-                                                "tf": 75
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "n": {
-                                      "docs": {},
-                                      "a": {
-                                        "docs": {},
-                                        "m": {
-                                          "docs": {
-                                            "Augmented.Presentation.AutomaticForm.html#.name": {
-                                              "ref": "Augmented.Presentation.AutomaticForm.html#.name",
-                                              "tf": 75
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "d": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "s": {
-                                          "docs": {},
-                                          "c": {
-                                            "docs": {},
-                                            "r": {
-                                              "docs": {},
-                                              "i": {
-                                                "docs": {},
-                                                "p": {
-                                                  "docs": {},
-                                                  "t": {
-                                                    "docs": {
-                                                      "Augmented.Presentation.AutomaticForm.html#.description": {
-                                                        "ref": "Augmented.Presentation.AutomaticForm.html#.description",
-                                                        "tf": 75
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "i": {
-                                        "docs": {},
-                                        "s": {
-                                          "docs": {},
-                                          "p": {
-                                            "docs": {},
-                                            "l": {
-                                              "docs": {},
-                                              "a": {
-                                                "docs": {},
-                                                "y": {
-                                                  "docs": {
-                                                    "Augmented.Presentation.AutomaticForm.html#.display": {
-                                                      "ref": "Augmented.Presentation.AutomaticForm.html#.display",
-                                                      "tf": 75
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "s": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "u": {
-                                            "docs": {},
-                                            "r": {
-                                              "docs": {},
-                                              "i": {
-                                                "docs": {
-                                                  "Augmented.Presentation.AutomaticForm.html#.setURI": {
-                                                    "ref": "Augmented.Presentation.AutomaticForm.html#.setURI",
-                                                    "tf": 75
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "s": {
-                                            "docs": {},
-                                            "c": {
-                                              "docs": {},
-                                              "h": {
-                                                "docs": {},
-                                                "e": {
-                                                  "docs": {},
-                                                  "m": {
-                                                    "docs": {},
-                                                    "a": {
-                                                      "docs": {
-                                                        "Augmented.Presentation.AutomaticForm.html#.setSchema": {
-                                                          "ref": "Augmented.Presentation.AutomaticForm.html#.setSchema",
-                                                          "tf": 75
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "h": {
-                                        "docs": {},
-                                        "o": {
-                                          "docs": {},
-                                          "w": {
-                                            "docs": {},
-                                            "p": {
-                                              "docs": {},
-                                              "r": {
-                                                "docs": {},
-                                                "o": {
-                                                  "docs": {},
-                                                  "g": {
-                                                    "docs": {},
-                                                    "r": {
-                                                      "docs": {},
-                                                      "e": {
-                                                        "docs": {},
-                                                        "s": {
-                                                          "docs": {},
-                                                          "s": {
-                                                            "docs": {},
-                                                            "b": {
-                                                              "docs": {},
-                                                              "a": {
-                                                                "docs": {},
-                                                                "r": {
-                                                                  "docs": {
-                                                                    "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                                                                      "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                                                                      "tf": 75
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            },
-                                            "m": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "s": {
-                                                  "docs": {},
-                                                  "s": {
-                                                    "docs": {},
-                                                    "a": {
-                                                      "docs": {},
-                                                      "g": {
-                                                        "docs": {
-                                                          "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                                                            "tf": 75
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "v": {
-                                      "docs": {},
-                                      "a": {
-                                        "docs": {},
-                                        "l": {
-                                          "docs": {},
-                                          "i": {
-                                            "docs": {},
-                                            "d": {
-                                              "docs": {
-                                                "Augmented.Presentation.AutomaticForm.html#.validate": {
-                                                  "ref": "Augmented.Presentation.AutomaticForm.html#.validate",
-                                                  "tf": 75
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "r": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "n": {
-                                          "docs": {},
-                                          "d": {
-                                            "docs": {
-                                              "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": {
-                                                "ref": "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform",
-                                                "tf": 25
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "s": {
-                                          "docs": {},
-                                          "e": {
-                                            "docs": {},
-                                            "t": {
-                                              "docs": {
-                                                "Augmented.Presentation.AutomaticForm.html#.reset": {
-                                                  "ref": "Augmented.Presentation.AutomaticForm.html#.reset",
-                                                  "tf": 75
-                                                }
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "m": {
-                                          "docs": {},
-                                          "o": {
-                                            "docs": {},
-                                            "v": {
-                                              "docs": {
-                                                "Augmented.Presentation.AutomaticForm.html#.remove": {
-                                                  "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
-                                                  "tf": 75
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "p": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "p": {
-                                          "docs": {},
-                                          "u": {
-                                            "docs": {},
-                                            "l": {
-                                              "docs": {
-                                                "Augmented.Presentation.AutomaticForm.html#.populate": {
-                                                  "ref": "Augmented.Presentation.AutomaticForm.html#.populate",
-                                                  "tf": 75
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
+                                    "Presentation.Component.AutomaticForm.html": {
+                                      "ref": "Presentation.Component.AutomaticForm.html",
+                                      "tf": 600
                                     }
                                   }
                                 }
@@ -4273,77 +3197,6 @@ window.lunrData = {
                 }
               }
             },
-            "s": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "p": {
-                      "docs": {},
-                      "t": {
-                        "docs": {
-                          "Augmented.Presentation.AutomaticForm.html#.description": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.description",
-                            "tf": 650
-                          },
-                          "Presentation.Widget.html#.DescriptionList": {
-                            "ref": "Presentation.Widget.html#.DescriptionList",
-                            "tf": 10
-                          }
-                        },
-                        "i": {
-                          "docs": {},
-                          "o": {
-                            "docs": {},
-                            "n": {
-                              "docs": {},
-                              "l": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "s": {
-                                    "docs": {},
-                                    "t": {
-                                      "docs": {
-                                        "Presentation.Widget.html#.DescriptionList": {
-                                          "ref": "Presentation.Widget.html#.DescriptionList",
-                                          "tf": 630
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "i": {
-                "docs": {},
-                "g": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "Presentation.Component.AbstractToolbar.html": {
-                        "ref": "Presentation.Component.AbstractToolbar.html",
-                        "tf": 10
-                      },
-                      "Presentation.DecoratorView.html": {
-                        "ref": "Presentation.DecoratorView.html",
-                        "tf": 1.6666666666666667
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "f": {
               "docs": {},
               "i": {
@@ -4384,6 +3237,73 @@ window.lunrData = {
                         "Presentation.Mediator.html#.getDefaultIdentifier": {
                           "ref": "Presentation.Mediator.html#.getDefaultIdentifier",
                           "tf": 25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "g": {
+                  "docs": {},
+                  "n": {
+                    "docs": {
+                      "Presentation.Component.AbstractToolbar.html": {
+                        "ref": "Presentation.Component.AbstractToolbar.html",
+                        "tf": 10
+                      },
+                      "Presentation.DecoratorView.html": {
+                        "ref": "Presentation.DecoratorView.html",
+                        "tf": 1.6666666666666667
+                      }
+                    }
+                  }
+                }
+              },
+              "c": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "p": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "Presentation.Widget.html#.DescriptionList": {
+                            "ref": "Presentation.Widget.html#.DescriptionList",
+                            "tf": 10
+                          }
+                        },
+                        "i": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "n": {
+                              "docs": {},
+                              "l": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "s": {
+                                    "docs": {},
+                                    "t": {
+                                      "docs": {
+                                        "Presentation.Widget.html#.DescriptionList": {
+                                          "ref": "Presentation.Widget.html#.DescriptionList",
+                                          "tf": 630
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
                         }
                       }
                     }
@@ -4555,10 +3475,6 @@ window.lunrData = {
                           "ref": "Presentation.AbstractView.html",
                           "tf": 6.25
                         },
-                        "Augmented.Presentation.AutomaticForm.html#.display": {
-                          "ref": "Augmented.Presentation.AutomaticForm.html#.display",
-                          "tf": 650
-                        },
                         "Presentation.View.html": {
                           "ref": "Presentation.View.html",
                           "tf": 6.25
@@ -4723,10 +3639,6 @@ window.lunrData = {
               "docs": {},
               "a": {
                 "docs": {
-                  "Augmented.Presentation.AutomaticForm.html#.populate": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.populate",
-                    "tf": 33.33333333333333
-                  },
                   "Presentation.Component.AutomaticTable.html": {
                     "ref": "Presentation.Component.AutomaticTable.html",
                     "tf": 6.25
@@ -4859,40 +3771,6 @@ window.lunrData = {
                 "Presentation.ViewController.html#.remove": {
                   "ref": "Presentation.ViewController.html#.remove",
                   "tf": 5
-                }
-              }
-            },
-            "a": {
-              "docs": {},
-              "b": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                      "tf": 8.333333333333332
-                    }
-                  },
-                  "e": {
-                    "docs": {},
-                    "/": {
-                      "docs": {},
-                      "d": {
-                        "docs": {},
-                        "i": {
-                          "docs": {},
-                          "s": {
-                            "docs": {
-                              "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                                "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                                "tf": 16.666666666666664
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
                 }
               }
             }
@@ -5216,14 +4094,6 @@ window.lunrData = {
                     "Presentation.ViewController.html#.initialize": {
                       "ref": "Presentation.ViewController.html#.initialize",
                       "tf": 662.5
-                    },
-                    "Augmented.Presentation.AutomaticForm.html#.isInitalized": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.isInitalized",
-                      "tf": 25
-                    },
-                    "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                      "tf": 614.5833333333334
                     }
                   }
                 }
@@ -5342,46 +4212,6 @@ window.lunrData = {
               "Presentation.History.html": {
                 "ref": "Presentation.History.html",
                 "tf": 2.380952380952381
-              }
-            }
-          },
-          "s": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "Augmented.Presentation.AutomaticForm.html#.isInitalized": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.isInitalized",
-                        "tf": 625
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "v": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "l": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "d": {
-                      "docs": {
-                        "Augmented.Presentation.AutomaticForm.html#.isValid": {
-                          "ref": "Augmented.Presentation.AutomaticForm.html#.isValid",
-                          "tf": 625
-                        }
-                      }
-                    }
-                  }
-                }
               }
             }
           },
@@ -5657,10 +4487,6 @@ window.lunrData = {
                     "Presentation.Model.html": {
                       "ref": "Presentation.Model.html",
                       "tf": 758.3333333333334
-                    },
-                    "Augmented.Presentation.AutomaticForm.html#.model": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.model",
-                      "tf": 650
                     }
                   }
                 }
@@ -6186,34 +5012,6 @@ window.lunrData = {
                         "ref": "Augmented.Request.Configuration.html#.mock",
                         "tf": 110
                       },
-                      "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.AutomaticForm.html#.uri": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.uri",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.AutomaticForm.html#.model": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.model",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.AutomaticForm.html#.isInitalized": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.isInitalized",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.AutomaticForm.html#.title": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.title",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.AutomaticForm.html#.name": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.name",
-                        "tf": 110
-                      },
-                      "Augmented.Presentation.AutomaticForm.html#.description": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.description",
-                        "tf": 110
-                      },
                       "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
                         "ref": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
                         "tf": 110
@@ -6234,10 +5032,6 @@ window.lunrData = {
                       "Presentation.Component.AlertDialogView.html": {
                         "ref": "Presentation.Component.AlertDialogView.html",
                         "tf": 5.555555555555555
-                      },
-                      "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                        "tf": 45.83333333333333
                       }
                     }
                   }
@@ -6408,463 +5202,6 @@ window.lunrData = {
                                                                                 }
                                                                               }
                                                                             }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "t": {
-                                        "docs": {},
-                                        "o": {
-                                          "docs": {},
-                                          "m": {
-                                            "docs": {},
-                                            "a": {
-                                              "docs": {},
-                                              "t": {
-                                                "docs": {},
-                                                "i": {
-                                                  "docs": {},
-                                                  "c": {
-                                                    "docs": {},
-                                                    "f": {
-                                                      "docs": {},
-                                                      "o": {
-                                                        "docs": {},
-                                                        "r": {
-                                                          "docs": {},
-                                                          "m": {
-                                                            "docs": {
-                                                              "Augmented.Presentation.AutomaticForm.html": {
-                                                                "ref": "Augmented.Presentation.AutomaticForm.html",
-                                                                "tf": 100
-                                                              }
-                                                            },
-                                                            ".": {
-                                                              "docs": {},
-                                                              "c": {
-                                                                "docs": {},
-                                                                "r": {
-                                                                  "docs": {},
-                                                                  "o": {
-                                                                    "docs": {},
-                                                                    "s": {
-                                                                      "docs": {},
-                                                                      "s": {
-                                                                        "docs": {},
-                                                                        "o": {
-                                                                          "docs": {},
-                                                                          "r": {
-                                                                            "docs": {},
-                                                                            "i": {
-                                                                              "docs": {},
-                                                                              "g": {
-                                                                                "docs": {},
-                                                                                "i": {
-                                                                                  "docs": {},
-                                                                                  "n": {
-                                                                                    "docs": {
-                                                                                      "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                                                                                        "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                                                                                        "tf": 75
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "u": {
-                                                                "docs": {},
-                                                                "r": {
-                                                                  "docs": {},
-                                                                  "i": {
-                                                                    "docs": {
-                                                                      "Augmented.Presentation.AutomaticForm.html#.uri": {
-                                                                        "ref": "Augmented.Presentation.AutomaticForm.html#.uri",
-                                                                        "tf": 75
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "m": {
-                                                                "docs": {},
-                                                                "o": {
-                                                                  "docs": {},
-                                                                  "d": {
-                                                                    "docs": {},
-                                                                    "e": {
-                                                                      "docs": {},
-                                                                      "l": {
-                                                                        "docs": {
-                                                                          "Augmented.Presentation.AutomaticForm.html#.model": {
-                                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.model",
-                                                                            "tf": 75
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "i": {
-                                                                "docs": {},
-                                                                "s": {
-                                                                  "docs": {},
-                                                                  "i": {
-                                                                    "docs": {},
-                                                                    "n": {
-                                                                      "docs": {},
-                                                                      "i": {
-                                                                        "docs": {},
-                                                                        "t": {
-                                                                          "docs": {
-                                                                            "Augmented.Presentation.AutomaticForm.html#.isInitalized": {
-                                                                              "ref": "Augmented.Presentation.AutomaticForm.html#.isInitalized",
-                                                                              "tf": 75
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  },
-                                                                  "v": {
-                                                                    "docs": {},
-                                                                    "a": {
-                                                                      "docs": {},
-                                                                      "l": {
-                                                                        "docs": {},
-                                                                        "i": {
-                                                                          "docs": {},
-                                                                          "d": {
-                                                                            "docs": {
-                                                                              "Augmented.Presentation.AutomaticForm.html#.isValid": {
-                                                                                "ref": "Augmented.Presentation.AutomaticForm.html#.isValid",
-                                                                                "tf": 75
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                },
-                                                                "n": {
-                                                                  "docs": {},
-                                                                  "i": {
-                                                                    "docs": {},
-                                                                    "t": {
-                                                                      "docs": {},
-                                                                      "i": {
-                                                                        "docs": {
-                                                                          "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                                                                            "tf": 75
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "t": {
-                                                                "docs": {},
-                                                                "i": {
-                                                                  "docs": {},
-                                                                  "t": {
-                                                                    "docs": {},
-                                                                    "l": {
-                                                                      "docs": {
-                                                                        "Augmented.Presentation.AutomaticForm.html#.title": {
-                                                                          "ref": "Augmented.Presentation.AutomaticForm.html#.title",
-                                                                          "tf": 75
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "n": {
-                                                                "docs": {},
-                                                                "a": {
-                                                                  "docs": {},
-                                                                  "m": {
-                                                                    "docs": {
-                                                                      "Augmented.Presentation.AutomaticForm.html#.name": {
-                                                                        "ref": "Augmented.Presentation.AutomaticForm.html#.name",
-                                                                        "tf": 75
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "d": {
-                                                                "docs": {},
-                                                                "e": {
-                                                                  "docs": {},
-                                                                  "s": {
-                                                                    "docs": {},
-                                                                    "c": {
-                                                                      "docs": {},
-                                                                      "r": {
-                                                                        "docs": {},
-                                                                        "i": {
-                                                                          "docs": {},
-                                                                          "p": {
-                                                                            "docs": {},
-                                                                            "t": {
-                                                                              "docs": {
-                                                                                "Augmented.Presentation.AutomaticForm.html#.description": {
-                                                                                  "ref": "Augmented.Presentation.AutomaticForm.html#.description",
-                                                                                  "tf": 75
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                },
-                                                                "i": {
-                                                                  "docs": {},
-                                                                  "s": {
-                                                                    "docs": {},
-                                                                    "p": {
-                                                                      "docs": {},
-                                                                      "l": {
-                                                                        "docs": {},
-                                                                        "a": {
-                                                                          "docs": {},
-                                                                          "y": {
-                                                                            "docs": {
-                                                                              "Augmented.Presentation.AutomaticForm.html#.display": {
-                                                                                "ref": "Augmented.Presentation.AutomaticForm.html#.display",
-                                                                                "tf": 75
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "s": {
-                                                                "docs": {},
-                                                                "e": {
-                                                                  "docs": {},
-                                                                  "t": {
-                                                                    "docs": {},
-                                                                    "u": {
-                                                                      "docs": {},
-                                                                      "r": {
-                                                                        "docs": {},
-                                                                        "i": {
-                                                                          "docs": {
-                                                                            "Augmented.Presentation.AutomaticForm.html#.setURI": {
-                                                                              "ref": "Augmented.Presentation.AutomaticForm.html#.setURI",
-                                                                              "tf": 75
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    },
-                                                                    "s": {
-                                                                      "docs": {},
-                                                                      "c": {
-                                                                        "docs": {},
-                                                                        "h": {
-                                                                          "docs": {},
-                                                                          "e": {
-                                                                            "docs": {},
-                                                                            "m": {
-                                                                              "docs": {},
-                                                                              "a": {
-                                                                                "docs": {
-                                                                                  "Augmented.Presentation.AutomaticForm.html#.setSchema": {
-                                                                                    "ref": "Augmented.Presentation.AutomaticForm.html#.setSchema",
-                                                                                    "tf": 75
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                },
-                                                                "h": {
-                                                                  "docs": {},
-                                                                  "o": {
-                                                                    "docs": {},
-                                                                    "w": {
-                                                                      "docs": {},
-                                                                      "p": {
-                                                                        "docs": {},
-                                                                        "r": {
-                                                                          "docs": {},
-                                                                          "o": {
-                                                                            "docs": {},
-                                                                            "g": {
-                                                                              "docs": {},
-                                                                              "r": {
-                                                                                "docs": {},
-                                                                                "e": {
-                                                                                  "docs": {},
-                                                                                  "s": {
-                                                                                    "docs": {},
-                                                                                    "s": {
-                                                                                      "docs": {},
-                                                                                      "b": {
-                                                                                        "docs": {},
-                                                                                        "a": {
-                                                                                          "docs": {},
-                                                                                          "r": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                                                                                                "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                                                                                                "tf": 75
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      },
-                                                                      "m": {
-                                                                        "docs": {},
-                                                                        "e": {
-                                                                          "docs": {},
-                                                                          "s": {
-                                                                            "docs": {},
-                                                                            "s": {
-                                                                              "docs": {},
-                                                                              "a": {
-                                                                                "docs": {},
-                                                                                "g": {
-                                                                                  "docs": {
-                                                                                    "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                                                                                      "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                                                                                      "tf": 75
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "v": {
-                                                                "docs": {},
-                                                                "a": {
-                                                                  "docs": {},
-                                                                  "l": {
-                                                                    "docs": {},
-                                                                    "i": {
-                                                                      "docs": {},
-                                                                      "d": {
-                                                                        "docs": {
-                                                                          "Augmented.Presentation.AutomaticForm.html#.validate": {
-                                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.validate",
-                                                                            "tf": 75
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "r": {
-                                                                "docs": {},
-                                                                "e": {
-                                                                  "docs": {},
-                                                                  "n": {
-                                                                    "docs": {},
-                                                                    "d": {
-                                                                      "docs": {
-                                                                        "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": {
-                                                                          "ref": "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform",
-                                                                          "tf": 25
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  },
-                                                                  "s": {
-                                                                    "docs": {},
-                                                                    "e": {
-                                                                      "docs": {},
-                                                                      "t": {
-                                                                        "docs": {
-                                                                          "Augmented.Presentation.AutomaticForm.html#.reset": {
-                                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.reset",
-                                                                            "tf": 75
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  },
-                                                                  "m": {
-                                                                    "docs": {},
-                                                                    "o": {
-                                                                      "docs": {},
-                                                                      "v": {
-                                                                        "docs": {
-                                                                          "Augmented.Presentation.AutomaticForm.html#.remove": {
-                                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
-                                                                            "tf": 75
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "p": {
-                                                                "docs": {},
-                                                                "o": {
-                                                                  "docs": {},
-                                                                  "p": {
-                                                                    "docs": {},
-                                                                    "u": {
-                                                                      "docs": {},
-                                                                      "l": {
-                                                                        "docs": {
-                                                                          "Augmented.Presentation.AutomaticForm.html#.populate": {
-                                                                            "ref": "Augmented.Presentation.AutomaticForm.html#.populate",
-                                                                            "tf": 75
                                                                           }
                                                                         }
                                                                       }
@@ -8226,6 +6563,23 @@ window.lunrData = {
                                                                       "docs": {},
                                                                       "c": {
                                                                         "docs": {},
+                                                                        "f": {
+                                                                          "docs": {},
+                                                                          "o": {
+                                                                            "docs": {},
+                                                                            "r": {
+                                                                              "docs": {},
+                                                                              "m": {
+                                                                                "docs": {
+                                                                                  "Presentation.Component.AutomaticForm.html": {
+                                                                                    "ref": "Presentation.Component.AutomaticForm.html",
+                                                                                    "tf": 1100
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
                                                                         "t": {
                                                                           "docs": {
                                                                             "Presentation.Component.AutomaticTable.html": {
@@ -9288,34 +7642,6 @@ window.lunrData = {
                             "ref": "Augmented.Request.Configuration.html#.headers",
                             "tf": 25
                           },
-                          "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                            "tf": 8.333333333333332
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.uri": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.uri",
-                            "tf": 25
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.model": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.model",
-                            "tf": 25
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.isInitalized": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.isInitalized",
-                            "tf": 25
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.title": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.title",
-                            "tf": 25
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.name": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.name",
-                            "tf": 25
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.description": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.description",
-                            "tf": 25
-                          },
                           "Augmented.Request.Configuration.xhrFields.html": {
                             "ref": "Augmented.Request.Configuration.xhrFields.html",
                             "tf": 25
@@ -9332,26 +7658,6 @@ window.lunrData = {
                         "Presentation.Component.Spreadsheet.html": {
                           "ref": "Presentation.Component.Spreadsheet.html",
                           "tf": 3.8461538461538463
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "g": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "s": {
-                      "docs": {},
-                      "s": {
-                        "docs": {
-                          "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                            "tf": 16.666666666666664
-                          }
                         }
                       }
                     }
@@ -9441,20 +7747,6 @@ window.lunrData = {
                           }
                         }
                       }
-                    }
-                  }
-                }
-              }
-            },
-            "p": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "Augmented.Presentation.AutomaticForm.html#.populate": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.populate",
-                      "tf": 633.3333333333334
                     }
                   }
                 }
@@ -9618,10 +7910,6 @@ window.lunrData = {
                         "ref": "Presentation.ViewController.html#.render",
                         "tf": 665
                       },
-                      "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform",
-                        "tf": 866.6666666666666
-                      },
                       "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
                         "ref": "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar",
                         "tf": 861.6666666666666
@@ -9676,10 +7964,6 @@ window.lunrData = {
                     "Presentation.Router.html#.cleanup": {
                       "ref": "Presentation.Router.html#.cleanup",
                       "tf": 16.666666666666664
-                    },
-                    "Augmented.Presentation.AutomaticForm.html#.remove": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
-                      "tf": 641.6666666666666
                     },
                     "Presentation.Mediator.html#.dismissColleague": {
                       "ref": "Presentation.Mediator.html#.dismissColleague",
@@ -9778,10 +8062,6 @@ window.lunrData = {
                     "Presentation.Dom.html": {
                       "ref": "Presentation.Dom.html",
                       "tf": 16.666666666666664
-                    },
-                    "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                      "tf": 12.5
                     }
                   }
                 }
@@ -9794,17 +8074,6 @@ window.lunrData = {
                   "Presentation.Model.html": {
                     "ref": "Presentation.Model.html",
                     "tf": 8.333333333333332
-                  }
-                }
-              },
-              "e": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "Augmented.Presentation.AutomaticForm.html#.reset": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.reset",
-                      "tf": 650
-                    }
                   }
                 }
               }
@@ -10609,10 +8878,6 @@ window.lunrData = {
                     "Presentation.ViewController.html#.initialize": {
                       "ref": "Presentation.ViewController.html#.initialize",
                       "tf": 6.25
-                    },
-                    "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                      "tf": 6.25
                     }
                   }
                 }
@@ -10669,14 +8934,6 @@ window.lunrData = {
                   "ref": "Presentation.Router.html",
                   "tf": 5.88235294117647
                 },
-                "Augmented.Presentation.AutomaticForm.html#.setURI": {
-                  "ref": "Augmented.Presentation.AutomaticForm.html#.setURI",
-                  "tf": 25
-                },
-                "Augmented.Presentation.AutomaticForm.html#.setSchema": {
-                  "ref": "Augmented.Presentation.AutomaticForm.html#.setSchema",
-                  "tf": 25
-                },
                 "Presentation.Colleague.html#.delegateEvents": {
                   "ref": "Presentation.Colleague.html#.delegateEvents",
                   "tf": 12.5
@@ -10721,41 +8978,10 @@ window.lunrData = {
                       "tf": 3.3333333333333335
                     }
                   }
-                },
-                "r": {
-                  "docs": {},
-                  "i": {
-                    "docs": {
-                      "Augmented.Presentation.AutomaticForm.html#.setURI": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.setURI",
-                        "tf": 608.3333333333334
-                      }
-                    }
-                  }
                 }
               },
               "s": {
                 "docs": {},
-                "c": {
-                  "docs": {},
-                  "h": {
-                    "docs": {},
-                    "e": {
-                      "docs": {},
-                      "m": {
-                        "docs": {},
-                        "a": {
-                          "docs": {
-                            "Augmented.Presentation.AutomaticForm.html#.setSchema": {
-                              "ref": "Augmented.Presentation.AutomaticForm.html#.setSchema",
-                              "tf": 608.3333333333334
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
                 "u": {
                   "docs": {},
                   "b": {
@@ -11028,13 +9254,9 @@ window.lunrData = {
                         "ref": "Presentation.Model.html",
                         "tf": 8.333333333333332
                       },
-                      "Augmented.Presentation.AutomaticForm.html": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html",
+                      "Presentation.Component.AutomaticForm.html": {
+                        "ref": "Presentation.Component.AutomaticForm.html",
                         "tf": 8.333333333333332
-                      },
-                      "Augmented.Presentation.AutomaticForm.html#.setSchema": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.setSchema",
-                        "tf": 58.33333333333333
                       },
                       "Presentation.Component.AutomaticTable.html": {
                         "ref": "Presentation.Component.AutomaticTable.html",
@@ -11055,85 +9277,6 @@ window.lunrData = {
                   "Presentation.Router.html#.loadView": {
                     "ref": "Presentation.Router.html#.loadView",
                     "tf": 5.555555555555555
-                  }
-                }
-              }
-            }
-          },
-          "h": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "w": {
-                "docs": {
-                  "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                    "tf": 33.33333333333333
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                    "tf": 12.5
-                  }
-                },
-                "p": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "g": {
-                        "docs": {},
-                        "r": {
-                          "docs": {},
-                          "e": {
-                            "docs": {},
-                            "s": {
-                              "docs": {},
-                              "s": {
-                                "docs": {},
-                                "b": {
-                                  "docs": {},
-                                  "a": {
-                                    "docs": {},
-                                    "r": {
-                                      "docs": {
-                                        "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                                          "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                                          "tf": 608.3333333333334
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "m": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "s": {
-                      "docs": {},
-                      "s": {
-                        "docs": {},
-                        "a": {
-                          "docs": {},
-                          "g": {
-                            "docs": {
-                              "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                                "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                                "tf": 608.3333333333334
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
                   }
                 }
               }
@@ -11335,8 +9478,8 @@ window.lunrData = {
                       "ref": "Presentation.Component.DialogView.html",
                       "tf": 110
                     },
-                    "Augmented.Presentation.AutomaticForm.html": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html",
+                    "Presentation.Component.AutomaticForm.html": {
+                      "ref": "Presentation.Component.AutomaticForm.html",
                       "tf": 110
                     },
                     "Augmented.Presentation.Component.HamburgerMenu.html": {
@@ -11465,23 +9608,6 @@ window.lunrData = {
                                   }
                                 }
                               }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "f": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "r": {
-                        "docs": {},
-                        "m": {
-                          "docs": {
-                            "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                              "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                              "tf": 6.25
                             }
                           }
                         }
@@ -12829,6 +10955,23 @@ window.lunrData = {
                                             "docs": {},
                                             "c": {
                                               "docs": {},
+                                              "f": {
+                                                "docs": {},
+                                                "o": {
+                                                  "docs": {},
+                                                  "r": {
+                                                    "docs": {},
+                                                    "m": {
+                                                      "docs": {
+                                                        "Presentation.Component.AutomaticForm.html": {
+                                                          "ref": "Presentation.Component.AutomaticForm.html",
+                                                          "tf": 200
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
                                               "t": {
                                                 "docs": {
                                                   "Presentation.Component.AutomaticTable.html": {
@@ -13412,10 +11555,6 @@ window.lunrData = {
                     "Presentation.History.html": {
                       "ref": "Presentation.History.html",
                       "tf": 2.380952380952381
-                    },
-                    "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                      "tf": 8.333333333333332
                     }
                   },
                   "d": {
@@ -13433,29 +11572,6 @@ window.lunrData = {
                                 "Augmented.Request.Configuration.html#.crossDomain": {
                                   "ref": "Augmented.Request.Configuration.html#.crossDomain",
                                   "tf": 635
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "o": {
-                    "docs": {},
-                    "r": {
-                      "docs": {},
-                      "i": {
-                        "docs": {},
-                        "g": {
-                          "docs": {},
-                          "i": {
-                            "docs": {},
-                            "n": {
-                              "docs": {
-                                "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                                  "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                                  "tf": 633.3333333333334
                                 }
                               }
                             }
@@ -13489,8 +11605,8 @@ window.lunrData = {
                       "ref": "Presentation.Component.DialogView.html",
                       "tf": 6.25
                     },
-                    "Augmented.Presentation.AutomaticForm.html": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html",
+                    "Presentation.Component.AutomaticForm.html": {
+                      "ref": "Presentation.Component.AutomaticForm.html",
                       "tf": 8.333333333333332
                     }
                   }
@@ -14079,82 +12195,6 @@ window.lunrData = {
                                     "ref": "Presentation.Router.html#.cleanup",
                                     "tf": 50
                                   },
-                                  "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.uri": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.uri",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.model": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.model",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.isInitalized": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.isInitalized",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.title": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.title",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.name": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.name",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.description": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.description",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.display": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.display",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.setURI": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.setURI",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.setSchema": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.setSchema",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.validate": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.validate",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.isValid": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.isValid",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform",
-                                    "tf": 25
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.reset": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.reset",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.populate": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.populate",
-                                    "tf": 33.33333333333333
-                                  },
-                                  "Augmented.Presentation.AutomaticForm.html#.remove": {
-                                    "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
-                                    "tf": 50
-                                  },
                                   "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
                                     "ref": "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar",
                                     "tf": 25
@@ -14360,10 +12400,6 @@ window.lunrData = {
               "docs": {},
               "e": {
                 "docs": {
-                  "Augmented.Presentation.AutomaticForm.html#.name": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.name",
-                    "tf": 650
-                  },
                   "Presentation.Widget.html#.Input": {
                     "ref": "Presentation.Widget.html#.Input",
                     "tf": 12.5
@@ -14535,20 +12571,6 @@ window.lunrData = {
                 }
               }
             }
-          },
-          "u": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "Augmented.Presentation.AutomaticForm.html#.display": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.display",
-                    "tf": 12.5
-                  }
-                }
-              }
-            }
           }
         },
         "b": {
@@ -14689,14 +12711,6 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "r": {
-              "docs": {
-                "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                  "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                  "tf": 16.666666666666664
-                }
-              }
             }
           },
           "e": {
@@ -14794,14 +12808,33 @@ window.lunrData = {
           },
           "i": {
             "docs": {},
+            "g": {
+              "docs": {},
+              "d": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "t": {
+                        "docs": {
+                          "Augmented.Presentation.BigDataTable.html": {
+                            "ref": "Augmented.Presentation.BigDataTable.html",
+                            "tf": 700
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "n": {
               "docs": {},
               "d": {
                 "docs": {
-                  "Augmented.Presentation.AutomaticForm.html#.remove": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
-                    "tf": 16.666666666666664
-                  },
                   "Presentation.Widget.html#.List": {
                     "ref": "Presentation.Widget.html#.List",
                     "tf": 16.666666666666664
@@ -14842,29 +12875,6 @@ window.lunrData = {
                                 }
                               }
                             }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "g": {
-              "docs": {},
-              "d": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "t": {
-                    "docs": {},
-                    "a": {
-                      "docs": {},
-                      "t": {
-                        "docs": {
-                          "Augmented.Presentation.BigDataTable.html": {
-                            "ref": "Augmented.Presentation.BigDataTable.html",
-                            "tf": 700
                           }
                         }
                       }
@@ -15414,16 +13424,7 @@ window.lunrData = {
               }
             },
             "i": {
-              "docs": {
-                "Augmented.Presentation.AutomaticForm.html#.uri": {
-                  "ref": "Augmented.Presentation.AutomaticForm.html#.uri",
-                  "tf": 650
-                },
-                "Augmented.Presentation.AutomaticForm.html#.setURI": {
-                  "ref": "Augmented.Presentation.AutomaticForm.html#.setURI",
-                  "tf": 58.33333333333333
-                }
-              },
+              "docs": {},
               "/": {
                 "docs": {},
                 "j": {
@@ -15625,8 +13626,8 @@ window.lunrData = {
                     "ref": "Presentation.Component.DialogView.html",
                     "tf": 6.25
                   },
-                  "Augmented.Presentation.AutomaticForm.html": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html",
+                  "Presentation.Component.AutomaticForm.html": {
+                    "ref": "Presentation.Component.AutomaticForm.html",
                     "tf": 8.333333333333332
                   },
                   "Augmented.Presentation.Component.HamburgerMenu.html": {
@@ -16081,23 +14082,6 @@ window.lunrData = {
                     }
                   }
                 },
-                "p": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "s": {
-                      "docs": {},
-                      "s": {
-                        "docs": {
-                          "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                            "tf": 6.25
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
                 ".": {
                   "docs": {},
                   "a": {
@@ -16170,14 +14154,6 @@ window.lunrData = {
                     "Presentation.Model.html": {
                       "ref": "Presentation.Model.html",
                       "tf": 8.333333333333332
-                    },
-                    "Augmented.Presentation.AutomaticForm.html#.validate": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.validate",
-                      "tf": 650
-                    },
-                    "Augmented.Presentation.AutomaticForm.html#.isValid": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.isValid",
-                      "tf": 25
                     }
                   }
                 }
@@ -16271,54 +14247,6 @@ window.lunrData = {
                           },
                           "Presentation.Router.html#.cleanup": {
                             "ref": "Presentation.Router.html#.cleanup",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.display": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.display",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.setURI": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.setURI",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.setSchema": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.setSchema",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.validate": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.validate",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.isValid": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.isValid",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.reset": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.reset",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.populate": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.populate",
-                            "tf": 110
-                          },
-                          "Augmented.Presentation.AutomaticForm.html#.remove": {
-                            "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
                             "tf": 110
                           },
                           "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
@@ -16440,41 +14368,9 @@ window.lunrData = {
               "docs": {},
               "m": {
                 "docs": {
-                  "Augmented.Presentation.AutomaticForm.html": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html",
+                  "Presentation.Component.AutomaticForm.html": {
+                    "ref": "Presentation.Component.AutomaticForm.html",
                     "tf": 8.333333333333332
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                    "tf": 12.5
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-                    "tf": 12.5
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.validate": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.validate",
-                    "tf": 25
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.isValid": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.isValid",
-                    "tf": 25
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform",
-                    "tf": 650
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.reset": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.reset",
-                    "tf": 25
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.populate": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.populate",
-                    "tf": 25
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.remove": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.remove",
-                    "tf": 16.666666666666664
                   }
                 },
                 "a": {
@@ -16515,20 +14411,6 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "e": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "h": {
-                  "docs": {
-                    "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                      "tf": 6.25
-                    }
-                  }
-                }
-              }
             }
           },
           "a": {
@@ -16564,30 +14446,9 @@ window.lunrData = {
                 "docs": {},
                 "d": {
                   "docs": {
-                    "Augmented.Presentation.AutomaticForm.html#.display": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.display",
-                      "tf": 12.5
-                    },
                     "Presentation.Widget.html#.Input": {
                       "ref": "Presentation.Widget.html#.Input",
                       "tf": 12.5
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "e": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "h": {
-                  "docs": {
-                    "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                      "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                      "tf": 8.333333333333332
                     }
                   }
                 }
@@ -16673,17 +14534,6 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "t": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "Augmented.Presentation.AutomaticForm.html#.title": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.title",
-                    "tf": 650
-                  }
-                }
-              }
             }
           },
           "r": {
@@ -16695,10 +14545,6 @@ window.lunrData = {
                   "Augmented.Request.Configuration.html#.crossDomain": {
                     "ref": "Augmented.Request.Configuration.html#.crossDomain",
                     "tf": 10
-                  },
-                  "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                    "tf": 6.25
                   }
                 }
               }
@@ -16937,23 +14783,6 @@ window.lunrData = {
                 }
               }
             },
-            "i": {
-              "docs": {},
-              "g": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-                        "tf": 8.333333333333332
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "d": {
               "docs": {},
               "e": {
@@ -17062,26 +14891,6 @@ window.lunrData = {
                 "Presentation.Mediator.html#.subscribe": {
                   "ref": "Presentation.Mediator.html#.subscribe",
                   "tf": 14.285714285714285
-                }
-              }
-            }
-          },
-          "p": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "i": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "n": {
-                    "docs": {
-                      "Augmented.Presentation.AutomaticForm.html#.initialize": {
-                        "ref": "Augmented.Presentation.AutomaticForm.html#.initialize",
-                        "tf": 33.33333333333333
-                      }
-                    }
-                  }
                 }
               }
             }
@@ -17314,8 +15123,8 @@ window.lunrData = {
               "docs": {},
               "n": {
                 "docs": {
-                  "Augmented.Presentation.AutomaticForm.html": {
-                    "ref": "Augmented.Presentation.AutomaticForm.html",
+                  "Presentation.Component.AutomaticForm.html": {
+                    "ref": "Presentation.Component.AutomaticForm.html",
                     "tf": 8.333333333333332
                   }
                 }
@@ -17432,7 +15241,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 1087
+      "length": 931
     },
     "corpusTokens": [
       "10",
@@ -17463,26 +15272,6 @@ window.lunrData = {
       "augmented.localstoragecollect",
       "augmented.localstoragecollectiona",
       "augmented.localstoragefactoryretriev",
-      "augmented.presentation.automaticform",
-      "augmented.presentation.automaticform.crossorigin",
-      "augmented.presentation.automaticform.descript",
-      "augmented.presentation.automaticform.display",
-      "augmented.presentation.automaticform.initi",
-      "augmented.presentation.automaticform.isinit",
-      "augmented.presentation.automaticform.isvalid",
-      "augmented.presentation.automaticform.model",
-      "augmented.presentation.automaticform.nam",
-      "augmented.presentation.automaticform.popul",
-      "augmented.presentation.automaticform.remov",
-      "augmented.presentation.automaticform.rend",
-      "augmented.presentation.automaticform.reset",
-      "augmented.presentation.automaticform.setschema",
-      "augmented.presentation.automaticform.seturi",
-      "augmented.presentation.automaticform.showmessag",
-      "augmented.presentation.automaticform.showprogressbar",
-      "augmented.presentation.automaticform.titl",
-      "augmented.presentation.automaticform.uri",
-      "augmented.presentation.automaticform.valid",
       "augmented.presentation.bigdatat",
       "augmented.presentation.bigdatatableinst",
       "augmented.presentation.component.hamburgermenu",
@@ -17522,31 +15311,11 @@ window.lunrData = {
       "auto",
       "automat",
       "automaticform",
-      "automaticform.crossorigin",
-      "automaticform.descript",
-      "automaticform.display",
-      "automaticform.initi",
-      "automaticform.isinit",
-      "automaticform.isvalid",
-      "automaticform.model",
-      "automaticform.nam",
-      "automaticform.popul",
-      "automaticform.remov",
-      "automaticform.rend",
-      "automaticform.reset",
-      "automaticform.setschema",
-      "automaticform.seturi",
-      "automaticform.showmessag",
-      "automaticform.showprogressbar",
-      "automaticform.titl",
-      "automaticform.uri",
-      "automaticform.valid",
       "automatict",
       "automatictablecr",
       "back",
       "backbone.j",
       "backend",
-      "bar",
       "base",
       "beforesend",
       "between",
@@ -17570,7 +15339,6 @@ window.lunrData = {
       "clean",
       "cleanup",
       "clear",
-      "clearform",
       "clearpermiss",
       "clickdata",
       "colleagu",
@@ -17589,6 +15357,7 @@ window.lunrData = {
       "component.alertdialogview",
       "component.augmented.presentation.component.head",
       "component.augmented.presentation.confirmationdialogview",
+      "component.automaticform",
       "component.automatict",
       "component.dialogview",
       "component.hamburgermenu",
@@ -17630,7 +15399,6 @@ window.lunrData = {
       "creat",
       "cross",
       "crossdomain",
-      "crossorigin",
       "css",
       "custom",
       "customev",
@@ -17666,8 +15434,6 @@ window.lunrData = {
       "editablet",
       "eitherpushst",
       "eleg",
-      "enabl",
-      "enable/dis",
       "end",
       "error",
       "event",
@@ -17677,13 +15443,11 @@ window.lunrData = {
       "extend",
       "extens",
       "faux",
-      "fetch",
       "field",
       "fire",
       "form",
       "format",
       "fragment",
-      "fresh",
       "function",
       "functiondata",
       "gener",
@@ -17721,8 +15485,6 @@ window.lunrData = {
       "instead",
       "intend",
       "interfac",
-      "isinit",
-      "isvalid",
       "it'",
       "javascript",
       "json",
@@ -17781,16 +15543,13 @@ window.lunrData = {
       "note",
       "notfic",
       "notificationcent",
-      "null",
       "object",
       "observ",
       "observecolleagu",
       "old",
       "on",
       "onc",
-      "option",
       "order",
-      "origin",
       "oronhashchangeand",
       "pagin",
       "pass",
@@ -17798,33 +15557,12 @@ window.lunrData = {
       "patternth",
       "permiss",
       "polling.inspir",
-      "popul",
       "preconfigur",
       "prepend",
       "present",
       "presentation.abstractview",
       "presentation.appl",
       "presentation.augmented.localstoragecollect",
-      "presentation.automaticform",
-      "presentation.automaticform.crossorigin",
-      "presentation.automaticform.descript",
-      "presentation.automaticform.display",
-      "presentation.automaticform.initi",
-      "presentation.automaticform.isinit",
-      "presentation.automaticform.isvalid",
-      "presentation.automaticform.model",
-      "presentation.automaticform.nam",
-      "presentation.automaticform.popul",
-      "presentation.automaticform.remov",
-      "presentation.automaticform.rend",
-      "presentation.automaticform.reset",
-      "presentation.automaticform.setschema",
-      "presentation.automaticform.seturi",
-      "presentation.automaticform.showmessag",
-      "presentation.automaticform.showprogressbar",
-      "presentation.automaticform.titl",
-      "presentation.automaticform.uri",
-      "presentation.automaticform.valid",
       "presentation.bigdatat",
       "presentation.colleagu",
       "presentation.colleague.delegateev",
@@ -17837,6 +15575,7 @@ window.lunrData = {
       "presentation.component.alertdialogview",
       "presentation.component.augmented.presentation.component.head",
       "presentation.component.augmented.presentation.confirmationdialogview",
+      "presentation.component.automaticform",
       "presentation.component.automatict",
       "presentation.component.dialogview",
       "presentation.component.hamburgermenu",
@@ -17890,7 +15629,6 @@ window.lunrData = {
       "presentation.widget.descriptionlist",
       "presentation.widget.input",
       "presentation.widget.list",
-      "progress",
       "properi",
       "properti",
       "publish",
@@ -17924,7 +15662,6 @@ window.lunrData = {
       "request.configuration.xhrfield",
       "request.configuration.xhrfields.withcredenti",
       "requir",
-      "reset",
       "rest",
       "return",
       "rout",
@@ -17938,13 +15675,8 @@ window.lunrData = {
       "selectorsimport",
       "set",
       "setpermiss",
-      "setschema",
       "setsubscript",
       "setup",
-      "seturi",
-      "show",
-      "showmessag",
-      "showprogressbar",
       "simpl",
       "simular",
       "small",
@@ -17972,7 +15704,6 @@ window.lunrData = {
       "thank",
       "thier",
       "timeout",
-      "titl",
       "toolbar",
       "toolbar.rend",
       "tooldbar",
@@ -17985,7 +15716,6 @@ window.lunrData = {
       "unsetsubscript",
       "unsubscrib",
       "up",
-      "uri",
       "uri/json",
       "url",
       "us",
@@ -18009,7 +15739,6 @@ window.lunrData = {
       "viewcontroller.removepermiss",
       "viewcontroller.rend",
       "viewcontroller.setpermiss",
-      "viewpass",
       "views.loos",
       "widget",
       "widget.datalist",
@@ -18580,206 +16309,16 @@ window.lunrData = {
       "description": "A automatic dialog view - creates a dialog with simple configurations to customize",
       "body": ""
     },
-    "Augmented.Presentation.AutomaticForm.html": {
-      "id": "Augmented.Presentation.AutomaticForm.html",
+    "Presentation.Component.AutomaticForm.html": {
+      "id": "Presentation.Component.AutomaticForm.html",
       "kind": "class",
-      "title": "AutomaticForm",
-      "longname": "Augmented.Presentation.AutomaticForm",
+      "title": ".Component.AutomaticForm",
+      "longname": "Presentation.Component.AutomaticForm",
       "name": "AutomaticForm",
-      "tags": "Augmented.Presentation.AutomaticForm Presentation.AutomaticForm AutomaticForm",
+      "tags": "Presentation.Component.AutomaticForm Component.AutomaticForm AutomaticForm",
       "summary": "",
       "description": "A automatic form view created from a JSON Schema",
       "body": ""
-    },
-    "Augmented.Presentation.AutomaticForm.html#.crossOrigin": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.crossOrigin",
-      "kind": "member",
-      "title": "&lt;static&gt; crossOrigin",
-      "longname": "Augmented.Presentation.AutomaticForm.crossOrigin",
-      "name": "crossOrigin",
-      "tags": "Augmented.Presentation.AutomaticForm.crossOrigin Presentation.AutomaticForm.crossOrigin AutomaticForm.crossOrigin crossOrigin",
-      "summary": "",
-      "description": "The crossOrigin property - enables cross origin fetch"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.uri": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.uri",
-      "kind": "member",
-      "title": "&lt;static&gt; uri",
-      "longname": "Augmented.Presentation.AutomaticForm.uri",
-      "name": "uri",
-      "tags": "Augmented.Presentation.AutomaticForm.uri Presentation.AutomaticForm.uri AutomaticForm.uri uri",
-      "summary": "",
-      "description": "The URI property"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.model": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.model",
-      "kind": "member",
-      "title": "&lt;static&gt; model",
-      "longname": "Augmented.Presentation.AutomaticForm.model",
-      "name": "model",
-      "tags": "Augmented.Presentation.AutomaticForm.model Presentation.AutomaticForm.model AutomaticForm.model model",
-      "summary": "",
-      "description": "The model property"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.isInitalized": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.isInitalized",
-      "kind": "member",
-      "title": "&lt;static&gt; isInitalized",
-      "longname": "Augmented.Presentation.AutomaticForm.isInitalized",
-      "name": "isInitalized",
-      "tags": "Augmented.Presentation.AutomaticForm.isInitalized Presentation.AutomaticForm.isInitalized AutomaticForm.isInitalized isInitalized",
-      "summary": "",
-      "description": "The initialized property"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.title": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.title",
-      "kind": "member",
-      "title": "&lt;static&gt; title",
-      "longname": "Augmented.Presentation.AutomaticForm.title",
-      "name": "title",
-      "tags": "Augmented.Presentation.AutomaticForm.title Presentation.AutomaticForm.title AutomaticForm.title title",
-      "summary": "",
-      "description": "The title property"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.name": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.name",
-      "kind": "member",
-      "title": "&lt;static&gt; name",
-      "longname": "Augmented.Presentation.AutomaticForm.name",
-      "name": "name",
-      "tags": "Augmented.Presentation.AutomaticForm.name Presentation.AutomaticForm.name AutomaticForm.name name",
-      "summary": "",
-      "description": "The name property"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.description": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.description",
-      "kind": "member",
-      "title": "&lt;static&gt; description",
-      "longname": "Augmented.Presentation.AutomaticForm.description",
-      "name": "description",
-      "tags": "Augmented.Presentation.AutomaticForm.description Presentation.AutomaticForm.description AutomaticForm.description description",
-      "summary": "",
-      "description": "The description property"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.display": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.display",
-      "kind": "function",
-      "title": "&lt;static&gt; display()",
-      "longname": "Augmented.Presentation.AutomaticForm.display",
-      "name": "display",
-      "tags": "Augmented.Presentation.AutomaticForm.display Presentation.AutomaticForm.display AutomaticForm.display display",
-      "summary": "",
-      "description": "Fields to display - null will display all"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.initialize": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.initialize",
-      "kind": "function",
-      "title": "&lt;static&gt; initialize( options )",
-      "longname": "Augmented.Presentation.AutomaticForm.initialize",
-      "name": "initialize",
-      "tags": "Augmented.Presentation.AutomaticForm.initialize Presentation.AutomaticForm.initialize AutomaticForm.initialize initialize",
-      "summary": "",
-      "description": "Initialize the form viewpass clearForm = true to start a fresh form"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.setURI": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.setURI",
-      "kind": "function",
-      "title": "&lt;static&gt; setURI( uri )",
-      "longname": "Augmented.Presentation.AutomaticForm.setURI",
-      "name": "setURI",
-      "tags": "Augmented.Presentation.AutomaticForm.setURI Presentation.AutomaticForm.setURI AutomaticForm.setURI setURI",
-      "summary": "",
-      "description": "Sets the URI"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.setSchema": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.setSchema",
-      "kind": "function",
-      "title": "&lt;static&gt; setSchema( schema )",
-      "longname": "Augmented.Presentation.AutomaticForm.setSchema",
-      "name": "setSchema",
-      "tags": "Augmented.Presentation.AutomaticForm.setSchema Presentation.AutomaticForm.setSchema AutomaticForm.setSchema setSchema",
-      "summary": "",
-      "description": "Sets the schema"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.showProgressBar": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.showProgressBar",
-      "kind": "function",
-      "title": "&lt;static&gt; showProgressBar( show )",
-      "longname": "Augmented.Presentation.AutomaticForm.showProgressBar",
-      "name": "showProgressBar",
-      "tags": "Augmented.Presentation.AutomaticForm.showProgressBar Presentation.AutomaticForm.showProgressBar AutomaticForm.showProgressBar showProgressBar",
-      "summary": "",
-      "description": "Enable/Disable the progress bar"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.showMessage": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.showMessage",
-      "kind": "function",
-      "title": "&lt;static&gt; showMessage( message )",
-      "longname": "Augmented.Presentation.AutomaticForm.showMessage",
-      "name": "showMessage",
-      "tags": "Augmented.Presentation.AutomaticForm.showMessage Presentation.AutomaticForm.showMessage AutomaticForm.showMessage showMessage",
-      "summary": "",
-      "description": "Show a message related to the form"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.validate": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.validate",
-      "kind": "function",
-      "title": "&lt;static&gt; validate()",
-      "longname": "Augmented.Presentation.AutomaticForm.validate",
-      "name": "validate",
-      "tags": "Augmented.Presentation.AutomaticForm.validate Presentation.AutomaticForm.validate AutomaticForm.validate validate",
-      "summary": "",
-      "description": "Validate the form"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.isValid": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.isValid",
-      "kind": "function",
-      "title": "&lt;static&gt; isValid()",
-      "longname": "Augmented.Presentation.AutomaticForm.isValid",
-      "name": "isValid",
-      "tags": "Augmented.Presentation.AutomaticForm.isValid Presentation.AutomaticForm.isValid AutomaticForm.isValid isValid",
-      "summary": "",
-      "description": "Is the form valid"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.renderRenderstheform",
-      "kind": "function",
-      "title": "&lt;static&gt; render Renders the form()",
-      "longname": "Augmented.Presentation.AutomaticForm.render Renders the form",
-      "name": "render Renders the form",
-      "tags": "Augmented.Presentation.AutomaticForm.render Renders the form Presentation.AutomaticForm.render Renders the form AutomaticForm.render Renders the form render Renders the form",
-      "summary": "",
-      "description": "Render the form"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.reset": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.reset",
-      "kind": "function",
-      "title": "&lt;static&gt; reset()",
-      "longname": "Augmented.Presentation.AutomaticForm.reset",
-      "name": "reset",
-      "tags": "Augmented.Presentation.AutomaticForm.reset Presentation.AutomaticForm.reset AutomaticForm.reset reset",
-      "summary": "",
-      "description": "Reset the form"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.populate": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.populate",
-      "kind": "function",
-      "title": "&lt;static&gt; populate( data )",
-      "longname": "Augmented.Presentation.AutomaticForm.populate",
-      "name": "populate",
-      "tags": "Augmented.Presentation.AutomaticForm.populate Presentation.AutomaticForm.populate AutomaticForm.populate populate",
-      "summary": "",
-      "description": "Populate the form"
-    },
-    "Augmented.Presentation.AutomaticForm.html#.remove": {
-      "id": "Augmented.Presentation.AutomaticForm.html#.remove",
-      "kind": "function",
-      "title": "&lt;static&gt; remove()",
-      "longname": "Augmented.Presentation.AutomaticForm.remove",
-      "name": "remove",
-      "tags": "Augmented.Presentation.AutomaticForm.remove Presentation.AutomaticForm.remove AutomaticForm.remove remove",
-      "summary": "",
-      "description": "Remove the form and all binds"
     },
     "Augmented.Presentation.Component.HamburgerMenu.html": {
       "id": "Augmented.Presentation.Component.HamburgerMenu.html",
