@@ -4,11 +4,11 @@ const DEFAULT_NAMESPACE = "augmented.localstorage.collection";
 const DEFAULT_KEY = `${DEFAULT_NAMESPACE}.key`;
 
 /**
- * Augmented.LocalStorageCollection
+ * LocalStorageCollection
  * A local storage-based Collection
- * @class Augmented.LocalStorageCollection
+ * @class LocalStorageCollection
  * @memberof Presentation
- * @extends Augmented.Collection
+ * @extends Augmented.AbstractCollection
  */
 class LocalStorageCollection extends Augmented.AbstractCollection {
   constructor(models, options) {
@@ -16,7 +16,6 @@ class LocalStorageCollection extends Augmented.AbstractCollection {
     this._key = DEFAULT_KEY;
     this._persist = false;
     this._storage = null;
-    this.url = null;
 
     if (options && options.persist) {
       this._persist = options.persist;
@@ -30,38 +29,38 @@ class LocalStorageCollection extends Augmented.AbstractCollection {
   /**
    * Base key name for the collection (simular to url for rest-based)
    * @property {string} key The key
-   * @memberof Augmented.LocalStorageCollection
+   * @memberof LocalStorageCollection
    */
 
   /**
    * is Persistant or not
    * @property {boolean} isPersisted Persistant property
-   * @memberof Augmented.LocalStorageCollection
+   * @memberof LocalStorageCollection
    */
 
   /**
    * Storage for the collection
    * @property {string} storage The storage used for the collection
-   * @memberof Augmented.LocalStorageCollection
+   * @memberof LocalStorageCollection
    * @private
    */
 
   /**
    * @method initialize Initialize the model with needed wireing
    * @param {object} options Any options to pass
-   * @memberof Augmented.LocalStorageCollection
+   * @memberof LocalStorageCollection
    */
   initialize(options) {};
   /**
    * @method init Custom init method for the model (called at inititlize)
    * @param {object} options Any options to pass
-   * @memberof Augmented.LocalStorageCollection
+   * @memberof LocalStorageCollection
    */
   init(options) {};
   /**
    * @method fetch Fetch the collection
    * @param {object} options Any options to pass
-   * @memberof Augmented.LocalStorageCollection
+   * @memberof LocalStorageCollection
    */
   fetch(options) {
     this.sync('read', this, options);
@@ -69,7 +68,7 @@ class LocalStorageCollection extends Augmented.AbstractCollection {
   /**
    * @method save Save the collection
    * @param {object} options Any options to pass
-   * @memberof Augmented.LocalStorageCollection
+   * @memberof LocalStorageCollection
    */
   save(options) {
     this.sync('create', this, options);
@@ -85,7 +84,7 @@ class LocalStorageCollection extends Augmented.AbstractCollection {
   /**
    * @method destroy Destroy the collection
    * @param {object} options Any options to pass
-   * @memberof Augmented.LocalStorageCollection
+   * @memberof LocalStorageCollection
    */
   destroy(options) {
     this.sync('delete', this, options);

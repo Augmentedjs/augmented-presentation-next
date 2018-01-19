@@ -14,6 +14,7 @@ import LocalStorageFactory from "./storage/localStorageFactory.js";
 import LocalStorage from "./storage/localStorage.js";
 import NamespacedLocalStorage from "./storage/namespacedLocalStorage.js";
 import Collection from "./collection/collection.js";
+import PaginatedCollection from "./collection/paginated.js";
 import LocalStorageCollection from "./collection/localStorageCollection.js";
 
 import Colleague from "./view/pubsub/colleague.js";
@@ -33,13 +34,16 @@ import AlertDialogView from "./view/component/dialog/alert.js";
 import AutomaticTable from "./view/component/table/autoTable.js";
 import AutomaticForm from "./view/component/form/autoForm.js";
 
+import PAGINATION_API_TYPE from "./pagination/api.js";
+import PaginationFactory from "./pagination/factory.js";
+
 /**
  * Augmented.js Next Presentation - The Presentation Component
  *
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.16
+ * @version 2.0.0-alpha.17
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -48,7 +52,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.16";
+Presentation.VERSION = "2.0.0-alpha.17";
 
 Presentation.History = History;
 Presentation.Router = Router;
@@ -66,6 +70,7 @@ Presentation.Model = Model;
 
 Presentation.Collection = Collection;
 Presentation.LocalStorageCollection = LocalStorageCollection;
+Presentation.PaginatedCollection = PaginatedCollection;
 
 Presentation.ViewController = ViewController;
 Presentation.AbstractView = AbstractView;
@@ -89,6 +94,14 @@ Presentation.sync = sync;
 Presentation.request = request;
 Presentation.Request = {};
 Presentation.Request.Configuration = Configuration;
+
+/**
+ * @namespace Pagination
+ * @memberof Presentation
+ */
+Presentation.Pagination = {};
+Presentation.Pagination.PAGINATION_API_TYPE = PAGINATION_API_TYPE;
+Presentation.Pagination.PaginationFactory = PaginationFactory;
 
 /**
  * Augmented jQuery-like selectors usinge native selectors</br/>

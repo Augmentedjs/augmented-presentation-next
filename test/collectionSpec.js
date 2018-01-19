@@ -98,8 +98,8 @@ describe('Given an Augmented Collection Backed by Local Storage', () => {
   });
 });
 
-xdescribe('Given an Augmented Collection needing pagination', () => {
-  describe('Given an Augmented PaginationFactory', () => {
+describe('Given a Collection needing pagination', () => {
+  describe('Given a PaginationFactory', () => {
     let c;
     beforeEach(() => {
 
@@ -108,29 +108,29 @@ xdescribe('Given an Augmented Collection needing pagination', () => {
       c = null;
     });
     it('has an augmented PaginationFactory', () => {
-      expect(Presentation.PaginationFactory).to.not.be.undefined;
+      expect(Presentation.Pagination.PaginationFactory).to.not.be.undefined;
     });
 
     it('can get a "github" API PaginatedCollection', () => {
-      c = Presentation.PaginationFactory.getPaginatedCollection(Presentation.PaginationFactory.type.github);
+      c = Presentation.Pagination.PaginationFactory.getPaginatedCollection(Presentation.Pagination.PAGINATION_API_TYPE.GITHUB);
       expect(c instanceof Presentation.PaginatedCollection).to.be.true;
       expect(c.paginationConfiguration.currentPageParam).to.equal('page');
     });
 
     it('can get a "solr" API PaginatedCollection', () => {
-      c = Presentation.PaginationFactory.getPaginatedCollection(Presentation.PaginationFactory.type.solr);
+      c = Presentation.Pagination.PaginationFactory.getPaginatedCollection(Presentation.Pagination.PAGINATION_API_TYPE.SOLR);
       expect(c instanceof Presentation.PaginatedCollection).to.be.true;
       expect(c.paginationConfiguration.currentPageParam).to.equal('start');
     });
 
     it('can get a "database" API PaginatedCollection', () => {
-      c = Presentation.PaginationFactory.getPaginatedCollection(Presentation.PaginationFactory.type.database);
+      c = Presentation.Pagination.PaginationFactory.getPaginatedCollection(Presentation.Pagination.PAGINATION_API_TYPE.DATABASE);
       expect(c instanceof Presentation.PaginatedCollection).to.be.true;
       expect(c.paginationConfiguration.currentPageParam).to.equal('offset');
     });
 
     it('will not get a "nothing" API PaginatedCollection', () => {
-      c = Presentation.PaginationFactory.getPaginatedCollection("nothing");
+      c = Presentation.Pagination.PaginationFactory.getPaginatedCollection("nothing");
       expect(c instanceof Presentation.PaginatedCollection).to.be.false;
     });
   });

@@ -2,18 +2,18 @@ import Augmented from "augmentedjs-next";
 import sync from "../request/sync.js";
 
 /**
- * Augmented.LocalStorageCollection
- * A local storage-based Collection
- * @class Augmented.LocalStorageCollection
+ * @class Collection
  * @memberof Presentation
- * @extends Augmented.Collection
+ * @extends Augmented.AbstractCollection
  */
 class Collection extends Augmented.AbstractCollection {
   constructor(models, options) {
     super(models, options);
-    this._persist = false;
-    this._storage = null;
-    this.url = null;
+    if (options && options.url) {
+      this.url = options.url;
+    } else {
+      this.url = null;
+    };
   };
 
   /**
