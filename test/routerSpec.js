@@ -45,12 +45,11 @@ describe('Given Augmented Router', () => {
 
 		it('can "navigate" to a route', () => {
 			try {
-
-			router.startHistory();
-		} catch(e) {
-			console.error(e);
-		}
-			expect(router.navigate("test")).to.deep.equal({ "routes": { "test": "test" } });
+				router.startHistory();
+			} catch(e) {
+				console.error(e);
+			}
+			expect(router.navigate("test").routes.test).to.not.be.undefined;
 		});
 
 		describe('Given a test view', () => {

@@ -103,9 +103,8 @@ class Router extends Augmented.Object {
 
   // Simple proxy to `history` to save a fragment into the history.
   navigate(fragment, options) {
-    return this.history.navigate(fragment, options);
-    //return fragment;
-
+    this.history.navigate(fragment, options);
+    return { "routes": this.routes };
   };
 
   startHistory(options) {
