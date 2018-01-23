@@ -9,7 +9,7 @@
     "lint": "eslint ./src/augmented-presentation.js",
     "setup": "npm install && npm run validate",
     "validate": "npm-run-all lint test build",
-    "test": "mocha --require babel-core/register --require test/helper.js -c test/*Spec.js",
+    "test": "mocha --require babel-core/register --require test/helper.js -c test/cli/*Spec.js",
     "start": "node index.js",
     "docs": "jsdoc ./src -r -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json"
   },
