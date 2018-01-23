@@ -9,26 +9,22 @@ class TestView extends Presentation.View {
 	};
 };
 
-const MyRouter = new Presentation.Router({
-	"routes": {
-			"test": "test"
-			}
-	}
-);
-
 describe('Given Augmented Router', () => {
 	it('is defined', () => {
 		expect(Presentation.Router).to.not.be.undefined;
 	});
-
-	const test = () => {
-		return true;
-	};
-
 	let router = null;
 
 	beforeEach(() => {
-		router = MyRouter;
+		router = new Presentation.Router({
+			"routes": {
+				"test": () => {
+									return true;
+								}
+				}
+			}
+		);
+
 	});
 
 	afterEach(() => {
@@ -48,6 +44,12 @@ describe('Given Augmented Router', () => {
 		});
 
 		it('can "navigate" to a route', () => {
+			try {
+
+			router.startHistory();
+		} catch(e) {
+			console.error(e);
+		}
 			expect(router.navigate("test")).to.deep.equal({ "routes": { "test": "test" } });
 		});
 

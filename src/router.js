@@ -10,7 +10,7 @@ const optionalParam = /\((.*?)\)/g;
 const namedParam    = /(\(\?)?:\w+/g;
 const splatParam    = /\*\w+/g;
 const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
-const history = new History();
+//const history = new History();
 
 /**
  * @class Router
@@ -18,12 +18,14 @@ const history = new History();
  * matched. Creating a new one sets its `routes` hash, if not set statically.
  * @memberof Presentation
  */
-class Router {
+class Router extends Augmented.Object {
   constructor(options) {
+    super(options);
     options || (options = {});
     if (options.routes) {
       this.routes = options.routes;
     }
+    this.history = new History();
     this._bindRoutes();
     this.initialize(options);
   };
@@ -79,12 +81,13 @@ class Router {
     }
     let router = this;
 
-    history.route(route, (fragment) => {
+    this.history.route(route, (fragment) => {
       const args = router._extractParameters(route, fragment);
+
       if (router.execute(callback, args, name) !== false) {
         router.trigger.apply(router, ['route:' + name].concat(args));
         router.trigger('route', name, args);
-        history.trigger('route', router, name, args);
+        this.history.trigger('route', router, name, args);
       }
     });
     return this;
@@ -100,8 +103,16 @@ class Router {
 
   // Simple proxy to `history` to save a fragment into the history.
   navigate(fragment, options) {
-    history.navigate(fragment, options);
-    return this;
+    return this.history.navigate(fragment, options);
+    //return fragment;
+
+  };
+
+  startHistory(options) {
+    if (!this.history.started) {
+      this.history.start(options);
+    }
+    return true;
   };
 
   // Bind all defined routes to `history`. We have to reverse the

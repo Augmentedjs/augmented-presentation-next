@@ -24,6 +24,11 @@ class Application extends Augmented.Application {
     if (this._stylesheets && this._stylesheets.length > 0) {
       this.attachStylesheets();
     }
+    const router = this.router;
+    if (router) {
+      console.log("starting history");
+      router.startHistory();
+    }
     return true;
   };
   /**

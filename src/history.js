@@ -1,4 +1,4 @@
-import Augmented from "augmentedjs-next";
+import * as Augmented from "augmentedjs-next";
 
 //const _some = require("lodash.some");
 
@@ -52,6 +52,7 @@ class History extends Augmented.Object {
   matchRoot() {
     const path = this.decodeFragment(this.location.pathname);
     const rootPath = path.slice(0, this.root.length - 1) + '/';
+    //console.log(`History: matchRoot ${rootPath} and root is ${this.root}`);
     return rootPath === this.root;
   };
 
@@ -106,7 +107,7 @@ class History extends Augmented.Object {
 
     // Figure out the initial configuration. Do we need an iframe?
     // Is pushState desired ... is it available?
-    this.options          = Augmented.extend({root: '/'}, this.options, options);
+    this.options          = Augmented.Utility.extend({root: '/'}, this.options, options);
     this.root             = this.options.root;
     this._wantsHashChange = this.options.hashChange !== false;
     this._hasHashChange   = 'onhashchange' in window && (document.documentMode === void 0 || document.documentMode > 7);
@@ -239,13 +240,21 @@ class History extends Augmented.Object {
       return false;
     }
     fragment = this.fragment = this.getFragment(fragment);
-
-    return this.handlers.some((handler) => {
-      if (handler.route.test(fragment)) {
-        handler.callback(fragment);
-        return true;
-      }
-    });
+    console.log("loadUrl", fragment);
+    console.log("this.handlers", this.handlers);
+    if (this.handlers && Array.isArray(this.handlers)) {
+      return this.handlers.some((handler) => {
+        console.log("handler", handler);
+        if (handler.route.test(fragment)) {
+          console.log("handler.callback", handler.callback);
+          console.log("is func", typeof handler.callback);
+          handler.callback(fragment);
+          console.log("test", handler.route.test(fragment));
+          return true;
+        }
+      });
+    }
+    return null;
 
     /*return _some(this.handlers, (handler) => {
       if (handler.route.test(fragment)) {
