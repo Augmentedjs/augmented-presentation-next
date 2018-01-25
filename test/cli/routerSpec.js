@@ -9,6 +9,23 @@ class TestView extends Presentation.View {
 	};
 };
 
+class Router extends Presentation.Router {
+	constructor() {
+		super({
+			"routes": {
+				"test": () => {
+									return true;
+								},
+				"test2": "test2"
+				},
+				"name": "test"
+			});
+	};
+	test2() {
+		return this.name;
+	};
+};
+
 describe('Given Augmented Router', () => {
 	it('is defined', () => {
 		expect(Presentation.Router).to.not.be.undefined;
@@ -16,15 +33,7 @@ describe('Given Augmented Router', () => {
 	let router = null;
 
 	beforeEach(() => {
-		router = new Presentation.Router({
-			"routes": {
-				"test": () => {
-									return true;
-								}
-				}
-			}
-		);
-
+		router = new Router();
 	});
 
 	afterEach(() => {
@@ -43,13 +52,14 @@ describe('Given Augmented Router', () => {
 			expect(router instanceof Presentation.Router).to.be.true;
 		});
 
-		xit('can "navigate" to a route', () => {
-			try {
-				router.startHistory();
-			} catch(e) {
-				console.error(e);
-			}
+		it('can "navigate" to a route, inline function', () => {
+			router.startHistory();
 			expect(router.navigate("test").routes.test).to.not.be.undefined;
+		});
+
+		it('can "navigate" to a route, reference function', () => {
+			router.startHistory();
+			expect(router.navigate("test2").routes.test2).to.not.be.undefined;
 		});
 
 		describe('Given a test view', () => {

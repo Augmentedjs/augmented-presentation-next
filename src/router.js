@@ -98,7 +98,8 @@ class Router extends Augmented.Object {
   // excellent place to do pre-route setup or post-route cleanup.
   execute(callback, args, name) {
     if (callback) {
-      callback(args);
+      callback.apply(this, args);
+      //callback(args);
     }
   };
 
