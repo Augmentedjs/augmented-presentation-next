@@ -26,7 +26,7 @@ class History extends Augmented.Object {
   constructor(options) {
     super(options);
     this.handlers = [];
-    //this.checkUrl = _.bind(this.checkUrl, this);
+    this.checkUrl = this.checkUrl.bind(this);
 
     // Ensure that `History` can be used outside of the browser.
     if (typeof window !== 'undefined') {
@@ -177,7 +177,7 @@ class History extends Augmented.Object {
     }
   };
 
-  // Disable Backbone.history, perhaps temporarily. Not useful in a real app,
+  // Disable history, perhaps temporarily. Not useful in a real app,
   // but possibly useful for unit testing Routers.
   stop() {
     const poly = (eventName, listener) => {
@@ -216,7 +216,6 @@ class History extends Augmented.Object {
   // Checks the current URL to see if it has changed, and if it has,
   // calls `loadUrl`, normalizing across the hidden iframe.
   checkUrl(e) {
-	  console.log("checkURL", e);
     let current = this.getFragment();
 
     // If the user pressed the back button, the iframe's hash will have
