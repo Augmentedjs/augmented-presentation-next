@@ -216,6 +216,7 @@ class History extends Augmented.Object {
   // Checks the current URL to see if it has changed, and if it has,
   // calls `loadUrl`, normalizing across the hidden iframe.
   checkUrl(e) {
+	  console.log("checkURL", e);
     let current = this.getFragment();
 
     // If the user pressed the back button, the iframe's hash will have

@@ -1,5 +1,3 @@
-//const Presentation = require("../dist/augmented-next-presentation.js");
-//const expect = require("expect");
 class TestView extends Presentation.View {
 	constructor(options) {
 		super(options);
@@ -59,6 +57,12 @@ describe('Given Augmented Router', () => {
 
 		it('can "navigate" to a route, reference function', () => {
 			router.startHistory();
+			expect(router.navigate("test2").routes.test2).to.not.be.undefined;
+		});
+
+		it('can "navigate" to a route and reroute', () => {
+			router.startHistory();
+			router.navigate("test");
 			expect(router.navigate("test2").routes.test2).to.not.be.undefined;
 		});
 
