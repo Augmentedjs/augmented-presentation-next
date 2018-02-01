@@ -2,7 +2,7 @@ import DecoratorView from "../../decorator/decorator.js";
 
 /**
  * A Header Component
- * @constructor Augmented.Presentation.Component.Header
+ * @class Header
  * @memberof Presentation.Component
  * @extends Presentation.View
  */

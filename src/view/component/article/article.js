@@ -51,12 +51,6 @@ class Article extends DecoratorView {
   };
 
   /**
-  * Body property - the body of the article
-  * @property body
-  * @memberof Article
-  */
-
-  /**
   * style property - the style
   * @property style
   * @memberof Article

@@ -589,43 +589,6 @@ window.lunrData = {
           "simpl",
           "view"
         ],
-        "Presentation.Component.NotificationCenter.html": [
-          "center",
-          "class",
-          "compon",
-          "component.notificationcent",
-          "notfic",
-          "notificationcent",
-          "presentation.component.notificationcent"
-        ],
-        "Presentation.Component.Header.html": [
-          "class",
-          "compon",
-          "component.head",
-          "header",
-          "manag",
-          "presentation.component.head"
-        ],
-        "Presentation.Component.Header.html#.Header#title": [
-          "component.header.header#titl",
-          "header#titl",
-          "header.header#titl",
-          "lt;static&gt",
-          "member",
-          "presentation.component.header.header#titl",
-          "properti",
-          "titl"
-        ],
-        "Presentation.Component.Header.html#.Header#subTitle": [
-          "component.header.header#subtitl",
-          "header#subtitl",
-          "header.header#subtitl",
-          "lt;static&gt",
-          "member",
-          "presentation.component.header.header#subtitl",
-          "properti",
-          "subtitl"
-        ],
         "Presentation.Component.AlertDialogView.html": [
           "alert",
           "alertdialogview",
@@ -668,6 +631,13 @@ window.lunrData = {
           "simpl",
           "view"
         ],
+        "Presentation.Component.Footer.html": [
+          "class",
+          "compon",
+          "component.foot",
+          "footer",
+          "presentation.component.foot"
+        ],
         "Presentation.Component.AutomaticForm.html": [
           "automat",
           "automaticform",
@@ -680,15 +650,33 @@ window.lunrData = {
           "schema",
           "view"
         ],
-        "Presentation.Component.Augmented.Presentation.Component.Header.html": [
-          "augmented.presentation.component.head",
+        "Presentation.Component.Header.html": [
           "class",
           "compon",
-          "component.augmented.presentation.component.head",
           "component.head",
           "header",
-          "presentation.component.augmented.presentation.component.head",
+          "manag",
           "presentation.component.head"
+        ],
+        "Presentation.Component.Header.html#.Header#title": [
+          "component.header.header#titl",
+          "header#titl",
+          "header.header#titl",
+          "lt;static&gt",
+          "member",
+          "presentation.component.header.header#titl",
+          "properti",
+          "titl"
+        ],
+        "Presentation.Component.Header.html#.Header#subTitle": [
+          "component.header.header#subtitl",
+          "header#subtitl",
+          "header.header#subtitl",
+          "lt;static&gt",
+          "member",
+          "presentation.component.header.header#subtitl",
+          "properti",
+          "subtitl"
         ],
         "Augmented.Presentation.Component.HamburgerMenu.html": [
           "augmented.presentation.component.hamburgermenu",
@@ -699,6 +687,15 @@ window.lunrData = {
           "menu",
           "presentation.component.hamburgermenu",
           "view"
+        ],
+        "Presentation.Component.NotificationCenter.html": [
+          "center",
+          "class",
+          "compon",
+          "component.notificationcent",
+          "notfic",
+          "notificationcent",
+          "presentation.component.notificationcent"
         ],
         "Presentation.Component.AutomaticTable.html": [
           "automat",
@@ -1181,6 +1178,13 @@ window.lunrData = {
           "next",
           "present"
         ],
+        "Presentation.Component.html": [
+          "compon",
+          "larg",
+          "namespac",
+          "presentation.compon",
+          "ui"
+        ],
         "Presentation.Pagination.html": [
           "namespac",
           "pagin",
@@ -1213,13 +1217,6 @@ window.lunrData = {
           "request.configuration.xhrfields.withcredenti",
           "withcredenti",
           "xhrfields.withcredenti"
-        ],
-        "Presentation.Component.html": [
-          "compon",
-          "larg",
-          "namespac",
-          "presentation.compon",
-          "ui"
         ]
       },
       "length": 104
@@ -2130,20 +2127,6 @@ window.lunrData = {
                                                                           "docs": {},
                                                                           "h": {
                                                                             "docs": {},
-                                                                            "e": {
-                                                                              "docs": {},
-                                                                              "a": {
-                                                                                "docs": {},
-                                                                                "d": {
-                                                                                  "docs": {
-                                                                                    "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                                                                                      "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                                                                                      "tf": 50
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            },
                                                                             "a": {
                                                                               "docs": {},
                                                                               "m": {
@@ -5707,47 +5690,6 @@ window.lunrData = {
                                                                                                               }
                                                                                                             }
                                                                                                           }
-                                                                                                        },
-                                                                                                        "m": {
-                                                                                                          "docs": {},
-                                                                                                          "p": {
-                                                                                                            "docs": {},
-                                                                                                            "o": {
-                                                                                                              "docs": {},
-                                                                                                              "n": {
-                                                                                                                "docs": {},
-                                                                                                                "e": {
-                                                                                                                  "docs": {},
-                                                                                                                  "n": {
-                                                                                                                    "docs": {},
-                                                                                                                    "t": {
-                                                                                                                      "docs": {},
-                                                                                                                      ".": {
-                                                                                                                        "docs": {},
-                                                                                                                        "h": {
-                                                                                                                          "docs": {},
-                                                                                                                          "e": {
-                                                                                                                            "docs": {},
-                                                                                                                            "a": {
-                                                                                                                              "docs": {},
-                                                                                                                              "d": {
-                                                                                                                                "docs": {
-                                                                                                                                  "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                                                                                                                                    "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                                                                                                                                    "tf": 1050
-                                                                                                                                  }
-                                                                                                                                }
-                                                                                                                              }
-                                                                                                                            }
-                                                                                                                          }
-                                                                                                                        }
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
                                                                                                         }
                                                                                                       }
                                                                                                     }
@@ -5884,53 +5826,52 @@ window.lunrData = {
                                                           }
                                                         }
                                                       },
-                                                      "n": {
+                                                      "d": {
                                                         "docs": {},
-                                                        "o": {
+                                                        "i": {
                                                           "docs": {},
-                                                          "t": {
+                                                          "a": {
                                                             "docs": {},
-                                                            "i": {
+                                                            "l": {
                                                               "docs": {},
-                                                              "f": {
+                                                              "o": {
                                                                 "docs": {},
-                                                                "i": {
+                                                                "g": {
                                                                   "docs": {},
-                                                                  "c": {
+                                                                  "v": {
                                                                     "docs": {},
-                                                                    "a": {
+                                                                    "i": {
                                                                       "docs": {},
-                                                                      "t": {
+                                                                      "e": {
                                                                         "docs": {},
-                                                                        "i": {
-                                                                          "docs": {},
-                                                                          "o": {
-                                                                            "docs": {},
-                                                                            "n": {
-                                                                              "docs": {},
-                                                                              "c": {
-                                                                                "docs": {},
-                                                                                "e": {
-                                                                                  "docs": {},
-                                                                                  "n": {
-                                                                                    "docs": {},
-                                                                                    "t": {
-                                                                                      "docs": {
-                                                                                        "Presentation.Component.NotificationCenter.html": {
-                                                                                          "ref": "Presentation.Component.NotificationCenter.html",
-                                                                                          "tf": 1100
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
+                                                                        "w": {
+                                                                          "docs": {
+                                                                            "Presentation.Component.DialogView.html": {
+                                                                              "ref": "Presentation.Component.DialogView.html",
+                                                                              "tf": 1100
                                                                             }
                                                                           }
                                                                         }
                                                                       }
                                                                     }
                                                                   }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "f": {
+                                                        "docs": {},
+                                                        "o": {
+                                                          "docs": {},
+                                                          "o": {
+                                                            "docs": {},
+                                                            "t": {
+                                                              "docs": {
+                                                                "Presentation.Component.Footer.html": {
+                                                                  "ref": "Presentation.Component.Footer.html",
+                                                                  "tf": 1100
                                                                 }
                                                               }
                                                             }
@@ -5948,10 +5889,6 @@ window.lunrData = {
                                                                 "Presentation.Component.Header.html": {
                                                                   "ref": "Presentation.Component.Header.html",
                                                                   "tf": 1100
-                                                                },
-                                                                "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                                                                  "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                                                                  "tf": 50
                                                                 }
                                                               },
                                                               "e": {
@@ -6072,29 +6009,47 @@ window.lunrData = {
                                                           }
                                                         }
                                                       },
-                                                      "d": {
+                                                      "n": {
                                                         "docs": {},
-                                                        "i": {
+                                                        "o": {
                                                           "docs": {},
-                                                          "a": {
+                                                          "t": {
                                                             "docs": {},
-                                                            "l": {
+                                                            "i": {
                                                               "docs": {},
-                                                              "o": {
+                                                              "f": {
                                                                 "docs": {},
-                                                                "g": {
+                                                                "i": {
                                                                   "docs": {},
-                                                                  "v": {
+                                                                  "c": {
                                                                     "docs": {},
-                                                                    "i": {
+                                                                    "a": {
                                                                       "docs": {},
-                                                                      "e": {
+                                                                      "t": {
                                                                         "docs": {},
-                                                                        "w": {
-                                                                          "docs": {
-                                                                            "Presentation.Component.DialogView.html": {
-                                                                              "ref": "Presentation.Component.DialogView.html",
-                                                                              "tf": 1100
+                                                                        "i": {
+                                                                          "docs": {},
+                                                                          "o": {
+                                                                            "docs": {},
+                                                                            "n": {
+                                                                              "docs": {},
+                                                                              "c": {
+                                                                                "docs": {},
+                                                                                "e": {
+                                                                                  "docs": {},
+                                                                                  "n": {
+                                                                                    "docs": {},
+                                                                                    "t": {
+                                                                                      "docs": {
+                                                                                        "Presentation.Component.NotificationCenter.html": {
+                                                                                          "ref": "Presentation.Component.NotificationCenter.html",
+                                                                                          "tf": 1100
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
                                                                             }
                                                                           }
                                                                         }
@@ -10096,14 +10051,6 @@ window.lunrData = {
                       "ref": "Presentation.Component.Card.html",
                       "tf": 110
                     },
-                    "Presentation.Component.NotificationCenter.html": {
-                      "ref": "Presentation.Component.NotificationCenter.html",
-                      "tf": 110
-                    },
-                    "Presentation.Component.Header.html": {
-                      "ref": "Presentation.Component.Header.html",
-                      "tf": 110
-                    },
                     "Presentation.Component.AlertDialogView.html": {
                       "ref": "Presentation.Component.AlertDialogView.html",
                       "tf": 110
@@ -10116,16 +10063,24 @@ window.lunrData = {
                       "ref": "Presentation.Component.DialogView.html",
                       "tf": 110
                     },
+                    "Presentation.Component.Footer.html": {
+                      "ref": "Presentation.Component.Footer.html",
+                      "tf": 110
+                    },
                     "Presentation.Component.AutomaticForm.html": {
                       "ref": "Presentation.Component.AutomaticForm.html",
                       "tf": 110
                     },
-                    "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                      "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+                    "Presentation.Component.Header.html": {
+                      "ref": "Presentation.Component.Header.html",
                       "tf": 110
                     },
                     "Augmented.Presentation.Component.HamburgerMenu.html": {
                       "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
+                      "tf": 110
+                    },
+                    "Presentation.Component.NotificationCenter.html": {
+                      "ref": "Presentation.Component.NotificationCenter.html",
                       "tf": 110
                     },
                     "Presentation.Component.AutomaticTable.html": {
@@ -11397,17 +11352,17 @@ window.lunrData = {
                   "docs": {},
                   "n": {
                     "docs": {
-                      "Presentation.Component.NotificationCenter.html": {
-                        "ref": "Presentation.Component.NotificationCenter.html",
-                        "tf": 16.666666666666664
+                      "Presentation.Component.Footer.html": {
+                        "ref": "Presentation.Component.Footer.html",
+                        "tf": 25
                       },
                       "Presentation.Component.Header.html": {
                         "ref": "Presentation.Component.Header.html",
                         "tf": 25
                       },
-                      "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                        "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                        "tf": 25
+                      "Presentation.Component.NotificationCenter.html": {
+                        "ref": "Presentation.Component.NotificationCenter.html",
+                        "tf": 16.666666666666664
                       },
                       "Presentation.Component.AbstractToolbar.html": {
                         "ref": "Presentation.Component.AbstractToolbar.html",
@@ -11611,47 +11566,6 @@ window.lunrData = {
                                                                                     }
                                                                                   }
                                                                                 }
-                                                                              },
-                                                                              "m": {
-                                                                                "docs": {},
-                                                                                "p": {
-                                                                                  "docs": {},
-                                                                                  "o": {
-                                                                                    "docs": {},
-                                                                                    "n": {
-                                                                                      "docs": {},
-                                                                                      "e": {
-                                                                                        "docs": {},
-                                                                                        "n": {
-                                                                                          "docs": {},
-                                                                                          "t": {
-                                                                                            "docs": {},
-                                                                                            ".": {
-                                                                                              "docs": {},
-                                                                                              "h": {
-                                                                                                "docs": {},
-                                                                                                "e": {
-                                                                                                  "docs": {},
-                                                                                                  "a": {
-                                                                                                    "docs": {},
-                                                                                                    "d": {
-                                                                                                      "docs": {
-                                                                                                        "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                                                                                                          "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                                                                                                          "tf": 50
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
                                                                               }
                                                                             }
                                                                           }
@@ -11788,53 +11702,52 @@ window.lunrData = {
                                 }
                               }
                             },
-                            "n": {
+                            "d": {
                               "docs": {},
-                              "o": {
+                              "i": {
                                 "docs": {},
-                                "t": {
+                                "a": {
                                   "docs": {},
-                                  "i": {
+                                  "l": {
                                     "docs": {},
-                                    "f": {
+                                    "o": {
                                       "docs": {},
-                                      "i": {
+                                      "g": {
                                         "docs": {},
-                                        "c": {
+                                        "v": {
                                           "docs": {},
-                                          "a": {
+                                          "i": {
                                             "docs": {},
-                                            "t": {
+                                            "e": {
                                               "docs": {},
-                                              "i": {
-                                                "docs": {},
-                                                "o": {
-                                                  "docs": {},
-                                                  "n": {
-                                                    "docs": {},
-                                                    "c": {
-                                                      "docs": {},
-                                                      "e": {
-                                                        "docs": {},
-                                                        "n": {
-                                                          "docs": {},
-                                                          "t": {
-                                                            "docs": {
-                                                              "Presentation.Component.NotificationCenter.html": {
-                                                                "ref": "Presentation.Component.NotificationCenter.html",
-                                                                "tf": 200
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
+                                              "w": {
+                                                "docs": {
+                                                  "Presentation.Component.DialogView.html": {
+                                                    "ref": "Presentation.Component.DialogView.html",
+                                                    "tf": 200
                                                   }
                                                 }
                                               }
                                             }
                                           }
                                         }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "f": {
+                              "docs": {},
+                              "o": {
+                                "docs": {},
+                                "o": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {
+                                      "Presentation.Component.Footer.html": {
+                                        "ref": "Presentation.Component.Footer.html",
+                                        "tf": 200
                                       }
                                     }
                                   }
@@ -11852,10 +11765,6 @@ window.lunrData = {
                                       "Presentation.Component.Header.html": {
                                         "ref": "Presentation.Component.Header.html",
                                         "tf": 200
-                                      },
-                                      "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                                        "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                                        "tf": 50
                                       }
                                     },
                                     "e": {
@@ -11976,29 +11885,47 @@ window.lunrData = {
                                 }
                               }
                             },
-                            "d": {
+                            "n": {
                               "docs": {},
-                              "i": {
+                              "o": {
                                 "docs": {},
-                                "a": {
+                                "t": {
                                   "docs": {},
-                                  "l": {
+                                  "i": {
                                     "docs": {},
-                                    "o": {
+                                    "f": {
                                       "docs": {},
-                                      "g": {
+                                      "i": {
                                         "docs": {},
-                                        "v": {
+                                        "c": {
                                           "docs": {},
-                                          "i": {
+                                          "a": {
                                             "docs": {},
-                                            "e": {
+                                            "t": {
                                               "docs": {},
-                                              "w": {
-                                                "docs": {
-                                                  "Presentation.Component.DialogView.html": {
-                                                    "ref": "Presentation.Component.DialogView.html",
-                                                    "tf": 200
+                                              "i": {
+                                                "docs": {},
+                                                "o": {
+                                                  "docs": {},
+                                                  "n": {
+                                                    "docs": {},
+                                                    "c": {
+                                                      "docs": {},
+                                                      "e": {
+                                                        "docs": {},
+                                                        "n": {
+                                                          "docs": {},
+                                                          "t": {
+                                                            "docs": {
+                                                              "Presentation.Component.NotificationCenter.html": {
+                                                                "ref": "Presentation.Component.NotificationCenter.html",
+                                                                "tf": 200
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
                                                   }
                                                 }
                                               }
@@ -12403,26 +12330,6 @@ window.lunrData = {
               }
             }
           },
-          "e": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "Presentation.Component.NotificationCenter.html": {
-                        "ref": "Presentation.Component.NotificationCenter.html",
-                        "tf": 16.666666666666664
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "u": {
             "docs": {},
             "s": {
@@ -12451,6 +12358,26 @@ window.lunrData = {
                             "tf": 0.8333333333333334
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "Presentation.Component.NotificationCenter.html": {
+                        "ref": "Presentation.Component.NotificationCenter.html",
+                        "tf": 16.666666666666664
                       }
                     }
                   }
@@ -13235,16 +13162,16 @@ window.lunrData = {
                             "ref": "list_namespace.html",
                             "tf": 635
                           },
+                          "Presentation.Component.html": {
+                            "ref": "Presentation.Component.html",
+                            "tf": 110
+                          },
                           "Presentation.Pagination.html": {
                             "ref": "Presentation.Pagination.html",
                             "tf": 110
                           },
                           "Augmented.Request.Configuration.xhrFields.html": {
                             "ref": "Augmented.Request.Configuration.xhrFields.html",
-                            "tf": 110
-                          },
-                          "Presentation.Component.html": {
-                            "ref": "Presentation.Component.html",
                             "tf": 110
                           }
                         }
@@ -13854,10 +13781,6 @@ window.lunrData = {
                       "Presentation.Component.Header.html": {
                         "ref": "Presentation.Component.Header.html",
                         "tf": 600
-                      },
-                      "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                        "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                        "tf": 675
                       }
                     },
                     "#": {
@@ -15332,6 +15255,23 @@ window.lunrData = {
                   }
                 }
               }
+            },
+            "o": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "Presentation.Component.Footer.html": {
+                        "ref": "Presentation.Component.Footer.html",
+                        "tf": 625
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "r": {
@@ -16227,7 +16167,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 986
+      "length": 1004
     },
     "corpusTokens": [
       "10",
@@ -16261,7 +16201,6 @@ window.lunrData = {
       "augmented.presentation.bigdatat",
       "augmented.presentation.bigdatatableinst",
       "augmented.presentation.component.hamburgermenu",
-      "augmented.presentation.component.head",
       "augmented.presentation.component.toolbar",
       "augmented.presentation.component.toolbar.rend",
       "augmented.presentation.confirmationdialogview",
@@ -16344,12 +16283,12 @@ window.lunrData = {
       "component.abstracttoolbar",
       "component.alertdialogview",
       "component.articl",
-      "component.augmented.presentation.component.head",
       "component.augmented.presentation.confirmationdialogview",
       "component.automaticform",
       "component.automatict",
       "component.card",
       "component.dialogview",
+      "component.foot",
       "component.hamburgermenu",
       "component.head",
       "component.header.header#subtitl",
@@ -16438,6 +16377,7 @@ window.lunrData = {
       "faux",
       "field",
       "fire",
+      "footer",
       "form",
       "format",
       "fragment",
@@ -16580,12 +16520,12 @@ window.lunrData = {
       "presentation.component.abstracttoolbar",
       "presentation.component.alertdialogview",
       "presentation.component.articl",
-      "presentation.component.augmented.presentation.component.head",
       "presentation.component.augmented.presentation.confirmationdialogview",
       "presentation.component.automaticform",
       "presentation.component.automatict",
       "presentation.component.card",
       "presentation.component.dialogview",
+      "presentation.component.foot",
       "presentation.component.hamburgermenu",
       "presentation.component.head",
       "presentation.component.header.header#subtitl",
@@ -17317,48 +17257,6 @@ window.lunrData = {
       "description": "A card view - simple panel/dialog-like panel",
       "body": ""
     },
-    "Presentation.Component.NotificationCenter.html": {
-      "id": "Presentation.Component.NotificationCenter.html",
-      "kind": "class",
-      "title": ".Component.NotificationCenter",
-      "longname": "Presentation.Component.NotificationCenter",
-      "name": "NotificationCenter",
-      "tags": "Presentation.Component.NotificationCenter Component.NotificationCenter NotificationCenter",
-      "summary": "",
-      "description": "A Notfication Center Component",
-      "body": ""
-    },
-    "Presentation.Component.Header.html": {
-      "id": "Presentation.Component.Header.html",
-      "kind": "class",
-      "title": ".Component.Header",
-      "longname": "Presentation.Component.Header",
-      "name": "Header",
-      "tags": "Presentation.Component.Header Component.Header Header",
-      "summary": "",
-      "description": "A Component Manager",
-      "body": ""
-    },
-    "Presentation.Component.Header.html#.Header#title": {
-      "id": "Presentation.Component.Header.html#.Header#title",
-      "kind": "member",
-      "title": "&lt;static&gt; Header#title",
-      "longname": "Presentation.Component.Header.Header#title",
-      "name": "Header#title",
-      "tags": "Presentation.Component.Header.Header#title Component.Header.Header#title Header.Header#title Header#title title",
-      "summary": "",
-      "description": "A title property"
-    },
-    "Presentation.Component.Header.html#.Header#subTitle": {
-      "id": "Presentation.Component.Header.html#.Header#subTitle",
-      "kind": "member",
-      "title": "&lt;static&gt; Header#subTitle",
-      "longname": "Presentation.Component.Header.Header#subTitle",
-      "name": "Header#subTitle",
-      "tags": "Presentation.Component.Header.Header#subTitle Component.Header.Header#subTitle Header.Header#subTitle Header#subTitle subTitle",
-      "summary": "",
-      "description": "A subTitle property"
-    },
     "Presentation.Component.AlertDialogView.html": {
       "id": "Presentation.Component.AlertDialogView.html",
       "kind": "class",
@@ -17392,6 +17290,17 @@ window.lunrData = {
       "description": "A automatic dialog view - creates a dialog with simple configurations to customize",
       "body": ""
     },
+    "Presentation.Component.Footer.html": {
+      "id": "Presentation.Component.Footer.html",
+      "kind": "class",
+      "title": ".Component.Footer",
+      "longname": "Presentation.Component.Footer",
+      "name": "Footer",
+      "tags": "Presentation.Component.Footer Component.Footer Footer",
+      "summary": "",
+      "description": "A Footer Component",
+      "body": ""
+    },
     "Presentation.Component.AutomaticForm.html": {
       "id": "Presentation.Component.AutomaticForm.html",
       "kind": "class",
@@ -17403,16 +17312,36 @@ window.lunrData = {
       "description": "A automatic form view created from a JSON Schema",
       "body": ""
     },
-    "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-      "id": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+    "Presentation.Component.Header.html": {
+      "id": "Presentation.Component.Header.html",
       "kind": "class",
-      "title": "Header",
-      "longname": "Presentation.Component.Augmented.Presentation.Component.Header",
+      "title": ".Component.Header",
+      "longname": "Presentation.Component.Header",
       "name": "Header",
-      "tags": "Presentation.Component.Augmented.Presentation.Component.Header Component.Augmented.Presentation.Component.Header Augmented.Presentation.Component.Header Presentation.Component.Header Component.Header Header",
+      "tags": "Presentation.Component.Header Component.Header Header",
       "summary": "",
-      "description": "A Header Component",
+      "description": "A Component Manager",
       "body": ""
+    },
+    "Presentation.Component.Header.html#.Header#title": {
+      "id": "Presentation.Component.Header.html#.Header#title",
+      "kind": "member",
+      "title": "&lt;static&gt; Header#title",
+      "longname": "Presentation.Component.Header.Header#title",
+      "name": "Header#title",
+      "tags": "Presentation.Component.Header.Header#title Component.Header.Header#title Header.Header#title Header#title title",
+      "summary": "",
+      "description": "A title property"
+    },
+    "Presentation.Component.Header.html#.Header#subTitle": {
+      "id": "Presentation.Component.Header.html#.Header#subTitle",
+      "kind": "member",
+      "title": "&lt;static&gt; Header#subTitle",
+      "longname": "Presentation.Component.Header.Header#subTitle",
+      "name": "Header#subTitle",
+      "tags": "Presentation.Component.Header.Header#subTitle Component.Header.Header#subTitle Header.Header#subTitle Header#subTitle subTitle",
+      "summary": "",
+      "description": "A subTitle property"
     },
     "Augmented.Presentation.Component.HamburgerMenu.html": {
       "id": "Augmented.Presentation.Component.HamburgerMenu.html",
@@ -17423,6 +17352,17 @@ window.lunrData = {
       "tags": "Augmented.Presentation.Component.HamburgerMenu Presentation.Component.HamburgerMenu Component.HamburgerMenu HamburgerMenu",
       "summary": "",
       "description": "A Hamburger Menu View",
+      "body": ""
+    },
+    "Presentation.Component.NotificationCenter.html": {
+      "id": "Presentation.Component.NotificationCenter.html",
+      "kind": "class",
+      "title": ".Component.NotificationCenter",
+      "longname": "Presentation.Component.NotificationCenter",
+      "name": "NotificationCenter",
+      "tags": "Presentation.Component.NotificationCenter Component.NotificationCenter NotificationCenter",
+      "summary": "",
+      "description": "A Notfication Center Component",
       "body": ""
     },
     "Presentation.Component.AutomaticTable.html": {
@@ -17810,6 +17750,17 @@ window.lunrData = {
       "description": "Augmented.js Next Presentation - The Presentation Component",
       "body": ""
     },
+    "Presentation.Component.html": {
+      "id": "Presentation.Component.html",
+      "kind": "namespace",
+      "title": "Component",
+      "longname": "Presentation.Component",
+      "name": "Component",
+      "tags": "Presentation.Component Component",
+      "summary": "",
+      "description": "Component - Large UI Components",
+      "body": ""
+    },
     "Presentation.Pagination.html": {
       "id": "Presentation.Pagination.html",
       "kind": "namespace",
@@ -17851,17 +17802,6 @@ window.lunrData = {
       "tags": "Augmented.Request.Configuration.xhrFields.withCredentials Request.Configuration.xhrFields.withCredentials Configuration.xhrFields.withCredentials xhrFields.withCredentials withCredentials",
       "summary": "",
       "description": "withCredentials property"
-    },
-    "Presentation.Component.html": {
-      "id": "Presentation.Component.html",
-      "kind": "namespace",
-      "title": "Component",
-      "longname": "Presentation.Component",
-      "name": "Component",
-      "tags": "Presentation.Component Component",
-      "summary": "",
-      "description": "Component - Large UI Components",
-      "body": ""
     }
   }
 };

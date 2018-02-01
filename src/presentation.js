@@ -23,8 +23,11 @@ import Mediator from "./view/pubsub/mediator.js";
 import DecoratorView from "./view/decorator/decorator.js";
 
 // Components
-import * as Component from "./view/component/component.js";
+import NotificationCenter from "./view/component/notification/notification.js";
+import Manager from "./view/component/manager/manager.js";
 import Header from "./view/component/header/header.js";
+import Footer from "./view/component/footer/footer.js";
+
 import Card from "./view/component/card/card.js";
 import Article from "./view/component/article/article.js";
 import AbstractToolbar from "./view/component/toolbar/abstractToolbar.js";
@@ -46,7 +49,7 @@ import PaginationFactory from "./pagination/factory.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.22
+ * @version 2.0.0-alpha.23
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -83,7 +86,13 @@ Presentation.Colleague = Colleague;
 Presentation.Mediator = Mediator;
 Presentation.DecoratorView = DecoratorView;
 
-Presentation.Component = Component;
+/**
+ * Component - Large UI Components
+ * @namespace Presentation.Component
+ * @memberof Presentation
+ */
+
+Presentation.Component = {};
 Presentation.Component.AbstractToolbar = AbstractToolbar;
 Presentation.Component.Toolbar = Toolbar;
 Presentation.Component.HamburgerMenu = HamburgerMenu;
@@ -93,8 +102,11 @@ Presentation.Component.AlertDialogView = AlertDialogView;
 Presentation.Component.AutomaticTable = AutomaticTable;
 Presentation.Component.AutomaticForm = AutomaticForm;
 Presentation.Component.Header = Header;
+Presentation.Component.Fotter = Footer;
 Presentation.Component.Card = Card;
 Presentation.Component.Article = Article;
+Presentation.Component.Manager = Manager;
+Presentation.Component.NotificationCenter = NotificationCenter;
 
 Presentation.sync = sync;
 Presentation.request = request;
