@@ -569,15 +569,25 @@
           "presentation.abstractview",
           "view"
         ],
-        "Presentation.Component.Augmented.Presentation.Component.Header.html": [
-          "augmented.presentation.component.head",
+        "Presentation.Component.Article.html": [
+          "artcil",
+          "articl",
           "class",
-          "compon",
-          "component.augmented.presentation.component.head",
-          "component.head",
-          "header",
-          "presentation.component.augmented.presentation.component.head",
-          "presentation.component.head"
+          "component.articl",
+          "page",
+          "presentation.component.articl",
+          "set",
+          "up"
+        ],
+        "Presentation.Component.Card.html": [
+          "card",
+          "class",
+          "component.card",
+          "panel",
+          "panel/dialog",
+          "presentation.component.card",
+          "simpl",
+          "view"
         ],
         "Presentation.Component.NotificationCenter.html": [
           "center",
@@ -595,6 +605,26 @@
           "header",
           "manag",
           "presentation.component.head"
+        ],
+        "Presentation.Component.Header.html#.Header#title": [
+          "component.header.header#titl",
+          "header#titl",
+          "header.header#titl",
+          "lt;static&gt",
+          "member",
+          "presentation.component.header.header#titl",
+          "properti",
+          "titl"
+        ],
+        "Presentation.Component.Header.html#.Header#subTitle": [
+          "component.header.header#subtitl",
+          "header#subtitl",
+          "header.header#subtitl",
+          "lt;static&gt",
+          "member",
+          "presentation.component.header.header#subtitl",
+          "properti",
+          "subtitl"
         ],
         "Presentation.Component.AlertDialogView.html": [
           "alert",
@@ -648,6 +678,26 @@
           "json",
           "presentation.component.automaticform",
           "schema",
+          "view"
+        ],
+        "Presentation.Component.Augmented.Presentation.Component.Header.html": [
+          "augmented.presentation.component.head",
+          "class",
+          "compon",
+          "component.augmented.presentation.component.head",
+          "component.head",
+          "header",
+          "presentation.component.augmented.presentation.component.head",
+          "presentation.component.head"
+        ],
+        "Augmented.Presentation.Component.HamburgerMenu.html": [
+          "augmented.presentation.component.hamburgermenu",
+          "class",
+          "component.hamburgermenu",
+          "hamburg",
+          "hamburgermenu",
+          "menu",
+          "presentation.component.hamburgermenu",
           "view"
         ],
         "Presentation.Component.AutomaticTable.html": [
@@ -1123,16 +1173,6 @@
           "widget",
           "widget.input"
         ],
-        "Augmented.Presentation.Component.HamburgerMenu.html": [
-          "augmented.presentation.component.hamburgermenu",
-          "class",
-          "component.hamburgermenu",
-          "hamburg",
-          "hamburgermenu",
-          "menu",
-          "presentation.component.hamburgermenu",
-          "view"
-        ],
         "module-Presentation.html": [
           "augmented.j",
           "compon",
@@ -1182,7 +1222,7 @@
           "ui"
         ]
       },
-      "length": 100
+      "length": 104
     },
     "tokenStore": {
       "root": {
@@ -2007,6 +2047,71 @@
                                                         "docs": {},
                                                         "o": {
                                                           "docs": {},
+                                                          "n": {
+                                                            "docs": {},
+                                                            "f": {
+                                                              "docs": {},
+                                                              "i": {
+                                                                "docs": {},
+                                                                "r": {
+                                                                  "docs": {},
+                                                                  "m": {
+                                                                    "docs": {},
+                                                                    "a": {
+                                                                      "docs": {},
+                                                                      "t": {
+                                                                        "docs": {},
+                                                                        "i": {
+                                                                          "docs": {},
+                                                                          "o": {
+                                                                            "docs": {},
+                                                                            "n": {
+                                                                              "docs": {},
+                                                                              "d": {
+                                                                                "docs": {},
+                                                                                "i": {
+                                                                                  "docs": {},
+                                                                                  "a": {
+                                                                                    "docs": {},
+                                                                                    "l": {
+                                                                                      "docs": {},
+                                                                                      "o": {
+                                                                                        "docs": {},
+                                                                                        "g": {
+                                                                                          "docs": {},
+                                                                                          "v": {
+                                                                                            "docs": {},
+                                                                                            "i": {
+                                                                                              "docs": {},
+                                                                                              "e": {
+                                                                                                "docs": {},
+                                                                                                "w": {
+                                                                                                  "docs": {
+                                                                                                    "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                                                                                                      "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                                                                                                      "tf": 60
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          },
                                                           "m": {
                                                             "docs": {},
                                                             "p": {
@@ -2113,71 +2218,6 @@
                                                                                                     "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
                                                                                                       "ref": "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar",
                                                                                                       "tf": 353.3333333333333
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          },
-                                                          "n": {
-                                                            "docs": {},
-                                                            "f": {
-                                                              "docs": {},
-                                                              "i": {
-                                                                "docs": {},
-                                                                "r": {
-                                                                  "docs": {},
-                                                                  "m": {
-                                                                    "docs": {},
-                                                                    "a": {
-                                                                      "docs": {},
-                                                                      "t": {
-                                                                        "docs": {},
-                                                                        "i": {
-                                                                          "docs": {},
-                                                                          "o": {
-                                                                            "docs": {},
-                                                                            "n": {
-                                                                              "docs": {},
-                                                                              "d": {
-                                                                                "docs": {},
-                                                                                "i": {
-                                                                                  "docs": {},
-                                                                                  "a": {
-                                                                                    "docs": {},
-                                                                                    "l": {
-                                                                                      "docs": {},
-                                                                                      "o": {
-                                                                                        "docs": {},
-                                                                                        "g": {
-                                                                                          "docs": {},
-                                                                                          "v": {
-                                                                                            "docs": {},
-                                                                                            "i": {
-                                                                                              "docs": {},
-                                                                                              "e": {
-                                                                                                "docs": {},
-                                                                                                "w": {
-                                                                                                  "docs": {
-                                                                                                    "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
-                                                                                                      "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
-                                                                                                      "tf": 60
                                                                                                     }
                                                                                                   }
                                                                                                 }
@@ -3016,6 +3056,37 @@
                             "tf": 2.941176470588235
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "Presentation.Component.Article.html": {
+                        "ref": "Presentation.Component.Article.html",
+                        "tf": 10
+                      }
+                    }
+                  }
+                }
+              },
+              "i": {
+                "docs": {},
+                "c": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "Presentation.Component.Article.html": {
+                        "ref": "Presentation.Component.Article.html",
+                        "tf": 600
                       }
                     }
                   }
@@ -5019,6 +5090,14 @@
                         "ref": "Augmented.Request.Configuration.html#.mock",
                         "tf": 110
                       },
+                      "Presentation.Component.Header.html#.Header#title": {
+                        "ref": "Presentation.Component.Header.html#.Header#title",
+                        "tf": 110
+                      },
+                      "Presentation.Component.Header.html#.Header#subTitle": {
+                        "ref": "Presentation.Component.Header.html#.Header#subTitle",
+                        "tf": 110
+                      },
                       "Presentation.Pagination.html#.PAGINATION_API_TYPE": {
                         "ref": "Presentation.Pagination.html#.PAGINATION_API_TYPE",
                         "tf": 110
@@ -5449,6 +5528,73 @@
                                                       "docs": {},
                                                       "a": {
                                                         "docs": {},
+                                                        "r": {
+                                                          "docs": {},
+                                                          "t": {
+                                                            "docs": {},
+                                                            "i": {
+                                                              "docs": {},
+                                                              "c": {
+                                                                "docs": {},
+                                                                "l": {
+                                                                  "docs": {
+                                                                    "Presentation.Component.Article.html": {
+                                                                      "ref": "Presentation.Component.Article.html",
+                                                                      "tf": 1100
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "l": {
+                                                          "docs": {},
+                                                          "e": {
+                                                            "docs": {},
+                                                            "r": {
+                                                              "docs": {},
+                                                              "t": {
+                                                                "docs": {},
+                                                                "d": {
+                                                                  "docs": {},
+                                                                  "i": {
+                                                                    "docs": {},
+                                                                    "a": {
+                                                                      "docs": {},
+                                                                      "l": {
+                                                                        "docs": {},
+                                                                        "o": {
+                                                                          "docs": {},
+                                                                          "g": {
+                                                                            "docs": {},
+                                                                            "v": {
+                                                                              "docs": {},
+                                                                              "i": {
+                                                                                "docs": {},
+                                                                                "e": {
+                                                                                  "docs": {},
+                                                                                  "w": {
+                                                                                    "docs": {
+                                                                                      "Presentation.Component.AlertDialogView.html": {
+                                                                                        "ref": "Presentation.Component.AlertDialogView.html",
+                                                                                        "tf": 1100
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
                                                         "u": {
                                                           "docs": {},
                                                           "g": {
@@ -5497,47 +5643,6 @@
                                                                                                       "docs": {},
                                                                                                       "o": {
                                                                                                         "docs": {},
-                                                                                                        "m": {
-                                                                                                          "docs": {},
-                                                                                                          "p": {
-                                                                                                            "docs": {},
-                                                                                                            "o": {
-                                                                                                              "docs": {},
-                                                                                                              "n": {
-                                                                                                                "docs": {},
-                                                                                                                "e": {
-                                                                                                                  "docs": {},
-                                                                                                                  "n": {
-                                                                                                                    "docs": {},
-                                                                                                                    "t": {
-                                                                                                                      "docs": {},
-                                                                                                                      ".": {
-                                                                                                                        "docs": {},
-                                                                                                                        "h": {
-                                                                                                                          "docs": {},
-                                                                                                                          "e": {
-                                                                                                                            "docs": {},
-                                                                                                                            "a": {
-                                                                                                                              "docs": {},
-                                                                                                                              "d": {
-                                                                                                                                "docs": {
-                                                                                                                                  "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                                                                                                                                    "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                                                                                                                                    "tf": 1050
-                                                                                                                                  }
-                                                                                                                                }
-                                                                                                                              }
-                                                                                                                            }
-                                                                                                                          }
-                                                                                                                        }
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        },
                                                                                                         "n": {
                                                                                                           "docs": {},
                                                                                                           "f": {
@@ -5589,6 +5694,47 @@
                                                                                                                                         }
                                                                                                                                       }
                                                                                                                                     }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        },
+                                                                                                        "m": {
+                                                                                                          "docs": {},
+                                                                                                          "p": {
+                                                                                                            "docs": {},
+                                                                                                            "o": {
+                                                                                                              "docs": {},
+                                                                                                              "n": {
+                                                                                                                "docs": {},
+                                                                                                                "e": {
+                                                                                                                  "docs": {},
+                                                                                                                  "n": {
+                                                                                                                    "docs": {},
+                                                                                                                    "t": {
+                                                                                                                      "docs": {},
+                                                                                                                      ".": {
+                                                                                                                        "docs": {},
+                                                                                                                        "h": {
+                                                                                                                          "docs": {},
+                                                                                                                          "e": {
+                                                                                                                            "docs": {},
+                                                                                                                            "a": {
+                                                                                                                              "docs": {},
+                                                                                                                              "d": {
+                                                                                                                                "docs": {
+                                                                                                                                  "Presentation.Component.Augmented.Presentation.Component.Header.html": {
+                                                                                                                                    "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+                                                                                                                                    "tf": 1050
                                                                                                                                   }
                                                                                                                                 }
                                                                                                                               }
@@ -5673,53 +5819,6 @@
                                                             }
                                                           }
                                                         },
-                                                        "l": {
-                                                          "docs": {},
-                                                          "e": {
-                                                            "docs": {},
-                                                            "r": {
-                                                              "docs": {},
-                                                              "t": {
-                                                                "docs": {},
-                                                                "d": {
-                                                                  "docs": {},
-                                                                  "i": {
-                                                                    "docs": {},
-                                                                    "a": {
-                                                                      "docs": {},
-                                                                      "l": {
-                                                                        "docs": {},
-                                                                        "o": {
-                                                                          "docs": {},
-                                                                          "g": {
-                                                                            "docs": {},
-                                                                            "v": {
-                                                                              "docs": {},
-                                                                              "i": {
-                                                                                "docs": {},
-                                                                                "e": {
-                                                                                  "docs": {},
-                                                                                  "w": {
-                                                                                    "docs": {
-                                                                                      "Presentation.Component.AlertDialogView.html": {
-                                                                                        "ref": "Presentation.Component.AlertDialogView.html",
-                                                                                        "tf": 1100
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
                                                         "b": {
                                                           "docs": {},
                                                           "s": {
@@ -5768,62 +5867,17 @@
                                                           }
                                                         }
                                                       },
-                                                      "h": {
+                                                      "c": {
                                                         "docs": {},
-                                                        "e": {
+                                                        "a": {
                                                           "docs": {},
-                                                          "a": {
+                                                          "r": {
                                                             "docs": {},
                                                             "d": {
                                                               "docs": {
-                                                                "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                                                                  "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                                                                  "tf": 50
-                                                                },
-                                                                "Presentation.Component.Header.html": {
-                                                                  "ref": "Presentation.Component.Header.html",
+                                                                "Presentation.Component.Card.html": {
+                                                                  "ref": "Presentation.Component.Card.html",
                                                                   "tf": 1100
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "a": {
-                                                          "docs": {},
-                                                          "m": {
-                                                            "docs": {},
-                                                            "b": {
-                                                              "docs": {},
-                                                              "u": {
-                                                                "docs": {},
-                                                                "r": {
-                                                                  "docs": {},
-                                                                  "g": {
-                                                                    "docs": {},
-                                                                    "e": {
-                                                                      "docs": {},
-                                                                      "r": {
-                                                                        "docs": {},
-                                                                        "m": {
-                                                                          "docs": {},
-                                                                          "e": {
-                                                                            "docs": {},
-                                                                            "n": {
-                                                                              "docs": {},
-                                                                              "u": {
-                                                                                "docs": {
-                                                                                  "Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
-                                                                                    "tf": 75
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
                                                                 }
                                                               }
                                                             }
@@ -5868,6 +5922,141 @@
                                                                                         }
                                                                                       }
                                                                                     }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "h": {
+                                                        "docs": {},
+                                                        "e": {
+                                                          "docs": {},
+                                                          "a": {
+                                                            "docs": {},
+                                                            "d": {
+                                                              "docs": {
+                                                                "Presentation.Component.Header.html": {
+                                                                  "ref": "Presentation.Component.Header.html",
+                                                                  "tf": 1100
+                                                                },
+                                                                "Presentation.Component.Augmented.Presentation.Component.Header.html": {
+                                                                  "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+                                                                  "tf": 50
+                                                                }
+                                                              },
+                                                              "e": {
+                                                                "docs": {},
+                                                                "r": {
+                                                                  "docs": {},
+                                                                  ".": {
+                                                                    "docs": {},
+                                                                    "h": {
+                                                                      "docs": {},
+                                                                      "e": {
+                                                                        "docs": {},
+                                                                        "a": {
+                                                                          "docs": {},
+                                                                          "d": {
+                                                                            "docs": {},
+                                                                            "e": {
+                                                                              "docs": {},
+                                                                              "r": {
+                                                                                "docs": {},
+                                                                                "#": {
+                                                                                  "docs": {},
+                                                                                  "t": {
+                                                                                    "docs": {},
+                                                                                    "i": {
+                                                                                      "docs": {},
+                                                                                      "t": {
+                                                                                        "docs": {},
+                                                                                        "l": {
+                                                                                          "docs": {
+                                                                                            "Presentation.Component.Header.html#.Header#title": {
+                                                                                              "ref": "Presentation.Component.Header.html#.Header#title",
+                                                                                              "tf": 1060
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  },
+                                                                                  "s": {
+                                                                                    "docs": {},
+                                                                                    "u": {
+                                                                                      "docs": {},
+                                                                                      "b": {
+                                                                                        "docs": {},
+                                                                                        "t": {
+                                                                                          "docs": {},
+                                                                                          "i": {
+                                                                                            "docs": {},
+                                                                                            "t": {
+                                                                                              "docs": {},
+                                                                                              "l": {
+                                                                                                "docs": {
+                                                                                                  "Presentation.Component.Header.html#.Header#subTitle": {
+                                                                                                    "ref": "Presentation.Component.Header.html#.Header#subTitle",
+                                                                                                    "tf": 1060
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "a": {
+                                                          "docs": {},
+                                                          "m": {
+                                                            "docs": {},
+                                                            "b": {
+                                                              "docs": {},
+                                                              "u": {
+                                                                "docs": {},
+                                                                "r": {
+                                                                  "docs": {},
+                                                                  "g": {
+                                                                    "docs": {},
+                                                                    "e": {
+                                                                      "docs": {},
+                                                                      "r": {
+                                                                        "docs": {},
+                                                                        "m": {
+                                                                          "docs": {},
+                                                                          "e": {
+                                                                            "docs": {},
+                                                                            "n": {
+                                                                              "docs": {},
+                                                                              "u": {
+                                                                                "docs": {
+                                                                                  "Augmented.Presentation.Component.HamburgerMenu.html": {
+                                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
+                                                                                    "tf": 75
                                                                                   }
                                                                                 }
                                                                               }
@@ -7756,6 +7945,14 @@
                             "ref": "Augmented.Request.Configuration.html#.headers",
                             "tf": 25
                           },
+                          "Presentation.Component.Header.html#.Header#title": {
+                            "ref": "Presentation.Component.Header.html#.Header#title",
+                            "tf": 25
+                          },
+                          "Presentation.Component.Header.html#.Header#subTitle": {
+                            "ref": "Presentation.Component.Header.html#.Header#subTitle",
+                            "tf": 25
+                          },
                           "Augmented.Request.Configuration.xhrFields.html": {
                             "ref": "Augmented.Request.Configuration.xhrFields.html",
                             "tf": 25
@@ -8004,6 +8201,14 @@
                     }
                   }
                 }
+              },
+              "e": {
+                "docs": {
+                  "Presentation.Component.Article.html": {
+                    "ref": "Presentation.Component.Article.html",
+                    "tf": 10
+                  }
+                }
               }
             },
             "s": {
@@ -8026,6 +8231,46 @@
                           "Augmented.Request.Configuration.html#.password": {
                             "ref": "Augmented.Request.Configuration.html#.password",
                             "tf": 650
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Presentation.Component.Card.html": {
+                      "ref": "Presentation.Component.Card.html",
+                      "tf": 10
+                    }
+                  },
+                  "/": {
+                    "docs": {},
+                    "d": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "l": {
+                            "docs": {},
+                            "o": {
+                              "docs": {},
+                              "g": {
+                                "docs": {
+                                  "Presentation.Component.Card.html": {
+                                    "ref": "Presentation.Component.Card.html",
+                                    "tf": 10
+                                  }
+                                }
+                              }
+                            }
                           }
                         }
                       }
@@ -9082,6 +9327,10 @@
                       "ref": "index.html",
                       "tf": 10
                     },
+                    "Presentation.Component.Card.html": {
+                      "ref": "Presentation.Component.Card.html",
+                      "tf": 10
+                    },
                     "Presentation.Component.DialogView.html": {
                       "ref": "Presentation.Component.DialogView.html",
                       "tf": 6.25
@@ -9286,6 +9535,10 @@
                   "ref": "Presentation.Router.html",
                   "tf": 5.88235294117647
                 },
+                "Presentation.Component.Article.html": {
+                  "ref": "Presentation.Component.Article.html",
+                  "tf": 10
+                },
                 "Presentation.Colleague.html#.delegateEvents": {
                   "ref": "Presentation.Colleague.html#.delegateEvents",
                   "tf": 12.5
@@ -9472,6 +9725,23 @@
             },
             "b": {
               "docs": {},
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "t": {
+                    "docs": {},
+                    "l": {
+                      "docs": {
+                        "Presentation.Component.Header.html#.Header#subTitle": {
+                          "ref": "Presentation.Component.Header.html#.Header#subTitle",
+                          "tf": 85
+                        }
+                      }
+                    }
+                  }
+                }
+              },
               "s": {
                 "docs": {},
                 "c": {
@@ -9818,8 +10088,12 @@
                       "ref": "Presentation.AbstractView.html",
                       "tf": 110
                     },
-                    "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                      "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+                    "Presentation.Component.Article.html": {
+                      "ref": "Presentation.Component.Article.html",
+                      "tf": 120
+                    },
+                    "Presentation.Component.Card.html": {
+                      "ref": "Presentation.Component.Card.html",
                       "tf": 110
                     },
                     "Presentation.Component.NotificationCenter.html": {
@@ -9844,6 +10118,14 @@
                     },
                     "Presentation.Component.AutomaticForm.html": {
                       "ref": "Presentation.Component.AutomaticForm.html",
+                      "tf": 110
+                    },
+                    "Presentation.Component.Augmented.Presentation.Component.Header.html": {
+                      "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+                      "tf": 110
+                    },
+                    "Augmented.Presentation.Component.HamburgerMenu.html": {
+                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                       "tf": 110
                     },
                     "Presentation.Component.AutomaticTable.html": {
@@ -9900,10 +10182,6 @@
                     },
                     "Presentation.Widget.html": {
                       "ref": "Presentation.Widget.html",
-                      "tf": 110
-                    },
-                    "Augmented.Presentation.Component.HamburgerMenu.html": {
-                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                       "tf": 110
                     }
                   }
@@ -11119,16 +11397,16 @@
                   "docs": {},
                   "n": {
                     "docs": {
-                      "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                        "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                        "tf": 25
-                      },
                       "Presentation.Component.NotificationCenter.html": {
                         "ref": "Presentation.Component.NotificationCenter.html",
                         "tf": 16.666666666666664
                       },
                       "Presentation.Component.Header.html": {
                         "ref": "Presentation.Component.Header.html",
+                        "tf": 25
+                      },
+                      "Presentation.Component.Augmented.Presentation.Component.Header.html": {
+                        "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
                         "tf": 25
                       },
                       "Presentation.Component.AbstractToolbar.html": {
@@ -11154,6 +11432,73 @@
                             "docs": {},
                             "a": {
                               "docs": {},
+                              "r": {
+                                "docs": {},
+                                "t": {
+                                  "docs": {},
+                                  "i": {
+                                    "docs": {},
+                                    "c": {
+                                      "docs": {},
+                                      "l": {
+                                        "docs": {
+                                          "Presentation.Component.Article.html": {
+                                            "ref": "Presentation.Component.Article.html",
+                                            "tf": 200
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "l": {
+                                "docs": {},
+                                "e": {
+                                  "docs": {},
+                                  "r": {
+                                    "docs": {},
+                                    "t": {
+                                      "docs": {},
+                                      "d": {
+                                        "docs": {},
+                                        "i": {
+                                          "docs": {},
+                                          "a": {
+                                            "docs": {},
+                                            "l": {
+                                              "docs": {},
+                                              "o": {
+                                                "docs": {},
+                                                "g": {
+                                                  "docs": {},
+                                                  "v": {
+                                                    "docs": {},
+                                                    "i": {
+                                                      "docs": {},
+                                                      "e": {
+                                                        "docs": {},
+                                                        "w": {
+                                                          "docs": {
+                                                            "Presentation.Component.AlertDialogView.html": {
+                                                              "ref": "Presentation.Component.AlertDialogView.html",
+                                                              "tf": 200
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
                               "u": {
                                 "docs": {},
                                 "g": {
@@ -11202,47 +11547,6 @@
                                                                             "docs": {},
                                                                             "o": {
                                                                               "docs": {},
-                                                                              "m": {
-                                                                                "docs": {},
-                                                                                "p": {
-                                                                                  "docs": {},
-                                                                                  "o": {
-                                                                                    "docs": {},
-                                                                                    "n": {
-                                                                                      "docs": {},
-                                                                                      "e": {
-                                                                                        "docs": {},
-                                                                                        "n": {
-                                                                                          "docs": {},
-                                                                                          "t": {
-                                                                                            "docs": {},
-                                                                                            ".": {
-                                                                                              "docs": {},
-                                                                                              "h": {
-                                                                                                "docs": {},
-                                                                                                "e": {
-                                                                                                  "docs": {},
-                                                                                                  "a": {
-                                                                                                    "docs": {},
-                                                                                                    "d": {
-                                                                                                      "docs": {
-                                                                                                        "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                                                                                                          "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                                                                                                          "tf": 50
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              },
                                                                               "n": {
                                                                                 "docs": {},
                                                                                 "f": {
@@ -11294,6 +11598,47 @@
                                                                                                               }
                                                                                                             }
                                                                                                           }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              },
+                                                                              "m": {
+                                                                                "docs": {},
+                                                                                "p": {
+                                                                                  "docs": {},
+                                                                                  "o": {
+                                                                                    "docs": {},
+                                                                                    "n": {
+                                                                                      "docs": {},
+                                                                                      "e": {
+                                                                                        "docs": {},
+                                                                                        "n": {
+                                                                                          "docs": {},
+                                                                                          "t": {
+                                                                                            "docs": {},
+                                                                                            ".": {
+                                                                                              "docs": {},
+                                                                                              "h": {
+                                                                                                "docs": {},
+                                                                                                "e": {
+                                                                                                  "docs": {},
+                                                                                                  "a": {
+                                                                                                    "docs": {},
+                                                                                                    "d": {
+                                                                                                      "docs": {
+                                                                                                        "Presentation.Component.Augmented.Presentation.Component.Header.html": {
+                                                                                                          "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+                                                                                                          "tf": 50
                                                                                                         }
                                                                                                       }
                                                                                                     }
@@ -11378,53 +11723,6 @@
                                   }
                                 }
                               },
-                              "l": {
-                                "docs": {},
-                                "e": {
-                                  "docs": {},
-                                  "r": {
-                                    "docs": {},
-                                    "t": {
-                                      "docs": {},
-                                      "d": {
-                                        "docs": {},
-                                        "i": {
-                                          "docs": {},
-                                          "a": {
-                                            "docs": {},
-                                            "l": {
-                                              "docs": {},
-                                              "o": {
-                                                "docs": {},
-                                                "g": {
-                                                  "docs": {},
-                                                  "v": {
-                                                    "docs": {},
-                                                    "i": {
-                                                      "docs": {},
-                                                      "e": {
-                                                        "docs": {},
-                                                        "w": {
-                                                          "docs": {
-                                                            "Presentation.Component.AlertDialogView.html": {
-                                                              "ref": "Presentation.Component.AlertDialogView.html",
-                                                              "tf": 200
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
                               "b": {
                                 "docs": {},
                                 "s": {
@@ -11473,62 +11771,17 @@
                                 }
                               }
                             },
-                            "h": {
+                            "c": {
                               "docs": {},
-                              "e": {
+                              "a": {
                                 "docs": {},
-                                "a": {
+                                "r": {
                                   "docs": {},
                                   "d": {
                                     "docs": {
-                                      "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                                        "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                                        "tf": 50
-                                      },
-                                      "Presentation.Component.Header.html": {
-                                        "ref": "Presentation.Component.Header.html",
+                                      "Presentation.Component.Card.html": {
+                                        "ref": "Presentation.Component.Card.html",
                                         "tf": 200
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "a": {
-                                "docs": {},
-                                "m": {
-                                  "docs": {},
-                                  "b": {
-                                    "docs": {},
-                                    "u": {
-                                      "docs": {},
-                                      "r": {
-                                        "docs": {},
-                                        "g": {
-                                          "docs": {},
-                                          "e": {
-                                            "docs": {},
-                                            "r": {
-                                              "docs": {},
-                                              "m": {
-                                                "docs": {},
-                                                "e": {
-                                                  "docs": {},
-                                                  "n": {
-                                                    "docs": {},
-                                                    "u": {
-                                                      "docs": {
-                                                        "Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
-                                                          "tf": 75
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
                                       }
                                     }
                                   }
@@ -11573,6 +11826,141 @@
                                                               }
                                                             }
                                                           }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "h": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "a": {
+                                  "docs": {},
+                                  "d": {
+                                    "docs": {
+                                      "Presentation.Component.Header.html": {
+                                        "ref": "Presentation.Component.Header.html",
+                                        "tf": 200
+                                      },
+                                      "Presentation.Component.Augmented.Presentation.Component.Header.html": {
+                                        "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+                                        "tf": 50
+                                      }
+                                    },
+                                    "e": {
+                                      "docs": {},
+                                      "r": {
+                                        "docs": {},
+                                        ".": {
+                                          "docs": {},
+                                          "h": {
+                                            "docs": {},
+                                            "e": {
+                                              "docs": {},
+                                              "a": {
+                                                "docs": {},
+                                                "d": {
+                                                  "docs": {},
+                                                  "e": {
+                                                    "docs": {},
+                                                    "r": {
+                                                      "docs": {},
+                                                      "#": {
+                                                        "docs": {},
+                                                        "t": {
+                                                          "docs": {},
+                                                          "i": {
+                                                            "docs": {},
+                                                            "t": {
+                                                              "docs": {},
+                                                              "l": {
+                                                                "docs": {
+                                                                  "Presentation.Component.Header.html#.Header#title": {
+                                                                    "ref": "Presentation.Component.Header.html#.Header#title",
+                                                                    "tf": 60
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "s": {
+                                                          "docs": {},
+                                                          "u": {
+                                                            "docs": {},
+                                                            "b": {
+                                                              "docs": {},
+                                                              "t": {
+                                                                "docs": {},
+                                                                "i": {
+                                                                  "docs": {},
+                                                                  "t": {
+                                                                    "docs": {},
+                                                                    "l": {
+                                                                      "docs": {
+                                                                        "Presentation.Component.Header.html#.Header#subTitle": {
+                                                                          "ref": "Presentation.Component.Header.html#.Header#subTitle",
+                                                                          "tf": 60
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "a": {
+                                "docs": {},
+                                "m": {
+                                  "docs": {},
+                                  "b": {
+                                    "docs": {},
+                                    "u": {
+                                      "docs": {},
+                                      "r": {
+                                        "docs": {},
+                                        "g": {
+                                          "docs": {},
+                                          "e": {
+                                            "docs": {},
+                                            "r": {
+                                              "docs": {},
+                                              "m": {
+                                                "docs": {},
+                                                "e": {
+                                                  "docs": {},
+                                                  "n": {
+                                                    "docs": {},
+                                                    "u": {
+                                                      "docs": {
+                                                        "Augmented.Presentation.Component.HamburgerMenu.html": {
+                                                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
+                                                          "tf": 75
                                                         }
                                                       }
                                                     }
@@ -11929,6 +12317,17 @@
                   "Augmented.Request.Configuration.html#.cache": {
                     "ref": "Augmented.Request.Configuration.html#.cache",
                     "tf": 650
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {},
+              "d": {
+                "docs": {
+                  "Presentation.Component.Card.html": {
+                    "ref": "Presentation.Component.Card.html",
+                    "tf": 610
                   }
                 }
               }
@@ -12600,6 +12999,14 @@
                                   },
                                   "Presentation.Router.html#.cleanup": {
                                     "ref": "Presentation.Router.html#.cleanup",
+                                    "tf": 50
+                                  },
+                                  "Presentation.Component.Header.html#.Header#title": {
+                                    "ref": "Presentation.Component.Header.html#.Header#title",
+                                    "tf": 50
+                                  },
+                                  "Presentation.Component.Header.html#.Header#subTitle": {
+                                    "ref": "Presentation.Component.Header.html#.Header#subTitle",
                                     "tf": 50
                                   },
                                   "Augmented.Presentation.Component.Toolbar.html#.renderRenderstheToolbar": {
@@ -13356,17 +13763,6 @@
                 }
               }
             },
-            "v": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "Presentation.Mediator.html": {
-                    "ref": "Presentation.Mediator.html",
-                    "tf": 2.1739130434782608
-                  }
-                }
-              }
-            },
             "m": {
               "docs": {},
               "b": {
@@ -13409,6 +13805,17 @@
                   }
                 }
               }
+            },
+            "v": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Presentation.Mediator.html": {
+                    "ref": "Presentation.Mediator.html",
+                    "tf": 2.1739130434782608
+                  }
+                }
+              }
             }
           },
           "e": {
@@ -13444,13 +13851,126 @@
                         "ref": "Augmented.Request.Configuration.html#.headers",
                         "tf": 650
                       },
-                      "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-                        "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
-                        "tf": 675
-                      },
                       "Presentation.Component.Header.html": {
                         "ref": "Presentation.Component.Header.html",
                         "tf": 600
+                      },
+                      "Presentation.Component.Augmented.Presentation.Component.Header.html": {
+                        "ref": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+                        "tf": 675
+                      }
+                    },
+                    "#": {
+                      "docs": {},
+                      "t": {
+                        "docs": {},
+                        "i": {
+                          "docs": {},
+                          "t": {
+                            "docs": {},
+                            "l": {
+                              "docs": {
+                                "Presentation.Component.Header.html#.Header#title": {
+                                  "ref": "Presentation.Component.Header.html#.Header#title",
+                                  "tf": 610
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "s": {
+                        "docs": {},
+                        "u": {
+                          "docs": {},
+                          "b": {
+                            "docs": {},
+                            "t": {
+                              "docs": {},
+                              "i": {
+                                "docs": {},
+                                "t": {
+                                  "docs": {},
+                                  "l": {
+                                    "docs": {
+                                      "Presentation.Component.Header.html#.Header#subTitle": {
+                                        "ref": "Presentation.Component.Header.html#.Header#subTitle",
+                                        "tf": 610
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    ".": {
+                      "docs": {},
+                      "h": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "a": {
+                            "docs": {},
+                            "d": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "#": {
+                                    "docs": {},
+                                    "t": {
+                                      "docs": {},
+                                      "i": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {},
+                                          "l": {
+                                            "docs": {
+                                              "Presentation.Component.Header.html#.Header#title": {
+                                                "ref": "Presentation.Component.Header.html#.Header#title",
+                                                "tf": 60
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "s": {
+                                      "docs": {},
+                                      "u": {
+                                        "docs": {},
+                                        "b": {
+                                          "docs": {},
+                                          "t": {
+                                            "docs": {},
+                                            "i": {
+                                              "docs": {},
+                                              "t": {
+                                                "docs": {},
+                                                "l": {
+                                                  "docs": {
+                                                    "Presentation.Component.Header.html#.Header#subTitle": {
+                                                      "ref": "Presentation.Component.Header.html#.Header#subTitle",
+                                                      "tf": 60
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
                       }
                     }
                   }
@@ -13818,6 +14338,10 @@
                 "ref": "Presentation.ViewController.html#.removeAllViews",
                 "tf": 5.555555555555555
               },
+              "Presentation.Component.Article.html": {
+                "ref": "Presentation.Component.Article.html",
+                "tf": 10
+              },
               "Presentation.DecoratorView.html": {
                 "ref": "Presentation.DecoratorView.html",
                 "tf": 0.8333333333333334
@@ -14033,6 +14557,10 @@
                     "ref": "Presentation.AbstractView.html",
                     "tf": 12.5
                   },
+                  "Presentation.Component.Card.html": {
+                    "ref": "Presentation.Component.Card.html",
+                    "tf": 10
+                  },
                   "Presentation.Component.AlertDialogView.html": {
                     "ref": "Presentation.Component.AlertDialogView.html",
                     "tf": 5.555555555555555
@@ -14048,6 +14576,10 @@
                   "Presentation.Component.AutomaticForm.html": {
                     "ref": "Presentation.Component.AutomaticForm.html",
                     "tf": 8.333333333333332
+                  },
+                  "Augmented.Presentation.Component.HamburgerMenu.html": {
+                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
+                    "tf": 16.666666666666664
                   },
                   "Augmented.Presentation.Component.Toolbar.html": {
                     "ref": "Augmented.Presentation.Component.Toolbar.html",
@@ -14080,10 +14612,6 @@
                   "Presentation.View.html": {
                     "ref": "Presentation.View.html",
                     "tf": 762.5
-                  },
-                  "Augmented.Presentation.Component.HamburgerMenu.html": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
-                    "tf": 16.666666666666664
                   }
                 },
                 "c": {
@@ -14995,6 +15523,17 @@
                   }
                 }
               }
+            },
+            "t": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "Presentation.Component.Header.html#.Header#title": {
+                    "ref": "Presentation.Component.Header.html#.Header#title",
+                    "tf": 85
+                  }
+                }
+              }
             }
           },
           "r": {
@@ -15688,7 +16227,7 @@
           }
         }
       },
-      "length": 954
+      "length": 986
     },
     "corpusTokens": [
       "10",
@@ -15712,6 +16251,8 @@
       "applic",
       "arematch",
       "around",
+      "artcil",
+      "articl",
       "aubstract",
       "augmented.abstractlocalstorag",
       "augmented.applicationadd",
@@ -15776,6 +16317,7 @@
       "callback",
       "cancel",
       "candisplay",
+      "card",
       "center",
       "channel",
       "channelconveni",
@@ -15801,13 +16343,17 @@
       "compon",
       "component.abstracttoolbar",
       "component.alertdialogview",
+      "component.articl",
       "component.augmented.presentation.component.head",
       "component.augmented.presentation.confirmationdialogview",
       "component.automaticform",
       "component.automatict",
+      "component.card",
       "component.dialogview",
       "component.hamburgermenu",
       "component.head",
+      "component.header.header#subtitl",
+      "component.header.header#titl",
       "component.notificationcent",
       "component.spreadsheet",
       "component.toolbar",
@@ -15916,6 +16462,10 @@
       "hash",
       "have",
       "header",
+      "header#subtitl",
+      "header#titl",
+      "header.header#subtitl",
+      "header.header#titl",
       "here",
       "histori",
       "html",
@@ -15999,12 +16549,15 @@
       "onc",
       "order",
       "oronhashchangeand",
+      "page",
       "pagin",
       "paginatedcollect",
       "pagination.pagination_api_typ",
       "pagination.paginationfactori",
       "pagination_api_typ",
       "paginationfactori",
+      "panel",
+      "panel/dialog",
       "pass",
       "password",
       "patternth",
@@ -16026,13 +16579,17 @@
       "presentation.compon",
       "presentation.component.abstracttoolbar",
       "presentation.component.alertdialogview",
+      "presentation.component.articl",
       "presentation.component.augmented.presentation.component.head",
       "presentation.component.augmented.presentation.confirmationdialogview",
       "presentation.component.automaticform",
       "presentation.component.automatict",
+      "presentation.component.card",
       "presentation.component.dialogview",
       "presentation.component.hamburgermenu",
       "presentation.component.head",
+      "presentation.component.header.header#subtitl",
+      "presentation.component.header.header#titl",
       "presentation.component.notificationcent",
       "presentation.component.spreadsheet",
       "presentation.component.toolbar",
@@ -16156,6 +16713,7 @@
       "subscript",
       "subscriptionsa",
       "subscriptionscan",
+      "subtitl",
       "success",
       "support",
       "tabl",
@@ -16164,6 +16722,7 @@
       "thank",
       "thier",
       "timeout",
+      "titl",
       "toolbar",
       "toolbar.rend",
       "tooldbar",
@@ -16736,15 +17295,26 @@
       "description": "Aubstract View - the base view for handlng display in the MV* Concept",
       "body": ""
     },
-    "Presentation.Component.Augmented.Presentation.Component.Header.html": {
-      "id": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+    "Presentation.Component.Article.html": {
+      "id": "Presentation.Component.Article.html",
       "kind": "class",
-      "title": "Header",
-      "longname": "Presentation.Component.Augmented.Presentation.Component.Header",
-      "name": "Header",
-      "tags": "Presentation.Component.Augmented.Presentation.Component.Header Component.Augmented.Presentation.Component.Header Augmented.Presentation.Component.Header Presentation.Component.Header Component.Header Header",
+      "title": ".Component.Article",
+      "longname": "Presentation.Component.Article",
+      "name": "Article",
+      "tags": "Presentation.Component.Article Component.Article Article",
       "summary": "",
-      "description": "A Header Component",
+      "description": "An artcile class for setting up a 'page'",
+      "body": ""
+    },
+    "Presentation.Component.Card.html": {
+      "id": "Presentation.Component.Card.html",
+      "kind": "class",
+      "title": ".Component.Card",
+      "longname": "Presentation.Component.Card",
+      "name": "Card",
+      "tags": "Presentation.Component.Card Component.Card Card",
+      "summary": "",
+      "description": "A card view - simple panel/dialog-like panel",
       "body": ""
     },
     "Presentation.Component.NotificationCenter.html": {
@@ -16768,6 +17338,26 @@
       "summary": "",
       "description": "A Component Manager",
       "body": ""
+    },
+    "Presentation.Component.Header.html#.Header#title": {
+      "id": "Presentation.Component.Header.html#.Header#title",
+      "kind": "member",
+      "title": "&lt;static&gt; Header#title",
+      "longname": "Presentation.Component.Header.Header#title",
+      "name": "Header#title",
+      "tags": "Presentation.Component.Header.Header#title Component.Header.Header#title Header.Header#title Header#title title",
+      "summary": "",
+      "description": "A title property"
+    },
+    "Presentation.Component.Header.html#.Header#subTitle": {
+      "id": "Presentation.Component.Header.html#.Header#subTitle",
+      "kind": "member",
+      "title": "&lt;static&gt; Header#subTitle",
+      "longname": "Presentation.Component.Header.Header#subTitle",
+      "name": "Header#subTitle",
+      "tags": "Presentation.Component.Header.Header#subTitle Component.Header.Header#subTitle Header.Header#subTitle Header#subTitle subTitle",
+      "summary": "",
+      "description": "A subTitle property"
     },
     "Presentation.Component.AlertDialogView.html": {
       "id": "Presentation.Component.AlertDialogView.html",
@@ -16811,6 +17401,28 @@
       "tags": "Presentation.Component.AutomaticForm Component.AutomaticForm AutomaticForm",
       "summary": "",
       "description": "A automatic form view created from a JSON Schema",
+      "body": ""
+    },
+    "Presentation.Component.Augmented.Presentation.Component.Header.html": {
+      "id": "Presentation.Component.Augmented.Presentation.Component.Header.html",
+      "kind": "class",
+      "title": "Header",
+      "longname": "Presentation.Component.Augmented.Presentation.Component.Header",
+      "name": "Header",
+      "tags": "Presentation.Component.Augmented.Presentation.Component.Header Component.Augmented.Presentation.Component.Header Augmented.Presentation.Component.Header Presentation.Component.Header Component.Header Header",
+      "summary": "",
+      "description": "A Header Component",
+      "body": ""
+    },
+    "Augmented.Presentation.Component.HamburgerMenu.html": {
+      "id": "Augmented.Presentation.Component.HamburgerMenu.html",
+      "kind": "class",
+      "title": "HamburgerMenu",
+      "longname": "Augmented.Presentation.Component.HamburgerMenu",
+      "name": "HamburgerMenu",
+      "tags": "Augmented.Presentation.Component.HamburgerMenu Presentation.Component.HamburgerMenu Component.HamburgerMenu HamburgerMenu",
+      "summary": "",
+      "description": "A Hamburger Menu View",
       "body": ""
     },
     "Presentation.Component.AutomaticTable.html": {
@@ -17186,17 +17798,6 @@
       "tags": "Presentation.Widget.Input Widget.Input Input",
       "summary": "",
       "description": "Input widget - renders an input or simular based on type"
-    },
-    "Augmented.Presentation.Component.HamburgerMenu.html": {
-      "id": "Augmented.Presentation.Component.HamburgerMenu.html",
-      "kind": "class",
-      "title": "HamburgerMenu",
-      "longname": "Augmented.Presentation.Component.HamburgerMenu",
-      "name": "HamburgerMenu",
-      "tags": "Augmented.Presentation.Component.HamburgerMenu Presentation.Component.HamburgerMenu Component.HamburgerMenu HamburgerMenu",
-      "summary": "",
-      "description": "A Hamburger Menu View",
-      "body": ""
     },
     "module-Presentation.html": {
       "id": "module-Presentation.html",

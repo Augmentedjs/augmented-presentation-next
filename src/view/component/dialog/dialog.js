@@ -15,9 +15,9 @@ class DialogView extends DecoratorView {
     }
 
     if (options && options.title) {
-      this.title = options.title;
+      this._title = options.title;
     } else {
-      this.title = "";
+      this._title = "";
     }
     if (options && options.body) {
       this._body = options.body;
@@ -25,14 +25,14 @@ class DialogView extends DecoratorView {
       this._body = "";
     }
     if (options && options.style) {
-      this.style = options.style;
+      this._style = options.style;
     } else {
-      this.style = "form";
+      this._style = "form";
     }
     if (options && options.buttons) {
-      this.buttons = options.buttons;
+      this._buttons = options.buttons;
     } else {
-      this.buttons = {};
+      this._buttons = {};
     }
   };
 
@@ -41,6 +41,13 @@ class DialogView extends DecoratorView {
   * @property title
   * @memberof DialogView
   */
+  set title(title) {
+    this._title = title;
+  };
+
+  get title() {
+    return this._title;
+  };
 
   /**
   * body property - the body of the dialog, handled by setBody method
@@ -53,12 +60,26 @@ class DialogView extends DecoratorView {
   * @property style
   * @memberof DialogView
   */
+  set style(style) {
+    this._style = style;
+  };
+
+  get style() {
+    return this._style;
+  };
 
   /**
   * buttons object property - the buttons to match to functions
   * @property buttons
   * @memberof DialogView
   */
+  set buttons(buttons) {
+    this._buttons = buttons;
+  };
+
+  get buttons() {
+    return this._buttons;
+  };
 
   /**
   * template - sets content of the dialog, handled internally
@@ -67,7 +88,7 @@ class DialogView extends DecoratorView {
   * @private
   */
   _template() {
-    return `<div class="blur"><dialog class="${this.style}"><h1>${this.title}</h1>${this._body}${this._getButtonGroup()}</dialog></div>`;
+    return `<div class="blur"><dialog class="${this._style}"><h1>${this._title}</h1>${this._body}${this._getButtonGroup()}</dialog></div>`;
   };
   /**
   * setBody - sets the body content of the dialog
@@ -84,9 +105,9 @@ class DialogView extends DecoratorView {
   };
 
   _getButtonGroup() {
-    let html = `<div class="buttonGroup">`, i = 0, keys = Object.keys(this.buttons), l = (keys) ? keys.length: 0;
+    let html = `<div class="buttonGroup">`, i = 0, keys = Object.keys(this._buttons), l = (keys) ? keys.length: 0;
     for (i = 0; i < l; i++) {
-      html = html + `<button data-${this.name}="${this.buttons[keys[i]]}" data-click="${this.buttons[keys[i]]}">${keys[i]}</button>`;
+      html = html + `<button data-${this.name}="${this._buttons[keys[i]]}" data-click="${this._buttons[keys[i]]}">${keys[i]}</button>`;
     }
     return html + "</div>";
   };
@@ -97,9 +118,11 @@ class DialogView extends DecoratorView {
   * @memberof DialogView
   */
   render() {
-    Dom.setValue(this.el, this._template());
-    this.delegateEvents();
-    this.trigger("open");
+    if (this.el) {
+      Dom.setValue(this.el, this._template());
+      this.delegateEvents();
+      this.trigger("open");
+    }
     return this;
   };
   // built-in callbacks

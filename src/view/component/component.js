@@ -1,44 +1,11 @@
 import View from "../view.js";
 import Mediator from "../pubsub/mediator.js";
-import DecoratorView from "../decorator/decorator.js";
 
 /**
  * Component - Large UI Components
  * @namespace Presentation.Component
  * @memberof Presentation
  */
-
-/**
- * A Header Component
- * @constructor Augmented.Presentation.Component.Header
- * @memberof Presentation.Component
- * @extends Presentation.View
- */
-export class Header extends DecoratorView {
-  constructor(options) {
-    super(options);
-    if (options && options.title) {
-      this.title = options.title;
-    } else {
-      this.title = "";
-    }
-    if (options && options.subTitle) {
-      this.subTitle = options.subTitle;
-    } else {
-      this.subTitle = "";
-    }
-  };
-  /**
-   * A title property
-   * @property title
-   * @memberof Presentation.Component.Header
-
-  /**
-   * A subTitle property
-   * @property subTitle
-   * @memberof Presentation.Component.Header
-   */
-};
 
 /**
  * A Notfication Center Component

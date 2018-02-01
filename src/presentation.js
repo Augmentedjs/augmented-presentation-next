@@ -24,6 +24,9 @@ import DecoratorView from "./view/decorator/decorator.js";
 
 // Components
 import * as Component from "./view/component/component.js";
+import Header from "./view/component/header/header.js";
+import Card from "./view/component/card/card.js";
+import Article from "./view/component/article/article.js";
 import AbstractToolbar from "./view/component/toolbar/abstractToolbar.js";
 import Toolbar from "./view/component/toolbar/toolbar.js";
 import HamburgerMenu from "./view/component/menu/hamburgerMenu.js";
@@ -43,7 +46,7 @@ import PaginationFactory from "./pagination/factory.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.21
+ * @version 2.0.0-alpha.22
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -52,7 +55,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.21";
+Presentation.VERSION = "2.0.0-alpha.22";
 
 Presentation.History = History;
 Presentation.Router = Router;
@@ -89,6 +92,9 @@ Presentation.Component.ConfirmationDialogView = ConfirmationDialogView;
 Presentation.Component.AlertDialogView = AlertDialogView;
 Presentation.Component.AutomaticTable = AutomaticTable;
 Presentation.Component.AutomaticForm = AutomaticForm;
+Presentation.Component.Header = Header;
+Presentation.Component.Card = Card;
+Presentation.Component.Article = Article;
 
 Presentation.sync = sync;
 Presentation.request = request;
