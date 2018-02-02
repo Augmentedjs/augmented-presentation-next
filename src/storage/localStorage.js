@@ -1,8 +1,7 @@
 /**
  * Local Storage API - returned from LocalStorageFactory
- * @class AbstractLocalStorage
- * @name AbstractLocalStorage
- * @memberof Augmented
+ * @class LocalStorage
+ * @memberof Presentation
  * @param {boolean} persist Persistant storage or not
  */
 class LocalStorage {
@@ -28,13 +27,13 @@ class LocalStorage {
   /**
    * is Persistant or not
    * @property {boolean} isPersisted Persistant property
-   * @memberof AbstractLocalStorage
+   * @memberof LocalStorage
    */
 
   /**
    * Is storage supported
    * @method isSupported
-   * @memberof AbstractLocalStorage
+   * @memberof LocalStorage
    * @returns {boolean} Returns true if supported
    */
   isSupported() {
@@ -44,7 +43,7 @@ class LocalStorage {
   /**
    * Gets an item from storage
    * @method getItem
-   * @memberof AbstractLocalStorage
+   * @memberof LocalStorage
    * @param {string} key The key in storage
    * @returns {object} Returns object from storage
    */
@@ -59,7 +58,7 @@ class LocalStorage {
   /**
    * Sets an item to storage
    * @method setItem
-   * @memberof AbstractLocalStorage
+   * @memberof LocalStorage
    * @param {string} key The key in storage
    * @param {object} object The data to set
    */
@@ -70,7 +69,7 @@ class LocalStorage {
   /**
    * Removes an item from storage
    * @method removeItem
-   * @memberof AbstractLocalStorage
+   * @memberof LocalStorage
    * @param {string} key The key in storage
    */
   removeItem(itemKey) {
@@ -80,7 +79,7 @@ class LocalStorage {
   /**
    * Clears storage - <b>Warning: Destructive in non-namespaced instances!</b>
    * @method clear
-   * @memberof AbstractLocalStorage
+   * @memberof LocalStorage
    */
   clear() {
     this._myStore.clear();
@@ -89,7 +88,7 @@ class LocalStorage {
   /**
    * Gets the key from storage for index
    * @method key
-   * @memberof AbstractLocalStorage
+   * @memberof LocalStorage
    * @param {number} i The index in storage
    * @returns {string} Returns the key from storage
    */
@@ -100,7 +99,7 @@ class LocalStorage {
   /**
    * The length of storage by keys
    * @method length
-   * @memberof AbstractLocalStorage
+   * @memberof LocalStorage
    * @returns {number} Returns the length of storage by keys
    */
   length() {

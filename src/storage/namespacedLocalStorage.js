@@ -2,6 +2,12 @@ import Augmented from "augmentedjs-next";
 import LocalStorage from "./localStorage.js";
 import LocalStorageFactory from  "./localStorageFactory.js";
 
+/**
+ * NamespacedLocalStorage
+ * Retrieve a local storage Object
+ * @class NamespacedLocalStorage
+ * @memberof Presentation
+ */
 class NamespacedLocalStorage extends LocalStorage {
   constructor(persist, namespace) {
     super(persist);

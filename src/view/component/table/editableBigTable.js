@@ -1,9 +1,8 @@
 /**
-* Augmented.Presentation.EditableBigDataTable
 * Instance class preconfigured for editing, sorting, and pagination
-* @constructor Augmented.Presentation.EditableBigDataTable
-* @extends Augmented.Presentation.AutomaticTable
-* @memberof Augmented.Presentation
+* @class EditableBigDataTable
+* @extends Presentation.Component.AutomaticTable
+* @memberof Presentation.Component
 */
 Augmented.Presentation.EditableBigDataTable = Augmented.Presentation.DirectDOMAutomaticTable.extend({
   renderPaginationControl: true,

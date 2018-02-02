@@ -59,6 +59,7 @@ if (cluster.isMaster) {
   app.use("/dist", express.static(path.join(__dirname, "dist")));
   app.use("/test", express.static(path.join(__dirname, "test")));
   app.use("/vendor", express.static(path.join(__dirname, "node_modules")));
+  app.use("/docs", express.static(path.join(__dirname, "jsdoc")));
 
   /* REST API */
 

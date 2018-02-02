@@ -14,11 +14,11 @@ const DEFAULT_KEY = "augmented.localstorage.autotable.key";
 /**
  * AutomaticTable<br/>
  * Creates a table automatically via a schema for defintion and a uri/json for data
- * @constructor AutomaticTable
+ * @class AutomaticTable
  * @extends Presentation.DecoratorView
  * @memberof Presentation.Component
  * @example
- * let at = new Presentation.AutomaticTable({
+ * let at = new Presentation.Component.AutomaticTable({
  *     schema: schema,
  *     el: "#autoTable",
  *     crossOrigin: false,

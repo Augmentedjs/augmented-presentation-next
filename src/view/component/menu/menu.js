@@ -20,8 +20,8 @@ const buildMenu = (name, title, menuItems) => {
 /**
  * A Menu
  * @class Menu
- * @memberof Augmented.Presentation.Component
- * @extends Augmented.Presentation.AbstractToolbar
+ * @memberof Presentation.Component
+ * @extends Presentation.AbstractToolbar
  */
 class Menu extends AbstractToolbar {
   constructor(options) {

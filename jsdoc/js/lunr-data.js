@@ -324,8 +324,7 @@ window.lunrData = {
           "return",
           "type"
         ],
-        "Augmented.Request.Configuration.html": [
-          "augmented.request.configur",
+        "Presentation.Request.Configuration.html": [
           "call",
           "callback",
           "class",
@@ -333,165 +332,11 @@ window.lunrData = {
           "configut",
           "object",
           "pass",
+          "presentation.request.configur",
           "properti",
           "request",
           "request.configur",
           "setup"
-        ],
-        "Augmented.Request.Configuration.html#.url": [
-          "augmented.request.configuration.url",
-          "configuration.url",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.url",
-          "url"
-        ],
-        "Augmented.Request.Configuration.html#.contentType": [
-          "augmented.request.configuration.contenttyp",
-          "configuration.contenttyp",
-          "contenttyp",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.contenttyp"
-        ],
-        "Augmented.Request.Configuration.html#.dataType": [
-          "augmented.request.configuration.datatyp",
-          "configuration.datatyp",
-          "datatyp",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.datatyp"
-        ],
-        "Augmented.Request.Configuration.html#.method": [
-          "augmented.request.configuration.method",
-          "configuration.method",
-          "lt;static&gt",
-          "member",
-          "method",
-          "properti",
-          "request.configuration.method"
-        ],
-        "Augmented.Request.Configuration.html#.cache": [
-          "augmented.request.configuration.cach",
-          "cach",
-          "configuration.cach",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.cach"
-        ],
-        "Augmented.Request.Configuration.html#.timeout": [
-          "augmented.request.configuration.timeout",
-          "configuration.timeout",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.timeout",
-          "timeout"
-        ],
-        "Augmented.Request.Configuration.html#.crossDomain": [
-          "augmented.request.configuration.crossdomain",
-          "configuration.crossdomain",
-          "crossdomain",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.crossdomain",
-          "set",
-          "true",
-          "withcredenti"
-        ],
-        "Augmented.Request.Configuration.html#.user": [
-          "augmented.request.configuration.us",
-          "configuration.us",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.us",
-          "user"
-        ],
-        "Augmented.Request.Configuration.html#.password": [
-          "augmented.request.configuration.password",
-          "configuration.password",
-          "lt;static&gt",
-          "member",
-          "password",
-          "properti",
-          "request.configuration.password"
-        ],
-        "Augmented.Request.Configuration.html#.allowOrigins": [
-          "alloworigin",
-          "augmented.request.configuration.alloworigin",
-          "configuration.alloworigin",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.alloworigin"
-        ],
-        "Augmented.Request.Configuration.html#.allowMethods": [
-          "allowmethod",
-          "augmented.request.configuration.allowmethod",
-          "configuration.allowmethod",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.allowmethod"
-        ],
-        "Augmented.Request.Configuration.html#.headers": [
-          "augmented.request.configuration.head",
-          "configuration.head",
-          "header",
-          "lt;static&gt",
-          "member",
-          "properti",
-          "request.configuration.head"
-        ],
-        "Augmented.Request.Configuration.html#.success": [
-          "augmented.request.configuration.success",
-          "callback",
-          "configuration.success",
-          "lt;static&gt",
-          "member",
-          "request.configuration.success",
-          "success"
-        ],
-        "Augmented.Request.Configuration.html#.error": [
-          "augmented.request.configuration.error",
-          "callback",
-          "configuration.error",
-          "error",
-          "lt;static&gt",
-          "member",
-          "request.configuration.error"
-        ],
-        "Augmented.Request.Configuration.html#.complete": [
-          "augmented.request.configuration.complet",
-          "callback",
-          "complet",
-          "configuration.complet",
-          "lt;static&gt",
-          "member",
-          "request.configuration.complet"
-        ],
-        "Augmented.Request.Configuration.html#.beforeSend": [
-          "augmented.request.configuration.beforesend",
-          "beforesend",
-          "callback",
-          "configuration.beforesend",
-          "lt;static&gt",
-          "member",
-          "request.configuration.beforesend"
-        ],
-        "Augmented.Request.Configuration.html#.mock": [
-          "augmented.request.configuration.mock",
-          "configuration.mock",
-          "lt;static&gt",
-          "member",
-          "mock",
-          "request.configuration.mock"
         ],
         "Presentation.Router.html": [
           "action",
@@ -538,13 +383,13 @@ window.lunrData = {
           "router.cleanup",
           "view"
         ],
-        "Augmented.AbstractLocalStorage.html": [
-          "abstractlocalstorag",
+        "Presentation.LocalStorage.html": [
           "api",
-          "augmented.abstractlocalstorag",
           "class",
           "local",
+          "localstorag",
           "localstoragefactori",
+          "presentation.localstorag",
           "return",
           "storag"
         ],
@@ -555,6 +400,15 @@ window.lunrData = {
           "localstoragefactori",
           "object",
           "presentation.localstoragefactori",
+          "storag"
+        ],
+        "Presentation.NamespacedLocalStorage.html": [
+          "class",
+          "local",
+          "namespacedlocalstorag",
+          "namespacedlocalstorageretriev",
+          "object",
+          "presentation.namespacedlocalstorag",
           "storag"
         ],
         "Presentation.AbstractView.html": [
@@ -678,18 +532,19 @@ window.lunrData = {
           "properti",
           "subtitl"
         ],
-        "Augmented.Presentation.Component.HamburgerMenu.html": [
+        "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": [
           "augmented.presentation.component.hamburgermenu",
           "class",
+          "component.augmented.presentation.component.hamburgermenu",
           "component.hamburgermenu",
           "hamburg",
           "hamburgermenu",
           "menu",
+          "presentation.component.augmented.presentation.component.hamburgermenu",
           "presentation.component.hamburgermenu",
           "view"
         ],
-        "Augmented.Presentation.Component.Menu.html": [
-          "augmented.presentation.component.menu",
+        "Presentation.Component.Menu.html": [
           "class",
           "component.menu",
           "menu",
@@ -718,67 +573,69 @@ window.lunrData = {
           "uri/json",
           "via"
         ],
-        "Augmented.Presentation.BigDataTable.html": [
-          "augmented.presentation.bigdatat",
-          "augmented.presentation.bigdatatableinst",
+        "Presentation.Component.BigDataTable.html": [
           "bigdatat",
           "class",
+          "component.bigdatat",
+          "instanc",
           "pagin",
           "preconfigur",
-          "presentation.bigdatat",
+          "presentation.component.bigdatat",
           "sort"
         ],
-        "Augmented.Presentation.EditableBigDataTable.html": [
-          "augmented.presentation.editablebigdatat",
-          "augmented.presentation.editablebigdatatableinst",
+        "Presentation.Component.EditableBigDataTable.html": [
           "class",
+          "component.editablebigdatat",
           "edit",
           "editablebigdatat",
+          "instanc",
           "pagin",
           "preconfigur",
-          "presentation.editablebigdatat",
+          "presentation.component.editablebigdatat",
           "sort"
         ],
-        "Augmented.Presentation.EditableLocalStorageTable.html": [
-          "augmented.presentation.editablelocalstoraget",
-          "augmented.presentation.editablelocalstoragetableinst",
+        "Presentation.Component.EditableLocalStorageTable.html": [
           "class",
+          "component.editablelocalstoraget",
           "edit",
           "editablelocalstoraget",
+          "instanc",
           "local",
           "preconfigur",
-          "presentation.editablelocalstoraget",
+          "presentation.component.editablelocalstoraget",
           "sort",
           "storag"
         ],
-        "Augmented.Presentation.EditableTable.html": [
-          "augmented.presentation.editablet",
-          "augmented.presentation.editabletableinst",
+        "Presentation.Component.EditableTable.html": [
           "class",
+          "component.editablet",
           "edit",
           "editablet",
+          "instanc",
           "preconfigur",
-          "presentation.editablet"
+          "presentation.component.editablet"
         ],
-        "Augmented.Presentation.LocalStorageTable.html": [
+        "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": [
           "augmented.presentation.localstoraget",
-          "augmented.presentation.localstoragetableinst",
           "base",
           "class",
+          "component.augmented.presentation.localstoraget",
+          "instanc",
           "local",
           "localstoraget",
           "preconfigur",
+          "presentation.component.augmented.presentation.localstoraget",
           "presentation.localstoraget",
           "storag",
           "tabl"
         ],
         "Presentation.Component.Spreadsheet.html": [
           "10",
-          "augmented.presentation.spreadsheetinst",
           "buffer",
           "class",
           "component.spreadsheet",
           "edit",
+          "instanc",
           "length",
           "line",
           "preconfigur",
@@ -1207,26 +1064,22 @@ window.lunrData = {
           "presentation.pagination.pagination_api_typ",
           "type"
         ],
-        "Augmented.Request.Configuration.xhrFields.html": [
-          "augmented.request.configuration.xhrfield",
+        "Configuration.xhrFields.html": [
           "configuration.xhrfield",
           "namespac",
           "properti",
-          "request.configuration.xhrfield",
           "xhrfield"
         ],
-        "Augmented.Request.Configuration.xhrFields.html#.withCredentials": [
-          "augmented.request.configuration.xhrfields.withcredenti",
+        "Configuration.xhrFields.html#.withCredentials": [
           "configuration.xhrfields.withcredenti",
           "lt;static&gt",
           "member",
           "properti",
-          "request.configuration.xhrfields.withcredenti",
           "withcredenti",
           "xhrfields.withcredenti"
         ]
       },
-      "length": 105
+      "length": 89
     },
     "tokenStore": {
       "root": {
@@ -1313,615 +1166,6 @@ window.lunrData = {
                                                           "Presentation.Application.html": {
                                                             "ref": "Presentation.Application.html",
                                                             "tf": 5
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              },
-                              "b": {
-                                "docs": {},
-                                "s": {
-                                  "docs": {},
-                                  "t": {
-                                    "docs": {},
-                                    "r": {
-                                      "docs": {},
-                                      "a": {
-                                        "docs": {},
-                                        "c": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {},
-                                            "l": {
-                                              "docs": {},
-                                              "o": {
-                                                "docs": {},
-                                                "c": {
-                                                  "docs": {},
-                                                  "a": {
-                                                    "docs": {},
-                                                    "l": {
-                                                      "docs": {},
-                                                      "s": {
-                                                        "docs": {},
-                                                        "t": {
-                                                          "docs": {},
-                                                          "o": {
-                                                            "docs": {},
-                                                            "r": {
-                                                              "docs": {},
-                                                              "a": {
-                                                                "docs": {},
-                                                                "g": {
-                                                                  "docs": {
-                                                                    "Augmented.AbstractLocalStorage.html": {
-                                                                      "ref": "Augmented.AbstractLocalStorage.html",
-                                                                      "tf": 1150
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            },
-                            "r": {
-                              "docs": {},
-                              "e": {
-                                "docs": {},
-                                "q": {
-                                  "docs": {},
-                                  "u": {
-                                    "docs": {},
-                                    "e": {
-                                      "docs": {},
-                                      "s": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          ".": {
-                                            "docs": {},
-                                            "c": {
-                                              "docs": {},
-                                              "o": {
-                                                "docs": {},
-                                                "n": {
-                                                  "docs": {},
-                                                  "f": {
-                                                    "docs": {},
-                                                    "i": {
-                                                      "docs": {},
-                                                      "g": {
-                                                        "docs": {},
-                                                        "u": {
-                                                          "docs": {},
-                                                          "r": {
-                                                            "docs": {
-                                                              "Augmented.Request.Configuration.html": {
-                                                                "ref": "Augmented.Request.Configuration.html",
-                                                                "tf": 1100
-                                                              }
-                                                            },
-                                                            "a": {
-                                                              "docs": {},
-                                                              "t": {
-                                                                "docs": {},
-                                                                "i": {
-                                                                  "docs": {},
-                                                                  "o": {
-                                                                    "docs": {},
-                                                                    "n": {
-                                                                      "docs": {},
-                                                                      ".": {
-                                                                        "docs": {},
-                                                                        "u": {
-                                                                          "docs": {},
-                                                                          "r": {
-                                                                            "docs": {},
-                                                                            "l": {
-                                                                              "docs": {
-                                                                                "Augmented.Request.Configuration.html#.url": {
-                                                                                  "ref": "Augmented.Request.Configuration.html#.url",
-                                                                                  "tf": 1075
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          },
-                                                                          "s": {
-                                                                            "docs": {
-                                                                              "Augmented.Request.Configuration.html#.user": {
-                                                                                "ref": "Augmented.Request.Configuration.html#.user",
-                                                                                "tf": 1075
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "c": {
-                                                                          "docs": {},
-                                                                          "o": {
-                                                                            "docs": {},
-                                                                            "n": {
-                                                                              "docs": {},
-                                                                              "t": {
-                                                                                "docs": {},
-                                                                                "e": {
-                                                                                  "docs": {},
-                                                                                  "n": {
-                                                                                    "docs": {},
-                                                                                    "t": {
-                                                                                      "docs": {},
-                                                                                      "t": {
-                                                                                        "docs": {},
-                                                                                        "y": {
-                                                                                          "docs": {},
-                                                                                          "p": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Request.Configuration.html#.contentType": {
-                                                                                                "ref": "Augmented.Request.Configuration.html#.contentType",
-                                                                                                "tf": 1075
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            },
-                                                                            "m": {
-                                                                              "docs": {},
-                                                                              "p": {
-                                                                                "docs": {},
-                                                                                "l": {
-                                                                                  "docs": {},
-                                                                                  "e": {
-                                                                                    "docs": {},
-                                                                                    "t": {
-                                                                                      "docs": {
-                                                                                        "Augmented.Request.Configuration.html#.complete": {
-                                                                                          "ref": "Augmented.Request.Configuration.html#.complete",
-                                                                                          "tf": 1075
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          },
-                                                                          "a": {
-                                                                            "docs": {},
-                                                                            "c": {
-                                                                              "docs": {},
-                                                                              "h": {
-                                                                                "docs": {
-                                                                                  "Augmented.Request.Configuration.html#.cache": {
-                                                                                    "ref": "Augmented.Request.Configuration.html#.cache",
-                                                                                    "tf": 1075
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          },
-                                                                          "r": {
-                                                                            "docs": {},
-                                                                            "o": {
-                                                                              "docs": {},
-                                                                              "s": {
-                                                                                "docs": {},
-                                                                                "s": {
-                                                                                  "docs": {},
-                                                                                  "d": {
-                                                                                    "docs": {},
-                                                                                    "o": {
-                                                                                      "docs": {},
-                                                                                      "m": {
-                                                                                        "docs": {},
-                                                                                        "a": {
-                                                                                          "docs": {},
-                                                                                          "i": {
-                                                                                            "docs": {},
-                                                                                            "n": {
-                                                                                              "docs": {
-                                                                                                "Augmented.Request.Configuration.html#.crossDomain": {
-                                                                                                  "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                                                                                                  "tf": 1075
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "d": {
-                                                                          "docs": {},
-                                                                          "a": {
-                                                                            "docs": {},
-                                                                            "t": {
-                                                                              "docs": {},
-                                                                              "a": {
-                                                                                "docs": {},
-                                                                                "t": {
-                                                                                  "docs": {},
-                                                                                  "y": {
-                                                                                    "docs": {},
-                                                                                    "p": {
-                                                                                      "docs": {
-                                                                                        "Augmented.Request.Configuration.html#.dataType": {
-                                                                                          "ref": "Augmented.Request.Configuration.html#.dataType",
-                                                                                          "tf": 1075
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "m": {
-                                                                          "docs": {},
-                                                                          "e": {
-                                                                            "docs": {},
-                                                                            "t": {
-                                                                              "docs": {},
-                                                                              "h": {
-                                                                                "docs": {},
-                                                                                "o": {
-                                                                                  "docs": {},
-                                                                                  "d": {
-                                                                                    "docs": {
-                                                                                      "Augmented.Request.Configuration.html#.method": {
-                                                                                        "ref": "Augmented.Request.Configuration.html#.method",
-                                                                                        "tf": 1075
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          },
-                                                                          "o": {
-                                                                            "docs": {},
-                                                                            "c": {
-                                                                              "docs": {},
-                                                                              "k": {
-                                                                                "docs": {
-                                                                                  "Augmented.Request.Configuration.html#.mock": {
-                                                                                    "ref": "Augmented.Request.Configuration.html#.mock",
-                                                                                    "tf": 1075
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "t": {
-                                                                          "docs": {},
-                                                                          "i": {
-                                                                            "docs": {},
-                                                                            "m": {
-                                                                              "docs": {},
-                                                                              "e": {
-                                                                                "docs": {},
-                                                                                "o": {
-                                                                                  "docs": {},
-                                                                                  "u": {
-                                                                                    "docs": {},
-                                                                                    "t": {
-                                                                                      "docs": {
-                                                                                        "Augmented.Request.Configuration.html#.timeout": {
-                                                                                          "ref": "Augmented.Request.Configuration.html#.timeout",
-                                                                                          "tf": 1075
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "p": {
-                                                                          "docs": {},
-                                                                          "a": {
-                                                                            "docs": {},
-                                                                            "s": {
-                                                                              "docs": {},
-                                                                              "s": {
-                                                                                "docs": {},
-                                                                                "w": {
-                                                                                  "docs": {},
-                                                                                  "o": {
-                                                                                    "docs": {},
-                                                                                    "r": {
-                                                                                      "docs": {},
-                                                                                      "d": {
-                                                                                        "docs": {
-                                                                                          "Augmented.Request.Configuration.html#.password": {
-                                                                                            "ref": "Augmented.Request.Configuration.html#.password",
-                                                                                            "tf": 1075
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "a": {
-                                                                          "docs": {},
-                                                                          "l": {
-                                                                            "docs": {},
-                                                                            "l": {
-                                                                              "docs": {},
-                                                                              "o": {
-                                                                                "docs": {},
-                                                                                "w": {
-                                                                                  "docs": {},
-                                                                                  "o": {
-                                                                                    "docs": {},
-                                                                                    "r": {
-                                                                                      "docs": {},
-                                                                                      "i": {
-                                                                                        "docs": {},
-                                                                                        "g": {
-                                                                                          "docs": {},
-                                                                                          "i": {
-                                                                                            "docs": {},
-                                                                                            "n": {
-                                                                                              "docs": {
-                                                                                                "Augmented.Request.Configuration.html#.allowOrigins": {
-                                                                                                  "ref": "Augmented.Request.Configuration.html#.allowOrigins",
-                                                                                                  "tf": 1075
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "m": {
-                                                                                    "docs": {},
-                                                                                    "e": {
-                                                                                      "docs": {},
-                                                                                      "t": {
-                                                                                        "docs": {},
-                                                                                        "h": {
-                                                                                          "docs": {},
-                                                                                          "o": {
-                                                                                            "docs": {},
-                                                                                            "d": {
-                                                                                              "docs": {
-                                                                                                "Augmented.Request.Configuration.html#.allowMethods": {
-                                                                                                  "ref": "Augmented.Request.Configuration.html#.allowMethods",
-                                                                                                  "tf": 1075
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "h": {
-                                                                          "docs": {},
-                                                                          "e": {
-                                                                            "docs": {},
-                                                                            "a": {
-                                                                              "docs": {},
-                                                                              "d": {
-                                                                                "docs": {
-                                                                                  "Augmented.Request.Configuration.html#.headers": {
-                                                                                    "ref": "Augmented.Request.Configuration.html#.headers",
-                                                                                    "tf": 1075
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "s": {
-                                                                          "docs": {},
-                                                                          "u": {
-                                                                            "docs": {},
-                                                                            "c": {
-                                                                              "docs": {},
-                                                                              "c": {
-                                                                                "docs": {},
-                                                                                "e": {
-                                                                                  "docs": {},
-                                                                                  "s": {
-                                                                                    "docs": {},
-                                                                                    "s": {
-                                                                                      "docs": {
-                                                                                        "Augmented.Request.Configuration.html#.success": {
-                                                                                          "ref": "Augmented.Request.Configuration.html#.success",
-                                                                                          "tf": 1075
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "e": {
-                                                                          "docs": {},
-                                                                          "r": {
-                                                                            "docs": {},
-                                                                            "r": {
-                                                                              "docs": {},
-                                                                              "o": {
-                                                                                "docs": {},
-                                                                                "r": {
-                                                                                  "docs": {
-                                                                                    "Augmented.Request.Configuration.html#.error": {
-                                                                                      "ref": "Augmented.Request.Configuration.html#.error",
-                                                                                      "tf": 1075
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "b": {
-                                                                          "docs": {},
-                                                                          "e": {
-                                                                            "docs": {},
-                                                                            "f": {
-                                                                              "docs": {},
-                                                                              "o": {
-                                                                                "docs": {},
-                                                                                "r": {
-                                                                                  "docs": {},
-                                                                                  "e": {
-                                                                                    "docs": {},
-                                                                                    "s": {
-                                                                                      "docs": {},
-                                                                                      "e": {
-                                                                                        "docs": {},
-                                                                                        "n": {
-                                                                                          "docs": {},
-                                                                                          "d": {
-                                                                                            "docs": {
-                                                                                              "Augmented.Request.Configuration.html#.beforeSend": {
-                                                                                                "ref": "Augmented.Request.Configuration.html#.beforeSend",
-                                                                                                "tf": 1075
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        },
-                                                                        "x": {
-                                                                          "docs": {},
-                                                                          "h": {
-                                                                            "docs": {},
-                                                                            "r": {
-                                                                              "docs": {},
-                                                                              "f": {
-                                                                                "docs": {},
-                                                                                "i": {
-                                                                                  "docs": {},
-                                                                                  "e": {
-                                                                                    "docs": {},
-                                                                                    "l": {
-                                                                                      "docs": {},
-                                                                                      "d": {
-                                                                                        "docs": {
-                                                                                          "Augmented.Request.Configuration.xhrFields.html": {
-                                                                                            "ref": "Augmented.Request.Configuration.xhrFields.html",
-                                                                                            "tf": 1075
-                                                                                          }
-                                                                                        },
-                                                                                        "s": {
-                                                                                          "docs": {},
-                                                                                          ".": {
-                                                                                            "docs": {},
-                                                                                            "w": {
-                                                                                              "docs": {},
-                                                                                              "i": {
-                                                                                                "docs": {},
-                                                                                                "t": {
-                                                                                                  "docs": {},
-                                                                                                  "h": {
-                                                                                                    "docs": {},
-                                                                                                    "c": {
-                                                                                                      "docs": {},
-                                                                                                      "r": {
-                                                                                                        "docs": {},
-                                                                                                        "e": {
-                                                                                                          "docs": {},
-                                                                                                          "d": {
-                                                                                                            "docs": {},
-                                                                                                            "e": {
-                                                                                                              "docs": {},
-                                                                                                              "n": {
-                                                                                                                "docs": {},
-                                                                                                                "t": {
-                                                                                                                  "docs": {},
-                                                                                                                  "i": {
-                                                                                                                    "docs": {
-                                                                                                                      "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
-                                                                                                                        "ref": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
-                                                                                                                        "tf": 1060
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
                                                           }
                                                         }
                                                       }
@@ -2158,9 +1402,9 @@ window.lunrData = {
                                                                                                   "docs": {},
                                                                                                   "u": {
                                                                                                     "docs": {
-                                                                                                      "Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                                                                        "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
-                                                                                                        "tf": 1075
+                                                                                                      "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                                                                                                        "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                                                                                                        "tf": 50
                                                                                                       }
                                                                                                     }
                                                                                                   }
@@ -2170,23 +1414,6 @@ window.lunrData = {
                                                                                           }
                                                                                         }
                                                                                       }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          },
-                                                                          "m": {
-                                                                            "docs": {},
-                                                                            "e": {
-                                                                              "docs": {},
-                                                                              "n": {
-                                                                                "docs": {},
-                                                                                "u": {
-                                                                                  "docs": {
-                                                                                    "Augmented.Presentation.Component.Menu.html": {
-                                                                                      "ref": "Augmented.Presentation.Component.Menu.html",
-                                                                                      "tf": 1075
                                                                                     }
                                                                                   }
                                                                                 }
@@ -2249,256 +1476,6 @@ window.lunrData = {
                                                           }
                                                         }
                                                       },
-                                                      "b": {
-                                                        "docs": {},
-                                                        "i": {
-                                                          "docs": {},
-                                                          "g": {
-                                                            "docs": {},
-                                                            "d": {
-                                                              "docs": {},
-                                                              "a": {
-                                                                "docs": {},
-                                                                "t": {
-                                                                  "docs": {},
-                                                                  "a": {
-                                                                    "docs": {},
-                                                                    "t": {
-                                                                      "docs": {
-                                                                        "Augmented.Presentation.BigDataTable.html": {
-                                                                          "ref": "Augmented.Presentation.BigDataTable.html",
-                                                                          "tf": 1100
-                                                                        }
-                                                                      },
-                                                                      "a": {
-                                                                        "docs": {},
-                                                                        "b": {
-                                                                          "docs": {},
-                                                                          "l": {
-                                                                            "docs": {},
-                                                                            "e": {
-                                                                              "docs": {},
-                                                                              "i": {
-                                                                                "docs": {},
-                                                                                "n": {
-                                                                                  "docs": {},
-                                                                                  "s": {
-                                                                                    "docs": {},
-                                                                                    "t": {
-                                                                                      "docs": {
-                                                                                        "Augmented.Presentation.BigDataTable.html": {
-                                                                                          "ref": "Augmented.Presentation.BigDataTable.html",
-                                                                                          "tf": 10
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      "e": {
-                                                        "docs": {},
-                                                        "d": {
-                                                          "docs": {},
-                                                          "i": {
-                                                            "docs": {},
-                                                            "t": {
-                                                              "docs": {},
-                                                              "a": {
-                                                                "docs": {},
-                                                                "b": {
-                                                                  "docs": {},
-                                                                  "l": {
-                                                                    "docs": {},
-                                                                    "e": {
-                                                                      "docs": {},
-                                                                      "b": {
-                                                                        "docs": {},
-                                                                        "i": {
-                                                                          "docs": {},
-                                                                          "g": {
-                                                                            "docs": {},
-                                                                            "d": {
-                                                                              "docs": {},
-                                                                              "a": {
-                                                                                "docs": {},
-                                                                                "t": {
-                                                                                  "docs": {},
-                                                                                  "a": {
-                                                                                    "docs": {},
-                                                                                    "t": {
-                                                                                      "docs": {
-                                                                                        "Augmented.Presentation.EditableBigDataTable.html": {
-                                                                                          "ref": "Augmented.Presentation.EditableBigDataTable.html",
-                                                                                          "tf": 1100
-                                                                                        }
-                                                                                      },
-                                                                                      "a": {
-                                                                                        "docs": {},
-                                                                                        "b": {
-                                                                                          "docs": {},
-                                                                                          "l": {
-                                                                                            "docs": {},
-                                                                                            "e": {
-                                                                                              "docs": {},
-                                                                                              "i": {
-                                                                                                "docs": {},
-                                                                                                "n": {
-                                                                                                  "docs": {},
-                                                                                                  "s": {
-                                                                                                    "docs": {},
-                                                                                                    "t": {
-                                                                                                      "docs": {
-                                                                                                        "Augmented.Presentation.EditableBigDataTable.html": {
-                                                                                                          "ref": "Augmented.Presentation.EditableBigDataTable.html",
-                                                                                                          "tf": 8.333333333333332
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      },
-                                                                      "l": {
-                                                                        "docs": {},
-                                                                        "o": {
-                                                                          "docs": {},
-                                                                          "c": {
-                                                                            "docs": {},
-                                                                            "a": {
-                                                                              "docs": {},
-                                                                              "l": {
-                                                                                "docs": {},
-                                                                                "s": {
-                                                                                  "docs": {},
-                                                                                  "t": {
-                                                                                    "docs": {},
-                                                                                    "o": {
-                                                                                      "docs": {},
-                                                                                      "r": {
-                                                                                        "docs": {},
-                                                                                        "a": {
-                                                                                          "docs": {},
-                                                                                          "g": {
-                                                                                            "docs": {},
-                                                                                            "e": {
-                                                                                              "docs": {},
-                                                                                              "t": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Presentation.EditableLocalStorageTable.html": {
-                                                                                                    "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
-                                                                                                    "tf": 1100
-                                                                                                  }
-                                                                                                },
-                                                                                                "a": {
-                                                                                                  "docs": {},
-                                                                                                  "b": {
-                                                                                                    "docs": {},
-                                                                                                    "l": {
-                                                                                                      "docs": {},
-                                                                                                      "e": {
-                                                                                                        "docs": {},
-                                                                                                        "i": {
-                                                                                                          "docs": {},
-                                                                                                          "n": {
-                                                                                                            "docs": {},
-                                                                                                            "s": {
-                                                                                                              "docs": {},
-                                                                                                              "t": {
-                                                                                                                "docs": {
-                                                                                                                  "Augmented.Presentation.EditableLocalStorageTable.html": {
-                                                                                                                    "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
-                                                                                                                    "tf": 7.142857142857142
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      },
-                                                                      "t": {
-                                                                        "docs": {
-                                                                          "Augmented.Presentation.EditableTable.html": {
-                                                                            "ref": "Augmented.Presentation.EditableTable.html",
-                                                                            "tf": 1100
-                                                                          }
-                                                                        },
-                                                                        "a": {
-                                                                          "docs": {},
-                                                                          "b": {
-                                                                            "docs": {},
-                                                                            "l": {
-                                                                              "docs": {},
-                                                                              "e": {
-                                                                                "docs": {},
-                                                                                "i": {
-                                                                                  "docs": {},
-                                                                                  "n": {
-                                                                                    "docs": {},
-                                                                                    "s": {
-                                                                                      "docs": {},
-                                                                                      "t": {
-                                                                                        "docs": {
-                                                                                          "Augmented.Presentation.EditableTable.html": {
-                                                                                            "ref": "Augmented.Presentation.EditableTable.html",
-                                                                                            "tf": 12.5
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
                                                       "l": {
                                                         "docs": {},
                                                         "o": {
@@ -2525,88 +1502,9 @@ window.lunrData = {
                                                                               "docs": {},
                                                                               "t": {
                                                                                 "docs": {
-                                                                                  "Augmented.Presentation.LocalStorageTable.html": {
-                                                                                    "ref": "Augmented.Presentation.LocalStorageTable.html",
-                                                                                    "tf": 1100
-                                                                                  }
-                                                                                },
-                                                                                "a": {
-                                                                                  "docs": {},
-                                                                                  "b": {
-                                                                                    "docs": {},
-                                                                                    "l": {
-                                                                                      "docs": {},
-                                                                                      "e": {
-                                                                                        "docs": {},
-                                                                                        "i": {
-                                                                                          "docs": {},
-                                                                                          "n": {
-                                                                                            "docs": {},
-                                                                                            "s": {
-                                                                                              "docs": {},
-                                                                                              "t": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Presentation.LocalStorageTable.html": {
-                                                                                                    "ref": "Augmented.Presentation.LocalStorageTable.html",
-                                                                                                    "tf": 7.142857142857142
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      "s": {
-                                                        "docs": {},
-                                                        "p": {
-                                                          "docs": {},
-                                                          "r": {
-                                                            "docs": {},
-                                                            "e": {
-                                                              "docs": {},
-                                                              "a": {
-                                                                "docs": {},
-                                                                "d": {
-                                                                  "docs": {},
-                                                                  "s": {
-                                                                    "docs": {},
-                                                                    "h": {
-                                                                      "docs": {},
-                                                                      "e": {
-                                                                        "docs": {},
-                                                                        "e": {
-                                                                          "docs": {},
-                                                                          "t": {
-                                                                            "docs": {},
-                                                                            "i": {
-                                                                              "docs": {},
-                                                                              "n": {
-                                                                                "docs": {},
-                                                                                "s": {
-                                                                                  "docs": {},
-                                                                                  "t": {
-                                                                                    "docs": {
-                                                                                      "Presentation.Component.Spreadsheet.html": {
-                                                                                        "ref": "Presentation.Component.Spreadsheet.html",
-                                                                                        "tf": 3.8461538461538463
-                                                                                      }
-                                                                                    }
+                                                                                  "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                                                                                    "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
+                                                                                    "tf": 60
                                                                                   }
                                                                                 }
                                                                               }
@@ -2828,8 +1726,8 @@ window.lunrData = {
                   "ref": "Presentation.Pagination.PaginationFactory.html",
                   "tf": 7.142857142857142
                 },
-                "Augmented.AbstractLocalStorage.html": {
-                  "ref": "Augmented.AbstractLocalStorage.html",
+                "Presentation.LocalStorage.html": {
+                  "ref": "Presentation.LocalStorage.html",
                   "tf": 10
                 },
                 "Presentation.Pagination.html#.PAGINATION_API_TYPE": {
@@ -2885,113 +1783,6 @@ window.lunrData = {
                               "Presentation.ViewController.html#.addPermission": {
                                 "ref": "Presentation.ViewController.html#.addPermission",
                                 "tf": 625
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "l": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "w": {
-                  "docs": {},
-                  "o": {
-                    "docs": {},
-                    "r": {
-                      "docs": {},
-                      "i": {
-                        "docs": {},
-                        "g": {
-                          "docs": {},
-                          "i": {
-                            "docs": {},
-                            "n": {
-                              "docs": {
-                                "Augmented.Request.Configuration.html#.allowOrigins": {
-                                  "ref": "Augmented.Request.Configuration.html#.allowOrigins",
-                                  "tf": 650
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
-                  "m": {
-                    "docs": {},
-                    "e": {
-                      "docs": {},
-                      "t": {
-                        "docs": {},
-                        "h": {
-                          "docs": {},
-                          "o": {
-                            "docs": {},
-                            "d": {
-                              "docs": {
-                                "Augmented.Request.Configuration.html#.allowMethods": {
-                                  "ref": "Augmented.Request.Configuration.html#.allowMethods",
-                                  "tf": 650
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "Presentation.Component.AlertDialogView.html": {
-                      "ref": "Presentation.Component.AlertDialogView.html",
-                      "tf": 5.555555555555555
-                    }
-                  },
-                  "d": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "a": {
-                        "docs": {},
-                        "l": {
-                          "docs": {},
-                          "o": {
-                            "docs": {},
-                            "g": {
-                              "docs": {},
-                              "v": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "e": {
-                                    "docs": {},
-                                    "w": {
-                                      "docs": {
-                                        "Presentation.Component.AlertDialogView.html": {
-                                          "ref": "Presentation.Component.AlertDialogView.html",
-                                          "tf": 600
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
                               }
                             }
                           }
@@ -3137,44 +1928,6 @@ window.lunrData = {
                             "tf": 10
                           }
                         },
-                        "l": {
-                          "docs": {},
-                          "o": {
-                            "docs": {},
-                            "c": {
-                              "docs": {},
-                              "a": {
-                                "docs": {},
-                                "l": {
-                                  "docs": {},
-                                  "s": {
-                                    "docs": {},
-                                    "t": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "r": {
-                                          "docs": {},
-                                          "a": {
-                                            "docs": {},
-                                            "g": {
-                                              "docs": {
-                                                "Augmented.AbstractLocalStorage.html": {
-                                                  "ref": "Augmented.AbstractLocalStorage.html",
-                                                  "tf": 750
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        },
                         "v": {
                           "docs": {},
                           "i": {
@@ -3231,6 +1984,58 @@ window.lunrData = {
                   "Presentation.DecoratorView.html": {
                     "ref": "Presentation.DecoratorView.html",
                     "tf": 0.8333333333333334
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "Presentation.Component.AlertDialogView.html": {
+                      "ref": "Presentation.Component.AlertDialogView.html",
+                      "tf": 5.555555555555555
+                    }
+                  },
+                  "d": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "l": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "g": {
+                              "docs": {},
+                              "v": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    "w": {
+                                      "docs": {
+                                        "Presentation.Component.AlertDialogView.html": {
+                                          "ref": "Presentation.Component.AlertDialogView.html",
+                                          "tf": 600
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -3745,20 +2550,6 @@ window.lunrData = {
                     "tf": 30
                   }
                 },
-                "t": {
-                  "docs": {},
-                  "y": {
-                    "docs": {},
-                    "p": {
-                      "docs": {
-                        "Augmented.Request.Configuration.html#.dataType": {
-                          "ref": "Augmented.Request.Configuration.html#.dataType",
-                          "tf": 650
-                        }
-                      }
-                    }
-                  }
-                },
                 "l": {
                   "docs": {},
                   "i": {
@@ -3898,23 +2689,6 @@ window.lunrData = {
               }
             }
           },
-          "r": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {
-                    "Augmented.Request.Configuration.html#.error": {
-                      "ref": "Augmented.Request.Configuration.html#.error",
-                      "tf": 650
-                    }
-                  }
-                }
-              }
-            }
-          },
           "v": {
             "docs": {},
             "e": {
@@ -3999,16 +2773,16 @@ window.lunrData = {
               "docs": {},
               "t": {
                 "docs": {
-                  "Augmented.Presentation.EditableBigDataTable.html": {
-                    "ref": "Augmented.Presentation.EditableBigDataTable.html",
+                  "Presentation.Component.EditableBigDataTable.html": {
+                    "ref": "Presentation.Component.EditableBigDataTable.html",
                     "tf": 8.333333333333332
                   },
-                  "Augmented.Presentation.EditableLocalStorageTable.html": {
-                    "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
+                  "Presentation.Component.EditableLocalStorageTable.html": {
+                    "ref": "Presentation.Component.EditableLocalStorageTable.html",
                     "tf": 7.142857142857142
                   },
-                  "Augmented.Presentation.EditableTable.html": {
-                    "ref": "Augmented.Presentation.EditableTable.html",
+                  "Presentation.Component.EditableTable.html": {
+                    "ref": "Presentation.Component.EditableTable.html",
                     "tf": 12.5
                   },
                   "Presentation.Component.Spreadsheet.html": {
@@ -4040,9 +2814,9 @@ window.lunrData = {
                                       "docs": {},
                                       "t": {
                                         "docs": {
-                                          "Augmented.Presentation.EditableBigDataTable.html": {
-                                            "ref": "Augmented.Presentation.EditableBigDataTable.html",
-                                            "tf": 700
+                                          "Presentation.Component.EditableBigDataTable.html": {
+                                            "ref": "Presentation.Component.EditableBigDataTable.html",
+                                            "tf": 600
                                           }
                                         }
                                       }
@@ -4079,9 +2853,9 @@ window.lunrData = {
                                                 "docs": {},
                                                 "t": {
                                                   "docs": {
-                                                    "Augmented.Presentation.EditableLocalStorageTable.html": {
-                                                      "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
-                                                      "tf": 700
+                                                    "Presentation.Component.EditableLocalStorageTable.html": {
+                                                      "ref": "Presentation.Component.EditableLocalStorageTable.html",
+                                                      "tf": 600
                                                     }
                                                   }
                                                 }
@@ -4099,9 +2873,9 @@ window.lunrData = {
                         },
                         "t": {
                           "docs": {
-                            "Augmented.Presentation.EditableTable.html": {
-                              "ref": "Augmented.Presentation.EditableTable.html",
-                              "tf": 700
+                            "Presentation.Component.EditableTable.html": {
+                              "ref": "Presentation.Component.EditableTable.html",
+                              "tf": 600
                             }
                           }
                         }
@@ -4239,6 +3013,30 @@ window.lunrData = {
                         "Presentation.ViewController.html#.getViews": {
                           "ref": "Presentation.ViewController.html#.getViews",
                           "tf": 12.5
+                        },
+                        "Presentation.Component.BigDataTable.html": {
+                          "ref": "Presentation.Component.BigDataTable.html",
+                          "tf": 10
+                        },
+                        "Presentation.Component.EditableBigDataTable.html": {
+                          "ref": "Presentation.Component.EditableBigDataTable.html",
+                          "tf": 8.333333333333332
+                        },
+                        "Presentation.Component.EditableLocalStorageTable.html": {
+                          "ref": "Presentation.Component.EditableLocalStorageTable.html",
+                          "tf": 7.142857142857142
+                        },
+                        "Presentation.Component.EditableTable.html": {
+                          "ref": "Presentation.Component.EditableTable.html",
+                          "tf": 12.5
+                        },
+                        "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                          "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
+                          "tf": 7.142857142857142
+                        },
+                        "Presentation.Component.Spreadsheet.html": {
+                          "ref": "Presentation.Component.Spreadsheet.html",
+                          "tf": 3.8461538461538463
                         }
                       }
                     }
@@ -4573,17 +3371,6 @@ window.lunrData = {
                       "ref": "Presentation.Model.html",
                       "tf": 758.3333333333334
                     }
-                  }
-                }
-              }
-            },
-            "c": {
-              "docs": {},
-              "k": {
-                "docs": {
-                  "Augmented.Request.Configuration.html#.mock": {
-                    "ref": "Augmented.Request.Configuration.html#.mock",
-                    "tf": 675
                   }
                 }
               }
@@ -5008,110 +3795,9 @@ window.lunrData = {
                         "ref": "Presentation.ViewController.html#.removeAllViews",
                         "tf": 5.555555555555555
                       },
-                      "Augmented.Request.Configuration.html#.method": {
-                        "ref": "Augmented.Request.Configuration.html#.method",
-                        "tf": 650
-                      },
                       "Presentation.Mediator.html#.getDefaultChannel": {
                         "ref": "Presentation.Mediator.html#.getDefaultChannel",
                         "tf": 12.5
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "m": {
-              "docs": {},
-              "b": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "Augmented.Request.Configuration.html#.url": {
-                        "ref": "Augmented.Request.Configuration.html#.url",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.contentType": {
-                        "ref": "Augmented.Request.Configuration.html#.contentType",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.dataType": {
-                        "ref": "Augmented.Request.Configuration.html#.dataType",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.method": {
-                        "ref": "Augmented.Request.Configuration.html#.method",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.cache": {
-                        "ref": "Augmented.Request.Configuration.html#.cache",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.timeout": {
-                        "ref": "Augmented.Request.Configuration.html#.timeout",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.crossDomain": {
-                        "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.user": {
-                        "ref": "Augmented.Request.Configuration.html#.user",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.password": {
-                        "ref": "Augmented.Request.Configuration.html#.password",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.allowOrigins": {
-                        "ref": "Augmented.Request.Configuration.html#.allowOrigins",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.allowMethods": {
-                        "ref": "Augmented.Request.Configuration.html#.allowMethods",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.headers": {
-                        "ref": "Augmented.Request.Configuration.html#.headers",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.success": {
-                        "ref": "Augmented.Request.Configuration.html#.success",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.error": {
-                        "ref": "Augmented.Request.Configuration.html#.error",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.complete": {
-                        "ref": "Augmented.Request.Configuration.html#.complete",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.beforeSend": {
-                        "ref": "Augmented.Request.Configuration.html#.beforeSend",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.html#.mock": {
-                        "ref": "Augmented.Request.Configuration.html#.mock",
-                        "tf": 110
-                      },
-                      "Presentation.Component.Header.html#.Header#title": {
-                        "ref": "Presentation.Component.Header.html#.Header#title",
-                        "tf": 110
-                      },
-                      "Presentation.Component.Header.html#.Header#subTitle": {
-                        "ref": "Presentation.Component.Header.html#.Header#subTitle",
-                        "tf": 110
-                      },
-                      "Presentation.Pagination.html#.PAGINATION_API_TYPE": {
-                        "ref": "Presentation.Pagination.html#.PAGINATION_API_TYPE",
-                        "tf": 110
-                      },
-                      "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
-                        "ref": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
-                        "tf": 110
                       }
                     }
                   }
@@ -5135,17 +3821,46 @@ window.lunrData = {
                 }
               }
             },
+            "m": {
+              "docs": {},
+              "b": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "Presentation.Component.Header.html#.Header#title": {
+                        "ref": "Presentation.Component.Header.html#.Header#title",
+                        "tf": 110
+                      },
+                      "Presentation.Component.Header.html#.Header#subTitle": {
+                        "ref": "Presentation.Component.Header.html#.Header#subTitle",
+                        "tf": 110
+                      },
+                      "Presentation.Pagination.html#.PAGINATION_API_TYPE": {
+                        "ref": "Presentation.Pagination.html#.PAGINATION_API_TYPE",
+                        "tf": 110
+                      },
+                      "Configuration.xhrFields.html#.withCredentials": {
+                        "ref": "Configuration.xhrFields.html#.withCredentials",
+                        "tf": 110
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "n": {
               "docs": {},
               "u": {
                 "docs": {
-                  "Augmented.Presentation.Component.HamburgerMenu.html": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
+                  "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                    "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
                     "tf": 16.666666666666664
                   },
-                  "Augmented.Presentation.Component.Menu.html": {
-                    "ref": "Augmented.Presentation.Component.Menu.html",
-                    "tf": 725
+                  "Presentation.Component.Menu.html": {
+                    "ref": "Presentation.Component.Menu.html",
+                    "tf": 650
                   }
                 }
               }
@@ -5718,6 +4433,118 @@ window.lunrData = {
                                                                                                               }
                                                                                                             }
                                                                                                           }
+                                                                                                        },
+                                                                                                        "m": {
+                                                                                                          "docs": {},
+                                                                                                          "p": {
+                                                                                                            "docs": {},
+                                                                                                            "o": {
+                                                                                                              "docs": {},
+                                                                                                              "n": {
+                                                                                                                "docs": {},
+                                                                                                                "e": {
+                                                                                                                  "docs": {},
+                                                                                                                  "n": {
+                                                                                                                    "docs": {},
+                                                                                                                    "t": {
+                                                                                                                      "docs": {},
+                                                                                                                      ".": {
+                                                                                                                        "docs": {},
+                                                                                                                        "h": {
+                                                                                                                          "docs": {},
+                                                                                                                          "a": {
+                                                                                                                            "docs": {},
+                                                                                                                            "m": {
+                                                                                                                              "docs": {},
+                                                                                                                              "b": {
+                                                                                                                                "docs": {},
+                                                                                                                                "u": {
+                                                                                                                                  "docs": {},
+                                                                                                                                  "r": {
+                                                                                                                                    "docs": {},
+                                                                                                                                    "g": {
+                                                                                                                                      "docs": {},
+                                                                                                                                      "e": {
+                                                                                                                                        "docs": {},
+                                                                                                                                        "r": {
+                                                                                                                                          "docs": {},
+                                                                                                                                          "m": {
+                                                                                                                                            "docs": {},
+                                                                                                                                            "e": {
+                                                                                                                                              "docs": {},
+                                                                                                                                              "n": {
+                                                                                                                                                "docs": {},
+                                                                                                                                                "u": {
+                                                                                                                                                  "docs": {
+                                                                                                                                                    "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                                                                                                                                                      "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                                                                                                                                                      "tf": 1050
+                                                                                                                                                    }
+                                                                                                                                                  }
+                                                                                                                                                }
+                                                                                                                                              }
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "l": {
+                                                                                                      "docs": {},
+                                                                                                      "o": {
+                                                                                                        "docs": {},
+                                                                                                        "c": {
+                                                                                                          "docs": {},
+                                                                                                          "a": {
+                                                                                                            "docs": {},
+                                                                                                            "l": {
+                                                                                                              "docs": {},
+                                                                                                              "s": {
+                                                                                                                "docs": {},
+                                                                                                                "t": {
+                                                                                                                  "docs": {},
+                                                                                                                  "o": {
+                                                                                                                    "docs": {},
+                                                                                                                    "r": {
+                                                                                                                      "docs": {},
+                                                                                                                      "a": {
+                                                                                                                        "docs": {},
+                                                                                                                        "g": {
+                                                                                                                          "docs": {},
+                                                                                                                          "e": {
+                                                                                                                            "docs": {},
+                                                                                                                            "t": {
+                                                                                                                              "docs": {
+                                                                                                                                "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                                                                                                                                  "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
+                                                                                                                                  "tf": 1060
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
                                                                                                         }
                                                                                                       }
                                                                                                     }
@@ -6019,9 +4846,9 @@ window.lunrData = {
                                                                               "docs": {},
                                                                               "u": {
                                                                                 "docs": {
-                                                                                  "Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                                                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
-                                                                                    "tf": 75
+                                                                                  "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                                                                                    "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                                                                                    "tf": 50
                                                                                   }
                                                                                 }
                                                                               }
@@ -6045,9 +4872,9 @@ window.lunrData = {
                                                             "docs": {},
                                                             "u": {
                                                               "docs": {
-                                                                "Augmented.Presentation.Component.Menu.html": {
-                                                                  "ref": "Augmented.Presentation.Component.Menu.html",
-                                                                  "tf": 75
+                                                                "Presentation.Component.Menu.html": {
+                                                                  "ref": "Presentation.Component.Menu.html",
+                                                                  "tf": 1100
                                                                 }
                                                               }
                                                             }
@@ -6096,6 +4923,140 @@ window.lunrData = {
                                                                                 }
                                                                               }
                                                                             }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "b": {
+                                                        "docs": {},
+                                                        "i": {
+                                                          "docs": {},
+                                                          "g": {
+                                                            "docs": {},
+                                                            "d": {
+                                                              "docs": {},
+                                                              "a": {
+                                                                "docs": {},
+                                                                "t": {
+                                                                  "docs": {},
+                                                                  "a": {
+                                                                    "docs": {},
+                                                                    "t": {
+                                                                      "docs": {
+                                                                        "Presentation.Component.BigDataTable.html": {
+                                                                          "ref": "Presentation.Component.BigDataTable.html",
+                                                                          "tf": 1100
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "e": {
+                                                        "docs": {},
+                                                        "d": {
+                                                          "docs": {},
+                                                          "i": {
+                                                            "docs": {},
+                                                            "t": {
+                                                              "docs": {},
+                                                              "a": {
+                                                                "docs": {},
+                                                                "b": {
+                                                                  "docs": {},
+                                                                  "l": {
+                                                                    "docs": {},
+                                                                    "e": {
+                                                                      "docs": {},
+                                                                      "b": {
+                                                                        "docs": {},
+                                                                        "i": {
+                                                                          "docs": {},
+                                                                          "g": {
+                                                                            "docs": {},
+                                                                            "d": {
+                                                                              "docs": {},
+                                                                              "a": {
+                                                                                "docs": {},
+                                                                                "t": {
+                                                                                  "docs": {},
+                                                                                  "a": {
+                                                                                    "docs": {},
+                                                                                    "t": {
+                                                                                      "docs": {
+                                                                                        "Presentation.Component.EditableBigDataTable.html": {
+                                                                                          "ref": "Presentation.Component.EditableBigDataTable.html",
+                                                                                          "tf": 1100
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "l": {
+                                                                        "docs": {},
+                                                                        "o": {
+                                                                          "docs": {},
+                                                                          "c": {
+                                                                            "docs": {},
+                                                                            "a": {
+                                                                              "docs": {},
+                                                                              "l": {
+                                                                                "docs": {},
+                                                                                "s": {
+                                                                                  "docs": {},
+                                                                                  "t": {
+                                                                                    "docs": {},
+                                                                                    "o": {
+                                                                                      "docs": {},
+                                                                                      "r": {
+                                                                                        "docs": {},
+                                                                                        "a": {
+                                                                                          "docs": {},
+                                                                                          "g": {
+                                                                                            "docs": {},
+                                                                                            "e": {
+                                                                                              "docs": {},
+                                                                                              "t": {
+                                                                                                "docs": {
+                                                                                                  "Presentation.Component.EditableLocalStorageTable.html": {
+                                                                                                    "ref": "Presentation.Component.EditableLocalStorageTable.html",
+                                                                                                    "tf": 1100
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "t": {
+                                                                        "docs": {
+                                                                          "Presentation.Component.EditableTable.html": {
+                                                                            "ref": "Presentation.Component.EditableTable.html",
+                                                                            "tf": 1100
                                                                           }
                                                                         }
                                                                       }
@@ -6287,7 +5248,12 @@ window.lunrData = {
                                                     "a": {
                                                       "docs": {},
                                                       "g": {
-                                                        "docs": {},
+                                                        "docs": {
+                                                          "Presentation.LocalStorage.html": {
+                                                            "ref": "Presentation.LocalStorage.html",
+                                                            "tf": 1150
+                                                          }
+                                                        },
                                                         "e": {
                                                           "docs": {},
                                                           "c": {
@@ -6344,9 +5310,9 @@ window.lunrData = {
                                                           },
                                                           "t": {
                                                             "docs": {
-                                                              "Augmented.Presentation.LocalStorageTable.html": {
-                                                                "ref": "Augmented.Presentation.LocalStorageTable.html",
-                                                                "tf": 100
+                                                              "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                                                                "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
+                                                                "tf": 60
                                                               }
                                                             }
                                                           }
@@ -7452,6 +6418,56 @@ window.lunrData = {
                                   },
                                   "r": {
                                     "docs": {},
+                                    "e": {
+                                      "docs": {},
+                                      "q": {
+                                        "docs": {},
+                                        "u": {
+                                          "docs": {},
+                                          "e": {
+                                            "docs": {},
+                                            "s": {
+                                              "docs": {},
+                                              "t": {
+                                                "docs": {},
+                                                ".": {
+                                                  "docs": {},
+                                                  "c": {
+                                                    "docs": {},
+                                                    "o": {
+                                                      "docs": {},
+                                                      "n": {
+                                                        "docs": {},
+                                                        "f": {
+                                                          "docs": {},
+                                                          "i": {
+                                                            "docs": {},
+                                                            "g": {
+                                                              "docs": {},
+                                                              "u": {
+                                                                "docs": {},
+                                                                "r": {
+                                                                  "docs": {
+                                                                    "Presentation.Request.Configuration.html": {
+                                                                      "ref": "Presentation.Request.Configuration.html",
+                                                                      "tf": 1100
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
                                     "o": {
                                       "docs": {},
                                       "u": {
@@ -7531,109 +6547,51 @@ window.lunrData = {
                                       }
                                     }
                                   },
-                                  "b": {
+                                  "n": {
                                     "docs": {},
-                                    "i": {
+                                    "a": {
                                       "docs": {},
-                                      "g": {
+                                      "m": {
                                         "docs": {},
-                                        "d": {
+                                        "e": {
                                           "docs": {},
-                                          "a": {
+                                          "s": {
                                             "docs": {},
-                                            "t": {
+                                            "p": {
                                               "docs": {},
                                               "a": {
                                                 "docs": {},
-                                                "t": {
-                                                  "docs": {
-                                                    "Augmented.Presentation.BigDataTable.html": {
-                                                      "ref": "Augmented.Presentation.BigDataTable.html",
-                                                      "tf": 100
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "e": {
-                                    "docs": {},
-                                    "d": {
-                                      "docs": {},
-                                      "i": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "a": {
-                                            "docs": {},
-                                            "b": {
-                                              "docs": {},
-                                              "l": {
-                                                "docs": {},
-                                                "e": {
+                                                "c": {
                                                   "docs": {},
-                                                  "b": {
+                                                  "e": {
                                                     "docs": {},
-                                                    "i": {
+                                                    "d": {
                                                       "docs": {},
-                                                      "g": {
+                                                      "l": {
                                                         "docs": {},
-                                                        "d": {
+                                                        "o": {
                                                           "docs": {},
-                                                          "a": {
+                                                          "c": {
                                                             "docs": {},
-                                                            "t": {
+                                                            "a": {
                                                               "docs": {},
-                                                              "a": {
+                                                              "l": {
                                                                 "docs": {},
-                                                                "t": {
-                                                                  "docs": {
-                                                                    "Augmented.Presentation.EditableBigDataTable.html": {
-                                                                      "ref": "Augmented.Presentation.EditableBigDataTable.html",
-                                                                      "tf": 100
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  },
-                                                  "l": {
-                                                    "docs": {},
-                                                    "o": {
-                                                      "docs": {},
-                                                      "c": {
-                                                        "docs": {},
-                                                        "a": {
-                                                          "docs": {},
-                                                          "l": {
-                                                            "docs": {},
-                                                            "s": {
-                                                              "docs": {},
-                                                              "t": {
-                                                                "docs": {},
-                                                                "o": {
+                                                                "s": {
                                                                   "docs": {},
-                                                                  "r": {
+                                                                  "t": {
                                                                     "docs": {},
-                                                                    "a": {
+                                                                    "o": {
                                                                       "docs": {},
-                                                                      "g": {
+                                                                      "r": {
                                                                         "docs": {},
-                                                                        "e": {
+                                                                        "a": {
                                                                           "docs": {},
-                                                                          "t": {
+                                                                          "g": {
                                                                             "docs": {
-                                                                              "Augmented.Presentation.EditableLocalStorageTable.html": {
-                                                                                "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
-                                                                                "tf": 100
+                                                                              "Presentation.NamespacedLocalStorage.html": {
+                                                                                "ref": "Presentation.NamespacedLocalStorage.html",
+                                                                                "tf": 1150
                                                                               }
                                                                             }
                                                                           }
@@ -7646,14 +6604,6 @@ window.lunrData = {
                                                             }
                                                           }
                                                         }
-                                                      }
-                                                    }
-                                                  },
-                                                  "t": {
-                                                    "docs": {
-                                                      "Augmented.Presentation.EditableTable.html": {
-                                                        "ref": "Augmented.Presentation.EditableTable.html",
-                                                        "tf": 100
                                                       }
                                                     }
                                                   }
@@ -7830,24 +6780,24 @@ window.lunrData = {
                             "docs": {},
                             "r": {
                               "docs": {
-                                "Augmented.Presentation.BigDataTable.html": {
-                                  "ref": "Augmented.Presentation.BigDataTable.html",
+                                "Presentation.Component.BigDataTable.html": {
+                                  "ref": "Presentation.Component.BigDataTable.html",
                                   "tf": 10
                                 },
-                                "Augmented.Presentation.EditableBigDataTable.html": {
-                                  "ref": "Augmented.Presentation.EditableBigDataTable.html",
+                                "Presentation.Component.EditableBigDataTable.html": {
+                                  "ref": "Presentation.Component.EditableBigDataTable.html",
                                   "tf": 8.333333333333332
                                 },
-                                "Augmented.Presentation.EditableLocalStorageTable.html": {
-                                  "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
+                                "Presentation.Component.EditableLocalStorageTable.html": {
+                                  "ref": "Presentation.Component.EditableLocalStorageTable.html",
                                   "tf": 7.142857142857142
                                 },
-                                "Augmented.Presentation.EditableTable.html": {
-                                  "ref": "Augmented.Presentation.EditableTable.html",
+                                "Presentation.Component.EditableTable.html": {
+                                  "ref": "Presentation.Component.EditableTable.html",
                                   "tf": 12.5
                                 },
-                                "Augmented.Presentation.LocalStorageTable.html": {
-                                  "ref": "Augmented.Presentation.LocalStorageTable.html",
+                                "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                                  "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
                                   "tf": 7.142857142857142
                                 },
                                 "Presentation.Component.Spreadsheet.html": {
@@ -7893,57 +6843,9 @@ window.lunrData = {
                       "docs": {},
                       "i": {
                         "docs": {
-                          "Augmented.Request.Configuration.html": {
-                            "ref": "Augmented.Request.Configuration.html",
+                          "Presentation.Request.Configuration.html": {
+                            "ref": "Presentation.Request.Configuration.html",
                             "tf": 5.555555555555555
-                          },
-                          "Augmented.Request.Configuration.html#.url": {
-                            "ref": "Augmented.Request.Configuration.html#.url",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.contentType": {
-                            "ref": "Augmented.Request.Configuration.html#.contentType",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.dataType": {
-                            "ref": "Augmented.Request.Configuration.html#.dataType",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.method": {
-                            "ref": "Augmented.Request.Configuration.html#.method",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.cache": {
-                            "ref": "Augmented.Request.Configuration.html#.cache",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.timeout": {
-                            "ref": "Augmented.Request.Configuration.html#.timeout",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.crossDomain": {
-                            "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                            "tf": 10
-                          },
-                          "Augmented.Request.Configuration.html#.user": {
-                            "ref": "Augmented.Request.Configuration.html#.user",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.password": {
-                            "ref": "Augmented.Request.Configuration.html#.password",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.allowOrigins": {
-                            "ref": "Augmented.Request.Configuration.html#.allowOrigins",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.allowMethods": {
-                            "ref": "Augmented.Request.Configuration.html#.allowMethods",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.headers": {
-                            "ref": "Augmented.Request.Configuration.html#.headers",
-                            "tf": 25
                           },
                           "Presentation.Component.Header.html#.Header#title": {
                             "ref": "Presentation.Component.Header.html#.Header#title",
@@ -7953,12 +6855,12 @@ window.lunrData = {
                             "ref": "Presentation.Component.Header.html#.Header#subTitle",
                             "tf": 25
                           },
-                          "Augmented.Request.Configuration.xhrFields.html": {
-                            "ref": "Augmented.Request.Configuration.xhrFields.html",
+                          "Configuration.xhrFields.html": {
+                            "ref": "Configuration.xhrFields.html",
                             "tf": 25
                           },
-                          "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
-                            "ref": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
+                          "Configuration.xhrFields.html#.withCredentials": {
+                            "ref": "Configuration.xhrFields.html#.withCredentials",
                             "tf": 25
                           }
                         }
@@ -7993,12 +6895,12 @@ window.lunrData = {
                       "ref": "Presentation.Pagination.PaginationFactory.html",
                       "tf": 14.285714285714285
                     },
-                    "Augmented.Presentation.BigDataTable.html": {
-                      "ref": "Augmented.Presentation.BigDataTable.html",
+                    "Presentation.Component.BigDataTable.html": {
+                      "ref": "Presentation.Component.BigDataTable.html",
                       "tf": 10
                     },
-                    "Augmented.Presentation.EditableBigDataTable.html": {
-                      "ref": "Augmented.Presentation.EditableBigDataTable.html",
+                    "Presentation.Component.EditableBigDataTable.html": {
+                      "ref": "Presentation.Component.EditableBigDataTable.html",
                       "tf": 8.333333333333332
                     },
                     "Presentation.Pagination.html": {
@@ -8215,26 +7117,9 @@ window.lunrData = {
               "docs": {},
               "s": {
                 "docs": {
-                  "Augmented.Request.Configuration.html": {
-                    "ref": "Augmented.Request.Configuration.html",
+                  "Presentation.Request.Configuration.html": {
+                    "ref": "Presentation.Request.Configuration.html",
                     "tf": 5.555555555555555
-                  }
-                },
-                "w": {
-                  "docs": {},
-                  "o": {
-                    "docs": {},
-                    "r": {
-                      "docs": {},
-                      "d": {
-                        "docs": {
-                          "Augmented.Request.Configuration.html#.password": {
-                            "ref": "Augmented.Request.Configuration.html#.password",
-                            "tf": 650
-                          }
-                        }
-                      }
-                    }
                   }
                 }
               }
@@ -8613,8 +7498,8 @@ window.lunrData = {
                         "ref": "Presentation.Pagination.PaginationFactory.html",
                         "tf": 7.142857142857142
                       },
-                      "Augmented.AbstractLocalStorage.html": {
-                        "ref": "Augmented.AbstractLocalStorage.html",
+                      "Presentation.LocalStorage.html": {
+                        "ref": "Presentation.LocalStorage.html",
                         "tf": 10
                       }
                     }
@@ -8657,8 +7542,8 @@ window.lunrData = {
                     "docs": {},
                     "t": {
                       "docs": {
-                        "Augmented.Request.Configuration.html": {
-                          "ref": "Augmented.Request.Configuration.html",
+                        "Presentation.Request.Configuration.html": {
+                          "ref": "Presentation.Request.Configuration.html",
                           "tf": 5.555555555555555
                         }
                       },
@@ -8680,506 +7565,9 @@ window.lunrData = {
                                       "docs": {},
                                       "r": {
                                         "docs": {
-                                          "Augmented.Request.Configuration.html": {
-                                            "ref": "Augmented.Request.Configuration.html",
+                                          "Presentation.Request.Configuration.html": {
+                                            "ref": "Presentation.Request.Configuration.html",
                                             "tf": 100
-                                          }
-                                        },
-                                        "a": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {},
-                                            "i": {
-                                              "docs": {},
-                                              "o": {
-                                                "docs": {},
-                                                "n": {
-                                                  "docs": {},
-                                                  ".": {
-                                                    "docs": {},
-                                                    "u": {
-                                                      "docs": {},
-                                                      "r": {
-                                                        "docs": {},
-                                                        "l": {
-                                                          "docs": {
-                                                            "Augmented.Request.Configuration.html#.url": {
-                                                              "ref": "Augmented.Request.Configuration.html#.url",
-                                                              "tf": 75
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      "s": {
-                                                        "docs": {
-                                                          "Augmented.Request.Configuration.html#.user": {
-                                                            "ref": "Augmented.Request.Configuration.html#.user",
-                                                            "tf": 75
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "c": {
-                                                      "docs": {},
-                                                      "o": {
-                                                        "docs": {},
-                                                        "n": {
-                                                          "docs": {},
-                                                          "t": {
-                                                            "docs": {},
-                                                            "e": {
-                                                              "docs": {},
-                                                              "n": {
-                                                                "docs": {},
-                                                                "t": {
-                                                                  "docs": {},
-                                                                  "t": {
-                                                                    "docs": {},
-                                                                    "y": {
-                                                                      "docs": {},
-                                                                      "p": {
-                                                                        "docs": {
-                                                                          "Augmented.Request.Configuration.html#.contentType": {
-                                                                            "ref": "Augmented.Request.Configuration.html#.contentType",
-                                                                            "tf": 75
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "m": {
-                                                          "docs": {},
-                                                          "p": {
-                                                            "docs": {},
-                                                            "l": {
-                                                              "docs": {},
-                                                              "e": {
-                                                                "docs": {},
-                                                                "t": {
-                                                                  "docs": {
-                                                                    "Augmented.Request.Configuration.html#.complete": {
-                                                                      "ref": "Augmented.Request.Configuration.html#.complete",
-                                                                      "tf": 75
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      "a": {
-                                                        "docs": {},
-                                                        "c": {
-                                                          "docs": {},
-                                                          "h": {
-                                                            "docs": {
-                                                              "Augmented.Request.Configuration.html#.cache": {
-                                                                "ref": "Augmented.Request.Configuration.html#.cache",
-                                                                "tf": 75
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      "r": {
-                                                        "docs": {},
-                                                        "o": {
-                                                          "docs": {},
-                                                          "s": {
-                                                            "docs": {},
-                                                            "s": {
-                                                              "docs": {},
-                                                              "d": {
-                                                                "docs": {},
-                                                                "o": {
-                                                                  "docs": {},
-                                                                  "m": {
-                                                                    "docs": {},
-                                                                    "a": {
-                                                                      "docs": {},
-                                                                      "i": {
-                                                                        "docs": {},
-                                                                        "n": {
-                                                                          "docs": {
-                                                                            "Augmented.Request.Configuration.html#.crossDomain": {
-                                                                              "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                                                                              "tf": 75
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "d": {
-                                                      "docs": {},
-                                                      "a": {
-                                                        "docs": {},
-                                                        "t": {
-                                                          "docs": {},
-                                                          "a": {
-                                                            "docs": {},
-                                                            "t": {
-                                                              "docs": {},
-                                                              "y": {
-                                                                "docs": {},
-                                                                "p": {
-                                                                  "docs": {
-                                                                    "Augmented.Request.Configuration.html#.dataType": {
-                                                                      "ref": "Augmented.Request.Configuration.html#.dataType",
-                                                                      "tf": 75
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "m": {
-                                                      "docs": {},
-                                                      "e": {
-                                                        "docs": {},
-                                                        "t": {
-                                                          "docs": {},
-                                                          "h": {
-                                                            "docs": {},
-                                                            "o": {
-                                                              "docs": {},
-                                                              "d": {
-                                                                "docs": {
-                                                                  "Augmented.Request.Configuration.html#.method": {
-                                                                    "ref": "Augmented.Request.Configuration.html#.method",
-                                                                    "tf": 75
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      "o": {
-                                                        "docs": {},
-                                                        "c": {
-                                                          "docs": {},
-                                                          "k": {
-                                                            "docs": {
-                                                              "Augmented.Request.Configuration.html#.mock": {
-                                                                "ref": "Augmented.Request.Configuration.html#.mock",
-                                                                "tf": 75
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "t": {
-                                                      "docs": {},
-                                                      "i": {
-                                                        "docs": {},
-                                                        "m": {
-                                                          "docs": {},
-                                                          "e": {
-                                                            "docs": {},
-                                                            "o": {
-                                                              "docs": {},
-                                                              "u": {
-                                                                "docs": {},
-                                                                "t": {
-                                                                  "docs": {
-                                                                    "Augmented.Request.Configuration.html#.timeout": {
-                                                                      "ref": "Augmented.Request.Configuration.html#.timeout",
-                                                                      "tf": 75
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "p": {
-                                                      "docs": {},
-                                                      "a": {
-                                                        "docs": {},
-                                                        "s": {
-                                                          "docs": {},
-                                                          "s": {
-                                                            "docs": {},
-                                                            "w": {
-                                                              "docs": {},
-                                                              "o": {
-                                                                "docs": {},
-                                                                "r": {
-                                                                  "docs": {},
-                                                                  "d": {
-                                                                    "docs": {
-                                                                      "Augmented.Request.Configuration.html#.password": {
-                                                                        "ref": "Augmented.Request.Configuration.html#.password",
-                                                                        "tf": 75
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "a": {
-                                                      "docs": {},
-                                                      "l": {
-                                                        "docs": {},
-                                                        "l": {
-                                                          "docs": {},
-                                                          "o": {
-                                                            "docs": {},
-                                                            "w": {
-                                                              "docs": {},
-                                                              "o": {
-                                                                "docs": {},
-                                                                "r": {
-                                                                  "docs": {},
-                                                                  "i": {
-                                                                    "docs": {},
-                                                                    "g": {
-                                                                      "docs": {},
-                                                                      "i": {
-                                                                        "docs": {},
-                                                                        "n": {
-                                                                          "docs": {
-                                                                            "Augmented.Request.Configuration.html#.allowOrigins": {
-                                                                              "ref": "Augmented.Request.Configuration.html#.allowOrigins",
-                                                                              "tf": 75
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "m": {
-                                                                "docs": {},
-                                                                "e": {
-                                                                  "docs": {},
-                                                                  "t": {
-                                                                    "docs": {},
-                                                                    "h": {
-                                                                      "docs": {},
-                                                                      "o": {
-                                                                        "docs": {},
-                                                                        "d": {
-                                                                          "docs": {
-                                                                            "Augmented.Request.Configuration.html#.allowMethods": {
-                                                                              "ref": "Augmented.Request.Configuration.html#.allowMethods",
-                                                                              "tf": 75
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "h": {
-                                                      "docs": {},
-                                                      "e": {
-                                                        "docs": {},
-                                                        "a": {
-                                                          "docs": {},
-                                                          "d": {
-                                                            "docs": {
-                                                              "Augmented.Request.Configuration.html#.headers": {
-                                                                "ref": "Augmented.Request.Configuration.html#.headers",
-                                                                "tf": 75
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "s": {
-                                                      "docs": {},
-                                                      "u": {
-                                                        "docs": {},
-                                                        "c": {
-                                                          "docs": {},
-                                                          "c": {
-                                                            "docs": {},
-                                                            "e": {
-                                                              "docs": {},
-                                                              "s": {
-                                                                "docs": {},
-                                                                "s": {
-                                                                  "docs": {
-                                                                    "Augmented.Request.Configuration.html#.success": {
-                                                                      "ref": "Augmented.Request.Configuration.html#.success",
-                                                                      "tf": 75
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "e": {
-                                                      "docs": {},
-                                                      "r": {
-                                                        "docs": {},
-                                                        "r": {
-                                                          "docs": {},
-                                                          "o": {
-                                                            "docs": {},
-                                                            "r": {
-                                                              "docs": {
-                                                                "Augmented.Request.Configuration.html#.error": {
-                                                                  "ref": "Augmented.Request.Configuration.html#.error",
-                                                                  "tf": 75
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "b": {
-                                                      "docs": {},
-                                                      "e": {
-                                                        "docs": {},
-                                                        "f": {
-                                                          "docs": {},
-                                                          "o": {
-                                                            "docs": {},
-                                                            "r": {
-                                                              "docs": {},
-                                                              "e": {
-                                                                "docs": {},
-                                                                "s": {
-                                                                  "docs": {},
-                                                                  "e": {
-                                                                    "docs": {},
-                                                                    "n": {
-                                                                      "docs": {},
-                                                                      "d": {
-                                                                        "docs": {
-                                                                          "Augmented.Request.Configuration.html#.beforeSend": {
-                                                                            "ref": "Augmented.Request.Configuration.html#.beforeSend",
-                                                                            "tf": 75
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    },
-                                                    "x": {
-                                                      "docs": {},
-                                                      "h": {
-                                                        "docs": {},
-                                                        "r": {
-                                                          "docs": {},
-                                                          "f": {
-                                                            "docs": {},
-                                                            "i": {
-                                                              "docs": {},
-                                                              "e": {
-                                                                "docs": {},
-                                                                "l": {
-                                                                  "docs": {},
-                                                                  "d": {
-                                                                    "docs": {
-                                                                      "Augmented.Request.Configuration.xhrFields.html": {
-                                                                        "ref": "Augmented.Request.Configuration.xhrFields.html",
-                                                                        "tf": 75
-                                                                      }
-                                                                    },
-                                                                    "s": {
-                                                                      "docs": {},
-                                                                      ".": {
-                                                                        "docs": {},
-                                                                        "w": {
-                                                                          "docs": {},
-                                                                          "i": {
-                                                                            "docs": {},
-                                                                            "t": {
-                                                                              "docs": {},
-                                                                              "h": {
-                                                                                "docs": {},
-                                                                                "c": {
-                                                                                  "docs": {},
-                                                                                  "r": {
-                                                                                    "docs": {},
-                                                                                    "e": {
-                                                                                      "docs": {},
-                                                                                      "d": {
-                                                                                        "docs": {},
-                                                                                        "e": {
-                                                                                          "docs": {},
-                                                                                          "n": {
-                                                                                            "docs": {},
-                                                                                            "t": {
-                                                                                              "docs": {},
-                                                                                              "i": {
-                                                                                                "docs": {
-                                                                                                  "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
-                                                                                                    "ref": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
-                                                                                                    "tf": 60
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
                                           }
                                         }
                                       }
@@ -9432,20 +7820,24 @@ window.lunrData = {
                         "ref": "Presentation.LocalStorageCollection.html",
                         "tf": 10
                       },
-                      "Augmented.AbstractLocalStorage.html": {
-                        "ref": "Augmented.AbstractLocalStorage.html",
+                      "Presentation.LocalStorage.html": {
+                        "ref": "Presentation.LocalStorage.html",
                         "tf": 10
                       },
                       "Presentation.LocalStorageFactory.html": {
                         "ref": "Presentation.LocalStorageFactory.html",
                         "tf": 12.5
                       },
-                      "Augmented.Presentation.EditableLocalStorageTable.html": {
-                        "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
+                      "Presentation.NamespacedLocalStorage.html": {
+                        "ref": "Presentation.NamespacedLocalStorage.html",
+                        "tf": 12.5
+                      },
+                      "Presentation.Component.EditableLocalStorageTable.html": {
+                        "ref": "Presentation.Component.EditableLocalStorageTable.html",
                         "tf": 7.142857142857142
                       },
-                      "Augmented.Presentation.LocalStorageTable.html": {
-                        "ref": "Augmented.Presentation.LocalStorageTable.html",
+                      "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                        "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
                         "tf": 7.142857142857142
                       }
                     }
@@ -9527,10 +7919,6 @@ window.lunrData = {
                   "ref": "Presentation.ViewController.html#.setPermissions",
                   "tf": 16.666666666666664
                 },
-                "Augmented.Request.Configuration.html#.crossDomain": {
-                  "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                  "tf": 10
-                },
                 "Presentation.Router.html": {
                   "ref": "Presentation.Router.html",
                   "tf": 5.88235294117647
@@ -9574,8 +7962,8 @@ window.lunrData = {
                 "docs": {},
                 "p": {
                   "docs": {
-                    "Augmented.Request.Configuration.html": {
-                      "ref": "Augmented.Request.Configuration.html",
+                    "Presentation.Request.Configuration.html": {
+                      "ref": "Presentation.Request.Configuration.html",
                       "tf": 5.555555555555555
                     },
                     "Presentation.Colleague.html": {
@@ -9696,26 +8084,6 @@ window.lunrData = {
                         "Presentation.Model.html": {
                           "ref": "Presentation.Model.html",
                           "tf": 8.333333333333332
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "c": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "s": {
-                      "docs": {
-                        "Augmented.Request.Configuration.html#.success": {
-                          "ref": "Augmented.Request.Configuration.html#.success",
-                          "tf": 650
                         }
                       }
                     }
@@ -9910,16 +8278,16 @@ window.lunrData = {
               "docs": {},
               "t": {
                 "docs": {
-                  "Augmented.Presentation.BigDataTable.html": {
-                    "ref": "Augmented.Presentation.BigDataTable.html",
+                  "Presentation.Component.BigDataTable.html": {
+                    "ref": "Presentation.Component.BigDataTable.html",
                     "tf": 10
                   },
-                  "Augmented.Presentation.EditableBigDataTable.html": {
-                    "ref": "Augmented.Presentation.EditableBigDataTable.html",
+                  "Presentation.Component.EditableBigDataTable.html": {
+                    "ref": "Presentation.Component.EditableBigDataTable.html",
                     "tf": 8.333333333333332
                   },
-                  "Augmented.Presentation.EditableLocalStorageTable.html": {
-                    "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
+                  "Presentation.Component.EditableLocalStorageTable.html": {
+                    "ref": "Presentation.Component.EditableLocalStorageTable.html",
                     "tf": 7.142857142857142
                   }
                 }
@@ -10068,20 +8436,24 @@ window.lunrData = {
                       "ref": "Presentation.Pagination.PaginationFactory.html",
                       "tf": 110
                     },
-                    "Augmented.Request.Configuration.html": {
-                      "ref": "Augmented.Request.Configuration.html",
+                    "Presentation.Request.Configuration.html": {
+                      "ref": "Presentation.Request.Configuration.html",
                       "tf": 110
                     },
                     "Presentation.Router.html": {
                       "ref": "Presentation.Router.html",
                       "tf": 110
                     },
-                    "Augmented.AbstractLocalStorage.html": {
-                      "ref": "Augmented.AbstractLocalStorage.html",
+                    "Presentation.LocalStorage.html": {
+                      "ref": "Presentation.LocalStorage.html",
                       "tf": 110
                     },
                     "Presentation.LocalStorageFactory.html": {
                       "ref": "Presentation.LocalStorageFactory.html",
+                      "tf": 110
+                    },
+                    "Presentation.NamespacedLocalStorage.html": {
+                      "ref": "Presentation.NamespacedLocalStorage.html",
                       "tf": 110
                     },
                     "Presentation.AbstractView.html": {
@@ -10120,12 +8492,12 @@ window.lunrData = {
                       "ref": "Presentation.Component.Header.html",
                       "tf": 110
                     },
-                    "Augmented.Presentation.Component.HamburgerMenu.html": {
-                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
+                    "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                      "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
                       "tf": 110
                     },
-                    "Augmented.Presentation.Component.Menu.html": {
-                      "ref": "Augmented.Presentation.Component.Menu.html",
+                    "Presentation.Component.Menu.html": {
+                      "ref": "Presentation.Component.Menu.html",
                       "tf": 110
                     },
                     "Presentation.Component.NotificationCenter.html": {
@@ -10136,24 +8508,24 @@ window.lunrData = {
                       "ref": "Presentation.Component.AutomaticTable.html",
                       "tf": 110
                     },
-                    "Augmented.Presentation.BigDataTable.html": {
-                      "ref": "Augmented.Presentation.BigDataTable.html",
+                    "Presentation.Component.BigDataTable.html": {
+                      "ref": "Presentation.Component.BigDataTable.html",
                       "tf": 120
                     },
-                    "Augmented.Presentation.EditableBigDataTable.html": {
-                      "ref": "Augmented.Presentation.EditableBigDataTable.html",
+                    "Presentation.Component.EditableBigDataTable.html": {
+                      "ref": "Presentation.Component.EditableBigDataTable.html",
                       "tf": 118.33333333333333
                     },
-                    "Augmented.Presentation.EditableLocalStorageTable.html": {
-                      "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
+                    "Presentation.Component.EditableLocalStorageTable.html": {
+                      "ref": "Presentation.Component.EditableLocalStorageTable.html",
                       "tf": 117.14285714285714
                     },
-                    "Augmented.Presentation.EditableTable.html": {
-                      "ref": "Augmented.Presentation.EditableTable.html",
+                    "Presentation.Component.EditableTable.html": {
+                      "ref": "Presentation.Component.EditableTable.html",
                       "tf": 122.5
                     },
-                    "Augmented.Presentation.LocalStorageTable.html": {
-                      "ref": "Augmented.Presentation.LocalStorageTable.html",
+                    "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                      "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
                       "tf": 117.14285714285714
                     },
                     "Presentation.Component.Spreadsheet.html": {
@@ -10710,26 +9082,6 @@ window.lunrData = {
                 },
                 "e": {
                   "docs": {},
-                  "n": {
-                    "docs": {},
-                    "t": {
-                      "docs": {},
-                      "t": {
-                        "docs": {},
-                        "y": {
-                          "docs": {},
-                          "p": {
-                            "docs": {
-                              "Augmented.Request.Configuration.html#.contentType": {
-                                "ref": "Augmented.Request.Configuration.html#.contentType",
-                                "tf": 650
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  },
                   "x": {
                     "docs": {},
                     "t": {
@@ -10761,8 +9113,8 @@ window.lunrData = {
                       "docs": {},
                       "r": {
                         "docs": {
-                          "Augmented.Request.Configuration.html": {
-                            "ref": "Augmented.Request.Configuration.html",
+                          "Presentation.Request.Configuration.html": {
+                            "ref": "Presentation.Request.Configuration.html",
                             "tf": 705.5555555555555
                           },
                           "Presentation.Component.DialogView.html": {
@@ -10782,409 +9134,6 @@ window.lunrData = {
                                   "docs": {},
                                   ".": {
                                     "docs": {},
-                                    "u": {
-                                      "docs": {},
-                                      "r": {
-                                        "docs": {},
-                                        "l": {
-                                          "docs": {
-                                            "Augmented.Request.Configuration.html#.url": {
-                                              "ref": "Augmented.Request.Configuration.html#.url",
-                                              "tf": 75
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "s": {
-                                        "docs": {
-                                          "Augmented.Request.Configuration.html#.user": {
-                                            "ref": "Augmented.Request.Configuration.html#.user",
-                                            "tf": 75
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "c": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "n": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {},
-                                            "e": {
-                                              "docs": {},
-                                              "n": {
-                                                "docs": {},
-                                                "t": {
-                                                  "docs": {},
-                                                  "t": {
-                                                    "docs": {},
-                                                    "y": {
-                                                      "docs": {},
-                                                      "p": {
-                                                        "docs": {
-                                                          "Augmented.Request.Configuration.html#.contentType": {
-                                                            "ref": "Augmented.Request.Configuration.html#.contentType",
-                                                            "tf": 75
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "m": {
-                                          "docs": {},
-                                          "p": {
-                                            "docs": {},
-                                            "l": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "t": {
-                                                  "docs": {
-                                                    "Augmented.Request.Configuration.html#.complete": {
-                                                      "ref": "Augmented.Request.Configuration.html#.complete",
-                                                      "tf": 75
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "a": {
-                                        "docs": {},
-                                        "c": {
-                                          "docs": {},
-                                          "h": {
-                                            "docs": {
-                                              "Augmented.Request.Configuration.html#.cache": {
-                                                "ref": "Augmented.Request.Configuration.html#.cache",
-                                                "tf": 75
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "r": {
-                                        "docs": {},
-                                        "o": {
-                                          "docs": {},
-                                          "s": {
-                                            "docs": {},
-                                            "s": {
-                                              "docs": {},
-                                              "d": {
-                                                "docs": {},
-                                                "o": {
-                                                  "docs": {},
-                                                  "m": {
-                                                    "docs": {},
-                                                    "a": {
-                                                      "docs": {},
-                                                      "i": {
-                                                        "docs": {},
-                                                        "n": {
-                                                          "docs": {
-                                                            "Augmented.Request.Configuration.html#.crossDomain": {
-                                                              "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                                                              "tf": 75
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "d": {
-                                      "docs": {},
-                                      "a": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "a": {
-                                            "docs": {},
-                                            "t": {
-                                              "docs": {},
-                                              "y": {
-                                                "docs": {},
-                                                "p": {
-                                                  "docs": {
-                                                    "Augmented.Request.Configuration.html#.dataType": {
-                                                      "ref": "Augmented.Request.Configuration.html#.dataType",
-                                                      "tf": 75
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "m": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "h": {
-                                            "docs": {},
-                                            "o": {
-                                              "docs": {},
-                                              "d": {
-                                                "docs": {
-                                                  "Augmented.Request.Configuration.html#.method": {
-                                                    "ref": "Augmented.Request.Configuration.html#.method",
-                                                    "tf": 75
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "o": {
-                                        "docs": {},
-                                        "c": {
-                                          "docs": {},
-                                          "k": {
-                                            "docs": {
-                                              "Augmented.Request.Configuration.html#.mock": {
-                                                "ref": "Augmented.Request.Configuration.html#.mock",
-                                                "tf": 75
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "t": {
-                                      "docs": {},
-                                      "i": {
-                                        "docs": {},
-                                        "m": {
-                                          "docs": {},
-                                          "e": {
-                                            "docs": {},
-                                            "o": {
-                                              "docs": {},
-                                              "u": {
-                                                "docs": {},
-                                                "t": {
-                                                  "docs": {
-                                                    "Augmented.Request.Configuration.html#.timeout": {
-                                                      "ref": "Augmented.Request.Configuration.html#.timeout",
-                                                      "tf": 75
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "p": {
-                                      "docs": {},
-                                      "a": {
-                                        "docs": {},
-                                        "s": {
-                                          "docs": {},
-                                          "s": {
-                                            "docs": {},
-                                            "w": {
-                                              "docs": {},
-                                              "o": {
-                                                "docs": {},
-                                                "r": {
-                                                  "docs": {},
-                                                  "d": {
-                                                    "docs": {
-                                                      "Augmented.Request.Configuration.html#.password": {
-                                                        "ref": "Augmented.Request.Configuration.html#.password",
-                                                        "tf": 75
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "a": {
-                                      "docs": {},
-                                      "l": {
-                                        "docs": {},
-                                        "l": {
-                                          "docs": {},
-                                          "o": {
-                                            "docs": {},
-                                            "w": {
-                                              "docs": {},
-                                              "o": {
-                                                "docs": {},
-                                                "r": {
-                                                  "docs": {},
-                                                  "i": {
-                                                    "docs": {},
-                                                    "g": {
-                                                      "docs": {},
-                                                      "i": {
-                                                        "docs": {},
-                                                        "n": {
-                                                          "docs": {
-                                                            "Augmented.Request.Configuration.html#.allowOrigins": {
-                                                              "ref": "Augmented.Request.Configuration.html#.allowOrigins",
-                                                              "tf": 75
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              },
-                                              "m": {
-                                                "docs": {},
-                                                "e": {
-                                                  "docs": {},
-                                                  "t": {
-                                                    "docs": {},
-                                                    "h": {
-                                                      "docs": {},
-                                                      "o": {
-                                                        "docs": {},
-                                                        "d": {
-                                                          "docs": {
-                                                            "Augmented.Request.Configuration.html#.allowMethods": {
-                                                              "ref": "Augmented.Request.Configuration.html#.allowMethods",
-                                                              "tf": 75
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "h": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "a": {
-                                          "docs": {},
-                                          "d": {
-                                            "docs": {
-                                              "Augmented.Request.Configuration.html#.headers": {
-                                                "ref": "Augmented.Request.Configuration.html#.headers",
-                                                "tf": 75
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "s": {
-                                      "docs": {},
-                                      "u": {
-                                        "docs": {},
-                                        "c": {
-                                          "docs": {},
-                                          "c": {
-                                            "docs": {},
-                                            "e": {
-                                              "docs": {},
-                                              "s": {
-                                                "docs": {},
-                                                "s": {
-                                                  "docs": {
-                                                    "Augmented.Request.Configuration.html#.success": {
-                                                      "ref": "Augmented.Request.Configuration.html#.success",
-                                                      "tf": 75
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "e": {
-                                      "docs": {},
-                                      "r": {
-                                        "docs": {},
-                                        "r": {
-                                          "docs": {},
-                                          "o": {
-                                            "docs": {},
-                                            "r": {
-                                              "docs": {
-                                                "Augmented.Request.Configuration.html#.error": {
-                                                  "ref": "Augmented.Request.Configuration.html#.error",
-                                                  "tf": 75
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "b": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "f": {
-                                          "docs": {},
-                                          "o": {
-                                            "docs": {},
-                                            "r": {
-                                              "docs": {},
-                                              "e": {
-                                                "docs": {},
-                                                "s": {
-                                                  "docs": {},
-                                                  "e": {
-                                                    "docs": {},
-                                                    "n": {
-                                                      "docs": {},
-                                                      "d": {
-                                                        "docs": {
-                                                          "Augmented.Request.Configuration.html#.beforeSend": {
-                                                            "ref": "Augmented.Request.Configuration.html#.beforeSend",
-                                                            "tf": 75
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
                                     "x": {
                                       "docs": {},
                                       "h": {
@@ -11201,9 +9150,9 @@ window.lunrData = {
                                                   "docs": {},
                                                   "d": {
                                                     "docs": {
-                                                      "Augmented.Request.Configuration.xhrFields.html": {
-                                                        "ref": "Augmented.Request.Configuration.xhrFields.html",
-                                                        "tf": 175
+                                                      "Configuration.xhrFields.html": {
+                                                        "ref": "Configuration.xhrFields.html",
+                                                        "tf": 1150
                                                       }
                                                     },
                                                     "s": {
@@ -11234,9 +9183,9 @@ window.lunrData = {
                                                                               "docs": {},
                                                                               "i": {
                                                                                 "docs": {
-                                                                                  "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
-                                                                                    "ref": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
-                                                                                    "tf": 60
+                                                                                  "Configuration.xhrFields.html#.withCredentials": {
+                                                                                    "ref": "Configuration.xhrFields.html#.withCredentials",
+                                                                                    "tf": 1100
                                                                                   }
                                                                                 }
                                                                               }
@@ -11270,8 +9219,8 @@ window.lunrData = {
                       },
                       "t": {
                         "docs": {
-                          "Augmented.Request.Configuration.html": {
-                            "ref": "Augmented.Request.Configuration.html",
+                          "Presentation.Request.Configuration.html": {
+                            "ref": "Presentation.Request.Configuration.html",
                             "tf": 5.555555555555555
                           }
                         }
@@ -11383,20 +9332,6 @@ window.lunrData = {
               "docs": {},
               "p": {
                 "docs": {},
-                "l": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Augmented.Request.Configuration.html#.complete": {
-                          "ref": "Augmented.Request.Configuration.html#.complete",
-                          "tf": 650
-                        }
-                      }
-                    }
-                  }
-                },
                 "o": {
                   "docs": {},
                   "n": {
@@ -11603,6 +9538,118 @@ window.lunrData = {
                                                                                                             }
                                                                                                           }
                                                                                                         }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              },
+                                                                              "m": {
+                                                                                "docs": {},
+                                                                                "p": {
+                                                                                  "docs": {},
+                                                                                  "o": {
+                                                                                    "docs": {},
+                                                                                    "n": {
+                                                                                      "docs": {},
+                                                                                      "e": {
+                                                                                        "docs": {},
+                                                                                        "n": {
+                                                                                          "docs": {},
+                                                                                          "t": {
+                                                                                            "docs": {},
+                                                                                            ".": {
+                                                                                              "docs": {},
+                                                                                              "h": {
+                                                                                                "docs": {},
+                                                                                                "a": {
+                                                                                                  "docs": {},
+                                                                                                  "m": {
+                                                                                                    "docs": {},
+                                                                                                    "b": {
+                                                                                                      "docs": {},
+                                                                                                      "u": {
+                                                                                                        "docs": {},
+                                                                                                        "r": {
+                                                                                                          "docs": {},
+                                                                                                          "g": {
+                                                                                                            "docs": {},
+                                                                                                            "e": {
+                                                                                                              "docs": {},
+                                                                                                              "r": {
+                                                                                                                "docs": {},
+                                                                                                                "m": {
+                                                                                                                  "docs": {},
+                                                                                                                  "e": {
+                                                                                                                    "docs": {},
+                                                                                                                    "n": {
+                                                                                                                      "docs": {},
+                                                                                                                      "u": {
+                                                                                                                        "docs": {
+                                                                                                                          "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                                                                                                                            "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                                                                                                                            "tf": 50
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "l": {
+                                                                            "docs": {},
+                                                                            "o": {
+                                                                              "docs": {},
+                                                                              "c": {
+                                                                                "docs": {},
+                                                                                "a": {
+                                                                                  "docs": {},
+                                                                                  "l": {
+                                                                                    "docs": {},
+                                                                                    "s": {
+                                                                                      "docs": {},
+                                                                                      "t": {
+                                                                                        "docs": {},
+                                                                                        "o": {
+                                                                                          "docs": {},
+                                                                                          "r": {
+                                                                                            "docs": {},
+                                                                                            "a": {
+                                                                                              "docs": {},
+                                                                                              "g": {
+                                                                                                "docs": {},
+                                                                                                "e": {
+                                                                                                  "docs": {},
+                                                                                                  "t": {
+                                                                                                    "docs": {
+                                                                                                      "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                                                                                                        "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
+                                                                                                        "tf": 60
                                                                                                       }
                                                                                                     }
                                                                                                   }
@@ -11916,9 +9963,9 @@ window.lunrData = {
                                                     "docs": {},
                                                     "u": {
                                                       "docs": {
-                                                        "Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
-                                                          "tf": 75
+                                                        "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                                                          "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                                                          "tf": 50
                                                         }
                                                       }
                                                     }
@@ -11942,9 +9989,9 @@ window.lunrData = {
                                   "docs": {},
                                   "u": {
                                     "docs": {
-                                      "Augmented.Presentation.Component.Menu.html": {
-                                        "ref": "Augmented.Presentation.Component.Menu.html",
-                                        "tf": 75
+                                      "Presentation.Component.Menu.html": {
+                                        "ref": "Presentation.Component.Menu.html",
+                                        "tf": 200
                                       }
                                     }
                                   }
@@ -11993,6 +10040,140 @@ window.lunrData = {
                                                       }
                                                     }
                                                   }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "b": {
+                              "docs": {},
+                              "i": {
+                                "docs": {},
+                                "g": {
+                                  "docs": {},
+                                  "d": {
+                                    "docs": {},
+                                    "a": {
+                                      "docs": {},
+                                      "t": {
+                                        "docs": {},
+                                        "a": {
+                                          "docs": {},
+                                          "t": {
+                                            "docs": {
+                                              "Presentation.Component.BigDataTable.html": {
+                                                "ref": "Presentation.Component.BigDataTable.html",
+                                                "tf": 200
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "e": {
+                              "docs": {},
+                              "d": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {},
+                                    "a": {
+                                      "docs": {},
+                                      "b": {
+                                        "docs": {},
+                                        "l": {
+                                          "docs": {},
+                                          "e": {
+                                            "docs": {},
+                                            "b": {
+                                              "docs": {},
+                                              "i": {
+                                                "docs": {},
+                                                "g": {
+                                                  "docs": {},
+                                                  "d": {
+                                                    "docs": {},
+                                                    "a": {
+                                                      "docs": {},
+                                                      "t": {
+                                                        "docs": {},
+                                                        "a": {
+                                                          "docs": {},
+                                                          "t": {
+                                                            "docs": {
+                                                              "Presentation.Component.EditableBigDataTable.html": {
+                                                                "ref": "Presentation.Component.EditableBigDataTable.html",
+                                                                "tf": 200
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "l": {
+                                              "docs": {},
+                                              "o": {
+                                                "docs": {},
+                                                "c": {
+                                                  "docs": {},
+                                                  "a": {
+                                                    "docs": {},
+                                                    "l": {
+                                                      "docs": {},
+                                                      "s": {
+                                                        "docs": {},
+                                                        "t": {
+                                                          "docs": {},
+                                                          "o": {
+                                                            "docs": {},
+                                                            "r": {
+                                                              "docs": {},
+                                                              "a": {
+                                                                "docs": {},
+                                                                "g": {
+                                                                  "docs": {},
+                                                                  "e": {
+                                                                    "docs": {},
+                                                                    "t": {
+                                                                      "docs": {
+                                                                        "Presentation.Component.EditableLocalStorageTable.html": {
+                                                                          "ref": "Presentation.Component.EditableLocalStorageTable.html",
+                                                                          "tf": 200
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "t": {
+                                              "docs": {
+                                                "Presentation.Component.EditableTable.html": {
+                                                  "ref": "Presentation.Component.EditableTable.html",
+                                                  "tf": 200
                                                 }
                                               }
                                             }
@@ -12184,8 +10365,8 @@ window.lunrData = {
                     "ref": "Presentation.ViewController.html#.removeAllViews",
                     "tf": 5.555555555555555
                   },
-                  "Augmented.Request.Configuration.html": {
-                    "ref": "Augmented.Request.Configuration.html",
+                  "Presentation.Request.Configuration.html": {
+                    "ref": "Presentation.Request.Configuration.html",
                     "tf": 5.555555555555555
                   },
                   "Presentation.Router.html#.loadView": {
@@ -12209,25 +10390,9 @@ window.lunrData = {
                             "ref": "Presentation.ViewController.html#.canDisplay",
                             "tf": 12.5
                           },
-                          "Augmented.Request.Configuration.html": {
-                            "ref": "Augmented.Request.Configuration.html",
+                          "Presentation.Request.Configuration.html": {
+                            "ref": "Presentation.Request.Configuration.html",
                             "tf": 5.555555555555555
-                          },
-                          "Augmented.Request.Configuration.html#.success": {
-                            "ref": "Augmented.Request.Configuration.html#.success",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.error": {
-                            "ref": "Augmented.Request.Configuration.html#.error",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.complete": {
-                            "ref": "Augmented.Request.Configuration.html#.complete",
-                            "tf": 25
-                          },
-                          "Augmented.Request.Configuration.html#.beforeSend": {
-                            "ref": "Augmented.Request.Configuration.html#.beforeSend",
-                            "tf": 25
                           },
                           "Presentation.Mediator.html#.observeColleague": {
                             "ref": "Presentation.Mediator.html#.observeColleague",
@@ -12303,17 +10468,6 @@ window.lunrData = {
                 }
               }
             },
-            "c": {
-              "docs": {},
-              "h": {
-                "docs": {
-                  "Augmented.Request.Configuration.html#.cache": {
-                    "ref": "Augmented.Request.Configuration.html#.cache",
-                    "tf": 650
-                  }
-                }
-              }
-            },
             "r": {
               "docs": {},
               "d": {
@@ -12337,29 +10491,6 @@ window.lunrData = {
                     "Presentation.History.html": {
                       "ref": "Presentation.History.html",
                       "tf": 2.380952380952381
-                    }
-                  },
-                  "d": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "m": {
-                        "docs": {},
-                        "a": {
-                          "docs": {},
-                          "i": {
-                            "docs": {},
-                            "n": {
-                              "docs": {
-                                "Augmented.Request.Configuration.html#.crossDomain": {
-                                  "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                                  "tf": 635
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
                     }
                   }
                 }
@@ -12693,20 +10824,24 @@ window.lunrData = {
                       "ref": "Presentation.LocalStorageCollection.html",
                       "tf": 10
                     },
-                    "Augmented.AbstractLocalStorage.html": {
-                      "ref": "Augmented.AbstractLocalStorage.html",
+                    "Presentation.LocalStorage.html": {
+                      "ref": "Presentation.LocalStorage.html",
                       "tf": 10
                     },
                     "Presentation.LocalStorageFactory.html": {
                       "ref": "Presentation.LocalStorageFactory.html",
                       "tf": 12.5
                     },
-                    "Augmented.Presentation.EditableLocalStorageTable.html": {
-                      "ref": "Augmented.Presentation.EditableLocalStorageTable.html",
+                    "Presentation.NamespacedLocalStorage.html": {
+                      "ref": "Presentation.NamespacedLocalStorage.html",
+                      "tf": 12.5
+                    },
+                    "Presentation.Component.EditableLocalStorageTable.html": {
+                      "ref": "Presentation.Component.EditableLocalStorageTable.html",
                       "tf": 7.142857142857142
                     },
-                    "Augmented.Presentation.LocalStorageTable.html": {
-                      "ref": "Augmented.Presentation.LocalStorageTable.html",
+                    "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                      "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
                       "tf": 7.142857142857142
                     }
                   },
@@ -12721,7 +10856,12 @@ window.lunrData = {
                           "a": {
                             "docs": {},
                             "g": {
-                              "docs": {},
+                              "docs": {
+                                "Presentation.LocalStorage.html": {
+                                  "ref": "Presentation.LocalStorage.html",
+                                  "tf": 750
+                                }
+                              },
                               "e": {
                                 "docs": {},
                                 "c": {
@@ -12781,8 +10921,8 @@ window.lunrData = {
                                             "docs": {},
                                             "i": {
                                               "docs": {
-                                                "Augmented.AbstractLocalStorage.html": {
-                                                  "ref": "Augmented.AbstractLocalStorage.html",
+                                                "Presentation.LocalStorage.html": {
+                                                  "ref": "Presentation.LocalStorage.html",
                                                   "tf": 10
                                                 },
                                                 "Presentation.LocalStorageFactory.html": {
@@ -12799,9 +10939,9 @@ window.lunrData = {
                                 },
                                 "t": {
                                   "docs": {
-                                    "Augmented.Presentation.LocalStorageTable.html": {
-                                      "ref": "Augmented.Presentation.LocalStorageTable.html",
-                                      "tf": 700
+                                    "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                                      "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
+                                      "tf": 660
                                     }
                                   }
                                 }
@@ -12918,74 +11058,6 @@ window.lunrData = {
                                     "ref": "Presentation.ViewController.html#.canDisplay",
                                     "tf": 50
                                   },
-                                  "Augmented.Request.Configuration.html#.url": {
-                                    "ref": "Augmented.Request.Configuration.html#.url",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.contentType": {
-                                    "ref": "Augmented.Request.Configuration.html#.contentType",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.dataType": {
-                                    "ref": "Augmented.Request.Configuration.html#.dataType",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.method": {
-                                    "ref": "Augmented.Request.Configuration.html#.method",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.cache": {
-                                    "ref": "Augmented.Request.Configuration.html#.cache",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.timeout": {
-                                    "ref": "Augmented.Request.Configuration.html#.timeout",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.crossDomain": {
-                                    "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.user": {
-                                    "ref": "Augmented.Request.Configuration.html#.user",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.password": {
-                                    "ref": "Augmented.Request.Configuration.html#.password",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.allowOrigins": {
-                                    "ref": "Augmented.Request.Configuration.html#.allowOrigins",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.allowMethods": {
-                                    "ref": "Augmented.Request.Configuration.html#.allowMethods",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.headers": {
-                                    "ref": "Augmented.Request.Configuration.html#.headers",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.success": {
-                                    "ref": "Augmented.Request.Configuration.html#.success",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.error": {
-                                    "ref": "Augmented.Request.Configuration.html#.error",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.complete": {
-                                    "ref": "Augmented.Request.Configuration.html#.complete",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.beforeSend": {
-                                    "ref": "Augmented.Request.Configuration.html#.beforeSend",
-                                    "tf": 50
-                                  },
-                                  "Augmented.Request.Configuration.html#.mock": {
-                                    "ref": "Augmented.Request.Configuration.html#.mock",
-                                    "tf": 50
-                                  },
                                   "Presentation.Router.html#.loadView": {
                                     "ref": "Presentation.Router.html#.loadView",
                                     "tf": 33.33333333333333
@@ -13094,8 +11166,8 @@ window.lunrData = {
                                     "ref": "Presentation.Pagination.html#.PAGINATION_API_TYPE",
                                     "tf": 50
                                   },
-                                  "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
-                                    "ref": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
+                                  "Configuration.xhrFields.html#.withCredentials": {
+                                    "ref": "Configuration.xhrFields.html#.withCredentials",
                                     "tf": 50
                                   }
                                 }
@@ -13236,9 +11308,82 @@ window.lunrData = {
                             "ref": "Presentation.Pagination.html",
                             "tf": 110
                           },
-                          "Augmented.Request.Configuration.xhrFields.html": {
-                            "ref": "Augmented.Request.Configuration.xhrFields.html",
+                          "Configuration.xhrFields.html": {
+                            "ref": "Configuration.xhrFields.html",
                             "tf": 110
+                          }
+                        },
+                        "e": {
+                          "docs": {},
+                          "d": {
+                            "docs": {},
+                            "l": {
+                              "docs": {},
+                              "o": {
+                                "docs": {},
+                                "c": {
+                                  "docs": {},
+                                  "a": {
+                                    "docs": {},
+                                    "l": {
+                                      "docs": {},
+                                      "s": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {},
+                                          "o": {
+                                            "docs": {},
+                                            "r": {
+                                              "docs": {},
+                                              "a": {
+                                                "docs": {},
+                                                "g": {
+                                                  "docs": {
+                                                    "Presentation.NamespacedLocalStorage.html": {
+                                                      "ref": "Presentation.NamespacedLocalStorage.html",
+                                                      "tf": 750
+                                                    }
+                                                  },
+                                                  "e": {
+                                                    "docs": {},
+                                                    "r": {
+                                                      "docs": {},
+                                                      "e": {
+                                                        "docs": {},
+                                                        "t": {
+                                                          "docs": {},
+                                                          "r": {
+                                                            "docs": {},
+                                                            "i": {
+                                                              "docs": {},
+                                                              "e": {
+                                                                "docs": {},
+                                                                "v": {
+                                                                  "docs": {
+                                                                    "Presentation.NamespacedLocalStorage.html": {
+                                                                      "ref": "Presentation.NamespacedLocalStorage.html",
+                                                                      "tf": 12.5
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
                           }
                         }
                       }
@@ -13460,8 +11605,8 @@ window.lunrData = {
                     "ref": "Presentation.AbstractView.html",
                     "tf": 6.25
                   },
-                  "Augmented.Presentation.LocalStorageTable.html": {
-                    "ref": "Augmented.Presentation.LocalStorageTable.html",
+                  "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                    "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
                     "tf": 7.142857142857142
                   },
                   "Presentation.Colleague.html": {
@@ -13528,58 +11673,6 @@ window.lunrData = {
               }
             }
           },
-          "e": {
-            "docs": {},
-            "f": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "s": {
-                      "docs": {},
-                      "e": {
-                        "docs": {},
-                        "n": {
-                          "docs": {},
-                          "d": {
-                            "docs": {
-                              "Augmented.Request.Configuration.html#.beforeSend": {
-                                "ref": "Augmented.Request.Configuration.html#.beforeSend",
-                                "tf": 650
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "t": {
-              "docs": {},
-              "w": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "n": {
-                      "docs": {
-                        "Presentation.Mediator.html": {
-                          "ref": "Presentation.Mediator.html",
-                          "tf": 4.3478260869565215
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "u": {
             "docs": {},
             "t": {
@@ -13635,9 +11728,9 @@ window.lunrData = {
                       "docs": {},
                       "t": {
                         "docs": {
-                          "Augmented.Presentation.BigDataTable.html": {
-                            "ref": "Augmented.Presentation.BigDataTable.html",
-                            "tf": 700
+                          "Presentation.Component.BigDataTable.html": {
+                            "ref": "Presentation.Component.BigDataTable.html",
+                            "tf": 600
                           }
                         }
                       }
@@ -13691,6 +11784,29 @@ window.lunrData = {
                               }
                             }
                           }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "w": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "Presentation.Mediator.html": {
+                          "ref": "Presentation.Mediator.html",
+                          "tf": 4.3478260869565215
                         }
                       }
                     }
@@ -13766,8 +11882,8 @@ window.lunrData = {
                     "docs": {},
                     "g": {
                       "docs": {
-                        "Augmented.Presentation.Component.HamburgerMenu.html": {
-                          "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
+                        "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                          "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
                           "tf": 16.666666666666664
                         }
                       },
@@ -13783,9 +11899,9 @@ window.lunrData = {
                                 "docs": {},
                                 "u": {
                                   "docs": {
-                                    "Augmented.Presentation.Component.HamburgerMenu.html": {
-                                      "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
-                                      "tf": 675
+                                    "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                                      "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                                      "tf": 650
                                     }
                                   }
                                 }
@@ -13840,10 +11956,6 @@ window.lunrData = {
                   "docs": {},
                   "r": {
                     "docs": {
-                      "Augmented.Request.Configuration.html#.headers": {
-                        "ref": "Augmented.Request.Configuration.html#.headers",
-                        "tf": 650
-                      },
                       "Presentation.Component.Header.html": {
                         "ref": "Presentation.Component.Header.html",
                         "tf": 600
@@ -14308,17 +12420,6 @@ window.lunrData = {
                 "ref": "Presentation.DecoratorView.html",
                 "tf": 2.5
               }
-            },
-            "e": {
-              "docs": {},
-              "r": {
-                "docs": {
-                  "Augmented.Request.Configuration.html#.user": {
-                    "ref": "Augmented.Request.Configuration.html#.user",
-                    "tf": 650
-                  }
-                }
-              }
             }
           },
           "p": {
@@ -14344,10 +12445,6 @@ window.lunrData = {
                 "Presentation.History.html": {
                   "ref": "Presentation.History.html",
                   "tf": 4.761904761904762
-                },
-                "Augmented.Request.Configuration.html#.url": {
-                  "ref": "Augmented.Request.Configuration.html#.url",
-                  "tf": 650
                 },
                 "Presentation.Router.html": {
                   "ref": "Presentation.Router.html",
@@ -14566,8 +12663,8 @@ window.lunrData = {
                     "ref": "Presentation.Component.AutomaticForm.html",
                     "tf": 8.333333333333332
                   },
-                  "Augmented.Presentation.Component.HamburgerMenu.html": {
-                    "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
+                  "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+                    "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
                     "tf": 16.666666666666664
                   },
                   "Augmented.Presentation.Component.Toolbar.html": {
@@ -15510,26 +13607,6 @@ window.lunrData = {
           },
           "i": {
             "docs": {},
-            "m": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "u": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Augmented.Request.Configuration.html#.timeout": {
-                          "ref": "Augmented.Request.Configuration.html#.timeout",
-                          "tf": 650
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "t": {
               "docs": {},
               "l": {
@@ -15537,48 +13614,6 @@ window.lunrData = {
                   "Presentation.Component.Header.html#.Header#title": {
                     "ref": "Presentation.Component.Header.html#.Header#title",
                     "tf": 85
-                  }
-                }
-              }
-            }
-          },
-          "r": {
-            "docs": {},
-            "u": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "Augmented.Request.Configuration.html#.crossDomain": {
-                    "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                    "tf": 10
-                  }
-                }
-              }
-            },
-            "i": {
-              "docs": {},
-              "g": {
-                "docs": {},
-                "g": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "r": {
-                      "docs": {
-                        "Presentation.Mediator.html#.observeColleague": {
-                          "ref": "Presentation.Mediator.html#.observeColleague",
-                          "tf": 5
-                        },
-                        "Presentation.Mediator.html#.dismissColleagueTrigger": {
-                          "ref": "Presentation.Mediator.html#.dismissColleagueTrigger",
-                          "tf": 6.25
-                        },
-                        "Presentation.Mediator.html#.publish": {
-                          "ref": "Presentation.Mediator.html#.publish",
-                          "tf": 16.666666666666664
-                        }
-                      }
-                    }
                   }
                 }
               }
@@ -15594,8 +13629,8 @@ window.lunrData = {
                     "ref": "Presentation.Component.AutomaticTable.html",
                     "tf": 6.25
                   },
-                  "Augmented.Presentation.LocalStorageTable.html": {
-                    "ref": "Augmented.Presentation.LocalStorageTable.html",
+                  "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+                    "ref": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
                     "tf": 7.142857142857142
                   }
                 }
@@ -15708,6 +13743,37 @@ window.lunrData = {
                 }
               }
             }
+          },
+          "r": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "g": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "Presentation.Mediator.html#.observeColleague": {
+                          "ref": "Presentation.Mediator.html#.observeColleague",
+                          "tf": 5
+                        },
+                        "Presentation.Mediator.html#.dismissColleagueTrigger": {
+                          "ref": "Presentation.Mediator.html#.dismissColleagueTrigger",
+                          "tf": 6.25
+                        },
+                        "Presentation.Mediator.html#.publish": {
+                          "ref": "Presentation.Mediator.html#.publish",
+                          "tf": 16.666666666666664
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "o": {
@@ -15800,12 +13866,16 @@ window.lunrData = {
                   "docs": {},
                   "t": {
                     "docs": {
-                      "Augmented.Request.Configuration.html": {
-                        "ref": "Augmented.Request.Configuration.html",
+                      "Presentation.Request.Configuration.html": {
+                        "ref": "Presentation.Request.Configuration.html",
                         "tf": 5.555555555555555
                       },
                       "Presentation.LocalStorageFactory.html": {
                         "ref": "Presentation.LocalStorageFactory.html",
+                        "tf": 12.5
+                      },
+                      "Presentation.NamespacedLocalStorage.html": {
+                        "ref": "Presentation.NamespacedLocalStorage.html",
                         "tf": 12.5
                       },
                       "Presentation.Mediator.html": {
@@ -15888,6 +13958,66 @@ window.lunrData = {
             }
           }
         },
+        "y": {
+          "docs": {},
+          "e": {
+            "docs": {
+              "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
+                "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
+                "tf": 6.25
+              }
+            }
+          }
+        },
+        "j": {
+          "docs": {},
+          "s": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "n": {
+                "docs": {
+                  "Presentation.Component.AutomaticForm.html": {
+                    "ref": "Presentation.Component.AutomaticForm.html",
+                    "tf": 8.333333333333332
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "v": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "s": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "r": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "p": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "Presentation.DecoratorView.html": {
+                                "ref": "Presentation.DecoratorView.html",
+                                "tf": 0.8333333333333334
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "w": {
           "docs": {},
           "i": {
@@ -15896,6 +14026,20 @@ window.lunrData = {
               "docs": {},
               "h": {
                 "docs": {},
+                "o": {
+                  "docs": {},
+                  "u": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Presentation.DecoratorView.html": {
+                          "ref": "Presentation.DecoratorView.html",
+                          "tf": 0.8333333333333334
+                        }
+                      }
+                    }
+                  }
+                },
                 "c": {
                   "docs": {},
                   "r": {
@@ -15912,32 +14056,14 @@ window.lunrData = {
                               "docs": {},
                               "i": {
                                 "docs": {
-                                  "Augmented.Request.Configuration.html#.crossDomain": {
-                                    "ref": "Augmented.Request.Configuration.html#.crossDomain",
-                                    "tf": 10
-                                  },
-                                  "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
-                                    "ref": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
-                                    "tf": 635
+                                  "Configuration.xhrFields.html#.withCredentials": {
+                                    "ref": "Configuration.xhrFields.html#.withCredentials",
+                                    "tf": 675
                                   }
                                 }
                               }
                             }
                           }
-                        }
-                      }
-                    }
-                  }
-                },
-                "o": {
-                  "docs": {},
-                  "u": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Presentation.DecoratorView.html": {
-                          "ref": "Presentation.DecoratorView.html",
-                          "tf": 0.8333333333333334
                         }
                       }
                     }
@@ -16096,66 +14222,6 @@ window.lunrData = {
             }
           }
         },
-        "y": {
-          "docs": {},
-          "e": {
-            "docs": {
-              "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
-                "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
-                "tf": 6.25
-              }
-            }
-          }
-        },
-        "j": {
-          "docs": {},
-          "s": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "n": {
-                "docs": {
-                  "Presentation.Component.AutomaticForm.html": {
-                    "ref": "Presentation.Component.AutomaticForm.html",
-                    "tf": 8.333333333333332
-                  }
-                }
-              }
-            }
-          },
-          "a": {
-            "docs": {},
-            "v": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "s": {
-                  "docs": {},
-                  "c": {
-                    "docs": {},
-                    "r": {
-                      "docs": {},
-                      "i": {
-                        "docs": {},
-                        "p": {
-                          "docs": {},
-                          "t": {
-                            "docs": {
-                              "Presentation.DecoratorView.html": {
-                                "ref": "Presentation.DecoratorView.html",
-                                "tf": 0.8333333333333334
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "x": {
           "docs": {},
           "h": {
@@ -16172,9 +14238,9 @@ window.lunrData = {
                       "docs": {},
                       "d": {
                         "docs": {
-                          "Augmented.Request.Configuration.xhrFields.html": {
-                            "ref": "Augmented.Request.Configuration.xhrFields.html",
-                            "tf": 600
+                          "Configuration.xhrFields.html": {
+                            "ref": "Configuration.xhrFields.html",
+                            "tf": 775
                           }
                         },
                         "s": {
@@ -16205,9 +14271,9 @@ window.lunrData = {
                                                   "docs": {},
                                                   "i": {
                                                     "docs": {
-                                                      "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
-                                                        "ref": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
-                                                        "tf": 60
+                                                      "Configuration.xhrFields.html#.withCredentials": {
+                                                        "ref": "Configuration.xhrFields.html#.withCredentials",
+                                                        "tf": 100
                                                       }
                                                     }
                                                   }
@@ -16233,14 +14299,13 @@ window.lunrData = {
           }
         }
       },
-      "length": 1009
+      "length": 894
     },
     "corpusTokens": [
       "10",
       "2",
       "abil",
       "abstract",
-      "abstractlocalstorag",
       "abstracttoolbar",
       "abstractview",
       "achiev",
@@ -16249,8 +14314,6 @@ window.lunrData = {
       "addpermiss",
       "alert",
       "alertdialogview",
-      "allowmethod",
-      "alloworigin",
       "annot",
       "api",
       "append",
@@ -16260,46 +14323,14 @@ window.lunrData = {
       "artcil",
       "articl",
       "aubstract",
-      "augmented.abstractlocalstorag",
       "augmented.applicationadd",
       "augmented.j",
       "augmented.localstoragefactoryretriev",
-      "augmented.presentation.bigdatat",
-      "augmented.presentation.bigdatatableinst",
       "augmented.presentation.component.hamburgermenu",
-      "augmented.presentation.component.menu",
       "augmented.presentation.component.toolbar",
       "augmented.presentation.component.toolbar.rend",
       "augmented.presentation.confirmationdialogview",
-      "augmented.presentation.editablebigdatat",
-      "augmented.presentation.editablebigdatatableinst",
-      "augmented.presentation.editablelocalstoraget",
-      "augmented.presentation.editablelocalstoragetableinst",
-      "augmented.presentation.editablet",
-      "augmented.presentation.editabletableinst",
       "augmented.presentation.localstoraget",
-      "augmented.presentation.localstoragetableinst",
-      "augmented.presentation.spreadsheetinst",
-      "augmented.request.configur",
-      "augmented.request.configuration.allowmethod",
-      "augmented.request.configuration.alloworigin",
-      "augmented.request.configuration.beforesend",
-      "augmented.request.configuration.cach",
-      "augmented.request.configuration.complet",
-      "augmented.request.configuration.contenttyp",
-      "augmented.request.configuration.crossdomain",
-      "augmented.request.configuration.datatyp",
-      "augmented.request.configuration.error",
-      "augmented.request.configuration.head",
-      "augmented.request.configuration.method",
-      "augmented.request.configuration.mock",
-      "augmented.request.configuration.password",
-      "augmented.request.configuration.success",
-      "augmented.request.configuration.timeout",
-      "augmented.request.configuration.url",
-      "augmented.request.configuration.us",
-      "augmented.request.configuration.xhrfield",
-      "augmented.request.configuration.xhrfields.withcredenti",
       "auto",
       "automat",
       "automaticform",
@@ -16309,7 +14340,6 @@ window.lunrData = {
       "backbone.j",
       "backend",
       "base",
-      "beforesend",
       "between",
       "bigdatat",
       "bind",
@@ -16318,7 +14348,6 @@ window.lunrData = {
       "browser",
       "buffer",
       "button",
-      "cach",
       "call",
       "callback",
       "cancel",
@@ -16345,16 +14374,21 @@ window.lunrData = {
       "comfirm",
       "commun",
       "communicatewith",
-      "complet",
       "compon",
       "component.abstracttoolbar",
       "component.alertdialogview",
       "component.articl",
+      "component.augmented.presentation.component.hamburgermenu",
       "component.augmented.presentation.confirmationdialogview",
+      "component.augmented.presentation.localstoraget",
       "component.automaticform",
       "component.automatict",
+      "component.bigdatat",
       "component.card",
       "component.dialogview",
+      "component.editablebigdatat",
+      "component.editablelocalstoraget",
+      "component.editablet",
       "component.foot",
       "component.hamburgermenu",
       "component.head",
@@ -16367,28 +14401,10 @@ window.lunrData = {
       "component.toolbar.rend",
       "concept",
       "configur",
-      "configuration.allowmethod",
-      "configuration.alloworigin",
-      "configuration.beforesend",
-      "configuration.cach",
-      "configuration.complet",
-      "configuration.contenttyp",
-      "configuration.crossdomain",
-      "configuration.datatyp",
-      "configuration.error",
-      "configuration.head",
-      "configuration.method",
-      "configuration.mock",
-      "configuration.password",
-      "configuration.success",
-      "configuration.timeout",
-      "configuration.url",
-      "configuration.us",
       "configuration.xhrfield",
       "configuration.xhrfields.withcredenti",
       "configut",
       "confirmationdialogview",
-      "contenttyp",
       "context",
       "contract.although",
       "control",
@@ -16397,13 +14413,11 @@ window.lunrData = {
       "coupl",
       "creat",
       "cross",
-      "crossdomain",
       "css",
       "custom",
       "customev",
       "data",
       "datalist",
-      "datatyp",
       "decor",
       "decoratorview",
       "decoratorviewan",
@@ -16434,7 +14448,6 @@ window.lunrData = {
       "eitherpushst",
       "eleg",
       "end",
-      "error",
       "event",
       "events!thi",
       "events'support",
@@ -16505,6 +14518,7 @@ window.lunrData = {
       "load",
       "loadview",
       "local",
+      "localstorag",
       "localstoragecollect",
       "localstoragecollectiona",
       "localstoragefactori",
@@ -16533,7 +14547,6 @@ window.lunrData = {
       "menu",
       "messag",
       "method",
-      "mock",
       "model",
       "modul",
       "module:present",
@@ -16542,6 +14555,8 @@ window.lunrData = {
       "n",
       "name",
       "namespac",
+      "namespacedlocalstorag",
+      "namespacedlocalstorageretriev",
       "natch),fal",
       "neg",
       "new",
@@ -16567,7 +14582,6 @@ window.lunrData = {
       "panel",
       "panel/dialog",
       "pass",
-      "password",
       "patternth",
       "permiss",
       "polling.inspir",
@@ -16576,7 +14590,6 @@ window.lunrData = {
       "present",
       "presentation.abstractview",
       "presentation.appl",
-      "presentation.bigdatat",
       "presentation.colleagu",
       "presentation.colleague.delegateev",
       "presentation.colleague.getsubscript",
@@ -16588,11 +14601,17 @@ window.lunrData = {
       "presentation.component.abstracttoolbar",
       "presentation.component.alertdialogview",
       "presentation.component.articl",
+      "presentation.component.augmented.presentation.component.hamburgermenu",
       "presentation.component.augmented.presentation.confirmationdialogview",
+      "presentation.component.augmented.presentation.localstoraget",
       "presentation.component.automaticform",
       "presentation.component.automatict",
+      "presentation.component.bigdatat",
       "presentation.component.card",
       "presentation.component.dialogview",
+      "presentation.component.editablebigdatat",
+      "presentation.component.editablelocalstoraget",
+      "presentation.component.editablet",
       "presentation.component.foot",
       "presentation.component.hamburgermenu",
       "presentation.component.head",
@@ -16606,10 +14625,8 @@ window.lunrData = {
       "presentation.confirmationdialogview",
       "presentation.decoratorview",
       "presentation.dom",
-      "presentation.editablebigdatat",
-      "presentation.editablelocalstoraget",
-      "presentation.editablet",
       "presentation.histori",
+      "presentation.localstorag",
       "presentation.localstoragecollect",
       "presentation.localstoragefactori",
       "presentation.localstoraget",
@@ -16626,10 +14643,12 @@ window.lunrData = {
       "presentation.mediator.subscribeonc",
       "presentation.mediator.unsubscrib",
       "presentation.model",
+      "presentation.namespacedlocalstorag",
       "presentation.pagin",
       "presentation.paginatedcollect",
       "presentation.pagination.pagination_api_typ",
       "presentation.pagination.paginationfactori",
+      "presentation.request.configur",
       "presentation.rout",
       "presentation.router.cleanup",
       "presentation.router.loadview",
@@ -16666,25 +14685,6 @@ window.lunrData = {
       "render",
       "request",
       "request.configur",
-      "request.configuration.allowmethod",
-      "request.configuration.alloworigin",
-      "request.configuration.beforesend",
-      "request.configuration.cach",
-      "request.configuration.complet",
-      "request.configuration.contenttyp",
-      "request.configuration.crossdomain",
-      "request.configuration.datatyp",
-      "request.configuration.error",
-      "request.configuration.head",
-      "request.configuration.method",
-      "request.configuration.mock",
-      "request.configuration.password",
-      "request.configuration.success",
-      "request.configuration.timeout",
-      "request.configuration.url",
-      "request.configuration.us",
-      "request.configuration.xhrfield",
-      "request.configuration.xhrfields.withcredenti",
       "requir",
       "rest",
       "return",
@@ -16723,20 +14723,17 @@ window.lunrData = {
       "subscriptionsa",
       "subscriptionscan",
       "subtitl",
-      "success",
       "support",
       "tabl",
       "templat",
       "templatedata",
       "thank",
       "thier",
-      "timeout",
       "titl",
       "toolbar",
       "toolbar.rend",
       "tooldbar",
       "trigger",
-      "true",
       "type",
       "ui",
       "undelegateev",
@@ -16747,7 +14744,6 @@ window.lunrData = {
       "uri/json",
       "url",
       "us",
-      "user",
       "valid",
       "valu",
       "via",
@@ -17059,186 +15055,16 @@ window.lunrData = {
       "description": "Pagination factory for returning pagination collections of an API type",
       "body": ""
     },
-    "Augmented.Request.Configuration.html": {
-      "id": "Augmented.Request.Configuration.html",
+    "Presentation.Request.Configuration.html": {
+      "id": "Presentation.Request.Configuration.html",
       "kind": "class",
       "title": "Configuration",
-      "longname": "Augmented.Request.Configuration",
+      "longname": "Presentation.Request.Configuration",
       "name": "Configuration",
-      "tags": "Augmented.Request.Configuration Request.Configuration Configuration",
+      "tags": "Presentation.Request.Configuration Request.Configuration Configuration",
       "summary": "",
       "description": "Object of configuration properties and callbacks. Pass this to the request call to setup configutation",
       "body": ""
-    },
-    "Augmented.Request.Configuration.html#.url": {
-      "id": "Augmented.Request.Configuration.html#.url",
-      "kind": "member",
-      "title": "&lt;static&gt; url",
-      "longname": "Augmented.Request.Configuration.url",
-      "name": "url",
-      "tags": "Augmented.Request.Configuration.url Request.Configuration.url Configuration.url url",
-      "summary": "",
-      "description": "url property"
-    },
-    "Augmented.Request.Configuration.html#.contentType": {
-      "id": "Augmented.Request.Configuration.html#.contentType",
-      "kind": "member",
-      "title": "&lt;static&gt; contentType",
-      "longname": "Augmented.Request.Configuration.contentType",
-      "name": "contentType",
-      "tags": "Augmented.Request.Configuration.contentType Request.Configuration.contentType Configuration.contentType contentType",
-      "summary": "",
-      "description": "contentType property"
-    },
-    "Augmented.Request.Configuration.html#.dataType": {
-      "id": "Augmented.Request.Configuration.html#.dataType",
-      "kind": "member",
-      "title": "&lt;static&gt; dataType",
-      "longname": "Augmented.Request.Configuration.dataType",
-      "name": "dataType",
-      "tags": "Augmented.Request.Configuration.dataType Request.Configuration.dataType Configuration.dataType dataType",
-      "summary": "",
-      "description": "dataType property"
-    },
-    "Augmented.Request.Configuration.html#.method": {
-      "id": "Augmented.Request.Configuration.html#.method",
-      "kind": "member",
-      "title": "&lt;static&gt; method",
-      "longname": "Augmented.Request.Configuration.method",
-      "name": "method",
-      "tags": "Augmented.Request.Configuration.method Request.Configuration.method Configuration.method method",
-      "summary": "",
-      "description": "method property"
-    },
-    "Augmented.Request.Configuration.html#.cache": {
-      "id": "Augmented.Request.Configuration.html#.cache",
-      "kind": "member",
-      "title": "&lt;static&gt; cache",
-      "longname": "Augmented.Request.Configuration.cache",
-      "name": "cache",
-      "tags": "Augmented.Request.Configuration.cache Request.Configuration.cache Configuration.cache cache",
-      "summary": "",
-      "description": "cache property"
-    },
-    "Augmented.Request.Configuration.html#.timeout": {
-      "id": "Augmented.Request.Configuration.html#.timeout",
-      "kind": "member",
-      "title": "&lt;static&gt; timeout",
-      "longname": "Augmented.Request.Configuration.timeout",
-      "name": "timeout",
-      "tags": "Augmented.Request.Configuration.timeout Request.Configuration.timeout Configuration.timeout timeout",
-      "summary": "",
-      "description": "timeout property"
-    },
-    "Augmented.Request.Configuration.html#.crossDomain": {
-      "id": "Augmented.Request.Configuration.html#.crossDomain",
-      "kind": "member",
-      "title": "&lt;static&gt; crossDomain",
-      "longname": "Augmented.Request.Configuration.crossDomain",
-      "name": "crossDomain",
-      "tags": "Augmented.Request.Configuration.crossDomain Request.Configuration.crossDomain Configuration.crossDomain crossDomain",
-      "summary": "",
-      "description": "crossDomain property - sets withCredentials to true"
-    },
-    "Augmented.Request.Configuration.html#.user": {
-      "id": "Augmented.Request.Configuration.html#.user",
-      "kind": "member",
-      "title": "&lt;static&gt; user",
-      "longname": "Augmented.Request.Configuration.user",
-      "name": "user",
-      "tags": "Augmented.Request.Configuration.user Request.Configuration.user Configuration.user user",
-      "summary": "",
-      "description": "user property"
-    },
-    "Augmented.Request.Configuration.html#.password": {
-      "id": "Augmented.Request.Configuration.html#.password",
-      "kind": "member",
-      "title": "&lt;static&gt; password",
-      "longname": "Augmented.Request.Configuration.password",
-      "name": "password",
-      "tags": "Augmented.Request.Configuration.password Request.Configuration.password Configuration.password password",
-      "summary": "",
-      "description": "password property"
-    },
-    "Augmented.Request.Configuration.html#.allowOrigins": {
-      "id": "Augmented.Request.Configuration.html#.allowOrigins",
-      "kind": "member",
-      "title": "&lt;static&gt; allowOrigins",
-      "longname": "Augmented.Request.Configuration.allowOrigins",
-      "name": "allowOrigins",
-      "tags": "Augmented.Request.Configuration.allowOrigins Request.Configuration.allowOrigins Configuration.allowOrigins allowOrigins",
-      "summary": "",
-      "description": "allowOrigins property"
-    },
-    "Augmented.Request.Configuration.html#.allowMethods": {
-      "id": "Augmented.Request.Configuration.html#.allowMethods",
-      "kind": "member",
-      "title": "&lt;static&gt; allowMethods",
-      "longname": "Augmented.Request.Configuration.allowMethods",
-      "name": "allowMethods",
-      "tags": "Augmented.Request.Configuration.allowMethods Request.Configuration.allowMethods Configuration.allowMethods allowMethods",
-      "summary": "",
-      "description": "allowMethods property"
-    },
-    "Augmented.Request.Configuration.html#.headers": {
-      "id": "Augmented.Request.Configuration.html#.headers",
-      "kind": "member",
-      "title": "&lt;static&gt; headers",
-      "longname": "Augmented.Request.Configuration.headers",
-      "name": "headers",
-      "tags": "Augmented.Request.Configuration.headers Request.Configuration.headers Configuration.headers headers",
-      "summary": "",
-      "description": "headers property"
-    },
-    "Augmented.Request.Configuration.html#.success": {
-      "id": "Augmented.Request.Configuration.html#.success",
-      "kind": "member",
-      "title": "&lt;static&gt; success",
-      "longname": "Augmented.Request.Configuration.success",
-      "name": "success",
-      "tags": "Augmented.Request.Configuration.success Request.Configuration.success Configuration.success success",
-      "summary": "",
-      "description": "success callback"
-    },
-    "Augmented.Request.Configuration.html#.error": {
-      "id": "Augmented.Request.Configuration.html#.error",
-      "kind": "member",
-      "title": "&lt;static&gt; error",
-      "longname": "Augmented.Request.Configuration.error",
-      "name": "error",
-      "tags": "Augmented.Request.Configuration.error Request.Configuration.error Configuration.error error",
-      "summary": "",
-      "description": "error callback"
-    },
-    "Augmented.Request.Configuration.html#.complete": {
-      "id": "Augmented.Request.Configuration.html#.complete",
-      "kind": "member",
-      "title": "&lt;static&gt; complete",
-      "longname": "Augmented.Request.Configuration.complete",
-      "name": "complete",
-      "tags": "Augmented.Request.Configuration.complete Request.Configuration.complete Configuration.complete complete",
-      "summary": "",
-      "description": "complete callback"
-    },
-    "Augmented.Request.Configuration.html#.beforeSend": {
-      "id": "Augmented.Request.Configuration.html#.beforeSend",
-      "kind": "member",
-      "title": "&lt;static&gt; beforeSend",
-      "longname": "Augmented.Request.Configuration.beforeSend",
-      "name": "beforeSend",
-      "tags": "Augmented.Request.Configuration.beforeSend Request.Configuration.beforeSend Configuration.beforeSend beforeSend",
-      "summary": "",
-      "description": "beforeSend callback"
-    },
-    "Augmented.Request.Configuration.html#.mock": {
-      "id": "Augmented.Request.Configuration.html#.mock",
-      "kind": "member",
-      "title": "&lt;static&gt; mock",
-      "longname": "Augmented.Request.Configuration.mock",
-      "name": "mock",
-      "tags": "Augmented.Request.Configuration.mock Request.Configuration.mock Configuration.mock mock",
-      "summary": "",
-      "description": "mock"
     },
     "Presentation.Router.html": {
       "id": "Presentation.Router.html",
@@ -17271,13 +15097,13 @@ window.lunrData = {
       "summary": "",
       "description": "remove the last view by calling cleanup, then remove"
     },
-    "Augmented.AbstractLocalStorage.html": {
-      "id": "Augmented.AbstractLocalStorage.html",
+    "Presentation.LocalStorage.html": {
+      "id": "Presentation.LocalStorage.html",
       "kind": "class",
-      "title": "AbstractLocalStorage",
-      "longname": "Augmented.AbstractLocalStorage",
-      "name": "AbstractLocalStorage",
-      "tags": "Augmented.AbstractLocalStorage AbstractLocalStorage",
+      "title": "LocalStorage",
+      "longname": "Presentation.LocalStorage",
+      "name": "LocalStorage",
+      "tags": "Presentation.LocalStorage LocalStorage",
       "summary": "",
       "description": "Local Storage API - returned from LocalStorageFactory",
       "body": ""
@@ -17291,6 +15117,17 @@ window.lunrData = {
       "tags": "Presentation.LocalStorageFactory LocalStorageFactory",
       "summary": "",
       "description": "Augmented.LocalStorageFactoryRetrieve a local storage Object",
+      "body": ""
+    },
+    "Presentation.NamespacedLocalStorage.html": {
+      "id": "Presentation.NamespacedLocalStorage.html",
+      "kind": "class",
+      "title": "NamespacedLocalStorage",
+      "longname": "Presentation.NamespacedLocalStorage",
+      "name": "NamespacedLocalStorage",
+      "tags": "Presentation.NamespacedLocalStorage NamespacedLocalStorage",
+      "summary": "",
+      "description": "NamespacedLocalStorageRetrieve a local storage Object",
       "body": ""
     },
     "Presentation.AbstractView.html": {
@@ -17412,24 +15249,24 @@ window.lunrData = {
       "summary": "",
       "description": "A subTitle property"
     },
-    "Augmented.Presentation.Component.HamburgerMenu.html": {
-      "id": "Augmented.Presentation.Component.HamburgerMenu.html",
+    "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
+      "id": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
       "kind": "class",
       "title": "HamburgerMenu",
-      "longname": "Augmented.Presentation.Component.HamburgerMenu",
+      "longname": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu",
       "name": "HamburgerMenu",
-      "tags": "Augmented.Presentation.Component.HamburgerMenu Presentation.Component.HamburgerMenu Component.HamburgerMenu HamburgerMenu",
+      "tags": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu Component.Augmented.Presentation.Component.HamburgerMenu Augmented.Presentation.Component.HamburgerMenu Presentation.Component.HamburgerMenu Component.HamburgerMenu HamburgerMenu",
       "summary": "",
       "description": "A Hamburger Menu View",
       "body": ""
     },
-    "Augmented.Presentation.Component.Menu.html": {
-      "id": "Augmented.Presentation.Component.Menu.html",
+    "Presentation.Component.Menu.html": {
+      "id": "Presentation.Component.Menu.html",
       "kind": "class",
-      "title": "Menu",
-      "longname": "Augmented.Presentation.Component.Menu",
+      "title": ".Component.Menu",
+      "longname": "Presentation.Component.Menu",
       "name": "Menu",
-      "tags": "Augmented.Presentation.Component.Menu Presentation.Component.Menu Component.Menu Menu",
+      "tags": "Presentation.Component.Menu Component.Menu Menu",
       "summary": "",
       "description": "A Menu",
       "body": ""
@@ -17456,59 +15293,59 @@ window.lunrData = {
       "description": "AutomaticTableCreates a table automatically via a schema for defintion and a uri/json for data",
       "body": ""
     },
-    "Augmented.Presentation.BigDataTable.html": {
-      "id": "Augmented.Presentation.BigDataTable.html",
+    "Presentation.Component.BigDataTable.html": {
+      "id": "Presentation.Component.BigDataTable.html",
       "kind": "class",
-      "title": "BigDataTable",
-      "longname": "Augmented.Presentation.BigDataTable",
+      "title": ".Component.BigDataTable",
+      "longname": "Presentation.Component.BigDataTable",
       "name": "BigDataTable",
-      "tags": "Augmented.Presentation.BigDataTable Presentation.BigDataTable BigDataTable",
+      "tags": "Presentation.Component.BigDataTable Component.BigDataTable BigDataTable",
       "summary": "",
-      "description": "Augmented.Presentation.BigDataTableInstance class preconfigured for sorting and pagination",
+      "description": "Instance class preconfigured for sorting and pagination",
       "body": ""
     },
-    "Augmented.Presentation.EditableBigDataTable.html": {
-      "id": "Augmented.Presentation.EditableBigDataTable.html",
+    "Presentation.Component.EditableBigDataTable.html": {
+      "id": "Presentation.Component.EditableBigDataTable.html",
       "kind": "class",
-      "title": "EditableBigDataTable",
-      "longname": "Augmented.Presentation.EditableBigDataTable",
+      "title": ".Component.EditableBigDataTable",
+      "longname": "Presentation.Component.EditableBigDataTable",
       "name": "EditableBigDataTable",
-      "tags": "Augmented.Presentation.EditableBigDataTable Presentation.EditableBigDataTable EditableBigDataTable",
+      "tags": "Presentation.Component.EditableBigDataTable Component.EditableBigDataTable EditableBigDataTable",
       "summary": "",
-      "description": "Augmented.Presentation.EditableBigDataTableInstance class preconfigured for editing, sorting, and pagination",
+      "description": "Instance class preconfigured for editing, sorting, and pagination",
       "body": ""
     },
-    "Augmented.Presentation.EditableLocalStorageTable.html": {
-      "id": "Augmented.Presentation.EditableLocalStorageTable.html",
+    "Presentation.Component.EditableLocalStorageTable.html": {
+      "id": "Presentation.Component.EditableLocalStorageTable.html",
       "kind": "class",
-      "title": "EditableLocalStorageTable",
-      "longname": "Augmented.Presentation.EditableLocalStorageTable",
+      "title": ".Component.EditableLocalStorageTable",
+      "longname": "Presentation.Component.EditableLocalStorageTable",
       "name": "EditableLocalStorageTable",
-      "tags": "Augmented.Presentation.EditableLocalStorageTable Presentation.EditableLocalStorageTable EditableLocalStorageTable",
+      "tags": "Presentation.Component.EditableLocalStorageTable Component.EditableLocalStorageTable EditableLocalStorageTable",
       "summary": "",
-      "description": "Augmented.Presentation.EditableLocalStorageTableInstance class preconfigured for editing, sorting, from local storage",
+      "description": "Instance class preconfigured for editing, sorting, from local storage",
       "body": ""
     },
-    "Augmented.Presentation.EditableTable.html": {
-      "id": "Augmented.Presentation.EditableTable.html",
+    "Presentation.Component.EditableTable.html": {
+      "id": "Presentation.Component.EditableTable.html",
       "kind": "class",
-      "title": "EditableTable",
-      "longname": "Augmented.Presentation.EditableTable",
+      "title": ".Component.EditableTable",
+      "longname": "Presentation.Component.EditableTable",
       "name": "EditableTable",
-      "tags": "Augmented.Presentation.EditableTable Presentation.EditableTable EditableTable",
+      "tags": "Presentation.Component.EditableTable Component.EditableTable EditableTable",
       "summary": "",
-      "description": "Augmented.Presentation.EditableTableInstance class preconfigured for editing",
+      "description": "Instance class preconfigured for editing",
       "body": ""
     },
-    "Augmented.Presentation.LocalStorageTable.html": {
-      "id": "Augmented.Presentation.LocalStorageTable.html",
+    "Presentation.Component.Augmented.Presentation.LocalStorageTable.html": {
+      "id": "Presentation.Component.Augmented.Presentation.LocalStorageTable.html",
       "kind": "class",
       "title": "LocalStorageTable",
-      "longname": "Augmented.Presentation.LocalStorageTable",
+      "longname": "Presentation.Component.Augmented.Presentation.LocalStorageTable",
       "name": "LocalStorageTable",
-      "tags": "Augmented.Presentation.LocalStorageTable Presentation.LocalStorageTable LocalStorageTable",
+      "tags": "Presentation.Component.Augmented.Presentation.LocalStorageTable Component.Augmented.Presentation.LocalStorageTable Augmented.Presentation.LocalStorageTable Presentation.LocalStorageTable LocalStorageTable",
       "summary": "",
-      "description": "Augmented.Presentation.LocalStorageTableInstance class preconfigured for local storage-based table",
+      "description": "Instance class preconfigured for local storage-based table",
       "body": ""
     },
     "Presentation.Component.Spreadsheet.html": {
@@ -17519,7 +15356,7 @@ window.lunrData = {
       "name": "Spreadsheet",
       "tags": "Presentation.Component.Spreadsheet Component.Spreadsheet Spreadsheet",
       "summary": "",
-      "description": "Augmented.Presentation.SpreadsheetInstance class preconfigured for editing for use as a Spreadsheet.If a propery for length is not specified, it will buffer 10 lines for editing.",
+      "description": "Instance class preconfigured for editing for use as a Spreadsheet.If a propery for length is not specified, it will buffer 10 lines for editing.",
       "body": ""
     },
     "Presentation.Component.AbstractToolbar.html": {
@@ -17862,24 +15699,24 @@ window.lunrData = {
       "summary": "",
       "description": "Types of pagination API"
     },
-    "Augmented.Request.Configuration.xhrFields.html": {
-      "id": "Augmented.Request.Configuration.xhrFields.html",
+    "Configuration.xhrFields.html": {
+      "id": "Configuration.xhrFields.html",
       "kind": "namespace",
-      "title": ".Configuration.xhrFields",
-      "longname": "Augmented.Request.Configuration.xhrFields",
+      "title": "xhrFields",
+      "longname": "Configuration.xhrFields",
       "name": "xhrFields",
-      "tags": "Augmented.Request.Configuration.xhrFields Request.Configuration.xhrFields Configuration.xhrFields xhrFields",
+      "tags": "Configuration.xhrFields xhrFields",
       "summary": "",
       "description": "xhrFields property",
       "body": ""
     },
-    "Augmented.Request.Configuration.xhrFields.html#.withCredentials": {
-      "id": "Augmented.Request.Configuration.xhrFields.html#.withCredentials",
+    "Configuration.xhrFields.html#.withCredentials": {
+      "id": "Configuration.xhrFields.html#.withCredentials",
       "kind": "member",
       "title": "&lt;static&gt; withCredentials",
-      "longname": "Augmented.Request.Configuration.xhrFields.withCredentials",
+      "longname": "Configuration.xhrFields.withCredentials",
       "name": "withCredentials",
-      "tags": "Augmented.Request.Configuration.xhrFields.withCredentials Request.Configuration.xhrFields.withCredentials Configuration.xhrFields.withCredentials xhrFields.withCredentials withCredentials",
+      "tags": "Configuration.xhrFields.withCredentials xhrFields.withCredentials withCredentials",
       "summary": "",
       "description": "withCredentials property"
     }

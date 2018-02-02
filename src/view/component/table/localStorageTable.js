@@ -1,9 +1,8 @@
 /**
-* Augmented.Presentation.LocalStorageTable
 * Instance class preconfigured for local storage-based table
-* @constructor Augmented.Presentation.LocalStorageTable
-* @extends Augmented.Presentation.AutomaticTable
-* @memberof Augmented.Presentation
+* @class Augmented.Presentation.LocalStorageTable
+* @extends Presentation.Component.AutomaticTable
+* @memberof Presentation.Component
 */
 Augmented.Presentation.LocalStorageTable = Augmented.Presentation.DirectDOMAutomaticTable.extend({
   renderPaginationControl: false,

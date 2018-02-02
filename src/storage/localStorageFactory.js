@@ -4,7 +4,6 @@ import LocalStorage from "./localStorage.js";
  * Augmented.LocalStorageFactory
  * Retrieve a local storage Object
  * @class LocalStorageFactory
- * @name LocalStorageFactory
  * @memberof Presentation
  */
 class LocalStorageFactory {
@@ -15,8 +14,8 @@ class LocalStorageFactory {
    * @method getStorage Get the storage instance
    * @param {boolean} persist Persistance or not
    * @param {string} namespace The namespace of the storage if needed (optional)
-   * @returns {Augmented.AbstractLocalStorage} Returns an instance of local storage
-   * @memberof Augmented.LocalStorageFactory
+   * @returns {Presentation.LocalStorage} Returns an instance of local storage
+   * @memberof LocalStorageFactory
    */
   static getStorage(persist, namespace) {
     let ls = null;

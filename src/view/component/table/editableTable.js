@@ -1,9 +1,8 @@
 /**
-* Augmented.Presentation.EditableTable
 * Instance class preconfigured for editing
-* @constructor Augmented.Presentation.EditableTable
-* @extends Augmented.Presentation.AutomaticTable
-* @memberof Augmented.Presentation
+* @class EditableTable
+* @extends Presentation.Component.AutomaticTable
+* @memberof Presentation.Component
 */
 Augmented.Presentation.EditableTable = Augmented.Presentation.DirectDOMAutomaticTable.extend({
   editable: true,

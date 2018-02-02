@@ -67,16 +67,7 @@
 							<li class="dropdown">
 								<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
 								<ul class="dropdown-menu">
-										<li><a href="Augmented.AbstractLocalStorage.html">Augmented.AbstractLocalStorage</a></li>
-										<li><a href="Augmented.Presentation.BigDataTable.html">Augmented.Presentation.BigDataTable</a></li>
-										<li><a href="Augmented.Presentation.Component.HamburgerMenu.html">Augmented.Presentation.Component.HamburgerMenu</a></li>
-										<li><a href="Augmented.Presentation.Component.Menu.html">Augmented.Presentation.Component.Menu</a></li>
 										<li><a href="Augmented.Presentation.Component.Toolbar.html">Augmented.Presentation.Component.Toolbar</a></li>
-										<li><a href="Augmented.Presentation.EditableBigDataTable.html">Augmented.Presentation.EditableBigDataTable</a></li>
-										<li><a href="Augmented.Presentation.EditableLocalStorageTable.html">Augmented.Presentation.EditableLocalStorageTable</a></li>
-										<li><a href="Augmented.Presentation.EditableTable.html">Augmented.Presentation.EditableTable</a></li>
-										<li><a href="Augmented.Presentation.LocalStorageTable.html">Augmented.Presentation.LocalStorageTable</a></li>
-										<li><a href="Augmented.Request.Configuration.html">Augmented.Request.Configuration</a></li>
 										<li><a href="Presentation.AbstractView.html">Presentation.AbstractView</a></li>
 										<li><a href="Presentation.Application.html">Presentation.Application</a></li>
 										<li><a href="Presentation.Colleague.html">Presentation.Colleague</a></li>
@@ -84,25 +75,35 @@
 										<li><a href="Presentation.Component.AbstractToolbar.html">Presentation.Component.AbstractToolbar</a></li>
 										<li><a href="Presentation.Component.AlertDialogView.html">Presentation.Component.AlertDialogView</a></li>
 										<li><a href="Presentation.Component.Article.html">Presentation.Component.Article</a></li>
+										<li><a href="Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html">Presentation.Component.Augmented.Presentation.Component.HamburgerMenu</a></li>
 										<li><a href="Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html">Presentation.Component.Augmented.Presentation.ConfirmationDialogView</a></li>
+										<li><a href="Presentation.Component.Augmented.Presentation.LocalStorageTable.html">Presentation.Component.Augmented.Presentation.LocalStorageTable</a></li>
 										<li><a href="Presentation.Component.AutomaticForm.html">Presentation.Component.AutomaticForm</a></li>
 										<li><a href="Presentation.Component.AutomaticTable.html">Presentation.Component.AutomaticTable</a></li>
+										<li><a href="Presentation.Component.BigDataTable.html">Presentation.Component.BigDataTable</a></li>
 										<li><a href="Presentation.Component.Card.html">Presentation.Component.Card</a></li>
 										<li><a href="Presentation.Component.DialogView.html">Presentation.Component.DialogView</a></li>
+										<li><a href="Presentation.Component.EditableBigDataTable.html">Presentation.Component.EditableBigDataTable</a></li>
+										<li><a href="Presentation.Component.EditableLocalStorageTable.html">Presentation.Component.EditableLocalStorageTable</a></li>
+										<li><a href="Presentation.Component.EditableTable.html">Presentation.Component.EditableTable</a></li>
 										<li><a href="Presentation.Component.Footer.html">Presentation.Component.Footer</a></li>
 										<li><a href="Presentation.Component.Header.html">Presentation.Component.Header</a></li>
 										<li><a href="Presentation.Component.Header.html">Presentation.Component.Header</a></li>
+										<li><a href="Presentation.Component.Menu.html">Presentation.Component.Menu</a></li>
 										<li><a href="Presentation.Component.NotificationCenter.html">Presentation.Component.NotificationCenter</a></li>
 										<li><a href="Presentation.Component.Spreadsheet.html">Presentation.Component.Spreadsheet</a></li>
 										<li><a href="Presentation.DecoratorView.html">Presentation.DecoratorView</a></li>
 										<li><a href="Presentation.Dom.html">Presentation.Dom</a></li>
 										<li><a href="Presentation.History.html">Presentation.History</a></li>
+										<li><a href="Presentation.LocalStorage.html">Presentation.LocalStorage</a></li>
 										<li><a href="Presentation.LocalStorageCollection.html">Presentation.LocalStorageCollection</a></li>
 										<li><a href="Presentation.LocalStorageFactory.html">Presentation.LocalStorageFactory</a></li>
 										<li><a href="Presentation.Mediator.html">Presentation.Mediator</a></li>
 										<li><a href="Presentation.Model.html">Presentation.Model</a></li>
+										<li><a href="Presentation.NamespacedLocalStorage.html">Presentation.NamespacedLocalStorage</a></li>
 										<li><a href="Presentation.PaginatedCollection.html">Presentation.PaginatedCollection</a></li>
 										<li><a href="Presentation.Pagination.PaginationFactory.html">Presentation.Pagination.PaginationFactory</a></li>
+										<li><a href="Presentation.Request.Configuration.html">Presentation.Request.Configuration</a></li>
 										<li><a href="Presentation.Router.html">Presentation.Router</a></li>
 										<li><a href="Presentation.View.html">Presentation.View</a></li>
 										<li><a href="Presentation.ViewController.html">Presentation.ViewController</a></li>
@@ -118,7 +119,7 @@
 							<li class="dropdown">
 								<a href="list_namespace.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
 								<ul class="dropdown-menu">
-										<li><a href="Augmented.Request.Configuration.xhrFields.html">Augmented.Request.Configuration.xhrFields</a></li>
+										<li><a href="Configuration.xhrFields.html">Configuration.xhrFields</a></li>
 										<li><a href="Presentation.Component.html">Presentation.Component</a></li>
 										<li><a href="Presentation.Pagination.html">Presentation.Pagination</a></li>
 								</ul>
@@ -153,6 +154,12 @@
 import LocalStorage from "./localStorage.js";
 import LocalStorageFactory from  "./localStorageFactory.js";
 
+/**
+ * NamespacedLocalStorage
+ * Retrieve a local storage Object
+ * @class NamespacedLocalStorage
+ * @memberof Presentation
+ */
 class NamespacedLocalStorage extends LocalStorage {
   constructor(persist, namespace) {
     super(persist);

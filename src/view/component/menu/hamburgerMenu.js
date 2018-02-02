@@ -9,8 +9,8 @@ const buildMenu = (name, title, menuItems) => {
 /**
  * A Hamburger Menu View
  * @constructor Augmented.Presentation.Component.HamburgerMenu
- * @memberof Augmented.Presentation.Component
- * @extends Augmented.Presentation.AbstractToolbar
+ * @memberof Presentation.Component
+ * @extends Presentation.AbstractToolbar
  */
 class HamburgerMenu extends AbstractToolbar {
   constructor(options) {
