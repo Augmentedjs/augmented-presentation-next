@@ -688,6 +688,13 @@
           "presentation.component.hamburgermenu",
           "view"
         ],
+        "Augmented.Presentation.Component.Menu.html": [
+          "augmented.presentation.component.menu",
+          "class",
+          "component.menu",
+          "menu",
+          "presentation.component.menu"
+        ],
         "Presentation.Component.NotificationCenter.html": [
           "center",
           "class",
@@ -1219,7 +1226,7 @@
           "xhrfields.withcredenti"
         ]
       },
-      "length": 104
+      "length": 105
     },
     "tokenStore": {
       "root": {
@@ -2163,6 +2170,23 @@
                                                                                           }
                                                                                         }
                                                                                       }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "m": {
+                                                                            "docs": {},
+                                                                            "e": {
+                                                                              "docs": {},
+                                                                              "n": {
+                                                                                "docs": {},
+                                                                                "u": {
+                                                                                  "docs": {
+                                                                                    "Augmented.Presentation.Component.Menu.html": {
+                                                                                      "ref": "Augmented.Presentation.Component.Menu.html",
+                                                                                      "tf": 1075
                                                                                     }
                                                                                   }
                                                                                 }
@@ -5118,6 +5142,10 @@
                   "Augmented.Presentation.Component.HamburgerMenu.html": {
                     "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                     "tf": 16.666666666666664
+                  },
+                  "Augmented.Presentation.Component.Menu.html": {
+                    "ref": "Augmented.Presentation.Component.Menu.html",
+                    "tf": 725
                   }
                 }
               }
@@ -6003,6 +6031,23 @@
                                                                       }
                                                                     }
                                                                   }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "m": {
+                                                        "docs": {},
+                                                        "e": {
+                                                          "docs": {},
+                                                          "n": {
+                                                            "docs": {},
+                                                            "u": {
+                                                              "docs": {
+                                                                "Augmented.Presentation.Component.Menu.html": {
+                                                                  "ref": "Augmented.Presentation.Component.Menu.html",
+                                                                  "tf": 75
                                                                 }
                                                               }
                                                             }
@@ -10079,6 +10124,10 @@
                       "ref": "Augmented.Presentation.Component.HamburgerMenu.html",
                       "tf": 110
                     },
+                    "Augmented.Presentation.Component.Menu.html": {
+                      "ref": "Augmented.Presentation.Component.Menu.html",
+                      "tf": 110
+                    },
                     "Presentation.Component.NotificationCenter.html": {
                       "ref": "Presentation.Component.NotificationCenter.html",
                       "tf": 110
@@ -11879,6 +11928,23 @@
                                             }
                                           }
                                         }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "m": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "n": {
+                                  "docs": {},
+                                  "u": {
+                                    "docs": {
+                                      "Augmented.Presentation.Component.Menu.html": {
+                                        "ref": "Augmented.Presentation.Component.Menu.html",
+                                        "tf": 75
                                       }
                                     }
                                   }
@@ -16167,7 +16233,7 @@
           }
         }
       },
-      "length": 1004
+      "length": 1009
     },
     "corpusTokens": [
       "10",
@@ -16201,6 +16267,7 @@
       "augmented.presentation.bigdatat",
       "augmented.presentation.bigdatatableinst",
       "augmented.presentation.component.hamburgermenu",
+      "augmented.presentation.component.menu",
       "augmented.presentation.component.toolbar",
       "augmented.presentation.component.toolbar.rend",
       "augmented.presentation.confirmationdialogview",
@@ -16293,6 +16360,7 @@
       "component.head",
       "component.header.header#subtitl",
       "component.header.header#titl",
+      "component.menu",
       "component.notificationcent",
       "component.spreadsheet",
       "component.toolbar",
@@ -16530,6 +16598,7 @@
       "presentation.component.head",
       "presentation.component.header.header#subtitl",
       "presentation.component.header.header#titl",
+      "presentation.component.menu",
       "presentation.component.notificationcent",
       "presentation.component.spreadsheet",
       "presentation.component.toolbar",
@@ -17352,6 +17421,17 @@
       "tags": "Augmented.Presentation.Component.HamburgerMenu Presentation.Component.HamburgerMenu Component.HamburgerMenu HamburgerMenu",
       "summary": "",
       "description": "A Hamburger Menu View",
+      "body": ""
+    },
+    "Augmented.Presentation.Component.Menu.html": {
+      "id": "Augmented.Presentation.Component.Menu.html",
+      "kind": "class",
+      "title": "Menu",
+      "longname": "Augmented.Presentation.Component.Menu",
+      "name": "Menu",
+      "tags": "Augmented.Presentation.Component.Menu Presentation.Component.Menu Component.Menu Menu",
+      "summary": "",
+      "description": "A Menu",
       "body": ""
     },
     "Presentation.Component.NotificationCenter.html": {

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>view/component/table/bigDataTable.js</title>
+		<title>view/component/menu/menu.js</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -141,7 +141,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">source</span>
-				<h1><span class="name">view/component/table/bigDataTable.js</span></h1>
+				<h1><span class="name">view/component/menu/menu.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -149,18 +149,70 @@
 			<div class="col-md-12 main-content">
 		<section class="source-section">
 			<article></article>
-			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">/**
-* Augmented.Presentation.BigDataTable
-* Instance class preconfigured for sorting and pagination
-* @constructor Augmented.Presentation.BigDataTable
-* @extends Augmented.Presentation.AutomaticTable
-* @memberof Augmented.Presentation
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">/*
+&lt;nav id="more" class="menu tools">
+    &lt;i class="material-icons md-dark">more_vert&lt;/i>
+    &lt;ul>
+        &lt;li id="editable" data-viewer="editable" data-click="editableToggle">&lt;i class="material-icons md-dark checkbox hidden">&lt;/i>&lt;i class="material-icons md-dark">mode_edit&lt;/i>Editable Toggle&lt;/li>
+        &lt;li id="sorting" data-viewer="sortable" data-click="sortableToggle">&lt;i class="material-icons md-dark checkbox hidden">&lt;/i>&lt;i class="material-icons md-dark">sort&lt;/i>Sorting Toggle&lt;/li>
+        &lt;li id="lineNumber" data-viewer="lineNumber" data-click="lineNumbersToggle">&lt;i class="material-icons md-dark checkbox hidden">&lt;/i>&lt;i class="material-icons md-dark">settings&lt;/i>Line Number Toggle&lt;/li>
+    &lt;/ul>
+&lt;/nav>
 */
-Augmented.Presentation.BigDataTable = Augmented.Presentation.DirectDOMAutomaticTable.extend({
-  renderPaginationControl: true,
-  lineNumbers: true,
-  sortable: true
-});
+
+import AbstractToolbar from "../toolbar/abstractToolbar.js";
+import Dom from "../../../dom/dom.js";
+import buildMenuItems from "../functions/buildMenuItems.js";
+
+const buildMenu = (name, title, menuItems) => {
+  return `&lt;i class="material-icons md-dark">more_vert&lt;/i>&lt;ul>${buildMenuItems(this.name, this.menuItems)}&lt;/ul>`;
+};
+
+/**
+ * A Menu
+ * @class Menu
+ * @memberof Augmented.Presentation.Component
+ * @extends Augmented.Presentation.AbstractToolbar
+ */
+class Menu extends AbstractToolbar {
+  constructor(options) {
+    if (!options) {
+      options = {};
+    }
+    if (!options.tagName) {
+      options.tagName = "nav";
+    }
+    super(options);
+  };
+  /**
+   * @method render Renders the Menu
+   * @memberof Menu
+   * @returns {object} Returns the view context ('this')
+   */
+  render() {
+    if (!this.isInitalized) {
+      return this;
+    }
+    this.template = null;//"notused";
+    if (this.el) {
+      const e = Dom.selector(this.el);
+      if (e) {
+        // the menu
+        Dom.addClass(e, "menu");
+        e.setAttribute("data-" + this.name, "menu");
+        e.innerHTML = buildMenu(this.name, this.menuItems);
+      }
+    } else {
+      //_logger.warn("AUGMENTED: Menu no element anchor, not rendering.");
+      return this;
+    }
+    this.delegateEvents();
+    this.syncAllBoundElements();
+    return this;
+  };
+};
+
+export default Menu;
 </code></pre>
 		</section>
 			</div>

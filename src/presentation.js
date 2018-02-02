@@ -33,6 +33,7 @@ import Article from "./view/component/article/article.js";
 import AbstractToolbar from "./view/component/toolbar/abstractToolbar.js";
 import Toolbar from "./view/component/toolbar/toolbar.js";
 import HamburgerMenu from "./view/component/menu/hamburgerMenu.js";
+import Menu from "./view/component/menu/menu.js";
 import DialogView from "./view/component/dialog/dialog.js";
 import ConfirmationDialogView from "./view/component/dialog/confirmation.js";
 import AlertDialogView from "./view/component/dialog/alert.js";
@@ -58,7 +59,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.22";
+Presentation.VERSION = "2.0.0-alpha.23";
 
 Presentation.History = History;
 Presentation.Router = Router;
@@ -96,6 +97,7 @@ Presentation.Component = {};
 Presentation.Component.AbstractToolbar = AbstractToolbar;
 Presentation.Component.Toolbar = Toolbar;
 Presentation.Component.HamburgerMenu = HamburgerMenu;
+Presentation.Component.Menu = Menu;
 Presentation.Component.DialogView = DialogView;
 Presentation.Component.ConfirmationDialogView = ConfirmationDialogView;
 Presentation.Component.AlertDialogView = AlertDialogView;

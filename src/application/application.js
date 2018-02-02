@@ -10,6 +10,7 @@ import Augmented from "augmentedjs-next";
 class Application extends Augmented.Application {
   constructor(name) {
     super(name);
+    this._router = null;
     this._mediators = [];
     this._stylesheets = [];
     this._breadcrumb = new Augmented.Utility.Stack();
@@ -26,11 +27,26 @@ class Application extends Augmented.Application {
     }
     const router = this.router;
     if (router) {
-      console.log("starting history");
+      //console.log("starting history");
       router.startHistory();
     }
     return true;
   };
+
+  /**
+   * The router property of the application
+   * @property router
+   * @memberof Application
+   */
+
+  get router() {
+    return this._router;
+  };
+
+  set router(router) {
+    this._router = router;
+  };
+
   /**
    * Register a Mediator
    * @method registerMediator

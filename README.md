@@ -25,10 +25,15 @@ The **Presentation** extension adds extensive abilities to the presentation laye
 ### Current Features:
 * Mediator patterned PubSub Views
 * MVVM Decorator Views with declaratives
+* Security wired throughout the framework
+  - Views can lock down
+* Utilities that support common abilities found in jQuery (only drastically faster)
+  - Ajax (mimics jQuery API)
 * Enhanced Application Object
   - PubSub mediation and bootstrapping for Application objects
   - CSS Stylesheet registration and injection
   - breadcrumb management
+* HTML5 localStorage factory with namespace protection support
 * Automatic Tables generated from a JSON schema and data
   - sortable
   - editable

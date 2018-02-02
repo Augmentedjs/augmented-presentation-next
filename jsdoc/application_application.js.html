@@ -70,6 +70,7 @@
 										<li><a href="Augmented.AbstractLocalStorage.html">Augmented.AbstractLocalStorage</a></li>
 										<li><a href="Augmented.Presentation.BigDataTable.html">Augmented.Presentation.BigDataTable</a></li>
 										<li><a href="Augmented.Presentation.Component.HamburgerMenu.html">Augmented.Presentation.Component.HamburgerMenu</a></li>
+										<li><a href="Augmented.Presentation.Component.Menu.html">Augmented.Presentation.Component.Menu</a></li>
 										<li><a href="Augmented.Presentation.Component.Toolbar.html">Augmented.Presentation.Component.Toolbar</a></li>
 										<li><a href="Augmented.Presentation.EditableBigDataTable.html">Augmented.Presentation.EditableBigDataTable</a></li>
 										<li><a href="Augmented.Presentation.EditableLocalStorageTable.html">Augmented.Presentation.EditableLocalStorageTable</a></li>
@@ -160,6 +161,7 @@
 class Application extends Augmented.Application {
   constructor(name) {
     super(name);
+    this._router = null;
     this._mediators = [];
     this._stylesheets = [];
     this._breadcrumb = new Augmented.Utility.Stack();
@@ -176,11 +178,26 @@ class Application extends Augmented.Application {
     }
     const router = this.router;
     if (router) {
-      console.log("starting history");
+      //console.log("starting history");
       router.startHistory();
     }
     return true;
   };
+
+  /**
+   * The router property of the application
+   * @property router
+   * @memberof Application
+   */
+
+  get router() {
+    return this._router;
+  };
+
+  set router(router) {
+    this._router = router;
+  };
+
   /**
    * Register a Mediator
    * @method registerMediator
