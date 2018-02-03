@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 25);
+/******/ 	return __webpack_require__(__webpack_require__.s = 26);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -6853,7 +6853,7 @@ namespaces=functionName.split("."),func=namespaces.pop(),l=namespaces.length;var
  * @param {string} variable to check
  * @returns {boolean} true if value is defined
  */var isDefined=function isDefined(val){return typeof val!="undefined";};exports.default=isDefined;/***/},/* 53 *//***/function(module,exports,__webpack_require__){"use strict";Object.defineProperty(exports,"__esModule",{value:true});var fibonacci=exports.fibonacci=function fibonacci(n){var phi=(1+Math.sqrt(5))/2;var asymp=Math.pow(phi,n)/Math.sqrt(5);return Math.round(asymp);};var fibonacciSequence=exports.fibonacciSequence=function fibonacciSequence(l){var fib=[];var i=0;for(i=0;i<l;i++){fib.push(fibonacci(i));}return fib;};/***/}]/******/));});//# sourceMappingURL=augmented-next.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)(module)))
 
 /***/ }),
 /* 1 */
@@ -7163,11 +7163,11 @@ var _augmentedjsNext = __webpack_require__(0);
 
 var _augmentedjsNext2 = _interopRequireDefault(_augmentedjsNext);
 
-var _colleague = __webpack_require__(13);
+var _colleague = __webpack_require__(15);
 
 var _colleague2 = _interopRequireDefault(_colleague);
 
-var _model = __webpack_require__(3);
+var _model = __webpack_require__(4);
 
 var _model2 = _interopRequireDefault(_model);
 
@@ -7175,7 +7175,7 @@ var _dom = __webpack_require__(1);
 
 var _dom2 = _interopRequireDefault(_dom);
 
-var _widget = __webpack_require__(19);
+var _widget = __webpack_require__(21);
 
 var _widget2 = _interopRequireDefault(_widget);
 
@@ -7680,9 +7680,1334 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _augmentedjsNext = __webpack_require__(0);
 
+var Augmented = _interopRequireWildcard(_augmentedjsNext);
+
+var _decorator = __webpack_require__(2);
+
+var _decorator2 = _interopRequireDefault(_decorator);
+
+var _buildTable = __webpack_require__(48);
+
+var _messages = __webpack_require__(24);
+
+var _messages2 = _interopRequireDefault(_messages);
+
+var _request = __webpack_require__(11);
+
+var _request2 = _interopRequireDefault(_request);
+
+var _dom = __webpack_require__(1);
+
+var _dom2 = _interopRequireDefault(_dom);
+
+var _model = __webpack_require__(4);
+
+var _model2 = _interopRequireDefault(_model);
+
+var _collection = __webpack_require__(5);
+
+var _collection2 = _interopRequireDefault(_collection);
+
+var _localStorageCollection = __webpack_require__(14);
+
+var _localStorageCollection2 = _interopRequireDefault(_localStorageCollection);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //import { TABLE_DATA_ATTRIBUTES, csvTableCompile, tsvTableCompile, defaultTableCompile, defaultTableHeader, defaultTableBody, formatValidationMessages, directDOMTableCompile, directDOMTableHeader, directDOMTableBody, directDOMEditableTableBody, directDOMPaginationControl } from "../functions/buildTable.js";
+
+
+var DEFAULT_KEY = "augmented.localstorage.autotable.key";
+
+/**
+ * AutomaticTable<br/>
+ * Creates a table automatically via a schema for defintion and a uri/json for data
+ * @class AutomaticTable
+ * @extends Presentation.DecoratorView
+ * @memberof Presentation.Component
+ * @example
+ * let at = new Presentation.Component.AutomaticTable({
+ *     schema: schema,
+ *     el: "#autoTable",
+ *     crossOrigin: false,
+ *     sortable: true,
+ *     lineNumbers: true,
+ *     editable: true,
+ *     uri: "/example/data/table.json"
+ * });
+ */
+
+var AutomaticTable = function (_DecoratorView) {
+  _inherits(AutomaticTable, _DecoratorView);
+
+  function AutomaticTable(options) {
+    _classCallCheck(this, AutomaticTable);
+
+    var _this = _possibleConstructorReturn(this, (AutomaticTable.__proto__ || Object.getPrototypeOf(AutomaticTable)).call(this, options));
+
+    if (options && options.theme) {
+      _this.theme = options.theme;
+    } else {
+      _this.theme = "material";
+    }
+
+    if (options && options.linkable) {
+      _this.linkable = options.linkable;
+    } else {
+      _this.linkable = false;
+    }
+
+    if (options && options.links) {
+      _this.links = options.links;
+    } else {
+      _this.links = {
+        wholeRow: true,
+        column: "",
+        link: "rowLink"
+      };
+    }
+
+    if (options && options.selectable) {
+      _this.selectable = options.selectable;
+    } else {
+      _this.selectable = false;
+    }
+
+    if (options && options.sortable) {
+      _this.sortable = options.sortable;
+    } else {
+      _this.sortable = false;
+    }
+
+    if (options && options.sortStyle) {
+      _this.sortStyle = options.sortStyle;
+    } else {
+      _this.sortStyle = "client";
+    }
+
+    if (options && options.sortKey) {
+      _this.sortKey = options.sortKey;
+    } else {
+      _this.sortKey = null;
+    }
+
+    if (options && options.display) {
+      _this.display = options.display;
+    } else {
+      _this.display = null;
+    }
+
+    if (options && options.pagination) {
+      _this.renderPaginationControl = options.pagination;
+    } else {
+      _this.renderPaginationControl = false;
+    }
+
+    if (options && options.paginationAPI) {
+      _this.paginationAPI = options.paginationAPI;
+    } else {
+      _this.paginationAPI = null;
+    }
+
+    if (options && options.description) {
+      _this.description = options.description;
+    } else {
+      _this.description = "";
+    }
+
+    if (options && options.localStorage) {
+      _this.localStorage = options.localStorage;
+    } else {
+      _this.localStorage = false;
+    }
+
+    if (options && options.localStorageKey) {
+      _this.localStorageKey = options.localStorageKey;
+    } else {
+      _this.localStorageKey = DEFAULT_KEY;
+    }
+
+    if (options && options.editable) {
+      _this.editable = options.editable;
+    } else {
+      _this.editable = false;
+    }
+
+    if (options && options.crossOrigin) {
+      _this.crossOrigin = options.crossOrigin;
+    } else {
+      _this.crossOrigin = false;
+    }
+
+    if (options && options.lineNumbers) {
+      _this.lineNumbers = options.lineNumbers;
+    } else {
+      _this.lineNumbers = false;
+    }
+
+    if (options && options.uri) {
+      _this.uri = options.uri;
+    } else {
+      _this.uri = false;
+    }
+
+    if (options && options.data) {
+      _this.data = options.data;
+    } else {
+      _this.data = [];
+    }
+
+    _this._columns = {};
+    _this.isInitalized = false;
+    _this.pageControlBound = false;
+
+    if (!_this.model) {
+      _this.model = new _model2.default();
+    }
+
+    if (_this.collection) {
+      _this.collection.reset();
+    }
+
+    if (!_this.collection && _this.paginationAPI) {
+      _this.collection = Augmented.PaginationFactory.getPaginatedCollection(_this.paginationAPI);
+      _this.paginationAPI = _this.collection.paginationAPI;
+      _this.localStorage = false;
+    } else if (!_this.collection && _this.localStorage) {
+      _this.collection = new _localStorageCollection2.default();
+    } else if (!_this.collection) {
+      _this.collection = new _collection2.default();
+    }
+
+    if (options && options.schema) {
+      // check if this is a schema vs a URI to get a schema
+      if (Augmented.isObject(options.schema)) {
+        _this.schema = options.schema;
+      } else {
+        // is a URI?
+        var parsedSchema = null;
+        try {
+          parsedSchema = JSON.parse(options.schema);
+          if (parsedSchema && Augmented.isObject(parsedSchema)) {
+            _this.schema = parsedSchema;
+          }
+        } catch (e) {
+          //_logger.warn("AUGMENTED: AutoTable parsing string schema failed.  URI perhaps?");
+        }
+        if (!_this.schema) {
+          _this.retrieveSchema(options.schema);
+          _this.isInitalized = false;
+        }
+      }
+    } else {
+      _this.schema = null;
+    }
+
+    if (_this.uri && _this.collection) {
+      _this.collection.url = options.uri;
+    }
+
+    if (_this.data && Array.isArray(_this.data)) {
+      _this.populate(_this.data);
+    }
+
+    if (options && options.localStorageKey && !options.uri) {
+      _this.localStorageKey = options.localStorageKey;
+      _this.uri = null;
+    }
+
+    if (_this.collection && _this.uri) {
+      _this.collection.url = _this.uri;
+    }
+    if (_this.collection) {
+      _this.collection.crossOrigin = _this.crossOrigin;
+    }
+
+    if (_this.schema) {
+      if ((!_this.name || _this.name === "") && _this.schema.title) {
+        _this.name = _this.schema.title;
+      }
+
+      if ((!_this.description || _this.description === "") && _this.schema.description) {
+        _this.description = _this.schema.description;
+      }
+
+      if (!_this.isInitalized) {
+        _this._columns = _this.schema.properties;
+        _this.collection.schema = _this.schema;
+        _this.isInitalized = true;
+      }
+    } else {
+      _this.isInitalized = false;
+    }
+    return _this;
+  }
+
+  _createClass(AutomaticTable, [{
+    key: "setTheme",
+
+
+    /**
+     * The theme property - The theme of this table (default is 'material')
+     * @property {string} theme The theme of this table
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The linkable property - enable links in a row (only works in non-editable tables)
+     * @property {boolean} linkable enable/disable linking a row
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The selectable property - enable selecting a row in table
+     * @property {boolean} selectable enable/disable selecting a row
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The sortable property - enable sorting in table
+     * @property {boolean} sortable enable sorting in the table
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The sortStyle property - setup the sort API
+     * @property {string} sortStyle setup the sort API
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The sortKey property
+     * @property {string} sortKey sorted key
+     * @private
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The links property - setup linking structure for links in a row
+     * @property {boolean} linkable enable/disable linking a row
+     * @example links: {
+     * wholeRow: false, // link whole row vs column
+     * column: "name", // name of column
+     *	link: "rowLink" // callback
+     * }
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The localStorage property - enables localStorage
+     * @property {boolean} localStorage The localStorage property
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The localStorageKey property - set the key for use in storage
+     * @property {string} localStorageKey The localStorage key property
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The editable property - enables editing of cells
+     * @property {boolean} editable The editable property
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * Fields to display - null will display all
+     * @method display
+     * @memberof AutomaticTable
+     */
+
+    // pagination
+    /**
+     * The renderPaginationControl property - render the pagination control
+     * @property {boolean} renderPaginationControl render the pagination control
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The paginationAPI property - setup the paginatin API to use
+     * @property {Augmented.PaginationFactory.type} paginationAPI the pagination API to use
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The name property
+     * @property {string} name The name of the table
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The description property
+     * @property {string} description The description of the table
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The crossOrigin property - enables cross origin fetch
+     * @property {boolean} crossOrigin The crossOrigin property
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The lineNumber property - turns on line numbers
+     * @property {boolean} lineNumbers The lineNumbers property
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The columns property
+     * @property {object} columns The columns property
+     * @private
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The URI property
+     * @property {string} uri The URI property
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The data property
+     * @property {array} data The data property
+     * @memberof AutomaticTable
+     * @private
+     */
+
+    /**
+     * The collection property
+     * @property {Augmented.PaginatedCollection} collection The collection property
+     * @memberof AutomaticTable
+     * @private
+     */
+
+    /**
+     * The initialized property
+     * @property {boolean} isInitalized The initialized property
+     * @memberof AutomaticTable
+     */
+
+    /**
+     * The setTheme method
+     * @method setTheme sets the theme of this table
+     * @param {string} theme name of the theme
+     * @memberof AutomaticTable
+     */
+    value: function setTheme(theme) {
+      var el = _dom2.default.selector(this.el); //((typeof this.el === 'string') ? document.querySelector(this.el) : this.el),
+      if (el) {
+        var e = el.querySelector("table");
+        if (e) {
+          e.setAttribute("class", theme);
+        }
+      }
+      this.theme = theme;
+    }
+  }, {
+    key: "rowLink",
+
+
+    /**
+     * The default rowlink function callback called by row to format a link
+     * @method rowlink
+     * @param {array} row The row data
+     * @returns {string} Returns the link uri
+     * @memberof AutomaticTable
+     */
+    value: function rowLink(row) {
+      return "";
+    }
+  }, {
+    key: "sortBy",
+
+
+    /**
+     * Sort the tabe by a key (sent via a UI Event)
+     * @method sortBy
+     * @memberof AutomaticTable
+     * @param {string} key The key to sort by
+     */
+    value: function sortBy(key) {
+      if (key && (this.editable || !this.editable && this.sortKey !== key)) {
+        this.sortKey = key;
+        this.collection.sortByKey(key);
+        this.refresh();
+      }
+    }
+  }, {
+    key: "currentPage",
+
+
+    /**
+     * Return the current page number
+     * @method currentPage
+     * @memberof AutomaticTable
+     * @returns {number} The current page number
+     */
+    value: function currentPage() {
+      return this.collection.currentPage;
+    }
+  }, {
+    key: "totalPages",
+
+
+    /**
+     * Return the total pages
+     * @method totalPages
+     * @memberof AutomaticTable
+     * @returns {number} The total pages
+     */
+    value: function totalPages() {
+      return this.collection.totalPages;
+    }
+  }, {
+    key: "nextPage",
+
+
+    /**
+     * Advance to the next page
+     * @method nextPage
+     * @memberof AutomaticTable
+     */
+    value: function nextPage() {
+      this.collection.nextPage();
+      this.refresh();
+    }
+  }, {
+    key: "previousPage",
+
+
+    /**
+     * Return to the previous page
+     * @method previousPage
+     * @memberof AutomaticTable
+     */
+    value: function previousPage() {
+      this.collection.previousPage();
+      this.refresh();
+    }
+  }, {
+    key: "goToPage",
+
+
+    /**
+     * Go to a specific page
+     * @method goToPage
+     * @param {number} page The page to go to
+     * @memberof AutomaticTable
+     */
+    value: function goToPage(page) {
+      this.collection.goToPage(page);
+      this.refresh();
+    }
+  }, {
+    key: "firstPage",
+
+
+    /**
+     * Return to the first page
+     * @method firstPage
+     * @memberof AutomaticTable
+     */
+    value: function firstPage() {
+      this.collection.firstPage();
+      this.refresh();
+    }
+  }, {
+    key: "lastPage",
+
+
+    /**
+     * Advance to the last page
+     * @method lastPage
+     * @memberof AutomaticTable
+     */
+    value: function lastPage() {
+      this.collection.lastPage();
+      this.refresh();
+    }
+  }, {
+    key: "editCell",
+
+
+    /**
+     * Edit a cell at the row and column specified
+     * @method editCell
+     * @memberof AutomaticTable
+     * @param {number} row The row
+     * @param {number} col The column
+     * @param {any} value The value to set
+     */
+    value: function editCell(row, col, value) {
+      if (row && col) {
+        var model = this.collection.at(row),
+            name = this.columns[col];
+        if (model && name) {
+          model.set(name, value);
+        }
+      }
+    }
+  }, {
+    key: "copyCell",
+
+
+    /**
+     * Copy a cell at the row and column  to another
+     * @method copyCell
+     * @memberof AutomaticTable
+     * @param {number} row1 The 'from' row
+     * @param {number} col1 The 'from' column
+     * @param {number} row2 The 'to' row
+     * @param {number} col2 The 'to' column
+     */
+    value: function copyCell(row1, col1, row2, col2) {
+      if (row1 && col1 && row2 && col2) {
+        var model1 = this.collection.at(row1),
+            name1 = this.columns[col1],
+            model2 = this.collection.at(row);
+        if (model1 && name1 && model2) {
+          model2.set(name1, value1);
+        }
+      }
+    }
+  }, {
+    key: "clearCell",
+
+    /**
+     * Clear a cell at the row and column specified
+     * @method clearCell
+     * @memberof AutomaticTable
+     * @param {number} row The row
+     * @param {number} col The column
+     */
+    value: function clearCell(row, col) {
+      this.editCell(row, col, null);
+    }
+  }, {
+    key: "render",
+
+
+    /**
+     * Render the table
+     * @method render Renders the table
+     * @memberof AutomaticTable
+     * @returns {object} Returns the view context ('this')
+     */
+    value: function render() {
+      //console.log("render");
+
+      if (!this.isInitalized) {
+        //_logger.warn("AUGMENTED: AutoTable Can't render yet, not initialized!");
+        return this;
+      }
+      var e = void 0;
+      if (this.template) {
+        // refresh the table body only
+        //console.log("set progress.");
+        this.showProgressBar(true);
+        if (this.el) {
+          e = typeof this.el === 'string' ? document.querySelector(this.el) : this.el;
+          //console.log("my el", e);
+          if (e) {
+
+            var tbody = e.querySelector("tbody"),
+                thead = e.querySelector("thead");
+            if (this.sortable) {
+              this._unbindSortableColumnEvents();
+            }
+            if (this.editable) {
+              this._unbindCellChangeEvents();
+            }
+            if (this._columns && Object.keys(this._columns).length > 0) {
+              while (thead.hasChildNodes()) {
+                thead.removeChild(thead.lastChild);
+              }
+              (0, _buildTable.directDOMTableHeader)(thead, this._columns, this.lineNumbers, this.sortKey, this.display, this.selectable);
+            } else {
+              if (thead) {
+                while (thead.hasChildNodes()) {
+                  thead.removeChild(thead.lastChild);
+                }
+              }
+            }
+
+            if (this.collection && this.collection.length > 0 && tbody) {
+              while (tbody.hasChildNodes()) {
+                tbody.removeChild(tbody.lastChild);
+              }
+              if (this.editable) {
+                // links not supported
+                (0, _buildTable.directDOMEditableTableBody)(tbody, this.collection.toJSON(), this._columns, this.lineNumbers, this.sortKey, this.display, this.selectable, this.name);
+              } else {
+                (0, _buildTable.directDOMTableBody)(tbody, this.collection.toJSON(), this._columns, this.lineNumbers, this.sortKey, this.display, this.selectable, this.name, this.linkable, this.links, this[this.links.link]);
+              }
+            } else {
+              while (tbody.hasChildNodes()) {
+                tbody.removeChild(tbody.lastChild);
+              }
+            }
+          }
+        } else {
+          //_logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
+        }
+      } else {
+        this.template = "notused";
+        this.showProgressBar(true);
+
+        if (this.el) {
+          e = typeof this.el === 'string' ? document.querySelector(this.el) : this.el;
+          if (e) {
+            // progress bar
+            var n = document.createElement("progress"),
+                t = document.createTextNode("Please wait.");
+            n.appendChild(t);
+            e.appendChild(n);
+
+            // the table
+            (0, _buildTable.directDOMTableCompile)(e, this.name, this.description, this._columns, this.collection.toJSON(), this.lineNumbers, this.sortKey, this.editable, this.display, this.selectable, this.linkable, this.links, this[this.links.link]);
+
+            // pagination control
+            if (this.renderPaginationControl) {
+              (0, _buildTable.directDOMPaginationControl)(e, this.currentPage(), this.totalPages());
+            }
+
+            // message
+            n = document.createElement("p");
+            n.classList.add("message");
+            e.appendChild(n);
+          }
+        } else {
+          //_logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
+        }
+
+        if (this.renderPaginationControl) {
+          this._bindPaginationControlEvents();
+        }
+      }
+      this.delegateEvents();
+
+      if (this.sortable) {
+        this._bindSortableColumnEvents();
+      }
+
+      if (this.editable) {
+        this._bindCellChangeEvents();
+      }
+
+      this.showProgressBar(false);
+      this.setTheme(this.theme);
+
+      return this;
+    }
+  }, {
+    key: "retrieveSchema",
+
+
+    /**
+     * Fetch the schema from the source URI
+     * @method retrieveSchema
+     * @param uri {string} the URI to fetch from
+     * @memberof AutomaticTable
+     */
+    value: function retrieveSchema(uri) {
+      var that = this;
+      var schema = null;
+      (0, _request2.default)({
+        url: uri,
+        contentType: 'application/json',
+        dataType: 'json',
+        success: function success(data, status) {
+          if (typeof data === "string") {
+            schema = JSON.parse(data);
+          } else {
+            schema = data;
+          }
+          var options = { "schema": schema };
+          that.initialize(options);
+        },
+        error: function error(data, status) {
+          //_logger.warn("AUGMENTED: AutoTable Failed to fetch schema!");
+        }
+      });
+    }
+  }, {
+    key: "fetch",
+
+
+    /**
+     * Fetch the data from the source URI
+     * @method fetch
+     * @memberof AutomaticTable
+     */
+    value: function fetch() {
+      // TODO: should be a promise
+      this.showProgressBar(true);
+
+      var view = this;
+
+      var successHandler = function successHandler() {
+        view.showProgressBar(false);
+        view.sortKey = null;
+        view.populate(view.collection.toJSON());
+        view.refresh();
+      };
+
+      var failHandler = function failHandler() {
+        view.showProgressBar(false);
+        view.showMessage("AutomaticTable fetch failed!");
+      };
+
+      this.collection.fetch({
+        reset: true,
+        success: function success() {
+          successHandler();
+        },
+        error: function error() {
+          failHandler();
+        }
+      });
+    }
+  }, {
+    key: "save",
+
+
+    /**
+     * Save the data to the source
+     * This only functions if the table is editable
+     * @method save
+     * @param {boolean} override Save even if not editable
+     * @returns Returns true if succesfull
+     * @memberof AutomaticTable
+     */
+    value: function save(override) {
+      if (this.editable || override) {
+        this.showProgressBar(true);
+
+        var view = this;
+
+        var successHandler = function successHandler() {
+          view.showProgressBar(false);
+          return true;
+        };
+
+        var failHandler = function failHandler() {
+          view.showProgressBar(false);
+          view.showMessage("AutomaticTable save failed!");
+          //_logger.warn("AUGMENTED: AutomaticTable save failed!");
+          return false;
+        };
+
+        this.collection.save({
+          reset: true,
+          success: function success() {
+            successHandler();
+          },
+          error: function error() {
+            failHandler();
+          }
+        });
+      }
+      return false;
+    }
+  }, {
+    key: "populate",
+
+
+    /**
+     * Populate the data in the table
+     * @method populate
+     * @memberof AutomaticTable
+     * @param {array} source The source data array
+     */
+    value: function populate(source) {
+      if (source && Array.isArray(source)) {
+        this.sortKey = null;
+        this.data = source;
+        this.collection.reset(this.data);
+      }
+    }
+  }, {
+    key: "clear",
+
+
+    /**
+     * Clear all the data in the table
+     * @method clear
+     * @memberof AutomaticTable
+     */
+    value: function clear() {
+      this.sortKey = null;
+      this.data = [];
+      this.collection.reset(null);
+    }
+  }, {
+    key: "refresh",
+
+
+    /**
+     * Refresh the table (Same as render)
+     * @method refresh Refresh the table
+     * @memberof AutomaticTable
+     * @returns {object} Returns the view context ('this')
+     * @see AutomaticTable.render
+     */
+    value: function refresh() {
+      return this.render();
+    }
+  }, {
+    key: "saveCell",
+
+
+    /**
+     * Save Cell Event
+     * @private
+     */
+    value: function saveCell(event) {
+      var key = event.target,
+          model = this.collection.at(parseInt(key.getAttribute(_buildTable.TABLE_DATA_ATTRIBUTES.INDEX)));
+      var value = key.value;
+      if (key.getAttribute("type") === "number") {
+        value = parseInt(key.value);
+      }
+      model.set(key.getAttribute(_buildTable.TABLE_DATA_ATTRIBUTES.NAME), value);
+    }
+  }, {
+    key: "_bindCellChangeEvents",
+
+
+    /**
+     * @private
+     */
+    value: function _bindCellChangeEvents() {
+      var myEl = typeof this.el === 'string' ? this.el : this.el.localName;
+      var cells = [].slice.call(document.querySelectorAll(myEl + " table tr td input"));
+      var i = 0,
+          l = cells.length;
+      for (i = 0; i < l; i++) {
+        cells[i].addEventListener("change", this.saveCell.bind(this), false);
+      }
+      // bind the select boxes as well
+      cells = [].slice.call(document.querySelectorAll(myEl + " table tr td select"));
+      i = 0;
+      l = cells.length;
+      for (i = 0; i < l; i++) {
+        cells[i].addEventListener("change", this.saveCell.bind(this), false);
+      }
+    }
+  }, {
+    key: "_unbindCellChangeEvents",
+
+
+    /**
+     * @private
+     */
+    value: function _unbindCellChangeEvents() {
+      var myEl = typeof this.el === 'string' ? this.el : this.el.localName;
+      var cells = [].slice.call(document.querySelectorAll(myEl + " table tr td input"));
+      var i = 0,
+          l = cells.length;
+      for (i = 0; i < l; i++) {
+        cells[i].removeEventListener("change", this.saveCell, false);
+      }
+      // unbind the select boxes as well
+      cells = [].slice.call(document.querySelectorAll(myEl + " table tr td select"));
+      i = 0;
+      l = cells.length;
+      for (i = 0; i < l; i++) {
+        cells[i].removeEventListener("change", this.saveCell, false);
+      }
+    }
+  }, {
+    key: "exportTo",
+
+
+    /**
+     * Export the table data in requested format
+     * @method exportTo Exports the table
+     * @param {string} type The type requested (csv or html-default)
+     * @memberof AutomaticTable
+     * @returns {string} The table data in requested format
+     */
+    value: function exportTo(type) {
+      var e = "";
+      if (type === "csv") {
+        e = (0, _buildTable.csvTableCompile)(this.name, this.description, this._columns, this.collection.toJSON());
+      } else if (type === "tsv") {
+        e = (0, _buildTable.tsvTableCompile)(this.name, this.description, this._columns, this.collection.toJSON());
+      } else {
+        // html
+        e = (0, _buildTable.defaultTableCompile)(this.name, this.description, this._columns, this.collection.toJSON(), false, null);
+      }
+      return e;
+    }
+  }, {
+    key: "_unbindPaginationControlEvents",
+
+
+    /**
+     * @private
+     */
+    value: function _unbindPaginationControlEvents() {
+      if (this.pageControlBound) {
+        var myEl = typeof this.el === 'string' ? this.el : this.el.localName;
+        var first = document.querySelector(myEl + " div.paginationControl span.first");
+        var previous = document.querySelector(myEl + " div.paginationControl span.previous");
+        var next = document.querySelector(myEl + " div.paginationControl span.next");
+        var last = document.querySelector(myEl + " div.paginationControl span.last");
+        if (first) {
+          first.removeEventListener("click", this.firstPage, false);
+        }
+        if (previous) {
+          previous.removeEventListener("click", this.previousPage, false);
+        }
+        if (next) {
+          next.removeEventListener("click", this.nextPage, false);
+        }
+        if (last) {
+          last.removeEventListener("click", this.lastPage, false);
+        }
+        this.pageControlBound = false;
+      }
+    }
+  }, {
+    key: "_bindPaginationControlEvents",
+
+
+    /**
+     * @private
+     */
+    value: function _bindPaginationControlEvents() {
+      if (!this.pageControlBound) {
+        var myEl = typeof this.el === 'string' ? this.el : this.el.localName;
+        var first = document.querySelector(myEl + " div.paginationControl span.first");
+        var previous = document.querySelector(myEl + " div.paginationControl span.previous");
+        var next = document.querySelector(myEl + " div.paginationControl span.next");
+        var last = document.querySelector(myEl + " div.paginationControl span.last");
+        if (first) {
+          first.addEventListener("click", this.firstPage.bind(this), false);
+        }
+        if (previous) {
+          previous.addEventListener("click", this.previousPage.bind(this), false);
+        }
+        if (next) {
+          next.addEventListener("click", this.nextPage.bind(this), false);
+        }
+        if (last) {
+          last.addEventListener("click", this.lastPage.bind(this), false);
+        }
+        this.pageControlBound = true;
+      }
+    }
+  }, {
+    key: "_deriveEventTarget",
+
+
+    /**
+     * @private
+     */
+    value: function _deriveEventTarget(event) {
+      var key = null;
+      if (event) {
+        key = event.target.getAttribute(_buildTable.TABLE_DATA_ATTRIBUTES.NAME);
+      }
+      return key;
+    }
+  }, {
+    key: "_sortByHeaderEvent",
+
+
+    /**
+     * @private
+     */
+    value: function _sortByHeaderEvent(event) {
+      var key = this._deriveEventTarget(event);
+      this.sortBy(key);
+    }
+  }, {
+    key: "_unbindSortableColumnEvents",
+
+
+    /**
+     * @private
+     */
+    value: function _unbindSortableColumnEvents() {
+      if (this.el && this.sortable) {
+        var list = void 0;
+        if (typeof this.el === 'string') {
+          list = document.querySelectorAll(this.el + " table tr th");
+        } else {
+          list = document.querySelectorAll(this.el.localName + " table tr th");
+        }
+        var i = 0,
+            l = list.length;
+        for (i = 0; i < l; i++) {
+          list[i].removeEventListener("click", this._sortByHeaderEvent, false);
+        }
+      }
+    }
+  }, {
+    key: "_bindSortableColumnEvents",
+
+
+    /**
+     * @private
+     */
+    value: function _bindSortableColumnEvents() {
+      if (this.el && this.sortable) {
+        var list = void 0;
+        if (typeof this.el === 'string') {
+          list = document.querySelectorAll(this.el + " table tr th");
+        } else {
+          list = document.querySelectorAll(this.el.localName + " table tr th");
+        }
+        var i = 0,
+            l = list.length;
+        for (i = 0; i < l; i++) {
+          if (list[i].getAttribute(_buildTable.TABLE_DATA_ATTRIBUTES.NAME) === "lineNumber") {
+            // Do I need to do something?
+          } else {
+            list[i].addEventListener("click", this._sortByHeaderEvent.bind(this), false);
+          }
+        }
+      }
+    }
+  }, {
+    key: "compileTemplate",
+
+
+    /**
+     * An overridable template compile
+     * @method compileTemplate
+     * @memberof AutomaticTable
+     * @returns {string} Returns the template
+     */
+    value: function compileTemplate() {
+      return "";
+    }
+  }, {
+    key: "setURI",
+
+
+    /**
+     * Sets the URI
+     * @method setURI
+     * @memberof AutomaticTable
+     * @param {string} uri The URI
+     */
+    value: function setURI(uri) {
+      this.uri = uri;
+    }
+  }, {
+    key: "setSchema",
+
+
+    /**
+     * Sets the schema
+     * @method setSchema
+     * @memberof AutomaticTable
+     * @param {object} schema The JSON schema of the dataset
+     */
+    value: function setSchema(schema) {
+      this.schema = schema;
+      this._columns = schema.properties;
+      this.collection.reset();
+      this.collection.schema = schema;
+
+      if (this.uri) {
+        this.collection.url = this.uri;
+      }
+    }
+  }, {
+    key: "showProgressBar",
+
+
+    /**
+     * Enable/Disable the progress bar
+     * @method showProgressBar
+     * @memberof AutomaticTable
+     * @param {boolean} show Show or Hide the progress bar
+     */
+    value: function showProgressBar(show) {
+      if (this.el) {
+        var e = typeof this.el === 'string' ? document.querySelector(this.el) : this.el;
+        if (e) {
+          var p = e.querySelector("progress");
+          if (p) {
+            p.style.display = show ? "block" : "none";
+            p.style.visibility = show ? "visible" : "hidden";
+          }
+        }
+      }
+    }
+  }, {
+    key: "showMessage",
+
+
+    /**
+     * Show a message related to the table
+     * @method showMessage
+     * @memberof AutomaticTable
+     * @param {string} message Some message to display
+     */
+    value: function showMessage(message) {
+      if (this.el) {
+        var e = typeof this.el === 'string' ? document.querySelector(this.el) : this.el;
+        var p = e.querySelector("p[class=message]");
+        if (p) {
+          p.innerHTML = message;
+        }
+      }
+    }
+  }, {
+    key: "validate",
+
+    /**
+      * Validate the table
+     * @method validate
+     * @memberof AutomaticTable
+     * @returns {boolean} Returns true on success of validation
+     */
+    value: function validate() {
+      var messages = this.collection ? this.collection.validate() : null;
+      if (!this.collection.isValid() && messages && messages.messages) {
+        this.showMessage((0, _messages2.default)(messages.messages));
+      } else {
+        this.showMessage("");
+      }
+      return messages;
+    }
+  }, {
+    key: "isValid",
+
+
+    /**
+     * Is the table valid
+     * @method isValid
+     * @memberof AutomaticTable
+     * @returns {boolean} Returns true if valid
+     */
+    value: function isValid() {
+      return this.collection ? this.collection.isValid() : true;
+    }
+  }, {
+    key: "remove",
+
+
+    /**
+     * Remove the table and all binds
+     * @method remove
+     * @memberof AutomaticTable
+     */
+    value: function remove() {
+      /* off to unbind the events */
+      this.undelegateEvents();
+      this.off();
+      this.stopListening();
+
+      _dom2.default.empty(this.el);
+
+      return this;
+    }
+  }, {
+    key: "getSelected",
+
+    /**
+     * Gets the selected models
+     * @method getSelected
+     * @memberof AutomaticTable
+     * @returns {Array} Returns array of selected rows (models)
+     */
+    value: function getSelected() {
+      var keys = Object.keys(this.model.attributes),
+          l = keys.length,
+          selected = [];
+      var i = 0;
+      for (i = 0; i < l; i++) {
+        if (keys[i].includes("row-") && this.model.attributes[keys[i]] === true) {
+          var n = Number(keys[i].substring(4));
+          selected.push(this.collection.at(n));
+        }
+      }
+      return selected;
+    }
+  }, {
+    key: "getSelectedIndex",
+
+
+    /**
+     * Gets the selected row indexes
+     * @method getSelectedIndex
+     * @memberof AutomaticTable
+     * @returns {Array} Returns array of selected rows (indexes)
+     */
+    value: function getSelectedIndex() {
+      var keys = Object.keys(this.model.attributes),
+          l = keys.length,
+          selected = [];
+      var i = 0;
+      for (i = 0; i < l; i++) {
+        if (keys[i].includes("row-") && this.model.attributes[keys[i]] === true) {
+          selected.push(Number(keys[i].substring(4)));
+        }
+      }
+      return selected;
+    }
+  }, {
+    key: "removeRows",
+
+
+    /**
+     * Removes the models
+     * @method removeRows
+     * @param {Array} rows Models of the rows to remove
+     * @memberof AutomaticTable
+     */
+    value: function removeRows(rows) {
+      var l = rows.length;
+      var i = 0;
+      for (i = 0; i < l; i++) {
+        var model = rows[i];
+        if (!model.url) {
+          model.url = this.uri + "/" + model.id;
+        }
+        model.destroy();
+      }
+    }
+  }]);
+
+  return AutomaticTable;
+}(_decorator2.default);
+
+;
+
+exports.default = AutomaticTable;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _augmentedjsNext = __webpack_require__(0);
+
 var _augmentedjsNext2 = _interopRequireDefault(_augmentedjsNext);
 
-var _sync2 = __webpack_require__(8);
+var _sync2 = __webpack_require__(10);
 
 var _sync3 = _interopRequireDefault(_sync2);
 
@@ -7772,7 +9097,94 @@ var Model = function (_Augmented$AbstractMo) {
 exports.default = Model;
 
 /***/ }),
-/* 4 */
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _augmentedjsNext = __webpack_require__(0);
+
+var _augmentedjsNext2 = _interopRequireDefault(_augmentedjsNext);
+
+var _sync2 = __webpack_require__(10);
+
+var _sync3 = _interopRequireDefault(_sync2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * @class Collection
+ * @memberof Presentation
+ * @extends Augmented.AbstractCollection
+ */
+var Collection = function (_Augmented$AbstractCo) {
+  _inherits(Collection, _Augmented$AbstractCo);
+
+  function Collection(models, options) {
+    _classCallCheck(this, Collection);
+
+    var _this = _possibleConstructorReturn(this, (Collection.__proto__ || Object.getPrototypeOf(Collection)).call(this, models, options));
+
+    if (options && options.url) {
+      _this.url = options.url;
+    } else {
+      _this.url = null;
+    };
+    return _this;
+  }
+
+  _createClass(Collection, [{
+    key: "sync",
+
+
+    /**
+     * sync - Sync collection data to bound REST call
+     * @method sync
+     * @memberof Collection
+     */
+    value: function sync(method, model, options) {
+      if (!options) {
+        options = {};
+      }
+      if (this.crossOrigin === true) {
+        options.crossDomain = true;
+      }
+      if (!options.xhrFields) {
+        options.xhrFields = {
+          withCredentials: true
+        };
+      }
+
+      if (this.mock) {
+        options.mock = this.mock;
+      }
+
+      return (0, _sync3.default)(method, model, options);
+    }
+  }]);
+
+  return Collection;
+}(_augmentedjsNext2.default.AbstractCollection);
+
+;
+
+exports.default = Collection;
+
+/***/ }),
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7792,7 +9204,7 @@ var _decorator = __webpack_require__(2);
 
 var _decorator2 = _interopRequireDefault(_decorator);
 
-var _model = __webpack_require__(3);
+var _model = __webpack_require__(4);
 
 var _model2 = _interopRequireDefault(_model);
 
@@ -7917,7 +9329,7 @@ var AbstractToolbar = function (_DecoratorView) {
 exports.default = AbstractToolbar;
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7947,7 +9359,7 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7977,7 +9389,7 @@ try {
 module.exports = g;
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7989,7 +9401,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _abstractView = __webpack_require__(16);
+var _abstractView = __webpack_require__(18);
 
 var _abstractView2 = _interopRequireDefault(_abstractView);
 
@@ -8080,7 +9492,7 @@ var View = function (_AbstractView) {
 exports.default = View;
 
 /***/ }),
-/* 8 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8094,15 +9506,15 @@ var _augmentedjsNext = __webpack_require__(0);
 
 var _augmentedjsNext2 = _interopRequireDefault(_augmentedjsNext);
 
-var _methodMap = __webpack_require__(30);
+var _methodMap = __webpack_require__(31);
 
 var _methodMap2 = _interopRequireDefault(_methodMap);
 
-var _request = __webpack_require__(9);
+var _request = __webpack_require__(11);
 
 var _request2 = _interopRequireDefault(_request);
 
-var _dataType = __webpack_require__(18);
+var _dataType = __webpack_require__(20);
 
 var _dataType2 = _interopRequireDefault(_dataType);
 
@@ -8169,7 +9581,7 @@ var sync = function sync(method, model, options) {
 exports.default = sync;
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8179,11 +9591,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _headers = __webpack_require__(31);
+var _headers = __webpack_require__(32);
 
 var _headers2 = _interopRequireDefault(_headers);
 
-var _dataType = __webpack_require__(18);
+var _dataType = __webpack_require__(20);
 
 var _dataType2 = _interopRequireDefault(_dataType);
 
@@ -8412,7 +9824,7 @@ var request = function request(configuration) {
 exports.default = request;
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8424,7 +9836,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _localStorage = __webpack_require__(11);
+var _localStorage = __webpack_require__(13);
 
 var _localStorage2 = _interopRequireDefault(_localStorage);
 
@@ -8436,7 +9848,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * Augmented.LocalStorageFactory
  * Retrieve a local storage Object
  * @class LocalStorageFactory
- * @name LocalStorageFactory
  * @memberof Presentation
  */
 var LocalStorageFactory = function () {
@@ -8452,8 +9863,8 @@ var LocalStorageFactory = function () {
      * @method getStorage Get the storage instance
      * @param {boolean} persist Persistance or not
      * @param {string} namespace The namespace of the storage if needed (optional)
-     * @returns {Augmented.AbstractLocalStorage} Returns an instance of local storage
-     * @memberof Augmented.LocalStorageFactory
+     * @returns {Presentation.LocalStorage} Returns an instance of local storage
+     * @memberof LocalStorageFactory
      */
     value: function getStorage(persist, namespace) {
       var ls = null;
@@ -8477,7 +9888,7 @@ var LocalStorageFactory = function () {
 exports.default = LocalStorageFactory;
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8493,9 +9904,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 /**
  * Local Storage API - returned from LocalStorageFactory
- * @class AbstractLocalStorage
- * @name AbstractLocalStorage
- * @memberof Augmented
+ * @class LocalStorage
+ * @memberof Presentation
  * @param {boolean} persist Persistant storage or not
  */
 var LocalStorage = function () {
@@ -8527,13 +9937,13 @@ var LocalStorage = function () {
     /**
      * is Persistant or not
      * @property {boolean} isPersisted Persistant property
-     * @memberof AbstractLocalStorage
+     * @memberof LocalStorage
      */
 
     /**
      * Is storage supported
      * @method isSupported
-     * @memberof AbstractLocalStorage
+     * @memberof LocalStorage
      * @returns {boolean} Returns true if supported
      */
     value: function isSupported() {
@@ -8546,7 +9956,7 @@ var LocalStorage = function () {
     /**
      * Gets an item from storage
      * @method getItem
-     * @memberof AbstractLocalStorage
+     * @memberof LocalStorage
      * @param {string} key The key in storage
      * @returns {object} Returns object from storage
      */
@@ -8564,7 +9974,7 @@ var LocalStorage = function () {
     /**
      * Sets an item to storage
      * @method setItem
-     * @memberof AbstractLocalStorage
+     * @memberof LocalStorage
      * @param {string} key The key in storage
      * @param {object} object The data to set
      */
@@ -8578,7 +9988,7 @@ var LocalStorage = function () {
     /**
      * Removes an item from storage
      * @method removeItem
-     * @memberof AbstractLocalStorage
+     * @memberof LocalStorage
      * @param {string} key The key in storage
      */
     value: function removeItem(itemKey) {
@@ -8591,7 +10001,7 @@ var LocalStorage = function () {
     /**
      * Clears storage - <b>Warning: Destructive in non-namespaced instances!</b>
      * @method clear
-     * @memberof AbstractLocalStorage
+     * @memberof LocalStorage
      */
     value: function clear() {
       this._myStore.clear();
@@ -8603,7 +10013,7 @@ var LocalStorage = function () {
     /**
      * Gets the key from storage for index
      * @method key
-     * @memberof AbstractLocalStorage
+     * @memberof LocalStorage
      * @param {number} i The index in storage
      * @returns {string} Returns the key from storage
      */
@@ -8617,7 +10027,7 @@ var LocalStorage = function () {
     /**
      * The length of storage by keys
      * @method length
-     * @memberof AbstractLocalStorage
+     * @memberof LocalStorage
      * @returns {number} Returns the length of storage by keys
      */
     value: function length() {
@@ -8633,7 +10043,7 @@ var LocalStorage = function () {
 exports.default = LocalStorage;
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8649,9 +10059,9 @@ var _augmentedjsNext = __webpack_require__(0);
 
 var _augmentedjsNext2 = _interopRequireDefault(_augmentedjsNext);
 
-var _sync2 = __webpack_require__(8);
+var _localStorageFactory = __webpack_require__(12);
 
-var _sync3 = _interopRequireDefault(_sync2);
+var _localStorageFactory2 = _interopRequireDefault(_localStorageFactory);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8661,66 +10071,151 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var DEFAULT_NAMESPACE = "augmented.localstorage.collection";
+var DEFAULT_KEY = DEFAULT_NAMESPACE + ".key";
+
 /**
- * @class Collection
+ * LocalStorageCollection
+ * A local storage-based Collection
+ * @class LocalStorageCollection
  * @memberof Presentation
  * @extends Augmented.AbstractCollection
  */
-var Collection = function (_Augmented$AbstractCo) {
-  _inherits(Collection, _Augmented$AbstractCo);
 
-  function Collection(models, options) {
-    _classCallCheck(this, Collection);
+var LocalStorageCollection = function (_Augmented$AbstractCo) {
+  _inherits(LocalStorageCollection, _Augmented$AbstractCo);
 
-    var _this = _possibleConstructorReturn(this, (Collection.__proto__ || Object.getPrototypeOf(Collection)).call(this, models, options));
+  function LocalStorageCollection(models, options) {
+    _classCallCheck(this, LocalStorageCollection);
 
-    if (options && options.url) {
-      _this.url = options.url;
-    } else {
-      _this.url = null;
-    };
+    var _this = _possibleConstructorReturn(this, (LocalStorageCollection.__proto__ || Object.getPrototypeOf(LocalStorageCollection)).call(this, models, options));
+
+    _this._key = DEFAULT_KEY;
+    _this._persist = false;
+    _this._storage = null;
+
+    if (options && options.persist) {
+      _this._persist = options.persist;
+    }
+    if (options && options.key) {
+      _this._key = options.key;
+    }
+    _this._storage = _localStorageFactory2.default.getStorage(_this._persist, DEFAULT_NAMESPACE);
     return _this;
   }
 
-  _createClass(Collection, [{
-    key: "sync",
+  _createClass(LocalStorageCollection, [{
+    key: "initialize",
 
 
     /**
-     * sync - Sync collection data to bound REST call
-     * @method sync
-     * @memberof Collection
+     * Base key name for the collection (simular to url for rest-based)
+     * @property {string} key The key
+     * @memberof LocalStorageCollection
      */
+
+    /**
+     * is Persistant or not
+     * @property {boolean} isPersisted Persistant property
+     * @memberof LocalStorageCollection
+     */
+
+    /**
+     * Storage for the collection
+     * @property {string} storage The storage used for the collection
+     * @memberof LocalStorageCollection
+     * @private
+     */
+
+    /**
+     * @method initialize Initialize the model with needed wireing
+     * @param {object} options Any options to pass
+     * @memberof LocalStorageCollection
+     */
+    value: function initialize(options) {}
+  }, {
+    key: "init",
+
+    /**
+     * @method init Custom init method for the model (called at inititlize)
+     * @param {object} options Any options to pass
+     * @memberof LocalStorageCollection
+     */
+    value: function init(options) {}
+  }, {
+    key: "fetch",
+
+    /**
+     * @method fetch Fetch the collection
+     * @param {object} options Any options to pass
+     * @memberof LocalStorageCollection
+     */
+    value: function fetch(options) {
+      this.sync('read', this, options);
+    }
+  }, {
+    key: "save",
+
+    /**
+     * @method save Save the collection
+     * @param {object} options Any options to pass
+     * @memberof LocalStorageCollection
+     */
+    value: function save(options) {
+      this.sync('create', this, options);
+    }
+  }, {
+    key: "update",
+
+    /**
+     * @method update Update the collection
+     * @param {object} options Any options to pass
+     * @memberof LocalStorageCollection
+     */
+    value: function update(options) {
+      this.sync('update', this, options);
+    }
+  }, {
+    key: "destroy",
+
+    /**
+     * @method destroy Destroy the collection
+     * @param {object} options Any options to pass
+     * @memberof LocalStorageCollection
+     */
+    value: function destroy(options) {
+      this.sync('delete', this, options);
+    }
+  }, {
+    key: "sync",
     value: function sync(method, model, options) {
       if (!options) {
         options = {};
       }
-      if (this.crossOrigin === true) {
-        options.crossDomain = true;
+      var j = {};
+      if (method === "create" || method === "update") {
+        j = this.toJSON();
+        this._storage.setItem(this._key, j);
+      } else if (method === "delete") {
+        this._storage.removeItem(this._key);
+      } else {
+        // read
+        j = this._storage.getItem(this._key);
+        this.reset(j);
       }
-      if (!options.xhrFields) {
-        options.xhrFields = {
-          withCredentials: true
-        };
-      }
-
-      if (this.mock) {
-        options.mock = this.mock;
-      }
-
-      return (0, _sync3.default)(method, model, options);
+      return {};
     }
   }]);
 
-  return Collection;
+  return LocalStorageCollection;
 }(_augmentedjsNext2.default.AbstractCollection);
 
 ;
 
-exports.default = Collection;
+exports.default = LocalStorageCollection;
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8732,7 +10227,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _view = __webpack_require__(7);
+var _view = __webpack_require__(9);
 
 var _view2 = _interopRequireDefault(_view);
 
@@ -8833,7 +10328,7 @@ var Colleague = function (_View) {
 exports.default = Colleague;
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8862,7 +10357,7 @@ var buildMenuItems = function buildMenuItems(name, data) {
 exports.default = buildMenuItems;
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9088,7 +10583,7 @@ var DialogView = function (_DecoratorView) {
 exports.default = DialogView;
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9112,7 +10607,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var _bind = __webpack_require__(26);
+var _bind = __webpack_require__(27);
 
 // Cached regex to split keys for `delegate`.
 var DELEGATE_EVENT_SPLITTER = /^(\S+)\s*(.*)$/;
@@ -9698,7 +11193,7 @@ var AbstractView = function (_Augmented$Object) {
 exports.default = AbstractView;
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10122,7 +11617,7 @@ var History = function (_Augmented$Object) {
 exports.default = History;
 
 /***/ }),
-/* 18 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10139,7 +11634,7 @@ var DATA_TYPE = {
 exports.default = DATA_TYPE;
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10427,7 +11922,7 @@ var Widget = function () {
 exports.default = Widget;
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10441,7 +11936,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
-var _collection = __webpack_require__(12);
+var _collection = __webpack_require__(5);
 
 var _collection2 = _interopRequireDefault(_collection);
 
@@ -10671,179 +12166,7 @@ var PaginatedCollection = function (_Collection) {
 exports.default = PaginatedCollection;
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _augmentedjsNext = __webpack_require__(0);
-
-var _augmentedjsNext2 = _interopRequireDefault(_augmentedjsNext);
-
-var _localStorageFactory = __webpack_require__(10);
-
-var _localStorageFactory2 = _interopRequireDefault(_localStorageFactory);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var DEFAULT_NAMESPACE = "augmented.localstorage.collection";
-var DEFAULT_KEY = DEFAULT_NAMESPACE + ".key";
-
-/**
- * LocalStorageCollection
- * A local storage-based Collection
- * @class LocalStorageCollection
- * @memberof Presentation
- * @extends Augmented.AbstractCollection
- */
-
-var LocalStorageCollection = function (_Augmented$AbstractCo) {
-  _inherits(LocalStorageCollection, _Augmented$AbstractCo);
-
-  function LocalStorageCollection(models, options) {
-    _classCallCheck(this, LocalStorageCollection);
-
-    var _this = _possibleConstructorReturn(this, (LocalStorageCollection.__proto__ || Object.getPrototypeOf(LocalStorageCollection)).call(this, models, options));
-
-    _this._key = DEFAULT_KEY;
-    _this._persist = false;
-    _this._storage = null;
-
-    if (options && options.persist) {
-      _this._persist = options.persist;
-    }
-    if (options && options.key) {
-      _this._key = options.key;
-    }
-    _this._storage = _localStorageFactory2.default.getStorage(_this._persist, DEFAULT_NAMESPACE);
-    return _this;
-  }
-
-  _createClass(LocalStorageCollection, [{
-    key: "initialize",
-
-
-    /**
-     * Base key name for the collection (simular to url for rest-based)
-     * @property {string} key The key
-     * @memberof LocalStorageCollection
-     */
-
-    /**
-     * is Persistant or not
-     * @property {boolean} isPersisted Persistant property
-     * @memberof LocalStorageCollection
-     */
-
-    /**
-     * Storage for the collection
-     * @property {string} storage The storage used for the collection
-     * @memberof LocalStorageCollection
-     * @private
-     */
-
-    /**
-     * @method initialize Initialize the model with needed wireing
-     * @param {object} options Any options to pass
-     * @memberof LocalStorageCollection
-     */
-    value: function initialize(options) {}
-  }, {
-    key: "init",
-
-    /**
-     * @method init Custom init method for the model (called at inititlize)
-     * @param {object} options Any options to pass
-     * @memberof LocalStorageCollection
-     */
-    value: function init(options) {}
-  }, {
-    key: "fetch",
-
-    /**
-     * @method fetch Fetch the collection
-     * @param {object} options Any options to pass
-     * @memberof LocalStorageCollection
-     */
-    value: function fetch(options) {
-      this.sync('read', this, options);
-    }
-  }, {
-    key: "save",
-
-    /**
-     * @method save Save the collection
-     * @param {object} options Any options to pass
-     * @memberof LocalStorageCollection
-     */
-    value: function save(options) {
-      this.sync('create', this, options);
-    }
-  }, {
-    key: "update",
-
-    /**
-     * @method update Update the collection
-     * @param {object} options Any options to pass
-     * @memberof LocalStorageCollection
-     */
-    value: function update(options) {
-      this.sync('update', this, options);
-    }
-  }, {
-    key: "destroy",
-
-    /**
-     * @method destroy Destroy the collection
-     * @param {object} options Any options to pass
-     * @memberof LocalStorageCollection
-     */
-    value: function destroy(options) {
-      this.sync('delete', this, options);
-    }
-  }, {
-    key: "sync",
-    value: function sync(method, model, options) {
-      if (!options) {
-        options = {};
-      }
-      var j = {};
-      if (method === "create" || method === "update") {
-        j = this.toJSON();
-        this._storage.setItem(this._key, j);
-      } else if (method === "delete") {
-        this._storage.removeItem(this._key);
-      } else {
-        // read
-        j = this._storage.getItem(this._key);
-        this.reset(j);
-      }
-      return {};
-    }
-  }]);
-
-  return LocalStorageCollection;
-}(_augmentedjsNext2.default.AbstractCollection);
-
-;
-
-exports.default = LocalStorageCollection;
-
-/***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10861,7 +12184,7 @@ var _augmentedjsNext = __webpack_require__(0);
 
 var Augmented = _interopRequireWildcard(_augmentedjsNext);
 
-var _colleague = __webpack_require__(13);
+var _colleague = __webpack_require__(15);
 
 var _colleague2 = _interopRequireDefault(_colleague);
 
@@ -11350,7 +12673,7 @@ var Mediator = function (_Colleague) {
 exports.default = Mediator;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11380,7 +12703,7 @@ var formatValidationMessages = function formatValidationMessages(messages) {
 exports.default = formatValidationMessages;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11406,49 +12729,49 @@ PAGINATION_API_TYPE.DATABASE = Symbol("database");
 exports.default = PAGINATION_API_TYPE;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _abstractView = __webpack_require__(16);
+var _abstractView = __webpack_require__(18);
 
 var _abstractView2 = _interopRequireDefault(_abstractView);
 
-var _view = __webpack_require__(7);
+var _view = __webpack_require__(9);
 
 var _view2 = _interopRequireDefault(_view);
 
-var _history = __webpack_require__(17);
+var _history = __webpack_require__(19);
 
 var _history2 = _interopRequireDefault(_history);
 
-var _router = __webpack_require__(27);
+var _router = __webpack_require__(28);
 
 var _router2 = _interopRequireDefault(_router);
 
-var _model = __webpack_require__(3);
+var _model = __webpack_require__(4);
 
 var _model2 = _interopRequireDefault(_model);
 
-var _sync = __webpack_require__(8);
+var _sync = __webpack_require__(10);
 
 var _sync2 = _interopRequireDefault(_sync);
 
-var _request = __webpack_require__(9);
+var _request = __webpack_require__(11);
 
 var _request2 = _interopRequireDefault(_request);
 
-var _configuration = __webpack_require__(32);
+var _configuration = __webpack_require__(33);
 
 var _configuration2 = _interopRequireDefault(_configuration);
 
-var _application = __webpack_require__(33);
+var _application = __webpack_require__(34);
 
 var _application2 = _interopRequireDefault(_application);
 
-var _widget = __webpack_require__(19);
+var _widget = __webpack_require__(21);
 
 var _widget2 = _interopRequireDefault(_widget);
 
@@ -11456,39 +12779,39 @@ var _dom = __webpack_require__(1);
 
 var _dom2 = _interopRequireDefault(_dom);
 
-var _viewController = __webpack_require__(34);
+var _viewController = __webpack_require__(35);
 
 var _viewController2 = _interopRequireDefault(_viewController);
 
-var _localStorageFactory = __webpack_require__(10);
+var _localStorageFactory = __webpack_require__(12);
 
 var _localStorageFactory2 = _interopRequireDefault(_localStorageFactory);
 
-var _localStorage = __webpack_require__(11);
+var _localStorage = __webpack_require__(13);
 
 var _localStorage2 = _interopRequireDefault(_localStorage);
 
-var _namespacedLocalStorage = __webpack_require__(35);
+var _namespacedLocalStorage = __webpack_require__(36);
 
 var _namespacedLocalStorage2 = _interopRequireDefault(_namespacedLocalStorage);
 
-var _collection = __webpack_require__(12);
+var _collection = __webpack_require__(5);
 
 var _collection2 = _interopRequireDefault(_collection);
 
-var _paginated = __webpack_require__(20);
+var _paginated = __webpack_require__(22);
 
 var _paginated2 = _interopRequireDefault(_paginated);
 
-var _localStorageCollection = __webpack_require__(21);
+var _localStorageCollection = __webpack_require__(14);
 
 var _localStorageCollection2 = _interopRequireDefault(_localStorageCollection);
 
-var _colleague = __webpack_require__(13);
+var _colleague = __webpack_require__(15);
 
 var _colleague2 = _interopRequireDefault(_colleague);
 
-var _mediator = __webpack_require__(22);
+var _mediator = __webpack_require__(23);
 
 var _mediator2 = _interopRequireDefault(_mediator);
 
@@ -11496,71 +12819,95 @@ var _decorator = __webpack_require__(2);
 
 var _decorator2 = _interopRequireDefault(_decorator);
 
-var _notification = __webpack_require__(36);
+var _notification = __webpack_require__(37);
 
 var _notification2 = _interopRequireDefault(_notification);
 
-var _manager = __webpack_require__(37);
+var _manager = __webpack_require__(38);
 
 var _manager2 = _interopRequireDefault(_manager);
 
-var _header = __webpack_require__(38);
+var _header = __webpack_require__(39);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _footer = __webpack_require__(39);
+var _footer = __webpack_require__(40);
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _card = __webpack_require__(40);
+var _card = __webpack_require__(41);
 
 var _card2 = _interopRequireDefault(_card);
 
-var _article = __webpack_require__(41);
+var _article = __webpack_require__(42);
 
 var _article2 = _interopRequireDefault(_article);
 
-var _abstractToolbar = __webpack_require__(4);
+var _abstractToolbar = __webpack_require__(6);
 
 var _abstractToolbar2 = _interopRequireDefault(_abstractToolbar);
 
-var _toolbar = __webpack_require__(42);
+var _toolbar = __webpack_require__(43);
 
 var _toolbar2 = _interopRequireDefault(_toolbar);
 
-var _hamburgerMenu = __webpack_require__(43);
+var _hamburgerMenu = __webpack_require__(44);
 
 var _hamburgerMenu2 = _interopRequireDefault(_hamburgerMenu);
 
-var _menu = __webpack_require__(44);
+var _menu = __webpack_require__(45);
 
 var _menu2 = _interopRequireDefault(_menu);
 
-var _dialog = __webpack_require__(15);
+var _dialog = __webpack_require__(17);
 
 var _dialog2 = _interopRequireDefault(_dialog);
 
-var _confirmation = __webpack_require__(45);
+var _confirmation = __webpack_require__(46);
 
 var _confirmation2 = _interopRequireDefault(_confirmation);
 
-var _alert = __webpack_require__(46);
+var _alert = __webpack_require__(47);
 
 var _alert2 = _interopRequireDefault(_alert);
 
-var _autoTable = __webpack_require__(47);
+var _autoTable = __webpack_require__(3);
 
 var _autoTable2 = _interopRequireDefault(_autoTable);
 
-var _autoForm = __webpack_require__(49);
+var _bigDataTable = __webpack_require__(49);
+
+var _bigDataTable2 = _interopRequireDefault(_bigDataTable);
+
+var _editableBigTable = __webpack_require__(50);
+
+var _editableBigTable2 = _interopRequireDefault(_editableBigTable);
+
+var _localStorageTable = __webpack_require__(51);
+
+var _localStorageTable2 = _interopRequireDefault(_localStorageTable);
+
+var _editableLocalStorageTable = __webpack_require__(52);
+
+var _editableLocalStorageTable2 = _interopRequireDefault(_editableLocalStorageTable);
+
+var _editableTable = __webpack_require__(53);
+
+var _editableTable2 = _interopRequireDefault(_editableTable);
+
+var _spreadsheet = __webpack_require__(54);
+
+var _spreadsheet2 = _interopRequireDefault(_spreadsheet);
+
+var _autoForm = __webpack_require__(55);
 
 var _autoForm2 = _interopRequireDefault(_autoForm);
 
-var _api = __webpack_require__(24);
+var _api = __webpack_require__(25);
 
 var _api2 = _interopRequireDefault(_api);
 
-var _factory = __webpack_require__(51);
+var _factory = __webpack_require__(57);
 
 var _factory2 = _interopRequireDefault(_factory);
 
@@ -11572,7 +12919,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.23
+ * @version 2.0.0-alpha.24
  * @license Apache-2.0
  */
 var Presentation = {};
@@ -11584,7 +12931,7 @@ var Presentation = {};
 
 
 // Components
-Presentation.VERSION = "2.0.0-alpha.23";
+Presentation.VERSION = "2.0.0-alpha.24";
 
 Presentation.History = _history2.default;
 Presentation.Router = _router2.default;
@@ -11626,7 +12973,15 @@ Presentation.Component.Menu = _menu2.default;
 Presentation.Component.DialogView = _dialog2.default;
 Presentation.Component.ConfirmationDialogView = _confirmation2.default;
 Presentation.Component.AlertDialogView = _alert2.default;
+
 Presentation.Component.AutomaticTable = _autoTable2.default;
+Presentation.Component.BigDataTable = _bigDataTable2.default;
+Presentation.Component.EditableLocalStorageTable = _editableLocalStorageTable2.default;
+Presentation.Component.EditableTable = _editableTable2.default;
+Presentation.Component.EditableBigDataTable = _editableBigTable2.default;
+Presentation.Component.Spreadsheet = _spreadsheet2.default;
+Presentation.Component.LocalStorageTable = _localStorageTable2.default;
+
 Presentation.Component.AutomaticForm = _autoForm2.default;
 Presentation.Component.Header = _header2.default;
 Presentation.Component.Fotter = _footer2.default;
@@ -11668,7 +13023,7 @@ Presentation.$ = _dom2.default.query;
 module.exports = Presentation;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12912,10 +14267,10 @@ function identity(value) {
 bind.placeholder = {};
 
 module.exports = bind;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12931,7 +14286,7 @@ var _augmentedjsNext = __webpack_require__(0);
 
 var _augmentedjsNext2 = _interopRequireDefault(_augmentedjsNext);
 
-var _history = __webpack_require__(17);
+var _history = __webpack_require__(19);
 
 var _history2 = _interopRequireDefault(_history);
 
@@ -12943,8 +14298,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var _map = __webpack_require__(28);
-var _isRegExp = __webpack_require__(29);
+var _map = __webpack_require__(29);
+var _isRegExp = __webpack_require__(30);
 
 // Cached regular expressions for matching named param parts and splatted
 // parts of route strings.
@@ -13142,7 +14497,7 @@ var Router = function (_Augmented$Object) {
 exports.default = Router;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15458,10 +16813,10 @@ function property(path) {
 }
 
 module.exports = map;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(5)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8), __webpack_require__(7)(module)))
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15590,10 +16945,10 @@ function isObject(value) {
 var isRegExp = nodeIsRegExp ? baseUnary(nodeIsRegExp) : baseIsRegExp;
 
 module.exports = isRegExp;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(5)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8), __webpack_require__(7)(module)))
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15614,7 +16969,7 @@ var METHOD_MAP = {
 exports.default = METHOD_MAP;
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15638,7 +16993,7 @@ var HEADERS = {
 exports.default = HEADERS;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15649,129 +17004,129 @@ Object.defineProperty(exports, "__esModule", {
 });
 /**
 * Object of configuration properties and callbacks.  Pass this to the request call to setup configutation
-* @constructor Augmented.Request.Configuration
-* @name Augmented.Request.Configuration
-* @memberof Augmented.Request
+* @constructor Configuration
+* @name Configuration
+* @memberof Presentation.Request
 */
 var Configuration = {
   /**
   * url property
   * @property {string} url the url
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   url: "localhost",
   /**
   * contentType property
   * @property {string} contentType the content type (default is text/plain)
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   contentType: "text/plain",
   /**
   * dataType property
   * @property {string} dataType the data type (default is text)
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   dataType: "text",
   /**
   * async property - no longer supported
   * @property {boolean} async set async (default true)
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   //async: true;
   /**
   * method property
   * @property {string} method the ajax method (default GET)
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   method: "GET",
   /**
   * cache property
   * @property {boolean} cache the cache toggle (default true)
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   cache: true,
   /**
   * timeout property
   * @property {number} timeout the timeout property
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   timeout: 0,
   /**
   * crossDomain property - sets withCredentials to true
   * @property {boolean} crossDomain the cross domain property
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   crossDomain: false,
   /**
   * xhrFields property
   * @namespace xhrFields
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   xhrFields: {},
   /**
   * withCredentials property
   * @property {boolean} withCredentials the setting for credentails
-  * @memberof Augmented.Request.Configuration.xhrFields
+  * @memberof Configuration.xhrFields
   */
   withCredentials: false,
   /**
   * user property
   * @property {string} user the username for credentials
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   user: null,
   /**
   * password property
   * @property {string} password the password for credentials
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   password: null,
   /**
   * allowOrigins property
   * @property {string} allowOrigins the allowed origins for crossDomain
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   allowOrigins: "",
   /**
   * allowMethods property
   * @property {string} allowMethods the allowed methods for crossDomain
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   allowMethods: null,
   /**
   * headers property
   * @property {object} headers an object of headers (key, value)
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   headers: {},
   /**
   * success callback
   * @property {function} success a callback for success
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   success: null,
   /**
   * error callback
   * @property {function} error a callback for error
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   error: null,
   /**
   * complete callback
   * @property {function} complete a callback after the ajax call
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   complete: null,
   /**
   * beforeSend callback
   * @property {function} beforeSend a callback before the ajax call
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   beforeSend: null,
   /**
   * mock
   * @property {boolean} mock a toggle to mock the ajax call
-  * @memberof Augmented.Request.Configuration
+  * @memberof Configuration
   */
   mock: false
 };
@@ -15779,7 +17134,7 @@ var Configuration = {
 exports.default = Configuration;
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16034,7 +17389,7 @@ var Application = function (_Augmented$Applicatio) {
 exports.default = Application;
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16285,7 +17640,7 @@ var ViewController = function (_Augmented$Object) {
 exports.default = ViewController;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16301,11 +17656,11 @@ var _augmentedjsNext = __webpack_require__(0);
 
 var _augmentedjsNext2 = _interopRequireDefault(_augmentedjsNext);
 
-var _localStorage = __webpack_require__(11);
+var _localStorage = __webpack_require__(13);
 
 var _localStorage2 = _interopRequireDefault(_localStorage);
 
-var _localStorageFactory = __webpack_require__(10);
+var _localStorageFactory = __webpack_require__(12);
 
 var _localStorageFactory2 = _interopRequireDefault(_localStorageFactory);
 
@@ -16317,6 +17672,12 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+/**
+ * NamespacedLocalStorage
+ * Retrieve a local storage Object
+ * @class NamespacedLocalStorage
+ * @memberof Presentation
+ */
 var NamespacedLocalStorage = function (_LocalStorage) {
   _inherits(NamespacedLocalStorage, _LocalStorage);
 
@@ -16429,7 +17790,7 @@ var NamespacedLocalStorage = function (_LocalStorage) {
 exports.default = NamespacedLocalStorage;
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16439,7 +17800,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _view = __webpack_require__(7);
+var _view = __webpack_require__(9);
 
 var _view2 = _interopRequireDefault(_view);
 
@@ -16474,7 +17835,7 @@ var NotificationCenter = function (_View) {
 exports.default = NotificationCenter;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16486,7 +17847,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _mediator = __webpack_require__(22);
+var _mediator = __webpack_require__(23);
 
 var _mediator2 = _interopRequireDefault(_mediator);
 
@@ -16533,7 +17894,7 @@ var Manager = function (_Mediator) {
 exports.default = Manager;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16622,7 +17983,7 @@ var Header = function (_DecoratorView) {
 exports.default = Header;
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16692,7 +18053,7 @@ var Footer = function (_DecoratorView) {
 exports.default = Footer;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16825,7 +18186,7 @@ var Card = function (_DecoratorView) {
 exports.default = Card;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16995,7 +18356,7 @@ var Article = function (_DecoratorView) {
 exports.default = Article;
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17007,7 +18368,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _abstractToolbar = __webpack_require__(4);
+var _abstractToolbar = __webpack_require__(6);
 
 var _abstractToolbar2 = _interopRequireDefault(_abstractToolbar);
 
@@ -17015,7 +18376,7 @@ var _dom = __webpack_require__(1);
 
 var _dom2 = _interopRequireDefault(_dom);
 
-var _buildMenuItems = __webpack_require__(14);
+var _buildMenuItems = __webpack_require__(16);
 
 var _buildMenuItems2 = _interopRequireDefault(_buildMenuItems);
 
@@ -17083,7 +18444,7 @@ var Toolbar = function (_AbstractToolbar) {
 exports.default = Toolbar;
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17095,7 +18456,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _buildMenuItems = __webpack_require__(14);
+var _buildMenuItems = __webpack_require__(16);
 
 var _buildMenuItems2 = _interopRequireDefault(_buildMenuItems);
 
@@ -17103,7 +18464,7 @@ var _dom = __webpack_require__(1);
 
 var _dom2 = _interopRequireDefault(_dom);
 
-var _abstractToolbar = __webpack_require__(4);
+var _abstractToolbar = __webpack_require__(6);
 
 var _abstractToolbar2 = _interopRequireDefault(_abstractToolbar);
 
@@ -17122,8 +18483,8 @@ var buildMenu = function buildMenu(name, title, menuItems) {
 /**
  * A Hamburger Menu View
  * @constructor Augmented.Presentation.Component.HamburgerMenu
- * @memberof Augmented.Presentation.Component
- * @extends Augmented.Presentation.AbstractToolbar
+ * @memberof Presentation.Component
+ * @extends Presentation.AbstractToolbar
  */
 
 var HamburgerMenu = function (_AbstractToolbar) {
@@ -17194,7 +18555,7 @@ var HamburgerMenu = function (_AbstractToolbar) {
 exports.default = HamburgerMenu;
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17206,7 +18567,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _abstractToolbar = __webpack_require__(4);
+var _abstractToolbar = __webpack_require__(6);
 
 var _abstractToolbar2 = _interopRequireDefault(_abstractToolbar);
 
@@ -17214,7 +18575,7 @@ var _dom = __webpack_require__(1);
 
 var _dom2 = _interopRequireDefault(_dom);
 
-var _buildMenuItems = __webpack_require__(14);
+var _buildMenuItems = __webpack_require__(16);
 
 var _buildMenuItems2 = _interopRequireDefault(_buildMenuItems);
 
@@ -17242,8 +18603,8 @@ var buildMenu = function buildMenu(name, title, menuItems) {
 /**
  * A Menu
  * @class Menu
- * @memberof Augmented.Presentation.Component
- * @extends Augmented.Presentation.AbstractToolbar
+ * @memberof Presentation.Component
+ * @extends Presentation.AbstractToolbar
  */
 
 var Menu = function (_AbstractToolbar) {
@@ -17300,7 +18661,7 @@ var Menu = function (_AbstractToolbar) {
 exports.default = Menu;
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17310,7 +18671,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _dialog = __webpack_require__(15);
+var _dialog = __webpack_require__(17);
 
 var _dialog2 = _interopRequireDefault(_dialog);
 
@@ -17354,7 +18715,7 @@ var ConfirmationDialogView = function (_DialogView) {
 exports.default = ConfirmationDialogView;
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17364,7 +18725,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _dialog = __webpack_require__(15);
+var _dialog = __webpack_require__(17);
 
 var _dialog2 = _interopRequireDefault(_dialog);
 
@@ -17405,1331 +18766,6 @@ var AlertDialogView = function (_DialogView) {
 ;
 
 exports.default = AlertDialogView;
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _augmentedjsNext = __webpack_require__(0);
-
-var Augmented = _interopRequireWildcard(_augmentedjsNext);
-
-var _decorator = __webpack_require__(2);
-
-var _decorator2 = _interopRequireDefault(_decorator);
-
-var _buildTable = __webpack_require__(48);
-
-var _messages = __webpack_require__(23);
-
-var _messages2 = _interopRequireDefault(_messages);
-
-var _request = __webpack_require__(9);
-
-var _request2 = _interopRequireDefault(_request);
-
-var _dom = __webpack_require__(1);
-
-var _dom2 = _interopRequireDefault(_dom);
-
-var _model = __webpack_require__(3);
-
-var _model2 = _interopRequireDefault(_model);
-
-var _collection = __webpack_require__(12);
-
-var _collection2 = _interopRequireDefault(_collection);
-
-var _localStorageCollection = __webpack_require__(21);
-
-var _localStorageCollection2 = _interopRequireDefault(_localStorageCollection);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //import { TABLE_DATA_ATTRIBUTES, csvTableCompile, tsvTableCompile, defaultTableCompile, defaultTableHeader, defaultTableBody, formatValidationMessages, directDOMTableCompile, directDOMTableHeader, directDOMTableBody, directDOMEditableTableBody, directDOMPaginationControl } from "../functions/buildTable.js";
-
-
-var DEFAULT_KEY = "augmented.localstorage.autotable.key";
-
-/**
- * AutomaticTable<br/>
- * Creates a table automatically via a schema for defintion and a uri/json for data
- * @constructor AutomaticTable
- * @extends Presentation.DecoratorView
- * @memberof Presentation.Component
- * @example
- * let at = new Presentation.AutomaticTable({
- *     schema: schema,
- *     el: "#autoTable",
- *     crossOrigin: false,
- *     sortable: true,
- *     lineNumbers: true,
- *     editable: true,
- *     uri: "/example/data/table.json"
- * });
- */
-
-var AutomaticTable = function (_DecoratorView) {
-  _inherits(AutomaticTable, _DecoratorView);
-
-  function AutomaticTable(options) {
-    _classCallCheck(this, AutomaticTable);
-
-    var _this = _possibleConstructorReturn(this, (AutomaticTable.__proto__ || Object.getPrototypeOf(AutomaticTable)).call(this, options));
-
-    if (options && options.theme) {
-      _this.theme = options.theme;
-    } else {
-      _this.theme = "material";
-    }
-
-    if (options && options.linkable) {
-      _this.linkable = options.linkable;
-    } else {
-      _this.linkable = false;
-    }
-
-    if (options && options.links) {
-      _this.links = options.links;
-    } else {
-      _this.links = {
-        wholeRow: true,
-        column: "",
-        link: "rowLink"
-      };
-    }
-
-    if (options && options.selectable) {
-      _this.selectable = options.selectable;
-    } else {
-      _this.selectable = false;
-    }
-
-    if (options && options.sortable) {
-      _this.sortable = options.sortable;
-    } else {
-      _this.sortable = false;
-    }
-
-    if (options && options.sortStyle) {
-      _this.sortStyle = options.sortStyle;
-    } else {
-      _this.sortStyle = "client";
-    }
-
-    if (options && options.sortKey) {
-      _this.sortKey = options.sortKey;
-    } else {
-      _this.sortKey = null;
-    }
-
-    if (options && options.display) {
-      _this.display = options.display;
-    } else {
-      _this.display = null;
-    }
-
-    if (options && options.pagination) {
-      _this.renderPaginationControl = options.pagination;
-    } else {
-      _this.renderPaginationControl = false;
-    }
-
-    if (options && options.paginationAPI) {
-      _this.paginationAPI = options.paginationAPI;
-    } else {
-      _this.paginationAPI = null;
-    }
-
-    if (options && options.description) {
-      _this.description = options.description;
-    } else {
-      _this.description = "";
-    }
-
-    if (options && options.localStorage) {
-      _this.localStorage = options.localStorage;
-    } else {
-      _this.localStorage = false;
-    }
-
-    if (options && options.localStorageKey) {
-      _this.localStorageKey = options.localStorageKey;
-    } else {
-      _this.localStorageKey = DEFAULT_KEY;
-    }
-
-    if (options && options.editable) {
-      _this.editable = options.editable;
-    } else {
-      _this.editable = false;
-    }
-
-    if (options && options.crossOrigin) {
-      _this.crossOrigin = options.crossOrigin;
-    } else {
-      _this.crossOrigin = false;
-    }
-
-    if (options && options.lineNumbers) {
-      _this.lineNumbers = options.lineNumbers;
-    } else {
-      _this.lineNumbers = false;
-    }
-
-    if (options && options.uri) {
-      _this.uri = options.uri;
-    } else {
-      _this.uri = false;
-    }
-
-    if (options && options.data) {
-      _this.data = options.data;
-    } else {
-      _this.data = [];
-    }
-
-    _this._columns = {};
-    _this.isInitalized = false;
-    _this.pageControlBound = false;
-
-    if (!_this.model) {
-      _this.model = new _model2.default();
-    }
-
-    if (_this.collection) {
-      _this.collection.reset();
-    }
-
-    if (!_this.collection && _this.paginationAPI) {
-      _this.collection = Augmented.PaginationFactory.getPaginatedCollection(_this.paginationAPI);
-      _this.paginationAPI = _this.collection.paginationAPI;
-      _this.localStorage = false;
-    } else if (!_this.collection && _this.localStorage) {
-      _this.collection = new _localStorageCollection2.default();
-    } else if (!_this.collection) {
-      _this.collection = new _collection2.default();
-    }
-
-    if (options && options.schema) {
-      // check if this is a schema vs a URI to get a schema
-      if (Augmented.isObject(options.schema)) {
-        _this.schema = options.schema;
-      } else {
-        // is a URI?
-        var parsedSchema = null;
-        try {
-          parsedSchema = JSON.parse(options.schema);
-          if (parsedSchema && Augmented.isObject(parsedSchema)) {
-            _this.schema = parsedSchema;
-          }
-        } catch (e) {
-          //_logger.warn("AUGMENTED: AutoTable parsing string schema failed.  URI perhaps?");
-        }
-        if (!_this.schema) {
-          _this.retrieveSchema(options.schema);
-          _this.isInitalized = false;
-        }
-      }
-    } else {
-      _this.schema = null;
-    }
-
-    if (_this.uri && _this.collection) {
-      _this.collection.url = options.uri;
-    }
-
-    if (_this.data && Array.isArray(_this.data)) {
-      _this.populate(_this.data);
-    }
-
-    if (options && options.localStorageKey && !options.uri) {
-      _this.localStorageKey = options.localStorageKey;
-      _this.uri = null;
-    }
-
-    if (_this.collection && _this.uri) {
-      _this.collection.url = _this.uri;
-    }
-    if (_this.collection) {
-      _this.collection.crossOrigin = _this.crossOrigin;
-    }
-
-    if (_this.schema) {
-      if ((!_this.name || _this.name === "") && _this.schema.title) {
-        _this.name = _this.schema.title;
-      }
-
-      if ((!_this.description || _this.description === "") && _this.schema.description) {
-        _this.description = _this.schema.description;
-      }
-
-      if (!_this.isInitalized) {
-        _this._columns = _this.schema.properties;
-        _this.collection.schema = _this.schema;
-        _this.isInitalized = true;
-      }
-    } else {
-      _this.isInitalized = false;
-    }
-    return _this;
-  }
-
-  _createClass(AutomaticTable, [{
-    key: "setTheme",
-
-
-    /**
-     * The theme property - The theme of this table (default is 'material')
-     * @property {string} theme The theme of this table
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The linkable property - enable links in a row (only works in non-editable tables)
-     * @property {boolean} linkable enable/disable linking a row
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The selectable property - enable selecting a row in table
-     * @property {boolean} selectable enable/disable selecting a row
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The sortable property - enable sorting in table
-     * @property {boolean} sortable enable sorting in the table
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The sortStyle property - setup the sort API
-     * @property {string} sortStyle setup the sort API
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The sortKey property
-     * @property {string} sortKey sorted key
-     * @private
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The links property - setup linking structure for links in a row
-     * @property {boolean} linkable enable/disable linking a row
-     * @example links: {
-     * wholeRow: false, // link whole row vs column
-     * column: "name", // name of column
-     *	link: "rowLink" // callback
-     * }
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The localStorage property - enables localStorage
-     * @property {boolean} localStorage The localStorage property
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The localStorageKey property - set the key for use in storage
-     * @property {string} localStorageKey The localStorage key property
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The editable property - enables editing of cells
-     * @property {boolean} editable The editable property
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * Fields to display - null will display all
-     * @method display
-     * @memberof AutomaticTable
-     */
-
-    // pagination
-    /**
-     * The renderPaginationControl property - render the pagination control
-     * @property {boolean} renderPaginationControl render the pagination control
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The paginationAPI property - setup the paginatin API to use
-     * @property {Augmented.PaginationFactory.type} paginationAPI the pagination API to use
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The name property
-     * @property {string} name The name of the table
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The description property
-     * @property {string} description The description of the table
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The crossOrigin property - enables cross origin fetch
-     * @property {boolean} crossOrigin The crossOrigin property
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The lineNumber property - turns on line numbers
-     * @property {boolean} lineNumbers The lineNumbers property
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The columns property
-     * @property {object} columns The columns property
-     * @private
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The URI property
-     * @property {string} uri The URI property
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The data property
-     * @property {array} data The data property
-     * @memberof AutomaticTable
-     * @private
-     */
-
-    /**
-     * The collection property
-     * @property {Augmented.PaginatedCollection} collection The collection property
-     * @memberof AutomaticTable
-     * @private
-     */
-
-    /**
-     * The initialized property
-     * @property {boolean} isInitalized The initialized property
-     * @memberof AutomaticTable
-     */
-
-    /**
-     * The setTheme method
-     * @method setTheme sets the theme of this table
-     * @param {string} theme name of the theme
-     * @memberof AutomaticTable
-     */
-    value: function setTheme(theme) {
-      var el = _dom2.default.selector(this.el); //((typeof this.el === 'string') ? document.querySelector(this.el) : this.el),
-      if (el) {
-        var e = el.querySelector("table");
-        if (e) {
-          e.setAttribute("class", theme);
-        }
-      }
-      this.theme = theme;
-    }
-  }, {
-    key: "rowLink",
-
-
-    /**
-     * The default rowlink function callback called by row to format a link
-     * @method rowlink
-     * @param {array} row The row data
-     * @returns {string} Returns the link uri
-     * @memberof AutomaticTable
-     */
-    value: function rowLink(row) {
-      return "";
-    }
-  }, {
-    key: "sortBy",
-
-
-    /**
-     * Sort the tabe by a key (sent via a UI Event)
-     * @method sortBy
-     * @memberof AutomaticTable
-     * @param {string} key The key to sort by
-     */
-    value: function sortBy(key) {
-      if (key && (this.editable || !this.editable && this.sortKey !== key)) {
-        this.sortKey = key;
-        this.collection.sortByKey(key);
-        this.refresh();
-      }
-    }
-  }, {
-    key: "currentPage",
-
-
-    /**
-     * Return the current page number
-     * @method currentPage
-     * @memberof AutomaticTable
-     * @returns {number} The current page number
-     */
-    value: function currentPage() {
-      return this.collection.currentPage;
-    }
-  }, {
-    key: "totalPages",
-
-
-    /**
-     * Return the total pages
-     * @method totalPages
-     * @memberof AutomaticTable
-     * @returns {number} The total pages
-     */
-    value: function totalPages() {
-      return this.collection.totalPages;
-    }
-  }, {
-    key: "nextPage",
-
-
-    /**
-     * Advance to the next page
-     * @method nextPage
-     * @memberof AutomaticTable
-     */
-    value: function nextPage() {
-      this.collection.nextPage();
-      this.refresh();
-    }
-  }, {
-    key: "previousPage",
-
-
-    /**
-     * Return to the previous page
-     * @method previousPage
-     * @memberof AutomaticTable
-     */
-    value: function previousPage() {
-      this.collection.previousPage();
-      this.refresh();
-    }
-  }, {
-    key: "goToPage",
-
-
-    /**
-     * Go to a specific page
-     * @method goToPage
-     * @param {number} page The page to go to
-     * @memberof AutomaticTable
-     */
-    value: function goToPage(page) {
-      this.collection.goToPage(page);
-      this.refresh();
-    }
-  }, {
-    key: "firstPage",
-
-
-    /**
-     * Return to the first page
-     * @method firstPage
-     * @memberof AutomaticTable
-     */
-    value: function firstPage() {
-      this.collection.firstPage();
-      this.refresh();
-    }
-  }, {
-    key: "lastPage",
-
-
-    /**
-     * Advance to the last page
-     * @method lastPage
-     * @memberof AutomaticTable
-     */
-    value: function lastPage() {
-      this.collection.lastPage();
-      this.refresh();
-    }
-  }, {
-    key: "editCell",
-
-
-    /**
-     * Edit a cell at the row and column specified
-     * @method editCell
-     * @memberof AutomaticTable
-     * @param {number} row The row
-     * @param {number} col The column
-     * @param {any} value The value to set
-     */
-    value: function editCell(row, col, value) {
-      if (row && col) {
-        var model = this.collection.at(row),
-            name = this.columns[col];
-        if (model && name) {
-          model.set(name, value);
-        }
-      }
-    }
-  }, {
-    key: "copyCell",
-
-
-    /**
-     * Copy a cell at the row and column  to another
-     * @method copyCell
-     * @memberof AutomaticTable
-     * @param {number} row1 The 'from' row
-     * @param {number} col1 The 'from' column
-     * @param {number} row2 The 'to' row
-     * @param {number} col2 The 'to' column
-     */
-    value: function copyCell(row1, col1, row2, col2) {
-      if (row1 && col1 && row2 && col2) {
-        var model1 = this.collection.at(row1),
-            name1 = this.columns[col1],
-            model2 = this.collection.at(row);
-        if (model1 && name1 && model2) {
-          model2.set(name1, value1);
-        }
-      }
-    }
-  }, {
-    key: "clearCell",
-
-    /**
-     * Clear a cell at the row and column specified
-     * @method clearCell
-     * @memberof AutomaticTable
-     * @param {number} row The row
-     * @param {number} col The column
-     */
-    value: function clearCell(row, col) {
-      this.editCell(row, col, null);
-    }
-  }, {
-    key: "render",
-
-
-    /**
-     * Render the table
-     * @method render Renders the table
-     * @memberof AutomaticTable
-     * @returns {object} Returns the view context ('this')
-     */
-    value: function render() {
-      //console.log("render");
-
-      if (!this.isInitalized) {
-        //_logger.warn("AUGMENTED: AutoTable Can't render yet, not initialized!");
-        return this;
-      }
-      var e = void 0;
-      if (this.template) {
-        // refresh the table body only
-        //console.log("set progress.");
-        this.showProgressBar(true);
-        if (this.el) {
-          e = typeof this.el === 'string' ? document.querySelector(this.el) : this.el;
-          //console.log("my el", e);
-          if (e) {
-
-            var tbody = e.querySelector("tbody"),
-                thead = e.querySelector("thead");
-            if (this.sortable) {
-              this._unbindSortableColumnEvents();
-            }
-            if (this.editable) {
-              this._unbindCellChangeEvents();
-            }
-            if (this._columns && Object.keys(this._columns).length > 0) {
-              while (thead.hasChildNodes()) {
-                thead.removeChild(thead.lastChild);
-              }
-              (0, _buildTable.directDOMTableHeader)(thead, this._columns, this.lineNumbers, this.sortKey, this.display, this.selectable);
-            } else {
-              if (thead) {
-                while (thead.hasChildNodes()) {
-                  thead.removeChild(thead.lastChild);
-                }
-              }
-            }
-
-            if (this.collection && this.collection.length > 0 && tbody) {
-              while (tbody.hasChildNodes()) {
-                tbody.removeChild(tbody.lastChild);
-              }
-              if (this.editable) {
-                // links not supported
-                (0, _buildTable.directDOMEditableTableBody)(tbody, this.collection.toJSON(), this._columns, this.lineNumbers, this.sortKey, this.display, this.selectable, this.name);
-              } else {
-                (0, _buildTable.directDOMTableBody)(tbody, this.collection.toJSON(), this._columns, this.lineNumbers, this.sortKey, this.display, this.selectable, this.name, this.linkable, this.links, this[this.links.link]);
-              }
-            } else {
-              while (tbody.hasChildNodes()) {
-                tbody.removeChild(tbody.lastChild);
-              }
-            }
-          }
-        } else {
-          //_logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
-        }
-      } else {
-        this.template = "notused";
-        this.showProgressBar(true);
-
-        if (this.el) {
-          e = typeof this.el === 'string' ? document.querySelector(this.el) : this.el;
-          if (e) {
-            // progress bar
-            var n = document.createElement("progress"),
-                t = document.createTextNode("Please wait.");
-            n.appendChild(t);
-            e.appendChild(n);
-
-            // the table
-            (0, _buildTable.directDOMTableCompile)(e, this.name, this.description, this._columns, this.collection.toJSON(), this.lineNumbers, this.sortKey, this.editable, this.display, this.selectable, this.linkable, this.links, this[this.links.link]);
-
-            // pagination control
-            if (this.renderPaginationControl) {
-              (0, _buildTable.directDOMPaginationControl)(e, this.currentPage(), this.totalPages());
-            }
-
-            // message
-            n = document.createElement("p");
-            n.classList.add("message");
-            e.appendChild(n);
-          }
-        } else {
-          //_logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
-        }
-
-        if (this.renderPaginationControl) {
-          this._bindPaginationControlEvents();
-        }
-      }
-      this.delegateEvents();
-
-      if (this.sortable) {
-        this._bindSortableColumnEvents();
-      }
-
-      if (this.editable) {
-        this._bindCellChangeEvents();
-      }
-
-      this.showProgressBar(false);
-      this.setTheme(this.theme);
-
-      return this;
-    }
-  }, {
-    key: "retrieveSchema",
-
-
-    /**
-     * Fetch the schema from the source URI
-     * @method retrieveSchema
-     * @param uri {string} the URI to fetch from
-     * @memberof AutomaticTable
-     */
-    value: function retrieveSchema(uri) {
-      var that = this;
-      var schema = null;
-      (0, _request2.default)({
-        url: uri,
-        contentType: 'application/json',
-        dataType: 'json',
-        success: function success(data, status) {
-          if (typeof data === "string") {
-            schema = JSON.parse(data);
-          } else {
-            schema = data;
-          }
-          var options = { "schema": schema };
-          that.initialize(options);
-        },
-        error: function error(data, status) {
-          //_logger.warn("AUGMENTED: AutoTable Failed to fetch schema!");
-        }
-      });
-    }
-  }, {
-    key: "fetch",
-
-
-    /**
-     * Fetch the data from the source URI
-     * @method fetch
-     * @memberof AutomaticTable
-     */
-    value: function fetch() {
-      // TODO: should be a promise
-      this.showProgressBar(true);
-
-      var view = this;
-
-      var successHandler = function successHandler() {
-        view.showProgressBar(false);
-        view.sortKey = null;
-        view.populate(view.collection.toJSON());
-        view.refresh();
-      };
-
-      var failHandler = function failHandler() {
-        view.showProgressBar(false);
-        view.showMessage("AutomaticTable fetch failed!");
-      };
-
-      this.collection.fetch({
-        reset: true,
-        success: function success() {
-          successHandler();
-        },
-        error: function error() {
-          failHandler();
-        }
-      });
-    }
-  }, {
-    key: "save",
-
-
-    /**
-     * Save the data to the source
-     * This only functions if the table is editable
-     * @method save
-     * @param {boolean} override Save even if not editable
-     * @returns Returns true if succesfull
-     * @memberof AutomaticTable
-     */
-    value: function save(override) {
-      if (this.editable || override) {
-        this.showProgressBar(true);
-
-        var view = this;
-
-        var successHandler = function successHandler() {
-          view.showProgressBar(false);
-          return true;
-        };
-
-        var failHandler = function failHandler() {
-          view.showProgressBar(false);
-          view.showMessage("AutomaticTable save failed!");
-          //_logger.warn("AUGMENTED: AutomaticTable save failed!");
-          return false;
-        };
-
-        this.collection.save({
-          reset: true,
-          success: function success() {
-            successHandler();
-          },
-          error: function error() {
-            failHandler();
-          }
-        });
-      }
-      return false;
-    }
-  }, {
-    key: "populate",
-
-
-    /**
-     * Populate the data in the table
-     * @method populate
-     * @memberof AutomaticTable
-     * @param {array} source The source data array
-     */
-    value: function populate(source) {
-      if (source && Array.isArray(source)) {
-        this.sortKey = null;
-        this.data = source;
-        this.collection.reset(this.data);
-      }
-    }
-  }, {
-    key: "clear",
-
-
-    /**
-     * Clear all the data in the table
-     * @method clear
-     * @memberof AutomaticTable
-     */
-    value: function clear() {
-      this.sortKey = null;
-      this.data = [];
-      this.collection.reset(null);
-    }
-  }, {
-    key: "refresh",
-
-
-    /**
-     * Refresh the table (Same as render)
-     * @method refresh Refresh the table
-     * @memberof AutomaticTable
-     * @returns {object} Returns the view context ('this')
-     * @see AutomaticTable.render
-     */
-    value: function refresh() {
-      return this.render();
-    }
-  }, {
-    key: "saveCell",
-
-
-    /**
-     * Save Cell Event
-     * @private
-     */
-    value: function saveCell(event) {
-      var key = event.target,
-          model = this.collection.at(parseInt(key.getAttribute(_buildTable.TABLE_DATA_ATTRIBUTES.INDEX)));
-      var value = key.value;
-      if (key.getAttribute("type") === "number") {
-        value = parseInt(key.value);
-      }
-      model.set(key.getAttribute(_buildTable.TABLE_DATA_ATTRIBUTES.NAME), value);
-    }
-  }, {
-    key: "_bindCellChangeEvents",
-
-
-    /**
-     * @private
-     */
-    value: function _bindCellChangeEvents() {
-      var myEl = typeof this.el === 'string' ? this.el : this.el.localName;
-      var cells = [].slice.call(document.querySelectorAll(myEl + " table tr td input"));
-      var i = 0,
-          l = cells.length;
-      for (i = 0; i < l; i++) {
-        cells[i].addEventListener("change", this.saveCell.bind(this), false);
-      }
-      // bind the select boxes as well
-      cells = [].slice.call(document.querySelectorAll(myEl + " table tr td select"));
-      i = 0;
-      l = cells.length;
-      for (i = 0; i < l; i++) {
-        cells[i].addEventListener("change", this.saveCell.bind(this), false);
-      }
-    }
-  }, {
-    key: "_unbindCellChangeEvents",
-
-
-    /**
-     * @private
-     */
-    value: function _unbindCellChangeEvents() {
-      var myEl = typeof this.el === 'string' ? this.el : this.el.localName;
-      var cells = [].slice.call(document.querySelectorAll(myEl + " table tr td input"));
-      var i = 0,
-          l = cells.length;
-      for (i = 0; i < l; i++) {
-        cells[i].removeEventListener("change", this.saveCell, false);
-      }
-      // unbind the select boxes as well
-      cells = [].slice.call(document.querySelectorAll(myEl + " table tr td select"));
-      i = 0;
-      l = cells.length;
-      for (i = 0; i < l; i++) {
-        cells[i].removeEventListener("change", this.saveCell, false);
-      }
-    }
-  }, {
-    key: "exportTo",
-
-
-    /**
-     * Export the table data in requested format
-     * @method exportTo Exports the table
-     * @param {string} type The type requested (csv or html-default)
-     * @memberof AutomaticTable
-     * @returns {string} The table data in requested format
-     */
-    value: function exportTo(type) {
-      var e = "";
-      if (type === "csv") {
-        e = (0, _buildTable.csvTableCompile)(this.name, this.description, this._columns, this.collection.toJSON());
-      } else if (type === "tsv") {
-        e = (0, _buildTable.tsvTableCompile)(this.name, this.description, this._columns, this.collection.toJSON());
-      } else {
-        // html
-        e = (0, _buildTable.defaultTableCompile)(this.name, this.description, this._columns, this.collection.toJSON(), false, null);
-      }
-      return e;
-    }
-  }, {
-    key: "_unbindPaginationControlEvents",
-
-
-    /**
-     * @private
-     */
-    value: function _unbindPaginationControlEvents() {
-      if (this.pageControlBound) {
-        var myEl = typeof this.el === 'string' ? this.el : this.el.localName;
-        var first = document.querySelector(myEl + " div.paginationControl span.first");
-        var previous = document.querySelector(myEl + " div.paginationControl span.previous");
-        var next = document.querySelector(myEl + " div.paginationControl span.next");
-        var last = document.querySelector(myEl + " div.paginationControl span.last");
-        if (first) {
-          first.removeEventListener("click", this.firstPage, false);
-        }
-        if (previous) {
-          previous.removeEventListener("click", this.previousPage, false);
-        }
-        if (next) {
-          next.removeEventListener("click", this.nextPage, false);
-        }
-        if (last) {
-          last.removeEventListener("click", this.lastPage, false);
-        }
-        this.pageControlBound = false;
-      }
-    }
-  }, {
-    key: "_bindPaginationControlEvents",
-
-
-    /**
-     * @private
-     */
-    value: function _bindPaginationControlEvents() {
-      if (!this.pageControlBound) {
-        var myEl = typeof this.el === 'string' ? this.el : this.el.localName;
-        var first = document.querySelector(myEl + " div.paginationControl span.first");
-        var previous = document.querySelector(myEl + " div.paginationControl span.previous");
-        var next = document.querySelector(myEl + " div.paginationControl span.next");
-        var last = document.querySelector(myEl + " div.paginationControl span.last");
-        if (first) {
-          first.addEventListener("click", this.firstPage.bind(this), false);
-        }
-        if (previous) {
-          previous.addEventListener("click", this.previousPage.bind(this), false);
-        }
-        if (next) {
-          next.addEventListener("click", this.nextPage.bind(this), false);
-        }
-        if (last) {
-          last.addEventListener("click", this.lastPage.bind(this), false);
-        }
-        this.pageControlBound = true;
-      }
-    }
-  }, {
-    key: "_deriveEventTarget",
-
-
-    /**
-     * @private
-     */
-    value: function _deriveEventTarget(event) {
-      var key = null;
-      if (event) {
-        key = event.target.getAttribute(_buildTable.TABLE_DATA_ATTRIBUTES.NAME);
-      }
-      return key;
-    }
-  }, {
-    key: "_sortByHeaderEvent",
-
-
-    /**
-     * @private
-     */
-    value: function _sortByHeaderEvent(event) {
-      var key = this._deriveEventTarget(event);
-      this.sortBy(key);
-    }
-  }, {
-    key: "_unbindSortableColumnEvents",
-
-
-    /**
-     * @private
-     */
-    value: function _unbindSortableColumnEvents() {
-      if (this.el && this.sortable) {
-        var list = void 0;
-        if (typeof this.el === 'string') {
-          list = document.querySelectorAll(this.el + " table tr th");
-        } else {
-          list = document.querySelectorAll(this.el.localName + " table tr th");
-        }
-        var i = 0,
-            l = list.length;
-        for (i = 0; i < l; i++) {
-          list[i].removeEventListener("click", this._sortByHeaderEvent, false);
-        }
-      }
-    }
-  }, {
-    key: "_bindSortableColumnEvents",
-
-
-    /**
-     * @private
-     */
-    value: function _bindSortableColumnEvents() {
-      if (this.el && this.sortable) {
-        var list = void 0;
-        if (typeof this.el === 'string') {
-          list = document.querySelectorAll(this.el + " table tr th");
-        } else {
-          list = document.querySelectorAll(this.el.localName + " table tr th");
-        }
-        var i = 0,
-            l = list.length;
-        for (i = 0; i < l; i++) {
-          if (list[i].getAttribute(_buildTable.TABLE_DATA_ATTRIBUTES.NAME) === "lineNumber") {
-            // Do I need to do something?
-          } else {
-            list[i].addEventListener("click", this._sortByHeaderEvent.bind(this), false);
-          }
-        }
-      }
-    }
-  }, {
-    key: "compileTemplate",
-
-
-    /**
-     * An overridable template compile
-     * @method compileTemplate
-     * @memberof AutomaticTable
-     * @returns {string} Returns the template
-     */
-    value: function compileTemplate() {
-      return "";
-    }
-  }, {
-    key: "setURI",
-
-
-    /**
-     * Sets the URI
-     * @method setURI
-     * @memberof AutomaticTable
-     * @param {string} uri The URI
-     */
-    value: function setURI(uri) {
-      this.uri = uri;
-    }
-  }, {
-    key: "setSchema",
-
-
-    /**
-     * Sets the schema
-     * @method setSchema
-     * @memberof AutomaticTable
-     * @param {object} schema The JSON schema of the dataset
-     */
-    value: function setSchema(schema) {
-      this.schema = schema;
-      this._columns = schema.properties;
-      this.collection.reset();
-      this.collection.schema = schema;
-
-      if (this.uri) {
-        this.collection.url = this.uri;
-      }
-    }
-  }, {
-    key: "showProgressBar",
-
-
-    /**
-     * Enable/Disable the progress bar
-     * @method showProgressBar
-     * @memberof AutomaticTable
-     * @param {boolean} show Show or Hide the progress bar
-     */
-    value: function showProgressBar(show) {
-      if (this.el) {
-        var e = typeof this.el === 'string' ? document.querySelector(this.el) : this.el;
-        if (e) {
-          var p = e.querySelector("progress");
-          if (p) {
-            p.style.display = show ? "block" : "none";
-            p.style.visibility = show ? "visible" : "hidden";
-          }
-        }
-      }
-    }
-  }, {
-    key: "showMessage",
-
-
-    /**
-     * Show a message related to the table
-     * @method showMessage
-     * @memberof AutomaticTable
-     * @param {string} message Some message to display
-     */
-    value: function showMessage(message) {
-      if (this.el) {
-        var e = typeof this.el === 'string' ? document.querySelector(this.el) : this.el;
-        var p = e.querySelector("p[class=message]");
-        if (p) {
-          p.innerHTML = message;
-        }
-      }
-    }
-  }, {
-    key: "validate",
-
-    /**
-      * Validate the table
-     * @method validate
-     * @memberof AutomaticTable
-     * @returns {boolean} Returns true on success of validation
-     */
-    value: function validate() {
-      var messages = this.collection ? this.collection.validate() : null;
-      if (!this.collection.isValid() && messages && messages.messages) {
-        this.showMessage((0, _messages2.default)(messages.messages));
-      } else {
-        this.showMessage("");
-      }
-      return messages;
-    }
-  }, {
-    key: "isValid",
-
-
-    /**
-     * Is the table valid
-     * @method isValid
-     * @memberof AutomaticTable
-     * @returns {boolean} Returns true if valid
-     */
-    value: function isValid() {
-      return this.collection ? this.collection.isValid() : true;
-    }
-  }, {
-    key: "remove",
-
-
-    /**
-     * Remove the table and all binds
-     * @method remove
-     * @memberof AutomaticTable
-     */
-    value: function remove() {
-      /* off to unbind the events */
-      this.undelegateEvents();
-      this.off();
-      this.stopListening();
-
-      _dom2.default.empty(this.el);
-
-      return this;
-    }
-  }, {
-    key: "getSelected",
-
-    /**
-     * Gets the selected models
-     * @method getSelected
-     * @memberof AutomaticTable
-     * @returns {Array} Returns array of selected rows (models)
-     */
-    value: function getSelected() {
-      var keys = Object.keys(this.model.attributes),
-          l = keys.length,
-          selected = [];
-      var i = 0;
-      for (i = 0; i < l; i++) {
-        if (keys[i].includes("row-") && this.model.attributes[keys[i]] === true) {
-          var n = Number(keys[i].substring(4));
-          selected.push(this.collection.at(n));
-        }
-      }
-      return selected;
-    }
-  }, {
-    key: "getSelectedIndex",
-
-
-    /**
-     * Gets the selected row indexes
-     * @method getSelectedIndex
-     * @memberof AutomaticTable
-     * @returns {Array} Returns array of selected rows (indexes)
-     */
-    value: function getSelectedIndex() {
-      var keys = Object.keys(this.model.attributes),
-          l = keys.length,
-          selected = [];
-      var i = 0;
-      for (i = 0; i < l; i++) {
-        if (keys[i].includes("row-") && this.model.attributes[keys[i]] === true) {
-          selected.push(Number(keys[i].substring(4)));
-        }
-      }
-      return selected;
-    }
-  }, {
-    key: "removeRows",
-
-
-    /**
-     * Removes the models
-     * @method removeRows
-     * @param {Array} rows Models of the rows to remove
-     * @memberof AutomaticTable
-     */
-    value: function removeRows(rows) {
-      var l = rows.length;
-      var i = 0;
-      for (i = 0; i < l; i++) {
-        var model = rows[i];
-        if (!model.url) {
-          model.url = this.uri + "/" + model.id;
-        }
-        model.destroy();
-      }
-    }
-  }]);
-
-  return AutomaticTable;
-}(_decorator2.default);
-
-;
-
-exports.default = AutomaticTable;
 
 /***/ }),
 /* 48 */
@@ -19240,6 +19276,505 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _autoTable = __webpack_require__(3);
+
+var _autoTable2 = _interopRequireDefault(_autoTable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * Instance class preconfigured for sorting and pagination
+ * @class BigDataTable
+ * @extends Presentation.Component.AutomaticTable
+ * @memberof Presentation.Component
+ */
+var BigDataTable = function (_AutomaticTable) {
+  _inherits(BigDataTable, _AutomaticTable);
+
+  function BigDataTable(options) {
+    _classCallCheck(this, BigDataTable);
+
+    if (!options) {
+      options = {};
+    }
+    options.lineNumbers = true;
+    options.sortable = true;
+
+    var _this = _possibleConstructorReturn(this, (BigDataTable.__proto__ || Object.getPrototypeOf(BigDataTable)).call(this, options));
+
+    _this.renderPaginationControl = true;
+    return _this;
+  }
+
+  return BigDataTable;
+}(_autoTable2.default);
+
+;
+
+exports.default = BigDataTable;
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _autoTable = __webpack_require__(3);
+
+var _autoTable2 = _interopRequireDefault(_autoTable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * Instance class preconfigured for sorting and pagination
+ * @class EditableBigDataTable
+ * @extends Presentation.Component.AutomaticTable
+ * @memberof Presentation.Component
+ */
+var EditableBigDataTable = function (_AutomaticTable) {
+  _inherits(EditableBigDataTable, _AutomaticTable);
+
+  function EditableBigDataTable(options) {
+    _classCallCheck(this, EditableBigDataTable);
+
+    if (!options) {
+      options = {};
+    }
+    options.lineNumbers = true;
+    options.sortable = true;
+    options.editable = true;
+
+    var _this = _possibleConstructorReturn(this, (EditableBigDataTable.__proto__ || Object.getPrototypeOf(EditableBigDataTable)).call(this, options));
+
+    _this.renderPaginationControl = true;
+    return _this;
+  }
+
+  return EditableBigDataTable;
+}(_autoTable2.default);
+
+;
+
+exports.default = EditableBigDataTable;
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _autoTable = __webpack_require__(3);
+
+var _autoTable2 = _interopRequireDefault(_autoTable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+* Instance class preconfigured for local storage-based table
+* @class Augmented.Presentation.LocalStorageTable
+* @extends Presentation.Component.AutomaticTable
+* @memberof Presentation.Component
+*/
+var LocalStorageTable = function (_AutomaticTable) {
+  _inherits(LocalStorageTable, _AutomaticTable);
+
+  function LocalStorageTable(options) {
+    _classCallCheck(this, LocalStorageTable);
+
+    if (!options) {
+      options = {};
+    }
+    options.lineNumbers = true;
+    options.sortable = true;
+    options.editable = false;
+    options.localStorage = true;
+
+    var _this = _possibleConstructorReturn(this, (LocalStorageTable.__proto__ || Object.getPrototypeOf(LocalStorageTable)).call(this, options));
+
+    _this.renderPaginationControl = true;
+    return _this;
+  }
+
+  return LocalStorageTable;
+}(_autoTable2.default);
+
+;
+
+exports.default = LocalStorageTable;
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _autoTable = __webpack_require__(3);
+
+var _autoTable2 = _interopRequireDefault(_autoTable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+* Instance class preconfigured for editing, sorting, from local storage
+* @class EditableLocalStorageTable
+* @extends Presentation.Component.AutomaticTable
+* @memberof Presentation.Component
+*/
+var EditableLocalStorageTable = function (_AutomaticTable) {
+  _inherits(EditableLocalStorageTable, _AutomaticTable);
+
+  function EditableLocalStorageTable(options) {
+    _classCallCheck(this, EditableLocalStorageTable);
+
+    if (!options) {
+      options = {};
+    }
+    options.lineNumbers = true;
+    options.sortable = true;
+    options.editable = true;
+    options.localStorage = true;
+
+    var _this = _possibleConstructorReturn(this, (EditableLocalStorageTable.__proto__ || Object.getPrototypeOf(EditableLocalStorageTable)).call(this, options));
+
+    _this.renderPaginationControl = true;
+    return _this;
+  }
+
+  return EditableLocalStorageTable;
+}(_autoTable2.default);
+
+;
+
+exports.default = EditableLocalStorageTable;
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _autoTable = __webpack_require__(3);
+
+var _autoTable2 = _interopRequireDefault(_autoTable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * Instance class preconfigured for editing
+ * @class EditableTable
+ * @extends Presentation.Component.AutomaticTable
+ * @memberof Presentation.Component
+ */
+var EditableTable = function (_AutomaticTable) {
+  _inherits(EditableTable, _AutomaticTable);
+
+  function EditableTable(options) {
+    _classCallCheck(this, EditableTable);
+
+    if (!options) {
+      options = {};
+    }
+    options.lineNumbers = true;
+    options.editable = true;
+    return _possibleConstructorReturn(this, (EditableTable.__proto__ || Object.getPrototypeOf(EditableTable)).call(this, options));
+  }
+
+  return EditableTable;
+}(_autoTable2.default);
+
+;
+
+exports.default = EditableTable;
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _augmentedjsNext = __webpack_require__(0);
+
+var Augmented = _interopRequireWildcard(_augmentedjsNext);
+
+var _autoTable = __webpack_require__(3);
+
+var _autoTable2 = _interopRequireDefault(_autoTable);
+
+var _collection = __webpack_require__(5);
+
+var _collection2 = _interopRequireDefault(_collection);
+
+var _localStorageCollection = __webpack_require__(14);
+
+var _localStorageCollection2 = _interopRequireDefault(_localStorageCollection);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * Instance class preconfigured for editing for use as a Spreadsheet.<br/>
+ * If a propery for length is not specified, it will buffer 10 lines for editing.
+ * @class Spreadsheet
+ * @extends Presentation.Component.AutomaticTable
+ * @memberof Presentation.Component
+ */
+var Spreadsheet = function (_AutomaticTable) {
+  _inherits(Spreadsheet, _AutomaticTable);
+
+  function Spreadsheet(options) {
+    _classCallCheck(this, Spreadsheet);
+
+    // TODO: overrides?
+    var _this = _possibleConstructorReturn(this, (Spreadsheet.__proto__ || Object.getPrototypeOf(Spreadsheet)).call(this, options));
+
+    _this.lineNumbers = true;
+    _this.sortable = true;
+    _this.editable = true;
+
+    if (options && options.pagination) {
+      _this.renderPaginationControl = options.pagination;
+    } else {
+      _this.renderPaginationControl = false;
+    }
+
+    if (options && options.rows) {
+      _this.rows = options.rows;
+    } else {
+      _this.rows = 10;
+    }
+
+    if (options && options.columns) {
+      _this.columns = options.columns;
+    } else {
+      _this.rows = 5;
+    }
+
+    if (_this.collection) {
+      _this.collection.reset();
+    } else if (!_this.collection && _this.localStorage) {
+      _this.collection = new _localStorageCollection2.default();
+    } else if (!_this.collection) {
+      _this.collection = new _collection2.default();
+    }
+
+    // TODO: this might belong in parent
+
+    if (options) {
+      if (options.schema) {
+        // check if this is a schema vs a URI to get a schema
+        if (Augmented.isObject(options.schema)) {
+          _this.schema = options.schema;
+        } else {
+          // is a URI?
+          var parsedSchema = null;
+          try {
+            parsedSchema = JSON.parse(options.schema);
+            if (parsedSchema && Augmented.isObject(parsedSchema)) {
+              _this.schema = parsedSchema;
+            }
+          } catch (e) {
+            // AutoTable parsing string schema failed.  URI perhaps?
+            //_logger.warn("AUGMENTED: AutoTable parsing string schema failed.  URI perhaps?");
+          }
+          if (!_this.schema) {
+            _this.retrieveSchema(options.schema);
+            _this.isInitalized = false;
+            //return false;
+          }
+        }
+      }
+
+      if (options.el) {
+        _this.el = options.el;
+      }
+
+      if (options.uri) {
+        _this.uri = options.uri;
+        _this.collection.url = options.uri;
+      }
+
+      if (options.data && Array.isArray(options.data)) {
+        _this.populate(options.data);
+      }
+
+      if (options.sortable) {
+        _this.sortable = options.sortable;
+      }
+
+      if (options.lineNumbers) {
+        _this.lineNumbers = options.lineNumbers;
+      }
+
+      if (options.localStorageKey && !options.uri) {
+        _this.localStorageKey = options.localStorageKey;
+        _this.uri = null;
+      }
+    }
+
+    if (_this.collection && _this.uri) {
+      _this.collection.url = _this.uri;
+    }
+    if (_this.collection) {
+      _this.collection.crossOrigin = _this.crossOrigin;
+    }
+    if (_this.schema) {
+      if ((!_this.name || _this.name === "") && _this.schema.title) {
+        _this.name = _this.schema.title;
+      }
+      if ((!_this.description || _this.description === "") && _this.schema.description) {
+        _this.description = _this.schema.description;
+      }
+
+      if (!_this.isInitalized) {
+        _this._columns = _this.schema.properties;
+        _this.collection.schema = _this.schema;
+      }
+    } else {
+      //very basic schema
+      _this.schema = {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "title": "untitled",
+        "type": "object",
+        "description": "",
+        "properties": {}
+      };
+
+      var i = 0;
+
+      for (i = 0; i < _this.columns; i++) {
+        _this.schema.properties[String.fromCharCode(65 + i)] = {
+          "description": "",
+          "type": "string"
+        };
+      }
+
+      _this._columns = _this.schema.properties;
+      _this.collection.schema = _this.schema;
+    }
+
+    //buffer
+    _this._generate();
+    _this.collection.set(_this.data);
+
+    _this.isInitalized = true;
+    return _this;
+  }
+
+  _createClass(Spreadsheet, [{
+    key: "_generate",
+
+
+    /**
+     * @propery {number} columns Defines a set of columns in the spreadsheet
+     * @memberof Spreadsheet
+     */
+
+    /**
+     * @propery {number} rows Defines a set of rows in the spreadsheet
+     * @memberof Spreadsheet
+     */
+
+    value: function _generate() {
+      if (this.schema && this.schema.properties) {
+        var i = 0,
+            ii = 0,
+            keys = Object.keys(this.schema.properties),
+            l = keys.length,
+            obj = {};
+        this.data = [];
+        for (ii = 0; ii < this.rows; ii++) {
+          obj = {};
+          for (i = 0; i < l; i++) {
+            obj[keys[i]] = "";
+          }
+          this.data.push(obj);
+        }
+      }
+    }
+  }]);
+
+  return Spreadsheet;
+}(_autoTable2.default);
+
+;
+
+exports.default = Spreadsheet;
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _augmentedjsNext = __webpack_require__(0);
@@ -19250,11 +19785,11 @@ var _decorator = __webpack_require__(2);
 
 var _decorator2 = _interopRequireDefault(_decorator);
 
-var _buildForm = __webpack_require__(50);
+var _buildForm = __webpack_require__(56);
 
 var _buildForm2 = _interopRequireDefault(_buildForm);
 
-var _messages = __webpack_require__(23);
+var _messages = __webpack_require__(24);
 
 var _messages2 = _interopRequireDefault(_messages);
 
@@ -19262,7 +19797,7 @@ var _dom = __webpack_require__(1);
 
 var _dom2 = _interopRequireDefault(_dom);
 
-var _model = __webpack_require__(3);
+var _model = __webpack_require__(4);
 
 var _model2 = _interopRequireDefault(_model);
 
@@ -19689,7 +20224,7 @@ var AutomaticForm = function (_DecoratorView) {
 exports.default = AutomaticForm;
 
 /***/ }),
-/* 50 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19753,7 +20288,7 @@ var formCompile = function formCompile(name, description, fields, model, require
 exports.default = formCompile;
 
 /***/ }),
-/* 51 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19765,11 +20300,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _api = __webpack_require__(24);
+var _api = __webpack_require__(25);
 
 var _api2 = _interopRequireDefault(_api);
 
-var _paginated = __webpack_require__(20);
+var _paginated = __webpack_require__(22);
 
 var _paginated2 = _interopRequireDefault(_paginated);
 

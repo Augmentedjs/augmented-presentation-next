@@ -39,6 +39,13 @@ import ConfirmationDialogView from "./view/component/dialog/confirmation.js";
 import AlertDialogView from "./view/component/dialog/alert.js";
 
 import AutomaticTable from "./view/component/table/autoTable.js";
+import BigDataTable from "./view/component/table/bigDataTable.js";
+import EditableBigDataTable from "./view/component/table/editableBigTable.js";
+import LocalStorageTable from "./view/component/table/localStorageTable.js";
+import EditableLocalStorageTable from "./view/component/table/editableLocalStorageTable.js";
+import EditableTable from "./view/component/table/editableTable.js";
+import Spreadsheet from "./view/component/table/spreadsheet.js";
+
 import AutomaticForm from "./view/component/form/autoForm.js";
 
 import PAGINATION_API_TYPE from "./pagination/api.js";
@@ -50,7 +57,7 @@ import PaginationFactory from "./pagination/factory.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.24
+ * @version 2.0.0-alpha.25
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -59,7 +66,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.0-alpha.24";
+Presentation.VERSION = "2.0.0-alpha.25";
 
 Presentation.History = History;
 Presentation.Router = Router;
@@ -101,7 +108,15 @@ Presentation.Component.Menu = Menu;
 Presentation.Component.DialogView = DialogView;
 Presentation.Component.ConfirmationDialogView = ConfirmationDialogView;
 Presentation.Component.AlertDialogView = AlertDialogView;
+
 Presentation.Component.AutomaticTable = AutomaticTable;
+Presentation.Component.BigDataTable = BigDataTable;
+Presentation.Component.EditableLocalStorageTable = EditableLocalStorageTable;
+Presentation.Component.EditableTable = EditableTable;
+Presentation.Component.EditableBigDataTable = EditableBigDataTable;
+Presentation.Component.Spreadsheet = Spreadsheet;
+Presentation.Component.LocalStorageTable = LocalStorageTable;
+
 Presentation.Component.AutomaticForm = AutomaticForm;
 Presentation.Component.Header = Header;
 Presentation.Component.Fotter = Footer;

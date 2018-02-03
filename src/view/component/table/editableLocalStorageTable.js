@@ -1,13 +1,23 @@
+import AutomaticTable from "./autoTable.js";
+
 /**
 * Instance class preconfigured for editing, sorting, from local storage
 * @class EditableLocalStorageTable
 * @extends Presentation.Component.AutomaticTable
 * @memberof Presentation.Component
 */
-Augmented.Presentation.EditableLocalStorageTable = Augmented.Presentation.DirectDOMAutomaticTable.extend({
-  renderPaginationControl: false,
-  lineNumbers: true,
-  sortable: true,
-  editable: true,
-  localStorage: true
-});
+class EditableLocalStorageTable extends AutomaticTable {
+  constructor(options) {
+    if (!options) {
+      options = {};
+    }
+    options.lineNumbers = true;
+    options.sortable = true;
+    options.editable = true;
+    options.localStorage = true;
+    super(options);
+    this.renderPaginationControl = true;
+  };
+};
+
+export default EditableLocalStorageTable;

@@ -1,10 +1,20 @@
+import AutomaticTable from "./autoTable.js";
+
 /**
-* Instance class preconfigured for editing
-* @class EditableTable
-* @extends Presentation.Component.AutomaticTable
-* @memberof Presentation.Component
-*/
-Augmented.Presentation.EditableTable = Augmented.Presentation.DirectDOMAutomaticTable.extend({
-  editable: true,
-  lineNumbers: true
-});
+ * Instance class preconfigured for editing
+ * @class EditableTable
+ * @extends Presentation.Component.AutomaticTable
+ * @memberof Presentation.Component
+ */
+class EditableTable extends AutomaticTable {
+  constructor(options) {
+    if (!options) {
+      options = {};
+    }
+    options.lineNumbers = true;
+    options.editable = true;
+    super(options);
+  };
+};
+
+export default EditableTable;
