@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Router</title>
+		<title>.Component.Toolbar</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -141,7 +141,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">Router</span></h1>
+				<h1><span class="ancestors"><a href="Presentation.Component.html">.Component</a>.</span><span class="name">Toolbar</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -150,20 +150,27 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">Router</li>
+							<li class="active"><a href="Presentation.Component.html">.Component</a>.Toolbar</li>
 						</ol>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Router</span><span class="signature-params">()</span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Toolbar</span><span class="signature-params">()</span></h2>
 </dt>
 <dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Router<br>Routers map faux-URLs to actions, and fire events when routes are<br>matched. Creating a new one sets its <code>routes</code> hash, if not set statically.</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>A Toolbar View</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
+							<!-- augments -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Augments</label>
+								<div class="col-sm-9">
+										<p class="form-control-static">Presentation.AbstractToolbar</p>
+								</div>
+							</div>
 			
 			
 			
@@ -180,7 +187,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="router.js.html">router.js</a>, <a href="router.js.html#line-21">line 21</a></p>
+									<p class="form-control-static"><a href="view_component_toolbar_toolbar.js.html">view/component/toolbar/toolbar.js</a>, <a href="view_component_toolbar_toolbar.js.html#line-5">line 5</a></p>
 								</div>
 							</div>
 			
@@ -192,104 +199,6 @@
 </dd>
 							</dl>
 							<article class="secondary">
-									<h3>Methods</h3>
-									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id=".loadView" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">loadView</span><span class="signature-params">( <span class="signature-param">view</span>&nbsp;)</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Load a view safely and remove the last view by calling cleanup, then remove</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>view</code></td>
-							<td><span class="param-type">Augmented.View</span></td>
-							<td class="last">
-									<p>The View to load</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="router.js.html">router.js</a>, <a href="router.js.html#line-33">line 33</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id=".cleanup" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">cleanup</span><span class="signature-params">()</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>remove the last view by calling cleanup, then remove</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="router.js.html">router.js</a>, <a href="router.js.html#line-46">line 46</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-									</dl>
 							</article>
 					</section>
 			</div>

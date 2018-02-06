@@ -4,9 +4,9 @@ import buildMenuItems from "../functions/buildMenuItems.js";
 
 /**
  * A Toolbar View
- * @constructor Augmented.Presentation.Component.Toolbar
- * @memberof Augmented.Presentation.Component
- * @extends Augmented.Presentation.AbstractToolbar
+ * @class Toolbar
+ * @memberof Presentation.Component
+ * @extends Presentation.AbstractToolbar
  */
 class Toolbar extends AbstractToolbar {
   constructor(options) {
