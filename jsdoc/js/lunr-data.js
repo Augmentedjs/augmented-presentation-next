@@ -586,7 +586,6 @@ window.lunrData = {
         "Presentation.Component.EditableBigDataTable.html": [
           "class",
           "component.editablebigdatat",
-          "edit",
           "editablebigdatat",
           "instanc",
           "pagin",
@@ -2773,10 +2772,6 @@ window.lunrData = {
               "docs": {},
               "t": {
                 "docs": {
-                  "Presentation.Component.EditableBigDataTable.html": {
-                    "ref": "Presentation.Component.EditableBigDataTable.html",
-                    "tf": 8.333333333333332
-                  },
                   "Presentation.Component.EditableLocalStorageTable.html": {
                     "ref": "Presentation.Component.EditableLocalStorageTable.html",
                     "tf": 7.142857142857142
@@ -3020,7 +3015,7 @@ window.lunrData = {
                         },
                         "Presentation.Component.EditableBigDataTable.html": {
                           "ref": "Presentation.Component.EditableBigDataTable.html",
-                          "tf": 8.333333333333332
+                          "tf": 10
                         },
                         "Presentation.Component.EditableLocalStorageTable.html": {
                           "ref": "Presentation.Component.EditableLocalStorageTable.html",
@@ -6786,7 +6781,7 @@ window.lunrData = {
                                 },
                                 "Presentation.Component.EditableBigDataTable.html": {
                                   "ref": "Presentation.Component.EditableBigDataTable.html",
-                                  "tf": 8.333333333333332
+                                  "tf": 10
                                 },
                                 "Presentation.Component.EditableLocalStorageTable.html": {
                                   "ref": "Presentation.Component.EditableLocalStorageTable.html",
@@ -6901,7 +6896,7 @@ window.lunrData = {
                     },
                     "Presentation.Component.EditableBigDataTable.html": {
                       "ref": "Presentation.Component.EditableBigDataTable.html",
-                      "tf": 8.333333333333332
+                      "tf": 10
                     },
                     "Presentation.Pagination.html": {
                       "ref": "Presentation.Pagination.html",
@@ -8284,7 +8279,7 @@ window.lunrData = {
                   },
                   "Presentation.Component.EditableBigDataTable.html": {
                     "ref": "Presentation.Component.EditableBigDataTable.html",
-                    "tf": 8.333333333333332
+                    "tf": 10
                   },
                   "Presentation.Component.EditableLocalStorageTable.html": {
                     "ref": "Presentation.Component.EditableLocalStorageTable.html",
@@ -8514,7 +8509,7 @@ window.lunrData = {
                     },
                     "Presentation.Component.EditableBigDataTable.html": {
                       "ref": "Presentation.Component.EditableBigDataTable.html",
-                      "tf": 118.33333333333333
+                      "tf": 120
                     },
                     "Presentation.Component.EditableLocalStorageTable.html": {
                       "ref": "Presentation.Component.EditableLocalStorageTable.html",
@@ -14299,7 +14294,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 894
+      "length": 893
     },
     "corpusTokens": [
       "10",
@@ -15312,7 +15307,7 @@ window.lunrData = {
       "name": "EditableBigDataTable",
       "tags": "Presentation.Component.EditableBigDataTable Component.EditableBigDataTable EditableBigDataTable",
       "summary": "",
-      "description": "Instance class preconfigured for editing, sorting, and pagination",
+      "description": "Instance class preconfigured for sorting and pagination",
       "body": ""
     },
     "Presentation.Component.EditableLocalStorageTable.html": {

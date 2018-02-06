@@ -12919,7 +12919,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.0-alpha.24
+ * @version 2.0.0-alpha.25
  * @license Apache-2.0
  */
 var Presentation = {};
@@ -12931,7 +12931,7 @@ var Presentation = {};
 
 
 // Components
-Presentation.VERSION = "2.0.0-alpha.24";
+Presentation.VERSION = "2.0.0-alpha.25";
 
 Presentation.History = _history2.default;
 Presentation.Router = _router2.default;
