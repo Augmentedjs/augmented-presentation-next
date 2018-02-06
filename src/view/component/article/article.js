@@ -48,11 +48,11 @@ class Article extends DecoratorView {
     } else {
       this._body = "";
     }
-    if (options && options.style) {
+    /*if (options && options.style) {
       this._style = options.style;
     } else {
       this._style = "";
-    }
+    }*/
     if (options && options.footer) {
       this._footer = options.footer;
     } else {
