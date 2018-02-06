@@ -190,6 +190,7 @@ class Article extends DecoratorView {
    * @private
    */
   _template() {
+    /*
     let cls = "";
     if (this._style) {
       cls = ` class="${this._style}"`;
@@ -198,6 +199,7 @@ class Article extends DecoratorView {
     if (this.el) {
       id = ` id="${this.el}"`;
     }
+    */
     let header = "";
     if (this._header) {
       let hid = "";
@@ -222,7 +224,7 @@ class Article extends DecoratorView {
         body = `${this._body}`;
       }
     }
-    return `<article${id}${cls}>${header}${this._formatSections()}${body}${footer}</article>`;
+    return `${header}${this._formatSections()}${body}${footer}`;
   };
 };
 

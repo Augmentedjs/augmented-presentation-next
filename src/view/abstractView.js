@@ -57,9 +57,15 @@ class AbstractView extends Augmented.Object {
     }
 
     if (options && options.className) {
-      this.className = options.className;
+      this._style = options.className;
     } else {
-      this.className = "";
+      this._style = "";
+    }
+
+    if (options && options.style) {
+      this._style = options.style;
+    } else {
+      this._style = "";
     }
 
     if (options && options.attributes) {
@@ -334,7 +340,7 @@ class AbstractView extends Augmented.Object {
   // Ensure that the View has a DOM element to render into.
   // If `this.el` is a string, pass it through `$()`, take the first
   // matching element, and re-assign it to `el`. Otherwise, create
-  // an element from the `id`, `className` and `tagName` properties.
+  // an element from the `id`, `style` and `tagName` properties.
   _ensureElement() {
     if (!this.el) {
       //console.log("no el");
@@ -342,8 +348,8 @@ class AbstractView extends Augmented.Object {
       if (this.id) {
         attrs.id = this.id;
       }
-      if (this.className) {
-        attrs["class"] = this.className;
+      if (this._style) {
+        attrs["class"] = this._style;
       }
       const el = this._createElement(this.tagName);
       const body = document.querySelector("body");
