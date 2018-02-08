@@ -48,11 +48,6 @@ class Article extends DecoratorView {
     } else {
       this._body = "";
     }
-    if (options && options.style) {
-      this._style = options.style;
-    } else {
-      this._style = "";
-    }
     if (options && options.footer) {
       this._footer = options.footer;
     } else {
@@ -81,19 +76,6 @@ class Article extends DecoratorView {
 
   get header() {
     return this._header;
-  };
-
-  /**
-   * style property - the style
-   * @property {string} style
-   * @memberof Article
-   */
-  set style(style) {
-    this._style = style;
-  };
-
-  get style() {
-    return this._style;
   };
 
   /**
@@ -166,9 +148,10 @@ class Article extends DecoratorView {
    *   "body" "html"
    *   "class" "something"
    * }
+   */
   addSection(section) {
     this._sections.push(section);
-  }
+  };
 
   /**
    * render - render the article
