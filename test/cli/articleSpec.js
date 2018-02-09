@@ -23,5 +23,20 @@ describe('Given Augmented Presentation Article View', () => {
 		it('has a body', () => {
 			expect(view.body).to.equal("hello");
 		});
+
+		it('has a header', () => {
+			view.header = "hello";
+			expect(view.header).to.equal("hello");
+		});
+
+		it('has a footer', () => {
+			view.footer = "hello";
+			expect(view.footer).to.equal("hello");
+		});
+
+		it('can add a section', () => {
+			view.addSection({});
+			expect(view.sections).to.not.equal([]);
+		});
 	});
 });
