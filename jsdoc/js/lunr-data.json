@@ -457,6 +457,69 @@
           "up",
           "viewel"
         ],
+        "Presentation.Component.Article.html#header": [
+          "article#head",
+          "component.article#head",
+          "header",
+          "member",
+          "presentation.component.article#head",
+          "properti"
+        ],
+        "Presentation.Component.Article.html#footer": [
+          "articl",
+          "article#foot",
+          "component.article#foot",
+          "footer",
+          "member",
+          "presentation.component.article#foot"
+        ],
+        "Presentation.Component.Article.html#body": [
+          "article#bodi",
+          "bodi",
+          "card",
+          "component.article#bodi",
+          "content",
+          "html",
+          "member",
+          "presentation.component.article#bodi",
+          "support"
+        ],
+        "Presentation.Component.Article.html#sections": [
+          "array",
+          "article#sect",
+          "component.article#sect",
+          "member",
+          "presentation.component.article#sect",
+          "section"
+        ],
+        "Presentation.Component.Article.html#addSection": [
+          "add",
+          "addsect",
+          "articl",
+          "article#addsect",
+          "component.article#addsect",
+          "function",
+          "object",
+          "presentation.component.article#addsect",
+          "section"
+        ],
+        "Presentation.Component.Article.html#clearSections": [
+          "article#clearsect",
+          "clear",
+          "clearsect",
+          "component.article#clearsect",
+          "function",
+          "presentation.component.article#clearsect",
+          "section"
+        ],
+        "Presentation.Component.Article.html#render": [
+          "articl",
+          "article#rend",
+          "component.article#rend",
+          "function",
+          "presentation.component.article#rend",
+          "render"
+        ],
         "Presentation.Component.Card.html": [
           "card",
           "class",
@@ -1091,7 +1154,7 @@
           "xhrfields.withcredenti"
         ]
       },
-      "length": 88
+      "length": 95
     },
     "tokenStore": {
       "root": {
@@ -1727,6 +1790,10 @@
                   "ref": "Presentation.ViewController.html#.addPermission",
                   "tf": 16.666666666666664
                 },
+                "Presentation.Component.Article.html#addSection": {
+                  "ref": "Presentation.Component.Article.html#addSection",
+                  "tf": 12.5
+                },
                 "Presentation.DecoratorView.html": {
                   "ref": "Presentation.DecoratorView.html",
                   "tf": 0.8333333333333334
@@ -1773,6 +1840,10 @@
                         "Presentation.Component.Article.html": {
                           "ref": "Presentation.Component.Article.html",
                           "tf": 1.3157894736842104
+                        },
+                        "Presentation.Component.Article.html#addSection": {
+                          "ref": "Presentation.Component.Article.html#addSection",
+                          "tf": 625
                         }
                       }
                     }
@@ -1856,6 +1927,10 @@
                     "Presentation.Component.Article.html": {
                       "ref": "Presentation.Component.Article.html",
                       "tf": 1.3157894736842104
+                    },
+                    "Presentation.Component.Article.html#sections": {
+                      "ref": "Presentation.Component.Article.html#sections",
+                      "tf": 25
                     }
                   }
                 }
@@ -1872,6 +1947,167 @@
                       "Presentation.Component.Article.html": {
                         "ref": "Presentation.Component.Article.html",
                         "tf": 602.6315789473684
+                      },
+                      "Presentation.Component.Article.html#footer": {
+                        "ref": "Presentation.Component.Article.html#footer",
+                        "tf": 25
+                      },
+                      "Presentation.Component.Article.html#addSection": {
+                        "ref": "Presentation.Component.Article.html#addSection",
+                        "tf": 12.5
+                      },
+                      "Presentation.Component.Article.html#render": {
+                        "ref": "Presentation.Component.Article.html#render",
+                        "tf": 16.666666666666664
+                      }
+                    },
+                    "e": {
+                      "docs": {},
+                      "#": {
+                        "docs": {},
+                        "h": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "a": {
+                              "docs": {},
+                              "d": {
+                                "docs": {
+                                  "Presentation.Component.Article.html#header": {
+                                    "ref": "Presentation.Component.Article.html#header",
+                                    "tf": 75
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "f": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "o": {
+                              "docs": {},
+                              "t": {
+                                "docs": {
+                                  "Presentation.Component.Article.html#footer": {
+                                    "ref": "Presentation.Component.Article.html#footer",
+                                    "tf": 75
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "b": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "d": {
+                              "docs": {},
+                              "i": {
+                                "docs": {
+                                  "Presentation.Component.Article.html#body": {
+                                    "ref": "Presentation.Component.Article.html#body",
+                                    "tf": 75
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "s": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "c": {
+                              "docs": {},
+                              "t": {
+                                "docs": {
+                                  "Presentation.Component.Article.html#sections": {
+                                    "ref": "Presentation.Component.Article.html#sections",
+                                    "tf": 75
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "a": {
+                          "docs": {},
+                          "d": {
+                            "docs": {},
+                            "d": {
+                              "docs": {},
+                              "s": {
+                                "docs": {},
+                                "e": {
+                                  "docs": {},
+                                  "c": {
+                                    "docs": {},
+                                    "t": {
+                                      "docs": {
+                                        "Presentation.Component.Article.html#addSection": {
+                                          "ref": "Presentation.Component.Article.html#addSection",
+                                          "tf": 75
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "c": {
+                          "docs": {},
+                          "l": {
+                            "docs": {},
+                            "e": {
+                              "docs": {},
+                              "a": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "s": {
+                                    "docs": {},
+                                    "e": {
+                                      "docs": {},
+                                      "c": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {
+                                            "Presentation.Component.Article.html#clearSections": {
+                                              "ref": "Presentation.Component.Article.html#clearSections",
+                                              "tf": 75
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "r": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "n": {
+                              "docs": {},
+                              "d": {
+                                "docs": {
+                                  "Presentation.Component.Article.html#render": {
+                                    "ref": "Presentation.Component.Article.html#render",
+                                    "tf": 75
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
                       }
                     }
                   }
@@ -3917,23 +4153,6 @@
                 }
               }
             },
-            "s": {
-              "docs": {},
-              "s": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "g": {
-                    "docs": {
-                      "Presentation.Component.AlertDialogView.html": {
-                        "ref": "Presentation.Component.AlertDialogView.html",
-                        "tf": 5.555555555555555
-                      }
-                    }
-                  }
-                }
-              }
-            },
             "m": {
               "docs": {},
               "b": {
@@ -3942,6 +4161,22 @@
                   "docs": {},
                   "r": {
                     "docs": {
+                      "Presentation.Component.Article.html#header": {
+                        "ref": "Presentation.Component.Article.html#header",
+                        "tf": 110
+                      },
+                      "Presentation.Component.Article.html#footer": {
+                        "ref": "Presentation.Component.Article.html#footer",
+                        "tf": 110
+                      },
+                      "Presentation.Component.Article.html#body": {
+                        "ref": "Presentation.Component.Article.html#body",
+                        "tf": 110
+                      },
+                      "Presentation.Component.Article.html#sections": {
+                        "ref": "Presentation.Component.Article.html#sections",
+                        "tf": 110
+                      },
                       "Presentation.Component.Header.html#.Header#title": {
                         "ref": "Presentation.Component.Header.html#.Header#title",
                         "tf": 110
@@ -3957,6 +4192,23 @@
                       "Configuration.xhrFields.html#.withCredentials": {
                         "ref": "Configuration.xhrFields.html#.withCredentials",
                         "tf": 110
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "s": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "g": {
+                    "docs": {
+                      "Presentation.Component.AlertDialogView.html": {
+                        "ref": "Presentation.Component.AlertDialogView.html",
+                        "tf": 5.555555555555555
                       }
                     }
                   }
@@ -4380,6 +4632,155 @@
                                                                     "Presentation.Component.Article.html": {
                                                                       "ref": "Presentation.Component.Article.html",
                                                                       "tf": 1100
+                                                                    }
+                                                                  },
+                                                                  "e": {
+                                                                    "docs": {},
+                                                                    "#": {
+                                                                      "docs": {},
+                                                                      "h": {
+                                                                        "docs": {},
+                                                                        "e": {
+                                                                          "docs": {},
+                                                                          "a": {
+                                                                            "docs": {},
+                                                                            "d": {
+                                                                              "docs": {
+                                                                                "Presentation.Component.Article.html#header": {
+                                                                                  "ref": "Presentation.Component.Article.html#header",
+                                                                                  "tf": 1075
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "f": {
+                                                                        "docs": {},
+                                                                        "o": {
+                                                                          "docs": {},
+                                                                          "o": {
+                                                                            "docs": {},
+                                                                            "t": {
+                                                                              "docs": {
+                                                                                "Presentation.Component.Article.html#footer": {
+                                                                                  "ref": "Presentation.Component.Article.html#footer",
+                                                                                  "tf": 1075
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "b": {
+                                                                        "docs": {},
+                                                                        "o": {
+                                                                          "docs": {},
+                                                                          "d": {
+                                                                            "docs": {},
+                                                                            "i": {
+                                                                              "docs": {
+                                                                                "Presentation.Component.Article.html#body": {
+                                                                                  "ref": "Presentation.Component.Article.html#body",
+                                                                                  "tf": 1075
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "s": {
+                                                                        "docs": {},
+                                                                        "e": {
+                                                                          "docs": {},
+                                                                          "c": {
+                                                                            "docs": {},
+                                                                            "t": {
+                                                                              "docs": {
+                                                                                "Presentation.Component.Article.html#sections": {
+                                                                                  "ref": "Presentation.Component.Article.html#sections",
+                                                                                  "tf": 1075
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "a": {
+                                                                        "docs": {},
+                                                                        "d": {
+                                                                          "docs": {},
+                                                                          "d": {
+                                                                            "docs": {},
+                                                                            "s": {
+                                                                              "docs": {},
+                                                                              "e": {
+                                                                                "docs": {},
+                                                                                "c": {
+                                                                                  "docs": {},
+                                                                                  "t": {
+                                                                                    "docs": {
+                                                                                      "Presentation.Component.Article.html#addSection": {
+                                                                                        "ref": "Presentation.Component.Article.html#addSection",
+                                                                                        "tf": 1075
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "c": {
+                                                                        "docs": {},
+                                                                        "l": {
+                                                                          "docs": {},
+                                                                          "e": {
+                                                                            "docs": {},
+                                                                            "a": {
+                                                                              "docs": {},
+                                                                              "r": {
+                                                                                "docs": {},
+                                                                                "s": {
+                                                                                  "docs": {},
+                                                                                  "e": {
+                                                                                    "docs": {},
+                                                                                    "c": {
+                                                                                      "docs": {},
+                                                                                      "t": {
+                                                                                        "docs": {
+                                                                                          "Presentation.Component.Article.html#clearSections": {
+                                                                                            "ref": "Presentation.Component.Article.html#clearSections",
+                                                                                            "tf": 1075
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "r": {
+                                                                        "docs": {},
+                                                                        "e": {
+                                                                          "docs": {},
+                                                                          "n": {
+                                                                            "docs": {},
+                                                                            "d": {
+                                                                              "docs": {
+                                                                                "Presentation.Component.Article.html#render": {
+                                                                                  "ref": "Presentation.Component.Article.html#render",
+                                                                                  "tf": 1075
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
                                                                     }
                                                                   }
                                                                 }
@@ -6954,6 +7355,10 @@
                             "ref": "Presentation.Request.Configuration.html",
                             "tf": 5.555555555555555
                           },
+                          "Presentation.Component.Article.html#header": {
+                            "ref": "Presentation.Component.Article.html#header",
+                            "tf": 25
+                          },
                           "Presentation.Component.Header.html#.Header#title": {
                             "ref": "Presentation.Component.Header.html#.Header#title",
                             "tf": 25
@@ -7555,6 +7960,10 @@
                       "Presentation.ViewController.html#.render": {
                         "ref": "Presentation.ViewController.html#.render",
                         "tf": 665
+                      },
+                      "Presentation.Component.Article.html#render": {
+                        "ref": "Presentation.Component.Article.html#render",
+                        "tf": 708.3333333333334
                       },
                       "Presentation.DecoratorView.html": {
                         "ref": "Presentation.DecoratorView.html",
@@ -8227,6 +8636,18 @@
                         "Presentation.Component.Article.html": {
                           "ref": "Presentation.Component.Article.html",
                           "tf": 1.3157894736842104
+                        },
+                        "Presentation.Component.Article.html#sections": {
+                          "ref": "Presentation.Component.Article.html#sections",
+                          "tf": 700
+                        },
+                        "Presentation.Component.Article.html#addSection": {
+                          "ref": "Presentation.Component.Article.html#addSection",
+                          "tf": 62.5
+                        },
+                        "Presentation.Component.Article.html#clearSections": {
+                          "ref": "Presentation.Component.Article.html#clearSections",
+                          "tf": 25
                         }
                       }
                     }
@@ -8306,6 +8727,10 @@
                         "Presentation.Model.html": {
                           "ref": "Presentation.Model.html",
                           "tf": 8.333333333333332
+                        },
+                        "Presentation.Component.Article.html#body": {
+                          "ref": "Presentation.Component.Article.html#body",
+                          "tf": 10
                         }
                       }
                     }
@@ -8883,6 +9308,10 @@
                     "Presentation.ViewController.html#.clearPermissions": {
                       "ref": "Presentation.ViewController.html#.clearPermissions",
                       "tf": 16.666666666666664
+                    },
+                    "Presentation.Component.Article.html#clearSections": {
+                      "ref": "Presentation.Component.Article.html#clearSections",
+                      "tf": 25
                     }
                   },
                   "p": {
@@ -8905,6 +9334,23 @@
                                   }
                                 }
                               }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "s": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "c": {
+                        "docs": {},
+                        "t": {
+                          "docs": {
+                            "Presentation.Component.Article.html#clearSections": {
+                              "ref": "Presentation.Component.Article.html#clearSections",
+                              "tf": 675
                             }
                           }
                         }
@@ -9321,6 +9767,17 @@
                 },
                 "e": {
                   "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Presentation.Component.Article.html#body": {
+                          "ref": "Presentation.Component.Article.html#body",
+                          "tf": 10
+                        }
+                      }
+                    }
+                  },
                   "x": {
                     "docs": {},
                     "t": {
@@ -9623,6 +10080,155 @@
                                           "Presentation.Component.Article.html": {
                                             "ref": "Presentation.Component.Article.html",
                                             "tf": 200
+                                          }
+                                        },
+                                        "e": {
+                                          "docs": {},
+                                          "#": {
+                                            "docs": {},
+                                            "h": {
+                                              "docs": {},
+                                              "e": {
+                                                "docs": {},
+                                                "a": {
+                                                  "docs": {},
+                                                  "d": {
+                                                    "docs": {
+                                                      "Presentation.Component.Article.html#header": {
+                                                        "ref": "Presentation.Component.Article.html#header",
+                                                        "tf": 75
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "f": {
+                                              "docs": {},
+                                              "o": {
+                                                "docs": {},
+                                                "o": {
+                                                  "docs": {},
+                                                  "t": {
+                                                    "docs": {
+                                                      "Presentation.Component.Article.html#footer": {
+                                                        "ref": "Presentation.Component.Article.html#footer",
+                                                        "tf": 75
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "b": {
+                                              "docs": {},
+                                              "o": {
+                                                "docs": {},
+                                                "d": {
+                                                  "docs": {},
+                                                  "i": {
+                                                    "docs": {
+                                                      "Presentation.Component.Article.html#body": {
+                                                        "ref": "Presentation.Component.Article.html#body",
+                                                        "tf": 75
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "s": {
+                                              "docs": {},
+                                              "e": {
+                                                "docs": {},
+                                                "c": {
+                                                  "docs": {},
+                                                  "t": {
+                                                    "docs": {
+                                                      "Presentation.Component.Article.html#sections": {
+                                                        "ref": "Presentation.Component.Article.html#sections",
+                                                        "tf": 75
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "a": {
+                                              "docs": {},
+                                              "d": {
+                                                "docs": {},
+                                                "d": {
+                                                  "docs": {},
+                                                  "s": {
+                                                    "docs": {},
+                                                    "e": {
+                                                      "docs": {},
+                                                      "c": {
+                                                        "docs": {},
+                                                        "t": {
+                                                          "docs": {
+                                                            "Presentation.Component.Article.html#addSection": {
+                                                              "ref": "Presentation.Component.Article.html#addSection",
+                                                              "tf": 75
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "c": {
+                                              "docs": {},
+                                              "l": {
+                                                "docs": {},
+                                                "e": {
+                                                  "docs": {},
+                                                  "a": {
+                                                    "docs": {},
+                                                    "r": {
+                                                      "docs": {},
+                                                      "s": {
+                                                        "docs": {},
+                                                        "e": {
+                                                          "docs": {},
+                                                          "c": {
+                                                            "docs": {},
+                                                            "t": {
+                                                              "docs": {
+                                                                "Presentation.Component.Article.html#clearSections": {
+                                                                  "ref": "Presentation.Component.Article.html#clearSections",
+                                                                  "tf": 75
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "r": {
+                                              "docs": {},
+                                              "e": {
+                                                "docs": {},
+                                                "n": {
+                                                  "docs": {},
+                                                  "d": {
+                                                    "docs": {
+                                                      "Presentation.Component.Article.html#render": {
+                                                        "ref": "Presentation.Component.Article.html#render",
+                                                        "tf": 75
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
                                           }
                                         }
                                       }
@@ -10691,6 +11297,10 @@
               "docs": {},
               "d": {
                 "docs": {
+                  "Presentation.Component.Article.html#body": {
+                    "ref": "Presentation.Component.Article.html#body",
+                    "tf": 10
+                  },
                   "Presentation.Component.Card.html": {
                     "ref": "Presentation.Component.Card.html",
                     "tf": 610
@@ -11901,6 +12511,10 @@
                   "Presentation.Component.Article.html": {
                     "ref": "Presentation.Component.Article.html",
                     "tf": 2.631578947368421
+                  },
+                  "Presentation.Component.Article.html#body": {
+                    "ref": "Presentation.Component.Article.html#body",
+                    "tf": 685
                   }
                 }
               }
@@ -12193,6 +12807,10 @@
                         "ref": "Presentation.Component.Article.html",
                         "tf": 2.631578947368421
                       },
+                      "Presentation.Component.Article.html#header": {
+                        "ref": "Presentation.Component.Article.html#header",
+                        "tf": 700
+                      },
                       "Presentation.Component.Header.html": {
                         "ref": "Presentation.Component.Header.html",
                         "tf": 600
@@ -12345,6 +12963,10 @@
               "docs": {},
               "l": {
                 "docs": {
+                  "Presentation.Component.Article.html#body": {
+                    "ref": "Presentation.Component.Article.html#body",
+                    "tf": 10
+                  },
                   "Presentation.DecoratorView.html": {
                     "ref": "Presentation.DecoratorView.html",
                     "tf": 0.8333333333333334
@@ -13534,6 +14156,18 @@
                             "ref": "Presentation.Router.html#.cleanup",
                             "tf": 110
                           },
+                          "Presentation.Component.Article.html#addSection": {
+                            "ref": "Presentation.Component.Article.html#addSection",
+                            "tf": 110
+                          },
+                          "Presentation.Component.Article.html#clearSections": {
+                            "ref": "Presentation.Component.Article.html#clearSections",
+                            "tf": 110
+                          },
+                          "Presentation.Component.Article.html#render": {
+                            "ref": "Presentation.Component.Article.html#render",
+                            "tf": 110
+                          },
                           "Presentation.Colleague.html#.delegateEvents": {
                             "ref": "Presentation.Colleague.html#.delegateEvents",
                             "tf": 110
@@ -13682,6 +14316,10 @@
                       "Presentation.Component.Article.html": {
                         "ref": "Presentation.Component.Article.html",
                         "tf": 2.631578947368421
+                      },
+                      "Presentation.Component.Article.html#footer": {
+                        "ref": "Presentation.Component.Article.html#footer",
+                        "tf": 700
                       },
                       "Presentation.Component.Footer.html": {
                         "ref": "Presentation.Component.Footer.html",
@@ -14108,6 +14746,10 @@
                       },
                       "Presentation.NamespacedLocalStorage.html": {
                         "ref": "Presentation.NamespacedLocalStorage.html",
+                        "tf": 12.5
+                      },
+                      "Presentation.Component.Article.html#addSection": {
+                        "ref": "Presentation.Component.Article.html#addSection",
                         "tf": 12.5
                       },
                       "Presentation.Mediator.html": {
@@ -14551,7 +15193,7 @@
           }
         }
       },
-      "length": 908
+      "length": 957
     },
     "corpusTokens": [
       "10",
@@ -14575,6 +15217,13 @@
       "around",
       "array",
       "articl",
+      "article#addsect",
+      "article#bodi",
+      "article#clearsect",
+      "article#foot",
+      "article#head",
+      "article#rend",
+      "article#sect",
       "aubstract",
       "augmented.applicationadd",
       "augmented.j",
@@ -14615,6 +15264,7 @@
       "cleanup",
       "clear",
       "clearpermiss",
+      "clearsect",
       "clickdata",
       "client",
       "colleagu",
@@ -14631,6 +15281,13 @@
       "component.abstracttoolbar",
       "component.alertdialogview",
       "component.articl",
+      "component.article#addsect",
+      "component.article#bodi",
+      "component.article#clearsect",
+      "component.article#foot",
+      "component.article#head",
+      "component.article#rend",
+      "component.article#sect",
       "component.augmented.presentation.component.hamburgermenu",
       "component.augmented.presentation.confirmationdialogview",
       "component.augmented.presentation.localstoraget",
@@ -14657,6 +15314,7 @@
       "configuration.xhrfields.withcredenti",
       "configut",
       "confirmationdialogview",
+      "content",
       "context",
       "contract.although",
       "control",
@@ -14864,6 +15522,13 @@
       "presentation.component.abstracttoolbar",
       "presentation.component.alertdialogview",
       "presentation.component.articl",
+      "presentation.component.article#addsect",
+      "presentation.component.article#bodi",
+      "presentation.component.article#clearsect",
+      "presentation.component.article#foot",
+      "presentation.component.article#head",
+      "presentation.component.article#rend",
+      "presentation.component.article#sect",
       "presentation.component.augmented.presentation.component.hamburgermenu",
       "presentation.component.augmented.presentation.confirmationdialogview",
       "presentation.component.augmented.presentation.localstoraget",
@@ -15416,6 +16081,76 @@
       "summary": "",
       "description": "An article class for setting up a 'page'Supported options are: name - The name of the article viewel - The mount pointstyle - The style classheader - The header markupheaderEl - The header mount pointfooter - The footer markupfooterEl - The footer mount pointbody - The body markupbodyEl - The body mount point (will generate a div)sections - array of sections to prefill (see addSection API for format)",
       "body": ""
+    },
+    "Presentation.Component.Article.html#header": {
+      "id": "Presentation.Component.Article.html#header",
+      "kind": "member",
+      "title": "header",
+      "longname": "Presentation.Component.Article#header",
+      "name": "header",
+      "tags": "Presentation.Component.Article#header Component.Article#header Article#header header",
+      "summary": "",
+      "description": "Header property"
+    },
+    "Presentation.Component.Article.html#footer": {
+      "id": "Presentation.Component.Article.html#footer",
+      "kind": "member",
+      "title": "footer",
+      "longname": "Presentation.Component.Article#footer",
+      "name": "footer",
+      "tags": "Presentation.Component.Article#footer Component.Article#footer Article#footer footer",
+      "summary": "",
+      "description": "Footer for the article"
+    },
+    "Presentation.Component.Article.html#body": {
+      "id": "Presentation.Component.Article.html#body",
+      "kind": "member",
+      "title": "body",
+      "longname": "Presentation.Component.Article#body",
+      "name": "body",
+      "tags": "Presentation.Component.Article#body Component.Article#body Article#body body",
+      "summary": "",
+      "description": "The body content of the card (supports HTML)"
+    },
+    "Presentation.Component.Article.html#sections": {
+      "id": "Presentation.Component.Article.html#sections",
+      "kind": "member",
+      "title": "sections",
+      "longname": "Presentation.Component.Article#sections",
+      "name": "sections",
+      "tags": "Presentation.Component.Article#sections Component.Article#sections Article#sections sections",
+      "summary": "",
+      "description": "The section array"
+    },
+    "Presentation.Component.Article.html#addSection": {
+      "id": "Presentation.Component.Article.html#addSection",
+      "kind": "function",
+      "title": "addSection( section )",
+      "longname": "Presentation.Component.Article#addSection",
+      "name": "addSection",
+      "tags": "Presentation.Component.Article#addSection Component.Article#addSection Article#addSection addSection",
+      "summary": "",
+      "description": "Add a section object to the article"
+    },
+    "Presentation.Component.Article.html#clearSections": {
+      "id": "Presentation.Component.Article.html#clearSections",
+      "kind": "function",
+      "title": "clearSections()",
+      "longname": "Presentation.Component.Article#clearSections",
+      "name": "clearSections",
+      "tags": "Presentation.Component.Article#clearSections Component.Article#clearSections Article#clearSections clearSections",
+      "summary": "",
+      "description": "Clear the sections"
+    },
+    "Presentation.Component.Article.html#render": {
+      "id": "Presentation.Component.Article.html#render",
+      "kind": "function",
+      "title": "render()",
+      "longname": "Presentation.Component.Article#render",
+      "name": "render",
+      "tags": "Presentation.Component.Article#render Component.Article#render Article#render render",
+      "summary": "",
+      "description": "render - render the article"
     },
     "Presentation.Component.Card.html": {
       "id": "Presentation.Component.Card.html",

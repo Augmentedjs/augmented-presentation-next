@@ -1,6 +1,8 @@
 import DecoratorView from "../../decorator/decorator.js";
 import Dom from "../../../dom/dom.js";
 
+const DEFAULT_TAG = "article";
+
 /**
  * An article class for setting up a 'page'<br/>
  * Supported options are:<br/>
@@ -16,11 +18,12 @@ import Dom from "../../../dom/dom.js";
  * <li>bodyEl - The body mount point (will generate a div)</li>
  * <li>sections - array of sections to prefill (see addSection API for format)</li>
  * </ul>
- * @class Article
  * @memberof Presentation.Component
  * @extends Presentation.DecoratorView
  * @param {object} options Options to pass to the constructor
- * @example const article = new Presentation.Component.Article({ "el": "#mount", "header": "html", "footerEl": "#foot" });
+ * @example
+ * const article = new Presentation.Component.Article(
+ *                 { "el": "#mount", "header": "html", "footerEl": "#foot" });
  */
 class Article extends DecoratorView {
   constructor(options) {
@@ -28,10 +31,10 @@ class Article extends DecoratorView {
       options = {};
     }
     if (!options.name) {
-      options.name = "article";
+      options.name = DEFAULT_TAG;
     }
     // tag should be article
-    options.tagName = "article";
+    options.tagName = DEFAULT_TAG;
     super(options);
     if (options && options.header) {
       this._header = options.header;
@@ -68,7 +71,6 @@ class Article extends DecoratorView {
   /**
    * Header property
    * @property {string} header
-   * @memberof Article
    */
   set header(header) {
     this._header = header;
@@ -81,7 +83,6 @@ class Article extends DecoratorView {
   /**
    * Footer for the article
    * @property {string} footer
-   * @memberof Article
    */
   set footer(footer) {
     this._footer = footer;
@@ -94,7 +95,6 @@ class Article extends DecoratorView {
   /**
    * The body content of the card (supports HTML)
    * @property {string} body
-   * @memberof Article
    */
   set body(body) {
     this._body = body;
@@ -107,7 +107,6 @@ class Article extends DecoratorView {
   /**
    * The section array
    * @property {array} sections
-   * @memberof Article
    */
   set sections(sections) {
     if (sections && Array.isArray(sections)) {
@@ -119,6 +118,9 @@ class Article extends DecoratorView {
     return this._sections;
   };
 
+  /**
+   * @private
+   */
   _formatSections() {
     const l = this._sections.length;
     let sections = "", i = 0;
@@ -128,6 +130,9 @@ class Article extends DecoratorView {
     return sections;
   };
 
+  /**
+   * @private
+   */
   _formatSection(section) {
     let sect = "";
     if (section && ( section.body || section.id || section.class )) {
@@ -139,13 +144,12 @@ class Article extends DecoratorView {
   };
 
   /**
-   * @method addSection Add a section object to the article
+   * Add a section object to the article
    * @param {object} section a section object
-   * @memberof article
    * @example Section Object format:
    * {
-   *   "id" "#something"
-   *   "body" "html"
+   *   "id" "#something",
+   *   "body" "html",
    *   "class" "something"
    * }
    */
@@ -154,9 +158,14 @@ class Article extends DecoratorView {
   };
 
   /**
+   * Clear the sections
+   */
+  clearSections() {
+    this._sections.splice(0, this._sections.length);
+  };
+
+  /**
    * render - render the article
-   * @method render
-   * @memberof Article
    */
   render() {
     if (this.el) {
@@ -168,21 +177,9 @@ class Article extends DecoratorView {
 
   /**
    * template - sets content of the dialog, handled internally
-   * @method _template
-   * @memberof Article
    * @private
    */
   _template() {
-    /*
-    let cls = "";
-    if (this._style) {
-      cls = ` class="${this._style}"`;
-    }
-    let id = "";
-    if (this.el) {
-      id = ` id="${this.el}"`;
-    }
-    */
     let header = "";
     if (this._header) {
       let hid = "";
