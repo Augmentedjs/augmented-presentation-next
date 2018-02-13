@@ -138,7 +138,8 @@ class Article extends DecoratorView {
     if (section && ( section.body || section.id || section.class )) {
       const cls = (section.class) ? ` class="${section.class}"` : "";
       const id = (section.id) ? ` id="${section.id}"` : "";
-      sect = `<section${id}${cls}>${section.body}</section>`;
+      const body = (section.body) ? section.body : "";
+      sect = `<section${id}${cls}>${body}</section>`;
     }
     return sect;
   };
