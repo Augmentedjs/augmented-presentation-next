@@ -125,7 +125,7 @@ class Article extends DecoratorView {
     const l = this._sections.length;
     let sections = "", i = 0;
     for (i = 0; i < l; i++) {
-      sections += this._formatSection(sections[i]);
+      sections += this._formatSection(this._sections[i]);
     }
     return sections;
   };
@@ -204,7 +204,7 @@ class Article extends DecoratorView {
         body = `${this._body}`;
       }
     }
-    return `${header}${this._formatSections()}${body}${footer}`;
+    return `${header}${body}${this._formatSections()}${footer}`;
   };
 };
 
