@@ -1,10 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-<<<<<<< HEAD
-  "version": "2.0.0-alpha.28",
-=======
   "version": "2.0.0-alpha.29",
->>>>>>> 96bfc97b72f0246977cc6b827822c1d99ce775d7
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
