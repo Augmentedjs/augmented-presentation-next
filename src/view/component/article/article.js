@@ -149,7 +149,7 @@ class Article extends DecoratorView {
    * @param {object} section a section object
    * @example Section Object format:
    * {
-   *   "id" "#something",
+   *   "id" "something",
    *   "body" "html",
    *   "class" "something"
    * }

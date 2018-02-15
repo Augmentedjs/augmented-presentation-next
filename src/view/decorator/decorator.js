@@ -163,8 +163,14 @@ class DecoratorView extends Colleague {
       mount = this.el;
     }
     if (Augmented.isString(mount)) {
-      mount = document.querySelector(mount);
+      const qs = document.querySelector(mount);
+      //console.log(`Query selector: ${qs}, mount: ${mount}, el: ${this.el}`);
+      if (!qs) {
+        return;
+      }
+      mount = qs;
     }
+
     if (Augmented.isString(template)) {
       // html
       let currentHTML = mount.innerHTML;
