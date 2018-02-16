@@ -46,6 +46,11 @@ class Article extends DecoratorView {
     } else {
       this._headerEl = "";
     }
+    if (options && options.headerStyle) {
+      this._headerStyle = options.headerStyle;
+    } else {
+      this._headerStyle = "";
+    }
     if (options && options.body) {
       this._body = options.body;
     } else {
@@ -60,6 +65,11 @@ class Article extends DecoratorView {
       this._footerEl = options.footerEl;
     } else {
       this._footerEl = "";
+    }
+    if (options && options.footerStyle) {
+      this._footerStyle = options.footerStyle;
+    } else {
+      this._footerStyle = "";
     }
     if (options && options.sections) {
       this._sections = options.sections;
@@ -183,19 +193,26 @@ class Article extends DecoratorView {
   _template() {
     let header = "";
     if (this._header) {
-      let hid = "";
+      let hid = "", style = "";
       if (this._headerEl) {
         hid = ` id="${this._headerEl}"`;
       }
-      header = `<header${hid}>${this._header}</header>`;
+      if (this._headerStyle) {
+        style = ` class="${this._headerStyle}"`;
+      }
+
+      header = `<header${hid}${style}>${this._header}</header>`;
     }
     let footer = "";
     if (this._footer) {
-      let fid = "";
+      let fid = "", style = "";
       if (this._footerEl) {
         fid = ` id="${this._footerEl}"`;
       }
-      footer = `<footer${fid}>${this._footer}</footer>`;
+      if (this._footerStyle) {
+        style = ` class="${this._footerStyle}"`;
+      }
+      footer = `<footer${fid}${style}>${this._footer}</footer>`;
     }
     let body = "";
     if (this._body) {
