@@ -54,6 +54,11 @@ describe('Given Augmented Presentation Hamburger Menu View', () => {
 				expect(s).to.not.be.undefined;
 				expect(e).to.not.be.undefined;
 			});
+
+			it('can add items', () => {
+				d.addItem("id", "click", "icon", "title", false);
+				expect(d.menuItems).to.not.be.undefined;
+			});
 		});
 	});
 });

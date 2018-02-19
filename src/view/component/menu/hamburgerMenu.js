@@ -3,7 +3,17 @@ import Dom from "../../../dom/dom.js";
 import AbstractToolbar from "../toolbar/abstractToolbar.js";
 
 const buildMenu = (name, title, menuItems) => {
-  return `<section class="material-design-hamburger" data-${name}="hamburgerClickRegion"><div class="material-design-hamburger__icon" data-${name}="hamburgerIcon" data-click="toggle"><i class="material-icons md-light">menu</i></div></section><section class="menu menu--off" data-${name}="hamburgerMenu"><div>${title}</div>${buildMenuItems(this.name, this.menuItems)}</section>`;
+  return `
+    <section class="material-design-hamburger" data-${name}="hamburgerClickRegion">
+      <div class="material-design-hamburger__icon" data-${name}="hamburgerIcon" data-click="toggle">
+        <i class="material-icons md-light">menu</i>
+      </div>
+    </section>
+    <section class="menu menu--off" data-${name}="hamburgerMenu">
+      <div>${title}</div>
+      ${buildMenuItems(name, menuItems)}
+    </section>
+  `;
 };
 
 /**
@@ -35,7 +45,7 @@ class HamburgerMenu extends AbstractToolbar {
         // the menu
         Dom.addClass(e, "wrapper");
         e.setAttribute("data-" + this.name, "hamburger");
-        e.innerHTML = buildMenu(this.name, this.menuItems);
+        e.innerHTML = buildMenu(this.name, this.title, this.menuItems);
       }
     } else {
       //_logger.warn("AUGMENTED: Hamburger no element anchor, not rendering.");

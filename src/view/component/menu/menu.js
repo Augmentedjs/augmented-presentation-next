@@ -49,7 +49,7 @@ class Menu extends AbstractToolbar {
         // the menu
         Dom.addClass(e, "menu");
         e.setAttribute("data-" + this.name, "menu");
-        e.innerHTML = buildMenu(this.name, this.menuItems);
+        e.innerHTML = buildMenu(this.name, this.title, this.menuItems);
       }
     } else {
       //_logger.warn("AUGMENTED: Menu no element anchor, not rendering.");
