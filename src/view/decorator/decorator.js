@@ -253,7 +253,8 @@ class DecoratorView extends Colleague {
   syncAllBoundElements() {
     const ba = this.bindingAttribute();
     if (this.el && ba) {
-      const elements = this.el.querySelectorAll(`[${ba}]`);
+      const elements = document.querySelectorAll(`${this.el}[${ba}]`);
+      //console.debug(`Elements ${elements}`);
       if (elements && elements.length > 0) {
         let i = 0, l = elements.length, event = new UIEvent("change", {
           "view": window,
@@ -264,9 +265,9 @@ class DecoratorView extends Colleague {
           elements[i].dispatchEvent(event);
         }
       }
-    } else {
+    } /*else {
       console.warn(`No bound element ${this.el} or binding attribute - ${ba}`);
-    }
+    }*/
   };
   /**
    * addClass - adds a class to a bount element
