@@ -48,7 +48,7 @@ class HamburgerMenu extends AbstractToolbar {
         e.innerHTML = buildMenu(this.name, this.title, this.menuItems);
       }
     } else {
-      //_logger.warn("AUGMENTED: Hamburger no element anchor, not rendering.");
+      console.warn("AUGMENTED: Hamburger no element anchor, not rendering.");
       return this;
     }
     this.delegateEvents();

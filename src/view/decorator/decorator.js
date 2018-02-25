@@ -251,16 +251,21 @@ class DecoratorView extends Colleague {
    * @memberof DecoratorView
    */
   syncAllBoundElements() {
-    const elements = this.el.querySelectorAll("[" + this.bindingAttribute() + "]");
-    if (elements && elements.length > 0) {
-      let i = 0, l = elements.length, event = new UIEvent("change", {
-        "view": window,
-        "bubbles": true,
-        "cancelable": true
-      });
-      for (i = 0; i < l; i++) {
-        elements[i].dispatchEvent(event);
+    const ba = this.bindingAttribute();
+    if (this.el && ba) {
+      const elements = this.el.querySelectorAll(`[${ba}]`);
+      if (elements && elements.length > 0) {
+        let i = 0, l = elements.length, event = new UIEvent("change", {
+          "view": window,
+          "bubbles": true,
+          "cancelable": true
+        });
+        for (i = 0; i < l; i++) {
+          elements[i].dispatchEvent(event);
+        }
       }
+    } else {
+      console.warn(`No bound element ${this.el} or binding attribute - ${ba}`);
     }
   };
   /**
