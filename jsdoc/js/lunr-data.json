@@ -619,15 +619,12 @@
           "properti",
           "subtitl"
         ],
-        "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": [
-          "augmented.presentation.component.hamburgermenu",
+        "Presentation.Component.HamburgerMenu.html": [
           "class",
-          "component.augmented.presentation.component.hamburgermenu",
           "component.hamburgermenu",
           "hamburg",
           "hamburgermenu",
           "menu",
-          "presentation.component.augmented.presentation.component.hamburgermenu",
           "presentation.component.hamburgermenu",
           "view"
         ],
@@ -636,6 +633,14 @@
           "component.menu",
           "menu",
           "presentation.component.menu"
+        ],
+        "Presentation.Component.Menu.html#render": [
+          "component.menu#rend",
+          "function",
+          "menu",
+          "menu#rend",
+          "presentation.component.menu#rend",
+          "render"
         ],
         "Presentation.Component.NotificationCenter.html": [
           "center",
@@ -1154,7 +1159,7 @@
           "xhrfields.withcredenti"
         ]
       },
-      "length": 95
+      "length": 96
     },
     "tokenStore": {
       "root": {
@@ -1413,74 +1418,6 @@
                                                                                                     "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html": {
                                                                                                       "ref": "Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html",
                                                                                                       "tf": 60
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          },
-                                                          "m": {
-                                                            "docs": {},
-                                                            "p": {
-                                                              "docs": {},
-                                                              "o": {
-                                                                "docs": {},
-                                                                "n": {
-                                                                  "docs": {},
-                                                                  "e": {
-                                                                    "docs": {},
-                                                                    "n": {
-                                                                      "docs": {},
-                                                                      "t": {
-                                                                        "docs": {},
-                                                                        ".": {
-                                                                          "docs": {},
-                                                                          "h": {
-                                                                            "docs": {},
-                                                                            "a": {
-                                                                              "docs": {},
-                                                                              "m": {
-                                                                                "docs": {},
-                                                                                "b": {
-                                                                                  "docs": {},
-                                                                                  "u": {
-                                                                                    "docs": {},
-                                                                                    "r": {
-                                                                                      "docs": {},
-                                                                                      "g": {
-                                                                                        "docs": {},
-                                                                                        "e": {
-                                                                                          "docs": {},
-                                                                                          "r": {
-                                                                                            "docs": {},
-                                                                                            "m": {
-                                                                                              "docs": {},
-                                                                                              "e": {
-                                                                                                "docs": {},
-                                                                                                "n": {
-                                                                                                  "docs": {},
-                                                                                                  "u": {
-                                                                                                    "docs": {
-                                                                                                      "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                                                                        "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
-                                                                                                        "tf": 50
-                                                                                                      }
                                                                                                     }
                                                                                                   }
                                                                                                 }
@@ -4219,13 +4156,37 @@
               "docs": {},
               "u": {
                 "docs": {
-                  "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                    "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                  "Presentation.Component.HamburgerMenu.html": {
+                    "ref": "Presentation.Component.HamburgerMenu.html",
                     "tf": 16.666666666666664
                   },
                   "Presentation.Component.Menu.html": {
                     "ref": "Presentation.Component.Menu.html",
                     "tf": 650
+                  },
+                  "Presentation.Component.Menu.html#render": {
+                    "ref": "Presentation.Component.Menu.html#render",
+                    "tf": 25
+                  }
+                },
+                "#": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "d": {
+                          "docs": {
+                            "Presentation.Component.Menu.html#render": {
+                              "ref": "Presentation.Component.Menu.html#render",
+                              "tf": 75
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -4947,74 +4908,6 @@
                                                                                                               }
                                                                                                             }
                                                                                                           }
-                                                                                                        },
-                                                                                                        "m": {
-                                                                                                          "docs": {},
-                                                                                                          "p": {
-                                                                                                            "docs": {},
-                                                                                                            "o": {
-                                                                                                              "docs": {},
-                                                                                                              "n": {
-                                                                                                                "docs": {},
-                                                                                                                "e": {
-                                                                                                                  "docs": {},
-                                                                                                                  "n": {
-                                                                                                                    "docs": {},
-                                                                                                                    "t": {
-                                                                                                                      "docs": {},
-                                                                                                                      ".": {
-                                                                                                                        "docs": {},
-                                                                                                                        "h": {
-                                                                                                                          "docs": {},
-                                                                                                                          "a": {
-                                                                                                                            "docs": {},
-                                                                                                                            "m": {
-                                                                                                                              "docs": {},
-                                                                                                                              "b": {
-                                                                                                                                "docs": {},
-                                                                                                                                "u": {
-                                                                                                                                  "docs": {},
-                                                                                                                                  "r": {
-                                                                                                                                    "docs": {},
-                                                                                                                                    "g": {
-                                                                                                                                      "docs": {},
-                                                                                                                                      "e": {
-                                                                                                                                        "docs": {},
-                                                                                                                                        "r": {
-                                                                                                                                          "docs": {},
-                                                                                                                                          "m": {
-                                                                                                                                            "docs": {},
-                                                                                                                                            "e": {
-                                                                                                                                              "docs": {},
-                                                                                                                                              "n": {
-                                                                                                                                                "docs": {},
-                                                                                                                                                "u": {
-                                                                                                                                                  "docs": {
-                                                                                                                                                    "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                                                                                                                      "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
-                                                                                                                                                      "tf": 1050
-                                                                                                                                                    }
-                                                                                                                                                  }
-                                                                                                                                                }
-                                                                                                                                              }
-                                                                                                                                            }
-                                                                                                                                          }
-                                                                                                                                        }
-                                                                                                                                      }
-                                                                                                                                    }
-                                                                                                                                  }
-                                                                                                                                }
-                                                                                                                              }
-                                                                                                                            }
-                                                                                                                          }
-                                                                                                                        }
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
                                                                                                         }
                                                                                                       }
                                                                                                     },
@@ -5360,9 +5253,9 @@
                                                                               "docs": {},
                                                                               "u": {
                                                                                 "docs": {
-                                                                                  "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                                                    "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
-                                                                                    "tf": 50
+                                                                                  "Presentation.Component.HamburgerMenu.html": {
+                                                                                    "ref": "Presentation.Component.HamburgerMenu.html",
+                                                                                    "tf": 1100
                                                                                   }
                                                                                 }
                                                                               }
@@ -5389,6 +5282,26 @@
                                                                 "Presentation.Component.Menu.html": {
                                                                   "ref": "Presentation.Component.Menu.html",
                                                                   "tf": 1100
+                                                                }
+                                                              },
+                                                              "#": {
+                                                                "docs": {},
+                                                                "r": {
+                                                                  "docs": {},
+                                                                  "e": {
+                                                                    "docs": {},
+                                                                    "n": {
+                                                                      "docs": {},
+                                                                      "d": {
+                                                                        "docs": {
+                                                                          "Presentation.Component.Menu.html#render": {
+                                                                            "ref": "Presentation.Component.Menu.html#render",
+                                                                            "tf": 1075
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
                                                                 }
                                                               }
                                                             }
@@ -7965,6 +7878,10 @@
                         "ref": "Presentation.Component.Article.html#render",
                         "tf": 708.3333333333334
                       },
+                      "Presentation.Component.Menu.html#render": {
+                        "ref": "Presentation.Component.Menu.html#render",
+                        "tf": 700
+                      },
                       "Presentation.DecoratorView.html": {
                         "ref": "Presentation.DecoratorView.html",
                         "tf": 0.8333333333333334
@@ -9139,8 +9056,8 @@
                       "ref": "Presentation.Component.Header.html",
                       "tf": 110
                     },
-                    "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                      "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                    "Presentation.Component.HamburgerMenu.html": {
+                      "ref": "Presentation.Component.HamburgerMenu.html",
                       "tf": 110
                     },
                     "Presentation.Component.Menu.html": {
@@ -10395,74 +10312,6 @@
                                                                                     }
                                                                                   }
                                                                                 }
-                                                                              },
-                                                                              "m": {
-                                                                                "docs": {},
-                                                                                "p": {
-                                                                                  "docs": {},
-                                                                                  "o": {
-                                                                                    "docs": {},
-                                                                                    "n": {
-                                                                                      "docs": {},
-                                                                                      "e": {
-                                                                                        "docs": {},
-                                                                                        "n": {
-                                                                                          "docs": {},
-                                                                                          "t": {
-                                                                                            "docs": {},
-                                                                                            ".": {
-                                                                                              "docs": {},
-                                                                                              "h": {
-                                                                                                "docs": {},
-                                                                                                "a": {
-                                                                                                  "docs": {},
-                                                                                                  "m": {
-                                                                                                    "docs": {},
-                                                                                                    "b": {
-                                                                                                      "docs": {},
-                                                                                                      "u": {
-                                                                                                        "docs": {},
-                                                                                                        "r": {
-                                                                                                          "docs": {},
-                                                                                                          "g": {
-                                                                                                            "docs": {},
-                                                                                                            "e": {
-                                                                                                              "docs": {},
-                                                                                                              "r": {
-                                                                                                                "docs": {},
-                                                                                                                "m": {
-                                                                                                                  "docs": {},
-                                                                                                                  "e": {
-                                                                                                                    "docs": {},
-                                                                                                                    "n": {
-                                                                                                                      "docs": {},
-                                                                                                                      "u": {
-                                                                                                                        "docs": {
-                                                                                                                          "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                                                                                            "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
-                                                                                                                            "tf": 50
-                                                                                                                          }
-                                                                                                                        }
-                                                                                                                      }
-                                                                                                                    }
-                                                                                                                  }
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      }
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  }
-                                                                                }
                                                                               }
                                                                             }
                                                                           },
@@ -10808,9 +10657,9 @@
                                                     "docs": {},
                                                     "u": {
                                                       "docs": {
-                                                        "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                                                          "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
-                                                          "tf": 50
+                                                        "Presentation.Component.HamburgerMenu.html": {
+                                                          "ref": "Presentation.Component.HamburgerMenu.html",
+                                                          "tf": 200
                                                         }
                                                       }
                                                     }
@@ -10837,6 +10686,26 @@
                                       "Presentation.Component.Menu.html": {
                                         "ref": "Presentation.Component.Menu.html",
                                         "tf": 200
+                                      }
+                                    },
+                                    "#": {
+                                      "docs": {},
+                                      "r": {
+                                        "docs": {},
+                                        "e": {
+                                          "docs": {},
+                                          "n": {
+                                            "docs": {},
+                                            "d": {
+                                              "docs": {
+                                                "Presentation.Component.Menu.html#render": {
+                                                  "ref": "Presentation.Component.Menu.html#render",
+                                                  "tf": 75
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
                                       }
                                     }
                                   }
@@ -12729,8 +12598,8 @@
                     "docs": {},
                     "g": {
                       "docs": {
-                        "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                          "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                        "Presentation.Component.HamburgerMenu.html": {
+                          "ref": "Presentation.Component.HamburgerMenu.html",
                           "tf": 16.666666666666664
                         }
                       },
@@ -12746,9 +12615,9 @@
                                 "docs": {},
                                 "u": {
                                   "docs": {
-                                    "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                                      "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
-                                      "tf": 650
+                                    "Presentation.Component.HamburgerMenu.html": {
+                                      "ref": "Presentation.Component.HamburgerMenu.html",
+                                      "tf": 600
                                     }
                                   }
                                 }
@@ -13526,8 +13395,8 @@
                     "ref": "Presentation.Component.AutomaticForm.html",
                     "tf": 8.333333333333332
                   },
-                  "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-                    "ref": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+                  "Presentation.Component.HamburgerMenu.html": {
+                    "ref": "Presentation.Component.HamburgerMenu.html",
                     "tf": 16.666666666666664
                   },
                   "Presentation.Component.Toolbar.html": {
@@ -14166,6 +14035,10 @@
                           },
                           "Presentation.Component.Article.html#render": {
                             "ref": "Presentation.Component.Article.html#render",
+                            "tf": 110
+                          },
+                          "Presentation.Component.Menu.html#render": {
+                            "ref": "Presentation.Component.Menu.html#render",
                             "tf": 110
                           },
                           "Presentation.Colleague.html#.delegateEvents": {
@@ -15193,7 +15066,7 @@
           }
         }
       },
-      "length": 957
+      "length": 960
     },
     "corpusTokens": [
       "10",
@@ -15228,7 +15101,6 @@
       "augmented.applicationadd",
       "augmented.j",
       "augmented.localstoragefactoryretriev",
-      "augmented.presentation.component.hamburgermenu",
       "augmented.presentation.confirmationdialogview",
       "augmented.presentation.localstoraget",
       "auto",
@@ -15288,7 +15160,6 @@
       "component.article#head",
       "component.article#rend",
       "component.article#sect",
-      "component.augmented.presentation.component.hamburgermenu",
       "component.augmented.presentation.confirmationdialogview",
       "component.augmented.presentation.localstoraget",
       "component.automaticform",
@@ -15305,6 +15176,7 @@
       "component.header.header#subtitl",
       "component.header.header#titl",
       "component.menu",
+      "component.menu#rend",
       "component.notificationcent",
       "component.spreadsheet",
       "component.toolbar",
@@ -15459,6 +15331,7 @@
       "mediator.unsubscrib",
       "member",
       "menu",
+      "menu#rend",
       "messag",
       "method",
       "model",
@@ -15529,7 +15402,6 @@
       "presentation.component.article#head",
       "presentation.component.article#rend",
       "presentation.component.article#sect",
-      "presentation.component.augmented.presentation.component.hamburgermenu",
       "presentation.component.augmented.presentation.confirmationdialogview",
       "presentation.component.augmented.presentation.localstoraget",
       "presentation.component.automaticform",
@@ -15546,6 +15418,7 @@
       "presentation.component.header.header#subtitl",
       "presentation.component.header.header#titl",
       "presentation.component.menu",
+      "presentation.component.menu#rend",
       "presentation.component.notificationcent",
       "presentation.component.spreadsheet",
       "presentation.component.toolbar",
@@ -16249,13 +16122,13 @@
       "summary": "",
       "description": "A subTitle property"
     },
-    "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html": {
-      "id": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html",
+    "Presentation.Component.HamburgerMenu.html": {
+      "id": "Presentation.Component.HamburgerMenu.html",
       "kind": "class",
-      "title": "HamburgerMenu",
-      "longname": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu",
+      "title": ".Component.HamburgerMenu",
+      "longname": "Presentation.Component.HamburgerMenu",
       "name": "HamburgerMenu",
-      "tags": "Presentation.Component.Augmented.Presentation.Component.HamburgerMenu Component.Augmented.Presentation.Component.HamburgerMenu Augmented.Presentation.Component.HamburgerMenu Presentation.Component.HamburgerMenu Component.HamburgerMenu HamburgerMenu",
+      "tags": "Presentation.Component.HamburgerMenu Component.HamburgerMenu HamburgerMenu",
       "summary": "",
       "description": "A Hamburger Menu View",
       "body": ""
@@ -16270,6 +16143,16 @@
       "summary": "",
       "description": "A Menu",
       "body": ""
+    },
+    "Presentation.Component.Menu.html#render": {
+      "id": "Presentation.Component.Menu.html#render",
+      "kind": "function",
+      "title": "render()",
+      "longname": "Presentation.Component.Menu#render",
+      "name": "render",
+      "tags": "Presentation.Component.Menu#render Component.Menu#render Menu#render render",
+      "summary": "",
+      "description": "Renders the Menu"
     },
     "Presentation.Component.NotificationCenter.html": {
       "id": "Presentation.Component.NotificationCenter.html",

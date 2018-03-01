@@ -74,7 +74,6 @@
 										<li><a href="Presentation.Component.AbstractToolbar.html">Presentation.Component.AbstractToolbar</a></li>
 										<li><a href="Presentation.Component.AlertDialogView.html">Presentation.Component.AlertDialogView</a></li>
 										<li><a href="Presentation.Component.Article.html">Presentation.Component.Article</a></li>
-										<li><a href="Presentation.Component.Augmented.Presentation.Component.HamburgerMenu.html">Presentation.Component.Augmented.Presentation.Component.HamburgerMenu</a></li>
 										<li><a href="Presentation.Component.Augmented.Presentation.ConfirmationDialogView.html">Presentation.Component.Augmented.Presentation.ConfirmationDialogView</a></li>
 										<li><a href="Presentation.Component.Augmented.Presentation.LocalStorageTable.html">Presentation.Component.Augmented.Presentation.LocalStorageTable</a></li>
 										<li><a href="Presentation.Component.AutomaticForm.html">Presentation.Component.AutomaticForm</a></li>
@@ -86,6 +85,7 @@
 										<li><a href="Presentation.Component.EditableLocalStorageTable.html">Presentation.Component.EditableLocalStorageTable</a></li>
 										<li><a href="Presentation.Component.EditableTable.html">Presentation.Component.EditableTable</a></li>
 										<li><a href="Presentation.Component.Footer.html">Presentation.Component.Footer</a></li>
+										<li><a href="Presentation.Component.HamburgerMenu.html">Presentation.Component.HamburgerMenu</a></li>
 										<li><a href="Presentation.Component.Header.html">Presentation.Component.Header</a></li>
 										<li><a href="Presentation.Component.Header.html">Presentation.Component.Header</a></li>
 										<li><a href="Presentation.Component.Menu.html">Presentation.Component.Menu</a></li>
@@ -405,7 +405,8 @@ class DecoratorView extends Colleague {
   syncAllBoundElements() {
     const ba = this.bindingAttribute();
     if (this.el &amp;&amp; ba) {
-      const elements = this.el.querySelectorAll(`[${ba}]`);
+      const elements = document.querySelectorAll(`${this.el}[${ba}]`);
+      //console.debug(`Elements ${elements}`);
       if (elements &amp;&amp; elements.length > 0) {
         let i = 0, l = elements.length, event = new UIEvent("change", {
           "view": window,
@@ -416,9 +417,9 @@ class DecoratorView extends Colleague {
           elements[i].dispatchEvent(event);
         }
       }
-    } else {
+    } /*else {
       console.warn(`No bound element ${this.el} or binding attribute - ${ba}`);
-    }
+    }*/
   };
   /**
    * addClass - adds a class to a bount element

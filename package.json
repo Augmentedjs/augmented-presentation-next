@@ -1,6 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.0.0-alpha.40",
+  "version": "2.0.0-alpha.41",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^7.1.3",
     "babel-plugin-istanbul": "^4.1.5",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
@@ -37,8 +37,8 @@
     "mocha": "^4.1.0",
     "mocha-jsdom": "^1.1.0",
     "node-localstorage": "^1.3.0",
-    "sinon": "^4.3.0",
-    "uglifyjs-webpack-plugin": "^1.1.8",
+    "sinon": "^4.4.2",
+    "uglifyjs-webpack-plugin": "^1.2.2",
     "webpack": "^3.11.0",
     "webpack-config-utils": "^2.3.0"
   },

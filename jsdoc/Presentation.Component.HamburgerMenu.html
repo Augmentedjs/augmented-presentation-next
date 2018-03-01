@@ -1,10 +1,9 @@
-<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>widget/widget.js</title>
+		<title>.Component.HamburgerMenu</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -43,7 +42,7 @@
 			</style>
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"ddd MMM Do YYYY","systemName":"Augmented.js","systemSummary":"Augmented.js 2 Presentation - Elegant Developement made simple.","systemLogo":"img/logo.png","systemColor":"#2196F3","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":true,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"logoFile":"public/images/logo.png","navType":"vertical","protocol":"html://"};
-			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_TOC_ENABLED = true;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -141,243 +140,71 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">source</span>
-				<h1><span class="name">widget/widget.js</span></h1>
+				<span class="kind">class</span>
+				<h1><span class="ancestors"><a href="Presentation.Component.html">.Component</a>.</span><span class="name">HamburgerMenu</span></h1>
 			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-12 main-content">
-		<section class="source-section">
-			<article></article>
-			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import Augmented from "augmentedjs-next";
-
-/**
- * Widgets and small presentation modules
- * @class Widget
- * @memberof Presentation
- */
-class Widget {
-  constructor() {
-  };
-
-  /**
-   * List widget - renders a standard list
-   * @method List
-   * @param {string} id The id of the parent to attach the list
-   * @param {Array} data The data to render
-   * @param {boolean} ordered True if the list should be ordered
-   * @param {string} binding The binding (used for decorator and optional)
-   * @returns {Element} Returns a DOM element as a list
-   * @memberof Presentation.Widget
-   */
-  static List(id, data, ordered, binding) {
-    let list = (ordered) ? document.createElement("ol") : document.createElement("ul"), i = 0, l, li, t, d;
-    if (id) {
-      list.setAttribute("id", id);
-    }
-
-    if (binding &amp;&amp; id) {
-      list.setAttribute("data-" + binding, id);
-    }
-
-    if (data &amp;&amp; Array.isArray(data)) {
-      l = data.length;
-      for (i = 0; i &lt; l; i++) {
-        li = document.createElement("li");
-        li.setAttribute("data-index", i);
-        t = document.createTextNode(String(data[i]));
-        li.appendChild(t);
-        list.appendChild(li);
-      }
-    }
-    return list;
-  };
-  /**
-   * DescriptionList widget - renders a description list
-   * @method DescriptionList
-   * @param {string} id The id of the parent to attach the list
-   * @param {Object} data The data to render
-   * @param {string} binding The binding (used for decorator and optional)
-   * @returns {Element} Returns a DOM element as a description list
-   * @memberof Presentation.Widget
-   */
-  static DescriptionList(id, data, binding) {
-    let list = document.createElement("dl"), i = 0, l, dd, dt, t, keys, key;
-    if (id) {
-      list.setAttribute("id", id);
-    }
-
-    if (binding &amp;&amp; id) {
-      list.setAttribute("data-" + binding, id);
-    }
-
-    if (data &amp;&amp; Augmented.isObject(data)) {
-      keys = Object.keys(data);
-      l = keys.length;
-      for (i = 0; i &lt; l; i++) {
-        dt = document.createElement("dt");
-        t = document.createTextNode(String(keys[i]));
-        dt.appendChild(t);
-        list.appendChild(dt);
-
-        key = data[keys[i]];
-        dd = document.createElement("dd");
-        t = document.createTextNode(String(key));
-        dd.appendChild(t);
-        list.appendChild(dd);
-      }
-    }
-    return list;
-  };
-  /**
-   * DataList widget - renders a data list
-   * @method DataList
-   * @param {string} id The id of the parent to attach the list
-   * @param {Array} data The data to render
-   * @param {string} binding The binding (used for decorator and optional)
-   * @returns {Element} Returns a DOM element as a data list
-   * @memberof Presentation.Widget
-   */
-  static DataList(id, data, binding) {
-    let list = document.createElement("datalist"), i = 0, l, o;
-    if (id) {
-      list.setAttribute("id", id);
-    }
-
-    if (binding &amp;&amp; id) {
-      list.setAttribute("data-" + binding, id);
-    }
-
-    if (data &amp;&amp; Array.isArray(data)) {
-      l = data.length;
-      for (i = 0; i &lt; l; i++) {
-        o = document.createElement("option");
-        o.value = String(data[i]);
-        list.appendChild(o);
-      }
-    }
-    return list;
-  };
-  /**
-   * Input widget - renders an input or simular based on type
-   * @method Input
-   * @param {object} field Field property object (required)
-   * @param {string} name The name of the field
-   * @param {string} value The value to preset
-   * @param {string} id The id of the field
-   * @param {boolean} required If the field is required
-   * @param {string} binding The binding (used for decorator and optional)
-   * @returns {Element} Returns a DOM element as an input
-   * @memberof Presentation.Widget
-   */
-  static Input(field, name, value, id, required, binding) {
-    if (!field) {
-      return null;
-    }
-    let input, dobj = ((value) ? value : ""), cobj = field, t = field.type;
-
-    if (t === "object") {
-      if (Array.isArray(dobj)) {
-        let iii = 0, lll = dobj.length, option, tOption;
-        input = document.createElement("select");
-        for (iii = 0; iii &lt; lll; iii++) {
-          option = document.createElement("option");
-          option.setAttribute("value", dobj[iii]);
-          tOption = document.createTextNode(dobj[iii]);
-          option.appendChild(tOption);
-          input.appendChild(option);
-        }
-      } else {
-        input = document.createElement("textarea");
-        input.value = JSON.stringify(dobj);
-      }
-    } else if (t === "boolean") {
-      input = document.createElement("input");
-      input.setAttribute("type", "checkbox");
-      if (dobj === true) {
-        input.setAttribute("checked", "checked");
-      }
-      input.value = dobj;
-    } else if (t === "number" || t === "integer") {
-      input = document.createElement("input");
-      input.setAttribute("type", "number");
-      input.value = dobj;
-    } else if (t === "string" &amp;&amp; cobj.enum) {
-      input = document.createElement("select");
-      let iiii = 0, llll = cobj.enum.length, option2, tOption2;
-      for (iiii = 0; iiii &lt; llll; iiii++) {
-        option2 = document.createElement("option");
-        option2.setAttribute("value", cobj.enum[iiii]);
-        tOption2 = document.createTextNode(cobj.enum[iiii]);
-        if (dobj === cobj.enum[iiii]) {
-          option2.setAttribute("selected", "selected");
-        }
-        option2.appendChild(tOption2);
-        input.appendChild(option2);
-      }
-    } else if (t === "string" &amp;&amp; (cobj.format === "email")) {
-      input = document.createElement("input");
-      input.setAttribute("type", "email");
-      input.value = dobj;
-    } else if (t === "string" &amp;&amp; (cobj.format === "uri")) {
-      input = document.createElement("input");
-      input.setAttribute("type", "url");
-      input.value = dobj;
-    } else if (t === "string" &amp;&amp; (cobj.format === "date-time")) {
-      input = document.createElement("input");
-      input.setAttribute("type", "datetime");
-      input.value = dobj;
-    } else {
-      input = document.createElement("input");
-      input.setAttribute("type", "text");
-      input.value = dobj;
-    }
-
-    if (t === "string" &amp;&amp; cobj.pattern) {
-      input.setAttribute("pattern", cobj.pattern);
-    }
-
-    if (cobj.minimum) {
-      input.setAttribute("min", cobj.minimum);
-    }
-
-    if (cobj.maximum) {
-      input.setAttribute("max", cobj.maximum);
-    }
-
-    if (t === "string" &amp;&amp; cobj.minlength) {
-      input.setAttribute("minlength", cobj.minlength);
-    }
-
-    if (t === "string" &amp;&amp; cobj.maxlength) {
-      input.setAttribute("maxlength", cobj.maxlength);
-    }
-
-    if (required) {
-      input.setAttribute("required", "true");
-    }
-
-    if (name) {
-      input.setAttribute("name", name);
-    }
-
-    if (id) {
-      input.setAttribute("id", id);
-    }
-
-    if (binding &amp;&amp; name) {
-      input.setAttribute("data-" + binding, name);
-    }
-
-    return input;
-  };
-};
-
-export default Widget;
-</code></pre>
-		</section>
+			<div class="col-md-9 main-content">
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="list_class.html">Classes</a></li>
+							<li class="active"><a href="Presentation.Component.html">.Component</a>.HamburgerMenu</li>
+						</ol>
+					<section>
+							<dl class="symbol primary">
+								<dt class="symbol-title class">
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">HamburgerMenu</span><span class="signature-params">()</span></h2>
+</dt>
+<dd class="symbol-details class" style="max-height: 9999px;">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>A Hamburger Menu View</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+							<!-- augments -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Augments</label>
+								<div class="col-sm-9">
+										<p class="form-control-static">Presentation.AbstractToolbar</p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="view_component_menu_hamburgerMenu.js.html">view/component/menu/hamburgerMenu.js</a>, <a href="view_component_menu_hamburgerMenu.js.html#line-24">line 24</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+							</dl>
+							<article class="secondary">
+							</article>
+					</section>
 			</div>
+				<div class="col-md-3 side-content">
+					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
+				</div>
 		</div>
 	</div>
 	<footer>
@@ -409,4 +236,3 @@ export default Widget;
 	
 </body>
 </html>
-<!-- end:source.tmpl.hbs -->

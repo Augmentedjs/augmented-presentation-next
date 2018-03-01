@@ -19,7 +19,6 @@ const buildMenu = (name, title, menuItems) => {
 
 /**
  * A Menu
- * @class Menu
  * @memberof Presentation.Component
  * @extends Presentation.AbstractToolbar
  */
@@ -34,8 +33,7 @@ class Menu extends AbstractToolbar {
     super(options);
   };
   /**
-   * @method render Renders the Menu
-   * @memberof Menu
+   * Renders the Menu
    * @returns {object} Returns the view context ('this')
    */
   render() {
