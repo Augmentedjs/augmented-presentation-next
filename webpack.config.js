@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+//const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: './src/presentation.js',
@@ -14,13 +15,12 @@ module.exports = {
     umdNamedDefine: true
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'stage-2']
+        use: {
+          loader: "babel-loader"
         }
       }
     ]
@@ -31,6 +31,7 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new UglifyJsPlugin({
+    sourceMap: true,
     uglifyOptions: {
       ie8: false,
       ecma: 8
@@ -38,3 +39,29 @@ module.exports = {
   })
   ]
 };
+
+/*
+{
+  test: /\.html$/,
+  use: [
+    {
+      loader: "html-loader",
+      options: { minimize: true }
+    }
+  ]
+}
+*/
+/*
+plugins: [
+  new HtmlWebPackPlugin({
+    template: "./public/index.html",
+    filename: "./public/out.html"
+  }),
+  new UglifyJsPlugin({
+  uglifyOptions: {
+    ie8: false,
+    ecma: 8
+  }
+})
+]
+*/

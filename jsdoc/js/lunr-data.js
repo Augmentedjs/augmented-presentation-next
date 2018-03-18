@@ -642,6 +642,22 @@ window.lunrData = {
           "presentation.component.menu#rend",
           "render"
         ],
+        "Presentation.Component.NavigationMenu.html": [
+          "class",
+          "component.navigationmenu",
+          "menu",
+          "navig",
+          "navigationmenu",
+          "presentation.component.navigationmenu"
+        ],
+        "Presentation.Component.NavigationMenu.html#render": [
+          "component.navigationmenu#rend",
+          "function",
+          "menu",
+          "navigationmenu#rend",
+          "presentation.component.navigationmenu#rend",
+          "render"
+        ],
         "Presentation.Component.NotificationCenter.html": [
           "center",
           "class",
@@ -1159,7 +1175,7 @@ window.lunrData = {
           "xhrfields.withcredenti"
         ]
       },
-      "length": 96
+      "length": 98
     },
     "tokenStore": {
       "root": {
@@ -4167,6 +4183,14 @@ window.lunrData = {
                   "Presentation.Component.Menu.html#render": {
                     "ref": "Presentation.Component.Menu.html#render",
                     "tf": 25
+                  },
+                  "Presentation.Component.NavigationMenu.html": {
+                    "ref": "Presentation.Component.NavigationMenu.html",
+                    "tf": 25
+                  },
+                  "Presentation.Component.NavigationMenu.html#render": {
+                    "ref": "Presentation.Component.NavigationMenu.html#render",
+                    "tf": 25
                   }
                 },
                 "#": {
@@ -5310,6 +5334,70 @@ window.lunrData = {
                                                       },
                                                       "n": {
                                                         "docs": {},
+                                                        "a": {
+                                                          "docs": {},
+                                                          "v": {
+                                                            "docs": {},
+                                                            "i": {
+                                                              "docs": {},
+                                                              "g": {
+                                                                "docs": {},
+                                                                "a": {
+                                                                  "docs": {},
+                                                                  "t": {
+                                                                    "docs": {},
+                                                                    "i": {
+                                                                      "docs": {},
+                                                                      "o": {
+                                                                        "docs": {},
+                                                                        "n": {
+                                                                          "docs": {},
+                                                                          "m": {
+                                                                            "docs": {},
+                                                                            "e": {
+                                                                              "docs": {},
+                                                                              "n": {
+                                                                                "docs": {},
+                                                                                "u": {
+                                                                                  "docs": {
+                                                                                    "Presentation.Component.NavigationMenu.html": {
+                                                                                      "ref": "Presentation.Component.NavigationMenu.html",
+                                                                                      "tf": 1100
+                                                                                    }
+                                                                                  },
+                                                                                  "#": {
+                                                                                    "docs": {},
+                                                                                    "r": {
+                                                                                      "docs": {},
+                                                                                      "e": {
+                                                                                        "docs": {},
+                                                                                        "n": {
+                                                                                          "docs": {},
+                                                                                          "d": {
+                                                                                            "docs": {
+                                                                                              "Presentation.Component.NavigationMenu.html#render": {
+                                                                                                "ref": "Presentation.Component.NavigationMenu.html#render",
+                                                                                                "tf": 1075
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        },
                                                         "o": {
                                                           "docs": {},
                                                           "t": {
@@ -7882,6 +7970,10 @@ window.lunrData = {
                         "ref": "Presentation.Component.Menu.html#render",
                         "tf": 700
                       },
+                      "Presentation.Component.NavigationMenu.html#render": {
+                        "ref": "Presentation.Component.NavigationMenu.html#render",
+                        "tf": 700
+                      },
                       "Presentation.DecoratorView.html": {
                         "ref": "Presentation.DecoratorView.html",
                         "tf": 0.8333333333333334
@@ -9062,6 +9154,10 @@ window.lunrData = {
                     },
                     "Presentation.Component.Menu.html": {
                       "ref": "Presentation.Component.Menu.html",
+                      "tf": 110
+                    },
+                    "Presentation.Component.NavigationMenu.html": {
+                      "ref": "Presentation.Component.NavigationMenu.html",
                       "tf": 110
                     },
                     "Presentation.Component.NotificationCenter.html": {
@@ -10714,6 +10810,70 @@ window.lunrData = {
                             },
                             "n": {
                               "docs": {},
+                              "a": {
+                                "docs": {},
+                                "v": {
+                                  "docs": {},
+                                  "i": {
+                                    "docs": {},
+                                    "g": {
+                                      "docs": {},
+                                      "a": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {},
+                                          "i": {
+                                            "docs": {},
+                                            "o": {
+                                              "docs": {},
+                                              "n": {
+                                                "docs": {},
+                                                "m": {
+                                                  "docs": {},
+                                                  "e": {
+                                                    "docs": {},
+                                                    "n": {
+                                                      "docs": {},
+                                                      "u": {
+                                                        "docs": {
+                                                          "Presentation.Component.NavigationMenu.html": {
+                                                            "ref": "Presentation.Component.NavigationMenu.html",
+                                                            "tf": 200
+                                                          }
+                                                        },
+                                                        "#": {
+                                                          "docs": {},
+                                                          "r": {
+                                                            "docs": {},
+                                                            "e": {
+                                                              "docs": {},
+                                                              "n": {
+                                                                "docs": {},
+                                                                "d": {
+                                                                  "docs": {
+                                                                    "Presentation.Component.NavigationMenu.html#render": {
+                                                                      "ref": "Presentation.Component.NavigationMenu.html#render",
+                                                                      "tf": 75
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
                               "o": {
                                 "docs": {},
                                 "t": {
@@ -12109,6 +12269,72 @@ window.lunrData = {
                               "Presentation.History.html": {
                                 "ref": "Presentation.History.html",
                                 "tf": 2.380952380952381
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "v": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "g": {
+                  "docs": {
+                    "Presentation.Component.NavigationMenu.html": {
+                      "ref": "Presentation.Component.NavigationMenu.html",
+                      "tf": 25
+                    }
+                  },
+                  "a": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "m": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "n": {
+                                  "docs": {},
+                                  "u": {
+                                    "docs": {
+                                      "Presentation.Component.NavigationMenu.html": {
+                                        "ref": "Presentation.Component.NavigationMenu.html",
+                                        "tf": 600
+                                      }
+                                    },
+                                    "#": {
+                                      "docs": {},
+                                      "r": {
+                                        "docs": {},
+                                        "e": {
+                                          "docs": {},
+                                          "n": {
+                                            "docs": {},
+                                            "d": {
+                                              "docs": {
+                                                "Presentation.Component.NavigationMenu.html#render": {
+                                                  "ref": "Presentation.Component.NavigationMenu.html#render",
+                                                  "tf": 75
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
                               }
                             }
                           }
@@ -14041,6 +14267,10 @@ window.lunrData = {
                             "ref": "Presentation.Component.Menu.html#render",
                             "tf": 110
                           },
+                          "Presentation.Component.NavigationMenu.html#render": {
+                            "ref": "Presentation.Component.NavigationMenu.html#render",
+                            "tf": 110
+                          },
                           "Presentation.Colleague.html#.delegateEvents": {
                             "ref": "Presentation.Colleague.html#.delegateEvents",
                             "tf": 110
@@ -15066,7 +15296,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 960
+      "length": 972
     },
     "corpusTokens": [
       "10",
@@ -15177,6 +15407,8 @@ window.lunrData = {
       "component.header.header#titl",
       "component.menu",
       "component.menu#rend",
+      "component.navigationmenu",
+      "component.navigationmenu#rend",
       "component.notificationcent",
       "component.spreadsheet",
       "component.toolbar",
@@ -15346,6 +15578,9 @@ window.lunrData = {
       "namespacedlocalstorag",
       "namespacedlocalstorageretriev",
       "natch),fal",
+      "navig",
+      "navigationmenu",
+      "navigationmenu#rend",
       "neg",
       "new",
       "next",
@@ -15419,6 +15654,8 @@ window.lunrData = {
       "presentation.component.header.header#titl",
       "presentation.component.menu",
       "presentation.component.menu#rend",
+      "presentation.component.navigationmenu",
+      "presentation.component.navigationmenu#rend",
       "presentation.component.notificationcent",
       "presentation.component.spreadsheet",
       "presentation.component.toolbar",
@@ -16151,6 +16388,27 @@ window.lunrData = {
       "longname": "Presentation.Component.Menu#render",
       "name": "render",
       "tags": "Presentation.Component.Menu#render Component.Menu#render Menu#render render",
+      "summary": "",
+      "description": "Renders the Menu"
+    },
+    "Presentation.Component.NavigationMenu.html": {
+      "id": "Presentation.Component.NavigationMenu.html",
+      "kind": "class",
+      "title": ".Component.NavigationMenu",
+      "longname": "Presentation.Component.NavigationMenu",
+      "name": "NavigationMenu",
+      "tags": "Presentation.Component.NavigationMenu Component.NavigationMenu NavigationMenu",
+      "summary": "",
+      "description": "A Navigation Menu",
+      "body": ""
+    },
+    "Presentation.Component.NavigationMenu.html#render": {
+      "id": "Presentation.Component.NavigationMenu.html#render",
+      "kind": "function",
+      "title": "render()",
+      "longname": "Presentation.Component.NavigationMenu#render",
+      "name": "render",
+      "tags": "Presentation.Component.NavigationMenu#render Component.NavigationMenu#render NavigationMenu#render render",
       "summary": "",
       "description": "Renders the Menu"
     },
