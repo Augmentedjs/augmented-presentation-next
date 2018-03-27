@@ -32,21 +32,20 @@ class NavigationMenu extends AbstractToolbar {
    * @returns {object} Returns the view context ('this')
    */
   render() {
-    if (!this.isInitalized) {
-      return this;
-    }
-    this.template = null;//"notused";
-    if (this.el) {
-      const e = Dom.selector(this.el);
-      if (e) {
-        // the menu
-        //Dom.addClass(e, "menu");
-        e.setAttribute("data-" + this.name, "navigation-menu");
-        e.innerHTML = buildMenu(this.name, this.menuItems);
+    if (this.isInitalized) {
+      this.template = null;//"notused";
+      if (this.el) {
+        const e = Dom.selector(this.el);
+        if (e) {
+          // the menu
+          //Dom.addClass(e, "menu");
+          e.setAttribute("data-" + this.name, "navigation-menu");
+          e.innerHTML = buildMenu(this.name, this.menuItems);
+        }
+        this.delegateEvents();
+        this.syncAllBoundElements();
       }
-      this.delegateEvents();
-      this.syncAllBoundElements();
-    }
+    };
     return this;
   };
 };

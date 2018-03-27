@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+//const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 //const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -29,17 +29,8 @@ module.exports = {
     colors: true
   },
   devtool: 'source-map',
-  plugins: [
-    new UglifyJsPlugin({
-    sourceMap: true,
-    uglifyOptions: {
-      ie8: false,
-      ecma: 8
-    }
-  })
-  ]
+  plugins: []
 };
-
 /*
 {
   test: /\.html$/,
