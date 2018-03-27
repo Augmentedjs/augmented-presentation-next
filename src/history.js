@@ -240,16 +240,16 @@ class History extends Augmented.Object {
       return false;
     }
     fragment = this.fragment = this.getFragment(fragment);
-    console.log("loadUrl", fragment);
-    console.log("this.handlers", this.handlers);
+    //console.log("loadUrl", fragment);
+    //console.log("this.handlers", this.handlers);
     if (this.handlers && Array.isArray(this.handlers)) {
       return this.handlers.some((handler) => {
-        console.log("handler", handler);
+        //console.log("handler", handler);
         if (handler.route.test(fragment)) {
-          console.log("handler.callback", handler.callback);
-          console.log("is func", typeof handler.callback);
+          //console.log("handler.callback", handler.callback);
+          //console.log("is func", typeof handler.callback);
           handler.callback(fragment);
-          console.log("test", handler.route.test(fragment));
+          //console.log("test", handler.route.test(fragment));
           return true;
         }
       });

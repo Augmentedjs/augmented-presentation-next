@@ -46,3 +46,4 @@ The **Presentation** extension adds extensive abilities to the presentation laye
   - Hamburger Menu
   - Toolbar
   - Header
+  - Navigation
