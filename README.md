@@ -1,7 +1,7 @@
 # Augmented.js Next Presentation
 ## The Augmented.js Framework Presentation Module
-### Version 2.0.0-alpha
-### Faridah Malik
+### Version 2.0.0
+### JC Denton
 **aug·ment·ed**
 /ˌôɡˈmentəd /
 *adjective*
