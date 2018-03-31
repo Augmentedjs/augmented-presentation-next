@@ -599,25 +599,27 @@
           "manag",
           "presentation.component.head"
         ],
-        "Presentation.Component.Header.html#.Header#title": [
-          "component.header.header#titl",
+        "Presentation.Component.Header.html#title": [
+          "component.header#titl",
           "header#titl",
-          "header.header#titl",
-          "lt;static&gt",
           "member",
-          "presentation.component.header.header#titl",
-          "properti",
+          "presentation.component.header#titl",
           "titl"
         ],
-        "Presentation.Component.Header.html#.Header#subTitle": [
-          "component.header.header#subtitl",
+        "Presentation.Component.Header.html#subTitle": [
+          "component.header#subtitl",
           "header#subtitl",
-          "header.header#subtitl",
-          "lt;static&gt",
           "member",
-          "presentation.component.header.header#subtitl",
-          "properti",
+          "presentation.component.header#subtitl",
           "subtitl"
+        ],
+        "Presentation.Component.Header.html#render": [
+          "component.header#rend",
+          "function",
+          "header",
+          "header#rend",
+          "presentation.component.header#rend",
+          "render"
         ],
         "Presentation.Component.HamburgerMenu.html": [
           "class",
@@ -1175,7 +1177,7 @@
           "xhrfields.withcredenti"
         ]
       },
-      "length": 98
+      "length": 99
     },
     "tokenStore": {
       "root": {
@@ -4130,12 +4132,12 @@
                         "ref": "Presentation.Component.Article.html#sections",
                         "tf": 110
                       },
-                      "Presentation.Component.Header.html#.Header#title": {
-                        "ref": "Presentation.Component.Header.html#.Header#title",
+                      "Presentation.Component.Header.html#title": {
+                        "ref": "Presentation.Component.Header.html#title",
                         "tf": 110
                       },
-                      "Presentation.Component.Header.html#.Header#subTitle": {
-                        "ref": "Presentation.Component.Header.html#.Header#subTitle",
+                      "Presentation.Component.Header.html#subTitle": {
+                        "ref": "Presentation.Component.Header.html#subTitle",
                         "tf": 110
                       },
                       "Presentation.Pagination.html#.PAGINATION_API_TYPE": {
@@ -5181,66 +5183,62 @@
                                                                 "docs": {},
                                                                 "r": {
                                                                   "docs": {},
-                                                                  ".": {
+                                                                  "#": {
                                                                     "docs": {},
-                                                                    "h": {
+                                                                    "t": {
                                                                       "docs": {},
-                                                                      "e": {
+                                                                      "i": {
                                                                         "docs": {},
-                                                                        "a": {
+                                                                        "t": {
                                                                           "docs": {},
-                                                                          "d": {
+                                                                          "l": {
+                                                                            "docs": {
+                                                                              "Presentation.Component.Header.html#title": {
+                                                                                "ref": "Presentation.Component.Header.html#title",
+                                                                                "tf": 1075
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "s": {
+                                                                      "docs": {},
+                                                                      "u": {
+                                                                        "docs": {},
+                                                                        "b": {
+                                                                          "docs": {},
+                                                                          "t": {
                                                                             "docs": {},
-                                                                            "e": {
+                                                                            "i": {
                                                                               "docs": {},
-                                                                              "r": {
+                                                                              "t": {
                                                                                 "docs": {},
-                                                                                "#": {
-                                                                                  "docs": {},
-                                                                                  "t": {
-                                                                                    "docs": {},
-                                                                                    "i": {
-                                                                                      "docs": {},
-                                                                                      "t": {
-                                                                                        "docs": {},
-                                                                                        "l": {
-                                                                                          "docs": {
-                                                                                            "Presentation.Component.Header.html#.Header#title": {
-                                                                                              "ref": "Presentation.Component.Header.html#.Header#title",
-                                                                                              "tf": 1060
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
-                                                                                    }
-                                                                                  },
-                                                                                  "s": {
-                                                                                    "docs": {},
-                                                                                    "u": {
-                                                                                      "docs": {},
-                                                                                      "b": {
-                                                                                        "docs": {},
-                                                                                        "t": {
-                                                                                          "docs": {},
-                                                                                          "i": {
-                                                                                            "docs": {},
-                                                                                            "t": {
-                                                                                              "docs": {},
-                                                                                              "l": {
-                                                                                                "docs": {
-                                                                                                  "Presentation.Component.Header.html#.Header#subTitle": {
-                                                                                                    "ref": "Presentation.Component.Header.html#.Header#subTitle",
-                                                                                                    "tf": 1060
-                                                                                                  }
-                                                                                                }
-                                                                                              }
-                                                                                            }
-                                                                                          }
-                                                                                        }
-                                                                                      }
+                                                                                "l": {
+                                                                                  "docs": {
+                                                                                    "Presentation.Component.Header.html#subTitle": {
+                                                                                      "ref": "Presentation.Component.Header.html#subTitle",
+                                                                                      "tf": 1075
                                                                                     }
                                                                                   }
                                                                                 }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "r": {
+                                                                      "docs": {},
+                                                                      "e": {
+                                                                        "docs": {},
+                                                                        "n": {
+                                                                          "docs": {},
+                                                                          "d": {
+                                                                            "docs": {
+                                                                              "Presentation.Component.Header.html#render": {
+                                                                                "ref": "Presentation.Component.Header.html#render",
+                                                                                "tf": 1075
                                                                               }
                                                                             }
                                                                           }
@@ -7360,14 +7358,6 @@
                             "ref": "Presentation.Component.Article.html#header",
                             "tf": 25
                           },
-                          "Presentation.Component.Header.html#.Header#title": {
-                            "ref": "Presentation.Component.Header.html#.Header#title",
-                            "tf": 25
-                          },
-                          "Presentation.Component.Header.html#.Header#subTitle": {
-                            "ref": "Presentation.Component.Header.html#.Header#subTitle",
-                            "tf": 25
-                          },
                           "Configuration.xhrFields.html": {
                             "ref": "Configuration.xhrFields.html",
                             "tf": 25
@@ -7965,6 +7955,10 @@
                       "Presentation.Component.Article.html#render": {
                         "ref": "Presentation.Component.Article.html#render",
                         "tf": 708.3333333333334
+                      },
+                      "Presentation.Component.Header.html#render": {
+                        "ref": "Presentation.Component.Header.html#render",
+                        "tf": 700
                       },
                       "Presentation.Component.Menu.html#render": {
                         "ref": "Presentation.Component.Menu.html#render",
@@ -8757,9 +8751,9 @@
                     "docs": {},
                     "l": {
                       "docs": {
-                        "Presentation.Component.Header.html#.Header#subTitle": {
-                          "ref": "Presentation.Component.Header.html#.Header#subTitle",
-                          "tf": 85
+                        "Presentation.Component.Header.html#subTitle": {
+                          "ref": "Presentation.Component.Header.html#subTitle",
+                          "tf": 675
                         }
                       }
                     }
@@ -10657,66 +10651,62 @@
                                       "docs": {},
                                       "r": {
                                         "docs": {},
-                                        ".": {
+                                        "#": {
                                           "docs": {},
-                                          "h": {
+                                          "t": {
                                             "docs": {},
-                                            "e": {
+                                            "i": {
                                               "docs": {},
-                                              "a": {
+                                              "t": {
                                                 "docs": {},
-                                                "d": {
+                                                "l": {
+                                                  "docs": {
+                                                    "Presentation.Component.Header.html#title": {
+                                                      "ref": "Presentation.Component.Header.html#title",
+                                                      "tf": 75
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "s": {
+                                            "docs": {},
+                                            "u": {
+                                              "docs": {},
+                                              "b": {
+                                                "docs": {},
+                                                "t": {
                                                   "docs": {},
-                                                  "e": {
+                                                  "i": {
                                                     "docs": {},
-                                                    "r": {
+                                                    "t": {
                                                       "docs": {},
-                                                      "#": {
-                                                        "docs": {},
-                                                        "t": {
-                                                          "docs": {},
-                                                          "i": {
-                                                            "docs": {},
-                                                            "t": {
-                                                              "docs": {},
-                                                              "l": {
-                                                                "docs": {
-                                                                  "Presentation.Component.Header.html#.Header#title": {
-                                                                    "ref": "Presentation.Component.Header.html#.Header#title",
-                                                                    "tf": 60
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        },
-                                                        "s": {
-                                                          "docs": {},
-                                                          "u": {
-                                                            "docs": {},
-                                                            "b": {
-                                                              "docs": {},
-                                                              "t": {
-                                                                "docs": {},
-                                                                "i": {
-                                                                  "docs": {},
-                                                                  "t": {
-                                                                    "docs": {},
-                                                                    "l": {
-                                                                      "docs": {
-                                                                        "Presentation.Component.Header.html#.Header#subTitle": {
-                                                                          "ref": "Presentation.Component.Header.html#.Header#subTitle",
-                                                                          "tf": 60
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
+                                                      "l": {
+                                                        "docs": {
+                                                          "Presentation.Component.Header.html#subTitle": {
+                                                            "ref": "Presentation.Component.Header.html#subTitle",
+                                                            "tf": 75
                                                           }
                                                         }
                                                       }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "r": {
+                                            "docs": {},
+                                            "e": {
+                                              "docs": {},
+                                              "n": {
+                                                "docs": {},
+                                                "d": {
+                                                  "docs": {
+                                                    "Presentation.Component.Header.html#render": {
+                                                      "ref": "Presentation.Component.Header.html#render",
+                                                      "tf": 75
                                                     }
                                                   }
                                                 }
@@ -11924,14 +11914,6 @@
                                     "ref": "Presentation.Router.html#.cleanup",
                                     "tf": 50
                                   },
-                                  "Presentation.Component.Header.html#.Header#title": {
-                                    "ref": "Presentation.Component.Header.html#.Header#title",
-                                    "tf": 50
-                                  },
-                                  "Presentation.Component.Header.html#.Header#subTitle": {
-                                    "ref": "Presentation.Component.Header.html#.Header#subTitle",
-                                    "tf": 50
-                                  },
                                   "Presentation.Colleague.html#.delegateEvents": {
                                     "ref": "Presentation.Colleague.html#.delegateEvents",
                                     "tf": 50
@@ -12909,6 +12891,10 @@
                       "Presentation.Component.Header.html": {
                         "ref": "Presentation.Component.Header.html",
                         "tf": 600
+                      },
+                      "Presentation.Component.Header.html#render": {
+                        "ref": "Presentation.Component.Header.html#render",
+                        "tf": 25
                       }
                     },
                     "#": {
@@ -12921,9 +12907,9 @@
                             "docs": {},
                             "l": {
                               "docs": {
-                                "Presentation.Component.Header.html#.Header#title": {
-                                  "ref": "Presentation.Component.Header.html#.Header#title",
-                                  "tf": 610
+                                "Presentation.Component.Header.html#title": {
+                                  "ref": "Presentation.Component.Header.html#title",
+                                  "tf": 75
                                 }
                               }
                             }
@@ -12944,9 +12930,9 @@
                                   "docs": {},
                                   "l": {
                                     "docs": {
-                                      "Presentation.Component.Header.html#.Header#subTitle": {
-                                        "ref": "Presentation.Component.Header.html#.Header#subTitle",
-                                        "tf": 610
+                                      "Presentation.Component.Header.html#subTitle": {
+                                        "ref": "Presentation.Component.Header.html#subTitle",
+                                        "tf": 75
                                       }
                                     }
                                   }
@@ -12955,68 +12941,18 @@
                             }
                           }
                         }
-                      }
-                    },
-                    ".": {
-                      "docs": {},
-                      "h": {
+                      },
+                      "r": {
                         "docs": {},
                         "e": {
                           "docs": {},
-                          "a": {
+                          "n": {
                             "docs": {},
                             "d": {
-                              "docs": {},
-                              "e": {
-                                "docs": {},
-                                "r": {
-                                  "docs": {},
-                                  "#": {
-                                    "docs": {},
-                                    "t": {
-                                      "docs": {},
-                                      "i": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {},
-                                          "l": {
-                                            "docs": {
-                                              "Presentation.Component.Header.html#.Header#title": {
-                                                "ref": "Presentation.Component.Header.html#.Header#title",
-                                                "tf": 60
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    "s": {
-                                      "docs": {},
-                                      "u": {
-                                        "docs": {},
-                                        "b": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {},
-                                            "i": {
-                                              "docs": {},
-                                              "t": {
-                                                "docs": {},
-                                                "l": {
-                                                  "docs": {
-                                                    "Presentation.Component.Header.html#.Header#subTitle": {
-                                                      "ref": "Presentation.Component.Header.html#.Header#subTitle",
-                                                      "tf": 60
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
+                              "docs": {
+                                "Presentation.Component.Header.html#render": {
+                                  "ref": "Presentation.Component.Header.html#render",
+                                  "tf": 75
                                 }
                               }
                             }
@@ -14263,6 +14199,10 @@
                             "ref": "Presentation.Component.Article.html#render",
                             "tf": 110
                           },
+                          "Presentation.Component.Header.html#render": {
+                            "ref": "Presentation.Component.Header.html#render",
+                            "tf": 110
+                          },
                           "Presentation.Component.Menu.html#render": {
                             "ref": "Presentation.Component.Menu.html#render",
                             "tf": 110
@@ -14608,9 +14548,9 @@
               "docs": {},
               "l": {
                 "docs": {
-                  "Presentation.Component.Header.html#.Header#title": {
-                    "ref": "Presentation.Component.Header.html#.Header#title",
-                    "tf": 85
+                  "Presentation.Component.Header.html#title": {
+                    "ref": "Presentation.Component.Header.html#title",
+                    "tf": 675
                   }
                 }
               }
@@ -15403,8 +15343,9 @@
       "component.foot",
       "component.hamburgermenu",
       "component.head",
-      "component.header.header#subtitl",
-      "component.header.header#titl",
+      "component.header#rend",
+      "component.header#subtitl",
+      "component.header#titl",
       "component.menu",
       "component.menu#rend",
       "component.navigationmenu",
@@ -15498,10 +15439,9 @@
       "hash",
       "have",
       "header",
+      "header#rend",
       "header#subtitl",
       "header#titl",
-      "header.header#subtitl",
-      "header.header#titl",
       "here",
       "histori",
       "html",
@@ -15650,8 +15590,9 @@
       "presentation.component.foot",
       "presentation.component.hamburgermenu",
       "presentation.component.head",
-      "presentation.component.header.header#subtitl",
-      "presentation.component.header.header#titl",
+      "presentation.component.header#rend",
+      "presentation.component.header#subtitl",
+      "presentation.component.header#titl",
       "presentation.component.menu",
       "presentation.component.menu#rend",
       "presentation.component.navigationmenu",
@@ -16339,25 +16280,35 @@
       "description": "A Component Manager",
       "body": ""
     },
-    "Presentation.Component.Header.html#.Header#title": {
-      "id": "Presentation.Component.Header.html#.Header#title",
+    "Presentation.Component.Header.html#title": {
+      "id": "Presentation.Component.Header.html#title",
       "kind": "member",
-      "title": "&lt;static&gt; Header#title",
-      "longname": "Presentation.Component.Header.Header#title",
-      "name": "Header#title",
-      "tags": "Presentation.Component.Header.Header#title Component.Header.Header#title Header.Header#title Header#title title",
+      "title": "title",
+      "longname": "Presentation.Component.Header#title",
+      "name": "title",
+      "tags": "Presentation.Component.Header#title Component.Header#title Header#title title",
       "summary": "",
-      "description": "A title property"
+      "description": ""
     },
-    "Presentation.Component.Header.html#.Header#subTitle": {
-      "id": "Presentation.Component.Header.html#.Header#subTitle",
+    "Presentation.Component.Header.html#subTitle": {
+      "id": "Presentation.Component.Header.html#subTitle",
       "kind": "member",
-      "title": "&lt;static&gt; Header#subTitle",
-      "longname": "Presentation.Component.Header.Header#subTitle",
-      "name": "Header#subTitle",
-      "tags": "Presentation.Component.Header.Header#subTitle Component.Header.Header#subTitle Header.Header#subTitle Header#subTitle subTitle",
+      "title": "subTitle",
+      "longname": "Presentation.Component.Header#subTitle",
+      "name": "subTitle",
+      "tags": "Presentation.Component.Header#subTitle Component.Header#subTitle Header#subTitle subTitle",
       "summary": "",
-      "description": "A subTitle property"
+      "description": ""
+    },
+    "Presentation.Component.Header.html#render": {
+      "id": "Presentation.Component.Header.html#render",
+      "kind": "function",
+      "title": "render()",
+      "longname": "Presentation.Component.Header#render",
+      "name": "render",
+      "tags": "Presentation.Component.Header#render Component.Header#render Header#render render",
+      "summary": "",
+      "description": "Render the Header"
     },
     "Presentation.Component.HamburgerMenu.html": {
       "id": "Presentation.Component.HamburgerMenu.html",

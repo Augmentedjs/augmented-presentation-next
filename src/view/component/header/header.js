@@ -3,9 +3,8 @@ import Dom from "../../../dom/dom.js";
 
 /**
  * A Header Component
- * @class Header
  * @memberof Presentation.Component
- * @extends Presentation.View
+ * @extends Presentation.DecoratorView
  */
 class Header extends DecoratorView {
   constructor(options) {
@@ -22,9 +21,7 @@ class Header extends DecoratorView {
     }
   };
   /**
-   * A title property
-   * @property title
-   * @memberof Presentation.Component.Header
+   * @property {string} title A title property
    */
    set title(title) {
      this._title = title;
@@ -34,9 +31,7 @@ class Header extends DecoratorView {
      return this._title;
    };
   /**
-   * A subTitle property
-   * @property subTitle
-   * @memberof Presentation.Component.Header
+   * @property {string} subTitle A subTitle property
    */
    set subTitle(subTitle) {
      this._subTitle = subTitle;
@@ -50,7 +45,7 @@ class Header extends DecoratorView {
     * @returns {object} Returns the view context ('this')
     */
    render() {
-     Dom.setValue(this.el, `${this.template}${((this.title) ? "<h1>" + this.title + "</h1>": "")}<h2>${((this.subTitle)? "<h2>" + this.subTitle + "</h2>": "")}</h2>`);
+     Dom.setValue(this.el, `${this.template}${((this.title) ? "<h1>" + this.title + "</h1>": "")}${((this.subTitle) ? "<h2>" + this.subTitle + "</h2>": "")}`);
      this.delegateEvents();
      this.syncAllBoundElements();
      return this;

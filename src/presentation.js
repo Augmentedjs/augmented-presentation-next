@@ -58,7 +58,7 @@ import PaginationFactory from "./pagination/factory.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.3
+ * @version 2.0.4
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -67,7 +67,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.3";
+Presentation.VERSION = "2.0.4";
 
 Presentation.History = History;
 Presentation.Router = Router;
