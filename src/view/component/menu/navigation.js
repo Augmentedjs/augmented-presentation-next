@@ -38,7 +38,7 @@ class NavigationMenu extends AbstractToolbar {
     }
 
     super(options);
-  };style
+  };
   /**
    * Renders the Menu
    * @returns {object} Returns the view context ('this')
