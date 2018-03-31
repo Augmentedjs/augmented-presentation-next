@@ -344,7 +344,6 @@ console.log(`Options ${JSON.stringify(options)}`);
   // an element from the `id`, `style` and `tagName` properties.
   _ensureElement() {
     if (!this.el) {
-      //console.log("no el");
       const attrs = Augmented.Utility.extend({}, Augmented.result(this, "attributes"));
       if (this.id) {
         attrs.id = this.id;
