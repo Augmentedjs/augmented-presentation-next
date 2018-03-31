@@ -50,7 +50,7 @@ class Header extends DecoratorView {
     * @returns {object} Returns the view context ('this')
     */
    render() {
-     Dom.setValue(this.el, `${this.template} ${this.title} ${this.subTitle}`);
+     Dom.setValue(this.el, `${this.template}${((this.title) ? "<h1>" + this.title + "</h1>": "")}<h2>${((this.subTitle)? "<h2>" + this.subTitle + "</h2>": "")}</h2>`);
      this.delegateEvents();
      this.syncAllBoundElements();
      return this;
