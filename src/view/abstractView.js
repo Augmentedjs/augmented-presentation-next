@@ -13,6 +13,7 @@ const DELEGATE_EVENT_SPLITTER = /^(\S+)\s*(.*)$/;
  */
 class AbstractView extends Augmented.Object {
   constructor(options) {
+    console.log(`Options pre Object ${JSON.stringify(options)}`);
     super(options);
     if (options && options.name) {
       this._name = options.name;
@@ -90,7 +91,7 @@ class AbstractView extends Augmented.Object {
     } else {
       this.template = "";
     }
-
+console.log(`Options ${JSON.stringify(options)}`);
     this.initialize(options);
   };
 

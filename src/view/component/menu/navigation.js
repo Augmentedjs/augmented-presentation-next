@@ -34,7 +34,7 @@ class NavigationMenu extends AbstractToolbar {
         const e = Dom.selector(this.el);
         if (e) {
           // the menu
-          //Dom.addClass(e, "menu");
+          Dom.addClass(e, "navigation");
           e.setAttribute("data-" + this.name, "navigation-menu");
           e.innerHTML = `<ul>${buildMenuItems(this.name, this.menuItems)}</ul>`;
         }
