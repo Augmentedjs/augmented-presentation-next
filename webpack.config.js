@@ -29,7 +29,11 @@ module.exports = {
     colors: true
   },
   devtool: 'source-map',
-  plugins: []
+  plugins: [
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify(require("./package.json").version)
+    })
+  ]
 };
 /*
 {

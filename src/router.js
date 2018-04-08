@@ -13,10 +13,9 @@ const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
 //const history = new History();
 
 /**
- * @class Router
  * Routers map faux-URLs to actions, and fire events when routes are
  * matched. Creating a new one sets its `routes` hash, if not set statically.
- * @memberof Presentation
+ * @extends Augmented.Object
  */
 class Router extends Augmented.Object {
   constructor(options) {
@@ -32,9 +31,7 @@ class Router extends Augmented.Object {
 
   /**
    * Load a view safely and remove the last view by calling cleanup, then remove
-   * @method loadView
-   * @param {Augmented.View} view The View to load
-   * @memberof Presentation.Router
+   * @param {View} view The View to load
    */
   loadView(view) {
     this.cleanup();
@@ -44,9 +41,7 @@ class Router extends Augmented.Object {
   };
 
   /**
-   * remove the last view by calling cleanup, then remove
-   * @method cleanup
-   * @memberof Presentation.Router
+   * Remove the last view by calling cleanup, then remove
    */
   cleanup() {
     if (this._view) {
@@ -58,17 +53,24 @@ class Router extends Augmented.Object {
     }
   };
 
-  // Initialize is an empty function by default. Override it with your own
-  // initialization logic.
+  /**
+   * Initialize is an empty function by default. Override it with your own
+   * initialization logic.
+   */
   initialize(options) {
+    super.initialize(options);
   };
 
-  // Manually bind a single named route to a callback. For example:
-  //
-  //     this.route('search/:query/p:num', 'search', function(query, num) {
-  //       ...
-  //     });
-  //
+  /**
+   * Manually bind a single named route to a callback.
+   * @param {string} route The route
+   * @param {string} name The function binding name
+   * @param {function} callback binding function
+   * @example
+   * this.route('search/:query/p:num', 'search', (query, num) => {
+   *   ...
+   * });
+   */
   route(route, name, callback) {
     if (!_isRegExp(route)) {
       route = this._routeToRegExp(route);
@@ -94,21 +96,32 @@ class Router extends Augmented.Object {
     return this;
   };
 
-  // Execute a route handler with the provided parameters.  This is an
-  // excellent place to do pre-route setup or post-route cleanup.
-  execute(callback, args, name) {
+  /**
+   * Execute a route handler with the provided parameters.  This is an
+   * excellent place to do pre-route setup or post-route cleanup.
+   * @param {function} callback binding function
+   * @param {array} args The arges passed
+   */
+  execute(callback, args) {
     if (callback) {
       callback.apply(this, args);
-      //callback(args);
     }
   };
 
-  // Simple proxy to `history` to save a fragment into the history.
+  /**
+   * Simple proxy to `history` to save a fragment into the history.
+   * @param {string} fragment route fragment
+   * @param {object} options any options to pass
+   */
   navigate(fragment, options) {
     this.history.navigate(fragment, options);
     return { "routes": this.routes };
   };
 
+  /**
+   * Start the history using browser History API
+   * @param {object} options any options to pass
+   */
   startHistory(options) {
     if (!this.history.started) {
       this.history.start(options);

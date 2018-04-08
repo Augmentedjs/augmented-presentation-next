@@ -4,10 +4,7 @@ const DEFAULT_NAMESPACE = "augmented.localstorage.collection";
 const DEFAULT_KEY = `${DEFAULT_NAMESPACE}.key`;
 
 /**
- * LocalStorageCollection
  * A local storage-based Collection
- * @class LocalStorageCollection
- * @memberof Presentation
  * @extends Augmented.AbstractCollection
  */
 class LocalStorageCollection extends Augmented.AbstractCollection {
@@ -29,66 +26,61 @@ class LocalStorageCollection extends Augmented.AbstractCollection {
   /**
    * Base key name for the collection (simular to url for rest-based)
    * @property {string} key The key
-   * @memberof LocalStorageCollection
    */
 
   /**
    * is Persistant or not
    * @property {boolean} isPersisted Persistant property
-   * @memberof LocalStorageCollection
    */
 
   /**
    * Storage for the collection
    * @property {string} storage The storage used for the collection
-   * @memberof LocalStorageCollection
    * @private
    */
 
   /**
-   * @method initialize Initialize the model with needed wireing
+   * Initialize the model with needed wireing
    * @param {object} options Any options to pass
-   * @memberof LocalStorageCollection
    */
   initialize(options) {};
   /**
-   * @method init Custom init method for the model (called at inititlize)
+   * Custom init method for the model (called at inititlize)
    * @param {object} options Any options to pass
-   * @memberof LocalStorageCollection
    */
   init(options) {};
   /**
-   * @method fetch Fetch the collection
+   * Fetch the collection
    * @param {object} options Any options to pass
-   * @memberof LocalStorageCollection
    */
   fetch(options) {
     this.sync('read', this, options);
   };
   /**
-   * @method save Save the collection
+   * Save the collection
    * @param {object} options Any options to pass
-   * @memberof LocalStorageCollection
    */
   save(options) {
     this.sync('create', this, options);
   };
   /**
-   * @method update Update the collection
+   * Update the collection
    * @param {object} options Any options to pass
-   * @memberof LocalStorageCollection
    */
   update(options) {
     this.sync('update', this, options);
   };
   /**
-   * @method destroy Destroy the collection
+   * Destroy the collection
    * @param {object} options Any options to pass
-   * @memberof LocalStorageCollection
    */
   destroy(options) {
     this.sync('delete', this, options);
   };
+
+  /**
+   * Sync method for Collection
+   */
   sync(method, model, options) {
     if (!options) {
       options = {};

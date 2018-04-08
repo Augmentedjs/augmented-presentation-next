@@ -18,9 +18,7 @@ const PATH_STRIPPER = /#.*$/;
  * and URL fragments. If the browser supports neither (old IE, natch),
  * falls back to polling.
  * <br/>Inspired By Backbone.js - Thank you! <span>😍</span>
- * @class History
  * @extends Augmented.Object
- * @memberof Presentation
  */
 class History extends Augmented.Object {
   constructor(options) {

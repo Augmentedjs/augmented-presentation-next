@@ -58,7 +58,6 @@ import PaginationFactory from "./pagination/factory.js";
  * @author Bob Warren
  *
  * @module Presentation
- * @version 2.0.5
  * @license Apache-2.0
  */
 const Presentation = {};
@@ -67,7 +66,7 @@ const Presentation = {};
  * The standard version property
  * @constant VERSION
  */
-Presentation.VERSION = "2.0.5";
+Presentation.VERSION = VERSION;
 
 Presentation.History = History;
 Presentation.Router = Router;
@@ -97,8 +96,7 @@ Presentation.DecoratorView = DecoratorView;
 
 /**
  * Component - Large UI Components
- * @namespace Presentation.Component
- * @memberof Presentation
+ * @namespace Component
  */
 
 Presentation.Component = {};
@@ -121,7 +119,7 @@ Presentation.Component.LocalStorageTable = LocalStorageTable;
 
 Presentation.Component.AutomaticForm = AutomaticForm;
 Presentation.Component.Header = Header;
-Presentation.Component.Fotter = Footer;
+Presentation.Component.Footer = Footer;
 Presentation.Component.Card = Card;
 Presentation.Component.Article = Article;
 Presentation.Component.Manager = Manager;
@@ -134,7 +132,6 @@ Presentation.Request.Configuration = Configuration;
 
 /**
  * @namespace Pagination
- * @memberof Presentation
  */
 Presentation.Pagination = {};
 Presentation.Pagination.PAGINATION_API_TYPE = PAGINATION_API_TYPE;
@@ -144,8 +141,7 @@ Presentation.Pagination.PaginationFactory = PaginationFactory;
  * Augmented jQuery-like selectors usinge native selectors</br/>
  * Will return a nodelist for all selections unless only one is found.
  * @method $
- * @memberof Presentation
- * @borrows Presentation.Dom.query
+ * @borrows Dom.query
  * @example
  * $("#myElement");
  * $("section#main header");

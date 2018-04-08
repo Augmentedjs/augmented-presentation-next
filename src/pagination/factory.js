@@ -3,8 +3,7 @@ import PaginatedCollection from "../collection/paginated.js";
 
 /**
  * Pagination factory for returning pagination collections of an API type
- * @class PaginationFactory
- * @memberof Presentation.Pagination
+ * @memberof Pagination
  */
 class PaginationFactory {
   constructor() {
@@ -14,8 +13,8 @@ class PaginationFactory {
   /**
    * Get a pagination collection of type
    * @method getPaginatedCollection
-   * @memberof PaginationFactory
-   * @param {Presentation.Pagination.PAGINATION_API_TYPE} apiType The API type to return an instance of
+
+   * @param {Pagination.PAGINATION_API_TYPE} apiType The API type to return an instance of
    * @param {object} data Collection models
    * @param {object} options Collection options
    * @static

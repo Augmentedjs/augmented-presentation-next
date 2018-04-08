@@ -1,6 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "eslint ./src/augmented-presentation.js",
     "test": "mocha --require babel-core/register --require test/helper.js -c test/cli/*Spec.js",
     "start": "node index.js",
-    "docs": "jsdoc ./src -r -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json"
+    "docs": "jsdoc ./src -r -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json -P ./package.json"
   },
   "repository": {
     "type": "git",

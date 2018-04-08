@@ -1,4 +1,4 @@
-class MyMenu extends Presentation.Component.NavigationMenu {
+class MyNavMenu extends Presentation.Component.NavigationMenu {
 	constructor() {
 		super({ "el": "#sandbox", "name": "monkey", "menuItems": [{ "id": "monkey", "click": "monkeyClick", "icon": "info", "title": "Monkey", "spacer": false }]});
 	}
@@ -22,7 +22,7 @@ describe('Given Augmented Presentation Hamburger Menu View', () => {
 			}
 
 			beforeEach(() => {
-				d = new MyMenu();
+				d = new MyNavMenu();
 			});
 
 			afterEach(() => {

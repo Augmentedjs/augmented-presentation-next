@@ -68,7 +68,7 @@ if (XMLHttpRequest) {
  * @static
  * @param {Presentation.Request.Configuration} configuration object of configuration properties and callbacks.
  * @returns success or failure callback
- * @memberof Presentation
+
  * @example Presentation.request({
  *         url: uri,
  *         contentType: "text/plain",

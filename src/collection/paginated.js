@@ -2,9 +2,7 @@ import Collection from "./collection.js";
 
 /**
  * Paginated Collection Class - A Collection that handles pagination from client or server-side
- * @constructor PaginatedCollection
- * @memberof Presentation
- * @extends Presentation.Collection
+ * @extends Collection
  */
 class PaginatedCollection extends Collection {
   constructor(models, options) {
@@ -35,33 +33,27 @@ class PaginatedCollection extends Collection {
   /**
   * Configuration for the pagination
   * @property paginationConfiguration
-  * @memberof PaginatedCollection
   * @private
   */
 
   /**
   * Page Size for the collection
   * @property pageSize
-  * @memberof PaginatedCollection
   * @private
   */
 
   /**
   * Current page for the collection
   * @property currentPage
-  * @memberof PaginatedCollection
   */
 
   /**
   * Total pages for the collection
   * @property totalPages
-  * @memberof PaginatedCollection
   */
 
   /**
   * Sets the number of items in a page
-  * @method setPageSize
-  * @memberof PaginatedCollection
   * @param {number} size Number of items in each page
   */
   setPageSize(size) {
@@ -72,8 +64,6 @@ class PaginatedCollection extends Collection {
   };
   /**
   * Sets the current page
-  * @method setCurrentPage
-  * @memberof PaginatedCollection
   * @param {number} page Current page in collection
   */
   setCurrentPage(page) {
@@ -85,8 +75,6 @@ class PaginatedCollection extends Collection {
   };
   /**
   * Sets pagination configuration
-  * @method setPaginationConfiguration
-  * @memberof PaginatedCollection
   * @param {object} config pagination configuration
   * @private
   */
@@ -95,8 +83,6 @@ class PaginatedCollection extends Collection {
   };
   /**
   * Collection.fetch - rewritten fetch method from Backbone.Collection.fetch
-  * @method fetch
-  * @memberof PaginatedCollection
   * @borrows Collection.fetch
   */
   fetch(options) {
@@ -113,8 +99,6 @@ class PaginatedCollection extends Collection {
   };
   /**
   * Moves to the next page
-  * @method nextPage
-  * @memberof PaginatedCollection
   */
   nextPage() {
     if (this.currentPage < this.totalPages) {
@@ -124,8 +108,6 @@ class PaginatedCollection extends Collection {
   };
   /**
   * Moves to the previous page
-  * @method previousPage
-  * @memberof PaginatedCollection
   */
   previousPage() {
     if (this.currentPage > 0) {
@@ -135,8 +117,6 @@ class PaginatedCollection extends Collection {
   };
   /**
   * Goes to page
-  * @method goToPage
-  * @memberof PaginatedCollection
   * @param {number} page Page to go to
   */
   goToPage(page) {
@@ -147,8 +127,6 @@ class PaginatedCollection extends Collection {
   };
   /**
   * Moves to the first page
-  * @method firstPage
-  * @memberof PaginatedCollection
   */
   firstPage() {
     this.currentPage = 1;
@@ -156,8 +134,6 @@ class PaginatedCollection extends Collection {
   };
   /**
   * Moves to the last page
-  * @method lastPage
-  * @memberof PaginatedCollection
   */
   lastPage() {
     this.currentPage = this.totalPages;
@@ -165,8 +141,6 @@ class PaginatedCollection extends Collection {
   };
   /**
   * Refreshes the collection
-  * @method refresh
-  * @memberof PaginatedCollection
   */
   refresh() {
     this.fetch();

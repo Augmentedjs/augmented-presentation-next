@@ -2,8 +2,7 @@ import Augmented from "augmentedjs-next";
 import sync from "../request/sync.js";
 
 /**
- * @class Collection
- * @memberof Presentation
+ * Collection Class
  * @extends Augmented.AbstractCollection
  */
 class Collection extends Augmented.AbstractCollection {
@@ -17,9 +16,7 @@ class Collection extends Augmented.AbstractCollection {
   };
 
   /**
-   * sync - Sync collection data to bound REST call
-   * @method sync
-   * @memberof Collection
+   * Sync collection data to bound REST call
    */
   sync(method, model, options) {
     if (!options) {

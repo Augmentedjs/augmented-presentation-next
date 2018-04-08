@@ -2,8 +2,6 @@ import Augmented from "augmentedjs-next";
 
 /**
  * Widgets and small presentation modules
- * @class Widget
- * @memberof Presentation
  */
 class Widget {
   constructor() {
@@ -17,7 +15,7 @@ class Widget {
    * @param {boolean} ordered True if the list should be ordered
    * @param {string} binding The binding (used for decorator and optional)
    * @returns {Element} Returns a DOM element as a list
-   * @memberof Presentation.Widget
+
    */
   static List(id, data, ordered, binding) {
     let list = (ordered) ? document.createElement("ol") : document.createElement("ul"), i = 0, l, li, t, d;
@@ -48,7 +46,7 @@ class Widget {
    * @param {Object} data The data to render
    * @param {string} binding The binding (used for decorator and optional)
    * @returns {Element} Returns a DOM element as a description list
-   * @memberof Presentation.Widget
+
    */
   static DescriptionList(id, data, binding) {
     let list = document.createElement("dl"), i = 0, l, dd, dt, t, keys, key;
@@ -85,7 +83,7 @@ class Widget {
    * @param {Array} data The data to render
    * @param {string} binding The binding (used for decorator and optional)
    * @returns {Element} Returns a DOM element as a data list
-   * @memberof Presentation.Widget
+
    */
   static DataList(id, data, binding) {
     let list = document.createElement("datalist"), i = 0, l, o;
@@ -117,7 +115,7 @@ class Widget {
    * @param {boolean} required If the field is required
    * @param {string} binding The binding (used for decorator and optional)
    * @returns {Element} Returns a DOM element as an input
-   * @memberof Presentation.Widget
+
    */
   static Input(field, name, value, id, required, binding) {
     if (!field) {

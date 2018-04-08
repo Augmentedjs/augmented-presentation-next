@@ -24,7 +24,8 @@
 }
 
 #mocha .test.pass::before {
-  font-size: 14pt;
+  font-size: 12pt;
+  color: #4CAF50;
 }
 
 #mocha .test.pass .duration {
@@ -286,7 +287,7 @@ body {
 }
 
 article section#header header {
-    background-color: #3b78e7;
+    background-color: #607D8B;
     border: 0 none;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
     height: 48px;

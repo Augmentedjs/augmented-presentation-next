@@ -2,8 +2,6 @@ import Augmented from "augmentedjs-next";
 
 /**
  * DOM related functions
- * @class Dom
- * @memberof Presentation
  */
 class Dom {
   constructor() {
@@ -13,7 +11,7 @@ class Dom {
    * Gets the height of the browser viewport
    * @method getViewportHeight
    * @returns {number} The height of the viewport
-   * @memberof Dom
+
    */
   static getViewportHeight() {
     return window.innerHeight;
@@ -22,7 +20,7 @@ class Dom {
    * Gets the width of the browser viewport
    * @method getViewportWidth
    * @returns {number} The width of the viewport
-   * @memberof Dom
+
    */
   static getViewportWidth() {
     return window.innerWidth;
@@ -34,7 +32,7 @@ class Dom {
    * @param {Node} el Element or string of element selector
    * @param {string} value Value to set (or HTML)
    * @param {boolean} onlyText Value will set as text only
-   * @memberof Dom
+
    */
   static setValue(el, value, onlyText) {
     if (el) {
@@ -62,7 +60,7 @@ class Dom {
    * @method getValue
    * @param {Node} el Element or string of element selector
    * @returns {string} Returns the value of the element (or HTML)
-   * @memberof Dom
+
    */
   static getValue(el) {
     if (el) {
@@ -85,7 +83,7 @@ class Dom {
    * @method selector
    * @param {string} query Element or string of element selector
    * @returns {Node} Returns the element (or first of type)
-   * @memberof Dom
+
    */
   static selector(query) {
     if (query) {
@@ -99,7 +97,7 @@ class Dom {
    * @method selectors
    * @param {string} query Element or string of element selector
    * @returns {NodeList} Returns all the nodes selected
-   * @memberof Dom
+
    */
   static selectors(query) {
     if (query) {
@@ -114,7 +112,7 @@ class Dom {
    * @param {string} query Element or string of element selector
    * @param {Node} el Element to start from (optional)
    * @returns {NodeList|Node} Returns all the nodes selected
-   * @memberof Dom
+
    */
   static query(query, el) {
     if (query) {
@@ -136,7 +134,7 @@ class Dom {
    * Hides an element
    * @method hide
    * @param {Node} el Element or string of element selector
-   * @memberof Dom
+
    */
   static hide(el) {
     let myEl = this.selector(el);
@@ -150,7 +148,7 @@ class Dom {
    * @method show
    * @param {Node} el Element or string of element selector
    * @param {string} display Value to set for 'display' property (optional)
-   * @memberof Dom
+
    */
   static show(el, display) {
     let myEl = this.selector(el);
@@ -164,7 +162,7 @@ class Dom {
    * @method setClass
    * @param {Node} el Element or string of element selector
    * @param {string} cls the class value
-   * @memberof Dom
+
    */
   static setClass(el, cls) {
     let myEl = this.selector(el);
@@ -177,7 +175,7 @@ class Dom {
    * @method addClass
    * @param {Node} el Element or string of element selector
    * @param {string} cls the class value
-   * @memberof Dom
+
    */
   static addClass(el, cls) {
     let myEl = this.selector(el);
@@ -190,7 +188,7 @@ class Dom {
    * @method removeClass
    * @param {Node} el Element or string of element selector
    * @param {string} cls the class value
-   * @memberof Dom
+
    */
   static removeClass(el, cls) {
     let myEl = this.selector(el);
@@ -202,7 +200,7 @@ class Dom {
    * Empty a element container
    * @method empty
    * @param {Node} el Element or string of element selector
-   * @memberof Dom
+
    */
   static empty(el) {
     this.setValue(el, "", true);
@@ -212,7 +210,7 @@ class Dom {
    * @method injectTemplate
    * @param {string} template The template selector
    * @param {Node} mount The mount point as Document.Element or String
-   * @memberof Dom
+
    */
   static injectTemplate(template, mount) {
     let t = this.selector(template), el = this.selector(mount);

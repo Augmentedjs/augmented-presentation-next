@@ -1,6 +1,6 @@
 # Augmented.js Next Presentation
-## The Augmented.js Framework Presentation Module
-### Version 2.0.0
+## The Augmented.js Next Framework Presentation Module
+### Version 2.0.x
 ### JC Denton
 **aug·ment·ed**
 /ˌôɡˈmentəd /

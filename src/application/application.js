@@ -3,8 +3,6 @@ import Augmented from "augmentedjs-next";
 /**
  * Presentation Application - extension of Augmented.Application</br/>
  * Add registration of mediators to the application, breadcrumbs, and stylesheet registration
- * @class Application
- * @memberof Presentation
  * @extends Augmented.Application
  */
 class Application extends Augmented.Application {
@@ -36,9 +34,7 @@ class Application extends Augmented.Application {
   /**
    * The router property of the application
    * @property router
-   * @memberof Application
    */
-
   get router() {
     return this._router;
   };
@@ -49,9 +45,7 @@ class Application extends Augmented.Application {
 
   /**
    * Register a Mediator
-   * @method registerMediator
-   * @memberof Application
-   * @param {Augmented.Presentation.Mediator} mediator The mediator to register
+   * @param {Mediator} mediator The mediator to register
    */
   registerMediator(mediator) {
     if (mediator) {
@@ -60,9 +54,7 @@ class Application extends Augmented.Application {
   };
   /**
    * Deregister a Mediator
-   * @method deregisterMediator
-   * @memberof Application
-   * @param {Augmented.Presentation.Mediator} mediator The mediator to deregister
+   * @param {Mediator} mediator The mediator to deregister
    */
   deregisterMediator(mediator) {
     if (mediator) {
@@ -74,10 +66,8 @@ class Application extends Augmented.Application {
   };
 
   /**
-   * Get all Mediators
-   * @method getMediators
-   * @memberof Application
-   * @returns {array} Returns all Mediators
+   * All Mediators
+   * @property {array} mediators all Mediators
    */
   get mediators() {
     return this._mediators;
@@ -85,8 +75,6 @@ class Application extends Augmented.Application {
 
   /**
    * Register a stylesheet
-   * @method registerStylesheet
-   * @memberof Application
    * @param {string} stylesheet URI of the stylesheet
    */
   registerStylesheet(s) {
@@ -96,8 +84,6 @@ class Application extends Augmented.Application {
   };
   /**
    * Deregister a stylesheet
-   * @method deregisterStylesheet
-   * @memberof Application
    * @param {string} stylesheet URI of the stylesheet
    */
   deregisterStylesheet(s) {
@@ -107,8 +93,6 @@ class Application extends Augmented.Application {
   };
   /**
    * Attach registered stylesheets to the DOM
-   * @method attachStylesheets
-   * @memberof Application
    */
   attachStylesheets() {
     const headElement = document.getElementsByTagName("head")[0],
@@ -128,8 +112,6 @@ class Application extends Augmented.Application {
   };
   /**
    * Replace stylesheets then attach registered stylesheets to the DOM
-   * @method replaceStylesheets
-   * @memberof Application
    */
   replaceStylesheets() {
     const links = document.getElementsByTagName("link"),
@@ -141,13 +123,15 @@ class Application extends Augmented.Application {
     this.attachStylesheets();
   };
 
+  /**
+   * All Stylesheets
+   * @property {array} stylesheets all stylesheets
+   */
   get stylesheets() {
     return this._stylesheets;
   };
   /**
    * Sets the current breadcrumb
-   * @method setCurrentBreadcrumb
-   * @memberof Application
    * @param {string} uri The URI of the breadcrumb
    * @param {string} name The name of the breadcrumb
    */
@@ -159,8 +143,6 @@ class Application extends Augmented.Application {
   };
   /**
    * Gets the current breadcrumb
-   * @method getCurrentBreadcrumb
-   * @memberof Application
    * @returns {object} Returns the current breadcrumb
    */
   getCurrentBreadcrumb() {
@@ -168,10 +150,8 @@ class Application extends Augmented.Application {
   };
 
   /**
-   * Get all the breadcrumbs
-   * @method getBreadcrumbs
-   * @memberof Application
-   * @returns {array} Returns alls the breadcrumbs
+   * The breadcrumbs
+   * @property {array} breadcrumbs alls the breadcrumbs
    */
   get breadcrumbs() {
     return this._breadcrumb.toArray();

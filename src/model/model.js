@@ -8,8 +8,6 @@ import sync from "../request/sync.js";
  * <li>Validation and Schemas</li>
  * <li>Security</li>
  * </ul>
- * @class Model
- * @memberof Presentation
  * @extends Augmented.AbstractModel
  */
 class Model extends Augmented.AbstractModel {
@@ -22,19 +20,19 @@ class Model extends Augmented.AbstractModel {
   /**
    * mock property
    * @property {boolean} mock Sets mock mode in the model
-   * @memberof Model
+
    */
 
   /**
    * Cross Origin property
    * @property {boolean} crossOrigin Cross Origin property
-   * @memberof Model
+
    */
 
   /**
    * sync - Sync model data to bound REST call
    * @method sync
-   * @memberof Model
+
    */
   sync(method, model, options) {
     if (!options) {

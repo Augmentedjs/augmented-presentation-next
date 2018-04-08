@@ -1,8 +1,6 @@
 /**
 * Object of configuration properties and callbacks.  Pass this to the request call to setup configutation
-* @constructor Configuration
-* @name Configuration
-* @memberof Presentation.Request
+* @memberof Request
 */
 const Configuration = {
   /**

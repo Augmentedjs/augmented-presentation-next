@@ -2,8 +2,6 @@ import Augmented from "augmentedjs-next";
 
 /**
  * A controller to handle a group of views.  The api is handled simular to views for use in a router.
- * @class Presentation.ViewController
- * @memberof Presentation
  * @extends Augmented.Object
  */
 class ViewController extends Augmented.Object {
@@ -18,40 +16,29 @@ class ViewController extends Augmented.Object {
   /**
    * Permissions in the controller
    * @property permissions
-   * @memberof Presentation.ViewController
    */
 
   /**
    * initialize - an API for the start of the controller.  It is intended to add initializers here
-   * @method initialize
-   * @memberof Presentation.ViewController
    */
   initialize() {};
   /**
    * render - an API for the render of the controller.  It is intended to add view render methods here
-   * @method render
-   * @memberof Presentation.ViewController
    */
   render() {};
   /**
    * remove - an API for the end of the controller.  It is intended to add view removal and cleanup here
-   * @method remove
-   * @memberof Presentation.ViewController
    */
   remove() {};
   /**
    * manageView - manage a view
-   * @method manageView
    * @param {Presentation.View} view An instance of a view to manage
-   * @memberof Presentation.ViewController
    */
   manageView(view) {
     this._views.push(view);
   };
   /**
    * removeAllViews - cleans up all views known (calling thier remove method)
-   * @method removeAllViews
-   * @memberof Presentation.ViewController
    */
   removeAllViews() {
     var i = 0, l = this._views.length;
@@ -62,9 +49,7 @@ class ViewController extends Augmented.Object {
   };
   /**
    * getViews - get the instances of the views known
-   * @method getViews
    * @returns {Array} Returns an array of view instances
-   * @memberof Presentation.ViewController
    */
   get views () {
     return this._views;
@@ -72,10 +57,8 @@ class ViewController extends Augmented.Object {
 
   /**
    * Adds a permission to the controller
-   * @method addPermission
    * @param {string} permission The permission to add
    * @param {boolean} negative Flag to set a nagative permission (optional)
-   * @memberof Presentation.ViewController
    */
   addPermission(permission, negative) {
     if (!negative) {
@@ -88,10 +71,8 @@ class ViewController extends Augmented.Object {
   };
   /**
    * Removes a permission to the controller
-   * @method removePermission
    * @param {string} permission The permission to remove
    * @param {boolean} negative Flag to set a nagative permission (optional)
-   * @memberof Presentation.ViewController
    */
   removePermission(permission, negative) {
     if (!negative) {
@@ -104,10 +85,7 @@ class ViewController extends Augmented.Object {
   };
   /**
    * Sets the permissions to the controller
-   * @method setPermissions
    * @param {array} permissions The permissions to set
-   * ß
-   * @memberof Presentation.ViewController
    */
   set permissions(permissions) {
     /*if (!negative) {
@@ -130,17 +108,13 @@ class ViewController extends Augmented.Object {
    *     exclude: []
    * }</pre>
    *
-   * @method getPermissions
    * @returns {object} The permissions in the controller
-   * @memberof Presentation.ViewController
    */
   get permissions() {
     return this._permissions;
   };
   /**
    * Clears the permissions in the controller
-   * @method clearPermissions
-   * @memberof Presentation.ViewController
    */
   clearPermissions() {
     this._permissions = {
@@ -150,11 +124,9 @@ class ViewController extends Augmented.Object {
   };
   /**
    * Matches a permission in the controller
-   * @method matchesPermission
    * @param {string} match The permissions to match
    * @param {boolean} negative Flag to set a nagative permission (optional)
    * @returns {boolean} Returns true if the match exists
-   * @memberof Presentation.ViewController
    */
   matchesPermission(match, negative) {
     if (!negative) {
@@ -165,9 +137,7 @@ class ViewController extends Augmented.Object {
   };
   /**
    * Callback to return if this controller can display
-   * @method canDisplay
    * @returns {boolean} Returns true if this controller can display
-   * @memberof Presentation.ViewController
    */
   canDisplay() {
     return true;

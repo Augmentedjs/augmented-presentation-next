@@ -2,7 +2,7 @@
 * Types of pagination API
 * @enum
 * @name PAGINATION_API_TYPE
-* @memberof Presentation.Pagination
+* @memberof Pagination
 * @property {Symbol} GITHUB GitHub API
 * @property {Symbol} SOLR SOLR API
 * @property {Symbol} DATABASE Database-like API
