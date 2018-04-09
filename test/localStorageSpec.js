@@ -1,8 +1,8 @@
 describe('Given Presentation Local Storage', () => {
 	describe('Given non persistent Local Storage', () => {
-		let nameSpacedLocalStorage = Presentation.LocalStorageFactory.getStorage(false,'testingNamespacedLocalStorage');
+		let nameSpacedLocalStorage = Augmented.Presentation.LocalStorageFactory.getStorage(false,'testingNamespacedLocalStorage');
 
-		let globalLocalStorage = Presentation.LocalStorageFactory.getStorage(false);
+		let globalLocalStorage = Augmented.Presentation.LocalStorageFactory.getStorage(false);
 
 
 		it('Can support namespaced local storage', () => {
@@ -129,9 +129,9 @@ describe('Given Presentation Local Storage', () => {
 		});
 	});
 	describe('Given persistent Local Storage', () => {
-		let nameSpacedLocalStorage = Presentation.LocalStorageFactory.getStorage(true,'testingPersistentNamespacedLocalStorage');
+		let nameSpacedLocalStorage = Augmented.Presentation.LocalStorageFactory.getStorage(true,'testingPersistentNamespacedLocalStorage');
 
-		let globalLocalStorage = Presentation.LocalStorageFactory.getStorage(true);
+		let globalLocalStorage = Augmented.Presentation.LocalStorageFactory.getStorage(true);
 
 
 		it('Can support persistent namespaced local storage', () => {

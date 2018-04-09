@@ -106,56 +106,56 @@ class AutomaticForm extends DecoratorView {
   /**
   * The crossOrigin property - enables cross origin fetch
   * @property {boolean} crossOrigin The crossOrigin property
-  * @memberof AutomaticForm
+  *
   */
 
   /**
   * The fields property
   * @property {object} fields The fields property
   * @private
-  * @memberof AutomaticForm
+  *
   */
 
   /**
   * The URI property
   * @property {string} uri The URI property
-  * @memberof AutomaticForm
+  *
   */
 
   /**
   * The model property
   * @property {Augmented.Model} model The model property
-  * @memberof AutomaticForm
+  *
   */
 
   /**
   * The initialized property
   * @property {boolean} isInitalized The initialized property
-  * @memberof AutomaticForm
+  *
   */
 
   /**
   * The title property
   * @property {string} title The title of the form
-  * @memberof AutomaticForm
+  *
   */
 
   /**
   * The name property
   * @property {string} name The name of the form
-  * @memberof AutomaticForm
+  *
   */
 
   /**
   * The description property
   * @property {string} description The description of the form
-  * @memberof AutomaticForm
+  *
   */
 
   /**
   * The required fields property
   * @property {Array} _required The required fields
-  * @memberof AutomaticForm
+  *
   * @private
   */
 
@@ -163,7 +163,7 @@ class AutomaticForm extends DecoratorView {
   /**
     * Fields to display - null will display all
     * @method display
-    * @memberof AutomaticForm
+    *
     */
 
   _retrieveSchema(uri) {
@@ -191,7 +191,7 @@ class AutomaticForm extends DecoratorView {
   /**
   * Sets the URI
   * @method setURI
-  * @memberof AutomaticForm
+  *
   * @param {string} uri The URI
   */
   setURI(uri) {
@@ -201,7 +201,7 @@ class AutomaticForm extends DecoratorView {
   /**
   * Sets the schema
   * @method setSchema
-  * @memberof AutomaticForm
+  *
   * @param {object} schema The JSON schema of the dataset
   */
   setSchema(schema) {
@@ -218,7 +218,7 @@ class AutomaticForm extends DecoratorView {
   /**
   * Enable/Disable the progress bar
   * @method showProgressBar
-  * @memberof AutomaticForm
+  *
   * @param {boolean} show Show or Hide the progress bar
   */
   showProgressBar(show) {
@@ -237,7 +237,7 @@ class AutomaticForm extends DecoratorView {
   /**
   * Show a message related to the form
   * @method showMessage
-  * @memberof AutomaticForm
+  *
   * @param {string} message Some message to display
   */
   showMessage(message) {
@@ -255,7 +255,7 @@ class AutomaticForm extends DecoratorView {
   /**
   * Validate the form
   * @method validate
-  * @memberof AutomaticForm
+  *
   * @returns {boolean} Returns true on success of validation
   */
   validate() {
@@ -271,7 +271,7 @@ class AutomaticForm extends DecoratorView {
   /**
   * Is the form valid
   * @method isValid
-  * @memberof AutomaticForm
+  *
   * @returns {boolean} Returns true if valid
   */
   isValid() {
@@ -281,7 +281,7 @@ class AutomaticForm extends DecoratorView {
   /**
   * Render the form
   * @method render Renders the form
-  * @memberof AutomaticForm
+  *
   * @returns {object} Returns the view context ('this')
   */
   render() {
@@ -338,7 +338,7 @@ class AutomaticForm extends DecoratorView {
   /**
   * Reset the form
   * @method reset
-  * @memberof AutomaticForm
+  *
   * @returns {object} Returns the view context ('this')
   */
   reset() {
@@ -352,7 +352,7 @@ class AutomaticForm extends DecoratorView {
   * Populate the form
   * @method populate
   * @param {object} data Data to fill in
-  * @memberof AutomaticForm
+  *
   * @returns {object} Returns the view context ('this')
   */
   populate(data) {
@@ -362,7 +362,7 @@ class AutomaticForm extends DecoratorView {
   /**
   * Remove the form and all binds
   * @method remove
-  * @memberof AutomaticForm
+  *
   */
   remove() {
     /* off to unbind the events */

@@ -10,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'augmented-next-presentation.js',
     publicPath: '/dist/',
-    library: "Presentation",
+    library: "Augmented",
     libraryTarget: "umd",
     umdNamedDefine: true
   },

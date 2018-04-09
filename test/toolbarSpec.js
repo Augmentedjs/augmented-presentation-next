@@ -1,12 +1,12 @@
 describe('Given a Toolbar Component', () => {
 	it('is defined', () => {
-		expect(Presentation.Component.Toolbar).to.not.be.undefined;
+		expect(Augmented.Presentation.Component.Toolbar).to.not.be.undefined;
 	});
 
 	describe('Given a Toolbar instance', () => {
 		let t = null;
 		beforeEach(() => {
-			t = new Presentation.Component.Toolbar();
+			t = new Augmented.Presentation.Component.Toolbar();
 		});
 		afterEach(() => {
 			t = null;

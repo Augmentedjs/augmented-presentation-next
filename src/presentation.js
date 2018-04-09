@@ -1,3 +1,4 @@
+import Augmented from "augmentedjs-next";
 import AbstractView from "./view/abstractView.js";
 import View from "./view/view.js";
 import History from "./history.js";
@@ -51,6 +52,8 @@ import AutomaticForm from "./view/component/form/autoForm.js";
 
 import PAGINATION_API_TYPE from "./pagination/api.js";
 import PaginationFactory from "./pagination/factory.js";
+
+import RESTLogger from "./logger/restLogger.js";
 
 /**
  * Augmented.js Next Presentation - The Presentation Component
@@ -137,6 +140,8 @@ Presentation.Pagination = {};
 Presentation.Pagination.PAGINATION_API_TYPE = PAGINATION_API_TYPE;
 Presentation.Pagination.PaginationFactory = PaginationFactory;
 
+Presentation.RESTLogger = RESTLogger;
+
 /**
  * Augmented jQuery-like selectors usinge native selectors</br/>
  * Will return a nodelist for all selections unless only one is found.
@@ -150,7 +155,9 @@ Presentation.Pagination.PaginationFactory = PaginationFactory;
  */
 Presentation.$ = Dom.query;
 
+Augmented.Presentation = Presentation;
+
 //export default Presentation;
 
 // for webpack default on the browser
-module.exports = Presentation;
+module.exports = Augmented;

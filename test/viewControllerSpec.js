@@ -1,4 +1,4 @@
-class MyController extends Presentation.ViewController {
+class MyController extends Augmented.Presentation.ViewController {
 	constructor(options) {
 		super(options);
 	};
@@ -16,7 +16,7 @@ class MyController extends Presentation.ViewController {
 
 describe('Given Augmented Presentation View Controller', () => {
 	it('is defined', () => {
-		expect(Presentation.ViewController).to.not.be.undefined;
+		expect(Augmented.Presentation.ViewController).to.not.be.undefined;
 	});
 
 	describe('Given a View Controller and a test view', () => {
@@ -36,7 +36,7 @@ describe('Given Augmented Presentation View Controller', () => {
 		});
 
 		it('it is a controller', () => {
-			expect(c instanceof Presentation.ViewController).to.be.true;
+			expect(c instanceof Augmented.Presentation.ViewController).to.be.true;
 		});
 
 		it('can initialize', () => {
@@ -50,19 +50,19 @@ describe('Given Augmented Presentation View Controller', () => {
 		});
 
 		it('can manage a view', () => {
-			c.manageView(new Presentation.View());
+			c.manageView(new Augmented.Presentation.View());
 			expect(c._views.length).to.equal(1);
 		});
 
 		it('can remove all managed views', () => {
-			c.manageView(new Presentation.View());
+			c.manageView(new Augmented.Presentation.View());
 			expect(c._views.length).to.equal(1);
 			c.removeAllViews();
 			expect(c._views.length).to.equal(0);
 		});
 
 		it('can get managed views', () => {
-			c.manageView(new Presentation.View());
+			c.manageView(new Augmented.Presentation.View());
 			const i = c.views;
 			expect(i.length).to.equal(1);
 		});

@@ -2,14 +2,14 @@ const uri = window.location.protocol + "//" + window.location.host + window.loca
 
 describe('Given Presentation Request', () => {
 	it('is defined', () => {
-		expect(Presentation.request).to.not.be.undefined;
+		expect(Augmented.Presentation.request).to.not.be.undefined;
 	});
 
 	describe('can fetch', () => {
 		let success = null;
 
 		beforeEach( (done) => {
-			Presentation.request({
+			Augmented.Presentation.request({
 				url: uri,
 				contentType: 'text/plain',
 				dataType: 'text',
@@ -28,7 +28,7 @@ describe('Given Presentation Request', () => {
 		let success = null;
 
 		beforeEach( (done) => {
-			Presentation.request({
+			Augmented.Presentation.request({
 				url: uri,
 				contentType: 'text/plain',
 				dataType: 'text',

@@ -33,7 +33,7 @@
 }
 
 #mocha .test.fail::before {
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 #mocha .test .html-error {
@@ -62,7 +62,7 @@
 }
 
 #mocha .test.pending {
-  color: #00BCD4;
+  color: #9E9E9E;
 }
 
 #mocha-stats {

@@ -1,27 +1,27 @@
 describe('Given Augmented Presentation Widgets', () => {
 	it('is defined', () => {
-		expect(Presentation.Widget).to.not.be.undefined;
+		expect(Augmented.Presentation.Widget).to.not.be.undefined;
 	});
 
 	describe('Given an array', () => {
 		let arr = ["a", "b"];
 
 		it('can create an unordered list', () => {
-			let list = Presentation.Widget.List("l", arr, false);
+			let list = Augmented.Presentation.Widget.List("l", arr, false);
 			expect(list.tagName.toLowerCase()).to.equal("ul");
 			expect(list.childNodes.length).to.equal(2);
 			expect(list.childNodes[0].tagName.toLowerCase()).to.equal("li");
 		});
 
 		it('can create an ordered list', () => {
-			let list = Presentation.Widget.List("l", arr, true);
+			let list = Augmented.Presentation.Widget.List("l", arr, true);
 			expect(list.tagName.toLowerCase()).to.equal("ol");
 			expect(list.childNodes.length).to.equal(2);
 			expect(list.childNodes[0].tagName.toLowerCase()).to.equal("li");
 		});
 
 		it('can create a data list', () => {
-			let list = Presentation.Widget.DataList("sandbox", arr);
+			let list = Augmented.Presentation.Widget.DataList("sandbox", arr);
 			expect(list.tagName.toLowerCase()).to.equal("datalist");
 			expect(list.childNodes.length).to.equal(2);
 			expect(list.childNodes[0].tagName.toLowerCase()).to.equal("option");
@@ -32,7 +32,7 @@ describe('Given Augmented Presentation Widgets', () => {
 		let o = { "a": "a", "b": "b" };
 
 		it('can create a description list', () => {
-			let list = Presentation.Widget.DescriptionList("l", o);
+			let list = Augmented.Presentation.Widget.DescriptionList("l", o);
 			expect(list.tagName.toLowerCase()).to.equal("dl");
 			expect(list.childNodes.length).to.equal(4);
 			expect(list.childNodes[0].tagName.toLowerCase()).to.equal("dt");
@@ -49,7 +49,7 @@ describe('Given Augmented Presentation Widgets', () => {
 
 
 		beforeEach(() => {
-			input = Presentation.Widget.Input(field, name, value, id, required, binding);
+			input = Augmented.Presentation.Widget.Input(field, name, value, id, required, binding);
 		});
 
 		afterEach(() => {

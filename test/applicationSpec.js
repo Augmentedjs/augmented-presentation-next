@@ -4,7 +4,7 @@ describe('Given Augmented Presentation Application', () => {
 	describe('Given an Application', () => {
 		let app = null;
 		beforeEach(() => {
-			app = new Presentation.Application("Random-" + Math.random());
+			app = new Augmented.Presentation.Application("Random-" + Math.random());
 		});
 		afterEach(() => {
 			app = null;
@@ -19,7 +19,7 @@ describe('Given Augmented Presentation Application', () => {
 		});
 /*
 		it('can register a Mediator View', () => {
-			let view = new Presentation.Mediator();
+			let view = new Augmented.Presentation.Mediator();
 			app.registerMediator(view);
 			expect(app.getMediators().length > 0).to.be.true;
 			view.remove();

@@ -26,7 +26,7 @@ class Colleague extends View {
    * @method sendMessage
    * @param {string} message Message to send
    * @param {object} data Data to send with message
-   * @memberof Augmented.Presentation.Colleague
+   *
    */
   sendMessage(message, data) {
     if (this._mediator) {
@@ -40,7 +40,7 @@ class Colleague extends View {
    * Set the mediator to this colleague
    * @method setMediatorMessageQueue
    * @param {Augmented.Presentation.Mediator} mediator The mediator
-   * @memberof Augmented.Presentation.Colleague
+   * 
    */
   setMediatorMessageQueue(mediator) {
     if (this._mediator) {
@@ -53,7 +53,7 @@ class Colleague extends View {
   /**
    * Remove the mediator from this colleague
    * @method removeMediatorMessageQueue
-   * @memberof Augmented.Presentation.Colleague
+   *
    */
   removeMediatorMessageQueue() {
     this._mediator = null;

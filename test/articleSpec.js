@@ -1,14 +1,14 @@
 
 describe('Given Augmented Presentation Article View', () => {
 	it('is defined', () => {
-		expect(Presentation.Component.Article).to.not.be.undefined;
+		expect(Augmented.Presentation.Component.Article).to.not.be.undefined;
 	});
 
 	describe('Given an instance of Article', () => {
 		let view;
 
 		beforeEach(() => {
-			view = new Presentation.Component.Article({"name": "sample", "el": "#sandbox", "body": "hello"});
+			view = new Augmented.Presentation.Component.Article({"name": "sample", "el": "#sandbox", "body": "hello"});
 		});
 
 		afterEach(() => {
@@ -17,7 +17,7 @@ describe('Given Augmented Presentation Article View', () => {
 		});
 
 		it('instance is an instance of Article', () => {
-			expect(view instanceof Presentation.Component.Article).to.be.true;
+			expect(view instanceof Augmented.Presentation.Component.Article).to.be.true;
 		});
 
 		it('has a body', () => {
