@@ -71,7 +71,6 @@ describe('Given Augmented Automatic Form', () => {
 			const m = f.validate();
 			expect(m).to.not.be.undefined;
 			const x = f.isValid();
-			console.log(x);
 			expect(x).to.be.true;
 		});
 

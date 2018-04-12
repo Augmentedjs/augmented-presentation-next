@@ -3,19 +3,19 @@ describe('Given Augmented Presentation Mediator', () => {
 
 	describe('Given a Mediation of Views', () => {
 		it('Augmented.Presentation.Mediator is defined', () => {
-			expect(Presentation.Mediator).to.not.be.undefined;
+			expect(Augmented.Presentation.Mediator).to.not.be.undefined;
 		});
 
-		it('Augmented.Presentation.Colleague is defined', () => {
-			expect(Presentation.Colleague).to.not.be.undefined;
+		it('Augmented.Augmented.Presentation.Colleague is defined', () => {
+			expect(Augmented.Presentation.Colleague).to.not.be.undefined;
 		});
 
 		describe('Given a Mediator Views and Colleague View', () => {
 			let m, c;
 
 			beforeEach(() => {
-				m = new Presentation.Mediator({ "name": "mediator" });
-				c = new Presentation.Colleague({ "name": "monkey" });
+				m = new Augmented.Presentation.Mediator({ "name": "mediator" });
+				c = new Augmented.Presentation.Colleague({ "name": "monkey" });
 			});
 
 			afterEach(() => {
@@ -26,11 +26,11 @@ describe('Given Augmented Presentation Mediator', () => {
 			});
 
 			it('can create an instance that is a mediator', () => {
-				expect(m instanceof Presentation.Mediator).to.be.true;
+				expect(m instanceof Augmented.Presentation.Mediator).to.be.true;
 			});
 
 			it('can create an instance that is a colleague', () => {
-				expect(c instanceof Presentation.Colleague).to.be.true;
+				expect(c instanceof Augmented.Presentation.Colleague).to.be.true;
 			});
 
 			it('the mediator can observe a colleague', () => {
@@ -79,7 +79,7 @@ describe('Given Augmented Presentation Mediator', () => {
 
 			it('the mediator can observe a colleague once and not leak', () => {
 				m.observeColleague(c, () => { return "EEAK!";}, "monkey");
-				let m2 = new Presentation.Mediator();
+				let m2 = new Augmented.Presentation.Mediator();
 				m2.observeColleague(c, () => { return "EEAK!";}, "monkey");
 				let channels = m2.getChannel("monkey"), c2 = m.getChannel("monkey");
 

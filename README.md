@@ -47,3 +47,4 @@ The **Presentation** extension adds extensive abilities to the presentation laye
   - Toolbar
   - Header
   - Navigation
+* Mock support in Models and Collections

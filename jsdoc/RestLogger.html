@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>EditableLocalStorageTable</title>
+		<title>RestLogger</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -142,7 +142,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">EditableLocalStorageTable</span></h1>
+				<h1><span class="name">RestLogger</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -151,17 +151,38 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">EditableLocalStorageTable</li>
+							<li class="active">RestLogger</li>
 						</ol>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">EditableLocalStorageTable</span><span class="signature-params">()</span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">RestLogger</span><span class="signature-params">( <span class="signature-param">l</span>&nbsp;)</span></h2>
 </dt>
 <dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Instance class preconfigured for editing, sorting, from local storage</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>REST Logger - *requires override of _logMe</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>l</code></td>
+							<td><span class="param-type">Logger.Level</span></td>
+							<td class="last">
+									<p>The level to initialize the logger with</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
@@ -169,9 +190,77 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Augments</label>
 								<div class="col-sm-9">
-										<p class="form-control-static"><a href="Presentation.Component.AutomaticTable.html">Presentation.Component.AutomaticTable</a></p>
+										<p class="form-control-static">AbstractLogger</p>
 								</div>
 							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- deprecated -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Deprecated</label>
+								<div class="col-sm-9">
+									<p class="form-control-static">true</p>
+								</div>
+							</div>
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="logger_restLogger.js.html">logger/restLogger.js</a>, <a href="logger_restLogger.js.html#line-10">line 10</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+							</dl>
+							<article class="secondary">
+									<h3>Members</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title member public">
+			<h4 id="uri" class="member public"><span class="name">uri</span><span class="signature-type"></span></h4>
+		</dt>
+<dd class="symbol-details member public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-info">
+				<h5>Properties</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>uri</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The URI to use for RestLogger</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
 			
 			
 			
@@ -188,7 +277,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="view_component_table_editableLocalStorageTable.js.html">view/component/table/editableLocalStorageTable.js</a>, <a href="view_component_table_editableLocalStorageTable.js.html#line-3">line 3</a></p>
+									<p class="form-control-static"><a href="logger_restLogger.js.html">logger/restLogger.js</a>, <a href="logger_restLogger.js.html#line-18">line 18</a></p>
 								</div>
 							</div>
 			
@@ -198,8 +287,7 @@
 					</form>
 			</div>	</div>
 </dd>
-							</dl>
-							<article class="secondary">
+									</dl>
 							</article>
 					</section>
 			</div>

@@ -1,14 +1,14 @@
 
 describe('Given Augmented Presentation Dialog View', () => {
 	it('is defined', () => {
-		expect(Presentation.Component.DialogView).to.not.be.undefined;
+		expect(Augmented.Presentation.Component.DialogView).to.not.be.undefined;
 	});
 
 	describe('Given an instance of DialogView', () => {
 		let view;
 
 		beforeEach(() => {
-			view = new Presentation.Component.DialogView({"name": "sample", "el": "#sandbox"});
+			view = new Augmented.Presentation.Component.DialogView({"name": "sample", "el": "#sandbox"});
 		});
 
 		afterEach(() => {
@@ -17,7 +17,7 @@ describe('Given Augmented Presentation Dialog View', () => {
 		});
 
 		it('instance is an instance of DialogView', () => {
-			expect(view instanceof Presentation.Component.DialogView).to.be.true;
+			expect(view instanceof Augmented.Presentation.Component.DialogView).to.be.true;
 		});
 
 		it('dialog can open', () => {
@@ -37,7 +37,7 @@ describe('Given Augmented Presentation Dialog View', () => {
 		let view;
 
 		beforeEach(() => {
-			view = new Presentation.Component.ConfirmationDialogView();
+			view = new Augmented.Presentation.Component.ConfirmationDialogView();
 		});
 
 		afterEach(() => {
@@ -46,10 +46,10 @@ describe('Given Augmented Presentation Dialog View', () => {
 		});
 
 		it('instance is an instance of ConfirmationDialogView', () => {
-			expect(view instanceof Presentation.Component.ConfirmationDialogView).to.be.true;
+			expect(view instanceof Augmented.Presentation.Component.ConfirmationDialogView).to.be.true;
 		});
 
-		xit('has buttons', () => {
+		it('has buttons', () => {
 			expect(view.buttons).to.deep.equal({ "yes": "yes", "no": "no" });
 		});
 	});
@@ -58,7 +58,7 @@ describe('Given Augmented Presentation Dialog View', () => {
 		let view;
 
 		beforeEach(() => {
-			view = new Presentation.Component.AlertDialogView();
+			view = new Augmented.Presentation.Component.AlertDialogView();
 		});
 
 		afterEach(() => {
@@ -67,7 +67,7 @@ describe('Given Augmented Presentation Dialog View', () => {
 		});
 
 		it('instance is an instance of AlertDialogView', () => {
-			expect(view instanceof Presentation.Component.AlertDialogView).to.be.true;
+			expect(view instanceof Augmented.Presentation.Component.AlertDialogView).to.be.true;
 		});
 
 		it('has alert stlye', () => {

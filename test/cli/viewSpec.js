@@ -1,6 +1,3 @@
-//const Presentation = require("../dist/augmented-next-presentation.js");
-//import expect from "expect";
-
 describe("Given an Augmented View", () => {
   describe("creating a standard instance of Augmented View", () => {
     let view = null;
@@ -8,7 +5,7 @@ describe("Given an Augmented View", () => {
 
     beforeEach(() => {
       fired = false;
-      view = new Presentation.View();
+      view = new Augmented.Presentation.View();
     });
 
     afterEach(() => {
@@ -18,7 +15,7 @@ describe("Given an Augmented View", () => {
     });
 
     it("has an augmented View", () => {
-      expect(Presentation.View).to.not.be.undefined;
+      expect(Augmented.Presentation.View).to.not.be.undefined;
     });
     it("can set a name property", () => {
       view.name = "test";
@@ -69,7 +66,7 @@ describe("Given an Augmented View", () => {
   });
 
   describe("extending my own instance of Presentation View", () => {
-    class BaseView extends Presentation.View {
+    class BaseView extends Augmented.Presentation.View {
       constructor() {
         super({ "name": "monkey" });
         this.monkey = "monkey";
@@ -90,7 +87,7 @@ describe("Given an Augmented View", () => {
       view = null;
     });
 
-    it("has an BaseView that extends Presentation.View", () => {
+    it("has an BaseView that extends Augmented.Presentation.View", () => {
       expect(BaseView).to.not.be.undefined;
     });
     it("can set a name property", () => {
@@ -163,7 +160,7 @@ describe("Given an Augmented View", () => {
   });
 
   describe("Extending my own using option declarations", () => {
-    class YetAnotherView extends Presentation.View {
+    class YetAnotherView extends Augmented.Presentation.View {
       constructor(options) {
         //console.log("options", options);
         super(options);

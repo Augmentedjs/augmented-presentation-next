@@ -43,7 +43,7 @@
     "webpack-cli": "^2.0.14"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.0.3",
+    "augmentedjs-next": "^2.0.5",
     "lodash.bind": "^4.2.1",
     "lodash.isregexp": "^4.0.1",
     "lodash.map": "^4.6.0"

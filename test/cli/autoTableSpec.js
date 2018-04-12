@@ -1,11 +1,11 @@
 
 	describe('Given Augmented Automatic Table', () => {
 		it('is defined', () => {
-			expect(Presentation.Component.AutomaticTable).to.not.be.undefined;
+			expect(Augmented.Presentation.Component.AutomaticTable).to.not.be.undefined;
 		});
 
 		it('is not initialized without a schema', () => {
-			let at = new Presentation.Component.AutomaticTable({"el": "#sandbox"});
+			let at = new Augmented.Presentation.Component.AutomaticTable({"el": "#sandbox"});
 			expect(at).to.not.be.undefined;
 			expect(at.isInitalized).to.be.false;
 		});
@@ -44,7 +44,7 @@
 		let at;
 
 		beforeEach(() => {
-			at = new Presentation.Component.AutomaticTable({schema: schema});
+			at = new Augmented.Presentation.Component.AutomaticTable({schema: schema});
 		});
 
 		afterEach(() => {
@@ -53,7 +53,7 @@
 		});
 
 		it('can create an instance', () => {
-			expect(at instanceof Presentation.Component.AutomaticTable).to.be.true;
+			expect(at instanceof Augmented.Presentation.Component.AutomaticTable).to.be.true;
 		});
 
 		it('is initialized with a schema', () => {
@@ -127,31 +127,30 @@
 			expect(at.isValid()).to.be.true;
 		});
 	});
-
 /*
 	describe("Can create subclasses", () => {
 		it('can create a BigDataTable class', () => {
-			let b = new Presentation.BigDataTable();
-			expect(Presentation.BigDataTable).to.not.be.undefined;
-			expect(b instanceof Presentation.BigDataTable).to.be.true;
+			let b = new Augmented.Presentation.BigDataTable();
+			expect(Augmented.Presentation.BigDataTable).to.not.be.undefined;
+			expect(b instanceof Augmented.Presentation.BigDataTable).to.be.true;
 			expect(b.paginationAPI).to.not.be.undefined;
 			b.remove();
 			b = null;
 		});
 
 		it('can create a EditableTable class', () => {
-			let b = new Presentation.EditableTable();
-			expect(Presentation.EditableTable).to.not.be.undefined;
-			expect(b instanceof Presentation.EditableTable).to.be.true;
+			let b = new Augmented.Presentation.EditableTable();
+			expect(Augmented.Presentation.EditableTable).to.not.be.undefined;
+			expect(b instanceof Augmented.Presentation.EditableTable).to.be.true;
 			expect(b.editable).to.be.true;
 			b.remove();
 			b = null;
 		});
 
 		it('can create a EditableBigDataTable class', () => {
-			let b = new Presentation.EditableBigDataTable();
-			expect(Presentation.EditableBigDataTable).to.not.be.undefined;
-			expect(b instanceof Presentation.EditableBigDataTable).to.be.true;
+			let b = new Augmented.Presentation.EditableBigDataTable();
+			expect(Augmented.Presentation.EditableBigDataTable).to.not.be.undefined;
+			expect(b instanceof Augmented.Presentation.EditableBigDataTable).to.be.true;
 			expect(b.editable).to.be.true;
 			expect(b.paginationAPI).to.not.be.undefined;
 			b.remove();
@@ -159,9 +158,9 @@
 		});
 
 		it('can create a LocalStorageTable class', () => {
-			let b = new Presentation.LocalStorageTable();
-			expect(Presentation.LocalStorageTable).to.not.be.undefined;
-			expect(b instanceof Presentation.LocalStorageTable).to.be.true;
+			let b = new Augmented.Presentation.LocalStorageTable();
+			expect(Augmented.Presentation.LocalStorageTable).to.not.be.undefined;
+			expect(b instanceof Augmented.Presentation.LocalStorageTable).to.be.true;
 			expect(b.localStorage).to.be.true;
 			expect(b.localStorageKey).to.not.be.undefined;
 			expect(b.uri).to.equal(null);
@@ -170,9 +169,9 @@
 		});
 
 		it('can create a EditableLocalStorageTable class', () => {
-			let b = new Presentation.EditableLocalStorageTable();
-			expect(Presentation.EditableLocalStorageTable).to.not.be.undefined;
-			expect(b instanceof Presentation.EditableLocalStorageTable).to.be.true;
+			let b = new Augmented.Presentation.EditableLocalStorageTable();
+			expect(Augmented.Presentation.EditableLocalStorageTable).to.not.be.undefined;
+			expect(b instanceof Augmented.Presentation.EditableLocalStorageTable).to.be.true;
 			expect(b.localStorage).to.be.true;
 			expect(b.localStorageKey).to.not.be.undefined;
 			expect(b.editable).to.be.true;

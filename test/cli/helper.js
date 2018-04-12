@@ -18,7 +18,7 @@ global.Storage = global.localStorage;
 const sinon = require("sinon");
 global.XMLHttpRequest = sinon.useFakeXMLHttpRequest();
 
-global.Presentation = require("../dist/augmented-next-presentation.js");
+global.Augmented = require("../dist/augmented-next-presentation.js");
 
 const chai = require("chai");
 global.chai = chai;

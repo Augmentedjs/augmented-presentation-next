@@ -2,8 +2,8 @@
 describe('Given Augmented Presentation Decorator View', () => {
 
 	describe('Given a Decorator View', () => {
-		it('Presentation.DecoratorView is defined', () => {
-			expect(Presentation.DecoratorView).to.not.be.undefined;
+		it('Augmented.Presentation.DecoratorView is defined', () => {
+			expect(Augmented.Presentation.DecoratorView).to.not.be.undefined;
 		});
 
 		describe('Given a DecoratorView instance', () => {
@@ -18,7 +18,7 @@ describe('Given Augmented Presentation Decorator View', () => {
 			}
 
 			beforeEach(() => {
-				d = new Presentation.DecoratorView({
+				d = new Augmented.Presentation.DecoratorView({
 					"el": "#sandbox",
 					"name": "monkey"
 				});
@@ -30,11 +30,11 @@ describe('Given Augmented Presentation Decorator View', () => {
 			});
 
 			it('DecoratorView is a Colleague', () => {
-				expect(d instanceof Presentation.Colleague).to.be.true;
+				expect(d instanceof Augmented.Presentation.Colleague).to.be.true;
 			});
 
 			it('can create an instance that is a DecoratorView', () => {
-				expect(d instanceof Presentation.DecoratorView).to.be.true;
+				expect(d instanceof Augmented.Presentation.DecoratorView).to.be.true;
 			});
 
 			it('the DecoratorView has a bound element', () => {

@@ -1,11 +1,11 @@
 describe("Given an Abstract Model", () => {
   it("is defined", () => {
-    expect(Presentation.Model).to.not.be.undefined;
+    expect(Augmented.Presentation.Model).to.not.be.undefined;
   });
 
   let model;
   beforeEach(() => {
-    model = new Presentation.Model();
+    model = new Augmented.Presentation.Model();
   });
   afterEach(() => {
     model = null;
@@ -47,7 +47,7 @@ describe("Given an Abstract Model", () => {
 
   describe("Given validation", () => {
 	  beforeEach(() => {
-	    model = new Presentation.Model();
+	    model = new Augmented.Presentation.Model();
 	  });
 	  afterEach(() => {
 	    model = null;

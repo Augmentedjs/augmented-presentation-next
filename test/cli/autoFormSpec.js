@@ -1,12 +1,10 @@
-
-
 describe('Given Augmented Automatic Form', () => {
 	it('is defined', () => {
-		expect(Presentation.Component.AutomaticForm).to.not.be.undefined;
+		expect(Augmented.Presentation.Component.AutomaticForm).to.not.be.undefined;
 	});
 
 	it('is not initialized without a schema', () => {
-		let f = new Presentation.Component.AutomaticForm();
+		let f = new Augmented.Presentation.Component.AutomaticForm();
 		expect(f).to.not.be.undefined;
 		expect(f.isInitalized).to.be.false;
 	});
@@ -40,7 +38,7 @@ describe('Given Augmented Automatic Form', () => {
 		let f;
 
 		beforeEach(() => {
-			f = new Presentation.Component.AutomaticForm({schema: schema});
+			f = new Augmented.Presentation.Component.AutomaticForm({schema: schema});
 		});
 
 		afterEach(() => {
@@ -49,7 +47,7 @@ describe('Given Augmented Automatic Form', () => {
 		});
 
 		it('can create an instance', () => {
-			expect(f instanceof Presentation.Component.AutomaticForm).to.be.true;
+			expect(f instanceof Augmented.Presentation.Component.AutomaticForm).to.be.true;
 		});
 
 		it('is initialized with a schema', () => {
@@ -63,16 +61,17 @@ describe('Given Augmented Automatic Form', () => {
 			expect(f.schema).to.equal(schema);
 		});
 
-		xit('can populate data', () => {
+		it('can populate data', () => {
 			f.populate(data);
 			expect(f.model.toJSON()).to.deep.equal(data);
 		});
 
 		it('can validate', () => {
 			f.populate(data);
-			let m = f.validate();
+			const m = f.validate();
 			expect(m).to.not.be.undefined;
-			expect(f.isValid()).to.be.true;
+			const x = f.isValid();
+			expect(x).to.be.true;
 		});
 
 		it('can invalidate bad data', () => {

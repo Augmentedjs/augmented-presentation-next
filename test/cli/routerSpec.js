@@ -1,4 +1,4 @@
-class TestView extends Presentation.View {
+class TestView extends Augmented.Presentation.View {
 	constructor(options) {
 		super(options);
 	};
@@ -7,7 +7,7 @@ class TestView extends Presentation.View {
 	};
 };
 
-class Router extends Presentation.Router {
+class Router extends Augmented.Presentation.Router {
 	constructor() {
 		super({
 			"routes": {
@@ -26,7 +26,7 @@ class Router extends Presentation.Router {
 
 describe('Given Augmented Router', () => {
 	it('is defined', () => {
-		expect(Presentation.Router).to.not.be.undefined;
+		expect(Augmented.Presentation.Router).to.not.be.undefined;
 	});
 	let router = null;
 
@@ -47,7 +47,7 @@ describe('Given Augmented Router', () => {
 		});
 
 		it('is a router', () => {
-			expect(router instanceof Presentation.Router).to.be.true;
+			expect(router instanceof Augmented.Presentation.Router).to.be.true;
 		});
 
 		it('can "navigate" to a route, inline function', () => {
