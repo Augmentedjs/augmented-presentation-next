@@ -93,6 +93,13 @@ class AbstractToolbar extends DecoratorView {
   set menuItems(items) {
     this._menuItems = items;
   };
+
+  /**
+   * Clear all items in the menu
+   */
+  clearMenuItems() {
+    this._menuItems.length = 0;
+  };
 };
 
 export default AbstractToolbar;

@@ -919,6 +919,48 @@ window.lunrData = {
           "notificationcent",
           "presentation.component.notificationcent"
         ],
+        "Presentation.Component.NotificationCenter.html#notifications": [
+          "component.notificationcenter#notif",
+          "member",
+          "notif",
+          "notificationcenter#notif",
+          "presentation.component.notificationcenter#notif"
+        ],
+        "Presentation.Component.NotificationCenter.html#showNotification": [
+          "component.notificationcenter#shownotif",
+          "function",
+          "notificationcent",
+          "notificationcenter#shownotif",
+          "presentation.component.notificationcenter#shownotif",
+          "show",
+          "shownotif"
+        ],
+        "Presentation.Component.NotificationCenter.html#hideNotification": [
+          "component.notificationcenter#hidenotif",
+          "function",
+          "hide",
+          "hidenotif",
+          "notificationcent",
+          "notificationcenter#hidenotif",
+          "presentation.component.notificationcenter#hidenotif"
+        ],
+        "Presentation.Component.NotificationCenter.html#clearNotifications": [
+          "clear",
+          "clearnotif",
+          "component.notificationcenter#clearnotif",
+          "function",
+          "notificationcent",
+          "notificationcenter#clearnotif",
+          "presentation.component.notificationcenter#clearnotif"
+        ],
+        "Presentation.Component.NotificationCenter.html#render": [
+          "component.notificationcenter#rend",
+          "function",
+          "menu",
+          "notificationcenter#rend",
+          "presentation.component.notificationcenter#rend",
+          "render"
+        ],
         "Presentation.Component.AutomaticTable.html": [
           "automat",
           "automatict",
@@ -1169,7 +1211,7 @@ window.lunrData = {
           "xhrfields.withcredenti"
         ]
       },
-      "length": 113
+      "length": 118
     },
     "tokenStore": {
       "root": {
@@ -3876,7 +3918,12 @@ window.lunrData = {
               "i": {
                 "docs": {},
                 "f": {
-                  "docs": {},
+                  "docs": {
+                    "Presentation.Component.NotificationCenter.html#notifications": {
+                      "ref": "Presentation.Component.NotificationCenter.html#notifications",
+                      "tf": 675
+                    }
+                  },
                   "i": {
                     "docs": {},
                     "c": {
@@ -3902,6 +3949,163 @@ window.lunrData = {
                                           "Presentation.Component.NotificationCenter.html": {
                                             "ref": "Presentation.Component.NotificationCenter.html",
                                             "tf": 700
+                                          },
+                                          "Presentation.Component.NotificationCenter.html#showNotification": {
+                                            "ref": "Presentation.Component.NotificationCenter.html#showNotification",
+                                            "tf": 25
+                                          },
+                                          "Presentation.Component.NotificationCenter.html#hideNotification": {
+                                            "ref": "Presentation.Component.NotificationCenter.html#hideNotification",
+                                            "tf": 25
+                                          },
+                                          "Presentation.Component.NotificationCenter.html#clearNotifications": {
+                                            "ref": "Presentation.Component.NotificationCenter.html#clearNotifications",
+                                            "tf": 25
+                                          }
+                                        },
+                                        "e": {
+                                          "docs": {},
+                                          "r": {
+                                            "docs": {},
+                                            "#": {
+                                              "docs": {},
+                                              "n": {
+                                                "docs": {},
+                                                "o": {
+                                                  "docs": {},
+                                                  "t": {
+                                                    "docs": {},
+                                                    "i": {
+                                                      "docs": {},
+                                                      "f": {
+                                                        "docs": {
+                                                          "Presentation.Component.NotificationCenter.html#notifications": {
+                                                            "ref": "Presentation.Component.NotificationCenter.html#notifications",
+                                                            "tf": 75
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "s": {
+                                                "docs": {},
+                                                "h": {
+                                                  "docs": {},
+                                                  "o": {
+                                                    "docs": {},
+                                                    "w": {
+                                                      "docs": {},
+                                                      "n": {
+                                                        "docs": {},
+                                                        "o": {
+                                                          "docs": {},
+                                                          "t": {
+                                                            "docs": {},
+                                                            "i": {
+                                                              "docs": {},
+                                                              "f": {
+                                                                "docs": {
+                                                                  "Presentation.Component.NotificationCenter.html#showNotification": {
+                                                                    "ref": "Presentation.Component.NotificationCenter.html#showNotification",
+                                                                    "tf": 75
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "h": {
+                                                "docs": {},
+                                                "i": {
+                                                  "docs": {},
+                                                  "d": {
+                                                    "docs": {},
+                                                    "e": {
+                                                      "docs": {},
+                                                      "n": {
+                                                        "docs": {},
+                                                        "o": {
+                                                          "docs": {},
+                                                          "t": {
+                                                            "docs": {},
+                                                            "i": {
+                                                              "docs": {},
+                                                              "f": {
+                                                                "docs": {
+                                                                  "Presentation.Component.NotificationCenter.html#hideNotification": {
+                                                                    "ref": "Presentation.Component.NotificationCenter.html#hideNotification",
+                                                                    "tf": 75
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "c": {
+                                                "docs": {},
+                                                "l": {
+                                                  "docs": {},
+                                                  "e": {
+                                                    "docs": {},
+                                                    "a": {
+                                                      "docs": {},
+                                                      "r": {
+                                                        "docs": {},
+                                                        "n": {
+                                                          "docs": {},
+                                                          "o": {
+                                                            "docs": {},
+                                                            "t": {
+                                                              "docs": {},
+                                                              "i": {
+                                                                "docs": {},
+                                                                "f": {
+                                                                  "docs": {
+                                                                    "Presentation.Component.NotificationCenter.html#clearNotifications": {
+                                                                      "ref": "Presentation.Component.NotificationCenter.html#clearNotifications",
+                                                                      "tf": 75
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "r": {
+                                                "docs": {},
+                                                "e": {
+                                                  "docs": {},
+                                                  "n": {
+                                                    "docs": {},
+                                                    "d": {
+                                                      "docs": {
+                                                        "Presentation.Component.NotificationCenter.html#render": {
+                                                          "ref": "Presentation.Component.NotificationCenter.html#render",
+                                                          "tf": 75
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
                                           }
                                         }
                                       }
@@ -5005,6 +5209,151 @@ window.lunrData = {
                                                                                         "Presentation.Component.NotificationCenter.html": {
                                                                                           "ref": "Presentation.Component.NotificationCenter.html",
                                                                                           "tf": 1100
+                                                                                        }
+                                                                                      },
+                                                                                      "e": {
+                                                                                        "docs": {},
+                                                                                        "r": {
+                                                                                          "docs": {},
+                                                                                          "#": {
+                                                                                            "docs": {},
+                                                                                            "n": {
+                                                                                              "docs": {},
+                                                                                              "o": {
+                                                                                                "docs": {},
+                                                                                                "t": {
+                                                                                                  "docs": {},
+                                                                                                  "i": {
+                                                                                                    "docs": {},
+                                                                                                    "f": {
+                                                                                                      "docs": {
+                                                                                                        "Presentation.Component.NotificationCenter.html#notifications": {
+                                                                                                          "ref": "Presentation.Component.NotificationCenter.html#notifications",
+                                                                                                          "tf": 1075
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            },
+                                                                                            "s": {
+                                                                                              "docs": {},
+                                                                                              "h": {
+                                                                                                "docs": {},
+                                                                                                "o": {
+                                                                                                  "docs": {},
+                                                                                                  "w": {
+                                                                                                    "docs": {},
+                                                                                                    "n": {
+                                                                                                      "docs": {},
+                                                                                                      "o": {
+                                                                                                        "docs": {},
+                                                                                                        "t": {
+                                                                                                          "docs": {},
+                                                                                                          "i": {
+                                                                                                            "docs": {},
+                                                                                                            "f": {
+                                                                                                              "docs": {
+                                                                                                                "Presentation.Component.NotificationCenter.html#showNotification": {
+                                                                                                                  "ref": "Presentation.Component.NotificationCenter.html#showNotification",
+                                                                                                                  "tf": 1075
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            },
+                                                                                            "h": {
+                                                                                              "docs": {},
+                                                                                              "i": {
+                                                                                                "docs": {},
+                                                                                                "d": {
+                                                                                                  "docs": {},
+                                                                                                  "e": {
+                                                                                                    "docs": {},
+                                                                                                    "n": {
+                                                                                                      "docs": {},
+                                                                                                      "o": {
+                                                                                                        "docs": {},
+                                                                                                        "t": {
+                                                                                                          "docs": {},
+                                                                                                          "i": {
+                                                                                                            "docs": {},
+                                                                                                            "f": {
+                                                                                                              "docs": {
+                                                                                                                "Presentation.Component.NotificationCenter.html#hideNotification": {
+                                                                                                                  "ref": "Presentation.Component.NotificationCenter.html#hideNotification",
+                                                                                                                  "tf": 1075
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            },
+                                                                                            "c": {
+                                                                                              "docs": {},
+                                                                                              "l": {
+                                                                                                "docs": {},
+                                                                                                "e": {
+                                                                                                  "docs": {},
+                                                                                                  "a": {
+                                                                                                    "docs": {},
+                                                                                                    "r": {
+                                                                                                      "docs": {},
+                                                                                                      "n": {
+                                                                                                        "docs": {},
+                                                                                                        "o": {
+                                                                                                          "docs": {},
+                                                                                                          "t": {
+                                                                                                            "docs": {},
+                                                                                                            "i": {
+                                                                                                              "docs": {},
+                                                                                                              "f": {
+                                                                                                                "docs": {
+                                                                                                                  "Presentation.Component.NotificationCenter.html#clearNotifications": {
+                                                                                                                    "ref": "Presentation.Component.NotificationCenter.html#clearNotifications",
+                                                                                                                    "tf": 1075
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            },
+                                                                                            "r": {
+                                                                                              "docs": {},
+                                                                                              "e": {
+                                                                                                "docs": {},
+                                                                                                "n": {
+                                                                                                  "docs": {},
+                                                                                                  "d": {
+                                                                                                    "docs": {
+                                                                                                      "Presentation.Component.NotificationCenter.html#render": {
+                                                                                                        "ref": "Presentation.Component.NotificationCenter.html#render",
+                                                                                                        "tf": 1075
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
                                                                                         }
                                                                                       }
                                                                                     }
@@ -6721,6 +7070,10 @@ window.lunrData = {
                         "ref": "Presentation.Component.NavigationMenu.html#render",
                         "tf": 700
                       },
+                      "Presentation.Component.NotificationCenter.html#render": {
+                        "ref": "Presentation.Component.NotificationCenter.html#render",
+                        "tf": 700
+                      },
                       "Presentation.DecoratorView.html": {
                         "ref": "Presentation.DecoratorView.html",
                         "tf": 0.8333333333333334
@@ -7789,6 +8142,40 @@ window.lunrData = {
               }
             }
           },
+          "h": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "w": {
+                "docs": {
+                  "Presentation.Component.NotificationCenter.html#showNotification": {
+                    "ref": "Presentation.Component.NotificationCenter.html#showNotification",
+                    "tf": 25
+                  }
+                },
+                "n": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "f": {
+                          "docs": {
+                            "Presentation.Component.NotificationCenter.html#showNotification": {
+                              "ref": "Presentation.Component.NotificationCenter.html#showNotification",
+                              "tf": 675
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "o": {
             "docs": {},
             "r": {
@@ -8185,6 +8572,10 @@ window.lunrData = {
                     "Presentation.Component.Article.html#clearSections": {
                       "ref": "Presentation.Component.Article.html#clearSections",
                       "tf": 25
+                    },
+                    "Presentation.Component.NotificationCenter.html#clearNotifications": {
+                      "ref": "Presentation.Component.NotificationCenter.html#clearNotifications",
+                      "tf": 25
                     }
                   },
                   "p": {
@@ -8224,6 +8615,26 @@ window.lunrData = {
                             "Presentation.Component.Article.html#clearSections": {
                               "ref": "Presentation.Component.Article.html#clearSections",
                               "tf": 675
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "n": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "t": {
+                        "docs": {},
+                        "i": {
+                          "docs": {},
+                          "f": {
+                            "docs": {
+                              "Presentation.Component.NotificationCenter.html#clearNotifications": {
+                                "ref": "Presentation.Component.NotificationCenter.html#clearNotifications",
+                                "tf": 675
+                              }
                             }
                           }
                         }
@@ -9663,6 +10074,151 @@ window.lunrData = {
                                                                 "ref": "Presentation.Component.NotificationCenter.html",
                                                                 "tf": 100
                                                               }
+                                                            },
+                                                            "e": {
+                                                              "docs": {},
+                                                              "r": {
+                                                                "docs": {},
+                                                                "#": {
+                                                                  "docs": {},
+                                                                  "n": {
+                                                                    "docs": {},
+                                                                    "o": {
+                                                                      "docs": {},
+                                                                      "t": {
+                                                                        "docs": {},
+                                                                        "i": {
+                                                                          "docs": {},
+                                                                          "f": {
+                                                                            "docs": {
+                                                                              "Presentation.Component.NotificationCenter.html#notifications": {
+                                                                                "ref": "Presentation.Component.NotificationCenter.html#notifications",
+                                                                                "tf": 75
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "s": {
+                                                                    "docs": {},
+                                                                    "h": {
+                                                                      "docs": {},
+                                                                      "o": {
+                                                                        "docs": {},
+                                                                        "w": {
+                                                                          "docs": {},
+                                                                          "n": {
+                                                                            "docs": {},
+                                                                            "o": {
+                                                                              "docs": {},
+                                                                              "t": {
+                                                                                "docs": {},
+                                                                                "i": {
+                                                                                  "docs": {},
+                                                                                  "f": {
+                                                                                    "docs": {
+                                                                                      "Presentation.Component.NotificationCenter.html#showNotification": {
+                                                                                        "ref": "Presentation.Component.NotificationCenter.html#showNotification",
+                                                                                        "tf": 75
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "h": {
+                                                                    "docs": {},
+                                                                    "i": {
+                                                                      "docs": {},
+                                                                      "d": {
+                                                                        "docs": {},
+                                                                        "e": {
+                                                                          "docs": {},
+                                                                          "n": {
+                                                                            "docs": {},
+                                                                            "o": {
+                                                                              "docs": {},
+                                                                              "t": {
+                                                                                "docs": {},
+                                                                                "i": {
+                                                                                  "docs": {},
+                                                                                  "f": {
+                                                                                    "docs": {
+                                                                                      "Presentation.Component.NotificationCenter.html#hideNotification": {
+                                                                                        "ref": "Presentation.Component.NotificationCenter.html#hideNotification",
+                                                                                        "tf": 75
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "c": {
+                                                                    "docs": {},
+                                                                    "l": {
+                                                                      "docs": {},
+                                                                      "e": {
+                                                                        "docs": {},
+                                                                        "a": {
+                                                                          "docs": {},
+                                                                          "r": {
+                                                                            "docs": {},
+                                                                            "n": {
+                                                                              "docs": {},
+                                                                              "o": {
+                                                                                "docs": {},
+                                                                                "t": {
+                                                                                  "docs": {},
+                                                                                  "i": {
+                                                                                    "docs": {},
+                                                                                    "f": {
+                                                                                      "docs": {
+                                                                                        "Presentation.Component.NotificationCenter.html#clearNotifications": {
+                                                                                          "ref": "Presentation.Component.NotificationCenter.html#clearNotifications",
+                                                                                          "tf": 75
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  },
+                                                                  "r": {
+                                                                    "docs": {},
+                                                                    "e": {
+                                                                      "docs": {},
+                                                                      "n": {
+                                                                        "docs": {},
+                                                                        "d": {
+                                                                          "docs": {
+                                                                            "Presentation.Component.NotificationCenter.html#render": {
+                                                                              "ref": "Presentation.Component.NotificationCenter.html#render",
+                                                                              "tf": 75
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
                                                             }
                                                           }
                                                         }
@@ -11011,6 +11567,10 @@ window.lunrData = {
                         "ref": "Presentation.Component.Header.html#subTitle",
                         "tf": 110
                       },
+                      "Presentation.Component.NotificationCenter.html#notifications": {
+                        "ref": "Presentation.Component.NotificationCenter.html#notifications",
+                        "tf": 110
+                      },
                       "Configuration.xhrFields.html#.withCredentials": {
                         "ref": "Configuration.xhrFields.html#.withCredentials",
                         "tf": 110
@@ -11092,6 +11652,10 @@ window.lunrData = {
                   },
                   "Presentation.Component.NavigationMenu.html#render": {
                     "ref": "Presentation.Component.NavigationMenu.html#render",
+                    "tf": 25
+                  },
+                  "Presentation.Component.NotificationCenter.html#render": {
+                    "ref": "Presentation.Component.NotificationCenter.html#render",
                     "tf": 25
                   }
                 },
@@ -12290,6 +12854,22 @@ window.lunrData = {
                           "Presentation.Component.NavigationMenu.html#render": {
                             "ref": "Presentation.Component.NavigationMenu.html#render",
                             "tf": 110
+                          },
+                          "Presentation.Component.NotificationCenter.html#showNotification": {
+                            "ref": "Presentation.Component.NotificationCenter.html#showNotification",
+                            "tf": 110
+                          },
+                          "Presentation.Component.NotificationCenter.html#hideNotification": {
+                            "ref": "Presentation.Component.NotificationCenter.html#hideNotification",
+                            "tf": 110
+                          },
+                          "Presentation.Component.NotificationCenter.html#clearNotifications": {
+                            "ref": "Presentation.Component.NotificationCenter.html#clearNotifications",
+                            "tf": 110
+                          },
+                          "Presentation.Component.NotificationCenter.html#render": {
+                            "ref": "Presentation.Component.NotificationCenter.html#render",
+                            "tf": 110
                           }
                         },
                         "d": {
@@ -13334,6 +13914,37 @@ window.lunrData = {
                   }
                 }
               }
+            },
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Presentation.Component.NotificationCenter.html#hideNotification": {
+                    "ref": "Presentation.Component.NotificationCenter.html#hideNotification",
+                    "tf": 25
+                  }
+                },
+                "n": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "f": {
+                          "docs": {
+                            "Presentation.Component.NotificationCenter.html#hideNotification": {
+                              "ref": "Presentation.Component.NotificationCenter.html#hideNotification",
+                              "tf": 675
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           },
           "t": {
@@ -14249,7 +14860,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 929
+      "length": 961
     },
     "corpusTokens": [
       "10",
@@ -14334,6 +14945,7 @@ window.lunrData = {
       "clean",
       "cleanup",
       "clear",
+      "clearnotif",
       "clearpermiss",
       "clearsect",
       "clickdata",
@@ -14377,6 +14989,11 @@ window.lunrData = {
       "component.navigationmenu",
       "component.navigationmenu#rend",
       "component.notificationcent",
+      "component.notificationcenter#clearnotif",
+      "component.notificationcenter#hidenotif",
+      "component.notificationcenter#notif",
+      "component.notificationcenter#rend",
+      "component.notificationcenter#shownotif",
       "component.spreadsheet",
       "component.toolbar",
       "concept",
@@ -14465,6 +15082,8 @@ window.lunrData = {
       "header#subtitl",
       "header#titl",
       "here",
+      "hide",
+      "hidenotif",
       "histori",
       "html",
       "i'd",
@@ -14550,7 +15169,13 @@ window.lunrData = {
       "nextpag",
       "note",
       "notfic",
+      "notif",
       "notificationcent",
+      "notificationcenter#clearnotif",
+      "notificationcenter#hidenotif",
+      "notificationcenter#notif",
+      "notificationcenter#rend",
+      "notificationcenter#shownotif",
       "number",
       "object",
       "old",
@@ -14625,6 +15250,11 @@ window.lunrData = {
       "presentation.component.navigationmenu",
       "presentation.component.navigationmenu#rend",
       "presentation.component.notificationcent",
+      "presentation.component.notificationcenter#clearnotif",
+      "presentation.component.notificationcenter#hidenotif",
+      "presentation.component.notificationcenter#notif",
+      "presentation.component.notificationcenter#rend",
+      "presentation.component.notificationcenter#shownotif",
       "presentation.component.spreadsheet",
       "presentation.component.toolbar",
       "presentation.confirmationdialogview",
@@ -14685,6 +15315,8 @@ window.lunrData = {
       "setcurrentpag",
       "setpages",
       "setup",
+      "show",
+      "shownotif",
       "side",
       "simpl",
       "simpli",
@@ -15729,6 +16361,56 @@ window.lunrData = {
       "summary": "",
       "description": "A Notfication Center Component",
       "body": ""
+    },
+    "Presentation.Component.NotificationCenter.html#notifications": {
+      "id": "Presentation.Component.NotificationCenter.html#notifications",
+      "kind": "member",
+      "title": "notifications",
+      "longname": "Presentation.Component.NotificationCenter#notifications",
+      "name": "notifications",
+      "tags": "Presentation.Component.NotificationCenter#notifications Component.NotificationCenter#notifications NotificationCenter#notifications notifications",
+      "summary": "",
+      "description": ""
+    },
+    "Presentation.Component.NotificationCenter.html#showNotification": {
+      "id": "Presentation.Component.NotificationCenter.html#showNotification",
+      "kind": "function",
+      "title": "showNotification()",
+      "longname": "Presentation.Component.NotificationCenter#showNotification",
+      "name": "showNotification",
+      "tags": "Presentation.Component.NotificationCenter#showNotification Component.NotificationCenter#showNotification NotificationCenter#showNotification showNotification",
+      "summary": "",
+      "description": "Show the NotificationCenter"
+    },
+    "Presentation.Component.NotificationCenter.html#hideNotification": {
+      "id": "Presentation.Component.NotificationCenter.html#hideNotification",
+      "kind": "function",
+      "title": "hideNotification()",
+      "longname": "Presentation.Component.NotificationCenter#hideNotification",
+      "name": "hideNotification",
+      "tags": "Presentation.Component.NotificationCenter#hideNotification Component.NotificationCenter#hideNotification NotificationCenter#hideNotification hideNotification",
+      "summary": "",
+      "description": "Hide the NotificationCenter"
+    },
+    "Presentation.Component.NotificationCenter.html#clearNotifications": {
+      "id": "Presentation.Component.NotificationCenter.html#clearNotifications",
+      "kind": "function",
+      "title": "clearNotifications()",
+      "longname": "Presentation.Component.NotificationCenter#clearNotifications",
+      "name": "clearNotifications",
+      "tags": "Presentation.Component.NotificationCenter#clearNotifications Component.NotificationCenter#clearNotifications NotificationCenter#clearNotifications clearNotifications",
+      "summary": "",
+      "description": "Clear the NotificationCenter"
+    },
+    "Presentation.Component.NotificationCenter.html#render": {
+      "id": "Presentation.Component.NotificationCenter.html#render",
+      "kind": "function",
+      "title": "render()",
+      "longname": "Presentation.Component.NotificationCenter#render",
+      "name": "render",
+      "tags": "Presentation.Component.NotificationCenter#render Component.NotificationCenter#render NotificationCenter#render render",
+      "summary": "",
+      "description": "Renders the Menu"
     },
     "Presentation.Component.AutomaticTable.html": {
       "id": "Presentation.Component.AutomaticTable.html",
