@@ -49,9 +49,6 @@ class NotificationCenter extends AbstractToolbar {
    * @returns {object} Returns the view context ('this')
    */
   render() {
-    if (!this.isInitalized) {
-      return this;
-    }
     this.template = null;//"notused";
     if (this.el) {
       const e = Dom.selector(this.el);
