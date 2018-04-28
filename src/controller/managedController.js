@@ -40,9 +40,10 @@ class ManagedController extends ViewController {
       let i = 0;
       for (i = 0; i < l; i++) {
         const clazz = this._views[i];
-        this._instances.push(new clazz());
-        this._renderChain.push(renderPromise(this, clazz));
-        this._removeChain.push(removePromise(this, clazz));
+        const instance = new clazz();
+        this._instances.push(instance);
+        this._renderChain.push(renderPromise(this, instance));
+        this._removeChain.push(removePromise(this, instance));
       }
     }
     return this;
