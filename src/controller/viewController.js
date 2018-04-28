@@ -7,11 +7,20 @@ import Augmented from "augmentedjs-next";
 class ViewController extends Augmented.Object {
   constructor(options) {
     super(options);
-    this._views = [];
-    this._permissions = {
-      include: [],
-      exclude: []
-    };
+    if (options && options.views) {
+      this._views = options.views;
+    } else {
+      this._views = [];
+    }
+
+    if (options && options.permissions) {
+      this._permissions = options.permissions;
+    } else {
+      this._permissions = {
+        include: [],
+        exclude: []
+      };
+    }
   };
   /**
    * Permissions in the controller
@@ -41,7 +50,8 @@ class ViewController extends Augmented.Object {
    * removeAllViews - cleans up all views known (calling thier remove method)
    */
   removeAllViews() {
-    var i = 0, l = this._views.length;
+    const l = this._views.length;
+    let i = 0;
     for (i = 0; i < l; i++) {
       this._views[i].remove();
     }

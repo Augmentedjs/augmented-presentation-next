@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Application</title>
+		<title>ManagedController</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -43,7 +43,7 @@
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"ddd MMM Do YYYY","systemName":"Augmented.js Next","systemSummary":"Augmented.js Next Presentation - Simply Development.","systemLogo":"img/jensen-silo-circle-small.png","systemColor":"#607D8B","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"<a href='http://www.augmentedjs.com'>Augmented.js Homepage</a>","copyright":"","linenums":true,"collapseSymbols":false,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":true,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":false,"sort":"linenum, longname, version, since","search":true,"favicon":"favicon.png","stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false,"logoFile":"public/images/jensen-silo-circle-small.png","navType":"vertical","protocol":"html://"};
 			window.DOCLET_TOC_ENABLED = true;
-			window.DOCLET_AFILTER_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = true;
 		</script>
 </head>
 <body>
@@ -143,7 +143,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">Application</span></h1>
+				<h1><span class="name">ManagedController</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -152,16 +152,26 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">Application</li>
+							<li class="active">ManagedController</li>
 						</ol>
+						<div class="access-filter">
+								<label class="checkbox-inline">
+									<input class="toggle-inherited" type="checkbox" value="" checked>
+									Inherited
+								</label>
+								<label class="checkbox-inline">
+									<input class="toggle-public" type="checkbox" value="" checked>
+									Public
+								</label>
+						</div>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Application</span><span class="signature-params">()</span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">ManagedController</span><span class="signature-params">()</span></h2>
 </dt>
 <dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>Presentation Application - extension of Augmented.Application</br/><br>Add registration of mediators to the application, breadcrumbs, and stylesheet registration</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>A managed controller that automatically sets up the components</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
@@ -170,7 +180,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Augments</label>
 								<div class="col-sm-9">
-										<p class="form-control-static">Augmented.Application</p>
+										<p class="form-control-static"><a href="ViewController.html">ViewController</a></p>
 								</div>
 							</div>
 			
@@ -189,7 +199,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-8">line 8</a></p>
+									<p class="form-control-static"><a href="controller_managedController.js.html">controller/managedController.js</a>, <a href="controller_managedController.js.html#line-29">line 29</a></p>
 								</div>
 							</div>
 			
@@ -204,39 +214,34 @@
 									<h3>Members</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="router" class="member public"><span class="name">router</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public inherited">
+			<h4 id="views" class="member public inherited"><span class="name">views</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member public">
+<dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The router property of the application</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Properties</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>router</code></td>
-							<td></td>
-							<td class="last">
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>getViews - get the instances of the views known</p></div>
+			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">Array</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Returns an array of view instances</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
 			
 			
 			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#views">ViewController#views</a></p>
+								</div>
+							</div>
 			
 			
 			
@@ -250,7 +255,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-38">line 38</a></p>
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-64">line 64</a></p>
 								</div>
 							</div>
 			
@@ -261,14 +266,14 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="mediators" class="member public"><span class="name">mediators</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public inherited">
+			<h4 id="permissions" class="member public inherited"><span class="name">permissions</span><span class="signature-type"></span></h4>
 		</dt>
-<dd class="symbol-details member public">
+<dd class="symbol-details member public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>All Mediators</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Sets the permissions to the controller</p></div>
 			</div>			<div class="callout callout-info">
-				<h5>Properties</h5>
+				<h5>Parameters</h5>
 				<table class="params table table-striped">
 					<thead>
 					<tr>
@@ -279,10 +284,10 @@
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>mediators</code></td>
+								<td><code>permissions</code></td>
 							<td><span class="param-type">array</span></td>
 							<td class="last">
-									<p>all Mediators</p>
+									<p>The permissions to set</p>
 							</td>
 						</tr>
 					</tbody>
@@ -295,69 +300,25 @@
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
+							<!-- inherits -->
 							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
+								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-72">line 72</a></p>
+									<p class="form-control-static"><a href="ViewController.html#permissions">ViewController#permissions</a></p>
+								</div>
+							</div>
+			
+							<!-- overrides -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Overrides</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#permissions">ViewController#permissions</a></p>
 								</div>
 							</div>
 			
 			
 			
 			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="stylesheets" class="member public"><span class="name">stylesheets</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>All Stylesheets</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Properties</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>stylesheets</code></td>
-							<td><span class="param-type">array</span></td>
-							<td class="last">
-									<p>all stylesheets</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			
 			
 			
@@ -366,65 +327,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-130">line 130</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title member public">
-			<h4 id="breadcrumbs" class="member public"><span class="name">breadcrumbs</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details member public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>The breadcrumbs</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Properties</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>breadcrumbs</code></td>
-							<td><span class="param-type">array</span></td>
-							<td class="last">
-									<p>alls the breadcrumbs</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-156">line 156</a></p>
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-100">line 100</a></p>
 								</div>
 							</div>
 			
@@ -438,244 +341,12 @@
 									<h3>Methods</h3>
 									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="registerMediator" class="function public"><span class="name">registerMediator</span><span class="signature-params">( <span class="signature-param">mediator</span>&nbsp;)</span></h4>
+											<dt class="symbol-title function public inherited">
+			<h4 id="initialize" class="function public inherited"><span class="name">initialize</span><span class="signature-params">()</span></h4>
 		</dt>
-<dd class="symbol-details function public">
+<dd class="symbol-details function public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Register a Mediator</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>mediator</code></td>
-							<td><span class="param-type">Mediator</span></td>
-							<td class="last">
-									<p>The mediator to register</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-50">line 50</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="deregisterMediator" class="function public"><span class="name">deregisterMediator</span><span class="signature-params">( <span class="signature-param">mediator</span>&nbsp;)</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Deregister a Mediator</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>mediator</code></td>
-							<td><span class="param-type">Mediator</span></td>
-							<td class="last">
-									<p>The mediator to deregister</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-59">line 59</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="registerStylesheet" class="function public"><span class="name">registerStylesheet</span><span class="signature-params">( <span class="signature-param">stylesheet</span>&nbsp;)</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Register a stylesheet</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>stylesheet</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>URI of the stylesheet</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-80">line 80</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="deregisterStylesheet" class="function public"><span class="name">deregisterStylesheet</span><span class="signature-params">( <span class="signature-param">stylesheet</span>&nbsp;)</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Deregister a stylesheet</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>stylesheet</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>URI of the stylesheet</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-89">line 89</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="attachStylesheets" class="function public"><span class="name">attachStylesheets</span><span class="signature-params">()</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Attach registered stylesheets to the DOM</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>initialize - an API for the start of the controller.  It is intended to add initializers here</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
@@ -683,7 +354,21 @@
 			
 			
 			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#initialize">ViewController#initialize</a></p>
+								</div>
+							</div>
 			
+							<!-- overrides -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Overrides</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#initialize">ViewController#initialize</a></p>
+								</div>
+							</div>
 			
 			
 			
@@ -696,7 +381,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-97">line 97</a></p>
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-33">line 33</a></p>
 								</div>
 							</div>
 			
@@ -707,12 +392,12 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="replaceStylesheets" class="function public"><span class="name">replaceStylesheets</span><span class="signature-params">()</span></h4>
+											<dt class="symbol-title function public inherited">
+			<h4 id="render" class="function public inherited"><span class="name">render</span><span class="signature-params">()</span></h4>
 		</dt>
-<dd class="symbol-details function public">
+<dd class="symbol-details function public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Replace stylesheets then attach registered stylesheets to the DOM</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>render - an API for the render of the controller.  It is intended to add view render methods here</p></div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
@@ -720,7 +405,21 @@
 			
 			
 			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#render">ViewController#render</a></p>
+								</div>
+							</div>
 			
+							<!-- overrides -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Overrides</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#render">ViewController#render</a></p>
+								</div>
+							</div>
 			
 			
 			
@@ -733,7 +432,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-116">line 116</a></p>
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-37">line 37</a></p>
 								</div>
 							</div>
 			
@@ -744,12 +443,63 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="setCurrentBreadcrumb" class="function public"><span class="name">setCurrentBreadcrumb</span><span class="signature-params">( <span class="signature-param">uri</span>, <span class="signature-param">name</span>&nbsp;)</span></h4>
+											<dt class="symbol-title function public inherited">
+			<h4 id="remove" class="function public inherited"><span class="name">remove</span><span class="signature-params">()</span></h4>
 		</dt>
-<dd class="symbol-details function public">
+<dd class="symbol-details function public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Sets the current breadcrumb</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>remove - an API for the end of the controller.  It is intended to add view removal and cleanup here</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#remove">ViewController#remove</a></p>
+								</div>
+							</div>
+			
+							<!-- overrides -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Overrides</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#remove">ViewController#remove</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-41">line 41</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="manageView" class="function public inherited"><span class="name">manageView</span><span class="signature-params">( <span class="signature-param">view</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>manageView - manage a view</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -762,17 +512,10 @@
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>uri</code></td>
-							<td><span class="param-type">string</span></td>
+								<td><code>view</code></td>
+							<td><span class="param-type"><a href="Presentation.View.html">Presentation.View</a></span></td>
 							<td class="last">
-									<p>The URI of the breadcrumb</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>name</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>The name of the breadcrumb</p>
+									<p>An instance of a view to manage</p>
 							</td>
 						</tr>
 					</tbody>
@@ -785,6 +528,13 @@
 			
 			
 			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#manageView">ViewController#manageView</a></p>
+								</div>
+							</div>
 			
 			
 			
@@ -798,7 +548,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-138">line 138</a></p>
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-46">line 46</a></p>
 								</div>
 							</div>
 			
@@ -809,17 +559,329 @@
 			</div>	</div>
 </dd>
 											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id="getCurrentBreadcrumb" class="function public"><span class="name">getCurrentBreadcrumb</span><span class="signature-params">()</span></h4>
+											<dt class="symbol-title function public inherited">
+			<h4 id="removeAllViews" class="function public inherited"><span class="name">removeAllViews</span><span class="signature-params">()</span></h4>
 		</dt>
-<dd class="symbol-details function public">
+<dd class="symbol-details function public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Gets the current breadcrumb</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>removeAllViews - cleans up all views known (calling thier remove method)</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#removeAllViews">ViewController#removeAllViews</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-52">line 52</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="addPermission" class="function public inherited"><span class="name">addPermission</span><span class="signature-params">( <span class="signature-param">permission</span>, <span class="signature-param">negative</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Adds a permission to the controller</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>permission</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The permission to add</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>negative</code></td>
+							<td><span class="param-type">boolean</span></td>
+							<td class="last">
+									<p>Flag to set a nagative permission (optional)</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#addPermission">ViewController#addPermission</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-73">line 73</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="removePermission" class="function public inherited"><span class="name">removePermission</span><span class="signature-params">( <span class="signature-param">permission</span>, <span class="signature-param">negative</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Removes a permission to the controller</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>permission</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The permission to remove</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>negative</code></td>
+							<td><span class="param-type">boolean</span></td>
+							<td class="last">
+									<p>Flag to set a nagative permission (optional)</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#removePermission">ViewController#removePermission</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-87">line 87</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="clearPermissions" class="function public inherited"><span class="name">clearPermissions</span><span class="signature-params">()</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Clears the permissions in the controller</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#clearPermissions">ViewController#clearPermissions</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-129">line 129</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="matchesPermission" class="function public inherited"><span class="name">matchesPermission</span><span class="signature-params">( <span class="signature-param">match</span>, <span class="signature-param">negative</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Matches a permission in the controller</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>match</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The permissions to match</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>negative</code></td>
+							<td><span class="param-type">boolean</span></td>
+							<td class="last">
+									<p>Flag to set a nagative permission (optional)</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
+							<div class="form-group">
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
+								<div class="col-sm-9">
+									<div class="form-control-static returns-description"><p>Returns true if the match exists</p></div>
+								</div>
+							</div>
+					</form>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#matchesPermission">ViewController#matchesPermission</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-141">line 141</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public inherited">
+			<h4 id="canDisplay" class="function public inherited"><span class="name">canDisplay</span><span class="signature-params">()</span></h4>
+		</dt>
+<dd class="symbol-details function public inherited">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Callback to return if this controller can display</p></div>
 			</div>			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
 							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">object</span></label>
+								<label class="col-sm-3 control-label returns-type"><span class="param-type">boolean</span></label>
 								<div class="col-sm-9">
-									<div class="form-control-static returns-description"><p>Returns the current breadcrumb</p></div>
+									<div class="form-control-static returns-description"><p>Returns true if this controller can display</p></div>
 								</div>
 							</div>
 					</form>
@@ -830,6 +892,13 @@
 			
 			
 			
+							<!-- inherits -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Inherited From</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="ViewController.html#canDisplay">ViewController#canDisplay</a></p>
+								</div>
+							</div>
 			
 			
 			
@@ -843,44 +912,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-148">line 148</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public">
-			<h4 id=".initialize" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">initialize</span><span class="signature-params">()</span></h4>
-		</dt>
-<dd class="symbol-details function public">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Initialize Event - adds any stylesheets registered</p></div>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="application_application.js.html">application/application.js</a>, <a href="application_application.js.html#line-17">line 17</a></p>
+									<p class="form-control-static"><a href="controller_viewController.js.html">controller/viewController.js</a>, <a href="controller_viewController.js.html#line-152">line 152</a></p>
 								</div>
 							</div>
 			

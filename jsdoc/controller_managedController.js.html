@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>request/promiseRequest.js</title>
+		<title>controller/managedController.js</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -144,7 +144,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">source</span>
-				<h1><span class="name">request/promiseRequest.js</span></h1>
+				<h1><span class="name">controller/managedController.js</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -152,231 +152,69 @@
 			<div class="col-md-12 main-content">
 		<section class="source-section">
 			<article></article>
-			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import HEADERS from "./headers.js";
-import DATA_TYPE from "./dataType.js";
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">import ViewController from "./viewController.js";
 
-const ASYNC = true; // Sync no longer supported by most clients
-
-function mockXHR() {
-  this.responseType = DATA_TYPE.TEXT;
-  this.responseText = "";
-  this.async = true;
-  this.status = 200;
-  this.header = {};
-  this.timeout = 70;
-  this.open = (method, uri, ASYNC, user, password) => {
-    this.url = uri;
-    this.async = ASYNC;
-    this.user = user;
-    this.method = method;
-  };
-  this.send = () => {
-    this.onload();
-  };
-  this.setRequestHeader = (header, value) => {
-    this.header.header = value;
-  };
-  this.done = () => {};
-  this.fail = () => {};
-  this.always = () => {};
-  this.then = () => {};
-  this.options = {};
-};
-
-/*
-* Setup the rest of jQuery-like eventing and handlers for native xhr
-*/
-/*let aXHR = null;
-
-if (XMLHttpRequest) {
-//console.info("AUGMENTED: Ajax is alive");
-aXHR = XMLHttpRequest;
-aXHR.done = () => {};
-aXHR.fail = () => {};
-aXHR.always = () => {};
-aXHR.then = () => {};
-} else {
-aXHR = mockXHR;
-}*/
-
-/**
-* AJAX capability using simple jQuery-like API&lt;br/>
-* Supports the following object properties and features:
-* &lt;ul>
-* &lt;li>method&lt;/li>
-* &lt;li>url&lt;/li>
-* &lt;li>contentType&lt;/li>
-* &lt;li>dataType&lt;/li>
-* &lt;li>beforeSend function&lt;/li>
-* &lt;li>success callback&lt;/li>
-* &lt;li>failure callback&lt;/li>
-* &lt;li>complete callback&lt;/li>
-* &lt;li>user&lt;/li>
-* &lt;li>password&lt;/li>
-* &lt;li>withCredentials&lt;/li>
-* &lt;li>cache&lt;/li>
-* &lt;li>timeout&lt;/li>
-* &lt;li>mock - special flag for mocking response&lt;/li>
-* &lt;/ul>
-* @method promiseRequest
-* @static
-* @param {Presentation.Request.Configuration} configuration object of configuration properties and callbacks.
-* @returns Promise
-* @memberof Presentation
-* @example Presentation.request({
-*         url: uri,
-*         contentType: "text/plain",
-*         dataType: "text",
-*         success: function (data, status) { ... },
-*         error: function (data, status) { ... }
-*     });
-*/
-const promiseRequest = (configuration) => {
-  return new Promise(function (resolve, reject) {
-    //console.debug("AUGMENTED: Ajax object: " + JSON.stringify(configuration));
-    let xhr = null;
-
-    if (configuration &amp;&amp; configuration.url) {
-      //console.warn("AUGMENTED: Ajax Here");
-      let type = configuration.type;
-
-      if (!configuration.method &amp;&amp; configuration.type) {
-        configuration.method = configuration.type;
-      }
-
-      let method = (configuration.method) ? configuration.method : "GET";
-      let cache = (configuration.cache) ? (configuration.cache) : true;
-      //console.warn("AUGMENTED: Ajax Here 2", (configuration.mock));
-      xhr = (configuration.mock) ? new mockXHR() : new XMLHttpRequest();
-      //console.warn("AUGMENTED: Ajax xhr", xhr);
-      if (configuration.timeout) {
-        xhr.timeout = configuration.timeout;
-      }
-      //const ASYNC = true; //(configuration.async !== undefined) ? configuration.async : true;
-
-      // CORS &amp; Async
-      if (configuration.crossDomain &amp;&amp; configuration.xhrFields &amp;&amp; configuration.xhrFields.withCredentials) {
-        xhr.withCredentials = configuration.xhrFields.withCredentials;
-        // Sync Not supported for all browsers in CORS mode
-        //if (!async) {
-        //  logger.warn("AUGMENTED: Augmented.Request: Sync Not supported for all browsers in CORS mode!");
-        //}
-        //async = true;
-      }
-
-      if (ASYNC &amp;&amp; configuration.dataType) {
-        xhr.responseType = (configuration.dataType) ? configuration.dataType : DATA_TYPE.TEXT;
-      }
-
-      xhr.open(method, encodeURI(configuration.url), ASYNC,
-      (configuration.user !== undefined) ? configuration.user : "",
-      (configuration.password !== undefined) ? configuration.password : "");
-      xhr.setRequestHeader(HEADERS.TYPE, (configuration.contentType) ? configuration.contentType : HEADERS.TEXT);
-
-      if (configuration.dataType === DATA_TYPE.JSON) {
-        xhr.setRequestHeader(HEADERS.ACCEPT, HEADERS.APPLICATION);
-      }
-
-      if (!cache) {
-        xhr.setRequestHeader(HEADERS.CACHE, HEADERS.NO_CACHE);
-      }
-
-      // CORS
-      if (xhr.withCredentials) {
-        let allowOrigins = "*", allowMethods = "GET";
-        if (configuration.allowOrigins) {
-          allowOrigins = configuration.allowOrigins;
-        }
-        if (configuration.allowMethods) {
-          allowMethods = configuration.allowMethods;
-        }
-
-        xhr.setRequestHeader(HEADERS.ALLOW_ORIGINS, allowOrigins);
-        xhr.setRequestHeader(HEADERS.ALLOW_METHODS, allowMethods);
-      }
-
-      // Authorization
-      if (xhr.withCredentials &amp;&amp; configuration.user &amp;&amp; configuration.password) {
-        xhr.setRequestHeader(HEADERS.AUTH, "Basic " + window.btoa(configuration.user + ":" + configuration.password));
-      }
-
-      // custom headers
-      if (configuration.headers) {
-        let i = 0, keys = Object.keys(configuration.headers), l = keys.length;
-
-        for (i = 0; i &lt; l; i++) {
-          xhr.setRequestHeader(keys[i], configuration.headers[keys[i]]);
-        }
-      }
-
-      xhr.onload = () => {
-        try {
-          if (xhr.status > 199 &amp;&amp; xhr.status &lt; 399) {
-            if (configuration.success) {
-              if (xhr.responseType === "" || xhr.responseType === DATA_TYPE.TEXT) {
-                if (xhr.responseText) {
-                  configuration.success(xhr.responseText, xhr.status, xhr);
-                } else {
-                  //console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
-                  configuration.success("", xhr.status, xhr);
-                }
-              } else if (xhr.responseType === DATA_TYPE.JSON) {
-                if (xhr.response) {
-                  //console.debug("AUGMENTED: Ajax (JSON responseType) native JSON.");
-                  configuration.success(xhr.response, xhr.status, xhr);
-                } else if (xhr.responseText) {
-                  //console.debug("AUGMENTED: Ajax (JSON responseType) parsed JSON from string.");
-                  configuration.success(JSON.parse(xhr.responseText), xhr.status, xhr);
-                } else {
-                  //console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
-                  configuration.success("", xhr.status, xhr);
-                }
-              } else {
-                if (xhr.responseText) {
-                  configuration.success(xhr.responseText, xhr.status, xhr);
-                } else if (xhr.response) {
-                  configuration.success(xhr.response, xhr.status, xhr);
-                } else {
-                  //console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
-                  configuration.success("", xhr.status, xhr);
-                }
-              }
-            }
-          } else if (xhr.status > 399 &amp;&amp; xhr.status &lt; 600) {
-            if (configuration.failure) {
-              configuration.failure(xhr, xhr.status, xhr.statusText);
-              reject(new Error(`${xhr.status} ${xhr.statusText}`));
-            } else if (configuration.error) {
-              configuration.error(xhr, xhr.status, xhr.statusText);
-              reject(new Error(`${xhr.status} ${xhr.statusText}`));
-            }
-          }
-        } catch(e) {
-          //console.error("AUGMENTED: Ajax (" + e + ")");
-          if (configuration &amp;&amp; configuration.error) {
-            configuration.error(xhr, xhr.status, xhr.statusText);
-          }
-          reject(new Error(`${xhr.status} ${xhr.statusText}`));
-        }
-        if (configuration.complete) {
-          configuration.complete(xhr, xhr.status);
-        }
-        resolve(configuration);
-      };
-
-      if (configuration.beforeSend) {
-        configuration.beforeSend(xhr);
-      }
-      xhr.send(((configuration.data) ? configuration.data : ""));
+const renderPromise = (controller, clazz) => {
+  return new Promise( (resolve, reject) => {
+    const t = clazz.render();
+    if (t) {
+      resolve(controller);
+    } else {
+      reject(new Error("Error rendering!"));
     }
-
-    //console.debug("AUGMENTED: Ajax status (" + xhr.status + ")");
-
-    //return this;
   });
 };
 
-export default request;
+const removePromise = (controller, clazz) => {
+  return new Promise( (resolve, reject) => {
+    const t = clazz.remove();
+    if (t) {
+      resolve(controller);
+    } else {
+      reject(new Error("Error removing!"));
+    }
+  });
+};
+
+/**
+ * A managed controller that automatically sets up the components
+ * @extends ViewController
+ */
+class ManagedController extends ViewController {
+  constructor(options) {
+    super(options);
+    this._instances = [];
+    this._renderChain = [];
+    this._removeChain = [];
+  };
+
+  initialize() {
+    if (this._views &amp;&amp; this._views.length > 0) {
+      const l = this._views.length;
+      let i = 0;
+      for (i = 0; i &lt; l; i++) {
+        const clazz = this._views[i];
+        this._instances.push(new clazz());
+        this._renderChain.push(renderPromise(this, clazz));
+        this._removeChain.push(removePromise(this, clazz));
+      }
+    }
+    return this;
+  };
+
+  render() {
+    Promise.all(this._renderChain);
+    return this;
+  };
+
+  remove() {
+    Promise.all(this._removeChain);
+    return this;
+  };
+
+};
+
+export default ManagedController;
 </code></pre>
 		</section>
 			</div>
