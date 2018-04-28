@@ -11,6 +11,7 @@ import Application from "./application/application.js";
 import Widget from "./widget/widget.js";
 import Dom from "./dom/dom.js";
 import ViewController from "./controller/viewController.js";
+import ManagedController from "./controller/managedController.js";
 import LocalStorageFactory from "./storage/localStorageFactory.js";
 import LocalStorage from "./storage/localStorage.js";
 import NamespacedLocalStorage from "./storage/namespacedLocalStorage.js";
@@ -90,6 +91,7 @@ Presentation.LocalStorageCollection = LocalStorageCollection;
 Presentation.PaginatedCollection = PaginatedCollection;
 
 Presentation.ViewController = ViewController;
+Presentation.ManagedController = ManagedController;
 Presentation.AbstractView = AbstractView;
 Presentation.View = View;
 
