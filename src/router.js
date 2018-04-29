@@ -35,9 +35,15 @@ class Router extends Augmented.Object {
    */
   loadView(view) {
     this.cleanup();
-    this._view = view;
-    this._view.render();
-    this._view.delegateEvents();
+    if (view){
+      this._view = view;
+      if (this._view.render) {
+        this._view.render();
+      }
+      if (this._view.delegateEvents) {
+        this._view.delegateEvents();
+      }
+    }
   };
 
   /**

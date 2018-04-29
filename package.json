@@ -1,6 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.0.12",
+  "version": "2.0.13",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "author": "Bob Warren <jedi.master@augmentedjs.com> (http://www.augmentedjs.com)",
   "license": "Apache-2.0",
   "devDependencies": {
-    "babel-core": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
@@ -33,14 +33,14 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "jsdoc": "^3.5.5",
-    "jsdom": "^11.7.0",
+    "jsdom": "^11.9.0",
     "mocha": "^4.1.0",
     "mocha-jsdom": "^1.1.0",
     "node-localstorage": "^1.3.1",
     "sinon": "^4.5.0",
-    "uglifyjs-webpack-plugin": "^1.2.4",
-    "webpack": "^4.5.0",
-    "webpack-cli": "^2.0.14"
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
   },
   "dependencies": {
     "augmentedjs-next": "^2.0.5",
