@@ -161,13 +161,13 @@
 class ViewController extends Augmented.Object {
   constructor(options) {
     super(options);
-    if (options.views) {
+    if (options &amp;&amp; options.views) {
       this._views = options.views;
     } else {
       this._views = [];
     }
 
-    if (options.permissions) {
+    if (options &amp;&amp; options.permissions) {
       this._permissions = options.permissions;
     } else {
       this._permissions = {

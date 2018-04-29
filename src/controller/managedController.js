@@ -58,7 +58,6 @@ class ManagedController extends ViewController {
     Promise.all(this._removeChain);
     return this;
   };
-
 };
 
 export default ManagedController;
