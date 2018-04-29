@@ -30,15 +30,21 @@ class ViewController extends Augmented.Object {
   /**
    * initialize - an API for the start of the controller.  It is intended to add initializers here
    */
-  initialize() {};
+  initialize() {
+    return this;
+  };
   /**
    * render - an API for the render of the controller.  It is intended to add view render methods here
    */
-  render() {};
+  render() {
+    return this;
+  };
   /**
    * remove - an API for the end of the controller.  It is intended to add view removal and cleanup here
    */
-  remove() {};
+  remove() {
+    return this;
+  };
   /**
    * manageView - manage a view
    * @param {Presentation.View} view An instance of a view to manage

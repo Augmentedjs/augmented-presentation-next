@@ -54,7 +54,9 @@ class Router extends Augmented.Object {
       if (this._view.cleanup) {
         this._view.cleanup();
       }
-      this._view.remove();
+      if (this._view.remove) {
+        this._view.remove();
+      }
       this._view = null;
     }
   };
@@ -64,7 +66,7 @@ class Router extends Augmented.Object {
    * initialization logic.
    */
   initialize(options) {
-    super.initialize(options);
+    return super.initialize(options);
   };
 
   /**

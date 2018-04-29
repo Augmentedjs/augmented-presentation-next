@@ -6,8 +6,6 @@ const DELEGATE_EVENT_SPLITTER = /^(\S+)\s*(.*)$/;
 
 /**
  * Aubstract View - the base view for handlng display in the MV* Concept
- * @class
- * @name AbstractView
  * @memberof Presentation
  * @extends Augmented.Object
  */
@@ -96,14 +94,12 @@ class AbstractView extends Augmented.Object {
   /**
    * The name property of the view
    * @property {string} name The Name of the view
-   * @memberof AbstractView
    * @private
    */
 
   /**
    * Permissions in the view
    * @property permissions
-   * @memberof AbstractView
    * @private
    */
 
@@ -117,56 +113,45 @@ class AbstractView extends Augmented.Object {
 
   /**
    * Custom initialize - Override for custom code
-   * @method init
    * @param {object} options Optional options to pass to the view
-   * @memberof AbstractView
    */
   init(options) {
   };
   /**
    * Initializes the view - <em>Note: Do not override, use init instead!</em>
-   * @method initialize
    * @param {object} options Optional options to pass to the view
-   * @memberof AbstractView
    * @returns {View} Returns 'this,' as in, this view context
    */
   initialize(options) {
     this.options = options;
     this.init(options);
+    return this;
   };
   /**
    * Before Render callback for the view
-   * @method beforeRender
    * @returns this Context of the view
-   * @memberof AbstractView
    */
   beforeRender() {
     return this;
   };
   /**
    * Render callback for the view
-   * @method render
    * @returns this Context of the view
-   * @memberof AbstractView
    */
   render() {
     return this;
   };
   /**
    * After Render callback for the view
-   * @method afterRender
    * @returns this Context of the view
-   * @memberof AbstractView
    */
   afterRender() {
     return this;
   };
 
-  /*
-   * @method remove
+  /**
    * Remove this view by taking the element out of the DOM, and removing any
    * applicable Backbone.Events listeners.
-   * @memberof AbstractView
    */
   remove() {
     this._removeElement();
@@ -188,10 +173,8 @@ class AbstractView extends Augmented.Object {
   };
 
   /**
-   * @method setElement
    * Change the view's element (`this.el` property) and re-delegate the
    * view's events on the new element.
-   * @memberof AbstractView
    */
   setElement(element) {
     //console.log("setting element", element);
@@ -212,16 +195,14 @@ class AbstractView extends Augmented.Object {
    * pairs. Callbacks will be bound to the view, with `this` set properly.
    * Uses event delegation for efficiency.
    * Omitting the selector binds the event to `this._el`.
-   * @method delegateEvents
-   * @memberof AbstractView
    * @example
-   * *{"event selector": "callback"}*
-   *
-   *     {
-   *       'mousedown .title':  'edit',
-   *       'click .button':     'save',
-   *       'click .open':       function(e) { ... }
-   *     }
+   * {"event selector": "callback"}
+   * @example
+   * {
+   *   'mousedown .title':  'edit',
+   *   'click .button':     'save',
+   *   'click .open':       (e) => { ... }
+   * }
    */
   delegateEvents(events) {
     events || (events = Augmented.result(this, "events"));
@@ -248,8 +229,6 @@ class AbstractView extends Augmented.Object {
    * Add a single event listener to the view's element (or a child element
    * using `selector`). This only works for delegate-able events: not `focus`,
    * `blur`, and not `change`, `submit`, and `reset` in Internet Explorer.
-   * @method delegate
-   * @memberof AbstractView
    */
   delegate(eventName, selector, listener) {
     const matchesNL = document.querySelectorAll(selector);
@@ -269,8 +248,6 @@ class AbstractView extends Augmented.Object {
    * Clears all callbacks previously bound to the view by `delegateEvents`.
    * You usually don't need to use this, but may wish to if you have multiple
    * views attached to the same DOM element.
-   * @method undelegateEvents
-   * @memberof AbstractView
    */
   undelegateEvents() {
     ////console.log("undelegateEvents");
@@ -299,8 +276,6 @@ class AbstractView extends Augmented.Object {
   /**
    * A finer-grained `undelegateEvents` for removing a single delegated event.
    * `selector` and `listener` are both optional.
-   * @method undelegate
-   * @memberof AbstractView
    */
   undelegate(eventName, selector, listener) {
     if (this._el) {
@@ -382,18 +357,14 @@ class AbstractView extends Augmented.Object {
 
   /**
   * Sets the name of the view
-  * @method setName
   * @param {string} name The name of the view
-  * @memberof AbstractView
   */
   set name(name) {
     this._name = name;
   };
   /**
   * Gets the name of the view
-  * @method getName
   * @returns {string} Returns the name of the view
-  * @memberof AbstractView
   */
   get name() {
     return this._name;
@@ -401,10 +372,8 @@ class AbstractView extends Augmented.Object {
 
   /**
   * Adds a permission to the view
-  * @method addPermission
   * @param {string} permission The permission to add
   * @param {boolean} negative Flag to set a nagative permission (optional)
-  * @memberof AbstractView
   */
   addPermission(permission, negative) {
     if (!negative) {
@@ -417,10 +386,8 @@ class AbstractView extends Augmented.Object {
   };
   /**
   * Removes a permission to the view
-  * @method removePermission
   * @param {string} permission The permission to remove
   * @param {boolean} negative Flag to set a nagative permission (optional)
-  * @memberof AbstractView
   */
   removePermission(permission, negative) {
     if (!negative) {
@@ -433,10 +400,8 @@ class AbstractView extends Augmented.Object {
   };
   /**
   * Sets the permissions to the view
-  * @method setPermissions
   * @param {array} permissions The permissions to set
   * @param {boolean} negative Flag to set a nagative permission (optional)
-  * @memberof AbstractView
   */
   set permissions(permissions) {
     /*if (!negative) {
@@ -461,17 +426,13 @@ class AbstractView extends Augmented.Object {
   *     exclude: []
   * }</pre>
   *
-  * @method getPermissions
   * @returns {object} The permissions in the view
-  * @memberof AbstractView
   */
   get permissions() {
     return this._permissions;
   };
   /**
   * Clears the permissions in the view
-  * @method clearPermissions
-  * @memberof AbstractView
   */
   clearPermissions() {
     this._permissions = {
@@ -481,11 +442,9 @@ class AbstractView extends Augmented.Object {
   };
   /**
   * Matches a permission in the view
-  * @method matchesPermission
   * @param {string} match The permissions to match
   * @param {boolean} negative Flag to set a nagative permission (optional)
   * @returns {boolean} Returns true if the match exists
-  * @memberof AbstractView
   */
   matchesPermission(match, negative) {
     if (!negative) {
@@ -496,9 +455,7 @@ class AbstractView extends Augmented.Object {
   };
   /**
   * Callback to return if this view can display
-  * @method canDisplay
   * @returns {boolean} Returns true if this view can display
-  * @memberof AbstractView
   */
   canDisplay() {
     return true;
