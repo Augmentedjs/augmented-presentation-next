@@ -34,7 +34,7 @@ class ManagedController extends ViewController {
     this._removeChain = [];
   };
 
-  initialize() {
+  initialize(options) {
     if (this._views && this._views.length > 0) {
       const l = this._views.length;
       let i = 0;
