@@ -4,9 +4,10 @@ import formCompile from "../functions/buildForm.js";
 import formatValidationMessages from "../functions/messages.js";
 import Dom from "../../../dom/dom.js";
 import Model from "../../../model/model.js";
+import request from "../../../request/request.js";
+
 /**
 * A automatic form view created from a JSON Schema
-* @class AutomaticForm
 * @memberof Presentation.Component
 * @extends Presentation.DecoratorView
 */
@@ -169,7 +170,7 @@ class AutomaticForm extends DecoratorView {
   _retrieveSchema(uri) {
     let that = this;
     let schema = null;
-    Augmented.request({
+    request({
       url: uri,
       contentType: "application/json",
       dataType: "json",
@@ -190,7 +191,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Sets the URI
-  * @method setURI
   *
   * @param {string} uri The URI
   */
@@ -200,7 +200,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Sets the schema
-  * @method setSchema
   *
   * @param {object} schema The JSON schema of the dataset
   */
@@ -217,8 +216,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Enable/Disable the progress bar
-  * @method showProgressBar
-  *
   * @param {boolean} show Show or Hide the progress bar
   */
   showProgressBar(show) {
@@ -236,7 +233,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Show a message related to the form
-  * @method showMessage
   *
   * @param {string} message Some message to display
   */
@@ -254,7 +250,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Validate the form
-  * @method validate
   *
   * @returns {boolean} Returns true on success of validation
   */
@@ -270,7 +265,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Is the form valid
-  * @method isValid
   *
   * @returns {boolean} Returns true if valid
   */
@@ -280,7 +274,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Render the form
-  * @method render Renders the form
   *
   * @returns {object} Returns the view context ('this')
   */
@@ -337,7 +330,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Reset the form
-  * @method reset
   *
   * @returns {object} Returns the view context ('this')
   */
@@ -350,7 +342,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Populate the form
-  * @method populate
   * @param {object} data Data to fill in
   *
   * @returns {object} Returns the view context ('this')
@@ -361,8 +352,6 @@ class AutomaticForm extends DecoratorView {
 
   /**
   * Remove the form and all binds
-  * @method remove
-  *
   */
   remove() {
     /* off to unbind the events */

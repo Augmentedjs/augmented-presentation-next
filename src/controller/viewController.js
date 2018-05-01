@@ -21,6 +21,7 @@ class ViewController extends Augmented.Object {
         exclude: []
       };
     }
+    this.initialize(options);
   };
   /**
    * Permissions in the controller
@@ -30,7 +31,7 @@ class ViewController extends Augmented.Object {
   /**
    * initialize - an API for the start of the controller.  It is intended to add initializers here
    */
-  initialize() {
+  initialize(options) {
     return this;
   };
   /**

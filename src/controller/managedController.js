@@ -29,13 +29,19 @@ const removePromise = (controller, clazz) => {
 class ManagedController extends ViewController {
   constructor(options) {
     super(options);
-    this._instances = [];
-    this._renderChain = [];
-    this._removeChain = [];
   };
 
-  initialize() {
+  initialize(options) {
     if (this._views && this._views.length > 0) {
+      if (!this._instances) {
+        this._instances = [];
+      }
+      if (!this._renderChain) {
+        this._renderChain = [];
+      }
+      if (!this._removeChain) {
+        this._removeChain = [];
+      }
       const l = this._views.length;
       let i = 0;
       for (i = 0; i < l; i++) {
@@ -50,12 +56,16 @@ class ManagedController extends ViewController {
   };
 
   render() {
-    Promise.all(this._renderChain);
+    if (!this._renderChain) {
+      Promise.all(this._renderChain);
+    }
     return this;
   };
 
   remove() {
-    Promise.all(this._removeChain);
+    if (!this._removeChain) {
+      Promise.all(this._removeChain);
+    }
     return this;
   };
 };
