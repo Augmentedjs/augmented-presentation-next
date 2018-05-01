@@ -61,17 +61,17 @@ class NamespacedLocalStorage extends LocalStorage {
       this._myStore = new Augmented.Utility.Map();
     }
     this._myStore.set(itemKey, object);
-    this._ls.setItem(namespace, JSON.stringify(this._myStore.toJSON()));
+    this._ls.setItem(this.namespace, JSON.stringify(this._myStore.toJSON()));
   };
 
   removeItem(itemKey) {
     this._myStore.remove(itemKey);
-    this._ls.setItem(namespace, JSON.stringify(this._myStore.toJSON()));
+    this._ls.setItem(this.namespace, JSON.stringify(this._myStore.toJSON()));
   };
 
   clear() {
     this._myStore.clear();
-    this._ls.setItem(namespace, JSON.stringify(this._myStore.toJSON()));
+    this._ls.setItem(this.namespace, JSON.stringify(this._myStore.toJSON()));
   };
 
   key(i) {
