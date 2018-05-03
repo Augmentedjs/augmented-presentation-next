@@ -156,6 +156,19 @@ class Application extends Augmented.Application {
   get breadcrumbs() {
     return this._breadcrumb.toArray();
   };
+
+  /**
+   * The Window title
+   * @property {string} title title of the window
+   */
+
+  get title() {
+    return document.title;
+  };
+
+  set title(title) {
+    document.title = title;
+  };
 };
 
 export default Application;
