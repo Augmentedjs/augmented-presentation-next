@@ -1,6 +1,6 @@
 # Augmented.js Next Presentation
 ## The Augmented.js Next Framework Presentation Module
-### Version 2.0.x
+### Version 2.1.x
 ### JC Denton
 **aug·ment·ed**
 /ˌôɡˈmentəd /
@@ -24,7 +24,7 @@ The **Presentation** extension adds extensive abilities to the presentation laye
 
 ### Current Features:
 * Mediator patterned PubSub Views
-* MVVM Decorator Views with declaratives
+* MVVM Decorator and Directive Views with declaratives
 * Security wired throughout the framework
   - Views can lock down
 * Utilities that support common abilities found in jQuery (only drastically faster)

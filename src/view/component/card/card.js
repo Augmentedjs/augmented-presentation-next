@@ -1,13 +1,13 @@
-import DecoratorView from "../../decorator/decorator.js";
+import DirectiveView from "../../directive/directiveView.js";
 import Dom from "../../../dom/dom.js";
 
 /**
  * A card view - simple panel/dialog-like panel
  * @class Card
  * @memberof Presentation.Component
- * @extends Presentation.DecoratorView
+ * @extends Presentation.DirectiveView
  */
-class Card extends DecoratorView {
+class Card extends DirectiveView {
   constructor(options) {
     super(options);
     if (!this.name) {

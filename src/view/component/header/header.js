@@ -1,12 +1,12 @@
-import DecoratorView from "../../decorator/decorator.js";
+import DirectiveView from "../../directive/directiveView.js";
 import Dom from "../../../dom/dom.js";
 
 /**
  * A Header Component
  * @memberof Presentation.Component
- * @extends Presentation.DecoratorView
+ * @extends Presentation.DirectiveView
  */
-class Header extends DecoratorView {
+class Header extends DirectiveView {
   constructor(options) {
     super(options);
     if (options && options.title) {

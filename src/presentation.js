@@ -23,6 +23,7 @@ import Colleague from "./view/pubsub/colleague.js";
 import Mediator from "./view/pubsub/mediator.js";
 
 import DecoratorView from "./view/decorator/decorator.js";
+import DirectiveView from "./view/directive/directiveView.js";
 
 // Components
 import NotificationCenter from "./view/component/notification/notification.js";
@@ -97,7 +98,9 @@ Presentation.View = View;
 
 Presentation.Colleague = Colleague;
 Presentation.Mediator = Mediator;
+
 Presentation.DecoratorView = DecoratorView;
+Presentation.DirectiveView = DirectiveView;
 
 /**
  * Component - Large UI Components

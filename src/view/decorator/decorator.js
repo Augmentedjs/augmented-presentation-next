@@ -33,7 +33,6 @@ const DECORATOR_ATTRIBUTE_ENUM = {
  * <li>data-append-template</li>
  * <li>data-prepend-template</li>
  * </ul>
- * @class DecoratorView
  * @memberof Presentation
  * @extends Presentation.Colleague
  */

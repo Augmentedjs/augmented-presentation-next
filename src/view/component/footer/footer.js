@@ -1,12 +1,12 @@
-import DecoratorView from "../../decorator/decorator.js";
+import DirectiveView from "../../directive/directiveView.js";
 
 /**
  * A Footer Component
  * @class Footer
  * @memberof Presentation.Component
- * @extends Presentation.View
+ * @extends Presentation.DirectiveView
  */
-class Footer extends DecoratorView {
+class Footer extends DirectiveView {
   constructor(options) {
     super(options);
     if (options && options.body) {
