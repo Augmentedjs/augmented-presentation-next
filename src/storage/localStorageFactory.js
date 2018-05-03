@@ -1,4 +1,5 @@
 import LocalStorage from "./localStorage.js";
+import NamespacedLocalStorage from "./namespacedLocalStorage.js";
 
 /**
  * Augmented.LocalStorageFactory
@@ -20,7 +21,7 @@ class LocalStorageFactory {
   static getStorage(persist, namespace) {
     let ls = null;
     if (namespace) {
-      ls = new LocalStorage(persist, namespace);
+      ls = new NamespacedLocalStorage(persist, namespace);
     } else {
       ls = new LocalStorage(persist);
     }
