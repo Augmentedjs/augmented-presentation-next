@@ -1,6 +1,9 @@
+const isStorageSupported = () => {
+  return (typeof (Storage) !== "undefined");
+};
+
 /**
  * Local Storage API - returned from LocalStorageFactory
- * @class LocalStorage
  * @memberof Presentation
  * @param {boolean} persist Persistant storage or not
  */
@@ -10,9 +13,7 @@ class LocalStorage {
     this._myStore = null;
 
     // true = localStorage, false = sessionStorage
-    if (this.isSupported()) {
-      //logger.debug("AUGMENTED: localStorage exists");
-
+    if (isStorageSupported()) {
       if (this.isPersisted) {
         this._myStore = localStorage;
       } else {
@@ -20,30 +21,24 @@ class LocalStorage {
       }
     } else {
       console.warn("AUGMENTED: No localStorage.");
-      //logger.warn("AUGMENTED: No localStorage.");
     }
   };
 
   /**
    * is Persistant or not
    * @property {boolean} isPersisted Persistant property
-   * @memberof LocalStorage
    */
 
   /**
    * Is storage supported
-   * @method isSupported
-   * @memberof LocalStorage
    * @returns {boolean} Returns true if supported
    */
   isSupported() {
-    return (typeof (Storage) !== "undefined");
+    return isStorageSupported();
   };
 
   /**
    * Gets an item from storage
-   * @method getItem
-   * @memberof LocalStorage
    * @param {string} key The key in storage
    * @returns {object} Returns object from storage
    */
@@ -57,8 +52,6 @@ class LocalStorage {
 
   /**
    * Sets an item to storage
-   * @method setItem
-   * @memberof LocalStorage
    * @param {string} key The key in storage
    * @param {object} object The data to set
    */
@@ -68,8 +61,6 @@ class LocalStorage {
 
   /**
    * Removes an item from storage
-   * @method removeItem
-   * @memberof LocalStorage
    * @param {string} key The key in storage
    */
   removeItem(itemKey) {
@@ -78,8 +69,6 @@ class LocalStorage {
 
   /**
    * Clears storage - <b>Warning: Destructive in non-namespaced instances!</b>
-   * @method clear
-   * @memberof LocalStorage
    */
   clear() {
     this._myStore.clear();
@@ -87,8 +76,6 @@ class LocalStorage {
 
   /**
    * Gets the key from storage for index
-   * @method key
-   * @memberof LocalStorage
    * @param {number} i The index in storage
    * @returns {string} Returns the key from storage
    */
@@ -98,8 +85,6 @@ class LocalStorage {
 
   /**
    * The length of storage by keys
-   * @method length
-   * @memberof LocalStorage
    * @returns {number} Returns the length of storage by keys
    */
   length() {

@@ -1,13 +1,13 @@
-import DirectiveView from "../../directive/directiveView.js";
+import DecoratorView from "../../decorator/decorator.js";
 import Dom from "../../../dom/dom.js";
 
 /**
  * A card view - simple panel/dialog-like panel
  * @class Card
  * @memberof Presentation.Component
- * @extends Presentation.DirectiveView
+ * @extends Presentation.DecoratorView
  */
-class Card extends DirectiveView {
+class Card extends DecoratorView {
   constructor(options) {
     super(options);
     if (!this.name) {
@@ -68,9 +68,7 @@ class Card extends DirectiveView {
   };
 
   /**
-   * render - render the dialog
-   * @method render
-   * @memberof Card
+   * render
    */
   render() {
     if (this.el) {
@@ -78,6 +76,11 @@ class Card extends DirectiveView {
       this.delegateEvents();
     }
     return this;
+  };
+
+  remove() {
+    this.removeTemplate(this.el, true);
+    return super.remove();
   };
 };
 

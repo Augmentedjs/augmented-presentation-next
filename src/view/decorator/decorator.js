@@ -44,13 +44,11 @@ class DecoratorView extends Colleague {
   /**
    * Custom Events Property - merge into built-in events
    * @property customEvents
-   * @memberof DecoratorView
    */
 
   /**
    * Events Property - Do Not Override
    * @property events
-   * @memberof DecoratorView
    */
   events() {
     const _events = (this.customEvents) ? this.customEvents : {};
@@ -98,8 +96,6 @@ class DecoratorView extends Colleague {
   };
   /**
    * Initialize method - Do Not Override
-   * @memberof DecoratorView
-   * @method initialize
    */
   initialize(options) {
     this.init(options);
@@ -110,8 +106,6 @@ class DecoratorView extends Colleague {
   };
   /**
    * Remove method - Does not remove DOM elements only bindings.
-   * @method remove
-   * @memberof DecoratorView
    */
   remove() {
     /* off to unbind the events */
@@ -122,8 +116,6 @@ class DecoratorView extends Colleague {
   };
   /**
    * _executeFunctionByName method - Private
-   * @method _executeFunctionByName
-   * @memberof DecoratorView
    * @private
    */
   _executeFunctionByName(functionName, context, ...args /*, args */) {
@@ -143,8 +135,6 @@ class DecoratorView extends Colleague {
   };
   /**
    * bindingAttribute method - Returns the binging data attribute name
-   * @method bindingAttribute
-   * @memberof DecoratorView
    * @returns {string} Binding attribute name
    */
   bindingAttribute() {
@@ -152,10 +142,8 @@ class DecoratorView extends Colleague {
   };
   /**
    * injectTemplate method - Injects a template at a mount point
-   * @method injectTemplate
    * @param {string} template The template to inject
    * @param {Element} mount The mount point as Document.Element or String
-   * @memberof DecoratorView
    */
   injectTemplate(template, mount) {
     if (!mount) {
@@ -186,10 +174,8 @@ class DecoratorView extends Colleague {
   };
   /**
    * removeTemplate method - Removes a template (children) at a mount point
-   * @method removeTemplate
    * @param {Element} mount The mount point as Document.Element or String
    * @param {boolean} onlyContent Only remove the content not the mount point
-   * @memberof DecoratorView
    */
   removeTemplate(mount, onlyContent) {
     if (mount) {
@@ -207,9 +193,7 @@ class DecoratorView extends Colleague {
   };
   /**
    * boundElement method - returns the bound element from identifier
-   * @method boundElement
    * @param {string} id The identifier (not id attribute) of the element
-   * @memberof DecoratorView
    * @example
    * from HTML: <div data-myMountedView="something" id="anything"></div>
    * from JavaScript: let el = this.boundElement("something");
@@ -228,9 +212,7 @@ class DecoratorView extends Colleague {
   };
   /**
    * syncBoundElement - Syncs the data of a bound element by firing a change event
-   * @method syncBoundElement
    * @param {string} id The identifier (not id attribute) of the element
-   * @memberof DecoratorView
    */
   syncBoundElement(id) {
     if (id) {
@@ -246,8 +228,6 @@ class DecoratorView extends Colleague {
   };
   /**
    * syncAllBoundElements - Syncs the data of all bound elements by firing a change events
-   * @method syncAllBoundElements
-   * @memberof DecoratorView
    */
   syncAllBoundElements() {
     const ba = this.bindingAttribute();
@@ -270,10 +250,8 @@ class DecoratorView extends Colleague {
   };
   /**
    * addClass - adds a class to a bount element
-   * @method addClass
    * @param {string} id The identifier (not id attribute) of the element
    * @param {string} cls The class to add
-   * @memberof DecoratorView
    */
   addClass(id, cls) {
     const myEl = this.boundElement(id);
@@ -283,10 +261,8 @@ class DecoratorView extends Colleague {
   };
   /**
    * removeClass - remove a class to a bount element
-   * @method removeClass
    * @param {string} id The identifier (not id attribute) of the element
    * @param {string} cls The class to remove
-   * @memberof DecoratorView
    */
   removeClass(id, cls) {
     const myEl = this.boundElement(id);
@@ -296,9 +272,7 @@ class DecoratorView extends Colleague {
   };
   /**
    * bindModelChange method - binds the model changes to functions
-   * @method bindModelChange
    * @param {func} func The function to call when changing (normally render)
-   * @memberof DecoratorView
    */
   bindModelChange(func) {
     if (!this.model) {
@@ -308,9 +282,7 @@ class DecoratorView extends Colleague {
   };
   /**
    * syncModelChange method - binds the model changes to a specified bound element
-   * @method syncModelChange
    * @param {Element} element The element to bind as Document.Element or string
-   * @memberof DecoratorView
    */
   syncModelChange(element) {
     if (!this.model) {
@@ -324,9 +296,7 @@ class DecoratorView extends Colleague {
   };
   /**
    * _syncData method - syncs the model changes to a specified bound element
-   * @method _syncData
    * @param {Element} element The element to bind as Document.Element or string
-   * @memberof DecoratorView
    * @private
    */
   _syncData(element) {
@@ -392,18 +362,14 @@ class DecoratorView extends Colleague {
   };
   /**
    * unbindModelChange method - unbinds the model changes to elements
-   * @method unbindModelChange
    * @param {func} func The function to call when changing (normally render)
-   * @memberof DecoratorView
    */
   unbindModelChange(func) {
     this.model.unBind('change', func, this);
   };
   /**
    * unbindModelSync method - unbinds the model changes to a specified bound element
-   * @method unbindModelSync
    * @param {Element} element The element to bind as Document.Element or string
-   * @memberof DecoratorView
    */
   unbindModelSync(element) {
     this.model.unBind('change:' + element, this._syncData, this);

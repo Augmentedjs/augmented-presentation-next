@@ -56,6 +56,7 @@ import PAGINATION_API_TYPE from "./pagination/api.js";
 import PaginationFactory from "./pagination/factory.js";
 
 import RESTLogger from "./logger/restLogger.js";
+import ColorConsoleLogger from "./logger/colorLogger.js";
 
 /**
  * Augmented.js Next Presentation - The Presentation Component
@@ -146,6 +147,7 @@ Presentation.Pagination.PAGINATION_API_TYPE = PAGINATION_API_TYPE;
 Presentation.Pagination.PaginationFactory = PaginationFactory;
 
 Presentation.RESTLogger = RESTLogger;
+Presentation.ColorConsoleLogger = ColorConsoleLogger;
 
 /**
  * Augmented jQuery-like selectors usinge native selectors</br/>

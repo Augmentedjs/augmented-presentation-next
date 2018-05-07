@@ -1,4 +1,4 @@
-import DirectiveView from "../../directive/directiveView.js";
+import DecoratorView from "../../decorator/decorator.js";
 import Dom from "../../../dom/dom.js";
 
 const DEFAULT_TAG = "article";
@@ -19,13 +19,13 @@ const DEFAULT_TAG = "article";
  * <li>sections - array of sections to prefill (see addSection API for format)</li>
  * </ul>
  * @memberof Presentation.Component
- * @extends Presentation.DirectiveView
+ * @extends Presentation.DecoratorView
  * @param {object} options Options to pass to the constructor
  * @example
  * const article = new Presentation.Component.Article(
  *                 { "el": "#mount", "header": "html", "footerEl": "#foot" });
  */
-class Article extends DirectiveView {
+class Article extends DecoratorView {
   constructor(options) {
     if (!options) {
       options = {};

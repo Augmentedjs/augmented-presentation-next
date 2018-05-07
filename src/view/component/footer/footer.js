@@ -1,12 +1,12 @@
-import DirectiveView from "../../directive/directiveView.js";
+import DecoratorView from "../../decorator/decorator.js";
 
 /**
  * A Footer Component
  * @class Footer
  * @memberof Presentation.Component
- * @extends Presentation.DirectiveView
+ * @extends Presentation.DecoratorView
  */
-class Footer extends DirectiveView {
+class Footer extends DecoratorView {
   constructor(options) {
     super(options);
     if (options && options.body) {
@@ -26,6 +26,22 @@ class Footer extends DirectiveView {
 
   get body() {
     return this._body;
+  };
+
+  /**
+   * render
+   */
+  render() {
+    if (this.el) {
+      Dom.setValue(this.el, this._template());
+      this.delegateEvents();
+    }
+    return this;
+  };
+
+  remove() {
+    this.removeTemplate(this.el, true);
+    return super.remove();
   };
 };
 

@@ -1,12 +1,12 @@
-import DirectiveView from "../../directive/directiveView.js";
+import DecoratorView from "../../decorator/decorator.js";
 import Dom from "../../../dom/dom.js";
 
 /**
  * A Header Component
  * @memberof Presentation.Component
- * @extends Presentation.DirectiveView
+ * @extends Presentation.DecoratorView
  */
-class Header extends DirectiveView {
+class Header extends DecoratorView {
   constructor(options) {
     super(options);
     if (options && options.title) {
@@ -49,6 +49,11 @@ class Header extends DirectiveView {
      this.delegateEvents();
      this.syncAllBoundElements();
      return this;
+   };
+
+   remove() {
+     this.removeTemplate(this.el, true);
+     return super.remove();
    };
 };
 

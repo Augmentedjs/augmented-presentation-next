@@ -8,16 +8,13 @@ import DecoratorView from "../decorator/decorator.js";
  */
 class DirectiveView extends DecoratorView {
   constructor(options) {
+    console.debug(`Creating a DirectiveView with: ${JSON.stringify(options)}`);
     super(options);
   };
 
   remove() {
-    /* off to unbind the events */
-    this.undelegateEvents();
-    this.off();
-    this.stopListening();
     this.removeTemplate(this.el, true);
-    return this;
+    return super.remove();
   };
 };
 
