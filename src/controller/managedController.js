@@ -34,7 +34,7 @@ class ManagedController extends ViewController {
   };
 
   initialize(options) {
-    console.debug(`initialize Options ${options}`);
+    //console.debug(`initialize Options ${options}`);
     if (this._views && this._views.length > 0) {
       if (!this._instances) {
         this._instances = [];
@@ -49,7 +49,9 @@ class ManagedController extends ViewController {
       let i = 0;
       for (i = 0; i < l; i++) {
         const clazz = this._views[i];
-        const instance = new clazz(options);
+        const cleanOptions = options;
+        cleanOptions.views = null;
+        const instance = new clazz(cleanOptions);
         this._instances.push(instance);
         this._renderChain.push(renderPromise(this, instance));
         this._removeChain.push(removePromise(this, instance));
