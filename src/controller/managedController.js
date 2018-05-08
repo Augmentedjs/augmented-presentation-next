@@ -24,6 +24,8 @@ const removePromise = (controller, clazz) => {
 
 /**
  * A managed controller that automatically sets up the components
+ * Data can be passed to every view by passing using 'options'
+ * @param {object} options Options to pass to all views managed
  * @extends ViewController
  */
 class ManagedController extends ViewController {
@@ -32,6 +34,7 @@ class ManagedController extends ViewController {
   };
 
   initialize(options) {
+    console.debug(`initialize Options ${options}`);
     if (this._views && this._views.length > 0) {
       if (!this._instances) {
         this._instances = [];
@@ -46,7 +49,7 @@ class ManagedController extends ViewController {
       let i = 0;
       for (i = 0; i < l; i++) {
         const clazz = this._views[i];
-        const instance = new clazz();
+        const instance = new clazz(options);
         this._instances.push(instance);
         this._renderChain.push(renderPromise(this, instance));
         this._removeChain.push(removePromise(this, instance));

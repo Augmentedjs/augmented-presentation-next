@@ -8,7 +8,6 @@ import DecoratorView from "../decorator/decorator.js";
  */
 class DirectiveView extends DecoratorView {
   constructor(options) {
-    console.debug(`Creating a DirectiveView with: ${JSON.stringify(options)}`);
     super(options);
   };
 

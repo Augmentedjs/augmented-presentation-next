@@ -3,7 +3,6 @@ import Dom from "../../../dom/dom.js";
 
 /**
  * A card view - simple panel/dialog-like panel
- * @class Card
  * @memberof Presentation.Component
  * @extends Presentation.DecoratorView
  */
@@ -19,7 +18,7 @@ class Card extends DecoratorView {
       this._body = "";
     }
     if (options && options.style) {
-      this._style = options.style;
+      this._style = `card ${options.style}`;
     } else {
       this._style = "card";
     }
@@ -28,13 +27,11 @@ class Card extends DecoratorView {
   /**
    * body property - the body of the card
    * @property body
-   * @memberof Card
    */
 
   /**
    * style property - the style
    * @property style
-   * @memberof Card
    */
    set style(style) {
      this._style = style;
@@ -46,8 +43,6 @@ class Card extends DecoratorView {
 
   /**
    * template - sets content of the dialog, handled internally
-   * @method _template
-   * @memberof Card
    * @private
    */
   _template() {
@@ -57,7 +52,6 @@ class Card extends DecoratorView {
   /**
    * The body content of the card (supports HTML)
    * @property body
-   * @memberof Card
    */
   set body(body) {
     this._body = body;
@@ -77,7 +71,10 @@ class Card extends DecoratorView {
     }
     return this;
   };
-
+  
+  /**
+   * remove
+   */
   remove() {
     this.removeTemplate(this.el, true);
     return super.remove();
