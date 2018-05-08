@@ -1,4 +1,3 @@
-//import { TABLE_DATA_ATTRIBUTES, csvTableCompile, tsvTableCompile, defaultTableCompile, defaultTableHeader, defaultTableBody, formatValidationMessages, directDOMTableCompile, directDOMTableHeader, directDOMTableBody, directDOMEditableTableBody, directDOMPaginationControl } from "../functions/buildTable.js";
 import * as Augmented from "augmentedjs-next";
 import DecoratorView from "../../decorator/decorator.js";
 import { TABLE_DATA_ATTRIBUTES, csvTableCompile, tsvTableCompile, defaultTableCompile, directDOMTableCompile, directDOMTableHeader, directDOMTableBody, directDOMEditableTableBody, directDOMPaginationControl } from "../functions/buildTable.js";
@@ -10,15 +9,16 @@ import Collection from "../../../collection/collection.js";
 import LocalStorageCollection from "../../../collection/localStorageCollection.js";
 
 const DEFAULT_KEY = "augmented.localstorage.autotable.key";
+const DEFAULT_SORT_TYPE = "client";
+const DEFAULT_THEME = "material";
 
 /**
  * AutomaticTable<br/>
  * Creates a table automatically via a schema for defintion and a uri/json for data
- * @class AutomaticTable
  * @extends Presentation.DecoratorView
  * @memberof Presentation.Component
  * @example
- * let at = new Presentation.Component.AutomaticTable({
+ * const at = new Augmented.Presentation.Component.AutomaticTable({
  *     schema: schema,
  *     el: "#autoTable",
  *     crossOrigin: false,
@@ -33,9 +33,9 @@ class AutomaticTable extends DecoratorView {
     super(options);
 
     if (options && options.theme) {
-      this.theme = options.theme;
+      this.theme = `${this.style} ${options.theme}`;
     } else {
-      this.theme = "material";
+      this.theme = `${this.style} ${DEFAULT_THEME}`;
     }
 
     if (options && options.linkable) {
@@ -69,7 +69,7 @@ class AutomaticTable extends DecoratorView {
     if (options && options.sortStyle) {
       this.sortStyle = options.sortStyle;
     } else {
-      this.sortStyle = "client";
+      this.sortStyle = DEFAULT_SORT_TYPE;
     }
 
     if (options && options.sortKey) {
@@ -213,6 +213,7 @@ class AutomaticTable extends DecoratorView {
     if (this.schema) {
       if ((!this.name || this.name === "") && this.schema.title) {
         this.name = this.schema.title;
+        this.name.split(" ").join("");
       }
 
       if ((!this.description || this.description === "") && this.schema.description) {
@@ -232,38 +233,32 @@ class AutomaticTable extends DecoratorView {
   /**
    * The theme property - The theme of this table (default is 'material')
    * @property {string} theme The theme of this table
-   * @memberof AutomaticTable
    */
 
  /**
   * The linkable property - enable links in a row (only works in non-editable tables)
   * @property {boolean} linkable enable/disable linking a row
-  * @memberof AutomaticTable
   */
 
   /**
    * The selectable property - enable selecting a row in table
    * @property {boolean} selectable enable/disable selecting a row
-   * @memberof AutomaticTable
    */
 
   /**
    * The sortable property - enable sorting in table
    * @property {boolean} sortable enable sorting in the table
-   * @memberof AutomaticTable
    */
 
   /**
    * The sortStyle property - setup the sort API
    * @property {string} sortStyle setup the sort API
-   * @memberof AutomaticTable
    */
 
   /**
    * The sortKey property
    * @property {string} sortKey sorted key
    * @private
-   * @memberof AutomaticTable
    */
 
   /**
@@ -274,108 +269,90 @@ class AutomaticTable extends DecoratorView {
    * column: "name", // name of column
    *	link: "rowLink" // callback
    * }
-   * @memberof AutomaticTable
    */
 
   /**
    * The localStorage property - enables localStorage
    * @property {boolean} localStorage The localStorage property
-   * @memberof AutomaticTable
    */
 
   /**
    * The localStorageKey property - set the key for use in storage
    * @property {string} localStorageKey The localStorage key property
-   * @memberof AutomaticTable
    */
 
   /**
    * The editable property - enables editing of cells
    * @property {boolean} editable The editable property
-   * @memberof AutomaticTable
    */
 
  /**
   * Fields to display - null will display all
-  * @method display
-  * @memberof AutomaticTable
+  * @property {array} display Fields to display
   */
 
   // pagination
  /**
   * The renderPaginationControl property - render the pagination control
   * @property {boolean} renderPaginationControl render the pagination control
-  * @memberof AutomaticTable
   */
 
  /**
   * The paginationAPI property - setup the paginatin API to use
   * @property {Augmented.PaginationFactory.type} paginationAPI the pagination API to use
-  * @memberof AutomaticTable
   */
 
  /**
   * The name property
   * @property {string} name The name of the table
-  * @memberof AutomaticTable
   */
 
  /**
   * The description property
   * @property {string} description The description of the table
-  * @memberof AutomaticTable
   */
 
   /**
    * The crossOrigin property - enables cross origin fetch
    * @property {boolean} crossOrigin The crossOrigin property
-   * @memberof AutomaticTable
    */
 
   /**
    * The lineNumber property - turns on line numbers
    * @property {boolean} lineNumbers The lineNumbers property
-   * @memberof AutomaticTable
    */
 
   /**
    * The columns property
    * @property {object} columns The columns property
    * @private
-   * @memberof AutomaticTable
    */
 
   /**
    * The URI property
    * @property {string} uri The URI property
-   * @memberof AutomaticTable
    */
 
   /**
    * The data property
    * @property {array} data The data property
-   * @memberof AutomaticTable
    * @private
    */
 
   /**
    * The collection property
    * @property {Augmented.PaginatedCollection} collection The collection property
-   * @memberof AutomaticTable
    * @private
    */
 
   /**
    * The initialized property
    * @property {boolean} isInitalized The initialized property
-   * @memberof AutomaticTable
    */
 
   /**
-   * The setTheme method
-   * @method setTheme sets the theme of this table
+   * The theme of the table
    * @param {string} theme name of the theme
-   * @memberof AutomaticTable
    */
    setTheme(theme) {
      const el = Dom.selector(this.el);//((typeof this.el === 'string') ? document.querySelector(this.el) : this.el),
@@ -390,10 +367,8 @@ class AutomaticTable extends DecoratorView {
 
   /**
    * The default rowlink function callback called by row to format a link
-   * @method rowlink
    * @param {array} row The row data
    * @returns {string} Returns the link uri
-   * @memberof AutomaticTable
    */
    rowLink(row) {
      return "";
@@ -401,8 +376,6 @@ class AutomaticTable extends DecoratorView {
 
   /**
    * Sort the tabe by a key (sent via a UI Event)
-   * @method sortBy
-   * @memberof AutomaticTable
    * @param {string} key The key to sort by
    */
    sortBy(key) {
@@ -415,8 +388,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Return the current page number
-  * @method currentPage
-  * @memberof AutomaticTable
   * @returns {number} The current page number
   */
   currentPage() {
@@ -425,8 +396,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Return the total pages
-  * @method totalPages
-  * @memberof AutomaticTable
   * @returns {number} The total pages
   */
   totalPages() {
@@ -435,8 +404,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Advance to the next page
-  * @method nextPage
-  * @memberof AutomaticTable
   */
   nextPage() {
     this.collection.nextPage();
@@ -445,8 +412,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Return to the previous page
-  * @method previousPage
-  * @memberof AutomaticTable
   */
   previousPage() {
     this.collection.previousPage();
@@ -455,9 +420,7 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Go to a specific page
-  * @method goToPage
   * @param {number} page The page to go to
-  * @memberof AutomaticTable
   */
   goToPage(page) {
     this.collection.goToPage(page);
@@ -466,8 +429,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Return to the first page
-  * @method firstPage
-  * @memberof AutomaticTable
   */
   firstPage() {
     this.collection.firstPage();
@@ -476,8 +437,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Advance to the last page
-  * @method lastPage
-  * @memberof AutomaticTable
   */
   lastPage() {
     this.collection.lastPage();
@@ -486,8 +445,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Edit a cell at the row and column specified
-  * @method editCell
-  * @memberof AutomaticTable
   * @param {number} row The row
   * @param {number} col The column
   * @param {any} value The value to set
@@ -503,8 +460,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Copy a cell at the row and column  to another
-  * @method copyCell
-  * @memberof AutomaticTable
   * @param {number} row1 The 'from' row
   * @param {number} col1 The 'from' column
   * @param {number} row2 The 'to' row
@@ -521,8 +476,6 @@ class AutomaticTable extends DecoratorView {
   };
  /**
   * Clear a cell at the row and column specified
-  * @method clearCell
-  * @memberof AutomaticTable
   * @param {number} row The row
   * @param {number} col The column
   */
@@ -532,8 +485,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Render the table
-  * @method render Renders the table
-  * @memberof AutomaticTable
   * @returns {object} Returns the view context ('this')
   */
   render() {
@@ -644,17 +595,15 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Fetch the schema from the source URI
-  * @method retrieveSchema
   * @param uri {string} the URI to fetch from
-  * @memberof AutomaticTable
   */
-  retrieveSchema(uri){
+  retrieveSchema(uri) {
     const that = this;
     let schema = null;
     request({
       url: uri,
-      contentType: 'application/json',
-      dataType: 'json',
+      contentType: "application/json",
+      dataType: "json",
       success: (data, status) => {
         if (typeof data === "string") {
           schema = JSON.parse(data);
@@ -665,15 +614,13 @@ class AutomaticTable extends DecoratorView {
         that.initialize(options);
       },
       error: (data, status) => {
-        //_logger.warn("AUGMENTED: AutoTable Failed to fetch schema!");
+        this.showMessage("AutomaticTable Failed to fetch schema!!");
       }
     });
   };
 
  /**
   * Fetch the data from the source URI
-  * @method fetch
-  * @memberof AutomaticTable
   */
   fetch() {
     // TODO: should be a promise
@@ -707,10 +654,8 @@ class AutomaticTable extends DecoratorView {
  /**
   * Save the data to the source
   * This only functions if the table is editable
-  * @method save
   * @param {boolean} override Save even if not editable
   * @returns Returns true if succesfull
-  * @memberof AutomaticTable
   */
   save(override) {
     if (this.editable || override) {
@@ -745,8 +690,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Populate the data in the table
-  * @method populate
-  * @memberof AutomaticTable
   * @param {array} source The source data array
   */
   populate(source) {
@@ -759,8 +702,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Clear all the data in the table
-  * @method clear
-  * @memberof AutomaticTable
   */
   clear() {
     this.sortKey = null;
@@ -770,8 +711,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Refresh the table (Same as render)
-  * @method refresh Refresh the table
-  * @memberof AutomaticTable
   * @returns {object} Returns the view context ('this')
   * @see AutomaticTable.render
   */
@@ -832,9 +771,7 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Export the table data in requested format
-  * @method exportTo Exports the table
   * @param {string} type The type requested (csv or html-default)
-  * @memberof AutomaticTable
   * @returns {string} The table data in requested format
   */
   exportTo(type) {
@@ -963,8 +900,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * An overridable template compile
-  * @method compileTemplate
-  * @memberof AutomaticTable
   * @returns {string} Returns the template
   */
   compileTemplate() {
@@ -973,8 +908,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Sets the URI
-  * @method setURI
-  * @memberof AutomaticTable
   * @param {string} uri The URI
   */
   setURI(uri) {
@@ -983,8 +916,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Sets the schema
-  * @method setSchema
-  * @memberof AutomaticTable
   * @param {object} schema The JSON schema of the dataset
   */
   setSchema(schema) {
@@ -1000,8 +931,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Enable/Disable the progress bar
-  * @method showProgressBar
-  * @memberof AutomaticTable
   * @param {boolean} show Show or Hide the progress bar
   */
   showProgressBar(show) {
@@ -1019,8 +948,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Show a message related to the table
-  * @method showMessage
-  * @memberof AutomaticTable
   * @param {string} message Some message to display
   */
   showMessage(message) {
@@ -1035,8 +962,6 @@ class AutomaticTable extends DecoratorView {
  /**
 
   * Validate the table
-  * @method validate
-  * @memberof AutomaticTable
   * @returns {boolean} Returns true on success of validation
   */
   validate() {
@@ -1051,8 +976,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Is the table valid
-  * @method isValid
-  * @memberof AutomaticTable
   * @returns {boolean} Returns true if valid
   */
   isValid() {
@@ -1061,8 +984,7 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Remove the table and all binds
-  * @method remove
-  * @memberof AutomaticTable
+  * @returns Returns the context (this)
   */
   remove() {
     /* off to unbind the events */
@@ -1076,8 +998,6 @@ class AutomaticTable extends DecoratorView {
   };
  /**
   * Gets the selected models
-  * @method getSelected
-  * @memberof AutomaticTable
   * @returns {Array} Returns array of selected rows (models)
   */
   getSelected() {
@@ -1094,8 +1014,6 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Gets the selected row indexes
-  * @method getSelectedIndex
-  * @memberof AutomaticTable
   * @returns {Array} Returns array of selected rows (indexes)
   */
   getSelectedIndex() {
@@ -1111,9 +1029,7 @@ class AutomaticTable extends DecoratorView {
 
  /**
   * Removes the models
-  * @method removeRows
   * @param {Array} rows Models of the rows to remove
-  * @memberof AutomaticTable
   */
   removeRows(rows) {
     const l = rows.length;
