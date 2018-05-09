@@ -151,7 +151,7 @@ class AbstractView extends Augmented.Object {
 
   /**
    * Remove this view by taking the element out of the DOM, and removing any
-   * applicable Backbone.Events listeners.
+   * applicable Events listeners.
    */
   remove() {
     this._removeElement();

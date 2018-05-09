@@ -166,7 +166,7 @@ const buildMenuItems = (name, data) => {
       if (data[i].spacer) {
         items = `${items}&lt;li class="spacer">&lt;/li>`;
       } else {
-        items = `${items}&lt;li id="${data[i].id}" data-${name}="${data[i].id}" data-click="${data[i].click}">${( (data[i].icon) ? ('&lt;i class="material-icons md-dark">' + data[i].icon + '&lt;/i>') : '' )}${data[i].title}&lt;/li>`;
+        items = `${items}&lt;li data-id="${data[i].id}" data-${name}="${data[i].id}" data-click="${data[i].click}">${( (data[i].icon) ? ('&lt;i class="material-icons md-dark">' + data[i].icon + '&lt;/i>') : '' )}${data[i].title}&lt;/li>`;
       }
     }
   }
