@@ -1497,3 +1497,11 @@ table.material td.select {
 table.material td.select input[type=checkbox] {
   width: 16px;
 }
+
+.card {
+  display: block;
+  border: 1px solid #cfd8dc;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-color: #FAFAFA;
+}

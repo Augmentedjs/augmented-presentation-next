@@ -8,20 +8,23 @@ import Dom from "../../../dom/dom.js";
  */
 class Card extends DecoratorView {
   constructor(options) {
-    super(options);
-    if (!this.name) {
-      this.name = "card";
+    if (!options) {
+      options = {}
     }
+    if (!options.name) {
+      options.name = "card";
+    }
+    if (!options.style) {
+      options.style = "card";
+    } else {
+      options.style= `card ${options.style}`;
+    }
+    super(options);
+
     if (options && options.body) {
       this._body = options.body;
     } else {
       this._body = "";
-    }
-
-    if (options && options.style) {
-      this._style = `card ${options.style}`;
-    } else {
-      this._style = "card";
     }
   };
 
