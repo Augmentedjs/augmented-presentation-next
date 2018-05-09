@@ -12,6 +12,7 @@ class DirectiveView extends DecoratorView {
   };
 
   remove() {
+    console.debug("DirectiveView remove");
     this.removeTemplate(this.el, true);
     return super.remove();
   };

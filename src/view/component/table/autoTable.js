@@ -488,23 +488,21 @@ class AutomaticTable extends DecoratorView {
   * @returns {object} Returns the view context ('this')
   */
   render() {
-    //console.log("render");
-
+    console.log("render");
     if (!this.isInitalized) {
-      //_logger.warn("AUGMENTED: AutoTable Can't render yet, not initialized!");
+      console.warn("AUGMENTED: AutoTable Can't render yet, not initialized!");
       return this;
     }
     let e;
     if (this.template) {
       // refresh the table body only
-	//console.log("set progress.");
+	    console.log("set progress.");
       this.showProgressBar(true);
       if (this.el) {
         e = (typeof this.el === 'string') ? document.querySelector(this.el) : this.el;
-        //console.log("my el", e);
-	if (e) {
-
-		let tbody = e.querySelector("tbody"), thead = e.querySelector("thead");
+        console.log("my el", e);
+        if (e) {
+	        let tbody = e.querySelector("tbody"), thead = e.querySelector("thead");
           if (this.sortable) {
             this._unbindSortableColumnEvents();
           }
@@ -517,13 +515,12 @@ class AutomaticTable extends DecoratorView {
             }
             directDOMTableHeader(thead, this._columns, this.lineNumbers, this.sortKey, this.display, this.selectable);
           } else {
-		  if (thead) {
-            while (thead.hasChildNodes()) {
-              thead.removeChild(thead.lastChild);
-            }
-		  }
+      		  if (thead) {
+              while (thead.hasChildNodes()) {
+                thead.removeChild(thead.lastChild);
+              }
+      		  }
           }
-
           if (this.collection && (this.collection.length > 0) && tbody){
             while (tbody.hasChildNodes()) {
               tbody.removeChild(tbody.lastChild);
@@ -541,13 +538,15 @@ class AutomaticTable extends DecoratorView {
           }
         }
       } else {
-        //_logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
+        console.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
       }
     } else {
+      console.debug("no template");
       this.template = "notused";
       this.showProgressBar(true);
 
       if (this.el) {
+        console.debug("no template with el " + this.el);
         e = (typeof this.el === 'string') ? document.querySelector(this.el) : this.el;
         if (e) {
           // progress bar
@@ -570,7 +569,7 @@ class AutomaticTable extends DecoratorView {
           e.appendChild(n);
         }
       } else {
-        //_logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
+        console.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
       }
 
       if (this.renderPaginationControl) {
