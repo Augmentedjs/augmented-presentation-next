@@ -196,10 +196,10 @@ class Dom {
       let myEl = this.selector(el);
       if (myEl &amp;&amp; (myEl.nodeType === 1) &amp;&amp; (myEl.nodeName === "select" || myEl.nodeName === "SELECT")) {
         // Select box
-        _logger.debug("Select box (not supported) set to - " + value);
+        //_logger.debug("Select box (not supported) set to - " + value);
       } else if (myEl &amp;&amp; (myEl.nodeType === 1) &amp;&amp;
-      (myEl.nodeName === "input" || myEl.nodeName === "INPUT" ||
-      myEl.nodeName === "textarea" || myEl.nodeName === "TEXTAREA")) {
+          (myEl.nodeName === "input" || myEl.nodeName === "INPUT" ||
+          myEl.nodeName === "textarea" || myEl.nodeName === "TEXTAREA")) {
         myEl.value = value;
       } else if (myEl &amp;&amp; (myEl.nodeType === 1)) {
         if (onlyText){

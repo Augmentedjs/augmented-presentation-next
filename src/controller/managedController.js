@@ -1,21 +1,21 @@
 import ViewController from "./viewController.js";
 
-const renderPromise = (controller, clazz) => {
+const renderPromise = (clazz) => {
   return new Promise( (resolve, reject) => {
     const t = clazz.render();
     if (t) {
-      resolve(controller);
+      resolve(clazz);
     } else {
       reject(new Error("Error rendering!"));
     }
   });
 };
 
-const removePromise = (controller, clazz) => {
+const removePromise = (clazz) => {
   return new Promise( (resolve, reject) => {
     const t = clazz.remove();
     if (t) {
-      resolve(controller);
+      resolve(clazz);
     } else {
       reject(new Error("Error removing!"));
     }
@@ -39,12 +39,12 @@ class ManagedController extends ViewController {
       if (!this._instances) {
         this._instances = [];
       }
-      if (!this._renderChain) {
+      /*if (!this._renderChain) {
         this._renderChain = [];
       }
       if (!this._removeChain) {
         this._removeChain = [];
-      }
+      }*/
       const l = this._views.length;
       let i = 0;
       for (i = 0; i < l; i++) {
@@ -53,24 +53,37 @@ class ManagedController extends ViewController {
         cleanOptions.views = null;
         const instance = new clazz(cleanOptions);
         this._instances.push(instance);
-        this._renderChain.push(renderPromise(this, instance));
-        this._removeChain.push(removePromise(this, instance));
+        //this._renderChain.push(renderPromise(this, instance));
+        //this._removeChain.push(removePromise(this, instance));
       }
     }
     return this;
   };
 
   render() {
-    if (!this._renderChain) {
-      Promise.all(this._renderChain);
+    const l = this._instances.length;
+    let i = 0;
+    for (i = 0; i < l; i++) {
+      const instance = this._instances[i];
+      renderPromise(instance);
     }
+    /*if (!this._renderChain) {
+      Promise.all(this._renderChain);
+    }*/
     return this;
   };
 
   remove() {
-    if (!this._removeChain) {
-      Promise.all(this._removeChain);
+    const l = this._instances.length;
+    let i = 0;
+    for (i = 0; i < l; i++) {
+      const instance = this._instances[i];
+      removePromise(instance);
     }
+    /*if (!this._removeChain) {
+      Promise.all(this._removeChain);
+    }*/
+    this._instances.splice(0);
     return this;
   };
 };

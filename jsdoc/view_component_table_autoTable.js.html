@@ -644,19 +644,19 @@ class AutomaticTable extends DecoratorView {
   * @returns {object} Returns the view context ('this')
   */
   render() {
-    console.log("render");
+    //console.log("render");
     if (!this.isInitalized) {
-      console.warn("AUGMENTED: AutoTable Can't render yet, not initialized!");
+      //console.warn("AUGMENTED: AutoTable Can't render yet, not initialized!");
       return this;
     }
     let e;
     if (this.template) {
       // refresh the table body only
-	    console.log("set progress.");
+	    //console.log("set progress.");
       this.showProgressBar(true);
       if (this.el) {
         e = (typeof this.el === 'string') ? document.querySelector(this.el) : this.el;
-        console.log("my el", e);
+        //console.log("my el", e);
         if (e) {
 	        let tbody = e.querySelector("tbody"), thead = e.querySelector("thead");
           if (this.sortable) {
@@ -694,15 +694,18 @@ class AutomaticTable extends DecoratorView {
           }
         }
       } else {
-        console.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
+        //console.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
       }
     } else {
+      //console.debug("no template");
       this.template = "notused";
       this.showProgressBar(true);
 
       if (this.el) {
+        //console.debug("no template with el " + this.el);
         e = (typeof this.el === 'string') ? document.querySelector(this.el) : this.el;
         if (e) {
+          e.innerHTML = "";
           // progress bar
           let n = document.createElement("progress"),
           t = document.createTextNode("Please wait.");
@@ -723,7 +726,7 @@ class AutomaticTable extends DecoratorView {
           e.appendChild(n);
         }
       } else {
-        //_logger.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
+        //console.warn("AUGMENTED: AutoTable no element anchor, not rendering.");
       }
 
       if (this.renderPaginationControl) {
@@ -1144,7 +1147,16 @@ class AutomaticTable extends DecoratorView {
     this.undelegateEvents();
     this.off();
     this.stopListening();
-
+    if (this.el) {
+      const el = Dom.selector(this.el);
+      if (el) {
+        el.innerHTML = "";
+      } else {
+        //console.debug("no el selected to remove " + this.el);
+      }
+    } else {
+      //console.debug("no el to remove");
+    }
     Dom.empty(this.el);
 
     return this;

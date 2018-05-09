@@ -190,8 +190,9 @@ class Router extends Augmented.Object {
    * @param {View} view The View to load
    */
   loadView(view) {
+    //console.debug("router loadView");
     this.cleanup();
-    if (view){
+    if (view) {
       this._view = view;
       if (this._view.render) {
         this._view.render();
@@ -206,11 +207,13 @@ class Router extends Augmented.Object {
    * Remove the last view by calling cleanup, then remove
    */
   cleanup() {
+    //console.debug(`router cleanup view ${this._view}`);
     if (this._view) {
       if (this._view.cleanup) {
         this._view.cleanup();
       }
       if (this._view.remove) {
+        //console.debug(`router removing view ${this._view.remove()}`);
         this._view.remove();
       }
       this._view = null;
