@@ -17,6 +17,7 @@ class Card extends DecoratorView {
     } else {
       this._body = "";
     }
+
     if (options && options.style) {
       this._style = `card ${options.style}`;
     } else {
@@ -46,7 +47,7 @@ class Card extends DecoratorView {
    * @private
    */
   _template() {
-    return `<div class="${this._style}">${this._body}</div>`;
+    return this._body;
   };
 
   /**
@@ -71,7 +72,7 @@ class Card extends DecoratorView {
     }
     return this;
   };
-  
+
   /**
    * remove
    */
