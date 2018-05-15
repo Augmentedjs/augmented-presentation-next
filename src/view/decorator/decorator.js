@@ -51,13 +51,16 @@ class DecoratorView extends Colleague {
    * @property events
    */
   events() {
+    console.log("calling events");
     const _events = (this.customEvents) ? this.customEvents : {};
     if (this.name) {
-      _events["change input[" + this.bindingAttribute() + "]"] = "_changed";
-      _events["change textarea[" + this.bindingAttribute() + "]"] = "_changed";
-      _events["change select[" + this.bindingAttribute() + "]"] = "_changed";
+      console.log("calling events - name " + this.name);
+      _events[`change input[${this.bindingAttribute()}]`] = "_changed";
+      _events[`change textarea[${this.bindingAttribute()}]`] = "_changed";
+      _events[`change select[${this.bindingAttribute()}]`] = "_changed";
       // regular elements with click bindings
-      _events["click *[" + this.bindingAttribute() + "][" + DECORATOR_ATTRIBUTE_ENUM.CLICK + "]"] = "_click";
+        console.log(`click *[${this.bindingAttribute()}][${DECORATOR_ATTRIBUTE_ENUM.CLICK}]`);
+      _events[`click *[${this.bindingAttribute()}][${DECORATOR_ATTRIBUTE_ENUM.CLICK}]`] = "_click";
     }
     return _events;
   };
@@ -70,7 +73,7 @@ class DecoratorView extends Colleague {
       }
       this.model.set(( (key) ? key : event.currentTarget.name ), val);
       this._func(event);
-      //_logger.debug("AUGMENTED: DecoratorView updated Model: " + JSON.stringify(this.model.toJSON()));
+      console.debug("AUGMENTED: DecoratorView updated Model: " + JSON.stringify(this.model.toJSON()));
     }
   };
   _click(event) {
@@ -151,7 +154,7 @@ class DecoratorView extends Colleague {
     }
     if (Augmented.isString(mount)) {
       const qs = document.querySelector(mount);
-      //console.log(`Query selector: ${qs}, mount: ${mount}, el: ${this.el}`);
+      console.log(`Query selector: ${qs}, mount: ${mount}, el: ${this.el}`);
       if (!qs) {
         return;
       }
@@ -159,14 +162,14 @@ class DecoratorView extends Colleague {
     }
 
     if (Augmented.isString(template)) {
+      console.log(`template: ${template}`);
       // html
-      let currentHTML = mount.innerHTML;
-      mount.innerHTML = currentHTML + template;
-    } else if ((template.nodeType && template.nodeName) &&
-    template.nodeType > 0 && !(template.nodeName === "template" || template.nodeName === "TEMPLATE")) {
+      const currentHTML = mount.innerHTML;
+      mount.innerHTML = `${currentHTML}${template}`;
+    } else if ((template.nodeType && template.nodeName) && (template.nodeType > 0) && !((template.nodeName === "template") || (template.nodeName === "TEMPLATE"))) {
       // DOM
       mount.appendChild(template);
-    } else if (template instanceof DocumentFragment  || template.nodeName === "template" || template.nodeName === "TEMPLATE") {
+    } else if (template instanceof DocumentFragment  || (template.nodeName === "template") || (template.nodeName === "TEMPLATE")) {
       // Document Fragment
       Dom.injectTemplate(template, mount);
     }

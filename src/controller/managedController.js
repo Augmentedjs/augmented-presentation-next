@@ -34,17 +34,19 @@ class ManagedController extends ViewController {
   };
 
   initialize(options) {
-    //console.debug(`initialize Options ${options}`);
+    console.debug(`initialize Options ${options}`);
     if (this._views && this._views.length > 0) {
       if (!this._instances) {
         this._instances = [];
       }
-      /*if (!this._renderChain) {
+      /*
+      if (!this._renderChain) {
         this._renderChain = [];
       }
       if (!this._removeChain) {
         this._removeChain = [];
-      }*/
+      }
+      */
       const l = this._views.length;
       let i = 0;
       for (i = 0; i < l; i++) {
@@ -53,7 +55,7 @@ class ManagedController extends ViewController {
         cleanOptions.views = null;
         const instance = new clazz(cleanOptions);
         this._instances.push(instance);
-        //this._renderChain.push(renderPromise(this, instance));
+        //this._renderChain.push(renderPromise(instance));
         //this._removeChain.push(removePromise(this, instance));
       }
     }

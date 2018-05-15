@@ -100,6 +100,20 @@ class AbstractToolbar extends DecoratorView {
   clearMenuItems() {
     this._menuItems.length = 0;
   };
+
+  select(id) {
+    const item = getItem(id);
+  };
+
+  getItem(id) {
+    const l = this._menuItems.lenght;
+    let i =0;
+    for (i = 0; i < l; i++) {
+      if (this._menuItems[i].id === id) {
+        return this._menuItems[i]
+      }
+    }
+  };
 };
 
 export default AbstractToolbar;
