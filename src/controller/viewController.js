@@ -2,6 +2,7 @@ import Augmented from "augmentedjs-next";
 
 /**
  * A controller to handle a group of views.  The api is handled simular to views for use in a router.
+ * @deprecated
  * @extends Augmented.Object
  */
 class ViewController extends Augmented.Object {
