@@ -35,7 +35,7 @@ class ManagedController extends ViewController {
   };
 
   initialize(options) {
-    console.debug(`initialize Options ${options}`);
+    //console.debug(`initialize Options ${options}`);
     if (this._views && this._views.length > 0) {
       if (!this._instances) {
         this._instances = [];

@@ -10,9 +10,9 @@ adjective: augmented
     1. having been made greater in size or value.
 
 
-**Augmented.js** is a javascript framework designed from SPA/PWAs or mobile web developement.  Augmented.js provides a large set of functionality designed to develop single page applications easier.
+**Augmented.js** is a JavaScript framework designed from SPA/PWAs or mobile web development.  Augmented.js provides a large set of functionality designed to develop single page applications easier.
 
-The key focus of the project is to tie a number of missing features, patterns, and what would normally be third-party plugins together in a powerful framework.  Another goal of *Augmented.js* is to limit third party libraries for a smaller footprint, easy dependency management, and high performance.  Performance is a key item in the framework.  In every case the performance will beat other libraries and frameworks (such as jQuery) usually by large amounts.
+The key focus of the project is to tie a number of missing features, patterns, and what would normally be third-party plugins together in a powerful framework.  Another goal of *Augmented.js* is to limit third party libraries for a smaller footprint, easy dependency management, and high performance.  Performance is a key item in the framework.  In every case the performance will beat other libraries and frameworks (such as jQuery or React) usually by large amounts.
 
 # Modules
 
@@ -27,13 +27,13 @@ The **Presentation** extension adds extensive abilities to the presentation laye
 * MVVM Decorator and Directive Views with declaratives
 * Security wired throughout the framework
   - Views can lock down
-* Utilities that support common abilities found in jQuery (only drastically faster)
-  - Ajax (mimics jQuery API)
+* Utilities that support common abilities found in third party (only drastically faster)
+  - Request (mimics jQuery API)
 * Enhanced Application Object
   - PubSub mediation and bootstrapping for Application objects
   - CSS Stylesheet registration and injection
   - breadcrumb management
-* HTML5 localStorage factory with namespace protection support
+* HTML5 local storage factory with namespace protection support
 * Automatic Tables generated from a JSON schema and data
   - sortable
   - editable
@@ -47,4 +47,10 @@ The **Presentation** extension adds extensive abilities to the presentation laye
   - Toolbar
   - Header
   - Navigation
-* Mock support in Models and Collections
+  - Article
+  - Card
+  - Footer
+  - Menu
+* Models and Collections
+  - Mock support
+  - REST support
