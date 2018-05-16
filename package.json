@@ -1,6 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.1.12",
+  "version": "2.1.13",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
@@ -43,7 +43,7 @@
     "webpack-cli": "^2.1.3"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.0.5",
+    "augmentedjs-next": "^2.0.6",
     "lodash.bind": "^4.2.1",
     "lodash.isregexp": "^4.0.1",
     "lodash.map": "^4.6.0"
