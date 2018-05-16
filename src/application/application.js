@@ -16,8 +16,6 @@ class Application extends Augmented.Application {
 
   /**
    * Initialize Event - adds any stylesheets registered
-   * @method initialize
-   * @memberof Application
    */
   initialize() {
     if (this._stylesheets && this._stylesheets.length > 0) {
