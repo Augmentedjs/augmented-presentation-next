@@ -6,6 +6,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: './src/presentation.js',
   context: __dirname,
+  target: "web",
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'augmented-next-presentation.js',
@@ -25,10 +26,8 @@ module.exports = {
       }
     ]
   },
-  stats: {
-    colors: true
-  },
-  devtool: 'source-map',
+  stats: "errors-only",
+  devtool: "source-map",
   plugins: [
     new webpack.DefinePlugin({
       VERSION: JSON.stringify(require("./package.json").version)

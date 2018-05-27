@@ -11,7 +11,6 @@ class Dom {
    * Gets the height of the browser viewport
    * @method getViewportHeight
    * @returns {number} The height of the viewport
-
    */
   static getViewportHeight() {
     return window.innerHeight;
@@ -20,7 +19,6 @@ class Dom {
    * Gets the width of the browser viewport
    * @method getViewportWidth
    * @returns {number} The width of the viewport
-
    */
   static getViewportWidth() {
     return window.innerWidth;
@@ -32,12 +30,11 @@ class Dom {
    * @param {Node} el Element or string of element selector
    * @param {string} value Value to set (or HTML)
    * @param {boolean} onlyText Value will set as text only
-
    */
   static setValue(el, value, onlyText) {
     if (el) {
       value = (value) ? value : "";
-      let myEl = this.selector(el);
+      const myEl = this.selector(el);
       if (myEl && (myEl.nodeType === 1) && (myEl.nodeName === "select" || myEl.nodeName === "SELECT")) {
         // Select box
         //_logger.debug("Select box (not supported) set to - " + value);
@@ -60,16 +57,14 @@ class Dom {
    * @method getValue
    * @param {Node} el Element or string of element selector
    * @returns {string} Returns the value of the element (or HTML)
-
    */
   static getValue(el) {
     if (el) {
-      let myEl = this.selector(el);
-
+      const myEl = this.selector(el);
       if (myEl && (myEl.nodeType === 1) &&
-      (myEl.nodeName === "input" || myEl.nodeName === "INPUT" ||
-      myEl.nodeName === "textarea" || myEl.nodeName === "TEXTAREA" ||
-      myEl.nodeName === "select" || myEl.nodeName === "SELECT")) {
+          (myEl.nodeName === "input" || myEl.nodeName === "INPUT" ||
+          myEl.nodeName === "textarea" || myEl.nodeName === "TEXTAREA" ||
+          myEl.nodeName === "select" || myEl.nodeName === "SELECT")) {
         return myEl.value;
       } else if (myEl && (myEl.nodeType === 1)) {
         return myEl.innerHTML;
@@ -83,7 +78,6 @@ class Dom {
    * @method selector
    * @param {string} query Element or string of element selector
    * @returns {Node} Returns the element (or first of type)
-
    */
   static selector(query) {
     if (query) {
@@ -97,7 +91,6 @@ class Dom {
    * @method selectors
    * @param {string} query Element or string of element selector
    * @returns {NodeList} Returns all the nodes selected
-
    */
   static selectors(query) {
     if (query) {
@@ -112,7 +105,6 @@ class Dom {
    * @param {string} query Element or string of element selector
    * @param {Node} el Element to start from (optional)
    * @returns {NodeList|Node} Returns all the nodes selected
-
    */
   static query(query, el) {
     if (query) {
@@ -120,8 +112,7 @@ class Dom {
       if (el) {
         d = Dom.selector(el);
       }
-
-      let nodelist = Augmented.isString(query) ? d.querySelectorAll(query) : query;
+      const nodelist = Augmented.isString(query) ? d.querySelectorAll(query) : query;
 
       if (nodelist.length === 1) {
         return nodelist[0];
@@ -134,10 +125,9 @@ class Dom {
    * Hides an element
    * @method hide
    * @param {Node} el Element or string of element selector
-
    */
   static hide(el) {
-    let myEl = this.selector(el);
+    const myEl = this.selector(el);
     if (myEl) {
       myEl.style.display = "none";
       myEl.style.visibility = "hidden";
@@ -148,10 +138,9 @@ class Dom {
    * @method show
    * @param {Node} el Element or string of element selector
    * @param {string} display Value to set for 'display' property (optional)
-
    */
   static show(el, display) {
-    let myEl = this.selector(el);
+    const myEl = this.selector(el);
     if (myEl) {
       myEl.style.display = (display) ? display : "block";
       myEl.style.visibility = "visible";
@@ -162,10 +151,9 @@ class Dom {
    * @method setClass
    * @param {Node} el Element or string of element selector
    * @param {string} cls the class value
-
    */
   static setClass(el, cls) {
-    let myEl = this.selector(el);
+    const myEl = this.selector(el);
     if (myEl) {
       myEl.setAttribute("class", cls);
     }
@@ -175,12 +163,12 @@ class Dom {
    * @method addClass
    * @param {Node} el Element or string of element selector
    * @param {string} cls the class value
-
    */
   static addClass(el, cls) {
-    let myEl = this.selector(el);
+    const myEl = this.selector(el);
     if (myEl) {
       myEl.classList.add(cls);
+      //console.debug(`addClass ${cls} to ${el}`);
     }
   };
   /**
@@ -188,19 +176,18 @@ class Dom {
    * @method removeClass
    * @param {Node} el Element or string of element selector
    * @param {string} cls the class value
-
    */
   static removeClass(el, cls) {
-    let myEl = this.selector(el);
+    const myEl = this.selector(el);
     if (myEl) {
       myEl.classList.remove(cls);
+      //console.debug(`removeClass ${cls} to ${el}`);
     }
   };
   /**
    * Empty a element container
    * @method empty
    * @param {Node} el Element or string of element selector
-
    */
   static empty(el) {
     this.setValue(el, "", true);
@@ -210,12 +197,11 @@ class Dom {
    * @method injectTemplate
    * @param {string} template The template selector
    * @param {Node} mount The mount point as Document.Element or String
-
    */
   static injectTemplate(template, mount) {
-    let t = this.selector(template), el = this.selector(mount);
+    const t = this.selector(template), el = this.selector(mount);
     if (t && el) {
-      let clone = document.importNode(t.content, true);
+      const clone = document.importNode(t.content, true);
       el.appendChild(clone);
     }
   };

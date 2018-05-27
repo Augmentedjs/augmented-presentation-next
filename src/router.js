@@ -1,5 +1,6 @@
 import Augmented from "augmentedjs-next";
 import History from "./history.js";
+import Dom from "./dom/dom.js";
 
 const _map = require("lodash.map");
 const _isRegExp = require("lodash.isregexp");
@@ -10,11 +11,16 @@ const optionalParam = /\((.*?)\)/g;
 const namedParam    = /(\(\?)?:\w+/g;
 const splatParam    = /\*\w+/g;
 const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
-//const history = new History();
 
 /**
  * Routers map faux-URLs to actions, and fire events when routes are
- * matched. Creating a new one sets its `routes` hash, if not set statically.
+ * matched. Creating a new one sets its `routes` hash, if not set statically.<br/>
+ * Supports passing routes to the constructor as well as a transition flag.
+ * @example
+ * const router = new Router({
+ *    "routes": { ... },
+ *    "transition": { "in": #, "out": # }
+ * });
  * @extends Augmented.Object
  */
 class Router extends Augmented.Object {
@@ -23,6 +29,9 @@ class Router extends Augmented.Object {
     options || (options = {});
     if (options.routes) {
       this.routes = options.routes;
+    }
+    if (options.transition) {
+      this.transition = options.transition;
     }
     this.history = new History();
     this._bindRoutes();
@@ -35,33 +44,81 @@ class Router extends Augmented.Object {
    */
   loadView(view) {
     //console.debug("router loadView");
-    this.cleanup();
     if (view) {
       this._view = view;
-      if (this._view.render) {
-        this._view.render();
-      }
-      if (this._view.delegateEvents) {
-        this._view.delegateEvents();
+      if (this.transition && this.transition.in && this._view.el) {
+        const view = this._view;
+        const renderView = () => {
+          Dom.removeClass(view.el, "transition-out");
+          Dom.addClass(view.el, "transition-in");
+          //console.debug("view transition-in");
+          if (view.render) {
+            view.render();
+          }
+          if (view.delegateEvents) {
+            view.delegateEvents();
+          }
+          return Promise.resolve(this);
+        };
+        Promise.all([
+          this.cleanup(),
+          window.setTimeout(renderView, this.transition.in)
+        ]);
+
+      } else {
+        if (this._view.render) {
+          this._view.render();
+        }
+        if (this._view.delegateEvents) {
+          this._view.delegateEvents();
+        }
       }
     }
+    return Promise.resolve(this);
   };
 
   /**
-   * Remove the last view by calling cleanup, then remove
+   * Remove the last view by calling cleanup, then removes
    */
   cleanup() {
-    //console.debug(`router cleanup view ${this._view}`);
+    //console.debug(`router cleanup view '${(this._view) ? (this._view.name) : "no view"}'`);
     if (this._view) {
-      if (this._view.cleanup) {
-        this._view.cleanup();
+      //console.debug(`router cleanup view '${(this._view.el) ? (this._view.el) : "no el"}'`);
+      if (this.transition && this.transition.out && this._view.el) {
+        const view = this._view;
+        Dom.removeClass(view.el, "transition-in");
+        Dom.addClass(view.el, "transition-out");
+        //console.debug("view transition-out");
+        const cleanupView = () => {
+          // TODO: deprecated
+          if (view.cleanup) {
+            console.warn(`View ${view.name}'s "cleanup" method is deprecated,
+              please add code to "remove" method.`);
+            view.cleanup();
+          }
+          if (view.remove) {
+            //console.debug(`router removing view ${this._view.remove()}`);
+            view.remove();
+          }
+          //view = null;
+          return Promise.resolve(this);
+        };
+        window.setTimeout(cleanupView, this.transition.out);
+      } else {
+        // TODO: deprecated
+        if (this._view.cleanup) {
+          console.warn(`View ${view.name}'s "cleanup" method is deprecated,
+            please add code to "remove" method.`);
+          this._view.cleanup();
+        }
+        if (this._view.remove) {
+          //console.debug(`router removing view ${this._view.remove()}`);
+          this._view.remove();
+        }
+        this._view = null;
       }
-      if (this._view.remove) {
-        //console.debug(`router removing view ${this._view.remove()}`);
-        this._view.remove();
-      }
-      this._view = null;
     }
+    return Promise.resolve(this);
   };
 
   /**
@@ -93,7 +150,7 @@ class Router extends Augmented.Object {
     if (!callback) {
       callback = this[name];
     }
-    let router = this;
+    const router = this;
 
     this.history.route(route, (fragment) => {
       const args = router._extractParameters(route, fragment);

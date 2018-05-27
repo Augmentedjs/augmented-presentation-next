@@ -23,10 +23,7 @@ if (cluster.isMaster) {
   const express = require("express");
   const bodyParser = require("body-parser");
   const path = require("path");
-
   const CONSTANTS = require("./constants.js");
-  const allowedOrigins = [CONSTANTS.WEB_SERVICE_URI, CONSTANTS.EE_SERVICE_URI];
-
   const app = express();
 
   app.use(bodyParser.json()); // support json encoded bodies
