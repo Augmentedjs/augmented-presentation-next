@@ -116,7 +116,7 @@ class History extends Augmented.Object {
     this.fragment         = this.getFragment();
 
     // Normalize root to always include a leading and trailing slash.
-    this.root = ('/' + this.root + '/').replace(ROOT_STRIPPER, '/');
+    this.root = (`/${this.root}/`).replace(ROOT_STRIPPER, '/');
 
     // Transition from hashChange to pushState or vice versa if both are
     // requested.

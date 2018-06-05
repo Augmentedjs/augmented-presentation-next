@@ -25,8 +25,10 @@ const escapeRegExp  = /[\-{}\[\]+?.,\\\^$|#\s]/g;
  */
 class Router extends Augmented.Object {
   constructor(options) {
+    if (!options) {
+      options = {};
+    }
     super(options);
-    options || (options = {});
     if (options.routes) {
       this.routes = options.routes;
     }
@@ -36,6 +38,32 @@ class Router extends Augmented.Object {
     this.history = new History();
     this._bindRoutes();
     this.initialize(options);
+  };
+
+  /**
+   * Parse a query string and return as an object
+   * @param {string} queryString
+   * @returns {object} Object of the query params
+   * @static
+   */
+  static parseQuery(queryString) {
+    let query = {},
+        pairs = (queryString[0] === "?" ? queryString.substr(1) : queryString).split("&"),
+        i = 0;
+    const l = pairs.length;
+
+    for (i = 0; i < l; i++) {
+        const pair = pairs[i].split("=");
+        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || "");
+    }
+    return query;
+  };
+
+  /**
+   * @property {Presentation.View} view Read only property to current view
+   */
+  get view() {
+    return this._view;
   };
 
   /**
@@ -204,7 +232,7 @@ class Router extends Augmented.Object {
     if (!this.routes) {
       return;
     }
-    this.routes = Augmented.result(this, 'routes');
+    this.routes = Augmented.result(this, "routes");
     let route,
         routes = Object.keys(this.routes);
     while ((route = routes.pop()) != null) {
