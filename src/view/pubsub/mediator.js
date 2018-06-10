@@ -1,6 +1,9 @@
 import * as Augmented from "augmentedjs-next";
 import Colleague from "./colleague.js";
 
+const DEFAULT_CHANNEL = "augmentedChannel";
+const DEFAULT_IDENTIFIER = "augmentedIdentifier";
+
 /**
  * Mediator View - The mediator in the Mediator Pattern<br/>
  * The mediator defines the interface for communication between colleague views.
@@ -10,96 +13,85 @@ import Colleague from "./colleague.js";
  * [Mediator]<-----[Colleague]
  *     ^-----------[Colleague]
  * </pre>
- * @class Mediator
- * @name Mediator
  * @memberof Presentation
- * @extends Presentation.Colleague
+ * @extends Colleague
  */
 class Mediator extends Colleague {
   constructor(options) {
     super(options);
-    this._defaultChannel = "augmentedChannel";
-    this._defaultIdentifier = "augmentedIdentifier";
+    this._defaultChannel = DEFAULT_CHANNEL;
+    this._defaultIdentifier = DEFAULT_IDENTIFIER;
     this._channels = {};
     this._colleagueMap = {};
     this._subscriptions = {};
   };
 
   /**
-  * Default Channel Property
-  * @property {string} defaultChannel The default channel for the view
-  *
-  * @private
-  */
-
+   * Default Channel Property
+   * @property {string} defaultChannel The default channel for the view
+   * @private
+   */
 
   /**
-  * Default identifier Property
-  * @property {string} defaultIdentifier The default identifier for the view
-  *
-  * @private
-  */
-
+   * Default identifier Property
+   * @property {string} defaultIdentifier The default identifier for the view
+   * @private
+   */
 
   /**
-  * Channels Property
-  * @property {object} _channels The channels for the view (object array)
-  *
-  * @private
-  */
-
+   * Channels Property
+   * @property {object} _channels The channels for the view (object array)
+   * @private
+   */
 
   /**
-  * Colleague Map Property
-  * @property {object} _colleagueMap The colleagues observed by index in the channel
-  *
-  * @private
-  */
-
+   * Colleague Map Property
+   * @property {object} _colleagueMap The colleagues observed by index in the channel
+   * @private
+   */
 
   /**
-  * @property {Object} _subscriptions List of subscriptions
-  *
-  * @private
-  */
-
+   * @property {Object} _subscriptions List of subscriptions
+   * @private
+   */
 
   /**
-  * Extend delegateEvents() to set subscriptions
-  * @method delegateEvents
-  *
-  */
+   * Dismiss a colleage
+   * @private
+   */
+  _dismissMe(colleague) {
+    if (colleague instanceof Colleague) {
+      let channel = this._colleagueMap[colleague], myChannelObject = this._channels[channel];
+      this.unsubscribe(channel, myChannelObject.fn, colleague, myChannelObject.identifier);
+    }
+  };
+
+  /**
+   * Extend delegateEvents() to set subscriptions
+   * @param {array} event The events to undelegate
+   */
   delegateEvents(events) {
     super.delegateEvents(events);
     this.subscriptions = {};
   };
 
   /**
-  * Extend undelegateEvents() to unset subscriptions
-  * @method undelegateEvents
-  *
-  */
+   * Extend undelegateEvents() to unset subscriptions
+   * @param {array} event The events to undelegate
+   */
   undelegateEvents(events) {
     super.undelegateEvents(events);
     this.unsetSubscriptions();
   };
 
   /**
-  * Gets all subscriptions
-  * @method getSubscriptions
-  *
-  * @returns {object} Returns all subscriptions
-  */
+   * Subscriptions
+   * @property {array} subscriptions
+   */
   get subscriptions() {
     return this._subscriptions;
   };
 
-  /**
-  * Subscribe to each subscription
-  * @method setSubscriptions
-  * @param {Object} [subscriptions] An optional hash of subscription to add
-  *
-  */
   set subscriptions(subscriptions) {
     if (subscriptions) {
       Augmented.Utility.extend(this._subscriptions || {}, subscriptions);
@@ -127,18 +119,19 @@ class Mediator extends Colleague {
   };
 
   /**
-  * Unsubscribe to each subscription
-  * @method unsetSubscriptions
-  * @param {Object} [subscriptions] An optional hash of subscription to remove
+   * Unsubscribe to each subscription
+   * @param {Object} [subscriptions] An optional hash of subscription to remove
   *
-  */
+   */
   unsetSubscriptions(subscriptions) {
     subscriptions = subscriptions || this._subscriptions;
     if (!subscriptions || (subscriptions.length === 0)) {
       return;
     }
 
-    let i = 0, l = subscriptions.length;
+    let i = 0;
+    const l = subscriptions.length;
+
     for (i = 0; i < l; i++) {
       let subscription = subscriptions[i];
       let once = false;
@@ -154,14 +147,12 @@ class Mediator extends Colleague {
   };
 
   /**
-  * Observe a Colleague View - observe a Colleague and add to a channel
-  * @method observeColleague
-  * @param {Presentation.Colleague} colleague The Colleague to observe
-  * @param {function} callback The callback to call for this colleague
-  * @param {string} channel The Channel to add the pubished events to
-  * @param {string} identifier The identifier for this function
-  *
-  */
+   * Observe a Colleague View - observe a Colleague and add to a channel
+   * @param {Colleague} colleague The Colleague to observe
+   * @param {function} callback The callback to call for this colleague
+   * @param {string} channel The Channel to add the pubished events to
+   * @param {string} identifier The identifier for this function
+   */
   observeColleague(colleague, callback, channel, identifier) {
     if (colleague instanceof Colleague) {
       if (!channel) {
@@ -173,20 +164,20 @@ class Mediator extends Colleague {
   };
 
   /**
-  * Observe a Colleague View - observe a Colleague and add to a channel and auto trigger events
-  * @method observeColleague
-  * @param {Presentation.Colleague} colleague The Colleague to observe
-  * @param {string} channel The Channel to add the pubished events to
-  * @param {string} identifier The identifier for this function
-  *
-  */
+   * Observe a Colleague View - observe a Colleague and add to a channel and auto trigger events
+   * @param {Colleague} colleague The Colleague to observe
+   * @param {string} channel The Channel to add the pubished events to
+   * @param {string} identifier The identifier for this function
+   */
   observeColleagueAndTrigger(colleague, channel, identifier) {
+    //console.debug("this", this);
+    //console.debug("colleague", colleague);
     this.observeColleague(
       colleague,
       (...args) => {
-        ////console.log("triggered!", args[0]);
-        ////console.log("this", this);
-        ////console.log("colleague", colleague);
+        //console.debug("triggered!", args[0]);
+        //console.debug("this", this);
+        //console.debug("colleague", colleague);
         colleague.trigger(channel, args[0]); //arguments[0], arguments[1]);
       },
       channel,
@@ -194,22 +185,13 @@ class Mediator extends Colleague {
     );
   };
 
-  _dismissMe(colleague) {
-    if (colleague instanceof Colleague) {
-      let channel = this._colleagueMap[colleague], myChannelObject = this._channels[channel];
-      this.unsubscribe(channel, myChannelObject.fn, colleague, myChannelObject.identifier);
-    }
-  };
-
   /**
-  * Dismiss a Colleague View - Remove a Colleague from the channel
-  * @method dismissColleague
-  * @param {Presentation.Colleague} colleague The Colleague to observe
-  * @param {function} callback The callback to call on channel event
-  * @param {string} channel The Channel events are pubished to
-  * @param {string} identifier The identifier for this function
-  *
-  */
+   * Dismiss a Colleague View - Remove a Colleague from the channel
+   * @param {Presentation.Colleague} colleague The Colleague to observe
+   * @param {function} callback The callback to call on channel event
+   * @param {string} channel The Channel events are pubished to
+   * @param {string} identifier The identifier for this function
+   */
   dismissColleague(colleague, callback, channel, identifier) {
     if (colleague instanceof Colleague) {
       if (!channel) {
@@ -221,13 +203,11 @@ class Mediator extends Colleague {
   };
 
   /**
-  * Dismiss a Colleague View - Remove a Colleague from the channel that has an auto trigger
-  * @method dismissColleagueTrigger
-  * @param {Presentation.Colleague} colleague The Colleague to observe
-  * @param {string} channel The Channel events are pubished to
-  * @param {string} identifier The identifier for this function
-  *
-  */
+   * Dismiss a Colleague View - Remove a Colleague from the channel that has an auto trigger
+   * @param {Colleague} colleague The Colleague to observe
+   * @param {string} channel The Channel events are pubished to
+   * @param {string} identifier The identifier for this function
+   */
   dismissColleagueTrigger(colleague, channel, identifier) {
     let id = (identifier) ? identifier : this._defaultIdentifier;
     this.dismissColleague(
@@ -241,24 +221,20 @@ class Mediator extends Colleague {
   };
 
   /**
-  * Subscribe to a channel
-  * @method subscribe
-  * @param {string} channel The Channel events are pubished to
-  * @param {function} callback The callback to call on channel event
-  * @param {object} context The context (or 'this')
-  * @param {boolean} once Toggle to set subscribe only once
-  * @param {string} identifier The identifier for this function
-  *
-  */
+   * Subscribe to a channel
+   * @param {string} channel The Channel events are pubished to
+   * @param {function} callback The callback to call on channel event
+   * @param {object} context The context (or 'this')
+   * @param {boolean} once Toggle to set subscribe only once
+   * @param {string} identifier The identifier for this function
+   */
   subscribe(channel, callback, context, once, identifier) {
-
     ////console.log("subscribe: callback", callback);
-
     if (!this._channels[channel]) {
       this._channels[channel] = [];
     }
 
-    let obj = {
+    const obj = {
       fn: callback,
       // TODO: the context set to 'this' may be the source of the edge case mediator instance for a channel
       context: context || this,
@@ -266,19 +242,15 @@ class Mediator extends Colleague {
       identifier: (identifier) ? identifier : this._defaultIdentifier
     };
     this._channels[channel].push(obj);
-
     this._colleagueMap[context] = channel;
-
     this.on(channel, this.publish, context);
   };
 
   /**
-  * Trigger all callbacks for a channel
-  * @method publish
-  * @param {string} channel The Channel events are pubished to
-  * @param {object} N Extra parameter to pass to handler
-  *
-  */
+   * Trigger all callbacks for a channel
+   * @param {string} channel The Channel events are pubished to
+   * @param {object} N Extra parameter to pass to handler
+   */
   publish(channel, ...args) {
     if (!channel || !this._channels[channel]) {
       //_logger.warn("AUGMENTED: Mediator: channel '" + channel + "' doest exist.");
@@ -287,7 +259,8 @@ class Mediator extends Colleague {
 
     let myArgs = [].slice.call(args, 1), subscription;
     //console.log("args", myArgs);
-    let i = 0, l = this._channels[channel].length;
+    let i = 0;
+    const l = this._channels[channel].length;
 
     for (i = 0; i < l; i++) {
       subscription = this._channels[channel][i];
@@ -309,14 +282,12 @@ class Mediator extends Colleague {
   };
 
   /**
-  * Cancel subscription
-  * @method unsubscribe
-  * @param {string} channel The Channel events are pubished to
-  * @param {function} callback The function callback regestered
-  * @param {object} context The context (or 'this')
-  * @param {string} identifier The identifier for this function
-  *
-  */
+   * Cancel subscription
+   * @param {string} channel The Channel events are pubished to
+   * @param {function} callback The function callback regestered
+   * @param {object} context The context (or 'this')
+   * @param {string} identifier The identifier for this function
+   */
   unsubscribe(channel, callback, context, identifier) {
     if (!this._channels[channel]) {
       return;
@@ -343,47 +314,39 @@ class Mediator extends Colleague {
   };
 
   /**
-  * Subscribing to one event only
-  * @method subscribeOnce
-  * @param {string} channel The Channel events are pubished to
-  * @param {string} subscription The subscription to subscribe to
-  * @param {object} context The context (or 'this')
-  * @param {string} identifier The identifier for this function
-  *
-  */
+   * Subscribing to one event only
+   * @param {string} channel The Channel events are pubished to
+   * @param {string} subscription The subscription to subscribe to
+   * @param {object} context The context (or 'this')
+   * @param {string} identifier The identifier for this function
+   */
   subscribeOnce(channel, subscription, context, identifier) {
     this.subscribe(channel, subscription, context, true, identifier);
   };
 
   /**
-  * Get All the Colleagues for a channel
-  * @method getColleagues
-  * @param {string} channel The Channel events are pubished to
-  *
-  * @returns {array} The colleagues for a channel
-  */
+   * Get All the Colleagues for a channel
+   * @param {string} channel The Channel events are pubished to
+   * @returns {array} The colleagues for a channel
+   */
   getColleagues(channel) {
-    let c = this.getChannel(channel);
+    const c = this.getChannel(channel);
     return (c) ? c.context : null;
   };
 
   /**
-  * Get Channels
-  * @method getChannels
-  *
-  * @returns {object} Returns all the channels
-  */
+   * Get Channels
+   * @returns {object} Returns all the channels
+   */
   get channels() {
     return this._channels;
   };
 
   /**
-  * Get a specific channel
-  * @method getChannel
-  * @param {string} channel The Channel events are pubished to
-  *
-  * @returns {array} Returns the requested channel or null if nothing exists
-  */
+   * Get a specific channel
+   * @param {string} channel The Channel events are pubished to
+   * @returns {array} Returns the requested channel or null if nothing exists
+   */
   getChannel(channel) {
     if (!channel) {
       channel = this._defaultChannel;
@@ -392,22 +355,18 @@ class Mediator extends Colleague {
   };
 
   /**
-  * Get the default channel
-  * Convenience method for getChannel(null)
-  * @method getDefaultChannel
-  *
-  * @returns {array} Returns the default channel or null if nothing exists
-  */
+   * Get the default channel<br/>
+   * Convenience method for _.channel = null;
+   * @property {array} Returns the default channel or null if nothing exists
+   */
   get defaultChannel() {
     return this.getChannel(this._defaultChannel);
   };
 
   /**
-  * Get the default identifier
-  * @method getDefaultIdentifier
-  *
-  * @returns {string} Returns the default identifier
-  */
+   * Get the default identifier
+   * @property {string} Returns the default identifier
+   */
   get defaultIdentifier() {
     return this._defaultIdentifier;
   };

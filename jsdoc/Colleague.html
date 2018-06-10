@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>RestLogger</title>
+		<title>Colleague</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -174,7 +174,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">RestLogger</span></h1>
+				<h1><span class="name">Colleague</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -183,38 +183,17 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">RestLogger</li>
+							<li class="active">Colleague</li>
 						</ol>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">RestLogger</span><span class="signature-params">( <span class="signature-param">l</span>&nbsp;)</span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Colleague</span><span class="signature-params">()</span></h2>
 </dt>
 <dd class="symbol-details class" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p>REST Logger - *requires override of _logMe</p></div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>l</code></td>
-							<td><span class="param-type">Logger.Level</span></td>
-							<td class="last">
-									<p>The level to initialize the logger with</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc"><p><em>Colleague View</em> &mdash; The 'child' view.<br/><br>The Colleague communicates with other Colleagues through its Mediator.</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
@@ -222,7 +201,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Augments</label>
 								<div class="col-sm-9">
-										<p class="form-control-static">AbstractLogger</p>
+										<p class="form-control-static"><a href="Presentation.View.html">Presentation.View</a></p>
 								</div>
 							</div>
 			
@@ -233,13 +212,6 @@
 			
 			
 			
-							<!-- deprecated -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Deprecated</label>
-								<div class="col-sm-9">
-									<p class="form-control-static">true</p>
-								</div>
-							</div>
 			
 			
 			
@@ -248,7 +220,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="logger_restLogger.js.html">logger/restLogger.js</a>, <a href="logger_restLogger.js.html#line-10">line 10</a></p>
+									<p class="form-control-static"><a href="view_pubsub_colleague.js.html">view/pubsub/colleague.js</a>, <a href="view_pubsub_colleague.js.html#line-9">line 9</a></p>
 								</div>
 							</div>
 			
@@ -264,7 +236,7 @@
 									<dl class="symbol">
 											<hr/>
 											<dt class="symbol-title member public">
-			<h4 id="uri" class="member public"><span class="name">uri</span><span class="signature-type"></span></h4>
+			<h4 id="mediator" class="member public"><span class="name">mediator</span><span class="signature-type"></span></h4>
 		</dt>
 <dd class="symbol-details member public">
 	<div class="symbol-details-inner">
@@ -280,10 +252,10 @@
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>uri</code></td>
-							<td><span class="param-type">string</span></td>
+								<td><code>mediator</code></td>
+							<td><span class="param-type">Mediator</span></td>
 							<td class="last">
-									<p>The URI to use for RestLogger</p>
+									<p>Read only property of the mediator</p>
 							</td>
 						</tr>
 					</tbody>
@@ -309,7 +281,170 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="logger_restLogger.js.html">logger/restLogger.js</a>, <a href="logger_restLogger.js.html#line-18">line 18</a></p>
+									<p class="form-control-static"><a href="view_pubsub_colleague.js.html">view/pubsub/colleague.js</a>, <a href="view_pubsub_colleague.js.html#line-59">line 59</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+									</dl>
+									<h3>Methods</h3>
+									<dl class="symbol">
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="sendMessage" class="function public"><span class="name">sendMessage</span><span class="signature-params">( <span class="signature-param">message</span>, <span class="signature-param">data</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Send a message to the mediator's queue</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>message</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>Message to send</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>data</code></td>
+							<td><span class="param-type">object</span></td>
+							<td class="last">
+									<p>Data to send with message</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="view_pubsub_colleague.js.html">view/pubsub/colleague.js</a>, <a href="view_pubsub_colleague.js.html#line-24">line 24</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="setMediatorMessageQueue" class="function public"><span class="name">setMediatorMessageQueue</span><span class="signature-params">( <span class="signature-param">mediator</span>&nbsp;)</span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Set the mediator to this colleague</p></div>
+			</div>			<div class="callout callout-info">
+				<h5>Parameters</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>mediator</code></td>
+							<td><span class="param-type">Mediator</span></td>
+							<td class="last">
+									<p>The mediator</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="view_pubsub_colleague.js.html">view/pubsub/colleague.js</a>, <a href="view_pubsub_colleague.js.html#line-36">line 36</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title function public">
+			<h4 id="removeMediatorMessageQueue" class="function public"><span class="name">removeMediatorMessageQueue</span><span class="signature-params">()</span></h4>
+		</dt>
+<dd class="symbol-details function public">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>Remove the mediator from this colleague</p></div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="view_pubsub_colleague.js.html">view/pubsub/colleague.js</a>, <a href="view_pubsub_colleague.js.html#line-51">line 51</a></p>
 								</div>
 							</div>
 			

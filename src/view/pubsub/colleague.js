@@ -1,14 +1,9 @@
 import View from "../view.js";
 
 /**
- * Colleague View - The 'child' view.<br/>
- * Allow to define convention-based subscriptions
- * as an 'subscriptions' hash on a view. Subscriptions
- * can then be easily setup and cleaned.
+ * <em>Colleague View</em> &mdash; The 'child' view.<br/>
+ * The Colleague communicates with other Colleagues through its Mediator.
  *
- * @class Augmented.Presentation.Colleague
- * @name Colleague
- * @memberof Presentation
  * @extends Presentation.View
  */
 class Colleague extends View {
@@ -23,42 +18,44 @@ class Colleague extends View {
 
   /**
    * Send a message to the mediator's queue
-   * @method sendMessage
    * @param {string} message Message to send
    * @param {object} data Data to send with message
-   *
    */
   sendMessage(message, data) {
     if (this._mediator) {
       this._mediator.trigger(message, data);
-    } /*else {
-      _logger.warn("AUGMENTED: No mediator is available, talking to myself.");
-    }*/
+    } else {
+      console.warn(`sendMessage: No mediator is available for ${this.name}, talking to myself.`);
+    }
   };
 
   /**
    * Set the mediator to this colleague
-   * @method setMediatorMessageQueue
-   * @param {Augmented.Presentation.Mediator} mediator The mediator
-   * 
+   * @param {Mediator} mediator The mediator
    */
   setMediatorMessageQueue(mediator) {
-    if (this._mediator) {
-      // already registered, send a dismiss message
-      this._mediator._dismissMe(this);
+    //console.debug(`setMediatorMessageQueue: ${this.name} has a mediator? ${(this._mediator !== null)} and a mediator was passed? ${(mediator !== null)}`);
+    if (mediator) {
+      if (this._mediator) {
+        // already registered, send a dismiss message
+        //console.debug(`${this.name} already registered, send a dismiss message.`);
+        this._mediator._dismissMe(this);
+      }
+      this._mediator = mediator;
     }
-    this._mediator = mediator;
   };
 
   /**
    * Remove the mediator from this colleague
-   * @method removeMediatorMessageQueue
-   *
    */
   removeMediatorMessageQueue() {
     this._mediator = null;
   };
 
+  /**
+   * @property {Mediator} mediator
+   * Read only property of the mediator
+   */
   get mediator() {
     return this._mediator;
   }
