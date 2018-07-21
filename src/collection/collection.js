@@ -1,5 +1,5 @@
 import Augmented from "augmentedjs-next";
-import sync from "../request/sync.js";
+
 
 /**
  * Collection Class
@@ -16,7 +16,28 @@ class Collection extends Augmented.AbstractCollection {
   };
 
   /**
+   * @property {string} url The url for the datasource (if applicable)
+   */
+
+  /**
+   * @returns {string|function} url The URL or a function to retun a URL object
+   */
+  get url() {
+    return this._url;
+  };
+  /**
+   * @param {string|function} url The URL or a function to retun a URL object
+   */
+  set url(url) {
+    this._url = url;
+  };
+
+  /**
    * Sync collection data to bound REST call
+   * @param {string} method The method to Unsuccessfull
+   * @param {Model} model The model to Sync
+   * @param {object} options The options to pass
+   * @returns {function} Returns a request function
    */
   sync(method, model, options) {
     if (!options) {
@@ -36,6 +57,35 @@ class Collection extends Augmented.AbstractCollection {
     }
 
     return sync(method, model, options);
+  };
+
+  /**
+   * Fetch the collection
+   * @param {object} options Any options to pass
+   */
+  fetch(options) {
+    this.sync("read", options);
+  };
+  /**
+   * Save the collection
+   * @param {object} options Any options to pass
+   */
+  save(options) {
+    this.sync("create", options);
+  };
+  /**
+   * Update the collection
+   * @param {object} options Any options to pass
+   */
+  update(options) {
+    this.sync("update", options);
+  };
+  /**
+   * Destroy the collection
+   * @param {object} options Any options to pass
+   */
+  destroy(options) {
+    this.sync("delete", options);
   };
 };
 

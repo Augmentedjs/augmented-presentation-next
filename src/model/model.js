@@ -50,6 +50,35 @@ class Model extends Augmented.AbstractModel {
 
     return sync(method, model, options);
   };
+
+  /**
+   * Fetch the collection
+   * @param {object} options Any options to pass
+   */
+  fetch(options) {
+    this.sync("read", options);
+  };
+  /**
+   * Save the collection
+   * @param {object} options Any options to pass
+   */
+  save(options) {
+    this.sync("create", options);
+  };
+  /**
+   * Update the collection
+   * @param {object} options Any options to pass
+   */
+  update(options) {
+    this.sync("update", options);
+  };
+  /**
+   * Destroy the collection
+   * @param {object} options Any options to pass
+   */
+  destroy(options) {
+    this.sync("delete", options);
+  };
 };
 
 export default Model;

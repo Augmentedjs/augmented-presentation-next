@@ -4,9 +4,7 @@ import request from "./request.js";
 import DATA_TYPE from "./dataType.js";
 
 /**
- * Augmented.sync - Base sync method that can pass special augmented features
- * @method sync
- * @memberof Augmented
+ * Base sync method that can pass special augmented features
  */
 const sync = (method, model, options) => {
   const type = METHOD_MAP[method];
