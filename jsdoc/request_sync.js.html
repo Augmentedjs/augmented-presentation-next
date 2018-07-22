@@ -193,7 +193,7 @@ import DATA_TYPE from "./dataType.js";
  * Base sync method that can pass special augmented features
  */
 const sync = (method, model, options) => {
-  const type = METHOD_MAP[method];
+  const type = (method) ? METHOD_MAP[method] : METHOD_MAP.READ;
 
   if (!options) {
     options = {};
@@ -207,25 +207,25 @@ const sync = (method, model, options) => {
 
   // Ensure that we have a URL.
   if (!options.url) {
-    if (model.url) {
+    if (model &amp;&amp; model.url) {
       if (Augmented.isFunction(model.url)) {
         params.url = model.url();
       } else {
         params.url = model.url;
       }
     } else {
-      throw new Error("A \"url\" property or function must be specified");
+      throw new Error(`A "url" property or model with "url" must be specified in the collection or model class!`);
     }
   }
 
   // Ensure that we have the appropriate request data.
-  if (options.data == null &amp;&amp; model &amp;&amp; (method === "create" || method === "update" || method === "patch")) {
+  if (options.data == null &amp;&amp; model &amp;&amp; (method === METHOD_MAP.CREATE || method === METHOD_MAP.UPDATE || method === METHOD_MAP.PATCH)) {
     params.contentType = "application/json";
     params.data = JSON.stringify(options.attrs || model.toJSON(options));
   }
 
   // Don't process data on a non-GET request.
-  if (params.type !== METHOD_MAP.read) {
+  if (params.type !== METHOD_MAP.READ) {
     params.processData = false;
   }
 
@@ -241,7 +241,9 @@ const sync = (method, model, options) => {
 
   // Make the request, allowing the user to override any Ajax options.
   const xhr = options.xhr = request(Augmented.Utility.extend(params, options));
-  model.trigger("request", model, xhr, options);
+  if (model) {
+    model.trigger("request", model, xhr, options);
+  }
   return xhr;
 };
 

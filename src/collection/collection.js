@@ -1,5 +1,5 @@
 import Augmented from "augmentedjs-next";
-
+import sync from "../request/sync.js";
 
 /**
  * Collection Class
@@ -8,10 +8,11 @@ import Augmented from "augmentedjs-next";
 class Collection extends Augmented.AbstractCollection {
   constructor(models, options) {
     super(models, options);
+
     if (options && options.url) {
-      this.url = options.url;
+      this._url = options.url;
     } else {
-      this.url = null;
+      this._url = null;
     };
   };
 
@@ -43,6 +44,12 @@ class Collection extends Augmented.AbstractCollection {
     if (!options) {
       options = {};
     }
+    if (this._url) {
+      options.url = this._url;
+    } else {
+      console.warn("no url?! :/");
+    }
+
     if (this.crossOrigin === true) {
       options.crossDomain = true;
     }

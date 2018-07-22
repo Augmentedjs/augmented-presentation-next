@@ -4,7 +4,12 @@ const METHOD_MAP = {
   "update": "PUT",
   "patch": "PATCH",
   "delete": "DELETE",
-  "read": "GET"
+  "read": "GET",
+  "CREATE": "POST",
+  "UPDATE": "PUT",
+  "PATCH": "PATCH",
+  "DELETE": "DELETE",
+  "READ": "GET"
 };
 
 export default METHOD_MAP;
