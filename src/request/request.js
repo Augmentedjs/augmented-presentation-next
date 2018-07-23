@@ -162,18 +162,18 @@ const request = (configuration) => {
               if (xhr.responseText) {
                 configuration.success(xhr.responseText, xhr.status, xhr);
               } else {
-                //console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
+                console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
                 configuration.success("", xhr.status, xhr);
               }
             } else if (xhr.responseType === DATA_TYPE.JSON) {
               if (xhr.response) {
-                //console.debug("AUGMENTED: Ajax (JSON responseType) native JSON.");
+                console.debug("AUGMENTED: Ajax (JSON responseType) native JSON.");
                 configuration.success(xhr.response, xhr.status, xhr);
               } else if (xhr.responseText) {
-                //console.debug("AUGMENTED: Ajax (JSON responseType) parsed JSON from string.");
+                console.debug("AUGMENTED: Ajax (JSON responseType) parsed JSON from string.");
                 configuration.success(JSON.parse(xhr.responseText), xhr.status, xhr);
               } else {
-                //console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
+                console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
                 configuration.success("", xhr.status, xhr);
               }
             } else {
@@ -182,7 +182,7 @@ const request = (configuration) => {
               } else if (xhr.response) {
                 configuration.success(xhr.response, xhr.status, xhr);
               } else {
-                //console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
+                console.warn("AUGMENTED: Ajax (" + xhr.responseType + " responseType) did not return anything.");
                 configuration.success("", xhr.status, xhr);
               }
             }
@@ -195,7 +195,7 @@ const request = (configuration) => {
           }
         }
       } catch(e) {
-        //console.error("AUGMENTED: Ajax (" + e + ")");
+        console.error("AUGMENTED: Ajax (" + e + ")");
         if (configuration && configuration.error) {
           configuration.error(xhr, xhr.status, xhr.statusText);
         }
@@ -213,9 +213,9 @@ const request = (configuration) => {
     xhr.send(((configuration.data) ? configuration.data : ""));
   }
 
-  //console.debug("AUGMENTED: Ajax status (" + xhr.status + ")");
+  console.debug("AUGMENTED: Ajax status (" + xhr.status + ")");
 
-  return this;
+  return xhr;
 };
 
 export default request;

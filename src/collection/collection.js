@@ -50,6 +50,7 @@ class Collection extends Augmented.AbstractCollection {
       console.warn("no url?! :/");
     }
 
+    // TODO: pass this to the fetch
     if (this.crossOrigin === true) {
       options.crossDomain = true;
     }
@@ -59,11 +60,15 @@ class Collection extends Augmented.AbstractCollection {
       };
     }
 
+    // TODO: Do I need this?
     if (this.mock) {
       options.mock = this.mock;
     }
 
-    return sync(method, model, options);
+    if (method && model && options.url) {
+      return sync(method, model, options);
+    }
+    return null;
   };
 
   /**
@@ -71,28 +76,28 @@ class Collection extends Augmented.AbstractCollection {
    * @param {object} options Any options to pass
    */
   fetch(options) {
-    this.sync("read", options);
+    this.sync("read", this, options);
   };
   /**
    * Save the collection
    * @param {object} options Any options to pass
    */
   save(options) {
-    this.sync("create", options);
+    this.sync("create", this, options);
   };
   /**
    * Update the collection
    * @param {object} options Any options to pass
    */
   update(options) {
-    this.sync("update", options);
+    this.sync("update", this, options);
   };
   /**
    * Destroy the collection
    * @param {object} options Any options to pass
    */
   destroy(options) {
-    this.sync("delete", options);
+    this.sync("delete", this, options);
   };
 };
 
