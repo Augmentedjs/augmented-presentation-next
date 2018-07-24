@@ -40,7 +40,7 @@ class Collection extends Augmented.AbstractCollection {
    * @param {object} options The options to pass
    * @returns {function} Returns a request function
    */
-  sync(method, model, options) {
+  async sync(method, model, options) {
     if (!options) {
       options = {};
     }
@@ -65,10 +65,9 @@ class Collection extends Augmented.AbstractCollection {
       options.mock = this.mock;
     }
 
-    if (method && model && options.url) {
-      return sync(method, model, options);
-    }
-    return null;
+    const fetchAsyncA = await sync(method, model, options);
+    //console.debug("in collection " + fetchAsyncA);
+    return fetchAsyncA;
   };
 
   /**
@@ -76,28 +75,28 @@ class Collection extends Augmented.AbstractCollection {
    * @param {object} options Any options to pass
    */
   fetch(options) {
-    this.sync("read", this, options);
+    return this.sync("read", this, options);
   };
   /**
    * Save the collection
    * @param {object} options Any options to pass
    */
   save(options) {
-    this.sync("create", this, options);
+    return this.sync("create", this, options);
   };
   /**
    * Update the collection
    * @param {object} options Any options to pass
    */
   update(options) {
-    this.sync("update", this, options);
+    return this.sync("update", this, options);
   };
   /**
    * Destroy the collection
    * @param {object} options Any options to pass
    */
   destroy(options) {
-    this.sync("delete", this, options);
+    return this.sync("delete", this, options);
   };
 };
 

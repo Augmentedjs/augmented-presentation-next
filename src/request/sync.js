@@ -6,7 +6,12 @@ import DATA_TYPE from "./dataType.js";
 /**
  * Base sync method that can pass special augmented features
  */
-const sync = (method, model, options) => {
+const sync = async (method, model, options) => {
+  if (!model) {
+    console.error("no model to sync!");
+    throw new Error("no model to sync!");
+  }
+
   let data = null;
   if (!options) {
     options = {};
@@ -43,43 +48,56 @@ const sync = (method, model, options) => {
     params.data = null;
   }
 
-  // Make the request, allowing the user to override any fetch options.
-  //const xhr = options.xhr = request(Augmented.Utility.extend(params, options));
-  if (model) {
-    const myData = (params.data) ? JSON.stringify(data) : null;
-    const p = fetch(options.url, {
-      "method": params.type,
-      "headers": {"Content-Type": params.contentType},
-      "body": myData
-    }).then((res) => {
-      //console.debug(`Status: ${res.status}`);
-      if(res.ok) {
-        return res.json();
-      }
-      throw new Error(`${res.status}: ${params.url} ${res.statusText} `);
-    }).then((response) => {
-      //console.debug(`Response: ${JSON.stringify(response)}`);
-      model.set(response);
-      data = response;
-      return response;
-    })
-    .then((response) => {
-      if (params.success) {
-        return params.success(response);
-      }
-      return response;
-    }).catch((error) => {
-      if (params.error) {
-        return params.error(error);
-      }
-      console.error(error);
-      return null;
-    });
-    model.trigger("request", model, p, options);
-  } else {
-    console.error("no model to sync!");
-  }
-  return data;
+  const myData = (params.data) ? JSON.stringify(data) : null;
+/*
+  const response = await fetch(options.url, {
+    "method": params.type,
+    "headers": {"Content-Type": params.contentType},
+    "body": myData
+  });
+  const json = await response.json();
+  //console.log(json);
+  model.set(json);
+*/
+
+  const ret = await fetch(options.url, {
+    "method": params.type,
+    "headers": {"Content-Type": params.contentType},
+    "body": myData
+  }).then((res) => {
+    //console.debug(`Status: ${res.status}`);
+    if(res.ok) {
+      //console.debug("fetch finished");
+      return res.json();
+    }
+    throw new Error(`${res.status}: ${params.url} ${res.statusText} `);
+  }).then((response) => {
+    //console.debug(`Response: ${JSON.stringify(response)}`);
+    model.set(response);
+    data = response;
+    return response;
+  })
+  .then((response) => {
+    if (params.success) {
+      return params.success(response);
+    }
+    return response;
+  })
+  .then((response) => {
+    // null is the old xhr
+    model.trigger("request", model, null, options);
+    //console.debug("completing sync");
+    return response;
+  }).catch((error) => {
+    if (params.error) {
+      return params.error(error);
+    }
+    console.error(error);
+    return error;
+  });
+
+  //console.debug("function ended");
+  return ret;
 };
 
 export default sync;
