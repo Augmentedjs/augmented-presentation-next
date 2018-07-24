@@ -15,6 +15,29 @@ class Model extends Augmented.AbstractModel {
     super(attributes, options, args);
     this.mock = false;
     this.crossOrigin = false;
+
+    if (options && options.url) {
+      this._url = options.url;
+    } else {
+      this._url = null;
+    };
+  };
+
+  /**
+   * @property {string} url The url for the datasource (if applicable)
+   */
+
+  /**
+   * @returns {string|function} url The URL or a function to retun a URL object
+   */
+  get url() {
+    return this._url;
+  };
+  /**
+   * @param {string|function} url The URL or a function to retun a URL object
+   */
+  set url(url) {
+    this._url = url;
   };
 
   /**

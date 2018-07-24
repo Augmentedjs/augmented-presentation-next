@@ -1324,11 +1324,11 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public inherited">
-			<h4 id="removeClass" class="function public inherited"><span class="name">removeClass</span><span class="signature-params">( <span class="signature-param">id</span>, <span class="signature-param">cls</span>&nbsp;)</span></h4>
+			<h4 id="bindModelChange" class="function public inherited"><span class="name">bindModelChange</span><span class="signature-params">( <span class="signature-param">func</span>&nbsp;)</span></h4>
 		</dt>
 <dd class="symbol-details function public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>removeClass - remove a class to a bount element</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>bindModelChange method - binds the model changes to functions</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -1341,17 +1341,10 @@
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>id</code></td>
-							<td><span class="param-type">string</span></td>
+								<td><code>func</code></td>
+							<td><span class="param-type">func</span></td>
 							<td class="last">
-									<p>The identifier (not id attribute) of the element</p>
-							</td>
-						</tr>
-						<tr>
-								<td><code>cls</code></td>
-							<td><span class="param-type">string</span></td>
-							<td class="last">
-									<p>The class to remove</p>
+									<p>The function to call when changing (normally render)</p>
 							</td>
 						</tr>
 					</tbody>
@@ -1368,7 +1361,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Presentation.DecoratorView.html#removeClass">Presentation.DecoratorView#removeClass</a></p>
+									<p class="form-control-static"><a href="Presentation.DecoratorView.html#bindModelChange">Presentation.DecoratorView#bindModelChange</a></p>
 								</div>
 							</div>
 			
@@ -1384,7 +1377,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="view_decorator_decorator.js.html">view/decorator/decorator.js</a>, <a href="view_decorator_decorator.js.html#line-270">line 270</a></p>
+									<p class="form-control-static"><a href="view_decorator_decorator.js.html">view/decorator/decorator.js</a>, <a href="view_decorator_decorator.js.html#line-280">line 280</a></p>
 								</div>
 							</div>
 			
@@ -2782,11 +2775,11 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title function public inherited">
-			<h4 id="bindModelChange" class="function public inherited"><span class="name">bindModelChange</span><span class="signature-params">( <span class="signature-param">func</span>&nbsp;)</span></h4>
+			<h4 id="removeClass" class="function public inherited"><span class="name">removeClass</span><span class="signature-params">( <span class="signature-param">id</span>, <span class="signature-param">cls</span>&nbsp;)</span></h4>
 		</dt>
 <dd class="symbol-details function public inherited">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>bindModelChange method - binds the model changes to functions</p></div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description"><p>removeClass - remove a class to a bount element</p></div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -2799,10 +2792,17 @@
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>func</code></td>
-							<td><span class="param-type">func</span></td>
+								<td><code>id</code></td>
+							<td><span class="param-type">string</span></td>
 							<td class="last">
-									<p>The function to call when changing (normally render)</p>
+									<p>The identifier (not id attribute) of the element</p>
+							</td>
+						</tr>
+						<tr>
+								<td><code>cls</code></td>
+							<td><span class="param-type">string</span></td>
+							<td class="last">
+									<p>The class to remove</p>
 							</td>
 						</tr>
 					</tbody>
@@ -2819,7 +2819,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Inherited From</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="Presentation.DecoratorView.html#bindModelChange">Presentation.DecoratorView#bindModelChange</a></p>
+									<p class="form-control-static"><a href="Presentation.DecoratorView.html#removeClass">Presentation.DecoratorView#removeClass</a></p>
 								</div>
 							</div>
 			
@@ -2835,7 +2835,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="view_decorator_decorator.js.html">view/decorator/decorator.js</a>, <a href="view_decorator_decorator.js.html#line-280">line 280</a></p>
+									<p class="form-control-static"><a href="view_decorator_decorator.js.html">view/decorator/decorator.js</a>, <a href="view_decorator_decorator.js.html#line-270">line 270</a></p>
 								</div>
 							</div>
 			
