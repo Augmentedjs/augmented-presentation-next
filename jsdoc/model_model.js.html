@@ -217,10 +217,17 @@ class Model extends Augmented.AbstractModel {
    * sync - Sync model data to bound REST call
    * @method sync
    */
-  sync(method, model, options) {
+  async sync(method, model, options) {
     if (!options) {
       options = {};
     }
+    if (this._url) {
+      options.url = this._url;
+    } else {
+      console.warn("no url?! :/");
+    }
+
+    // TODO: pass this to the fetch
     if (this.crossOrigin === true) {
       options.crossDomain = true;
     }
@@ -230,40 +237,42 @@ class Model extends Augmented.AbstractModel {
       };
     }
 
+    // TODO: Do I need this?
     if (this.mock) {
       options.mock = this.mock;
     }
 
-    return sync(method, model, options);
+    const fetchAsyncA = await sync(method, model, options);
+    return fetchAsyncA;
   };
 
   /**
-   * Fetch the collection
+   * Fetch the model
    * @param {object} options Any options to pass
    */
   fetch(options) {
-    this.sync("read", options);
+    return this.sync("read", this, options);
   };
   /**
-   * Save the collection
+   * Save the model
    * @param {object} options Any options to pass
    */
   save(options) {
-    this.sync("create", options);
+    return this.sync("create", this, options);
   };
   /**
-   * Update the collection
+   * Update the model
    * @param {object} options Any options to pass
    */
   update(options) {
-    this.sync("update", options);
+    return this.sync("update", this, options);
   };
   /**
-   * Destroy the collection
+   * Destroy the model
    * @param {object} options Any options to pass
    */
   destroy(options) {
-    this.sync("delete", options);
+    return this.sync("delete", this, options);
   };
 };
 
