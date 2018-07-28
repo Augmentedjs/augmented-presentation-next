@@ -63,6 +63,7 @@ const sync = async (method, model, options) => {
   const ret = await fetch(options.url, {
     "method": params.type,
     "headers": {"Content-Type": params.contentType},
+    "credentials": 'include',
     "body": myData
   }).then((res) => {
     //console.debug(`Status: ${res.status}`);
