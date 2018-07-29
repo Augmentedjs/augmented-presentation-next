@@ -54,49 +54,55 @@ class LocalStorageCollection extends Augmented.AbstractCollection {
    * @param {object} options Any options to pass
    */
   fetch(options) {
-    this.sync('read', this, options);
+    return this.sync('read', this, options);
   };
   /**
    * Save the collection
    * @param {object} options Any options to pass
    */
   save(options) {
-    this.sync('create', this, options);
+    return this.sync('create', this, options);
   };
   /**
    * Update the collection
    * @param {object} options Any options to pass
    */
   update(options) {
-    this.sync('update', this, options);
+    return this.sync('update', this, options);
   };
   /**
    * Destroy the collection
    * @param {object} options Any options to pass
    */
   destroy(options) {
-    this.sync('delete', this, options);
+    return this.sync('delete', this, options);
   };
 
   /**
    * Sync method for Collection
    */
   sync(method, model, options) {
-    if (!options) {
-      options = {};
-    }
     let j = {};
-    if (method === "create" || method === "update") {
-      j = this.toJSON();
-      this._storage.setItem(this._key, j);
-    } else if (method === "delete") {
-      this._storage.removeItem(this._key);
-    } else {
-      // read
-      j = this._storage.getItem(this._key);
-      this.reset(j);
+    try {
+      if (!options) {
+        options = {};
+      }
+
+      if (method === "create" || method === "update") {
+        j = this.toJSON();
+        this._storage.setItem(this._key, j);
+      } else if (method === "delete") {
+        this._storage.removeItem(this._key);
+      } else {
+        // read
+        j = this._storage.getItem(this._key);
+        this.reset(j);
+      }
+    } catch (e) {
+      console.error(e);
+      throw e;
     }
-    return {};
+    return j;
   };
 };
 
