@@ -1,6 +1,6 @@
 import Widget from "../../../widget/widget.js";
 
-const formCompile = (name, description, fields, model, required, binding, display) => {
+const formCompile = (name, description, fields, model, required, binding, display, nestedInput) => {
   const form = document.createElement("form"), fs = document.createElement("formset"), keys = Object.keys(fields), l = ((display) ? display.length: keys.length);
   let t, i, input, lb, req;
 
@@ -24,7 +24,7 @@ const formCompile = (name, description, fields, model, required, binding, displa
   for (i = 0; i < l; i++) {
     let displayCol = true;
     if (display !== null) {
-        displayCol = (keys.indexOf(display[i]) !== -1);
+        displayCol = (keys.indexOf(display[i]) !== -1) ? true : false;
     }
 
     if (displayCol) {
@@ -33,11 +33,17 @@ const formCompile = (name, description, fields, model, required, binding, displa
       lb.setAttribute("for", display[i]);
       t = document.createTextNode(display[i]);
       lb.appendChild(t);
-      fs.appendChild(lb);
-
       input = Widget.Input(fields[display[i]], display[i], model[display[i]], display[i], req, binding);
-      if (input) {
-        fs.appendChild(input);
+      if (nestedInput) {
+        if (input) {
+          lb.appendChild(input);
+        }
+        fs.appendChild(lb);
+      } else {
+        fs.appendChild(lb);
+        if (input) {
+          fs.appendChild(input);
+        }
       }
     }
   }

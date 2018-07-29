@@ -22,6 +22,7 @@ class AutomaticForm extends DecoratorView {
     this.description = "";
     this._required = [];
     this.display = null;
+    this.nestedInput = false;
 
     if (this.model && options && options.clearForm) {
       this.model.clear();
@@ -29,6 +30,10 @@ class AutomaticForm extends DecoratorView {
       this.model = new Model();
     }
     if (options) {
+      if (options.nestedInput) {
+        this.nestedInput = options.nestedInput;
+      }
+
       if (options.crossOrigin) {
         this.crossOrigin = options.crossOrigin;
       }
@@ -299,13 +304,14 @@ class AutomaticForm extends DecoratorView {
 
         // the form
         const form = formCompile(
-          ((this.title) ? this.title : this.name),
+          ((this.title) ? this.title : null),
           this.description,
           this._fields,
           this.model.toJSON(),
           this._required,
           this.name,
-          this.display);
+          this.display,
+          this.nestedInput);
         e.appendChild(form);
         this._formEl = Dom.query("form", this.el);
 
