@@ -17,14 +17,17 @@ const formCompile = (name, description, fields, model, required, binding, displa
     lg.appendChild(t);
     fs.appendChild(lg);
   }
+  //console.debug("form display fields", display);
+
   if (!display) {
     display = keys;
   }
 
   for (i = 0; i < l; i++) {
     let displayCol = true;
-    if (display !== null) {
-        displayCol = (keys.indexOf(display[i]) !== -1) ? true : false;
+    if (display) {
+      //console.debug("form field: " + display[i] + " is present: " + keys.indexOf(display[i]) );
+      displayCol = (keys.indexOf(display[i]) !== -1) ? true : false;
     }
 
     if (displayCol) {

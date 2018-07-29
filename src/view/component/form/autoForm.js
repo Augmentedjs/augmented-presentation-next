@@ -76,6 +76,10 @@ class AutomaticForm extends DecoratorView {
       if (options.description) {
         this.description = options.description;
       }
+
+      if (options.display) {
+        this.display = options.display;
+      }
     }
 
     if (this.model && this.uri) {
