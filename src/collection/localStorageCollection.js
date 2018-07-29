@@ -54,28 +54,28 @@ class LocalStorageCollection extends Augmented.AbstractCollection {
    * @param {object} options Any options to pass
    */
   fetch(options) {
-    return this.sync('read', this, options);
+    return this.sync("read", this, options);
   };
   /**
    * Save the collection
    * @param {object} options Any options to pass
    */
   save(options) {
-    return this.sync('create', this, options);
+    return this.sync("create", this, options);
   };
   /**
    * Update the collection
    * @param {object} options Any options to pass
    */
   update(options) {
-    return this.sync('update', this, options);
+    return this.sync("update", this, options);
   };
   /**
    * Destroy the collection
    * @param {object} options Any options to pass
    */
   destroy(options) {
-    return this.sync('delete', this, options);
+    return this.sync("delete", this, options);
   };
 
   /**

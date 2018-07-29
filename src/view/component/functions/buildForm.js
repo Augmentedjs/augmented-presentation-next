@@ -34,7 +34,7 @@ const formCompile = (name, description, fields, model, required, binding, displa
       req = (required.indexOf(display[i]) !== -1);
       lb = document.createElement("label");
       lb.setAttribute("for", display[i]);
-      t = document.createTextNode(display[i]);
+      t = document.createTextNode(fields[display[i]].description);
       lb.appendChild(t);
       input = Widget.Input(fields[display[i]], display[i], model[display[i]], display[i], req, binding);
       if (nestedInput) {
