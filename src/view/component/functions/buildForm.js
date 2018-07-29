@@ -1,3 +1,5 @@
+import Widget from "../../../widget/widget.js";
+
 const formCompile = (name, description, fields, model, required, binding, display) => {
   const form = document.createElement("form"), fs = document.createElement("formset"), keys = Object.keys(fields), l = ((display) ? display.length: keys.length);
   let t, i, input, lb, req;
@@ -33,7 +35,7 @@ const formCompile = (name, description, fields, model, required, binding, displa
       lb.appendChild(t);
       fs.appendChild(lb);
 
-      input = Augmented.Presentation.Widget.Input(fields[display[i]], display[i], model[display[i]], display[i], req, binding);
+      input = Widget.Input(fields[display[i]], display[i], model[display[i]], display[i], req, binding);
       if (input) {
         fs.appendChild(input);
       }
