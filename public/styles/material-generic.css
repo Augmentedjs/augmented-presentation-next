@@ -1,3 +1,19 @@
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+:root {
+  --light-text: rgba(255, 255, 255, 0.85);
+  --dark-text: rgba(0, 0, 0, 0.85);
+  --blue-500: #2196F3;
+  --purple-500: #9C27B0;
+  --yellow-500: #FFEB3B;
+  --orange-500: #FF9800;
+  --red-500: #F44336;
+  --green-500: #4CAF50;
+  --black: black;
+}
+
 .atariScroll {
   background: linear-gradient(180deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff);
   background-size: 1200% 1200%;
@@ -25,7 +41,6 @@
   50%{background-position:50% 100%}
   100%{background-position:50% 0%}
 }
-
 
 *[data-click] {
   cursor: pointer;
@@ -108,12 +123,12 @@ i.checkbox.hidden::before {
 }
 
 span.green {
-  color: #4caf50;
+  color: var(--green-500);
   opacity: 0.85;
 }
 
 span.red {
-  color: #f44336;
+  color: var(--red-500);
   opacity: 0.85;
 }
 
@@ -1504,4 +1519,98 @@ table.material td.select input[type=checkbox] {
   border-radius: 2px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   background-color: #FAFAFA;
+}
+
+
+.blue {
+  background-color: var(--blue-500);
+}
+
+.purple {
+  background-color: var(--purple-500);
+}
+
+.red {
+  background-color: var(--red-500);
+}
+
+.orange {
+  background-color: var(--orange-500);
+}
+
+input[type=email] {
+	background-color: transparent;
+}
+
+/* needs to move to the framework */
+.splash {
+  position: absolute;
+  left: calc(50% - 180px);
+  top: calc(50% - 160px);
+  width: 344px;
+  height: 320px;
+  text-align: center;
+  transition: opacity 3s ease;
+  background-color: white;
+  border: 1px solid #cfd8dc;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.splash figure.logo_large {
+  width: 140px;
+  height: 140px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.splash h1 {
+  font-weight: 700;
+  color: var(--secondary-color-dark);
+}
+
+.fade {
+  opacity: 0;
+}
+
+/* router transitions */
+.main {
+  transition: opacity 1s ease;
+}
+
+.transition-in {
+  opacity: 1.0;
+}
+
+.transition-out {
+  opacity: 0;
+}
+
+.notify {
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  display: block;
+  position: fixed;
+  top: 64px;
+  right: 0;
+  padding: 16px;
+  z-index: auto;
+  border: none;
+  width: 256px;
+  height: 48px;
+  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 0.85;
+  text-align: center;
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+.slide {
+  transform: translateX(300px);
+  opacity: 0;
 }

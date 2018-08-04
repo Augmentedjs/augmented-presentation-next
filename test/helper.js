@@ -11,8 +11,8 @@ global.navigator = {
 const LocalStorage = require('node-localstorage').LocalStorage;
 global.localStorage = new LocalStorage('localStorageTemp');
 global.sessionStorage = global.localStorage;
-global.window.sessionStorage = global.localStorage;
-global.window.localStorage = global.localStorage;
+//global.window.sessionStorage = global.localStorage;
+//global.window.localStorage = global.localStorage;
 global.Storage = global.localStorage;
 
 const sinon = require("sinon");

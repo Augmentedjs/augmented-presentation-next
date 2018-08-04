@@ -1,13 +1,13 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.3.13",
+  "version": "2.4.0",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
     "dev": "webpack --mode development --module-bind js=babel-loader --progress",
     "build": "webpack --mode production --module-bind js=babel-loader --progress",
     "lint": "eslint ./src/augmented-presentation.js",
-    "test": "mocha --require babel-core/register --require test/helper.js -c test/cli/*Spec.js",
+    "test": "mocha --require babel-core/register --require test/helper.js -c test/*Spec.js",
     "start": "node index.js",
     "docs": "rm -rf jsdoc && jsdoc ./src -r -d ./jsdoc/ -R ./README.md -t ./node_modules/foodoc/template -c ./jsdoc.conf.json -P ./package.json",
     "clean": "rm -rf node_modules",

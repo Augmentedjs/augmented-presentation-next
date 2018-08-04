@@ -26,21 +26,26 @@ import DecoratorView from "./view/decorator/decorator.js";
 import DirectiveView from "./view/directive/directiveView.js";
 
 // Components
-import NotificationCenter from "./view/component/notification/notification.js";
+import NotificationCenter from "./view/component/notification/notificationCenter.js";
 import Manager from "./view/component/manager/manager.js";
 import Header from "./view/component/header/header.js";
 import Footer from "./view/component/footer/footer.js";
 
 import Card from "./view/component/card/card.js";
 import Article from "./view/component/article/article.js";
+
 import AbstractToolbar from "./view/component/toolbar/abstractToolbar.js";
 import Toolbar from "./view/component/toolbar/toolbar.js";
 import HamburgerMenu from "./view/component/menu/hamburgerMenu.js";
 import Menu from "./view/component/menu/menu.js";
 import NavigationMenu from "./view/component/menu/navigation.js";
+
 import DialogView from "./view/component/dialog/dialog.js";
 import ConfirmationDialogView from "./view/component/dialog/confirmation.js";
 import AlertDialogView from "./view/component/dialog/alert.js";
+
+import Splash from "./view/component/splash/splash.js";
+import Notification from "./view/component/notification/notify.js";
 
 import AutomaticTable from "./view/component/table/autoTable.js";
 import BigDataTable from "./view/component/table/bigDataTable.js";
@@ -117,6 +122,8 @@ Presentation.Component.NavigationMenu = NavigationMenu;
 Presentation.Component.DialogView = DialogView;
 Presentation.Component.ConfirmationDialogView = ConfirmationDialogView;
 Presentation.Component.AlertDialogView = AlertDialogView;
+Presentation.Component.Splash = Splash;
+Presentation.Component.Notification = Notification;
 
 Presentation.Component.AutomaticTable = AutomaticTable;
 Presentation.Component.BigDataTable = BigDataTable;
