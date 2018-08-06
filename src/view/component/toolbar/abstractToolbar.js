@@ -4,9 +4,8 @@ import Model from "../../../model/model.js";
 
 /**
   * An abstract tooldbar Component, designed to be extended
-  * @class AbstractToolbar
   * @memberof Presentation.Component
-  * @extends Presentation.View
+  * @extends Presentation.DecoratorView
   * @abstract
   */
 class AbstractToolbar extends DecoratorView {
@@ -36,31 +35,29 @@ class AbstractToolbar extends DecoratorView {
       this.isInitalized = true;
     }
   };
+
   /**
     * The model property
     * @property {Augmented.Model} model The model property
-    * @memberof AbstractToolbar
     */
 
   /**
     * The initialized property
     * @property {boolean} isInitalized The initialized property
-    * @memberof AbstractToolbar
     */
 
   /**
     * The menuitems property
     * @property {array} menuItems The initialized property
-    * @memberof AbstractToolbar
     */
 
-    /**
-      * The title property
-      * @property {string} title The title property
-      * @memberof AbstractToolbar
-      */
   /**
-    * @method addItem - Adds an item to the menu
+    * The title property
+    * @property {string} title The title property
+    */
+
+  /**
+    * Adds an item to the menu
     * @param id {string} The id of the itemID
     * @param click {string} The bound click method to call
     * @param icon {string} The icon name (webfont)
@@ -68,7 +65,6 @@ class AbstractToolbar extends DecoratorView {
     * @param spacer {boolean} Sets a spacer item vs text (not clickable)
     * @example addItem({"itemID", "event", "web", "something", false });
     * @example addItem({"space", null, null, null, true });
-    * @memberof AbstractToolbar
     */
   addItem(id, click, icon, title, spacer) {
     if (!spacer) {
@@ -78,9 +74,8 @@ class AbstractToolbar extends DecoratorView {
     }
   };
   /**
-    * @method addSpacer - Adds a spacer item to the menu
+    * Adds a spacer item to the menu
     * @example addSpacer();
-    * @memberof AbstractToolbar
     */
   addSpacer() {
     this._menuItems.push({ "id": null, "click": null, "icon": null, "title": null, "spacer": true });
@@ -101,18 +96,27 @@ class AbstractToolbar extends DecoratorView {
     this._menuItems.length = 0;
   };
 
+  /**
+   * Select an item in the menu
+   * @param {string} id The id
+   */
   select(id) {
-    const item = getItem(id);
+    return getItem(id);
   };
 
+  /**
+   * Get an item in the menu
+   * @param {string} id The id
+   */
   getItem(id) {
-    const l = this._menuItems.lenght;
-    let i =0;
+    const l = this._menuItems.length;
+    let i = 0;
     for (i = 0; i < l; i++) {
-      if (this._menuItems[i].id === id) {
-        return this._menuItems[i]
+      if (this._menuItems[i].id && this._menuItems[i].id === id) {
+        return this._menuItems[i];
       }
     }
+    return null;
   };
 };
 

@@ -1,22 +1,6 @@
 import AbstractToolbar from "../toolbar/abstractToolbar.js";
 import Dom from "../../../dom/dom.js";
-
-const buildMenuItems = (name, data) => {
-  let items = "<ul>";
-  if (name && data && data.length !== 0) {
-    const l = data.length;
-    let i = 0;
-    for (i = 0; i < l; i++) {
-      if (data[i].spacer) {
-        items = `${items}<li class="spacer"></li>`;
-      } else {
-        items = `${items}<li data-id="${data[i].id}" data-${name}="${data[i].id}" data-click="${data[i].click}">${( (data[i].icon) ? ('<i class="material-icons md-dark">' + data[i].icon + '</i>') : '' )}${data[i].title}</li>`;
-      }
-    }
-  }
-  items = `${items}</ul>`;
-  return items;
-};
+import buildNavItems from "../functions/buildNavItems.js";
 
 /**
  * A Navigation Menu
@@ -52,7 +36,7 @@ class NavigationMenu extends AbstractToolbar {
           // the menu
           Dom.addClass(e, "navigation");
           e.setAttribute("data-" + this.name, "navigation-menu");
-          e.innerHTML = buildMenuItems(this.name, this.menuItems);
+          e.innerHTML = buildNavItems(this.name, this.menuItems);
         }
         this.delegateEvents();
         this.syncAllBoundElements();

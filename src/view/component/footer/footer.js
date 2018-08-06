@@ -2,7 +2,6 @@ import DecoratorView from "../../decorator/decorator.js";
 
 /**
  * A Footer Component
- * @class Footer
  * @memberof Presentation.Component
  * @extends Presentation.DecoratorView
  */
@@ -18,7 +17,6 @@ class Footer extends DecoratorView {
   /**
    * The body content of the card (supports HTML)
    * @property body
-   * @memberof Footer
    */
   set body(body) {
     this._body = body;

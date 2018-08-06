@@ -698,6 +698,14 @@ input[type="text"], input[type="password"], textarea {
   background-color: transparent;
 }
 
+input[type=email] {
+	background-color: transparent;
+}
+
+input[type=checkbox] {
+	margin: 0;
+}
+
 label {
   display: block;
   position: relative;
@@ -1145,7 +1153,7 @@ header.header nav.menu, div.panel nav.menu {
   cursor: context-menu;
 }
 
-header.header nav.menu ul, div.panel nav.menu ul {
+header.header nav.menu ul, .panel .menu ul {
   display: block;
   border: 1px solid rgba(0,0,0,0.1);
   box-shadow: 2px 4px 5px rgba(0,0,0,0.1);
@@ -1161,11 +1169,11 @@ header.header nav.menu ul, div.panel nav.menu ul {
   transition: max-height 0.3s ease-out, visibility 0s linear 0.5s,opacity 0.5s linear;
 }
 
-article div.panel nav.menu ul {
+.panel .menu ul {
   margin: 4px 0 0 16px;
 }
 
-header.header nav.menu:hover ul, div.panel nav.menu:hover ul {
+.header .menu:hover ul, .panel .menu:hover ul {
   display: block;
   visibility: visible;
   opacity: 1.0;
@@ -1173,7 +1181,7 @@ header.header nav.menu:hover ul, div.panel nav.menu:hover ul {
   max-height: 500px;
 }
 
-header.header nav.menu ul li, div.panel nav.menu ul li {
+.header .menu ul li, .panel .menu ul li {
   border-bottom: 1px solid transparent;
   font-size: 14px;
   font-weight: 400;
@@ -1184,29 +1192,29 @@ header.header nav.menu ul li, div.panel nav.menu ul li {
   width: 100%;
 }
 
-header.header nav.menu ul li.spacer, div.panel nav.menu ul li.spacer {
+.header .menu ul li.spacer, .panel .menu ul li.spacer {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   height: 1px;
   margin-bottom: 4px;
   padding: 0 16px 4px 0;
 }
 
-header.header nav.menu ul li.spacer:hover, div.panel nav.menu ul li.spacer:hover {
+.header .menu ul li.spacer:hover, .panel .menu ul li.spacer:hover {
   background-color: inherit;
 }
 
-header.header nav.menu ul li i, div.panel nav.menu ul li i {
+.header .menu ul li i, .panel .menu ul li i {
   font-size: 14px;
   line-height: 18px;
   padding-right: 16px;
   vertical-align: text-bottom;
 }
 
-header.header nav.menu ul li:hover, div.panel nav.menu ul li:hover {
+.header .menu ul li:hover, .panel .menu ul li:hover {
   background-color: #eeeeee;
 }
 
-div.sideNav {
+.sideNav {
   display: block;
   position: relative;
   width: 200px;
@@ -1216,24 +1224,24 @@ div.sideNav {
   margin-bottom: 0;
 }
 
-div.sideNav header {
+.sideNav header {
   margin-left: 16px;
 }
 
-nav.sideNav {
+.sideNav {
   display: block;
   position: relative;
   padding: 16px 0;
   width: 200px;
 }
 
-nav.sideNav ul {
+.sideNav ul {
   list-style: outside none none;
   margin: 0;
   padding: 0;
 }
 
-nav.sideNav ul li {
+.sideNav ul li {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1242,27 +1250,27 @@ nav.sideNav ul li {
   vertical-align: text-bottom;
 }
 
-nav.sideNav ul li:hover {
+.sideNav ul li:hover {
   background-color: #eeeeee;
 }
 
-nav.sideNav ul li.current {
+.sideNav ul li.current {
   background-color: #bbdefb;
   color: #3b78e7;
 }
 
-nav.sideNav ul li i {
+.sideNav ul li i {
   font-size: 14px;
   line-height: 18px;
   padding-right: 16px;
   vertical-align: text-bottom;
 }
 
-nav.sideNav ul li.current i {
+.sideNav ul li.current i {
   color: #3b78e7;
 }
 
-div.editList dl {
+.editList dl {
   border: 1px solid rgba(0,0,0,0.1);
   margin: 0;
   padding: 8px;
@@ -1270,19 +1278,19 @@ div.editList dl {
   font-weight: 300;
 }
 
-div.editList dl dt {
+.editList dl dt {
   float: left;
   clear: left;
   min-width: 100px;
   text-align: right;
 }
 
-div.editList dl dd {
+.editList dl dd {
   margin: 0 0 0 116px;
   padding: 0 0 0.5em 0;
 }
 
-div.inlineButton {
+.inlineButton {
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -1290,37 +1298,37 @@ div.inlineButton {
   padding-right: 4px;
 }
 
-div.inlineButton i {
+.inlineButton i {
   font-size: 1em;
   line-height: 1em;
 }
 
-div.inlineButton.large {
+.inlineButton.large {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
 }
 
-div.inlineButton.large i {
+.inlineButton.large i {
   font-size: 1.5em;
   line-height: 1.5em;
 }
 
-div.flexContainer {
+.flexContainer {
   display: flex;                   /* establish flex container */
   flex-direction: row;             /* default value; can be omitted */
   flex-wrap: nowrap;               /* default value; can be omitted */
   justify-content: space-between;  /* switched from default (flex-start, see below) */
   flex-grow: 1;
   align-items: flex-start;
-  margin: 8px 0  !important;
+  margin: 8px 0 !important;
 }
 
-div.flexContainer > p, div.flexContainer > div {
+.flexContainer > p, .flexContainer > div {
   margin: 0 !important;
 }
 
-article section div.panel button.bottom {
+.panel button.bottom {
   position: absolute;
   left: 45%;
   bottom: 8px;
@@ -1329,7 +1337,7 @@ article section div.panel button.bottom {
   transition: background-color 0.3s;
 }
 
-article section div.panel button.hugTop {
+.panel button.hugTop {
   position: absolute;
   top: 8px;
   left: 45%;
@@ -1338,13 +1346,9 @@ article section div.panel button.hugTop {
   transition: background-color 0.3s;
 }
 
-/*
-* application specific stuff
-*/
-
 /* specific panels */
 
-article section div.panel {
+.panel {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -1355,15 +1359,15 @@ article section div.panel {
   z-index: auto;
 }
 
-article section div.panel textarea {
+.panel textarea {
   margin: 0;
 }
 
-article section div.panel div {
+.panel div {
   margin: 0 0 8px;
 }
 
-article section div.panel .tools {
+.panel .tools {
   display: block;
   position: absolute;
   right: 0;
@@ -1372,13 +1376,13 @@ article section div.panel .tools {
   height: 24px;
 }
 
-article section div.panel .tools i {
+.panel .tools i {
   display: inline-block;
   width: 24px;
   height: 24px;
   cursor:pointer;
 }
-article section div.panel nav.tools li i {
+.panel .tools li i {
   cursor: pointer;
   height: 14px;
   line-height: 12px;
@@ -1386,7 +1390,7 @@ article section div.panel nav.tools li i {
   width: 18px;
 }
 
-article section div.panel h1 {
+.panel h1 {
   color: #43a047;
   font-size: 16px;
   line-height: 16px;
@@ -1395,26 +1399,26 @@ article section div.panel h1 {
   vertical-align: text-bottom;
 }
 
-article section div.panel h1 i {
+.panel h1 i {
   font-size: 24px;
   line-height: 20px;
   padding-right: 8px;
   vertical-align: text-bottom;
 }
 
-article section div.panel h2 {
+.panel h2 {
   font-size: 16px;
   line-height: 14px;
   padding-right: 8px;
   vertical-align: text-bottom;
 }
 
-article section div.panel ul {
+.panel ul {
   list-style: none;
   max-width: 500px;
 }
 
-article section div.panel ul li {
+.panel ul li {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -1428,17 +1432,17 @@ article section div.panel ul li {
   overflow: hidden;
 }
 
-div.panel.half {
+.panel.half {
   width: 44%;
 }
 
-div.panel.stack {
+.panel.stack {
   display: inline-block;
   position: relative;
   vertical-align: text-top;
 }
 
-div.avatar {
+.avatar {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: block;
@@ -1452,7 +1456,7 @@ div.avatar {
   width: 50px;
 }
 
-div.avatar.large {
+.avatar.large {
   width: 100px;
   height: 100px;
   font-size: 2em;
@@ -1468,11 +1472,11 @@ div.avatar.large {
   margin-top: 55px;
 }
 
-div.circle {
+.circle {
   border-radius: 25px;
 }
 
-div.circle.large {
+.circle.large {
   border-radius: 50px;
 }
 
@@ -1521,7 +1525,6 @@ table.material td.select input[type=checkbox] {
   background-color: #FAFAFA;
 }
 
-
 .blue {
   background-color: var(--blue-500);
 }
@@ -1536,10 +1539,6 @@ table.material td.select input[type=checkbox] {
 
 .orange {
   background-color: var(--orange-500);
-}
-
-input[type=email] {
-	background-color: transparent;
 }
 
 /* needs to move to the framework */

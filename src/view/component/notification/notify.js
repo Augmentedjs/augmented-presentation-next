@@ -11,6 +11,7 @@ class Notification extends DialogView {
     if (!options) {
       options = {};
     };
+    
     if (!options.buttons) {
       options.buttons = {};
     }
@@ -20,11 +21,19 @@ class Notification extends DialogView {
     } else {
       options.style = `${options.style} notify`;
     }
+
     if (!options.name) {
       options.name = "notify";
     }
 
     options.tagName = "div";
+
+    if (options.timeOut) {
+      this.timeOut = options.timeOut;
+    } else {
+      this.timeOut = 2000;
+    }
+
     super(options);
   };
 
@@ -38,6 +47,8 @@ class Notification extends DialogView {
 
   render() {
     const that = this;
+    const to = this.timeOut;
+
     setTimeout(function() {
       const el = that.el;
       el.classList.add("slide");
@@ -45,9 +56,8 @@ class Notification extends DialogView {
       setTimeout(function() {
         that.remove();
         el.remove();
-      }, 2000);
-    }, 4000);
-
+      }, to);
+    }, (to*2));
     return super.render();
   };
 };

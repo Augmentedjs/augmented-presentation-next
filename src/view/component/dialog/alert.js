@@ -2,7 +2,6 @@ import DialogView from "./dialog.js";
 
 /**
  * A automatic alert dialog view - creates a dialog with cancel button and a message
- * @class AlertDialogView
  * @memberof Presentation.Component
  * @extends Presentation.Component.DialogView
  */

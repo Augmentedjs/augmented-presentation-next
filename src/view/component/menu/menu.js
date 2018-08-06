@@ -11,10 +11,10 @@
 
 import AbstractToolbar from "../toolbar/abstractToolbar.js";
 import Dom from "../../../dom/dom.js";
-import buildMenuItems from "../functions/buildMenuItems.js";
+import buildNavItems from "../functions/buildNavItems.js";
 
-const buildMenu = (name, title, menuItems) => {
-  return `<i class="material-icons md-dark">more_vert</i><ul>${buildMenuItems(this.name, this.menuItems)}</ul>`;
+const buildMenu = (name, menuItems) => {
+  return `<i class="material-icons md-dark">more_vert</i><ul>${buildNavItems(name, menuItems)}</ul>`;
 };
 
 /**
@@ -45,9 +45,9 @@ class Menu extends AbstractToolbar {
       const e = Dom.selector(this.el);
       if (e) {
         // the menu
-        Dom.addClass(e, "menu");
+        Dom.addClass(e, "tools");
         e.setAttribute("data-" + this.name, "menu");
-        e.innerHTML = buildMenu(this.name, this.title, this.menuItems);
+        e.innerHTML = buildMenu(this.name, this.menuItems);
       }
     } else {
       //_logger.warn("AUGMENTED: Menu no element anchor, not rendering.");

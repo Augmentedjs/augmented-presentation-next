@@ -3,7 +3,6 @@ import Dom from "../../../dom/dom.js";
 
 /**
 * A automatic dialog view - creates a dialog with simple configurations to customize
-* @class DialogView
 * @memberof Presentation.Component
 * @extends Presentation.DecoratorView
 */
@@ -39,7 +38,6 @@ class DialogView extends DecoratorView {
   /**
   * title property - the title of the dialog
   * @property title
-  * @memberof DialogView
   */
   set title(title) {
     this._title = title;
@@ -52,13 +50,11 @@ class DialogView extends DecoratorView {
   /**
   * body property - the body of the dialog, handled by setBody method
   * @property body
-  * @memberof DialogView
   */
 
   /**
   * style property - the style (form, alert, bigForm, or whatever class you want)
   * @property style
-  * @memberof DialogView
   */
   set style(style) {
     this._style = style;
@@ -71,7 +67,6 @@ class DialogView extends DecoratorView {
   /**
   * buttons object property - the buttons to match to functions
   * @property buttons
-  * @memberof DialogView
   */
   set buttons(buttons) {
     this._buttons = buttons;
@@ -84,7 +79,6 @@ class DialogView extends DecoratorView {
   /**
   * template - sets content of the dialog, handled internally
   * @method _template
-  * @memberof DialogView
   * @private
   */
   _template() {
@@ -92,9 +86,7 @@ class DialogView extends DecoratorView {
   };
   /**
   * setBody - sets the body content of the dialog
-  * @method setBody
   * @param {String} body A string value of th body (supports HTML)
-  * @memberof DialogView
   */
   set body(body) {
     this._body = body;
@@ -114,8 +106,6 @@ class DialogView extends DecoratorView {
 
   /**
   * render - render the dialog
-  * @method render
-  * @memberof DialogView
   */
   render() {
     if (this.el) {
@@ -129,27 +119,21 @@ class DialogView extends DecoratorView {
 
   /**
   * cancel - standard built-in cancel callback.  Calls close method by default
-  * @method cancel
   * @param {Event} event Event passed in
-  * @memberof DialogView
   */
   cancel(event) {
     this.close(event);
   };
   /**
   * open - standard built-in open callback.  Calls render method by default
-  * @method open
   * @param {Event} event Event passed in
-  * @memberof DialogView
   */
   open(event) {
     this.render();
   };
   /**
   * close - standard built-in close callback.  Closes the dialog, triggers the 'close' event
-  * @method close
   * @param {Event} event Event passed in
-  * @memberof DialogView
   */
   close(event) {
     this.trigger("close");

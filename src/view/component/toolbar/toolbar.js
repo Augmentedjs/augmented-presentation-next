@@ -4,7 +4,6 @@ import buildMenuItems from "../functions/buildMenuItems.js";
 
 /**
  * A Toolbar View
- * @class Toolbar
  * @memberof Presentation.Component
  * @extends Presentation.AbstractToolbar
  */
@@ -14,8 +13,6 @@ class Toolbar extends AbstractToolbar {
   };
   /**
    * Render the Toolbar
-   * @method render Renders the Toolbar
-   * @memberof Augmented.Presentation.Component.Toolbar
    * @returns {object} Returns the view context ('this')
    */
   render() {

@@ -51,6 +51,10 @@ class Header extends DecoratorView {
      return this;
    };
 
+   /**
+    * Remove the Header
+    * @returns {object} Returns the view context ('this')
+    */
    remove() {
      this.removeTemplate(this.el, true);
      return super.remove();

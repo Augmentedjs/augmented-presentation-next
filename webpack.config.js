@@ -1,7 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-//const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-//const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: './src/presentation.js',
@@ -34,28 +32,3 @@ module.exports = {
     })
   ]
 };
-/*
-{
-  test: /\.html$/,
-  use: [
-    {
-      loader: "html-loader",
-      options: { minimize: true }
-    }
-  ]
-}
-*/
-/*
-plugins: [
-  new HtmlWebPackPlugin({
-    template: "./public/index.html",
-    filename: "./public/out.html"
-  }),
-  new UglifyJsPlugin({
-  uglifyOptions: {
-    ie8: false,
-    ecma: 8
-  }
-})
-]
-*/

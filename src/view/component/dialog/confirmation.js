@@ -2,7 +2,6 @@ import DialogView from "./dialog.js";
 
 /**
  * A automatic comfirmation dialog view - creates a dialog with yes no buttons
- * @class Augmented.Presentation.ConfirmationDialogView
  * @memberof Presentation.Component
  * @extends Presentation.Component.DialogView
  */

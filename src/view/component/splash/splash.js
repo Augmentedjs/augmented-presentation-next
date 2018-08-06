@@ -4,7 +4,6 @@ import View from "../../view.js";
  * Splash Screen View
  * @param options Options to pass
  * @example options passed are: title, subTitle, subSubTitle, name, style, and figureStyle
- *
  */
 class Splash extends View {
   constructor(options) {
@@ -14,6 +13,7 @@ class Splash extends View {
     if (!options.name) {
       options.name = "splash";
     }
+
     if (!options.style) {
       options.style = "splash";
     } else {
@@ -36,11 +36,20 @@ class Splash extends View {
         <figure class="${options.figureStyle}"></figure>
       `;
     }
+    
+    if (options.timeOut) {
+      this.timeOut = options.timeOut;
+    } else {
+      this.timeOut = 2000;
+    }
+
     super(options);
   };
 
   render() {
     const that = this;
+    const to = this.timeOut;
+
     setTimeout(function() {
       const el = that.el;
       el.classList.add("fade");
@@ -48,8 +57,8 @@ class Splash extends View {
       setTimeout(function() {
         that.remove();
         el.remove();
-      }, 2000);
-    }, 4000);
+      }, to);
+    }, (to*2));
     return super.render();
   };
 };
