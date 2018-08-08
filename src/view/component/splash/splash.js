@@ -36,14 +36,14 @@ class Splash extends View {
         <figure class="${options.figureStyle}"></figure>
       `;
     }
-    
+
+    super(options);
+
     if (options.timeOut) {
       this.timeOut = options.timeOut;
     } else {
       this.timeOut = 2000;
     }
-
-    super(options);
   };
 
   render() {
