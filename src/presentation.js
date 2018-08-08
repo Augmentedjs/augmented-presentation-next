@@ -63,6 +63,8 @@ import PaginationFactory from "./pagination/factory.js";
 import RESTLogger from "./logger/restLogger.js";
 import ColorConsoleLogger from "./logger/colorLogger.js";
 
+import serialize from "./utilities/serialize.js";
+
 /**
  * Augmented.js Next Presentation - The Presentation Component
  *
@@ -107,6 +109,9 @@ Presentation.Mediator = Mediator;
 
 Presentation.DecoratorView = DecoratorView;
 Presentation.DirectiveView = DirectiveView;
+
+Presentation.Utilities = {};
+Presentation.Utilities.serialize = serialize;
 
 /**
  * Component - Large UI Components
