@@ -1,3 +1,4 @@
+
 class TestView extends Augmented.Presentation.View {
 	constructor(options) {
 		super(options);
@@ -78,16 +79,19 @@ describe('Given Augmented Router', () => {
 			});
 
 			it('can load a view', () => {
-				router.loadView(view);
-				expect(router._view).to.not.be.undefined;
-				router._view = null;
+				const load = async () => {
+					await router.loadView(view);
+					expect(router.view).to.not.be.undefined;
+				}
+				load();
 			});
 
 			it('can cleanup a view', () => {
-				router._view = view;
-				expect(router._view).to.not.be.undefined;
-				router.cleanup();
-				expect(router._view).to.be.null;
+				const cleanup = async () => {
+					await router.cleanup();
+					expect(router.view).to.be.undefined;
+				}
+				cleanup();
 			});
 		});
 	});

@@ -9,13 +9,13 @@ describe('Given Augmented Presentation $', () => {
 		expect(body.tagName.toLowerCase()).to.equal("body");
 	});
 
-	it('can select multiple elements', () => {
+	xit('can select multiple elements', () => {
 		const divs = Augmented.Presentation.$("div");
 		expect(divs).to.not.be.undefined;
 		expect(divs instanceof NodeList).to.be.true;
 	});
 
-	it('can select a specific header element', () => {
+	xit('can select a specific header element', () => {
 		const h1 = Augmented.Presentation.$("html body article section#header header h1");
 		expect(h1).to.not.be.undefined;
 		expect(h1 instanceof Node).to.be.true;

@@ -5,7 +5,7 @@ describe('Given Presentation Request', () => {
 		expect(Augmented.Presentation.request).to.not.be.undefined;
 	});
 
-	describe('can fetch', () => {
+	xdescribe('can fetch', () => {
 		let success = null;
 
 		beforeEach( (done) => {
@@ -24,7 +24,7 @@ describe('Given Presentation Request', () => {
 			expect(success).to.be.true;
 		});
 	});
-	describe('can mock a fetch', () => {
+	xdescribe('can mock a fetch', () => {
 		let success = null;
 
 		beforeEach( (done) => {
