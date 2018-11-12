@@ -28,5 +28,28 @@
   "markdown": {
     "parser": "gfm",
     "hardwrap": true
+  },
+  "source": {
+    "include": [
+      "./node_modules/presentation-application/src",
+      "./node_modules/presentation-components/src",
+      "./node_modules/presentation-controller/src",
+      "./node_modules/presentation-decorator/src",
+      "./node_modules/presentation-dom/src",
+      "./node_modules/presentation-form/src",
+      "./node_modules/presentation-logger/src",
+      "./node_modules/presentation-mediator/src",
+      "./node_modules/presentation-models/src",
+      "./node_modules/presentation-request/src",
+      "./node_modules/presentation-router/src",
+      "./node_modules/presentation-storage/src",
+      "./node_modules/presentation-table/src",
+      "./node_modules/presentation-view/src",
+      "./node_modules/presentation-widget/src"
+    ],
+    "exclude": [
+    ],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
   }
 }
