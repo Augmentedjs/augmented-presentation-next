@@ -1,6 +1,6 @@
 {
   "name": "augmentedjs-next-presentation",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "The Augmented.js Next - Presentation Module.",
   "main": "dist/augmented-next-presentation.js",
   "scripts": {
@@ -47,7 +47,7 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
-    "augmentedjs-next": "^2.2.1",
+    "augmentedjs-next": "^2.3.0",
     "presentation-application": "^2.5.6",
     "presentation-components": "^2.7.3",
     "presentation-controller": "^2.5.4",
