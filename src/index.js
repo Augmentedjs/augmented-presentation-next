@@ -128,9 +128,11 @@ Presentation.ColorConsoleLogger = ColorConsoleLogger;
  */
 Presentation.$ = Dom.query;
 
-Augmented.Presentation = Presentation;
+const aug = Augmented;
+
+aug.Presentation = Presentation;
 
 //export default Presentation;
 
 // for webpack default on the browser
-module.exports = Augmented;
+module.exports = aug;

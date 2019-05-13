@@ -103,31 +103,31 @@ return /******/ (function(modules) { // webpackBootstrap
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = function(originalModule) {
-	if (!originalModule.webpackPolyfill) {
-		var module = Object.create(originalModule);
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		Object.defineProperty(module, "exports", {
-			enumerable: true
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
+module.exports = function (originalModule) {
+  if (!originalModule.webpackPolyfill) {
+    var module = Object.create(originalModule); // module.parent = undefined by default
 
+    if (!module.children) module.children = [];
+    Object.defineProperty(module, "loaded", {
+      enumerable: true,
+      get: function () {
+        return module.l;
+      }
+    });
+    Object.defineProperty(module, "id", {
+      enumerable: true,
+      get: function () {
+        return module.i;
+      }
+    });
+    Object.defineProperty(module, "exports", {
+      enumerable: true
+    });
+    module.webpackPolyfill = 1;
+  }
+
+  return module;
+};
 
 /***/ }),
 
@@ -282,10 +282,11 @@ Presentation.ColorConsoleLogger = presentation_logger__WEBPACK_IMPORTED_MODULE_1
  */
 
 Presentation.$ = presentation_dom__WEBPACK_IMPORTED_MODULE_12___default.a.query;
-augmentedjs_next__WEBPACK_IMPORTED_MODULE_0___default.a.Presentation = Presentation; //export default Presentation;
+var aug = augmentedjs_next__WEBPACK_IMPORTED_MODULE_0___default.a;
+aug.Presentation = Presentation; //export default Presentation;
 // for webpack default on the browser
 
-module.exports = augmentedjs_next__WEBPACK_IMPORTED_MODULE_0___default.a;
+module.exports = aug;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
