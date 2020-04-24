@@ -135,4 +135,4 @@ aug.Presentation = Presentation;
 //export default Presentation;
 
 // for webpack default on the browser
-module.exports = aug;
+export default aug;
